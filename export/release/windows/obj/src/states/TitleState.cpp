@@ -542,7 +542,7 @@ HXDLIN( 187)				 ::openfl::media::Sound file = ::backend::Paths_obj::returnSound
 HXDLIN( 187)				_hx_tmp->playMusic(file,0,null(),null());
             			}
             		}
-HXLINE( 191)		::backend::Conductor_obj::changeBPM(( (Float)(275) ));
+HXLINE( 191)		::backend::Conductor_obj::changeBPM(( (Float)(202) ));
 HXLINE( 194)		this->persistentUpdate = true;
 HXLINE( 196)		this->check =  ::flixel::addons::display::FlxBackdrop_obj::__alloc( HX_CTX ,::backend::Paths_obj::image(HX_("menuimages/check",10,f1,52,ff),null(),null()),null(),0,0);
 HXLINE( 197)		{

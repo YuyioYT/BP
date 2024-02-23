@@ -188,7 +188,7 @@ class TitleState extends MusicBeatState
 			}
 		}
 
-		Conductor.changeBPM(275);
+		Conductor.changeBPM(202);
 
 		//Conductor.bpm = titleJSON.bpm;
 		persistentUpdate = true;
