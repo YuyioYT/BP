@@ -1,0 +1,120 @@
+{
+	"storyName": "Ayo?",
+	"hideFreeplay": false,
+	"weekBackground": "stage",
+	"weekBefore": "tutorial",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"startUnlocked": true,
+	"hideStoryMode": false,
+	"weekCharacters": [
+		"",
+		"",
+		""
+	],
+	"songs": [
+		[
+			"fast food",
+			"bamburg_crazy",
+			[
+				215,
+				169,
+				0
+			]
+		],
+		[
+			"RSOD",
+			"bombuExpunged",
+			[
+				175,
+				0,
+				0
+			]
+		],
+		[
+			"harvested",
+			"bambi",
+			[
+				0,
+				195,
+				0
+			]
+		],
+		[
+			"brain freeze",
+			"bamburg_crazy",
+			[
+				146,
+				113,
+				253
+			]
+		],
+		[
+			"defraud",
+			"icon-bambi3d",
+			[
+				146,
+				113,
+				253
+			]
+		],
+		[
+			"circuitry",
+			"bombu",
+			[
+				146,
+				113,
+				253
+			]
+		],
+		[
+			"velocity",
+			"crimsondave",
+			[
+				146,
+				113,
+				253
+			]
+		],
+		[
+			"reheated",
+			"dad",
+			[
+				146,
+				113,
+				253
+			]
+		],
+		[
+			"dissapointed",
+			"gary",
+			[
+				146,
+				113,
+				253
+			]
+		],
+		[
+			"number 15",
+			"bamburg",
+			[
+				146,
+				113,
+				253
+			]
+		],
+		[
+			"punge",
+			"punge",
+			[
+				146,
+				113,
+				253
+			]
+		]
+	],
+	"weekName": "Trio Guys"
+}

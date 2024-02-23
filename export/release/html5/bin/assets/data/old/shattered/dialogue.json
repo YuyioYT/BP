@@ -1,0 +1,68 @@
+{
+	"dialogue": [
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "bambi-mad",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "AUGH! Why you like this?!"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "bambi-mad",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "You break my phone AND fucking steal corn!!\r\n\r\n"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "gf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Seriously?! We haven't even touched your corn!"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "gf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "You literally broke your phone for no reason! And even Dave has been trying to tell you!"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "bambi-mad",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "NO!! He is LYING!! I watch you touch corn!! And I know what you going to do!!"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "gf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Listen-"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "bambi-mad",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "SHUT UP!! Aughh... just rap already!"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "beep bop"
+		}
+	]
+}

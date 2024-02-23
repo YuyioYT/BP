@@ -1,0 +1,71 @@
+{
+	"song": {
+		"events": [
+			[
+				137069.649211998,
+				[
+					[
+						"Change Character",
+						"1",
+						"bombu"
+					],
+					[
+						"Change Character",
+						"2",
+						"gf"
+					],
+					[
+						"stage test",
+						"3dLaptop",
+						""
+					]
+				]
+			],
+			[
+				274212.506354855,
+				[
+					[
+						"Change Character",
+						"2",
+						"bamburg"
+					]
+				]
+			],
+			[
+				370212.506354856,
+				[
+					[
+						"stage test",
+						"disability",
+						""
+					],
+					[
+						"Change Character",
+						"2",
+						"gf"
+					],
+					[
+						"Change Character",
+						"1",
+						"split_dave_3d"
+					]
+				]
+			],
+			[
+				514212.506354858,
+				[
+					[
+						"stage test",
+						"CataclysmicDemiseBG",
+						""
+					],
+					[
+						"Change Character",
+						"1",
+						"expunged"
+					]
+				]
+			]
+		]
+	}
+}

@@ -1,0 +1,14 @@
+stage
+spooky
+philly
+limo
+mall
+mallEvil
+school
+schoolEvil
+tank
+farmDay
+farmSunset
+farmNight
+pizza
+cataclysmic

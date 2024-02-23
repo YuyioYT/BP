@@ -1,0 +1,10 @@
+function onCreatePost()
+	makeLuaSprite('overlay','BackgroundBP/farmnight/nightGlow',-1200,-700)
+	addLuaSprite('overlay',true)
+    	setScrollFactor('overlay', 0, 0)
+    	setObjectOrder('overlay',10)
+    	scaleObject('overlay',1.5,1.5)
+	setBlendMode('overlay','add')
+	screenCenter('overlay')
+	setProperty('overlay.color', getColorFromHex('5c5379'))
+end

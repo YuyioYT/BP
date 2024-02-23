@@ -1,0 +1,76 @@
+{
+	"dialogue": [
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Beep?"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "god_expunged",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "BOYFRIEND"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "god_expunged",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "WAKE UP"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "god_expunged",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "THIS IS ONLY YOUR IMAGINATION"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "god_expunged",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "I'M TIRED OF PRETENDING"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "god_expunged",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "THEY'RE WAITING"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "god_expunged",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "WAKE UP FROM THIS PURGATORY"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "god_expunged",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "BEFORE I GET AHEAD OF MYSELF"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "B-beep..?"
+		}
+	]
+}

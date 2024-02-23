@@ -1,0 +1,642 @@
+package states;
+
+import flixel.addons.display.FlxBackdrop;
+import backend.WeekData;
+import backend.Highscore;
+
+import flixel.input.keyboard.FlxKey;
+import flixel.addons.transition.FlxTransitionableState;
+import flixel.graphics.frames.FlxAtlasFrames;
+import flixel.graphics.frames.FlxFrame;
+import flixel.util.FlxGradient;
+import flixel.group.FlxGroup;
+import flixel.input.gamepad.FlxGamepad;
+import tjson.TJSON as Json;
+
+import openfl.Assets;
+import openfl.display.Bitmap;
+import openfl.display.BitmapData;
+
+import shaders.ColorSwap;
+
+import states.StoryMenuState;
+import states.OutdatedState;
+import states.MainMenuState;
+
+#if MODS_ALLOWED
+import sys.FileSystem;
+import sys.io.File;
+#end
+
+typedef TitleData =
+{
+
+	titlex:Float,
+	titley:Float,
+	startx:Float,
+	starty:Float,
+	gfx:Float,
+	gfy:Float,
+	backgroundSprite:String,
+	bpm:Int
+}
+
+class TitleState extends MusicBeatState
+{
+	public static var muteKeys:Array<FlxKey> = [FlxKey.ZERO];
+	public static var volumeDownKeys:Array<FlxKey> = [FlxKey.NUMPADMINUS, FlxKey.MINUS];
+	public static var volumeUpKeys:Array<FlxKey> = [FlxKey.NUMPADPLUS, FlxKey.PLUS];
+
+	public static var initialized:Bool = false;
+
+	var blackScreen:FlxSprite;
+	var credGroup:FlxGroup;
+	var credTextShit:Alphabet;
+	var textGroup:FlxGroup;
+	var ngSpr:FlxSprite;
+
+	var tween:Bool = true;
+
+	var gradientBar:FlxSprite = new FlxSprite(0,1000).makeGraphic(FlxG.width, 300, 0xFFFF0000);
+	
+	var titleTextColors:Array<FlxColor> = [0xFFFF3333, 0xFFFF5100];
+	var titleTextAlphas:Array<Float> = [1, .64];
+
+	var curWacky:Array<String> = [];
+
+	var wackyImage:FlxSprite;
+
+	var mustUpdate:Bool = false;
+
+	var titleJSON:TitleData;
+
+	public static var updateVersion:String = '';
+
+	override public function create():Void
+	{
+		FlxG.camera.zoom = 2;
+
+		Paths.clearStoredMemory();
+		Paths.clearUnusedMemory();
+
+		#if LUA_ALLOWED
+		Mods.pushGlobalMods();
+		#end
+		Mods.loadTopMod();
+
+		FlxG.fixedTimestep = false;
+		FlxG.game.focusLostFramerate = 144;
+		FlxG.keys.preventDefaultKeys = [TAB];
+
+		curWacky = FlxG.random.getObject(getIntroTextShit());
+
+		super.create();
+
+		FlxG.save.bind('funkin', CoolUtil.getSavePath());
+
+		ClientPrefs.loadPrefs();
+
+		#if CHECK_FOR_UPDATES
+		if(ClientPrefs.data.checkForUpdates && !closedState) {
+			trace('checking for update');
+			var http = new haxe.Http("https://raw.githubusercontent.com/ShadowMario/FNF-PsychEngine/main/gitVersion.txt");
+
+			http.onData = function (data:String)
+			{
+				updateVersion = data.split('\n')[0].trim();
+				var curVersion:String = MainMenuState.psychEngineVersion.trim();
+				trace('version online: ' + updateVersion + ', your version: ' + curVersion);
+				if(updateVersion != curVersion) {
+					trace('versions arent matching!');
+					mustUpdate = true;
+				}
+			}
+
+			http.onError = function (error) {
+				trace('error: $error');
+			}
+
+			http.request();
+		}
+		#end
+
+		Highscore.load();
+
+		// IGNORE THIS!!!
+		titleJSON = Json.parse(Paths.getTextFromFile('images/gfDanceTitle.json'));
+
+		if(!initialized)
+		{
+			if(FlxG.save.data != null && FlxG.save.data.fullscreen)
+			{
+				FlxG.fullscreen = FlxG.save.data.fullscreen;
+				//trace('LOADED FULLSCREEN SETTING!!');
+			}
+			persistentUpdate = true;
+			persistentDraw = true;
+		}
+
+		if (FlxG.save.data.weekCompleted != null)
+		{
+			StoryMenuState.weekCompleted = FlxG.save.data.weekCompleted;
+		}
+
+		FlxG.mouse.visible = false;
+		#if FREEPLAY
+		MusicBeatState.switchState(new FreeplayState());
+		#elseif CHARTING
+		MusicBeatState.switchState(new ChartingState());
+		#else
+		if(FlxG.save.data.flashing == null && !FlashingState.leftState) {
+			FlxTransitionableState.skipNextTransIn = true;
+			FlxTransitionableState.skipNextTransOut = true;
+			MusicBeatState.switchState(new FlashingState());
+		} else {
+			if (initialized)
+				startIntro();
+			else
+			{
+				new FlxTimer().start(1, function(tmr:FlxTimer)
+				{
+					startIntro();
+				});
+			}
+		}
+		#end
+	}
+
+	var logo:FlxSprite;
+	var danceLeft:Bool = false;
+	var titleText:FlxSprite;
+	var swagShader:ColorSwap = null;
+
+	var check:FlxSprite;
+	var spikes:FlxSprite;
+	var slidething:FlxBackdrop;
+
+	var check2:FlxSprite;
+	var spikes2:FlxSprite;
+	var slidething2:FlxBackdrop;
+	var line2:FlxSprite;
+
+	function startIntro()
+	{
+		if (!initialized)
+		{
+			if(FlxG.sound.music == null) {
+				FlxG.sound.playMusic(Paths.music('menu/Gates of the hell'), 0);
+			}
+		}
+
+		Conductor.changeBPM(275);
+
+		//Conductor.bpm = titleJSON.bpm;
+		persistentUpdate = true;
+
+		check = new FlxBackdrop(Paths.image('menuimages/check'),0,0);
+		check.velocity.set(150,150);
+		check.screenCenter();
+		check.scrollFactor.set();
+		add(check);
+
+		var glow:FlxSprite = new FlxSprite(-80).loadGraphic(Paths.image('menuimages/glow'));
+		glow.setGraphicSize(Std.int(glow.width * 1.175));
+		glow.updateHitbox();
+		glow.screenCenter();
+		glow.antialiasing = ClientPrefs.data.antialiasing;
+		glow.scrollFactor.set();
+		add(glow);
+
+		var line:FlxSprite = new FlxSprite(-80).loadGraphic(Paths.image('menuimages/line'));
+		line.setGraphicSize(Std.int(glow.width * 1.175));
+		line.updateHitbox();
+		line.screenCenter();
+		line.antialiasing = ClientPrefs.data.antialiasing;
+		line.scrollFactor.set();
+		add(line);
+
+		spikes = new FlxBackdrop(Paths.image('menuimages/spikeys'),0,10000);
+		spikes.velocity.set(100,0);
+		spikes.screenCenter();
+		add(spikes);
+		spikes.scrollFactor.set();
+
+		gradientBar = FlxGradient.createGradientFlxSprite(Math.round(FlxG.width), 512, [0xb2ff0000, 0x00000000], 1, 90, true);
+		gradientBar.y = 0;
+		add(gradientBar);
+		gradientBar.scrollFactor.set(0, 0);
+
+		slidething = new FlxBackdrop(Paths.image('menuimages/hahaslider'),0,10000);
+		slidething.velocity.set(-14,0);
+		slidething.y = 200;
+		slidething.scale.x = 0.7;
+		slidething.scale.y = 0.7;
+		slidething.screenCenter(X);
+		add(slidething);
+		slidething.scrollFactor.set(0.5,0.5);
+
+		credGroup = new FlxGroup();
+		add(credGroup);
+
+		textGroup = new FlxGroup();
+
+		blackScreen = new FlxSprite().makeGraphic(FlxG.width, FlxG.height, FlxColor.BLACK);
+		credGroup.add(blackScreen);
+
+		check = new FlxBackdrop(Paths.image('menuimages/check'),0,0);
+		check.velocity.set(150,150);
+		check.screenCenter();
+		check.scrollFactor.set();
+		credGroup.add(check);
+
+		var glow:FlxSprite = new FlxSprite(-80).loadGraphic(Paths.image('menuimages/glow'));
+		glow.setGraphicSize(Std.int(glow.width * 1.175));
+		glow.updateHitbox();
+		glow.screenCenter();
+		glow.antialiasing = ClientPrefs.data.antialiasing;
+		glow.scrollFactor.set();
+		credGroup.add(glow);
+
+		var line:FlxSprite = new FlxSprite(-80).loadGraphic(Paths.image('menuimages/line'));
+		line.setGraphicSize(Std.int(glow.width * 1.175));
+		line.updateHitbox();
+		line.screenCenter();
+		line.antialiasing = ClientPrefs.data.antialiasing;
+		line.scrollFactor.set();
+		credGroup.add(line);
+
+		spikes = new FlxBackdrop(Paths.image('menuimages/spikeys'),0,10000);
+		spikes.velocity.set(100,0);
+		spikes.screenCenter();
+		credGroup.add(spikes);
+		spikes.scrollFactor.set();
+
+		gradientBar = FlxGradient.createGradientFlxSprite(Math.round(FlxG.width), 512, [0xb2ff0000, 0x00000000], 1, 90, true);
+		gradientBar.y = 0;
+		credGroup.add(gradientBar);
+		gradientBar.scrollFactor.set(0, 0);
+
+		slidething = new FlxBackdrop(Paths.image('menuimages/hahaslider'),0,10000);
+		slidething.velocity.set(-14,0);
+		//slidething.y = 700;
+		slidething.x = -20;
+		slidething.y = 200;
+		slidething.scale.x = 0.7;
+		slidething.scale.y = 0.7;
+		slidething.screenCenter(X);
+		credGroup.add(slidething);
+		slidething.scrollFactor.set(0.5,0.5);
+
+		logo = new FlxSprite().loadGraphic(Paths.image('menuimages/logov2'));
+		logo.screenCenter();
+		logo.scale.x = 0.1;
+		logo.scale.y = 0.1;
+		logo.antialiasing = ClientPrefs.data.antialiasing;
+		
+		titleText = new FlxSprite(100, FlxG.height * 0.8);
+		titleText.frames = Paths.getSparrowAtlas('menuimages/titleEnter');
+		titleText.animation.addByPrefix('idle', "Press Enter to Begin", 24);
+		titleText.animation.addByPrefix('press', "ENTER PRESSED", 18, false);
+		titleText.screenCenter(X);
+		titleText.antialiasing = true;
+		titleText.animation.play('idle');
+		titleText.updateHitbox();
+
+
+		credTextShit = new Alphabet(0, 0, "", true);
+		credTextShit.screenCenter();
+
+		// credTextShit.alignment = CENTER;
+
+		credTextShit.visible = false;
+
+		ngSpr = new FlxSprite(0, FlxG.height * 0.52).loadGraphic(Paths.image('newgrounds_logo'));
+		add(ngSpr);
+		ngSpr.visible = false;
+		ngSpr.setGraphicSize(Std.int(ngSpr.width * 0.8));
+		ngSpr.updateHitbox();
+		ngSpr.screenCenter(X);
+		ngSpr.antialiasing = ClientPrefs.data.antialiasing;
+
+		if (tween){
+		FlxTween.tween(FlxG.camera, {zoom:1}, 5, {ease: FlxEase.expoOut});
+		FlxTween.tween(slidething, { y: 200 }, 7, { ease: FlxEase.expoOut });
+		}
+
+	//	FlxTween.tween(credTextShit, {y: credTextShit.y + 20}, 2.9, {ease: FlxEase.quadInOut, type: PINGPONG});
+
+		if (initialized)
+			skipIntro();
+		else {
+			initialized = true;
+			FlxG.camera.zoom = 1.5;
+			FlxG.camera.scroll.y = -250;
+			FlxTween.tween(FlxG.camera.scroll, {y: 0}, 2.9, {ease: FlxEase.quadOut});
+			FlxTween.tween(FlxG.camera, {zoom: 1}, 2.25, {ease: FlxEase.quadOut});
+		}
+
+		// credGroup.add(credTextShit);
+	}
+
+	function getIntroTextShit():Array<Array<String>>
+	{
+		#if MODS_ALLOWED
+		var firstArray:Array<String> = Mods.mergeAllTextsNamed('data/introText.txt', Paths.getPreloadPath());
+		#else
+		var fullText:String = Assets.getText(Paths.txt('introText'));
+		var firstArray:Array<String> = fullText.split('\n');
+		#end
+		var swagGoodArray:Array<Array<String>> = [];
+
+		for (i in firstArray)
+		{
+			swagGoodArray.push(i.split('--'));
+		}
+
+		return swagGoodArray;
+	}
+
+	var transitioning:Bool = false;
+	private static var playJingle:Bool = false;
+	
+	var newTitle:Bool = false;
+	var titleTimer:Float = 0;
+
+	override function update(elapsed:Float)
+	{
+		if (FlxG.sound.music != null)
+			Conductor.songPosition = FlxG.sound.music.time;
+		// FlxG.watch.addQuick('amp', FlxG.sound.music.amplitude);
+
+		var pressedEnter:Bool = FlxG.keys.justPressed.ENTER || controls.ACCEPT;
+
+		#if mobile
+		for (touch in FlxG.touches.list)
+		{
+			if (touch.justPressed)
+			{
+				pressedEnter = true;
+			}
+		}
+		#end
+
+		var cam:FlxCamera = FlxG.camera;
+	/*	if (bg != null) {
+			var toScale:Float = 1 / ((cam.zoom - 1) * 0.3 +1);
+			bg.scale.set(toScale, toScale);
+		}*/
+		if (slidething != null) {
+			var toScale:Float = 1 / ((cam.zoom - 1) * 0.1 +1);
+			toScale = toScale * 0.65;
+			slidething.scale.set(toScale, toScale);
+		}
+
+		var gamepad:FlxGamepad = FlxG.gamepads.lastActive;
+
+		if (gamepad != null)
+		{
+			if (gamepad.justPressed.START)
+				pressedEnter = true;
+
+			#if switch
+			if (gamepad.justPressed.B)
+				pressedEnter = true;
+			#end
+		}
+		
+		if (newTitle) {
+			titleTimer += FlxMath.bound(elapsed, 0, 1);
+			if (titleTimer > 2) titleTimer -= 2;
+		}
+
+		if (initialized && !transitioning && skippedIntro)
+		{
+			if (newTitle && !pressedEnter)
+			{
+				var timer:Float = titleTimer;
+				if (timer >= 1)
+					timer = (-timer) + 2;
+				
+				timer = FlxEase.quadInOut(timer);
+				
+				titleText.color = FlxColor.interpolate(titleTextColors[0], titleTextColors[1], timer);
+				titleText.alpha = FlxMath.lerp(titleTextAlphas[0], titleTextAlphas[1], timer);
+			}
+			
+			if(pressedEnter)
+			{
+				tween = false;
+				FlxTween.tween(camera, {zoom: 2}, 3, {ease: FlxEase.backInOut, type: ONESHOT, onComplete: function(twn:FlxTween) {
+				}});
+				FlxTween.tween(titleText, {alpha: 0}, 0.5, {ease: FlxEase.backInOut, type: ONESHOT, onComplete: function(twn:FlxTween) {
+				}});
+				//FlxTween.tween(FlxG.camera, {zoom:1.35}, 1.45, {ease: FlxEase.expoIn});
+				FlxTween.tween(titleText, {y: 2000}, 2.5, {ease: FlxEase.expoInOut});
+				//FlxTween.tween(gradientBar, {y: 2000}, 2.5, {ease: FlxEase.expoInOut});
+	        	if (logo != null) FlxTween.tween(logo, {alpha: 0}, 1.2, {ease: FlxEase.expoInOut});
+				if (logo != null) FlxTween.tween(logo, {y: 2000}, 2.5, {ease: FlxEase.expoInOut});
+				titleText.color = FlxColor.WHITE;
+				titleText.alpha = 1;
+				
+				titleText.animation.play('press');
+
+				FlxG.camera.flash(ClientPrefs.data.flashing ? FlxColor.WHITE : 0x4CFFFFFF, 1);
+				FlxG.sound.play(Paths.sound('menu/confirmMenu'), 0.7);
+
+				transitioning = true;
+
+				new FlxTimer().start(1, function(tmr:FlxTimer)
+				{
+					if (mustUpdate) {
+						MusicBeatState.switchState(new OutdatedState());
+					} else {
+						MusicBeatState.switchState(new MainMenuState());
+					}
+					closedState = true;
+				});
+			}
+		}
+
+		if (initialized && pressedEnter && !skippedIntro)
+		{
+			skipIntro();
+		}
+
+		if(swagShader != null)
+		{
+			if(controls.UI_LEFT) swagShader.hue -= elapsed * 0.1;
+			if(controls.UI_RIGHT) swagShader.hue += elapsed * 0.1;
+		}
+
+		super.update(elapsed);
+	}
+
+	function createCoolText(textArray:Array<String>, ?offset:Float = 0)
+	{
+		for (i in 0...textArray.length)
+			{
+				var money:FlxText = new FlxText(0, 0, FlxG.width, textArray[i], 48);
+				money.setFormat("Comic Sans MS Bold", 48, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+				money.screenCenter(X);
+				money.borderSize = 3;
+				money.y += (i * 60) + 200 + offset;
+				credGroup.add(money);
+				textGroup.add(money);
+			}
+	}
+
+	function addMoreText(text:String, ?offset:Float = 0)
+	{
+		var coolText:FlxText = new FlxText(0, 0, FlxG.width, text, 48);
+		coolText.setFormat("Comic Sans MS Bold", 48, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+		coolText.screenCenter(X);
+		coolText.borderSize = 3;
+		coolText.y += (textGroup.length * 60) + 200 + offset;
+		credGroup.add(coolText);
+		textGroup.add(coolText);
+	}
+
+	function deleteCoolText()
+	{
+		while (textGroup.members.length > 0)
+		{
+			credGroup.remove(textGroup.members[0], true);
+			textGroup.remove(textGroup.members[0], true);
+		}
+	}
+
+	var skippedIntro:Bool = false;
+	private var sickBeats:Int = 0; //Basically curBeat but won't be skipped if you hold the tab or resize the screen
+	public static var closedState:Bool = false;
+	override function beatHit()
+	{
+		super.beatHit();
+
+		var pressedEnter:Bool = FlxG.keys.justPressed.ENTER || controls.ACCEPT;
+		
+		if (logo != null) {
+			logo.scale.set(0.35, 0.35);
+			FlxTween.tween(logo, {'scale.x': 0.3, 'scale.y': 0.3}, 0.35, {ease: FlxEase.quadOut});
+		}
+
+
+		if (skippedIntro){
+			if (camera != null) 
+				{
+					FlxG.camera.zoom = 1.05;
+					FlxTween.tween(FlxG.camera, {zoom: 1}, 0.3, {ease: FlxEase.quadOut});
+				}
+			}
+
+		if(!closedState) {
+			sickBeats++;
+			switch (sickBeats)
+			{
+				case 1:
+					FlxG.sound.playMusic(Paths.music('menu/Gates of the hell'), 0);
+					FlxG.sound.music.fadeIn(4, 0, 0.7);
+				case 2:
+					createCoolText(['Bambi\'s purgatory made by'], 40);
+				case 4:
+					addMoreText('Whatsdown', 40);
+					addMoreText('EpicRandomness11', 40);
+					addMoreText('Reginald Reborn', 40);
+				case 5:
+					deleteCoolText();
+				case 6:
+				case 7:
+				case 8:
+				case 9:
+					deleteCoolText();
+				case 10:
+					createCoolText([curWacky[0]]);
+				case 12:
+					addMoreText(curWacky[1]);
+				case 13:
+					deleteCoolText();
+				case 14:
+				case 15:
+				case 16:
+				case 17:
+				case 18:
+				case 19:
+				case 20:
+				case 21:
+				case 22:
+				case 23:
+				case 24:
+				case 25:
+				case 26:
+				case 27:
+				case 28:
+				case 29:
+					FlxTween.tween(camera, {zoom:2}, 5, {ease: FlxEase.expoOut});
+					addMoreText('Dave');
+				case 30:
+					addMoreText('&');
+				case 31:
+					addMoreText('Bambi');
+				case 32:
+					addMoreText('Bambi\'s');
+				case 33:
+					addMoreText('Purgatory');
+				case 34:
+					addMoreText('V1');
+				case 35:
+					skipIntro();
+					FlxG.camera.zoom = 1;
+			}
+		}
+	}
+
+
+	var increaseVolume:Bool = false;
+	function skipIntro():Void
+	{
+		if (!skippedIntro)
+		{
+			add(logo);
+			add(titleText);
+			logo.y = -1000;
+			FlxG.camera.zoom = 1;
+			FlxTween.tween(logo, {y: -500}, 1.4, {ease: FlxEase.quintInOut});
+
+			titleText.y = 1000;
+			FlxTween.tween(titleText, {y: 600}, 1.4, {ease: FlxEase.quintInOut});
+
+			logo.angle = -4;
+
+			new FlxTimer().start(0.01, function(tmr:FlxTimer)
+			{
+				if (logo.angle == -4)
+					FlxTween.angle(logo, logo.angle, 4, 4, {ease: FlxEase.quartInOut});
+				if (logo.angle == 4)
+					FlxTween.angle(logo, logo.angle, -4, 4, {ease: FlxEase.quartInOut});
+			}, 0);
+
+			if (playJingle) //Ignore deez
+			{
+				var sound:FlxSound = null;
+
+				transitioning = true;
+				remove(ngSpr);
+				remove(credGroup);
+				FlxG.camera.flash(FlxColor.WHITE, 3);
+				sound.onComplete = function() {
+					FlxG.sound.playMusic(Paths.music('menu/Gates of the hell'), 0);
+					FlxG.sound.music.fadeIn(4, 0, 0.7);
+					transitioning = false;
+				};
+				playJingle = false;
+			}
+			else //Default! Edit this one!!
+			{
+				remove(credGroup);
+				remove(ngSpr);
+				//remove(credGroup);
+				FlxG.camera.flash(FlxColor.WHITE, 4);
+			}
+			skippedIntro = true;
+		}
+	}
+}

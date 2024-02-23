@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Free texture packer v0.6.7 http://free-tex-packer.com
+-->
+<TextureAtlas imagePath="ChaosCrimson.png" width="8072" height="2800">
+  <SubTexture name="chaoscrimson_down0007" x="0" y="0"  width="723" height="341" frameX="-221" frameY="-616" frameWidth="1100" frameHeight="1100"/>
+  <SubTexture name="chaoscrimson_down0002" x="723" y="0"  width="723" height="342" frameX="-221" frameY="-616" frameWidth="1100" frameHeight="1100"/>
+  <SubTexture name="chaoscrimson_down0008" x="1446" y="0"  width="743" height="343" frameX="-212" frameY="-634" frameWidth="1100" frameHeight="1100"/>
+  <SubTexture name="chaoscrimson_down0009" x="2189" y="0"  width="743" height="343" frameX="-212" frameY="-634" frameWidth="1100" frameHeight="1100"/>
+  <SubTexture name="chaoscrimson_down0001" x="2932" y="0"  width="743" height="344" frameX="-212" frameY="-634" frameWidth="1100" frameHeight="1100"/>
+  <SubTexture name="chaoscrimson_down0003" x="3675" y="0"  width="630" height="353" frameX="-254" frameY="-579" frameWidth="1100" frameHeight="1100"/>
+  <SubTexture name="chaoscrimson_down0004" x="4305" y="0"  width="630" height="353" frameX="-254" frameY="-579" frameWidth="1100" frameHeight="1100"/>
+  <SubTexture name="chaoscrimson_idle00014" x="4935" y="0"  width="656" height="367" frameX="-201" frameY="-422" frameWidth="1100" frameHeight="1100"/>
+  <SubTexture name="chaoscrimson_idle00015" x="5591" y="0"  width="656" height="367" frameX="-201" frameY="-422" frameWidth="1100" frameHeight="1100"/>
+  <SubTexture name="chaoscrimson_idle00021" x="6247" y="0"  width="656" height="367" frameX="-201" frameY="-422" frameWidth="1100" frameHeight="1100"/>
+  <SubTexture name="chaoscrimson_idle00022" x="6903" y="0"  width="656" height="367" frameX="-201" frameY="-422" frameWidth="1100" frameHeight="1100"/>
+  <SubTexture name="chaoscrimson_down0005" x="7559" y="0"  width="513" height="422" frameX="-307" frameY="-444" frameWidth="1100" frameHeight="1100"/>
+  <SubTexture name="chaoscrimson_idle00012" x="0" y="342"  width="772" height="398" frameX="-139" frameY="-475" frameWidth="1100" frameHeight="1100"/>
+  <SubTexture name="chaoscrimson_idle00013" x="772" y="343"  width="772" height="398" frameX="-139" frameY="-475" frameWidth="1100" frameHeight="1100"/>
+  <SubTexture name="chaoscrimson_idle00019" x="1544" y="343"  width="772" height="398" frameX="-139" frameY="-475" frameWidth="1100" frameHeight="1100"/>
+  <SubTexture name="chaoscrimson_idle00020" x="2316" y="344"  width="772" height="398" frameX="-139" frameY="-475" frameWidth="1100" frameHeight="1100"/>
+  <SubTexture name="chaoscrimson_down0006" x="3088" y="344"  width="513" height="422" frameX="-307" frameY="-444" frameWidth="1100" frameHeight="1100"/>
+  <SubTexture name="chaoscrimson_right0002" x="3601" y="353"  width="484" height="482" frameX="-371" frameY="-280" frameWidth="1100" frameHeight="1100"/>
+  <SubTexture name="chaoscrimson_right0003" x="4085" y="353"  width="484" height="482" frameX="-371" frameY="-280" frameWidth="1100" frameHeight="1100"/>
+  <SubTexture name="chaoscrimson_idle00016" x="4569" y="367"  width="552" height="492" frameX="-261" frameY="-341" frameWidth="1100" frameHeight="1100"/>
+  <SubTexture name="chaoscrimson_idle00017" x="5121" y="367"  width="552" height="492" frameX="-261" frameY="-341" frameWidth="1100" frameHeight="1100"/>
+  <SubTexture name="chaoscrimson_idle00023" x="5673" y="367"  width="552" height="492" frameX="-261" frameY="-341" frameWidth="1100" frameHeight="1100"/>
+  <SubTexture name="chaoscrimson_idle00024" x="6225" y="367"  width="552" height="492" frameX="-261" frameY="-341" frameWidth="1100" frameHeight="1100"/>
+  <SubTexture name="chaoscrimson_right0001" x="6777" y="367"  width="633" height="498" frameX="-342" frameY="-286" frameWidth="1100" frameHeight="1100"/>
+  <SubTexture name="chaoscrimson_right0009" x="7410" y="422"  width="633" height="498" frameX="-342" frameY="-286" frameWidth="1100" frameHeight="1100"/>
+  <SubTexture name="chaoscrimson_up0004" x="0" y="740"  width="527" height="524" frameX="-240" frameY="-198" frameWidth="1100" frameHeight="1100"/>
+  <SubTexture name="chaoscrimson_up0005" x="527" y="741"  width="527" height="524" frameX="-240" frameY="-198" frameWidth="1100" frameHeight="1100"/>
+  <SubTexture name="chaoscrimson_left0006" x="1054" y="741"  width="470" height="531" frameX="-191" frameY="-353" frameWidth="1100" frameHeight="1100"/>
+  <SubTexture name="chaoscrimson_left0007" x="1524" y="741"  width="470" height="531" frameX="-191" frameY="-353" frameWidth="1100" frameHeight="1100"/>
+  <SubTexture name="chaoscrimson_right0004" x="1994" y="742"  width="767" height="538" frameX="-309" frameY="-259" frameWidth="1100" frameHeight="1100"/>
+  <SubTexture name="chaoscrimson_right0008" x="2761" y="766"  width="767" height="538" frameX="-309" frameY="-259" frameWidth="1100" frameHeight="1100"/>
+  <SubTexture name="chaoscrimson_right0005" x="3528" y="835"  width="797" height="546" frameX="-298" frameY="-253" frameWidth="1100" frameHeight="1100"/>
+  <SubTexture name="chaoscrimson_right0006" x="4325" y="859"  width="797" height="546" frameX="-298" frameY="-253" frameWidth="1100" frameHeight="1100"/>
+  <SubTexture name="chaoscrimson_right0007" x="5122" y="859"  width="797" height="546" frameX="-298" frameY="-253" frameWidth="1100" frameHeight="1100"/>
+  <SubTexture name="chaoscrimson_idle0001" x="5919" y="859"  width="500" height="573" frameX="-287" frameY="-298" frameWidth="1100" frameHeight="1100"/>
+  <SubTexture name="chaoscrimson_idle00018" x="6419" y="865"  width="500" height="573" frameX="-287" frameY="-298" frameWidth="1100" frameHeight="1100"/>
+  <SubTexture name="chaoscrimson_idle00010" x="6919" y="865"  width="483" height="588" frameX="-294" frameY="-294" frameWidth="1100" frameHeight="1100"/>
+  <SubTexture name="chaoscrimson_idle00025" x="7402" y="920"  width="500" height="573" frameX="-287" frameY="-298" frameWidth="1100" frameHeight="1100"/>
+  <SubTexture name="chaoscrimson_idle00026" x="0" y="1264"  width="500" height="573" frameX="-287" frameY="-298" frameWidth="1100" frameHeight="1100"/>
+  <SubTexture name="chaoscrimson_idle00011" x="500" y="1265"  width="483" height="588" frameX="-294" frameY="-294" frameWidth="1100" frameHeight="1100"/>
+  <SubTexture name="chaoscrimson_idle0002" x="983" y="1272"  width="483" height="588" frameX="-294" frameY="-294" frameWidth="1100" frameHeight="1100"/>
+  <SubTexture name="chaoscrimson_idle00027" x="1466" y="1272"  width="483" height="588" frameX="-294" frameY="-294" frameWidth="1100" frameHeight="1100"/>
+  <SubTexture name="chaoscrimson_idle00028" x="1949" y="1280"  width="483" height="588" frameX="-294" frameY="-294" frameWidth="1100" frameHeight="1100"/>
+  <SubTexture name="chaoscrimson_idle0003" x="2432" y="1304"  width="483" height="588" frameX="-294" frameY="-294" frameWidth="1100" frameHeight="1100"/>
+  <SubTexture name="chaoscrimson_idle0004" x="2915" y="1304"  width="483" height="588" frameX="-294" frameY="-294" frameWidth="1100" frameHeight="1100"/>
+  <SubTexture name="chaoscrimson_idle0005" x="3398" y="1381"  width="483" height="588" frameX="-294" frameY="-294" frameWidth="1100" frameHeight="1100"/>
+  <SubTexture name="chaoscrimson_idle0006" x="3881" y="1405"  width="483" height="588" frameX="-294" frameY="-294" frameWidth="1100" frameHeight="1100"/>
+  <SubTexture name="chaoscrimson_idle0007" x="4364" y="1405"  width="483" height="588" frameX="-294" frameY="-294" frameWidth="1100" frameHeight="1100"/>
+  <SubTexture name="chaoscrimson_idle0008" x="4847" y="1405"  width="483" height="588" frameX="-294" frameY="-294" frameWidth="1100" frameHeight="1100"/>
+  <SubTexture name="chaoscrimson_idle0009" x="5330" y="1405"  width="483" height="588" frameX="-294" frameY="-294" frameWidth="1100" frameHeight="1100"/>
+  <SubTexture name="chaoscrimson_up0002" x="5813" y="1432"  width="575" height="588" frameX="-205" frameY="-120" frameWidth="1100" frameHeight="1100"/>
+  <SubTexture name="chaoscrimson_up0003" x="6388" y="1453"  width="575" height="588" frameX="-205" frameY="-120" frameWidth="1100" frameHeight="1100"/>
+  <SubTexture name="chaoscrimson_left0004" x="6963" y="1493"  width="576" height="616" frameX="-90" frameY="-271" frameWidth="1100" frameHeight="1100"/>
+  <SubTexture name="chaoscrimson_left0005" x="0" y="1853"  width="576" height="616" frameX="-90" frameY="-271" frameWidth="1100" frameHeight="1100"/>
+  <SubTexture name="chaoscrimson_up0006" x="576" y="1860"  width="637" height="657" frameX="-172" frameY="-51" frameWidth="1100" frameHeight="1100"/>
+  <SubTexture name="chaoscrimson_left0003" x="1213" y="1860"  width="642" height="662" frameX="-46" frameY="-238" frameWidth="1100" frameHeight="1100"/>
+  <SubTexture name="chaoscrimson_left0008" x="1855" y="1892"  width="642" height="662" frameX="-46" frameY="-238" frameWidth="1100" frameHeight="1100"/>
+  <SubTexture name="chaoscrimson_up0001" x="2497" y="1892"  width="674" height="672" frameX="-152" frameY="-40" frameWidth="1100" frameHeight="1100"/>
+  <SubTexture name="chaoscrimson_up0007" x="3171" y="1969"  width="674" height="672" frameX="-152" frameY="-40" frameWidth="1100" frameHeight="1100"/>
+  <SubTexture name="chaoscrimson_up0008" x="3845" y="1993"  width="674" height="672" frameX="-152" frameY="-40" frameWidth="1100" frameHeight="1100"/>
+  <SubTexture name="chaoscrimson_up0009" x="4519" y="1993"  width="674" height="672" frameX="-152" frameY="-40" frameWidth="1100" frameHeight="1100"/>
+  <SubTexture name="chaoscrimson_left0001" x="5193" y="2020"  width="650" height="691" frameX="-35" frameY="-212" frameWidth="1100" frameHeight="1100"/>
+  <SubTexture name="chaoscrimson_left0002" x="5843" y="2041"  width="650" height="691" frameX="-35" frameY="-212" frameWidth="1100" frameHeight="1100"/>
+  <SubTexture name="chaoscrimson_left0009" x="6493" y="2109"  width="650" height="691" frameX="-35" frameY="-212" frameWidth="1100" frameHeight="1100"/>
+</TextureAtlas>

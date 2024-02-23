@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				178,
+				275
+			],
+			"indices": [],
+			"fps": 12,
+			"anim": "singLEFT",
+			"loop": true,
+			"name": "LEFT"
+		},
+		{
+			"offsets": [
+				52,
+				187
+			],
+			"indices": [],
+			"fps": 12,
+			"anim": "singDOWN",
+			"loop": true,
+			"name": "DOWN"
+		},
+		{
+			"offsets": [
+				35,
+				126
+			],
+			"indices": [],
+			"fps": 12,
+			"anim": "singRIGHT",
+			"loop": true,
+			"name": "RIGHT"
+		},
+		{
+			"offsets": [
+				170,
+				303
+			],
+			"indices": [],
+			"fps": 12,
+			"anim": "singUP",
+			"loop": true,
+			"name": "UP"
+		},
+		{
+			"offsets": [
+				1,
+				130
+			],
+			"indices": [],
+			"fps": 12,
+			"anim": "idle",
+			"loop": true,
+			"name": "IDLE"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/bambi-god2d",
+	"position": [
+		-170,
+		30
+	],
+	"healthicon": "bambiGod2d",
+	"flip_x": false,
+	"healthbar_colors": [
+		255,
+		255,
+		255
+	],
+	"camera_position": [
+		-20,
+		-10
+	],
+	"sing_duration": 6.1,
+	"scale": 0.8
+}

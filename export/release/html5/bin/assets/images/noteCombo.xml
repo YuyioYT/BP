@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="noteCombo.png"><SubTexture name=" appear0000" x="0" y="0" width="644" height="484" frameX="0" frameY="0" frameWidth="644" frameHeight="484" />
+<SubTexture name="appear0001" x="644" y="0" width="644" height="484" frameX="0" frameY="0" frameWidth="644" frameHeight="484" />
+<SubTexture name="appear0002" x="1288" y="0" width="644" height="484" frameX="0" frameY="0" frameWidth="644" frameHeight="484" />
+<SubTexture name="appear0003" x="0" y="484" width="644" height="484" frameX="0" frameY="0" frameWidth="644" frameHeight="484" />
+<SubTexture name="appear0004" x="644" y="484" width="644" height="484" frameX="0" frameY="0" frameWidth="644" frameHeight="484" />
+<SubTexture name="appear0005" x="1288" y="484" width="644" height="484" frameX="0" frameY="0" frameWidth="644" frameHeight="484" />
+<SubTexture name="appear0006" x="0" y="968" width="644" height="484" frameX="0" frameY="0" frameWidth="644" frameHeight="484" />
+<SubTexture name="appear0007" x="644" y="968" width="644" height="484" frameX="0" frameY="0" frameWidth="644" frameHeight="484" />
+<SubTexture name="appear0008" x="1288" y="968" width="644" height="484" frameX="0" frameY="0" frameWidth="644" frameHeight="484" />
+<SubTexture name="disappear0000" x="0" y="1452" width="644" height="484" frameX="0" frameY="0" frameWidth="644" frameHeight="484" />
+<SubTexture name="disappear0001" x="644" y="1452" width="644" height="484" frameX="0" frameY="0" frameWidth="644" frameHeight="484" />
+<SubTexture name="disappear0002" x="1288" y="1452" width="644" height="484" frameX="0" frameY="0" frameWidth="644" frameHeight="484" />
+</TextureAtlas>

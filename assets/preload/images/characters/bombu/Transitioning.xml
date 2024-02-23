@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Transitioning.png">
+	<!-- Created with Adobe Animate version 22.0.3.179 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="transition0000" x="40" y="40" width="1500" height="1000"/>
+	<SubTexture name="transition0001" x="40" y="40" width="1500" height="1000"/>
+	<SubTexture name="transition0002" x="1590" y="40" width="1500" height="1000"/>
+	<SubTexture name="transition0003" x="1590" y="40" width="1500" height="1000"/>
+	<SubTexture name="transition0004" x="3140" y="40" width="1500" height="1000"/>
+	<SubTexture name="transition0005" x="3140" y="40" width="1500" height="1000"/>
+	<SubTexture name="transition0006" x="4690" y="40" width="1500" height="1000"/>
+	<SubTexture name="transition0007" x="6240" y="40" width="1500" height="1000"/>
+	<SubTexture name="transition0008" x="6240" y="40" width="1500" height="1000"/>
+	<SubTexture name="transition0009" x="40" y="1090" width="1500" height="1000"/>
+	<SubTexture name="transition0010" x="40" y="1090" width="1500" height="1000"/>
+	<SubTexture name="transition0011" x="1590" y="1090" width="1500" height="1000"/>
+	<SubTexture name="transition0012" x="1590" y="1090" width="1500" height="1000"/>
+	<SubTexture name="transition0013" x="3140" y="1090" width="1500" height="1000"/>
+	<SubTexture name="transition0014" x="4690" y="1090" width="1500" height="1000"/>
+	<SubTexture name="transition0015" x="6240" y="1090" width="1500" height="1000"/>
+	<SubTexture name="transition0016" x="6240" y="1090" width="1500" height="1000"/>
+	<SubTexture name="transition0017" x="40" y="2140" width="1500" height="1000"/>
+	<SubTexture name="transition0018" x="40" y="2140" width="1500" height="1000"/>
+	<SubTexture name="transition0019" x="1590" y="2140" width="1500" height="1000"/>
+	<SubTexture name="transition0020" x="3140" y="2140" width="1500" height="1000"/>
+	<SubTexture name="transition0021" x="3140" y="2140" width="1500" height="1000"/>
+	<SubTexture name="transition0022" x="4690" y="2140" width="1500" height="1000"/>
+	<SubTexture name="transition0023" x="4690" y="2140" width="1500" height="1000"/>
+	<SubTexture name="transition0024" x="6240" y="2140" width="1500" height="1000"/>
+	<SubTexture name="transition0025" x="6240" y="2140" width="1500" height="1000"/>
+	<SubTexture name="transition0026" x="40" y="3190" width="1500" height="1000"/>
+	<SubTexture name="transition0027" x="40" y="3190" width="1500" height="1000"/>
+	<SubTexture name="transition0028" x="40" y="3190" width="1500" height="1000"/>
+</TextureAtlas>

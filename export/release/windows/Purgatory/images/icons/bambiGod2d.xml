@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="bambigod2d-animated.png">
+<SubTexture name="Defeat0000" x="0" y="0" width="396" height="345" frameX="0" frameY="0" frameWidth="396" frameHeight="345" />
+<SubTexture name="Defeat0001" x="396" y="0" width="396" height="345" frameX="0" frameY="0" frameWidth="396" frameHeight="345" />
+<SubTexture name="Defeat0002" x="792" y="0" width="396" height="345" frameX="0" frameY="0" frameWidth="396" frameHeight="345" />
+<SubTexture name="Defeat0003" x="1188" y="0" width="396" height="345" frameX="0" frameY="0" frameWidth="396" frameHeight="345" />
+<SubTexture name="Defeat0004" x="1584" y="0" width="396" height="345" frameX="0" frameY="0" frameWidth="396" frameHeight="345" />
+<SubTexture name="Defeat0005" x="0" y="345" width="396" height="345" frameX="0" frameY="0" frameWidth="396" frameHeight="345" />
+<SubTexture name="Defeat0006" x="396" y="345" width="396" height="345" frameX="0" frameY="0" frameWidth="396" frameHeight="345" />
+<SubTexture name="Defeat0007" x="792" y="345" width="396" height="345" frameX="0" frameY="0" frameWidth="396" frameHeight="345" />
+<SubTexture name="Defeat0008" x="1188" y="345" width="396" height="345" frameX="0" frameY="0" frameWidth="396" frameHeight="345" />
+<SubTexture name="Neutral0000" x="1584" y="345" width="553" height="436" frameX="0" frameY="0" frameWidth="553" frameHeight="436" />
+<SubTexture name="Neutral0001" x="0" y="781" width="553" height="436" frameX="0" frameY="0" frameWidth="553" frameHeight="436" />
+<SubTexture name="Neutral0002" x="553" y="781" width="553" height="436" frameX="0" frameY="0" frameWidth="553" frameHeight="436" />
+<SubTexture name="Neutral0003" x="1106" y="781" width="553" height="436" frameX="0" frameY="0" frameWidth="553" frameHeight="436" />
+<SubTexture name="Neutral0004" x="1659" y="781" width="553" height="436" frameX="0" frameY="0" frameWidth="553" frameHeight="436" />
+<SubTexture name="Neutral0005" x="2212" y="781" width="553" height="436" frameX="0" frameY="0" frameWidth="553" frameHeight="436" />
+<SubTexture name="Neutral0006" x="0" y="1217" width="553" height="436" frameX="0" frameY="0" frameWidth="553" frameHeight="436" />
+<SubTexture name="Neutral0007" x="553" y="1217" width="553" height="436" frameX="0" frameY="0" frameWidth="553" frameHeight="436" />
+<SubTexture name="Winning0000" x="1106" y="1217" width="557" height="406" frameX="0" frameY="0" frameWidth="557" frameHeight="406" />
+<SubTexture name="Winning0001" x="1663" y="1217" width="557" height="406" frameX="0" frameY="0" frameWidth="557" frameHeight="406" />
+<SubTexture name="Winning0002" x="2220" y="1217" width="557" height="406" frameX="0" frameY="0" frameWidth="557" frameHeight="406" />
+<SubTexture name="Winning0003" x="0" y="1653" width="557" height="406" frameX="0" frameY="0" frameWidth="557" frameHeight="406" />
+<SubTexture name="Winning0004" x="557" y="1653" width="557" height="406" frameX="0" frameY="0" frameWidth="557" frameHeight="406" />
+<SubTexture name="Winning0005" x="1114" y="1653" width="557" height="406" frameX="0" frameY="0" frameWidth="557" frameHeight="406" />
+<SubTexture name="Winning0006" x="1671" y="1653" width="557" height="406" frameX="0" frameY="0" frameWidth="557" frameHeight="406" />
+<SubTexture name="Winning0007" x="2228" y="1653" width="557" height="406" frameX="0" frameY="0" frameWidth="557" frameHeight="406" />
+<SubTexture name="Winning0008" x="0" y="2059" width="557" height="406" frameX="0" frameY="0" frameWidth="557" frameHeight="406" />
+</TextureAtlas>

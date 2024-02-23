@@ -1,0 +1,191 @@
+{
+	"song": {
+		"events": [
+			[
+				33832.7272727273,
+				[
+					[
+						"Hide or Show HUD elements with Fade",
+						"0",
+						""
+					]
+				]
+			],
+			[
+				34967.2727272727,
+				[
+					[
+						"Hide or Show HUD elements with Fade",
+						"1",
+						""
+					]
+				]
+			],
+			[
+				35345.4545454546,
+				[
+					[
+						"Change Scroll Speed",
+						"0.5",
+						"1"
+					],
+					[
+						"Change Character",
+						"player3",
+						"complex-dave"
+					],
+					[
+						"Change Character",
+						"dad",
+						"ChaosCrimson"
+					]
+				]
+			],
+			[
+				35795.4545454546,
+				[
+					[
+						"Change Scroll Speed",
+						"1.3",
+						"1"
+					]
+				]
+			],
+			[
+				54545.4545454546,
+				[
+					[
+						"Change Character",
+						"dad",
+						"complex-dave"
+					],
+					[
+						"Change Character",
+						"player3",
+						"ChaosCrimson"
+					]
+				]
+			],
+			[
+				56945.4545454546,
+				[
+					[
+						"Change Character",
+						"player3",
+						"complex-dave"
+					],
+					[
+						"Change Character",
+						"dad",
+						"ChaosCrimson"
+					]
+				]
+			],
+			[
+				59345.4545454546,
+				[
+					[
+						"Change Character",
+						"player3",
+						"ChaosCrimson"
+					],
+					[
+						"Change Character",
+						"dad",
+						"complex-dave"
+					]
+				]
+			],
+			[
+				61745.4545454546,
+				[
+					[
+						"Change Character",
+						"player3",
+						"complex-dave"
+					],
+					[
+						"Change Character",
+						"dad",
+						"ChaosCrimson"
+					]
+				]
+			],
+			[
+				64145.4545454546,
+				[
+					[
+						"Change Character",
+						"player3",
+						"ChaosCrimson"
+					],
+					[
+						"Change Character",
+						"dad",
+						"complex-dave"
+					]
+				]
+			],
+			[
+				71345.4545454546,
+				[
+					[
+						"Change Character",
+						"player3",
+						"complex-dave"
+					],
+					[
+						"Change Character",
+						"dad",
+						"ChaosCrimson"
+					]
+				]
+			],
+			[
+				74945.4545454546,
+				[
+					[
+						"Change Character",
+						"player3",
+						"ChaosCrimson"
+					],
+					[
+						"Change Character",
+						"dad",
+						"complex-dave"
+					]
+				]
+			],
+			[
+				84545.4545454546,
+				[
+					[
+						"Change Character",
+						"player3",
+						"complex-dave"
+					],
+					[
+						"Change Character",
+						"dad",
+						"ChaosCrimson"
+					]
+				]
+			],
+			[
+				108545.454545455,
+				[
+					[
+						"Change Character",
+						"player3",
+						"complex-dave"
+					],
+					[
+						"Change Character",
+						"dad",
+						"ChaosCrimson"
+					]
+				]
+			]
+		]
+	}
+}

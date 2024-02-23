@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Norm-Bombai.png">
+	<!-- Created with Adobe Animate version 22.0.3.179 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Idle bump left0000" x="40" y="40" width="1500" height="1000"/>
+	<SubTexture name="Idle bump left0001" x="40" y="40" width="1500" height="1000"/>
+	<SubTexture name="Idle bump left0002" x="1590" y="40" width="1500" height="1000"/>
+	<SubTexture name="Idle bump left0003" x="1590" y="40" width="1500" height="1000"/>
+	<SubTexture name="Idle bump left0004" x="3140" y="40" width="1500" height="1000"/>
+	<SubTexture name="Idle bump left0005" x="3140" y="40" width="1500" height="1000"/>
+	<SubTexture name="Idle bump left0006" x="4690" y="40" width="1500" height="1000"/>
+	<SubTexture name="Idle bump left0007" x="4690" y="40" width="1500" height="1000"/>
+	<SubTexture name="Idle bump left0008" x="6240" y="40" width="1500" height="1000"/>
+	<SubTexture name="Idle bump left0009" x="6240" y="40" width="1500" height="1000"/>
+	<SubTexture name="Idle bump left0010" x="6240" y="40" width="1500" height="1000"/>
+	<SubTexture name="Idle bump left0011" x="6240" y="40" width="1500" height="1000"/>
+	<SubTexture name="Idle bump left0012" x="6240" y="40" width="1500" height="1000"/>
+	<SubTexture name="Idle bump left0013" x="6240" y="40" width="1500" height="1000"/>
+	<SubTexture name="Idle bump right0000" x="40" y="1090" width="1500" height="1000"/>
+	<SubTexture name="Idle bump right0001" x="40" y="1090" width="1500" height="1000"/>
+	<SubTexture name="Idle bump right0002" x="1590" y="1090" width="1500" height="1000"/>
+	<SubTexture name="Idle bump right0003" x="1590" y="1090" width="1500" height="1000"/>
+	<SubTexture name="Idle bump right0004" x="3140" y="1090" width="1500" height="1000"/>
+	<SubTexture name="Idle bump right0005" x="3140" y="1090" width="1500" height="1000"/>
+	<SubTexture name="Idle bump right0006" x="4690" y="1090" width="1500" height="1000"/>
+	<SubTexture name="Idle bump right0007" x="4690" y="1090" width="1500" height="1000"/>
+	<SubTexture name="Idle bump right0008" x="6240" y="40" width="1500" height="1000"/>
+	<SubTexture name="Idle bump right0009" x="6240" y="40" width="1500" height="1000"/>
+	<SubTexture name="Idle bump right0010" x="6240" y="40" width="1500" height="1000"/>
+	<SubTexture name="Idle bump right0011" x="6240" y="40" width="1500" height="1000"/>
+	<SubTexture name="Idle bump right0012" x="6240" y="40" width="1500" height="1000"/>
+	<SubTexture name="Idle bump right0013" x="6240" y="40" width="1500" height="1000"/>
+	<SubTexture name="down0000" x="6240" y="1090" width="1500" height="1000"/>
+	<SubTexture name="down0001" x="6240" y="1090" width="1500" height="1000"/>
+	<SubTexture name="down0002" x="40" y="2140" width="1500" height="1000"/>
+	<SubTexture name="down0003" x="40" y="2140" width="1500" height="1000"/>
+	<SubTexture name="down0004" x="1590" y="2140" width="1500" height="1000"/>
+	<SubTexture name="down0005" x="1590" y="2140" width="1500" height="1000"/>
+	<SubTexture name="down0006" x="3140" y="2140" width="1500" height="1000"/>
+	<SubTexture name="down0007" x="3140" y="2140" width="1500" height="1000"/>
+	<SubTexture name="left0000" x="4690" y="2140" width="1500" height="1000"/>
+	<SubTexture name="left0001" x="4690" y="2140" width="1500" height="1000"/>
+	<SubTexture name="left0002" x="6240" y="2140" width="1500" height="1000"/>
+	<SubTexture name="left0003" x="6240" y="2140" width="1500" height="1000"/>
+	<SubTexture name="left0004" x="40" y="3190" width="1500" height="1000"/>
+	<SubTexture name="left0005" x="40" y="3190" width="1500" height="1000"/>
+	<SubTexture name="left0006" x="1590" y="3190" width="1500" height="1000"/>
+	<SubTexture name="left0007" x="1590" y="3190" width="1500" height="1000"/>
+	<SubTexture name="right0000" x="3140" y="3190" width="1500" height="1000"/>
+	<SubTexture name="right0001" x="3140" y="3190" width="1500" height="1000"/>
+	<SubTexture name="right0002" x="4690" y="3190" width="1500" height="1000"/>
+	<SubTexture name="right0003" x="4690" y="3190" width="1500" height="1000"/>
+	<SubTexture name="right0004" x="6240" y="3190" width="1500" height="1000"/>
+	<SubTexture name="right0005" x="6240" y="3190" width="1500" height="1000"/>
+	<SubTexture name="right0006" x="40" y="4240" width="1500" height="1000"/>
+	<SubTexture name="right0007" x="40" y="4240" width="1500" height="1000"/>
+	<SubTexture name="up0000" x="1590" y="4240" width="1500" height="1000"/>
+	<SubTexture name="up0001" x="1590" y="4240" width="1500" height="1000"/>
+	<SubTexture name="up0002" x="3140" y="4240" width="1500" height="1000"/>
+	<SubTexture name="up0003" x="3140" y="4240" width="1500" height="1000"/>
+	<SubTexture name="up0004" x="4690" y="4240" width="1500" height="1000"/>
+	<SubTexture name="up0005" x="4690" y="4240" width="1500" height="1000"/>
+	<SubTexture name="up0006" x="6240" y="4240" width="1500" height="1000"/>
+	<SubTexture name="up0007" x="6240" y="4240" width="1500" height="1000"/>
+</TextureAtlas>
