@@ -11,6 +11,8 @@
 HX_DECLARE_CLASS1(flixel,FlxBasic)
 HX_DECLARE_CLASS1(flixel,FlxObject)
 HX_DECLARE_CLASS1(flixel,FlxSprite)
+HX_DECLARE_CLASS3(flixel,addons,effects,FlxTrail)
+HX_DECLARE_CLASS2(flixel,group,FlxTypedSpriteGroup)
 HX_DECLARE_CLASS2(flixel,util,IFlxDestroyable)
 HX_DECLARE_CLASS1(objects,HealthIcon)
 
@@ -55,6 +57,7 @@ class HXCPP_CLASS_ATTRIBUTES HealthIcon_obj : public  ::flixel::FlxSprite_obj
 		bool isAnim;
 		::String _hx_char;
 		::Array< ::String > noAntialiasing;
+		 ::flixel::addons::effects::FlxTrail scaryTrail;
 		void update(Float elapsed);
 
 		void swapOldIcon();

@@ -1,5 +1,7 @@
 package objects;
 
+import flixel.FlxBasic;
+import flixel.addons.effects.FlxTrail;
 import flixel.FlxG;
 import flixel.FlxSprite;
 import flixel.math.FlxMath;
@@ -43,6 +45,9 @@ class HealthIcon extends FlxSprite
 		'bambiGod3d'
 	];
 
+	var scaryTrail:FlxTrail;
+
+
 	public function new(char:String = 'bf', isPlayer:Bool = false, ?allowGPU:Bool = true)
 	{
 		super();
@@ -62,16 +67,23 @@ class HealthIcon extends FlxSprite
 			switch(animation.curAnim.name) {
 				case 'neutral':
 					offset.y += 140;
+					offset.x += FlxG.random.int(-2, 2);
+					offset.y += FlxG.random.int(-2, 2);
+					angle = FlxG.random.int(-2, 2);
 				case 'defeat':
 					offset.x += 40;
 					offset.y += 130;
+					offset.x += FlxG.random.int(-3, 3);
+					offset.y += FlxG.random.int(-3, 3);
+					angle = FlxG.random.int(-3, 3);
 				case 'winning':
 					offset.x += -50;
 					offset.y += 130;
+					offset.x += FlxG.random.int(-1, 1);
+					offset.y += FlxG.random.int(-1, 1);
+					angle = FlxG.random.int(-1, 1);
 			}
-			offset.x += FlxG.random.int(-2, 2);
-			offset.y += FlxG.random.int(-2, 2);
-			angle = FlxG.random.int(-2, 2);
+			scaryTrail = new FlxTrail(this, null, 10, 3, 0.3, 0.02); //nice
 		}
 		if(this.char == 'bf') {
 			//fuckin offsets
@@ -135,7 +147,7 @@ class HealthIcon extends FlxSprite
 	public function swapOldIcon() {
 		if(isOldIcon = !isOldIcon) changeIcon('bf-old');
 		else changeIcon('bf');
-	}
+	} 
 
 	private var iconOffsets:Array<Float> = [0, 0];
 	public function changeIcon(char:String, ?allowGPU:Bool = true) {

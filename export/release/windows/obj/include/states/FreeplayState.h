@@ -24,6 +24,8 @@ HX_DECLARE_CLASS2(flixel,text,FlxText)
 HX_DECLARE_CLASS2(flixel,tweens,FlxTween)
 HX_DECLARE_CLASS2(flixel,util,IFlxDestroyable)
 HX_DECLARE_CLASS1(objects,HealthIcon)
+HX_DECLARE_CLASS1(shaders,DoChromaticAberrationEffect)
+HX_DECLARE_CLASS1(shaders,Effect)
 HX_DECLARE_CLASS1(states,FixedSongMetadata)
 HX_DECLARE_CLASS1(states,FreeplayState)
 
@@ -91,12 +93,16 @@ class HXCPP_CLASS_ATTRIBUTES FreeplayState_obj : public  ::backend::MusicBeatSta
 		 ::flixel::FlxSprite bg;
 		int intendedColor;
 		 ::flixel::tweens::FlxTween colorTween;
+		 ::shaders::DoChromaticAberrationEffect googlechrom;
 		 ::flixel::FlxSprite check;
 		 ::flixel::FlxSprite glow;
 		 ::flixel::FlxSprite spikes;
 		void create();
 
 		void closeSubState();
+
+		Float newOffset;
+		void beatHit();
 
 		void addSong(::String songName,int weekNum,::String songCharacter,int color);
 		::Dynamic addSong_dyn();

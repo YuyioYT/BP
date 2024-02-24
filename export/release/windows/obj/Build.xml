@@ -2109,6 +2109,7 @@
    <depend name="include/Std.h"/>
    <depend name="include/StringTools.h"/>
    <depend name="include/backend/ClientPrefs.h"/>
+   <depend name="include/backend/Conductor.h"/>
    <depend name="include/backend/Controls.h"/>
    <depend name="include/backend/CoolUtil.h"/>
    <depend name="include/backend/DiscordClient.h"/>
@@ -2121,6 +2122,7 @@
    <depend name="include/backend/Song.h"/>
    <depend name="include/backend/WeekData.h"/>
    <depend name="include/flixel/FlxBasic.h"/>
+   <depend name="include/flixel/FlxCamera.h"/>
    <depend name="include/flixel/FlxG.h"/>
    <depend name="include/flixel/FlxObject.h"/>
    <depend name="include/flixel/FlxSprite.h"/>
@@ -2133,6 +2135,7 @@
    <depend name="include/flixel/addons/ui/interfaces/IEventGetter.h"/>
    <depend name="include/flixel/addons/ui/interfaces/IFlxUIState.h"/>
    <depend name="include/flixel/graphics/FlxGraphic.h"/>
+   <depend name="include/flixel/graphics/tile/FlxGraphicsShader.h"/>
    <depend name="include/flixel/group/FlxTypedGroup.h"/>
    <depend name="include/flixel/group/FlxTypedSpriteGroup.h"/>
    <depend name="include/flixel/input/FlxBaseKeyList.h"/>
@@ -2149,8 +2152,10 @@
    <depend name="include/flixel/system/frontEnds/SoundFrontEnd.h"/>
    <depend name="include/flixel/text/FlxText.h"/>
    <depend name="include/flixel/text/FlxTextBorderStyle.h"/>
+   <depend name="include/flixel/tweens/FlxEase.h"/>
    <depend name="include/flixel/tweens/FlxTween.h"/>
    <depend name="include/flixel/tweens/misc/ColorTween.h"/>
+   <depend name="include/flixel/tweens/misc/VarTween.h"/>
    <depend name="include/flixel/util/IFlxDestroyable.h"/>
    <depend name="include/flixel/util/IFlxPooled.h"/>
    <depend name="include/flixel/util/_FlxColor/FlxColor_Impl_.h"/>
@@ -2159,9 +2164,16 @@
    <depend name="include/haxe/ds/StringMap.h"/>
    <depend name="include/objects/Alphabet.h"/>
    <depend name="include/objects/HealthIcon.h"/>
+   <depend name="include/openfl/display/GraphicsShader.h"/>
+   <depend name="include/openfl/display/Shader.h"/>
    <depend name="include/openfl/events/EventDispatcher.h"/>
    <depend name="include/openfl/events/IEventDispatcher.h"/>
+   <depend name="include/openfl/filters/BitmapFilter.h"/>
+   <depend name="include/openfl/filters/ShaderFilter.h"/>
    <depend name="include/openfl/media/Sound.h"/>
+   <depend name="include/shaders/ChromaticAberrationShader.h"/>
+   <depend name="include/shaders/DoChromaticAberrationEffect.h"/>
+   <depend name="include/shaders/Effect.h"/>
    <depend name="include/states/CategoryState.h"/>
    <depend name="include/states/CharacterSelectState.h"/>
    <depend name="include/states/FixedSongMetadata.h"/>
@@ -7672,12 +7684,14 @@
    <depend name="include/flixel/FlxG.h"/>
    <depend name="include/flixel/FlxObject.h"/>
    <depend name="include/flixel/FlxSprite.h"/>
+   <depend name="include/flixel/addons/effects/FlxTrail.h"/>
    <depend name="include/flixel/animation/FlxAnimation.h"/>
    <depend name="include/flixel/animation/FlxAnimationController.h"/>
    <depend name="include/flixel/animation/FlxBaseAnimation.h"/>
    <depend name="include/flixel/graphics/FlxGraphic.h"/>
    <depend name="include/flixel/graphics/frames/FlxAtlasFrames.h"/>
    <depend name="include/flixel/graphics/frames/FlxFramesCollection.h"/>
+   <depend name="include/flixel/group/FlxTypedSpriteGroup.h"/>
    <depend name="include/flixel/math/FlxBasePoint.h"/>
    <depend name="include/flixel/math/FlxRandom.h"/>
    <depend name="include/flixel/util/IFlxDestroyable.h"/>

@@ -4851,7 +4851,7 @@ function hideshit() // basically a camHUD.visible = false; except it doesnt fuck
 					switch(dad.curCharacter)
 					{
 						case 'bombu-v2','bombu','bambi-scaryooo', 'gary', 'bamburg', 'bamburg-player':
-							zoomAdd	= -0.5;
+							zoomAdd	= -0.5; 
 						case 'bambi-god-2', 'baiburg', 'crusturn', 'hell-1', 'hell-2', 'bambi-hell', '404','404-old':
 							zoomAdd	= -0.15;
 						case 'bambi-3d','god-expunged-1-new', 'god-expunged-1', 'bambi-unfair', 'expunged', 'bambi-piss-3d', 'crimson-dave', 'crimson-bambi':

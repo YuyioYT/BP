@@ -1,5 +1,6 @@
 package states;
 
+import openfl.filters.ShaderFilter;
 import flixel.addons.display.FlxBackdrop;
 import substates.ResetScoreSubState;
 import backend.Song;
@@ -23,7 +24,7 @@ import flixel.system.FlxSound;
 import states.FreeplayState;
 import openfl.utils.Assets as OpenFlAssets;
 #if MODS_ALLOWED
-import sys.FileSystem;
+import sys.FileSystem; 
 #end
 
 using StringTools;
@@ -53,6 +54,12 @@ class FreeplayState extends MusicBeatState
 	var bg:FlxSprite;
 	var intendedColor:Int;
 	var colorTween:FlxTween;
+
+	var googlechrom:DoChromaticAberrationEffect = new DoChromaticAberrationEffect();
+
+	var check:FlxSprite;
+	var glow:FlxSprite;
+	var spikes:FlxSprite;
 
 	public static function randomizeBG():flixel.system.FlxAssets.FlxGraphicAsset
 		{
@@ -90,11 +97,6 @@ class FreeplayState extends MusicBeatState
 		'backgrounds/zevisly'
 	];
 
-	var check:FlxSprite;
-	var glow:FlxSprite;
-	var spikes:FlxSprite;
-
-
 	override function create()
 	{
 		persistentUpdate = true;
@@ -105,6 +107,9 @@ class FreeplayState extends MusicBeatState
 		{
 			WeekData.reloadWeekFiles(false);
 		}
+
+		Conductor.bpmChangeMap = [];
+		Conductor.changeBPM(100);
 
 		// there's no too much thing i changed here
 		// btw why im leaving so much comments :so:b
@@ -167,6 +172,8 @@ class FreeplayState extends MusicBeatState
 		spikes.screenCenter();
 		add(spikes);
 		spikes.scrollFactor.set();
+
+		FlxG.camera.setFilters([new ShaderFilter(googlechrom.shader)]);
 
 		grpSongs = new FlxTypedGroup<Alphabet>();
 		add(grpSongs);
@@ -245,6 +252,16 @@ class FreeplayState extends MusicBeatState
 		super.closeSubState();
 	}
 
+	var newOffset = 0.05;
+	override function beatHit()
+		{
+			super.beatHit();
+			FlxG.camera.zoom = 1.05;
+			FlxTween.tween(FlxG.camera, {zoom: 1}, 0.3, {ease: FlxEase.quadOut});
+
+			googlechrom.offset = newOffset;
+		}
+
 	public function addSong(songName:String, weekNum:Int, songCharacter:String, color:Int)
 	{
 		songs.push(new FixedSongMetadata(songName, weekNum, songCharacter, color));
@@ -266,6 +283,10 @@ class FreeplayState extends MusicBeatState
 		{
 			FlxG.sound.music.volume += 0.5 * FlxG.elapsed;
 		}
+
+		FlxTween.tween(googlechrom, {offset: 0.0},2, { ease: FlxEase.linear });
+
+		Conductor.songPosition = FlxG.sound.music.time;
 
 		lerpScore = Math.floor(FlxMath.lerp(lerpScore, intendedScore, CoolUtil.boundTo(elapsed * 24, 0, 1)));
 		lerpRating = FlxMath.lerp(lerpRating, intendedRating, CoolUtil.boundTo(elapsed * 12, 0, 1));
@@ -372,6 +393,8 @@ class FreeplayState extends MusicBeatState
 					vocals = new FlxSound();
 
 				FlxG.sound.list.add(vocals);
+				Conductor.mapBPMChanges(PlayState.SONG);
+				Conductor.changeBPM(PlayState.SONG.bpm);
 				FlxG.sound.playMusic(Paths.inst(PlayState.SONG.song), 0.7);
 				vocals.play();
 				vocals.persist = true;

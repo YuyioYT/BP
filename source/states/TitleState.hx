@@ -188,9 +188,7 @@ class TitleState extends MusicBeatState
 			}
 		}
 
-		Conductor.changeBPM(202);
-
-		//Conductor.bpm = titleJSON.bpm;
+		Conductor.bpm = titleJSON.bpm;
 		persistentUpdate = true;
 
 		check = new FlxBackdrop(Paths.image('menuimages/check'),0,0);
@@ -534,17 +532,17 @@ class TitleState extends MusicBeatState
 			{
 				case 1:
 					FlxG.sound.playMusic(Paths.music('menu/Gates of the hell'), 0);
-					FlxG.sound.music.fadeIn(4, 0, 0.7);
+					FlxG.sound.music.fadeIn(5, 0, 0.7);
 				case 2:
 					createCoolText(['Bambi\'s purgatory made by'], 40);
 				case 4:
 					addMoreText('Whatsdown', 40);
-					addMoreText('EpicRandomness11', 40);
-					addMoreText('Reginald Reborn', 40);
 				case 5:
-					deleteCoolText();
+					addMoreText('EpicRandomness11', 40);
 				case 6:
+					addMoreText('Reginald Reborn', 40);
 				case 7:
+					deleteCoolText();
 				case 8:
 				case 9:
 					deleteCoolText();
@@ -554,36 +552,24 @@ class TitleState extends MusicBeatState
 					addMoreText(curWacky[1]);
 				case 13:
 					deleteCoolText();
-				case 14:
-				case 15:
-				case 16:
-				case 17:
-				case 18:
-				case 19:
-				case 20:
-				case 21:
-				case 22:
-				case 23:
-				case 24:
-				case 25:
-				case 26:
-				case 27:
 				case 28:
-				case 29:
-					FlxTween.tween(camera, {zoom:2}, 5, {ease: FlxEase.expoOut});
-					addMoreText('Dave');
-				case 30:
-					addMoreText('&');
+					FlxTween.tween(camera, {zoom:2}, 3, {ease: FlxEase.expoIn});	
 				case 31:
-					addMoreText('Bambi');
+					Conductor.changeBPM(302);
+					addMoreText('Dave');
 				case 32:
-					addMoreText('Bambi\'s');
+					addMoreText('&');
 				case 33:
-					addMoreText('Purgatory');
+					addMoreText('Bambi');
 				case 34:
-					addMoreText('V1');
+					addMoreText('Bambi\'s');
 				case 35:
+					addMoreText('Purgatory');
+				case 36:
+					addMoreText('V1');
+				case 37:
 					skipIntro();
+					Conductor.changeBPM(102);
 					FlxG.camera.zoom = 1;
 			}
 		}
