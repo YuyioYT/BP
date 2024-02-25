@@ -84,6 +84,7 @@ class HXCPP_CLASS_ATTRIBUTES TitleState_obj : public  ::backend::MusicBeatState_
 		 ::flixel::FlxSprite wackyImage;
 		bool mustUpdate;
 		 ::Dynamic titleJSON;
+		bool beatCamera;
 		void create();
 
 		 ::flixel::FlxSprite logo;

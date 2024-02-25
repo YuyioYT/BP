@@ -160,7 +160,7 @@ class MainMenuState extends MusicBeatState
 		add(spikes);
 		spikes.scrollFactor.set();
 
-		var gr:FlxSprite = new FlxSprite(-80).loadGraphic(Paths.image('menuimages/funny'));
+		gr = new FlxSprite(-80).loadGraphic(Paths.image('menuimages/funny'));
 		gr.setGraphicSize(Std.int(gr.width * 1.175));
 		gr.updateHitbox();
 		gr.screenCenter();
@@ -213,7 +213,7 @@ class MainMenuState extends MusicBeatState
 				menuItem.setPosition(xPosition, yPosition);
 			}
 
-		var logo:FlxSprite = new FlxSprite(600,-100).loadGraphic(Paths.image('menuimages/logo'));
+		logo = new FlxSprite(600,-100).loadGraphic(Paths.image('menuimages/logo'));
 		logo.antialiasing = ClientPrefs.data.antialiasing;
 		logo.updateHitbox();
 		logo.scale.x = 0.6;
@@ -322,20 +322,21 @@ class MainMenuState extends MusicBeatState
 					selectedSomethin = true;
 					FlxG.sound.play(Paths.sound('Menu/confirmMenu'));
 
+
 					FlxTween.tween(FlxG.camera, {zoom:1.35}, 1.45, {ease: FlxEase.expoIn});
+					
+					FlxTween.tween(gr, {x: 1000}, 2, {ease: FlxEase.circInOut});
+					FlxTween.tween(gr, {alpha: 0}, 2, {ease: FlxEase.expoOut, onComplete: function(twn:FlxTween) { gr.kill(); }});
+
+					FlxTween.tween(logo, {x: 1000}, 5, {ease: FlxEase.circInOut});
+					FlxTween.tween(logo, {alpha: 0}, 1.5, {ease: FlxEase.expoOut, onComplete: function(twn:FlxTween) { logo.kill(); } });
 
 					menuItems.forEach(function(spr:FlxSprite)
 					{
 						if (curSelected != spr.ID)
 						{
-							FlxTween.tween(spr, {x: 1000}, 1.4, {ease: FlxEase.quadOut});
-							FlxTween.tween(spr, {alpha: 0}, 0.4, {
-								ease: FlxEase.quadOut,
-								onComplete: function(twn:FlxTween)
-								{
-									spr.kill();
-								}
-							});
+							FlxTween.tween(spr, {x: 1000}, 1.4, {ease: FlxEase.circInOut});
+							FlxTween.tween(spr, {alpha: 0}, 0.4, {ease: FlxEase.expoOut, onComplete: function(twn:FlxTween){ spr.kill(); } });
 						}
 						else
 						{

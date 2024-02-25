@@ -41,7 +41,7 @@ typedef TitleData =
 	bpm:Int
 }
 
-class TitleState extends MusicBeatState
+class TitleStatee extends MusicBeatState
 {
 	public static var muteKeys:Array<FlxKey> = [FlxKey.ZERO];
 	public static var volumeDownKeys:Array<FlxKey> = [FlxKey.NUMPADMINUS, FlxKey.MINUS];
@@ -70,7 +70,7 @@ class TitleState extends MusicBeatState
 
 	var titleJSON:TitleData;
 
-	var beatCamera:Bool = false;
+	var beatCamera:Bool = false; 
 
 	public static var updateVersion:String = '';
 

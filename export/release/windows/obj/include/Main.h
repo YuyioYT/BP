@@ -68,7 +68,13 @@ class HXCPP_CLASS_ATTRIBUTES Main_obj : public  ::openfl::display::Sprite_obj
 		static void resetSpriteCache( ::openfl::display::Sprite sprite);
 		static ::Dynamic resetSpriteCache_dyn();
 
-		 ::Dynamic game;
+		int gameWidth;
+		int gameHeight;
+		::hx::Class initialState;
+		Float zoom;
+		int framerate;
+		bool skipSplash;
+		bool startFullscreen;
 		void changeFPSColor(int color);
 		::Dynamic changeFPSColor_dyn();
 

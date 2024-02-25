@@ -187,31 +187,30 @@
 #endif
 
 HX_DEFINE_STACK_FRAME(_hx_pos_e47a9afac0942eb9_31_new,"Main","new",0x6616a5cb,"Main.new","Main.hx",31,0x087e5c05)
-HX_LOCAL_STACK_FRAME(_hx_pos_e47a9afac0942eb9_47_changeFPSColor,"Main","changeFPSColor",0xbde8c2bf,"Main.changeFPSColor","Main.hx",47,0x087e5c05)
-HX_LOCAL_STACK_FRAME(_hx_pos_e47a9afac0942eb9_72_init,"Main","init",0xea732345,"Main.init","Main.hx",72,0x087e5c05)
-HX_LOCAL_STACK_FRAME(_hx_pos_e47a9afac0942eb9_124_setupGame,"Main","setupGame",0x7f7688ba,"Main.setupGame","Main.hx",124,0x087e5c05)
-HX_LOCAL_STACK_FRAME(_hx_pos_e47a9afac0942eb9_82_setupGame,"Main","setupGame",0x7f7688ba,"Main.setupGame","Main.hx",82,0x087e5c05)
-HX_LOCAL_STACK_FRAME(_hx_pos_e47a9afac0942eb9_149_onCrash,"Main","onCrash",0x46bec533,"Main.onCrash","Main.hx",149,0x087e5c05)
-HX_LOCAL_STACK_FRAME(_hx_pos_e47a9afac0942eb9_54_main,"Main","main",0xed0e206e,"Main.main","Main.hx",54,0x087e5c05)
-HX_LOCAL_STACK_FRAME(_hx_pos_e47a9afac0942eb9_139_resetSpriteCache,"Main","resetSpriteCache",0xd7fbf223,"Main.resetSpriteCache","Main.hx",139,0x087e5c05)
-HX_LOCAL_STACK_FRAME(_hx_pos_e47a9afac0942eb9_44_boot,"Main","boot",0xe5d36c67,"Main.boot","Main.hx",44,0x087e5c05)
+HX_LOCAL_STACK_FRAME(_hx_pos_e47a9afac0942eb9_46_changeFPSColor,"Main","changeFPSColor",0xbde8c2bf,"Main.changeFPSColor","Main.hx",46,0x087e5c05)
+HX_LOCAL_STACK_FRAME(_hx_pos_e47a9afac0942eb9_74_init,"Main","init",0xea732345,"Main.init","Main.hx",74,0x087e5c05)
+HX_LOCAL_STACK_FRAME(_hx_pos_e47a9afac0942eb9_126_setupGame,"Main","setupGame",0x7f7688ba,"Main.setupGame","Main.hx",126,0x087e5c05)
+HX_LOCAL_STACK_FRAME(_hx_pos_e47a9afac0942eb9_84_setupGame,"Main","setupGame",0x7f7688ba,"Main.setupGame","Main.hx",84,0x087e5c05)
+HX_LOCAL_STACK_FRAME(_hx_pos_e47a9afac0942eb9_151_onCrash,"Main","onCrash",0x46bec533,"Main.onCrash","Main.hx",151,0x087e5c05)
+HX_LOCAL_STACK_FRAME(_hx_pos_e47a9afac0942eb9_56_main,"Main","main",0xed0e206e,"Main.main","Main.hx",56,0x087e5c05)
+HX_LOCAL_STACK_FRAME(_hx_pos_e47a9afac0942eb9_141_resetSpriteCache,"Main","resetSpriteCache",0xd7fbf223,"Main.resetSpriteCache","Main.hx",141,0x087e5c05)
+HX_LOCAL_STACK_FRAME(_hx_pos_e47a9afac0942eb9_42_boot,"Main","boot",0xe5d36c67,"Main.boot","Main.hx",42,0x087e5c05)
 
 void Main_obj::__construct(){
             	HX_STACKFRAME(&_hx_pos_e47a9afac0942eb9_31_new)
-HXLINE(  33)		this->game =  ::Dynamic(::hx::Anon_obj::Create(7)
-            			->setFixed(0,HX_("width",06,b6,62,ca),1280)
-            			->setFixed(1,HX_("height",e7,07,4c,02),720)
-            			->setFixed(2,HX_("skipSplash",46,75,9c,27),true)
-            			->setFixed(3,HX_("startFullscreen",3d,c1,ee,2d),false)
-            			->setFixed(4,HX_("initialState",ed,76,1b,48),::hx::ClassOf< ::states::TitleState >())
-            			->setFixed(5,HX_("framerate",8d,e5,4b,4e),144)
-            			->setFixed(6,HX_("zoom",13,a3,f8,50),((Float)-1.0)));
-HXLINE(  59)		super::__construct();
-HXLINE(  61)		if (::hx::IsNotNull( this->stage )) {
-HXLINE(  63)			this->init(null());
+HXLINE(  39)		this->startFullscreen = false;
+HXLINE(  38)		this->skipSplash = false;
+HXLINE(  37)		this->framerate = 60;
+HXLINE(  36)		this->zoom = ((Float)-1);
+HXLINE(  35)		this->initialState = ::hx::ClassOf< ::states::TitleState >();
+HXLINE(  34)		this->gameHeight = 720;
+HXLINE(  33)		this->gameWidth = 1280;
+HXLINE(  61)		super::__construct();
+HXLINE(  63)		if (::hx::IsNotNull( this->stage )) {
+HXLINE(  65)			this->init(null());
             		}
             		else {
-HXLINE(  67)			this->addEventListener(HX_("addedToStage",63,22,55,0c),this->init_dyn(),null(),null(),null());
+HXLINE(  69)			this->addEventListener(HX_("addedToStage",63,22,55,0c),this->init_dyn(),null(),null(),null());
             		}
             	}
 
@@ -247,19 +246,21 @@ bool Main_obj::_hx_isInstanceOf(int inClassId) {
 }
 
 void Main_obj::changeFPSColor(int color){
-            	HX_STACKFRAME(&_hx_pos_e47a9afac0942eb9_47_changeFPSColor)
-HXDLIN(  47)		::Main_obj::fpsVar->set_textColor(color);
+            	HX_STACKFRAME(&_hx_pos_e47a9afac0942eb9_46_changeFPSColor)
+HXDLIN(  46)		if (::hx::IsNotNull( ::Main_obj::fpsVar )) {
+HXLINE(  48)			::Main_obj::fpsVar->set_textColor(color);
+            		}
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC1(Main_obj,changeFPSColor,(void))
 
 void Main_obj::init( ::openfl::events::Event E){
-            	HX_STACKFRAME(&_hx_pos_e47a9afac0942eb9_72_init)
-HXLINE(  73)		if (this->hasEventListener(HX_("addedToStage",63,22,55,0c))) {
-HXLINE(  75)			this->removeEventListener(HX_("addedToStage",63,22,55,0c),this->init_dyn(),null());
+            	HX_STACKFRAME(&_hx_pos_e47a9afac0942eb9_74_init)
+HXLINE(  75)		if (this->hasEventListener(HX_("addedToStage",63,22,55,0c))) {
+HXLINE(  77)			this->removeEventListener(HX_("addedToStage",63,22,55,0c),this->init_dyn(),null());
             		}
-HXLINE(  78)		this->setupGame();
+HXLINE(  80)		this->setupGame();
             	}
 
 
@@ -268,95 +269,95 @@ HX_DEFINE_DYNAMIC_FUNC1(Main_obj,init,(void))
 void Main_obj::setupGame(){
             		HX_BEGIN_LOCAL_FUNC_S0(::hx::LocalFunc,_hx_Closure_0) HXARGC(2)
             		void _hx_run(int w,int h){
-            			HX_GC_STACKFRAME(&_hx_pos_e47a9afac0942eb9_124_setupGame)
-HXLINE( 125)			if (::hx::IsNotNull( ::flixel::FlxG_obj::cameras )) {
-HXLINE( 126)				int _g = 0;
-HXDLIN( 126)				::Array< ::Dynamic> _g1 = ::flixel::FlxG_obj::cameras->list;
-HXDLIN( 126)				while((_g < _g1->length)){
-HXLINE( 126)					 ::flixel::FlxCamera cam = _g1->__get(_g).StaticCast<  ::flixel::FlxCamera >();
-HXDLIN( 126)					_g = (_g + 1);
-HXLINE( 128)					bool _hx_tmp;
-HXDLIN( 128)					if (::hx::IsNotNull( cam )) {
-HXLINE( 128)						_hx_tmp = ::hx::IsNotNull( cam->_filters );
+            			HX_GC_STACKFRAME(&_hx_pos_e47a9afac0942eb9_126_setupGame)
+HXLINE( 127)			if (::hx::IsNotNull( ::flixel::FlxG_obj::cameras )) {
+HXLINE( 128)				int _g = 0;
+HXDLIN( 128)				::Array< ::Dynamic> _g1 = ::flixel::FlxG_obj::cameras->list;
+HXDLIN( 128)				while((_g < _g1->length)){
+HXLINE( 128)					 ::flixel::FlxCamera cam = _g1->__get(_g).StaticCast<  ::flixel::FlxCamera >();
+HXDLIN( 128)					_g = (_g + 1);
+HXLINE( 130)					bool _hx_tmp;
+HXDLIN( 130)					if (::hx::IsNotNull( cam )) {
+HXLINE( 130)						_hx_tmp = ::hx::IsNotNull( cam->_filters );
             					}
             					else {
-HXLINE( 128)						_hx_tmp = false;
+HXLINE( 130)						_hx_tmp = false;
             					}
-HXDLIN( 128)					if (_hx_tmp) {
-HXLINE( 129)						::Main_obj::resetSpriteCache(cam->flashSprite);
+HXDLIN( 130)					if (_hx_tmp) {
+HXLINE( 131)						::Main_obj::resetSpriteCache(cam->flashSprite);
             					}
             				}
             			}
-HXLINE( 133)			if (::hx::IsNotNull( ::flixel::FlxG_obj::game )) {
-HXLINE( 134)				::Main_obj::resetSpriteCache(::flixel::FlxG_obj::game);
+HXLINE( 135)			if (::hx::IsNotNull( ::flixel::FlxG_obj::game )) {
+HXLINE( 136)				::Main_obj::resetSpriteCache(::flixel::FlxG_obj::game);
             			}
             		}
             		HX_END_LOCAL_FUNC2((void))
 
-            	HX_GC_STACKFRAME(&_hx_pos_e47a9afac0942eb9_82_setupGame)
-HXLINE(  83)		int stageWidth = ::openfl::Lib_obj::get_current()->stage->stageWidth;
-HXLINE(  84)		int stageHeight = ::openfl::Lib_obj::get_current()->stage->stageHeight;
-HXLINE(  86)		if (::hx::IsEq( this->game->__Field(HX_("zoom",13,a3,f8,50),::hx::paccDynamic),((Float)-1.0) )) {
-HXLINE(  88)			Float ratioX = (( (Float)(stageWidth) ) / ( (Float)(this->game->__Field(HX_("width",06,b6,62,ca),::hx::paccDynamic)) ));
-HXLINE(  89)			Float ratioY = (( (Float)(stageHeight) ) / ( (Float)(this->game->__Field(HX_("height",e7,07,4c,02),::hx::paccDynamic)) ));
-HXLINE(  90)			this->game->__SetField(HX_("zoom",13,a3,f8,50),::Math_obj::min(ratioX,ratioY),::hx::paccDynamic);
-HXLINE(  91)			this->game->__SetField(HX_("width",06,b6,62,ca),::Math_obj::ceil((( (Float)(stageWidth) ) / ( (Float)(this->game->__Field(HX_("zoom",13,a3,f8,50),::hx::paccDynamic)) ))),::hx::paccDynamic);
-HXLINE(  92)			this->game->__SetField(HX_("height",e7,07,4c,02),::Math_obj::ceil((( (Float)(stageHeight) ) / ( (Float)(this->game->__Field(HX_("zoom",13,a3,f8,50),::hx::paccDynamic)) ))),::hx::paccDynamic);
+            	HX_GC_STACKFRAME(&_hx_pos_e47a9afac0942eb9_84_setupGame)
+HXLINE(  85)		int stageWidth = ::openfl::Lib_obj::get_current()->stage->stageWidth;
+HXLINE(  86)		int stageHeight = ::openfl::Lib_obj::get_current()->stage->stageHeight;
+HXLINE(  88)		if ((this->zoom == -1)) {
+HXLINE(  90)			Float ratioX = (( (Float)(stageWidth) ) / ( (Float)(this->gameWidth) ));
+HXLINE(  91)			Float ratioY = (( (Float)(stageHeight) ) / ( (Float)(this->gameHeight) ));
+HXLINE(  92)			this->zoom = ::Math_obj::min(ratioX,ratioY);
+HXLINE(  93)			this->gameWidth = ::Math_obj::ceil((( (Float)(stageWidth) ) / this->zoom));
+HXLINE(  94)			this->gameHeight = ::Math_obj::ceil((( (Float)(stageHeight) ) / this->zoom));
             		}
-HXLINE(  95)		linc::callbacks::set_callbacks_function(::cpp::Function< int ( cpp::Reference<lua_State>,::String)>(::hx::AnyCast(&::psychlua::CallbackHandler_obj::call )));
-HXLINE(  96)		::backend::Controls_obj::instance =  ::backend::Controls_obj::__alloc( HX_CTX );
-HXLINE(  97)		::backend::ClientPrefs_obj::loadDefaultKeys();
-HXLINE(  98)		this->addChild( ::flixel::FlxGame_obj::__alloc( HX_CTX ,this->game->__Field(HX_("width",06,b6,62,ca),::hx::paccDynamic),this->game->__Field(HX_("height",e7,07,4c,02),::hx::paccDynamic),this->game->__Field(HX_("initialState",ed,76,1b,48),::hx::paccDynamic),this->game->__Field(HX_("framerate",8d,e5,4b,4e),::hx::paccDynamic),this->game->__Field(HX_("framerate",8d,e5,4b,4e),::hx::paccDynamic),this->game->__Field(HX_("skipSplash",46,75,9c,27),::hx::paccDynamic),this->game->__Field(HX_("startFullscreen",3d,c1,ee,2d),::hx::paccDynamic)));
-HXLINE( 101)		::Main_obj::fpsVar =  ::openfl::display::FPS_obj::__alloc( HX_CTX ,10,3,16777215);
-HXLINE( 102)		this->addChild(::Main_obj::fpsVar);
-HXLINE( 103)		::openfl::Lib_obj::get_current()->stage->align = ::openfl::display::_StageAlign::StageAlign_Impl__obj::fromString(HX_("tl",78,65,00,00));
-HXLINE( 104)		::openfl::Lib_obj::get_current()->stage->set_scaleMode(2);
-HXLINE( 105)		if (::hx::IsNotNull( ::Main_obj::fpsVar )) {
-HXLINE( 106)			::Main_obj::fpsVar->set_visible(::backend::ClientPrefs_obj::data->showFPS);
+HXLINE(  97)		linc::callbacks::set_callbacks_function(::cpp::Function< int ( cpp::Reference<lua_State>,::String)>(::hx::AnyCast(&::psychlua::CallbackHandler_obj::call )));
+HXLINE(  98)		::backend::Controls_obj::instance =  ::backend::Controls_obj::__alloc( HX_CTX );
+HXLINE(  99)		::backend::ClientPrefs_obj::loadDefaultKeys();
+HXLINE( 100)		this->addChild( ::flixel::FlxGame_obj::__alloc( HX_CTX ,this->gameWidth,this->gameHeight,this->initialState,this->framerate,this->framerate,this->skipSplash,this->startFullscreen));
+HXLINE( 103)		::Main_obj::fpsVar =  ::openfl::display::FPS_obj::__alloc( HX_CTX ,10,3,16777215);
+HXLINE( 104)		this->addChild(::Main_obj::fpsVar);
+HXLINE( 105)		::openfl::Lib_obj::get_current()->stage->align = ::openfl::display::_StageAlign::StageAlign_Impl__obj::fromString(HX_("tl",78,65,00,00));
+HXLINE( 106)		::openfl::Lib_obj::get_current()->stage->set_scaleMode(2);
+HXLINE( 107)		if (::hx::IsNotNull( ::Main_obj::fpsVar )) {
+HXLINE( 108)			::Main_obj::fpsVar->set_visible(::backend::ClientPrefs_obj::data->showFPS);
             		}
-HXLINE( 116)		::openfl::Lib_obj::get_current()->get_loaderInfo()->uncaughtErrorEvents->addEventListener(HX_("uncaughtError",f3,98,8b,8b),this->onCrash_dyn(),null(),null(),null());
-HXLINE( 120)		::backend::DiscordClient_obj::start();
-HXLINE( 124)		::flixel::FlxG_obj::signals->gameResized->add( ::Dynamic(new _hx_Closure_0()));
+HXLINE( 118)		::openfl::Lib_obj::get_current()->get_loaderInfo()->uncaughtErrorEvents->addEventListener(HX_("uncaughtError",f3,98,8b,8b),this->onCrash_dyn(),null(),null(),null());
+HXLINE( 122)		::backend::DiscordClient_obj::start();
+HXLINE( 126)		::flixel::FlxG_obj::signals->gameResized->add( ::Dynamic(new _hx_Closure_0()));
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC0(Main_obj,setupGame,(void))
 
 void Main_obj::onCrash( ::openfl::events::UncaughtErrorEvent e){
-            	HX_STACKFRAME(&_hx_pos_e47a9afac0942eb9_149_onCrash)
-HXLINE( 150)		::String errMsg = HX_("",00,00,00,00);
-HXLINE( 152)		::Array< ::Dynamic> callStack = ::haxe::_CallStack::CallStack_Impl__obj::exceptionStack(true);
-HXLINE( 153)		::String dateNow = ::Date_obj::now()->toString();
-HXLINE( 155)		dateNow = ::StringTools_obj::replace(dateNow,HX_(" ",20,00,00,00),HX_("_",5f,00,00,00));
-HXLINE( 156)		dateNow = ::StringTools_obj::replace(dateNow,HX_(":",3a,00,00,00),HX_("'",27,00,00,00));
-HXLINE( 151)		::String path = (((HX_("./crash/",69,79,f9,62) + HX_("PsychEngine_",82,ba,54,e7)) + dateNow) + HX_(".txt",02,3f,c0,1e));
-HXLINE( 160)		{
-HXLINE( 160)			int _g = 0;
-HXDLIN( 160)			while((_g < callStack->length)){
-HXLINE( 160)				 ::haxe::StackItem stackItem = callStack->__get(_g).StaticCast<  ::haxe::StackItem >();
-HXDLIN( 160)				_g = (_g + 1);
-HXLINE( 162)				if ((stackItem->_hx_getIndex() == 2)) {
-HXLINE( 164)					 ::haxe::StackItem s = stackItem->_hx_getObject(0).StaticCast<  ::haxe::StackItem >();
-HXDLIN( 164)					::String file = stackItem->_hx_getString(1);
-HXDLIN( 164)					int line = stackItem->_hx_getInt(2);
-HXDLIN( 164)					 ::Dynamic column = stackItem->_hx_getObject(3);
-HXLINE( 165)					errMsg = (errMsg + (((file + HX_(" (line ",a4,24,f7,a5)) + line) + HX_(")\n",c1,23,00,00)));
+            	HX_STACKFRAME(&_hx_pos_e47a9afac0942eb9_151_onCrash)
+HXLINE( 152)		::String errMsg = HX_("",00,00,00,00);
+HXLINE( 154)		::Array< ::Dynamic> callStack = ::haxe::_CallStack::CallStack_Impl__obj::exceptionStack(true);
+HXLINE( 155)		::String dateNow = ::Date_obj::now()->toString();
+HXLINE( 157)		dateNow = ::StringTools_obj::replace(dateNow,HX_(" ",20,00,00,00),HX_("_",5f,00,00,00));
+HXLINE( 158)		dateNow = ::StringTools_obj::replace(dateNow,HX_(":",3a,00,00,00),HX_("'",27,00,00,00));
+HXLINE( 153)		::String path = (((HX_("./crash/",69,79,f9,62) + HX_("PsychEngine_",82,ba,54,e7)) + dateNow) + HX_(".txt",02,3f,c0,1e));
+HXLINE( 162)		{
+HXLINE( 162)			int _g = 0;
+HXDLIN( 162)			while((_g < callStack->length)){
+HXLINE( 162)				 ::haxe::StackItem stackItem = callStack->__get(_g).StaticCast<  ::haxe::StackItem >();
+HXDLIN( 162)				_g = (_g + 1);
+HXLINE( 164)				if ((stackItem->_hx_getIndex() == 2)) {
+HXLINE( 166)					 ::haxe::StackItem s = stackItem->_hx_getObject(0).StaticCast<  ::haxe::StackItem >();
+HXDLIN( 166)					::String file = stackItem->_hx_getString(1);
+HXDLIN( 166)					int line = stackItem->_hx_getInt(2);
+HXDLIN( 166)					 ::Dynamic column = stackItem->_hx_getObject(3);
+HXLINE( 167)					errMsg = (errMsg + (((file + HX_(" (line ",a4,24,f7,a5)) + line) + HX_(")\n",c1,23,00,00)));
             				}
             				else {
-HXLINE( 167)					::Sys_obj::println(stackItem);
+HXLINE( 169)					::Sys_obj::println(stackItem);
             				}
             			}
             		}
-HXLINE( 171)		errMsg = (errMsg + ((HX_("\nUncaught Error: ",ed,bf,e1,72) + ::Std_obj::string(e->error)) + HX_("\nPlease report this error to the GitHub page: https://github.com/ShadowMario/FNF-PsychEngine\n\n> Crash Handler written by: sqirra-rng",3c,20,3f,85)));
-HXLINE( 173)		if (!(::sys::FileSystem_obj::exists(HX_("./crash/",69,79,f9,62)))) {
-HXLINE( 174)			::sys::FileSystem_obj::createDirectory(HX_("./crash/",69,79,f9,62));
+HXLINE( 173)		errMsg = (errMsg + ((HX_("\nUncaught Error: ",ed,bf,e1,72) + ::Std_obj::string(e->error)) + HX_("\nPlease report this error to the GitHub page: https://github.com/ShadowMario/FNF-PsychEngine\n\n> Crash Handler written by: sqirra-rng",3c,20,3f,85)));
+HXLINE( 175)		if (!(::sys::FileSystem_obj::exists(HX_("./crash/",69,79,f9,62)))) {
+HXLINE( 176)			::sys::FileSystem_obj::createDirectory(HX_("./crash/",69,79,f9,62));
             		}
-HXLINE( 176)		::sys::io::File_obj::saveContent(path,(errMsg + HX_("\n",0a,00,00,00)));
-HXLINE( 178)		::Sys_obj::println(errMsg);
-HXLINE( 179)		::Sys_obj::println((HX_("Crash dump saved in ",cf,9c,69,5d) + ::haxe::io::Path_obj::normalize(path)));
-HXLINE( 181)		::lime::app::Application_obj::current->_hx___window->alert(errMsg,HX_("Error!",79,f7,fc,85));
-HXLINE( 182)		::backend::DiscordClient_obj::shutdown();
-HXLINE( 183)		::Sys_obj::exit(1);
+HXLINE( 178)		::sys::io::File_obj::saveContent(path,(errMsg + HX_("\n",0a,00,00,00)));
+HXLINE( 180)		::Sys_obj::println(errMsg);
+HXLINE( 181)		::Sys_obj::println((HX_("Crash dump saved in ",cf,9c,69,5d) + ::haxe::io::Path_obj::normalize(path)));
+HXLINE( 183)		::lime::app::Application_obj::current->_hx___window->alert(errMsg,HX_("Error!",79,f7,fc,85));
+HXLINE( 184)		::backend::DiscordClient_obj::shutdown();
+HXLINE( 185)		::Sys_obj::exit(1);
             	}
 
 
@@ -367,18 +368,18 @@ HX_DEFINE_DYNAMIC_FUNC1(Main_obj,onCrash,(void))
 int Main_obj::changeID;
 
 void Main_obj::main(){
-            	HX_GC_STACKFRAME(&_hx_pos_e47a9afac0942eb9_54_main)
-HXDLIN(  54)		 ::openfl::display::MovieClip _hx_tmp = ::openfl::Lib_obj::get_current();
-HXDLIN(  54)		_hx_tmp->addChild( ::Main_obj::__alloc( HX_CTX ));
+            	HX_GC_STACKFRAME(&_hx_pos_e47a9afac0942eb9_56_main)
+HXDLIN(  56)		 ::openfl::display::MovieClip _hx_tmp = ::openfl::Lib_obj::get_current();
+HXDLIN(  56)		_hx_tmp->addChild( ::Main_obj::__alloc( HX_CTX ));
             	}
 
 
 STATIC_HX_DEFINE_DYNAMIC_FUNC0(Main_obj,main,(void))
 
 void Main_obj::resetSpriteCache( ::openfl::display::Sprite sprite){
-            	HX_STACKFRAME(&_hx_pos_e47a9afac0942eb9_139_resetSpriteCache)
-HXLINE( 140)		sprite->_hx___cacheBitmap = null();
-HXLINE( 141)		sprite->_hx___cacheBitmapData = null();
+            	HX_STACKFRAME(&_hx_pos_e47a9afac0942eb9_141_resetSpriteCache)
+HXLINE( 142)		sprite->_hx___cacheBitmap = null();
+HXLINE( 143)		sprite->_hx___cacheBitmapData = null();
             	}
 
 
@@ -405,14 +406,26 @@ Main_obj::Main_obj()
 void Main_obj::__Mark(HX_MARK_PARAMS)
 {
 	HX_MARK_BEGIN_CLASS(Main);
-	HX_MARK_MEMBER_NAME(game,"game");
+	HX_MARK_MEMBER_NAME(gameWidth,"gameWidth");
+	HX_MARK_MEMBER_NAME(gameHeight,"gameHeight");
+	HX_MARK_MEMBER_NAME(initialState,"initialState");
+	HX_MARK_MEMBER_NAME(zoom,"zoom");
+	HX_MARK_MEMBER_NAME(framerate,"framerate");
+	HX_MARK_MEMBER_NAME(skipSplash,"skipSplash");
+	HX_MARK_MEMBER_NAME(startFullscreen,"startFullscreen");
 	 ::openfl::display::Sprite_obj::__Mark(HX_MARK_ARG);
 	HX_MARK_END_CLASS();
 }
 
 void Main_obj::__Visit(HX_VISIT_PARAMS)
 {
-	HX_VISIT_MEMBER_NAME(game,"game");
+	HX_VISIT_MEMBER_NAME(gameWidth,"gameWidth");
+	HX_VISIT_MEMBER_NAME(gameHeight,"gameHeight");
+	HX_VISIT_MEMBER_NAME(initialState,"initialState");
+	HX_VISIT_MEMBER_NAME(zoom,"zoom");
+	HX_VISIT_MEMBER_NAME(framerate,"framerate");
+	HX_VISIT_MEMBER_NAME(skipSplash,"skipSplash");
+	HX_VISIT_MEMBER_NAME(startFullscreen,"startFullscreen");
 	 ::openfl::display::Sprite_obj::__Visit(HX_VISIT_ARG);
 }
 
@@ -420,17 +433,29 @@ void Main_obj::__Visit(HX_VISIT_PARAMS)
 {
 	switch(inName.length) {
 	case 4:
-		if (HX_FIELD_EQ(inName,"game") ) { return ::hx::Val( game ); }
+		if (HX_FIELD_EQ(inName,"zoom") ) { return ::hx::Val( zoom ); }
 		if (HX_FIELD_EQ(inName,"init") ) { return ::hx::Val( init_dyn() ); }
 		break;
 	case 7:
 		if (HX_FIELD_EQ(inName,"onCrash") ) { return ::hx::Val( onCrash_dyn() ); }
 		break;
 	case 9:
+		if (HX_FIELD_EQ(inName,"gameWidth") ) { return ::hx::Val( gameWidth ); }
+		if (HX_FIELD_EQ(inName,"framerate") ) { return ::hx::Val( framerate ); }
 		if (HX_FIELD_EQ(inName,"setupGame") ) { return ::hx::Val( setupGame_dyn() ); }
+		break;
+	case 10:
+		if (HX_FIELD_EQ(inName,"gameHeight") ) { return ::hx::Val( gameHeight ); }
+		if (HX_FIELD_EQ(inName,"skipSplash") ) { return ::hx::Val( skipSplash ); }
+		break;
+	case 12:
+		if (HX_FIELD_EQ(inName,"initialState") ) { return ::hx::Val( initialState ); }
 		break;
 	case 14:
 		if (HX_FIELD_EQ(inName,"changeFPSColor") ) { return ::hx::Val( changeFPSColor_dyn() ); }
+		break;
+	case 15:
+		if (HX_FIELD_EQ(inName,"startFullscreen") ) { return ::hx::Val( startFullscreen ); }
 	}
 	return super::__Field(inName,inCallProp);
 }
@@ -457,7 +482,21 @@ bool Main_obj::__GetStatic(const ::String &inName, Dynamic &outValue, ::hx::Prop
 {
 	switch(inName.length) {
 	case 4:
-		if (HX_FIELD_EQ(inName,"game") ) { game=inValue.Cast<  ::Dynamic >(); return inValue; }
+		if (HX_FIELD_EQ(inName,"zoom") ) { zoom=inValue.Cast< Float >(); return inValue; }
+		break;
+	case 9:
+		if (HX_FIELD_EQ(inName,"gameWidth") ) { gameWidth=inValue.Cast< int >(); return inValue; }
+		if (HX_FIELD_EQ(inName,"framerate") ) { framerate=inValue.Cast< int >(); return inValue; }
+		break;
+	case 10:
+		if (HX_FIELD_EQ(inName,"gameHeight") ) { gameHeight=inValue.Cast< int >(); return inValue; }
+		if (HX_FIELD_EQ(inName,"skipSplash") ) { skipSplash=inValue.Cast< bool >(); return inValue; }
+		break;
+	case 12:
+		if (HX_FIELD_EQ(inName,"initialState") ) { initialState=inValue.Cast< ::hx::Class >(); return inValue; }
+		break;
+	case 15:
+		if (HX_FIELD_EQ(inName,"startFullscreen") ) { startFullscreen=inValue.Cast< bool >(); return inValue; }
 	}
 	return super::__SetField(inName,inValue,inCallProp);
 }
@@ -476,13 +515,25 @@ bool Main_obj::__SetStatic(const ::String &inName,Dynamic &ioValue,::hx::Propert
 
 void Main_obj::__GetFields(Array< ::String> &outFields)
 {
-	outFields->push(HX_("game",f2,f3,5e,44));
+	outFields->push(HX_("gameWidth",b4,a4,7d,ff));
+	outFields->push(HX_("gameHeight",79,f1,c1,44));
+	outFields->push(HX_("initialState",ed,76,1b,48));
+	outFields->push(HX_("zoom",13,a3,f8,50));
+	outFields->push(HX_("framerate",8d,e5,4b,4e));
+	outFields->push(HX_("skipSplash",46,75,9c,27));
+	outFields->push(HX_("startFullscreen",3d,c1,ee,2d));
 	super::__GetFields(outFields);
 };
 
 #ifdef HXCPP_SCRIPTABLE
 static ::hx::StorageInfo Main_obj_sMemberStorageInfo[] = {
-	{::hx::fsObject /*  ::Dynamic */ ,(int)offsetof(Main_obj,game),HX_("game",f2,f3,5e,44)},
+	{::hx::fsInt,(int)offsetof(Main_obj,gameWidth),HX_("gameWidth",b4,a4,7d,ff)},
+	{::hx::fsInt,(int)offsetof(Main_obj,gameHeight),HX_("gameHeight",79,f1,c1,44)},
+	{::hx::fsObject /* ::hx::Class */ ,(int)offsetof(Main_obj,initialState),HX_("initialState",ed,76,1b,48)},
+	{::hx::fsFloat,(int)offsetof(Main_obj,zoom),HX_("zoom",13,a3,f8,50)},
+	{::hx::fsInt,(int)offsetof(Main_obj,framerate),HX_("framerate",8d,e5,4b,4e)},
+	{::hx::fsBool,(int)offsetof(Main_obj,skipSplash),HX_("skipSplash",46,75,9c,27)},
+	{::hx::fsBool,(int)offsetof(Main_obj,startFullscreen),HX_("startFullscreen",3d,c1,ee,2d)},
 	{ ::hx::fsUnknown, 0, null()}
 };
 static ::hx::StaticInfo Main_obj_sStaticStorageInfo[] = {
@@ -493,7 +544,13 @@ static ::hx::StaticInfo Main_obj_sStaticStorageInfo[] = {
 #endif
 
 static ::String Main_obj_sMemberFields[] = {
-	HX_("game",f2,f3,5e,44),
+	HX_("gameWidth",b4,a4,7d,ff),
+	HX_("gameHeight",79,f1,c1,44),
+	HX_("initialState",ed,76,1b,48),
+	HX_("zoom",13,a3,f8,50),
+	HX_("framerate",8d,e5,4b,4e),
+	HX_("skipSplash",46,75,9c,27),
+	HX_("startFullscreen",3d,c1,ee,2d),
 	HX_("changeFPSColor",4a,a6,32,2f),
 	HX_("init",10,3b,bb,45),
 	HX_("setupGame",0f,51,ed,9e),
@@ -553,8 +610,8 @@ void Main_obj::__register()
 void Main_obj::__boot()
 {
 {
-            	HX_STACKFRAME(&_hx_pos_e47a9afac0942eb9_44_boot)
-HXDLIN(  44)		changeID = 0;
+            	HX_STACKFRAME(&_hx_pos_e47a9afac0942eb9_42_boot)
+HXDLIN(  42)		changeID = 0;
             	}
 }
 
