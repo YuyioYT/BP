@@ -89,6 +89,9 @@ HXLINE(  89)		( ( ::backend::WeekData)(__this) )->fileName = fileName;
 		static void reloadWeekFiles( ::Dynamic isStoryMode);
 		static ::Dynamic reloadWeekFiles_dyn();
 
+		static void loadTheFirstEnabledMod();
+		static ::Dynamic loadTheFirstEnabledMod_dyn();
+
 		static void addWeek(::String weekToCheck,::String path,::String directory,int i,int originalLength);
 		static ::Dynamic addWeek_dyn();
 

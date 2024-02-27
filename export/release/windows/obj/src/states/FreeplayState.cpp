@@ -251,29 +251,28 @@ static const int _hx_array_data_c99c2505_6[] = {
 	(int)146,(int)113,(int)253,
 };
 HX_LOCAL_STACK_FRAME(_hx_pos_22e2030ae3401175_249_closeSubState,"states.FreeplayState","closeSubState",0x28f41720,"states.FreeplayState.closeSubState","states/FreeplayState.hx",249,0x1b2e20da)
-HX_LOCAL_STACK_FRAME(_hx_pos_22e2030ae3401175_257_beatHit,"states.FreeplayState","beatHit",0x83959e14,"states.FreeplayState.beatHit","states/FreeplayState.hx",257,0x1b2e20da)
-HX_LOCAL_STACK_FRAME(_hx_pos_22e2030ae3401175_267_addSong,"states.FreeplayState","addSong",0x98261a2d,"states.FreeplayState.addSong","states/FreeplayState.hx",267,0x1b2e20da)
-HX_LOCAL_STACK_FRAME(_hx_pos_22e2030ae3401175_270_weekIsLocked,"states.FreeplayState","weekIsLocked",0xc3d0b9b1,"states.FreeplayState.weekIsLocked","states/FreeplayState.hx",270,0x1b2e20da)
-HX_LOCAL_STACK_FRAME(_hx_pos_22e2030ae3401175_279_update,"states.FreeplayState","update",0x4a3f9252,"states.FreeplayState.update","states/FreeplayState.hx",279,0x1b2e20da)
-HX_LOCAL_STACK_FRAME(_hx_pos_22e2030ae3401175_452_changeDiff,"states.FreeplayState","changeDiff",0xdc22f65e,"states.FreeplayState.changeDiff","states/FreeplayState.hx",452,0x1b2e20da)
-HX_LOCAL_STACK_FRAME(_hx_pos_22e2030ae3401175_472_changeSelection,"states.FreeplayState","changeSelection",0xa1163b53,"states.FreeplayState.changeSelection","states/FreeplayState.hx",472,0x1b2e20da)
-HX_LOCAL_STACK_FRAME(_hx_pos_22e2030ae3401175_490_changeSelection,"states.FreeplayState","changeSelection",0xa1163b53,"states.FreeplayState.changeSelection","states/FreeplayState.hx",490,0x1b2e20da)
+HX_LOCAL_STACK_FRAME(_hx_pos_22e2030ae3401175_256_beatHit,"states.FreeplayState","beatHit",0x83959e14,"states.FreeplayState.beatHit","states/FreeplayState.hx",256,0x1b2e20da)
+HX_LOCAL_STACK_FRAME(_hx_pos_22e2030ae3401175_264_addSong,"states.FreeplayState","addSong",0x98261a2d,"states.FreeplayState.addSong","states/FreeplayState.hx",264,0x1b2e20da)
+HX_LOCAL_STACK_FRAME(_hx_pos_22e2030ae3401175_267_weekIsLocked,"states.FreeplayState","weekIsLocked",0xc3d0b9b1,"states.FreeplayState.weekIsLocked","states/FreeplayState.hx",267,0x1b2e20da)
+HX_LOCAL_STACK_FRAME(_hx_pos_22e2030ae3401175_276_update,"states.FreeplayState","update",0x4a3f9252,"states.FreeplayState.update","states/FreeplayState.hx",276,0x1b2e20da)
+HX_LOCAL_STACK_FRAME(_hx_pos_22e2030ae3401175_465_changeDiff,"states.FreeplayState","changeDiff",0xdc22f65e,"states.FreeplayState.changeDiff","states/FreeplayState.hx",465,0x1b2e20da)
+HX_LOCAL_STACK_FRAME(_hx_pos_22e2030ae3401175_485_changeSelection,"states.FreeplayState","changeSelection",0xa1163b53,"states.FreeplayState.changeSelection","states/FreeplayState.hx",485,0x1b2e20da)
+HX_LOCAL_STACK_FRAME(_hx_pos_22e2030ae3401175_503_changeSelection,"states.FreeplayState","changeSelection",0xa1163b53,"states.FreeplayState.changeSelection","states/FreeplayState.hx",503,0x1b2e20da)
 HX_LOCAL_STACK_FRAME(_hx_pos_22e2030ae3401175_65_randomizeBG,"states.FreeplayState","randomizeBG",0x60534c4d,"states.FreeplayState.randomizeBG","states/FreeplayState.hx",65,0x1b2e20da)
-HX_LOCAL_STACK_FRAME(_hx_pos_22e2030ae3401175_443_destroyFreeplayVocals,"states.FreeplayState","destroyFreeplayVocals",0x905c3d8f,"states.FreeplayState.destroyFreeplayVocals","states/FreeplayState.hx",443,0x1b2e20da)
+HX_LOCAL_STACK_FRAME(_hx_pos_22e2030ae3401175_456_destroyFreeplayVocals,"states.FreeplayState","destroyFreeplayVocals",0x905c3d8f,"states.FreeplayState.destroyFreeplayVocals","states/FreeplayState.hx",456,0x1b2e20da)
 HX_LOCAL_STACK_FRAME(_hx_pos_22e2030ae3401175_37_boot,"states.FreeplayState","boot",0xd290bc3b,"states.FreeplayState.boot","states/FreeplayState.hx",37,0x1b2e20da)
 HX_LOCAL_STACK_FRAME(_hx_pos_22e2030ae3401175_39_boot,"states.FreeplayState","boot",0xd290bc3b,"states.FreeplayState.boot","states/FreeplayState.hx",39,0x1b2e20da)
 HX_LOCAL_STACK_FRAME(_hx_pos_22e2030ae3401175_71_boot,"states.FreeplayState","boot",0xd290bc3b,"states.FreeplayState.boot","states/FreeplayState.hx",71,0x1b2e20da)
 static const ::String _hx_array_data_c99c2505_24[] = {
 	HX_("backgrounds/arandomguy",31,6c,0a,74),HX_("backgrounds/cesars",bb,1a,0d,24),HX_("backgrounds/cheesedjelly",5b,15,9d,3e),HX_("backgrounds/darealmatt",f9,e0,af,1b),HX_("backgrounds/darlyboxman",87,4f,03,cb),HX_("backgrounds/doodoofeces",a8,45,49,64),HX_("backgrounds/expunged",da,1b,56,ec),HX_("backgrounds/eyes",ac,b2,00,e4),HX_("backgrounds/fast_f00d",77,24,fc,00),HX_("backgrounds/ion",3e,38,33,86),HX_("backgrounds/isaaclul",54,0f,95,76),HX_("backgrounds/kanandraw",7f,8a,e2,58),HX_("backgrounds/mmimim",72,4b,40,b8),HX_("backgrounds/morpho",f1,a5,02,e5),HX_("backgrounds/osp",42,c9,37,86),HX_("backgrounds/Senza_titolo_200_20230711092018",e7,33,2e,cd),HX_("backgrounds/Senza_titolo_201_20230711093117",e5,55,08,95),HX_("backgrounds/slushX",31,fd,f0,92),HX_("backgrounds/spitz",a8,e1,47,a6),HX_("backgrounds/tamrika",e3,04,b8,27),HX_("backgrounds/ultimate poop",05,be,ab,12),HX_("backgrounds/ultimate poop2",8d,86,9a,43),HX_("backgrounds/voltrex",7a,a7,d4,81),HX_("backgrounds/watch_out",54,36,b3,8a),HX_("backgrounds/whatisthis",d6,bd,87,08),HX_("backgrounds/zevisly",58,23,56,e3),
 };
-HX_LOCAL_STACK_FRAME(_hx_pos_22e2030ae3401175_276_boot,"states.FreeplayState","boot",0xd290bc3b,"states.FreeplayState.boot","states/FreeplayState.hx",276,0x1b2e20da)
+HX_LOCAL_STACK_FRAME(_hx_pos_22e2030ae3401175_273_boot,"states.FreeplayState","boot",0xd290bc3b,"states.FreeplayState.boot","states/FreeplayState.hx",273,0x1b2e20da)
 namespace states{
 
 void FreeplayState_obj::__construct( ::flixel::addons::transition::TransitionData TransIn, ::flixel::addons::transition::TransitionData TransOut){
             	HX_GC_STACKFRAME(&_hx_pos_22e2030ae3401175_32_new)
-HXLINE( 277)		this->holdTime = ((Float)0);
-HXLINE( 275)		this->instPlaying = -1;
-HXLINE( 255)		this->newOffset = ((Float)0.05);
+HXLINE( 274)		this->holdTime = ((Float)0);
+HXLINE( 272)		this->instPlaying = -1;
 HXLINE(  58)		this->googlechrom =  ::shaders::DoChromaticAberrationEffect_obj::__alloc( HX_CTX ,null());
 HXLINE(  52)		this->iconArray = ::Array_obj< ::Dynamic>::__new(0);
 HXLINE(  50)		this->curPlaying = false;
@@ -709,259 +708,278 @@ HXLINE( 252)		this->super::closeSubState();
 
 
 void FreeplayState_obj::beatHit(){
-            	HX_STACKFRAME(&_hx_pos_22e2030ae3401175_257_beatHit)
-HXLINE( 258)		this->super::beatHit();
-HXLINE( 259)		::flixel::FlxG_obj::camera->set_zoom(((Float)1.05));
-HXLINE( 260)		::flixel::tweens::FlxTween_obj::tween(::flixel::FlxG_obj::camera, ::Dynamic(::hx::Anon_obj::Create(1)
+            	HX_STACKFRAME(&_hx_pos_22e2030ae3401175_256_beatHit)
+HXLINE( 257)		this->super::beatHit();
+HXLINE( 258)		::flixel::FlxG_obj::camera->set_zoom(((Float)1.05));
+HXLINE( 259)		::flixel::tweens::FlxTween_obj::tween(::flixel::FlxG_obj::camera, ::Dynamic(::hx::Anon_obj::Create(1)
             			->setFixed(0,HX_("zoom",13,a3,f8,50),1)),((Float)0.3), ::Dynamic(::hx::Anon_obj::Create(1)
             			->setFixed(0,HX_("ease",ee,8b,0c,43),::flixel::tweens::FlxEase_obj::quadOut_dyn())));
-HXLINE( 262)		this->googlechrom->set_offset(this->newOffset);
             	}
 
 
 void FreeplayState_obj::addSong(::String songName,int weekNum,::String songCharacter,int color){
-            	HX_GC_STACKFRAME(&_hx_pos_22e2030ae3401175_267_addSong)
-HXDLIN( 267)		::Array< ::Dynamic> _hx_tmp = this->songs;
-HXDLIN( 267)		_hx_tmp->push( ::states::FixedSongMetadata_obj::__alloc( HX_CTX ,songName,weekNum,songCharacter,color));
+            	HX_GC_STACKFRAME(&_hx_pos_22e2030ae3401175_264_addSong)
+HXDLIN( 264)		::Array< ::Dynamic> _hx_tmp = this->songs;
+HXDLIN( 264)		_hx_tmp->push( ::states::FixedSongMetadata_obj::__alloc( HX_CTX ,songName,weekNum,songCharacter,color));
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC4(FreeplayState_obj,addSong,(void))
 
 bool FreeplayState_obj::weekIsLocked(::String name){
-            	HX_STACKFRAME(&_hx_pos_22e2030ae3401175_270_weekIsLocked)
-HXLINE( 271)		 ::backend::WeekData leWeek = ( ( ::backend::WeekData)(::backend::WeekData_obj::weeksLoaded->get(name)) );
-HXLINE( 272)		bool _hx_tmp;
-HXDLIN( 272)		if (!(leWeek->startUnlocked)) {
-HXLINE( 272)			_hx_tmp = (leWeek->weekBefore.length > 0);
+            	HX_STACKFRAME(&_hx_pos_22e2030ae3401175_267_weekIsLocked)
+HXLINE( 268)		 ::backend::WeekData leWeek = ( ( ::backend::WeekData)(::backend::WeekData_obj::weeksLoaded->get(name)) );
+HXLINE( 269)		bool _hx_tmp;
+HXDLIN( 269)		if (!(leWeek->startUnlocked)) {
+HXLINE( 269)			_hx_tmp = (leWeek->weekBefore.length > 0);
             		}
             		else {
-HXLINE( 272)			_hx_tmp = false;
+HXLINE( 269)			_hx_tmp = false;
             		}
-HXDLIN( 272)		if (_hx_tmp) {
-HXLINE( 272)			if (::states::StoryMenuState_obj::weekCompleted->exists(leWeek->weekBefore)) {
-HXLINE( 272)				return !(::states::StoryMenuState_obj::weekCompleted->get_bool(leWeek->weekBefore));
+HXDLIN( 269)		if (_hx_tmp) {
+HXLINE( 269)			if (::states::StoryMenuState_obj::weekCompleted->exists(leWeek->weekBefore)) {
+HXLINE( 269)				return !(::states::StoryMenuState_obj::weekCompleted->get_bool(leWeek->weekBefore));
             			}
             			else {
-HXLINE( 272)				return true;
+HXLINE( 269)				return true;
             			}
             		}
             		else {
-HXLINE( 272)			return false;
+HXLINE( 269)			return false;
             		}
-HXDLIN( 272)		return false;
+HXDLIN( 269)		return false;
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC1(FreeplayState_obj,weekIsLocked,return )
 
 void FreeplayState_obj::update(Float elapsed){
-            	HX_GC_STACKFRAME(&_hx_pos_22e2030ae3401175_279_update)
-HXLINE( 280)		this->super::update(elapsed);
-HXLINE( 282)		if ((::flixel::FlxG_obj::sound->music->_volume < ((Float)0.7))) {
-HXLINE( 284)			 ::flixel::sound::FlxSound fh = ::flixel::FlxG_obj::sound->music;
-HXDLIN( 284)			fh->set_volume((fh->_volume + (((Float)0.5) * ::flixel::FlxG_obj::elapsed)));
+            	HX_GC_STACKFRAME(&_hx_pos_22e2030ae3401175_276_update)
+HXLINE( 277)		this->super::update(elapsed);
+HXLINE( 279)		if ((::flixel::FlxG_obj::sound->music->_volume < ((Float)0.7))) {
+HXLINE( 281)			 ::flixel::sound::FlxSound fh = ::flixel::FlxG_obj::sound->music;
+HXDLIN( 281)			fh->set_volume((fh->_volume + (((Float)0.5) * ::flixel::FlxG_obj::elapsed)));
             		}
-HXLINE( 287)		::flixel::tweens::FlxTween_obj::tween(this->googlechrom, ::Dynamic(::hx::Anon_obj::Create(1)
-            			->setFixed(0,HX_("offset",93,97,3f,60),((Float)0.0))),2, ::Dynamic(::hx::Anon_obj::Create(1)
-            			->setFixed(0,HX_("ease",ee,8b,0c,43),::flixel::tweens::FlxEase_obj::linear_dyn())));
-HXLINE( 289)		::backend::Conductor_obj::songPosition = ::flixel::FlxG_obj::sound->music->_time;
-HXLINE( 291)		Float a = ( (Float)(this->lerpScore) );
-HXDLIN( 291)		this->lerpScore = ::Math_obj::floor((a + (::Math_obj::max(( (Float)(0) ),::Math_obj::min(( (Float)(1) ),(elapsed * ( (Float)(24) )))) * (( (Float)(this->intendedScore) ) - a))));
-HXLINE( 292)		Float a1 = this->lerpRating;
-HXDLIN( 292)		this->lerpRating = (a1 + (::Math_obj::max(( (Float)(0) ),::Math_obj::min(( (Float)(1) ),(elapsed * ( (Float)(12) )))) * (this->intendedRating - a1)));
-HXLINE( 294)		if ((::Math_obj::abs(( (Float)((this->lerpScore - this->intendedScore)) )) <= 10)) {
-HXLINE( 295)			this->lerpScore = this->intendedScore;
-            		}
-HXLINE( 296)		if ((::Math_obj::abs((this->lerpRating - this->intendedRating)) <= ((Float)0.01))) {
-HXLINE( 297)			this->lerpRating = this->intendedRating;
-            		}
-HXLINE( 299)		::Array< ::String > ratingSplit = ::Std_obj::string(::backend::Highscore_obj::floorDecimal((this->lerpRating * ( (Float)(100) )),2)).split(HX_(".",2e,00,00,00));
-HXLINE( 300)		if ((ratingSplit->length < 2)) {
-HXLINE( 301)			ratingSplit->push(HX_("",00,00,00,00));
-            		}
-HXLINE( 304)		while((ratingSplit->__get(1).length < 2)){
-HXLINE( 305)			::Array< ::String > ratingSplit1 = ratingSplit;
-HXDLIN( 305)			int _hx_tmp = 1;
-HXDLIN( 305)			ratingSplit1[_hx_tmp] = (ratingSplit1->__get(_hx_tmp) + HX_("0",30,00,00,00));
-            		}
-HXLINE( 308)		if ((::backend::ClientPrefs_obj::data->Lenguage == HX_W(u"Espa\u00f1ol",14aa,3bff))) {
-HXLINE( 310)			 ::flixel::text::FlxText _hx_tmp = this->scoreText;
-HXDLIN( 310)			::String _hx_tmp1 = ((HX_("MEJOR PORCENTAJE PERSONAL: ",9a,4b,6a,b0) + this->lerpScore) + HX_(" (",08,1c,00,00));
-HXDLIN( 310)			_hx_tmp->set_text(((_hx_tmp1 + ratingSplit->join(HX_(".",2e,00,00,00))) + HX_("%)",64,20,00,00)));
+HXLINE( 284)		if (::backend::ClientPrefs_obj::data->ChromaticAberration) {
+HXLINE( 285)			 ::shaders::DoChromaticAberrationEffect _hx_tmp = this->googlechrom;
+HXDLIN( 285)			_hx_tmp->set_offset(::flixel::FlxG_obj::random->_hx_float(((Float)0.0003),((Float)0.0001),null()));
+HXLINE( 286)			if ((this->songs->__get(::states::FreeplayState_obj::curSelected).StaticCast<  ::states::FixedSongMetadata >()->songName == HX_("Reality-Breaking",60,4f,07,e0))) {
+HXLINE( 287)				 ::shaders::DoChromaticAberrationEffect _hx_tmp = this->googlechrom;
+HXDLIN( 287)				_hx_tmp->set_offset(::flixel::FlxG_obj::random->_hx_float(((Float)0.005),((Float)0.0015),null()));
+            			}
+HXLINE( 289)			if ((this->songs->__get(::states::FreeplayState_obj::curSelected).StaticCast<  ::states::FixedSongMetadata >()->songName == HX_("Rebound",8b,2b,e8,6a))) {
+HXLINE( 290)				 ::shaders::DoChromaticAberrationEffect _hx_tmp = this->googlechrom;
+HXDLIN( 290)				_hx_tmp->set_offset(::flixel::FlxG_obj::random->_hx_float(((Float)0.007),((Float)0.0020),null()));
+            			}
+HXLINE( 292)			if ((this->songs->__get(::states::FreeplayState_obj::curSelected).StaticCast<  ::states::FixedSongMetadata >()->songName == HX_("Disposition",d7,73,0c,a7))) {
+HXLINE( 293)				 ::shaders::DoChromaticAberrationEffect _hx_tmp = this->googlechrom;
+HXDLIN( 293)				_hx_tmp->set_offset(::flixel::FlxG_obj::random->_hx_float(((Float)0.008),((Float)0.0021),null()));
+            			}
+HXLINE( 295)			if ((this->songs->__get(::states::FreeplayState_obj::curSelected).StaticCast<  ::states::FixedSongMetadata >()->songName == HX_("Upheaval",58,87,31,2c))) {
+HXLINE( 296)				 ::shaders::DoChromaticAberrationEffect _hx_tmp = this->googlechrom;
+HXDLIN( 296)				_hx_tmp->set_offset(::flixel::FlxG_obj::random->_hx_float(((Float)0.009),((Float)0.0025),null()));
+            			}
             		}
             		else {
-HXLINE( 313)			 ::flixel::text::FlxText _hx_tmp = this->scoreText;
-HXDLIN( 313)			::String _hx_tmp1 = ((HX_("PERSONAL BEST: ",2a,a1,aa,1d) + this->lerpScore) + HX_(" (",08,1c,00,00));
-HXDLIN( 313)			_hx_tmp->set_text(((_hx_tmp1 + ratingSplit->join(HX_(".",2e,00,00,00))) + HX_("%)",64,20,00,00)));
+HXLINE( 299)			this->googlechrom->set_offset(( (Float)(0) ));
             		}
-HXLINE( 316)		bool upP = this->get_controls()->get_UI_UP_P();
-HXLINE( 317)		bool downP = this->get_controls()->get_UI_DOWN_P();
-HXLINE( 318)		bool accepted = this->get_controls()->get_ACCEPT();
-HXLINE( 319)		 ::flixel::input::keyboard::FlxKeyList _this = ( ( ::flixel::input::keyboard::FlxKeyList)(::flixel::FlxG_obj::keys->justPressed) );
-HXDLIN( 319)		bool space = _this->keyManager->checkStatusUnsafe(32,_this->status);
-HXLINE( 320)		 ::flixel::input::keyboard::FlxKeyList _this1 = ( ( ::flixel::input::keyboard::FlxKeyList)(::flixel::FlxG_obj::keys->justPressed) );
-HXDLIN( 320)		bool ctrl = _this1->keyManager->checkStatusUnsafe(17,_this1->status);
-HXLINE( 322)		int shiftMult = 1;
-HXLINE( 323)		 ::flixel::input::keyboard::FlxKeyList _this2 = ( ( ::flixel::input::keyboard::FlxKeyList)(::flixel::FlxG_obj::keys->pressed) );
-HXDLIN( 323)		if (_this2->keyManager->checkStatusUnsafe(16,_this2->status)) {
-HXLINE( 323)			shiftMult = 3;
+HXLINE( 302)		::backend::Conductor_obj::songPosition = ::flixel::FlxG_obj::sound->music->_time;
+HXLINE( 304)		Float a = ( (Float)(this->lerpScore) );
+HXDLIN( 304)		this->lerpScore = ::Math_obj::floor((a + (::Math_obj::max(( (Float)(0) ),::Math_obj::min(( (Float)(1) ),(elapsed * ( (Float)(24) )))) * (( (Float)(this->intendedScore) ) - a))));
+HXLINE( 305)		Float a1 = this->lerpRating;
+HXDLIN( 305)		this->lerpRating = (a1 + (::Math_obj::max(( (Float)(0) ),::Math_obj::min(( (Float)(1) ),(elapsed * ( (Float)(12) )))) * (this->intendedRating - a1)));
+HXLINE( 307)		if ((::Math_obj::abs(( (Float)((this->lerpScore - this->intendedScore)) )) <= 10)) {
+HXLINE( 308)			this->lerpScore = this->intendedScore;
             		}
-HXLINE( 325)		if ((this->songs->length > 1)) {
-HXLINE( 327)			if (upP) {
-HXLINE( 329)				this->changeSelection(-(shiftMult),null());
-HXLINE( 330)				this->holdTime = ( (Float)(0) );
+HXLINE( 309)		if ((::Math_obj::abs((this->lerpRating - this->intendedRating)) <= ((Float)0.01))) {
+HXLINE( 310)			this->lerpRating = this->intendedRating;
+            		}
+HXLINE( 312)		::Array< ::String > ratingSplit = ::Std_obj::string(::backend::Highscore_obj::floorDecimal((this->lerpRating * ( (Float)(100) )),2)).split(HX_(".",2e,00,00,00));
+HXLINE( 313)		if ((ratingSplit->length < 2)) {
+HXLINE( 314)			ratingSplit->push(HX_("",00,00,00,00));
+            		}
+HXLINE( 317)		while((ratingSplit->__get(1).length < 2)){
+HXLINE( 318)			::Array< ::String > ratingSplit1 = ratingSplit;
+HXDLIN( 318)			int _hx_tmp = 1;
+HXDLIN( 318)			ratingSplit1[_hx_tmp] = (ratingSplit1->__get(_hx_tmp) + HX_("0",30,00,00,00));
+            		}
+HXLINE( 321)		if ((::backend::ClientPrefs_obj::data->Lenguage == HX_W(u"Espa\u00f1ol",14aa,3bff))) {
+HXLINE( 323)			 ::flixel::text::FlxText _hx_tmp = this->scoreText;
+HXDLIN( 323)			::String _hx_tmp1 = ((HX_("MEJOR PORCENTAJE PERSONAL: ",9a,4b,6a,b0) + this->lerpScore) + HX_(" (",08,1c,00,00));
+HXDLIN( 323)			_hx_tmp->set_text(((_hx_tmp1 + ratingSplit->join(HX_(".",2e,00,00,00))) + HX_("%)",64,20,00,00)));
+            		}
+            		else {
+HXLINE( 326)			 ::flixel::text::FlxText _hx_tmp = this->scoreText;
+HXDLIN( 326)			::String _hx_tmp1 = ((HX_("PERSONAL BEST: ",2a,a1,aa,1d) + this->lerpScore) + HX_(" (",08,1c,00,00));
+HXDLIN( 326)			_hx_tmp->set_text(((_hx_tmp1 + ratingSplit->join(HX_(".",2e,00,00,00))) + HX_("%)",64,20,00,00)));
+            		}
+HXLINE( 329)		bool upP = this->get_controls()->get_UI_UP_P();
+HXLINE( 330)		bool downP = this->get_controls()->get_UI_DOWN_P();
+HXLINE( 331)		bool accepted = this->get_controls()->get_ACCEPT();
+HXLINE( 332)		 ::flixel::input::keyboard::FlxKeyList _this = ( ( ::flixel::input::keyboard::FlxKeyList)(::flixel::FlxG_obj::keys->justPressed) );
+HXDLIN( 332)		bool space = _this->keyManager->checkStatusUnsafe(32,_this->status);
+HXLINE( 333)		 ::flixel::input::keyboard::FlxKeyList _this1 = ( ( ::flixel::input::keyboard::FlxKeyList)(::flixel::FlxG_obj::keys->justPressed) );
+HXDLIN( 333)		bool ctrl = _this1->keyManager->checkStatusUnsafe(17,_this1->status);
+HXLINE( 335)		int shiftMult = 1;
+HXLINE( 336)		 ::flixel::input::keyboard::FlxKeyList _this2 = ( ( ::flixel::input::keyboard::FlxKeyList)(::flixel::FlxG_obj::keys->pressed) );
+HXDLIN( 336)		if (_this2->keyManager->checkStatusUnsafe(16,_this2->status)) {
+HXLINE( 336)			shiftMult = 3;
+            		}
+HXLINE( 338)		if ((this->songs->length > 1)) {
+HXLINE( 340)			if (upP) {
+HXLINE( 342)				this->changeSelection(-(shiftMult),null());
+HXLINE( 343)				this->holdTime = ( (Float)(0) );
             			}
-HXLINE( 332)			if (downP) {
-HXLINE( 334)				this->changeSelection(shiftMult,null());
-HXLINE( 335)				this->holdTime = ( (Float)(0) );
+HXLINE( 345)			if (downP) {
+HXLINE( 347)				this->changeSelection(shiftMult,null());
+HXLINE( 348)				this->holdTime = ( (Float)(0) );
             			}
-HXLINE( 338)			bool _hx_tmp;
-HXDLIN( 338)			if (!(this->get_controls()->get_UI_DOWN())) {
-HXLINE( 338)				_hx_tmp = this->get_controls()->get_UI_UP();
+HXLINE( 351)			bool _hx_tmp;
+HXDLIN( 351)			if (!(this->get_controls()->get_UI_DOWN())) {
+HXLINE( 351)				_hx_tmp = this->get_controls()->get_UI_UP();
             			}
             			else {
-HXLINE( 338)				_hx_tmp = true;
+HXLINE( 351)				_hx_tmp = true;
             			}
-HXDLIN( 338)			if (_hx_tmp) {
-HXLINE( 340)				int checkLastHold = ::Math_obj::floor(((this->holdTime - ((Float)0.5)) * ( (Float)(10) )));
-HXLINE( 341)				 ::states::FreeplayState _hx_tmp = ::hx::ObjectPtr<OBJ_>(this);
-HXDLIN( 341)				_hx_tmp->holdTime = (_hx_tmp->holdTime + elapsed);
-HXLINE( 342)				int checkNewHold = ::Math_obj::floor(((this->holdTime - ((Float)0.5)) * ( (Float)(10) )));
-HXLINE( 344)				bool _hx_tmp1;
-HXDLIN( 344)				if ((this->holdTime > ((Float)0.5))) {
-HXLINE( 344)					_hx_tmp1 = ((checkNewHold - checkLastHold) > 0);
+HXDLIN( 351)			if (_hx_tmp) {
+HXLINE( 353)				int checkLastHold = ::Math_obj::floor(((this->holdTime - ((Float)0.5)) * ( (Float)(10) )));
+HXLINE( 354)				 ::states::FreeplayState _hx_tmp = ::hx::ObjectPtr<OBJ_>(this);
+HXDLIN( 354)				_hx_tmp->holdTime = (_hx_tmp->holdTime + elapsed);
+HXLINE( 355)				int checkNewHold = ::Math_obj::floor(((this->holdTime - ((Float)0.5)) * ( (Float)(10) )));
+HXLINE( 357)				bool _hx_tmp1;
+HXDLIN( 357)				if ((this->holdTime > ((Float)0.5))) {
+HXLINE( 357)					_hx_tmp1 = ((checkNewHold - checkLastHold) > 0);
             				}
             				else {
-HXLINE( 344)					_hx_tmp1 = false;
+HXLINE( 357)					_hx_tmp1 = false;
             				}
-HXDLIN( 344)				if (_hx_tmp1) {
-HXLINE( 346)					int _hx_tmp;
-HXDLIN( 346)					if (this->get_controls()->get_UI_UP()) {
-HXLINE( 346)						_hx_tmp = -(shiftMult);
+HXDLIN( 357)				if (_hx_tmp1) {
+HXLINE( 359)					int _hx_tmp;
+HXDLIN( 359)					if (this->get_controls()->get_UI_UP()) {
+HXLINE( 359)						_hx_tmp = -(shiftMult);
             					}
             					else {
-HXLINE( 346)						_hx_tmp = shiftMult;
+HXLINE( 359)						_hx_tmp = shiftMult;
             					}
-HXDLIN( 346)					this->changeSelection(((checkNewHold - checkLastHold) * _hx_tmp),null());
-HXLINE( 347)					this->changeDiff(null());
+HXDLIN( 359)					this->changeSelection(((checkNewHold - checkLastHold) * _hx_tmp),null());
+HXLINE( 360)					this->changeDiff(null());
             				}
             			}
-HXLINE( 351)			if ((::flixel::FlxG_obj::mouse->wheel != 0)) {
-HXLINE( 353)				 ::flixel::_hx_system::frontEnds::SoundFrontEnd _hx_tmp = ::flixel::FlxG_obj::sound;
-HXDLIN( 353)				_hx_tmp->play(::backend::Paths_obj::sound(HX_("menu/scrollMenu",fc,75,a6,f1),null()),((Float)0.2),null(),null(),null(),null());
-HXLINE( 354)				this->changeSelection((-(shiftMult) * ::flixel::FlxG_obj::mouse->wheel),false);
-HXLINE( 355)				this->changeDiff(null());
+HXLINE( 364)			if ((::flixel::FlxG_obj::mouse->wheel != 0)) {
+HXLINE( 366)				 ::flixel::_hx_system::frontEnds::SoundFrontEnd _hx_tmp = ::flixel::FlxG_obj::sound;
+HXDLIN( 366)				_hx_tmp->play(::backend::Paths_obj::sound(HX_("menu/scrollMenu",fc,75,a6,f1),null()),((Float)0.2),null(),null(),null(),null());
+HXLINE( 367)				this->changeSelection((-(shiftMult) * ::flixel::FlxG_obj::mouse->wheel),false);
+HXLINE( 368)				this->changeDiff(null());
             			}
             		}
-HXLINE( 359)		if (this->get_controls()->get_UI_LEFT_P()) {
-HXLINE( 360)			this->changeDiff(-1);
+HXLINE( 372)		if (this->get_controls()->get_UI_LEFT_P()) {
+HXLINE( 373)			this->changeDiff(-1);
             		}
             		else {
-HXLINE( 361)			if (this->get_controls()->get_UI_RIGHT_P()) {
-HXLINE( 362)				this->changeDiff(1);
+HXLINE( 374)			if (this->get_controls()->get_UI_RIGHT_P()) {
+HXLINE( 375)				this->changeDiff(1);
             			}
             			else {
-HXLINE( 363)				bool _hx_tmp;
-HXDLIN( 363)				if (!(upP)) {
-HXLINE( 363)					_hx_tmp = downP;
+HXLINE( 376)				bool _hx_tmp;
+HXDLIN( 376)				if (!(upP)) {
+HXLINE( 376)					_hx_tmp = downP;
             				}
             				else {
-HXLINE( 363)					_hx_tmp = true;
+HXLINE( 376)					_hx_tmp = true;
             				}
-HXDLIN( 363)				if (_hx_tmp) {
-HXLINE( 363)					this->changeDiff(null());
+HXDLIN( 376)				if (_hx_tmp) {
+HXLINE( 376)					this->changeDiff(null());
             				}
             			}
             		}
-HXLINE( 365)		if (this->get_controls()->get_BACK()) {
-HXLINE( 367)			this->persistentUpdate = false;
-HXLINE( 368)			if (::hx::IsNotNull( this->colorTween )) {
-HXLINE( 369)				this->colorTween->cancel();
+HXLINE( 378)		if (this->get_controls()->get_BACK()) {
+HXLINE( 380)			this->persistentUpdate = false;
+HXLINE( 381)			if (::hx::IsNotNull( this->colorTween )) {
+HXLINE( 382)				this->colorTween->cancel();
             			}
-HXLINE( 371)			 ::flixel::_hx_system::frontEnds::SoundFrontEnd _hx_tmp = ::flixel::FlxG_obj::sound;
-HXDLIN( 371)			_hx_tmp->play(::backend::Paths_obj::sound(HX_("menu/cancelMenu",e9,45,d1,a2),null()),null(),null(),null(),null(),null());
-HXLINE( 372)			::backend::MusicBeatState_obj::switchState( ::states::CategoryState_obj::__alloc( HX_CTX ,null(),null()));
+HXLINE( 384)			 ::flixel::_hx_system::frontEnds::SoundFrontEnd _hx_tmp = ::flixel::FlxG_obj::sound;
+HXDLIN( 384)			_hx_tmp->play(::backend::Paths_obj::sound(HX_("menu/cancelMenu",e9,45,d1,a2),null()),null(),null(),null(),null(),null());
+HXLINE( 385)			::backend::MusicBeatState_obj::switchState( ::states::CategoryState_obj::__alloc( HX_CTX ,null(),null()));
             		}
-HXLINE( 375)		if (ctrl) {
-HXLINE( 377)			this->persistentUpdate = false;
-HXLINE( 378)			this->openSubState( ::substates::GameplayChangersSubstate_obj::__alloc( HX_CTX ));
+HXLINE( 388)		if (ctrl) {
+HXLINE( 390)			this->persistentUpdate = false;
+HXLINE( 391)			this->openSubState( ::substates::GameplayChangersSubstate_obj::__alloc( HX_CTX ));
             		}
             		else {
-HXLINE( 380)			if (space) {
-HXLINE( 382)				if ((this->instPlaying != ::states::FreeplayState_obj::curSelected)) {
-HXLINE( 385)					::states::FreeplayState_obj::destroyFreeplayVocals();
-HXLINE( 386)					::flixel::FlxG_obj::sound->music->set_volume(( (Float)(0) ));
-HXLINE( 387)					::backend::Paths_obj::currentModDirectory = this->songs->__get(::states::FreeplayState_obj::curSelected).StaticCast<  ::states::FixedSongMetadata >()->folder;
-HXLINE( 388)					::String poop = this->songs->__get(::states::FreeplayState_obj::curSelected).StaticCast<  ::states::FixedSongMetadata >()->songName.toLowerCase();
-HXDLIN( 388)					::String poop1 = ::backend::Highscore_obj::formatSong(poop,this->curDifficulty);
-HXLINE( 389)					::states::PlayState_obj::SONG = ::backend::Song_obj::loadFromJson(poop1,this->songs->__get(::states::FreeplayState_obj::curSelected).StaticCast<  ::states::FixedSongMetadata >()->songName.toLowerCase());
-HXLINE( 390)					if (( (bool)(::states::PlayState_obj::SONG->__Field(HX_("needsVoices",be,05,e9,0d),::hx::paccDynamic)) )) {
-HXLINE( 391)						 ::flixel::sound::FlxSound _hx_tmp =  ::flixel::sound::FlxSound_obj::__alloc( HX_CTX );
-HXDLIN( 391)						::String song = ( (::String)(::states::PlayState_obj::SONG->__Field(HX_("song",d5,23,58,4c),::hx::paccDynamic)) );
-HXDLIN( 391)						 ::EReg invalidChars =  ::EReg_obj::__alloc( HX_CTX ,HX_("[~&\\\\;:<>#]",7e,4d,88,67),HX_("",00,00,00,00));
-HXDLIN( 391)						 ::EReg hideChars =  ::EReg_obj::__alloc( HX_CTX ,HX_("[.,'\"%?!]",ca,d9,c0,ac),HX_("",00,00,00,00));
-HXDLIN( 391)						::String path = invalidChars->split(::StringTools_obj::replace(song,HX_(" ",20,00,00,00),HX_("-",2d,00,00,00)))->join(HX_("-",2d,00,00,00));
-HXDLIN( 391)						::String songKey = ((HX_("",00,00,00,00) + hideChars->split(path)->join(HX_("",00,00,00,00)).toLowerCase()) + HX_("/Voices",10,18,4f,34));
-HXDLIN( 391)						 ::openfl::media::Sound voices = ::backend::Paths_obj::returnSound(HX_("songs",fe,36,c7,80),songKey,null());
-HXDLIN( 391)						::states::FreeplayState_obj::vocals = _hx_tmp->loadEmbedded(voices,null(),null(),null());
+HXLINE( 393)			if (space) {
+HXLINE( 395)				if ((this->instPlaying != ::states::FreeplayState_obj::curSelected)) {
+HXLINE( 398)					::states::FreeplayState_obj::destroyFreeplayVocals();
+HXLINE( 399)					::flixel::FlxG_obj::sound->music->set_volume(( (Float)(0) ));
+HXLINE( 400)					::backend::Paths_obj::currentModDirectory = this->songs->__get(::states::FreeplayState_obj::curSelected).StaticCast<  ::states::FixedSongMetadata >()->folder;
+HXLINE( 401)					::String poop = this->songs->__get(::states::FreeplayState_obj::curSelected).StaticCast<  ::states::FixedSongMetadata >()->songName.toLowerCase();
+HXDLIN( 401)					::String poop1 = ::backend::Highscore_obj::formatSong(poop,this->curDifficulty);
+HXLINE( 402)					::states::PlayState_obj::SONG = ::backend::Song_obj::loadFromJson(poop1,this->songs->__get(::states::FreeplayState_obj::curSelected).StaticCast<  ::states::FixedSongMetadata >()->songName.toLowerCase());
+HXLINE( 403)					if (( (bool)(::states::PlayState_obj::SONG->__Field(HX_("needsVoices",be,05,e9,0d),::hx::paccDynamic)) )) {
+HXLINE( 404)						 ::flixel::sound::FlxSound _hx_tmp =  ::flixel::sound::FlxSound_obj::__alloc( HX_CTX );
+HXDLIN( 404)						::String song = ( (::String)(::states::PlayState_obj::SONG->__Field(HX_("song",d5,23,58,4c),::hx::paccDynamic)) );
+HXDLIN( 404)						 ::EReg invalidChars =  ::EReg_obj::__alloc( HX_CTX ,HX_("[~&\\\\;:<>#]",7e,4d,88,67),HX_("",00,00,00,00));
+HXDLIN( 404)						 ::EReg hideChars =  ::EReg_obj::__alloc( HX_CTX ,HX_("[.,'\"%?!]",ca,d9,c0,ac),HX_("",00,00,00,00));
+HXDLIN( 404)						::String path = invalidChars->split(::StringTools_obj::replace(song,HX_(" ",20,00,00,00),HX_("-",2d,00,00,00)))->join(HX_("-",2d,00,00,00));
+HXDLIN( 404)						::String songKey = ((HX_("",00,00,00,00) + hideChars->split(path)->join(HX_("",00,00,00,00)).toLowerCase()) + HX_("/Voices",10,18,4f,34));
+HXDLIN( 404)						 ::openfl::media::Sound voices = ::backend::Paths_obj::returnSound(HX_("songs",fe,36,c7,80),songKey,null());
+HXDLIN( 404)						::states::FreeplayState_obj::vocals = _hx_tmp->loadEmbedded(voices,null(),null(),null());
             					}
             					else {
-HXLINE( 393)						::states::FreeplayState_obj::vocals =  ::flixel::sound::FlxSound_obj::__alloc( HX_CTX );
+HXLINE( 406)						::states::FreeplayState_obj::vocals =  ::flixel::sound::FlxSound_obj::__alloc( HX_CTX );
             					}
-HXLINE( 395)					::flixel::FlxG_obj::sound->list->add(::states::FreeplayState_obj::vocals).StaticCast<  ::flixel::sound::FlxSound >();
-HXLINE( 396)					::backend::Conductor_obj::mapBPMChanges(::states::PlayState_obj::SONG);
-HXLINE( 397)					::backend::Conductor_obj::changeBPM(( (Float)(::states::PlayState_obj::SONG->__Field(HX_("bpm",df,be,4a,00),::hx::paccDynamic)) ));
-HXLINE( 398)					 ::flixel::_hx_system::frontEnds::SoundFrontEnd _hx_tmp = ::flixel::FlxG_obj::sound;
-HXDLIN( 398)					::String song = ( (::String)(::states::PlayState_obj::SONG->__Field(HX_("song",d5,23,58,4c),::hx::paccDynamic)) );
-HXDLIN( 398)					 ::EReg invalidChars =  ::EReg_obj::__alloc( HX_CTX ,HX_("[~&\\\\;:<>#]",7e,4d,88,67),HX_("",00,00,00,00));
-HXDLIN( 398)					 ::EReg hideChars =  ::EReg_obj::__alloc( HX_CTX ,HX_("[.,'\"%?!]",ca,d9,c0,ac),HX_("",00,00,00,00));
-HXDLIN( 398)					::String path = invalidChars->split(::StringTools_obj::replace(song,HX_(" ",20,00,00,00),HX_("-",2d,00,00,00)))->join(HX_("-",2d,00,00,00));
-HXDLIN( 398)					::String songKey = ((HX_("",00,00,00,00) + hideChars->split(path)->join(HX_("",00,00,00,00)).toLowerCase()) + HX_("/Inst",95,b3,69,40));
-HXDLIN( 398)					 ::openfl::media::Sound inst = ::backend::Paths_obj::returnSound(HX_("songs",fe,36,c7,80),songKey,null());
-HXDLIN( 398)					_hx_tmp->playMusic(inst,((Float)0.7),null(),null());
-HXLINE( 399)					::states::FreeplayState_obj::vocals->play(null(),null(),null());
-HXLINE( 400)					::states::FreeplayState_obj::vocals->persist = true;
-HXLINE( 401)					::states::FreeplayState_obj::vocals->looped = true;
-HXLINE( 402)					::states::FreeplayState_obj::vocals->set_volume(((Float)0.7));
-HXLINE( 403)					this->instPlaying = ::states::FreeplayState_obj::curSelected;
-            				}
-            			}
-            			else {
-HXLINE( 408)				if (accepted) {
-HXLINE( 410)					this->persistentUpdate = false;
-HXLINE( 411)					::String path = this->songs->__get(::states::FreeplayState_obj::curSelected).StaticCast<  ::states::FixedSongMetadata >()->songName;
+HXLINE( 408)					::flixel::FlxG_obj::sound->list->add(::states::FreeplayState_obj::vocals).StaticCast<  ::flixel::sound::FlxSound >();
+HXLINE( 409)					::backend::Conductor_obj::mapBPMChanges(::states::PlayState_obj::SONG);
+HXLINE( 410)					::backend::Conductor_obj::changeBPM(( (Float)(::states::PlayState_obj::SONG->__Field(HX_("bpm",df,be,4a,00),::hx::paccDynamic)) ));
+HXLINE( 411)					 ::flixel::_hx_system::frontEnds::SoundFrontEnd _hx_tmp = ::flixel::FlxG_obj::sound;
+HXDLIN( 411)					::String song = ( (::String)(::states::PlayState_obj::SONG->__Field(HX_("song",d5,23,58,4c),::hx::paccDynamic)) );
 HXDLIN( 411)					 ::EReg invalidChars =  ::EReg_obj::__alloc( HX_CTX ,HX_("[~&\\\\;:<>#]",7e,4d,88,67),HX_("",00,00,00,00));
 HXDLIN( 411)					 ::EReg hideChars =  ::EReg_obj::__alloc( HX_CTX ,HX_("[.,'\"%?!]",ca,d9,c0,ac),HX_("",00,00,00,00));
-HXDLIN( 411)					::String path1 = invalidChars->split(::StringTools_obj::replace(path,HX_(" ",20,00,00,00),HX_("-",2d,00,00,00)))->join(HX_("-",2d,00,00,00));
-HXDLIN( 411)					::String songLowercase = hideChars->split(path1)->join(HX_("",00,00,00,00)).toLowerCase();
-HXLINE( 412)					::String poop = ::backend::Highscore_obj::formatSong(songLowercase,this->curDifficulty);
-HXLINE( 414)					::haxe::Log_obj::trace(poop,::hx::SourceInfo(HX_("source/states/FreeplayState.hx",66,70,4c,e9),414,HX_("states.FreeplayState",05,25,9c,c9),HX_("update",09,86,05,87)));
-HXLINE( 416)					::states::PlayState_obj::SONG = ::backend::Song_obj::loadFromJson(poop,songLowercase);
-HXLINE( 417)					::states::PlayState_obj::isStoryMode = false;
-HXLINE( 418)					::states::PlayState_obj::storyDifficulty = this->curDifficulty;
-HXLINE( 420)					 ::Dynamic _hx_tmp = ::haxe::Log_obj::trace;
-HXDLIN( 420)					::String _hx_tmp1 = (HX_("CURRENT WEEK: ",c1,cc,39,35) + ::backend::WeekData_obj::getWeekFileName());
-HXDLIN( 420)					_hx_tmp(_hx_tmp1,::hx::SourceInfo(HX_("source/states/FreeplayState.hx",66,70,4c,e9),420,HX_("states.FreeplayState",05,25,9c,c9),HX_("update",09,86,05,87)));
-HXLINE( 421)					if (::hx::IsNotNull( this->colorTween )) {
-HXLINE( 422)						this->colorTween->cancel();
+HXDLIN( 411)					::String path = invalidChars->split(::StringTools_obj::replace(song,HX_(" ",20,00,00,00),HX_("-",2d,00,00,00)))->join(HX_("-",2d,00,00,00));
+HXDLIN( 411)					::String songKey = ((HX_("",00,00,00,00) + hideChars->split(path)->join(HX_("",00,00,00,00)).toLowerCase()) + HX_("/Inst",95,b3,69,40));
+HXDLIN( 411)					 ::openfl::media::Sound inst = ::backend::Paths_obj::returnSound(HX_("songs",fe,36,c7,80),songKey,null());
+HXDLIN( 411)					_hx_tmp->playMusic(inst,((Float)0.7),null(),null());
+HXLINE( 412)					::states::FreeplayState_obj::vocals->play(null(),null(),null());
+HXLINE( 413)					::states::FreeplayState_obj::vocals->persist = true;
+HXLINE( 414)					::states::FreeplayState_obj::vocals->looped = true;
+HXLINE( 415)					::states::FreeplayState_obj::vocals->set_volume(((Float)0.7));
+HXLINE( 416)					this->instPlaying = ::states::FreeplayState_obj::curSelected;
+            				}
+            			}
+            			else {
+HXLINE( 421)				if (accepted) {
+HXLINE( 423)					this->persistentUpdate = false;
+HXLINE( 424)					::String path = this->songs->__get(::states::FreeplayState_obj::curSelected).StaticCast<  ::states::FixedSongMetadata >()->songName;
+HXDLIN( 424)					 ::EReg invalidChars =  ::EReg_obj::__alloc( HX_CTX ,HX_("[~&\\\\;:<>#]",7e,4d,88,67),HX_("",00,00,00,00));
+HXDLIN( 424)					 ::EReg hideChars =  ::EReg_obj::__alloc( HX_CTX ,HX_("[.,'\"%?!]",ca,d9,c0,ac),HX_("",00,00,00,00));
+HXDLIN( 424)					::String path1 = invalidChars->split(::StringTools_obj::replace(path,HX_(" ",20,00,00,00),HX_("-",2d,00,00,00)))->join(HX_("-",2d,00,00,00));
+HXDLIN( 424)					::String songLowercase = hideChars->split(path1)->join(HX_("",00,00,00,00)).toLowerCase();
+HXLINE( 425)					::String poop = ::backend::Highscore_obj::formatSong(songLowercase,this->curDifficulty);
+HXLINE( 427)					::haxe::Log_obj::trace(poop,::hx::SourceInfo(HX_("source/states/FreeplayState.hx",66,70,4c,e9),427,HX_("states.FreeplayState",05,25,9c,c9),HX_("update",09,86,05,87)));
+HXLINE( 429)					::states::PlayState_obj::SONG = ::backend::Song_obj::loadFromJson(poop,songLowercase);
+HXLINE( 430)					::states::PlayState_obj::isStoryMode = false;
+HXLINE( 431)					::states::PlayState_obj::storyDifficulty = this->curDifficulty;
+HXLINE( 433)					 ::Dynamic _hx_tmp = ::haxe::Log_obj::trace;
+HXDLIN( 433)					::String _hx_tmp1 = (HX_("CURRENT WEEK: ",c1,cc,39,35) + ::backend::WeekData_obj::getWeekFileName());
+HXDLIN( 433)					_hx_tmp(_hx_tmp1,::hx::SourceInfo(HX_("source/states/FreeplayState.hx",66,70,4c,e9),433,HX_("states.FreeplayState",05,25,9c,c9),HX_("update",09,86,05,87)));
+HXLINE( 434)					if (::hx::IsNotNull( this->colorTween )) {
+HXLINE( 435)						this->colorTween->cancel();
             					}
-HXLINE( 425)					 ::flixel::input::keyboard::FlxKeyList _this = ( ( ::flixel::input::keyboard::FlxKeyList)(::flixel::FlxG_obj::keys->pressed) );
-HXDLIN( 425)					if (_this->keyManager->checkStatusUnsafe(16,_this->status)) {
-HXLINE( 426)						::backend::MusicBeatState_obj::switchState(::states::LoadingState_obj::getNextState(( ( ::flixel::FlxState)( ::states::editors::ChartingState_obj::__alloc( HX_CTX ,null(),null())) ),false));
+HXLINE( 438)					 ::flixel::input::keyboard::FlxKeyList _this = ( ( ::flixel::input::keyboard::FlxKeyList)(::flixel::FlxG_obj::keys->pressed) );
+HXDLIN( 438)					if (_this->keyManager->checkStatusUnsafe(16,_this->status)) {
+HXLINE( 439)						::backend::MusicBeatState_obj::switchState(::states::LoadingState_obj::getNextState(( ( ::flixel::FlxState)( ::states::editors::ChartingState_obj::__alloc( HX_CTX ,null(),null())) ),false));
             					}
             					else {
-HXLINE( 428)						::backend::MusicBeatState_obj::switchState(::states::LoadingState_obj::getNextState(( ( ::flixel::FlxState)( ::states::CharacterSelectState_obj::__alloc( HX_CTX )) ),false));
+HXLINE( 441)						::backend::MusicBeatState_obj::switchState(::states::LoadingState_obj::getNextState(( ( ::flixel::FlxState)( ::states::CharacterSelectState_obj::__alloc( HX_CTX )) ),false));
             					}
-HXLINE( 431)					::flixel::FlxG_obj::sound->music->set_volume(( (Float)(0) ));
-HXLINE( 433)					::states::FreeplayState_obj::destroyFreeplayVocals();
+HXLINE( 444)					::flixel::FlxG_obj::sound->music->set_volume(( (Float)(0) ));
+HXLINE( 446)					::states::FreeplayState_obj::destroyFreeplayVocals();
             				}
             				else {
-HXLINE( 435)					if (this->get_controls()->get_RESET()) {
-HXLINE( 437)						this->persistentUpdate = false;
-HXLINE( 438)						this->openSubState( ::substates::ResetScoreSubState_obj::__alloc( HX_CTX ,this->songs->__get(::states::FreeplayState_obj::curSelected).StaticCast<  ::states::FixedSongMetadata >()->songName,this->curDifficulty,this->songs->__get(::states::FreeplayState_obj::curSelected).StaticCast<  ::states::FixedSongMetadata >()->songCharacter,null()));
-HXLINE( 439)						 ::flixel::_hx_system::frontEnds::SoundFrontEnd _hx_tmp = ::flixel::FlxG_obj::sound;
-HXDLIN( 439)						_hx_tmp->play(::backend::Paths_obj::sound(HX_("menu/scrollMenu",fc,75,a6,f1),null()),null(),null(),null(),null(),null());
+HXLINE( 448)					if (this->get_controls()->get_RESET()) {
+HXLINE( 450)						this->persistentUpdate = false;
+HXLINE( 451)						this->openSubState( ::substates::ResetScoreSubState_obj::__alloc( HX_CTX ,this->songs->__get(::states::FreeplayState_obj::curSelected).StaticCast<  ::states::FixedSongMetadata >()->songName,this->curDifficulty,this->songs->__get(::states::FreeplayState_obj::curSelected).StaticCast<  ::states::FixedSongMetadata >()->songCharacter,null()));
+HXLINE( 452)						 ::flixel::_hx_system::frontEnds::SoundFrontEnd _hx_tmp = ::flixel::FlxG_obj::sound;
+HXDLIN( 452)						_hx_tmp->play(::backend::Paths_obj::sound(HX_("menu/scrollMenu",fc,75,a6,f1),null()),null(),null(),null(),null(),null());
             					}
             				}
             			}
@@ -971,21 +989,21 @@ HXDLIN( 439)						_hx_tmp->play(::backend::Paths_obj::sound(HX_("menu/scrollMenu
 
 void FreeplayState_obj::changeDiff(::hx::Null< int >  __o_change){
             		int change = __o_change.Default(0);
-            	HX_STACKFRAME(&_hx_pos_22e2030ae3401175_452_changeDiff)
-HXLINE( 453)		 ::states::FreeplayState _hx_tmp = ::hx::ObjectPtr<OBJ_>(this);
-HXDLIN( 453)		_hx_tmp->curDifficulty = (_hx_tmp->curDifficulty + change);
-HXLINE( 455)		if ((this->curDifficulty < 0)) {
-HXLINE( 456)			this->curDifficulty = (::backend::CoolUtil_obj::difficulties->length - 1);
+            	HX_STACKFRAME(&_hx_pos_22e2030ae3401175_465_changeDiff)
+HXLINE( 466)		 ::states::FreeplayState _hx_tmp = ::hx::ObjectPtr<OBJ_>(this);
+HXDLIN( 466)		_hx_tmp->curDifficulty = (_hx_tmp->curDifficulty + change);
+HXLINE( 468)		if ((this->curDifficulty < 0)) {
+HXLINE( 469)			this->curDifficulty = (::backend::CoolUtil_obj::difficulties->length - 1);
             		}
-HXLINE( 457)		if ((this->curDifficulty >= ::backend::CoolUtil_obj::difficulties->length)) {
-HXLINE( 458)			this->curDifficulty = 0;
+HXLINE( 470)		if ((this->curDifficulty >= ::backend::CoolUtil_obj::difficulties->length)) {
+HXLINE( 471)			this->curDifficulty = 0;
             		}
-HXLINE( 460)		::states::FreeplayState_obj::lastDifficultyName = ::backend::CoolUtil_obj::difficulties->__get(this->curDifficulty);
-HXLINE( 463)		this->intendedScore = ::backend::Highscore_obj::getScore(this->songs->__get(::states::FreeplayState_obj::curSelected).StaticCast<  ::states::FixedSongMetadata >()->songName,this->curDifficulty);
-HXLINE( 464)		this->intendedRating = ::backend::Highscore_obj::getRating(this->songs->__get(::states::FreeplayState_obj::curSelected).StaticCast<  ::states::FixedSongMetadata >()->songName,this->curDifficulty);
-HXLINE( 467)		::states::PlayState_obj::storyDifficulty = this->curDifficulty;
-HXLINE( 468)		 ::flixel::text::FlxText _hx_tmp1 = this->diffText;
-HXDLIN( 468)		_hx_tmp1->set_text(((HX_("< ",64,34,00,00) + ::backend::CoolUtil_obj::difficultyString()) + HX_(" >",1e,1c,00,00)));
+HXLINE( 473)		::states::FreeplayState_obj::lastDifficultyName = ::backend::CoolUtil_obj::difficulties->__get(this->curDifficulty);
+HXLINE( 476)		this->intendedScore = ::backend::Highscore_obj::getScore(this->songs->__get(::states::FreeplayState_obj::curSelected).StaticCast<  ::states::FixedSongMetadata >()->songName,this->curDifficulty);
+HXLINE( 477)		this->intendedRating = ::backend::Highscore_obj::getRating(this->songs->__get(::states::FreeplayState_obj::curSelected).StaticCast<  ::states::FixedSongMetadata >()->songName,this->curDifficulty);
+HXLINE( 480)		::states::PlayState_obj::storyDifficulty = this->curDifficulty;
+HXLINE( 481)		 ::flixel::text::FlxText _hx_tmp1 = this->diffText;
+HXDLIN( 481)		_hx_tmp1->set_text(((HX_("< ",64,34,00,00) + ::backend::CoolUtil_obj::difficultyString()) + HX_(" >",1e,1c,00,00)));
             	}
 
 
@@ -994,109 +1012,109 @@ HX_DEFINE_DYNAMIC_FUNC1(FreeplayState_obj,changeDiff,(void))
 void FreeplayState_obj::changeSelection(::hx::Null< int >  __o_change,::hx::Null< bool >  __o_playSound){
             		int change = __o_change.Default(0);
             		bool playSound = __o_playSound.Default(true);
-            	HX_STACKFRAME(&_hx_pos_22e2030ae3401175_472_changeSelection)
-HXDLIN( 472)		 ::states::FreeplayState _gthis = ::hx::ObjectPtr<OBJ_>(this);
-HXLINE( 473)		if (playSound) {
-HXLINE( 473)			 ::flixel::_hx_system::frontEnds::SoundFrontEnd _hx_tmp = ::flixel::FlxG_obj::sound;
-HXDLIN( 473)			_hx_tmp->play(::backend::Paths_obj::sound(HX_("menu/scrollMenu",fc,75,a6,f1),null()),((Float)0.4),null(),null(),null(),null());
+            	HX_STACKFRAME(&_hx_pos_22e2030ae3401175_485_changeSelection)
+HXDLIN( 485)		 ::states::FreeplayState _gthis = ::hx::ObjectPtr<OBJ_>(this);
+HXLINE( 486)		if (playSound) {
+HXLINE( 486)			 ::flixel::_hx_system::frontEnds::SoundFrontEnd _hx_tmp = ::flixel::FlxG_obj::sound;
+HXDLIN( 486)			_hx_tmp->play(::backend::Paths_obj::sound(HX_("menu/scrollMenu",fc,75,a6,f1),null()),((Float)0.4),null(),null(),null(),null());
             		}
-HXLINE( 475)		 ::Dynamic _hx_tmp = ::hx::ClassOf< ::states::FreeplayState >();
-HXDLIN( 475)		::states::FreeplayState_obj::curSelected = (::states::FreeplayState_obj::curSelected + change);
-HXLINE( 477)		if ((::states::FreeplayState_obj::curSelected < 0)) {
-HXLINE( 478)			::states::FreeplayState_obj::curSelected = (this->songs->length - 1);
+HXLINE( 488)		 ::Dynamic _hx_tmp = ::hx::ClassOf< ::states::FreeplayState >();
+HXDLIN( 488)		::states::FreeplayState_obj::curSelected = (::states::FreeplayState_obj::curSelected + change);
+HXLINE( 490)		if ((::states::FreeplayState_obj::curSelected < 0)) {
+HXLINE( 491)			::states::FreeplayState_obj::curSelected = (this->songs->length - 1);
             		}
-HXLINE( 479)		if ((::states::FreeplayState_obj::curSelected >= this->songs->length)) {
-HXLINE( 480)			::states::FreeplayState_obj::curSelected = 0;
+HXLINE( 492)		if ((::states::FreeplayState_obj::curSelected >= this->songs->length)) {
+HXLINE( 493)			::states::FreeplayState_obj::curSelected = 0;
             		}
-HXLINE( 482)		int newColor = this->songs->__get(::states::FreeplayState_obj::curSelected).StaticCast<  ::states::FixedSongMetadata >()->color;
-HXLINE( 483)		if ((newColor != this->intendedColor)) {
+HXLINE( 495)		int newColor = this->songs->__get(::states::FreeplayState_obj::curSelected).StaticCast<  ::states::FixedSongMetadata >()->color;
+HXLINE( 496)		if ((newColor != this->intendedColor)) {
             			HX_BEGIN_LOCAL_FUNC_S1(::hx::LocalFunc,_hx_Closure_0, ::states::FreeplayState,_gthis) HXARGC(1)
             			void _hx_run( ::flixel::tweens::FlxTween twn){
-            				HX_STACKFRAME(&_hx_pos_22e2030ae3401175_490_changeSelection)
-HXLINE( 490)				_gthis->colorTween = null();
+            				HX_STACKFRAME(&_hx_pos_22e2030ae3401175_503_changeSelection)
+HXLINE( 503)				_gthis->colorTween = null();
             			}
             			HX_END_LOCAL_FUNC1((void))
 
-HXLINE( 484)			if (::hx::IsNotNull( this->colorTween )) {
-HXLINE( 485)				this->colorTween->cancel();
+HXLINE( 497)			if (::hx::IsNotNull( this->colorTween )) {
+HXLINE( 498)				this->colorTween->cancel();
             			}
-HXLINE( 487)			this->intendedColor = newColor;
-HXLINE( 488)			this->colorTween = ::flixel::tweens::FlxTween_obj::color(this->bg,1,this->bg->color,this->intendedColor, ::Dynamic(::hx::Anon_obj::Create(1)
+HXLINE( 500)			this->intendedColor = newColor;
+HXLINE( 501)			this->colorTween = ::flixel::tweens::FlxTween_obj::color(this->bg,1,this->bg->color,this->intendedColor, ::Dynamic(::hx::Anon_obj::Create(1)
             				->setFixed(0,HX_("onComplete",f8,d4,7e,5d), ::Dynamic(new _hx_Closure_0(_gthis)))));
             		}
-HXLINE( 496)		this->intendedScore = ::backend::Highscore_obj::getScore(this->songs->__get(::states::FreeplayState_obj::curSelected).StaticCast<  ::states::FixedSongMetadata >()->songName,this->curDifficulty);
-HXLINE( 497)		this->intendedRating = ::backend::Highscore_obj::getRating(this->songs->__get(::states::FreeplayState_obj::curSelected).StaticCast<  ::states::FixedSongMetadata >()->songName,this->curDifficulty);
-HXLINE( 500)		int bullShit = 0;
-HXLINE( 502)		{
-HXLINE( 502)			int _g = 0;
-HXDLIN( 502)			int _g1 = this->iconArray->length;
-HXDLIN( 502)			while((_g < _g1)){
-HXLINE( 502)				_g = (_g + 1);
-HXDLIN( 502)				int i = (_g - 1);
-HXLINE( 504)				this->iconArray->__get(i).StaticCast<  ::objects::HealthIcon >()->set_alpha(((Float)0.6));
+HXLINE( 509)		this->intendedScore = ::backend::Highscore_obj::getScore(this->songs->__get(::states::FreeplayState_obj::curSelected).StaticCast<  ::states::FixedSongMetadata >()->songName,this->curDifficulty);
+HXLINE( 510)		this->intendedRating = ::backend::Highscore_obj::getRating(this->songs->__get(::states::FreeplayState_obj::curSelected).StaticCast<  ::states::FixedSongMetadata >()->songName,this->curDifficulty);
+HXLINE( 513)		int bullShit = 0;
+HXLINE( 515)		{
+HXLINE( 515)			int _g = 0;
+HXDLIN( 515)			int _g1 = this->iconArray->length;
+HXDLIN( 515)			while((_g < _g1)){
+HXLINE( 515)				_g = (_g + 1);
+HXDLIN( 515)				int i = (_g - 1);
+HXLINE( 517)				this->iconArray->__get(i).StaticCast<  ::objects::HealthIcon >()->set_alpha(((Float)0.6));
             			}
             		}
-HXLINE( 507)		this->iconArray->__get(::states::FreeplayState_obj::curSelected).StaticCast<  ::objects::HealthIcon >()->set_alpha(( (Float)(1) ));
-HXLINE( 509)		{
-HXLINE( 509)			int _g2 = 0;
-HXDLIN( 509)			::Array< ::Dynamic> _g3 = this->grpSongs->members;
-HXDLIN( 509)			while((_g2 < _g3->length)){
-HXLINE( 509)				 ::objects::Alphabet item = _g3->__get(_g2).StaticCast<  ::objects::Alphabet >();
-HXDLIN( 509)				_g2 = (_g2 + 1);
-HXLINE( 511)				item->targetY = (bullShit - ::states::FreeplayState_obj::curSelected);
-HXLINE( 512)				bullShit = (bullShit + 1);
-HXLINE( 514)				item->set_alpha(((Float)0.6));
-HXLINE( 516)				if ((item->targetY == 0)) {
-HXLINE( 518)					item->set_alpha(( (Float)(1) ));
+HXLINE( 520)		this->iconArray->__get(::states::FreeplayState_obj::curSelected).StaticCast<  ::objects::HealthIcon >()->set_alpha(( (Float)(1) ));
+HXLINE( 522)		{
+HXLINE( 522)			int _g2 = 0;
+HXDLIN( 522)			::Array< ::Dynamic> _g3 = this->grpSongs->members;
+HXDLIN( 522)			while((_g2 < _g3->length)){
+HXLINE( 522)				 ::objects::Alphabet item = _g3->__get(_g2).StaticCast<  ::objects::Alphabet >();
+HXDLIN( 522)				_g2 = (_g2 + 1);
+HXLINE( 524)				item->targetY = (bullShit - ::states::FreeplayState_obj::curSelected);
+HXLINE( 525)				bullShit = (bullShit + 1);
+HXLINE( 527)				item->set_alpha(((Float)0.6));
+HXLINE( 529)				if ((item->targetY == 0)) {
+HXLINE( 531)					item->set_alpha(( (Float)(1) ));
             				}
             			}
             		}
-HXLINE( 522)		::backend::Paths_obj::currentModDirectory = this->songs->__get(::states::FreeplayState_obj::curSelected).StaticCast<  ::states::FixedSongMetadata >()->folder;
-HXLINE( 523)		::states::PlayState_obj::storyWeek = this->songs->__get(::states::FreeplayState_obj::curSelected).StaticCast<  ::states::FixedSongMetadata >()->week;
-HXLINE( 525)		::backend::CoolUtil_obj::difficulties = ::backend::CoolUtil_obj::defaultDifficulties->copy();
-HXLINE( 526)		::String diffStr = ::backend::WeekData_obj::getCurrentWeek()->difficulties;
-HXLINE( 527)		if (::hx::IsNotNull( diffStr )) {
-HXLINE( 527)			diffStr = ::StringTools_obj::trim(diffStr);
+HXLINE( 535)		::backend::Paths_obj::currentModDirectory = this->songs->__get(::states::FreeplayState_obj::curSelected).StaticCast<  ::states::FixedSongMetadata >()->folder;
+HXLINE( 536)		::states::PlayState_obj::storyWeek = this->songs->__get(::states::FreeplayState_obj::curSelected).StaticCast<  ::states::FixedSongMetadata >()->week;
+HXLINE( 538)		::backend::CoolUtil_obj::difficulties = ::backend::CoolUtil_obj::defaultDifficulties->copy();
+HXLINE( 539)		::String diffStr = ::backend::WeekData_obj::getCurrentWeek()->difficulties;
+HXLINE( 540)		if (::hx::IsNotNull( diffStr )) {
+HXLINE( 540)			diffStr = ::StringTools_obj::trim(diffStr);
             		}
-HXLINE( 529)		bool _hx_tmp1;
-HXDLIN( 529)		if (::hx::IsNotNull( diffStr )) {
-HXLINE( 529)			_hx_tmp1 = (diffStr.length > 0);
+HXLINE( 542)		bool _hx_tmp1;
+HXDLIN( 542)		if (::hx::IsNotNull( diffStr )) {
+HXLINE( 542)			_hx_tmp1 = (diffStr.length > 0);
             		}
             		else {
-HXLINE( 529)			_hx_tmp1 = false;
+HXLINE( 542)			_hx_tmp1 = false;
             		}
-HXDLIN( 529)		if (_hx_tmp1) {
-HXLINE( 531)			::Array< ::String > diffs = diffStr.split(HX_(",",2c,00,00,00));
-HXLINE( 532)			int i = (diffs->length - 1);
-HXLINE( 533)			while((i > 0)){
-HXLINE( 535)				if (::hx::IsNotNull( diffs->__get(i) )) {
-HXLINE( 537)					diffs[i] = ::StringTools_obj::trim(diffs->__get(i));
-HXLINE( 538)					if ((diffs->__get(i).length < 1)) {
-HXLINE( 538)						diffs->remove(diffs->__get(i));
+HXDLIN( 542)		if (_hx_tmp1) {
+HXLINE( 544)			::Array< ::String > diffs = diffStr.split(HX_(",",2c,00,00,00));
+HXLINE( 545)			int i = (diffs->length - 1);
+HXLINE( 546)			while((i > 0)){
+HXLINE( 548)				if (::hx::IsNotNull( diffs->__get(i) )) {
+HXLINE( 550)					diffs[i] = ::StringTools_obj::trim(diffs->__get(i));
+HXLINE( 551)					if ((diffs->__get(i).length < 1)) {
+HXLINE( 551)						diffs->remove(diffs->__get(i));
             					}
             				}
-HXLINE( 540)				i = (i - 1);
+HXLINE( 553)				i = (i - 1);
             			}
-HXLINE( 543)			bool _hx_tmp;
-HXDLIN( 543)			if ((diffs->length > 0)) {
-HXLINE( 543)				_hx_tmp = (diffs->__get(0).length > 0);
+HXLINE( 556)			bool _hx_tmp;
+HXDLIN( 556)			if ((diffs->length > 0)) {
+HXLINE( 556)				_hx_tmp = (diffs->__get(0).length > 0);
             			}
             			else {
-HXLINE( 543)				_hx_tmp = false;
+HXLINE( 556)				_hx_tmp = false;
             			}
-HXDLIN( 543)			if (_hx_tmp) {
-HXLINE( 545)				::backend::CoolUtil_obj::difficulties = diffs;
+HXDLIN( 556)			if (_hx_tmp) {
+HXLINE( 558)				::backend::CoolUtil_obj::difficulties = diffs;
             			}
             		}
-HXLINE( 549)		if (::backend::CoolUtil_obj::difficulties->contains(::backend::CoolUtil_obj::defaultDifficulty)) {
-HXLINE( 551)			this->curDifficulty = ::Math_obj::round(::Math_obj::max(( (Float)(0) ),( (Float)(::backend::CoolUtil_obj::defaultDifficulties->indexOf(::backend::CoolUtil_obj::defaultDifficulty,null())) )));
+HXLINE( 562)		if (::backend::CoolUtil_obj::difficulties->contains(::backend::CoolUtil_obj::defaultDifficulty)) {
+HXLINE( 564)			this->curDifficulty = ::Math_obj::round(::Math_obj::max(( (Float)(0) ),( (Float)(::backend::CoolUtil_obj::defaultDifficulties->indexOf(::backend::CoolUtil_obj::defaultDifficulty,null())) )));
             		}
             		else {
-HXLINE( 555)			this->curDifficulty = 0;
+HXLINE( 568)			this->curDifficulty = 0;
             		}
-HXLINE( 558)		int newPos = ::backend::CoolUtil_obj::difficulties->indexOf(::states::FreeplayState_obj::lastDifficultyName,null());
-HXLINE( 560)		if ((newPos > -1)) {
-HXLINE( 562)			this->curDifficulty = newPos;
+HXLINE( 571)		int newPos = ::backend::CoolUtil_obj::difficulties->indexOf(::states::FreeplayState_obj::lastDifficultyName,null());
+HXLINE( 573)		if ((newPos > -1)) {
+HXLINE( 575)			this->curDifficulty = newPos;
             		}
             	}
 
@@ -1121,15 +1139,15 @@ STATIC_HX_DEFINE_DYNAMIC_FUNC0(FreeplayState_obj,randomizeBG,return )
  ::flixel::sound::FlxSound FreeplayState_obj::vocals;
 
 void FreeplayState_obj::destroyFreeplayVocals(){
-            	HX_STACKFRAME(&_hx_pos_22e2030ae3401175_443_destroyFreeplayVocals)
-HXLINE( 444)		if (::hx::IsNotNull( ::states::FreeplayState_obj::vocals )) {
-HXLINE( 445)			{
-HXLINE( 445)				 ::flixel::sound::FlxSound _this = ::states::FreeplayState_obj::vocals;
-HXDLIN( 445)				_this->cleanup(_this->autoDestroy,true);
+            	HX_STACKFRAME(&_hx_pos_22e2030ae3401175_456_destroyFreeplayVocals)
+HXLINE( 457)		if (::hx::IsNotNull( ::states::FreeplayState_obj::vocals )) {
+HXLINE( 458)			{
+HXLINE( 458)				 ::flixel::sound::FlxSound _this = ::states::FreeplayState_obj::vocals;
+HXDLIN( 458)				_this->cleanup(_this->autoDestroy,true);
             			}
-HXLINE( 446)			::states::FreeplayState_obj::vocals->destroy();
+HXLINE( 459)			::states::FreeplayState_obj::vocals->destroy();
             		}
-HXLINE( 448)		::states::FreeplayState_obj::vocals = null();
+HXLINE( 461)		::states::FreeplayState_obj::vocals = null();
             	}
 
 
@@ -1176,7 +1194,6 @@ void FreeplayState_obj::__Mark(HX_MARK_PARAMS)
 	HX_MARK_MEMBER_NAME(check,"check");
 	HX_MARK_MEMBER_NAME(glow,"glow");
 	HX_MARK_MEMBER_NAME(spikes,"spikes");
-	HX_MARK_MEMBER_NAME(newOffset,"newOffset");
 	HX_MARK_MEMBER_NAME(instPlaying,"instPlaying");
 	HX_MARK_MEMBER_NAME(holdTime,"holdTime");
 	 ::backend::MusicBeatState_obj::__Mark(HX_MARK_ARG);
@@ -1205,7 +1222,6 @@ void FreeplayState_obj::__Visit(HX_VISIT_PARAMS)
 	HX_VISIT_MEMBER_NAME(check,"check");
 	HX_VISIT_MEMBER_NAME(glow,"glow");
 	HX_VISIT_MEMBER_NAME(spikes,"spikes");
-	HX_VISIT_MEMBER_NAME(newOffset,"newOffset");
 	HX_VISIT_MEMBER_NAME(instPlaying,"instPlaying");
 	HX_VISIT_MEMBER_NAME(holdTime,"holdTime");
 	 ::backend::MusicBeatState_obj::__Visit(HX_VISIT_ARG);
@@ -1244,7 +1260,6 @@ void FreeplayState_obj::__Visit(HX_VISIT_PARAMS)
 		if (HX_FIELD_EQ(inName,"scoreText") ) { return ::hx::Val( scoreText ); }
 		if (HX_FIELD_EQ(inName,"lerpScore") ) { return ::hx::Val( lerpScore ); }
 		if (HX_FIELD_EQ(inName,"iconArray") ) { return ::hx::Val( iconArray ); }
-		if (HX_FIELD_EQ(inName,"newOffset") ) { return ::hx::Val( newOffset ); }
 		break;
 	case 10:
 		if (HX_FIELD_EQ(inName,"lerpRating") ) { return ::hx::Val( lerpRating ); }
@@ -1325,7 +1340,6 @@ bool FreeplayState_obj::__GetStatic(const ::String &inName, Dynamic &outValue, :
 		if (HX_FIELD_EQ(inName,"scoreText") ) { scoreText=inValue.Cast<  ::flixel::text::FlxText >(); return inValue; }
 		if (HX_FIELD_EQ(inName,"lerpScore") ) { lerpScore=inValue.Cast< int >(); return inValue; }
 		if (HX_FIELD_EQ(inName,"iconArray") ) { iconArray=inValue.Cast< ::Array< ::Dynamic> >(); return inValue; }
-		if (HX_FIELD_EQ(inName,"newOffset") ) { newOffset=inValue.Cast< Float >(); return inValue; }
 		break;
 	case 10:
 		if (HX_FIELD_EQ(inName,"lerpRating") ) { lerpRating=inValue.Cast< Float >(); return inValue; }
@@ -1387,7 +1401,6 @@ void FreeplayState_obj::__GetFields(Array< ::String> &outFields)
 	outFields->push(HX_("check",c8,98,b6,45));
 	outFields->push(HX_("glow",8d,4e,67,44));
 	outFields->push(HX_("spikes",ed,67,a4,bd));
-	outFields->push(HX_("newOffset",13,64,f0,1d));
 	outFields->push(HX_("instPlaying",48,98,f0,7f));
 	outFields->push(HX_("holdTime",ec,cc,bf,3e));
 	super::__GetFields(outFields);
@@ -1415,7 +1428,6 @@ static ::hx::StorageInfo FreeplayState_obj_sMemberStorageInfo[] = {
 	{::hx::fsObject /*  ::flixel::FlxSprite */ ,(int)offsetof(FreeplayState_obj,check),HX_("check",c8,98,b6,45)},
 	{::hx::fsObject /*  ::flixel::FlxSprite */ ,(int)offsetof(FreeplayState_obj,glow),HX_("glow",8d,4e,67,44)},
 	{::hx::fsObject /*  ::flixel::FlxSprite */ ,(int)offsetof(FreeplayState_obj,spikes),HX_("spikes",ed,67,a4,bd)},
-	{::hx::fsFloat,(int)offsetof(FreeplayState_obj,newOffset),HX_("newOffset",13,64,f0,1d)},
 	{::hx::fsInt,(int)offsetof(FreeplayState_obj,instPlaying),HX_("instPlaying",48,98,f0,7f)},
 	{::hx::fsFloat,(int)offsetof(FreeplayState_obj,holdTime),HX_("holdTime",ec,cc,bf,3e)},
 	{ ::hx::fsUnknown, 0, null()}
@@ -1452,7 +1464,6 @@ static ::String FreeplayState_obj_sMemberFields[] = {
 	HX_("spikes",ed,67,a4,bd),
 	HX_("create",fc,66,0f,7c),
 	HX_("closeSubState",49,18,32,04),
-	HX_("newOffset",13,64,f0,1d),
 	HX_("beatHit",7d,ea,04,74),
 	HX_("addSong",96,66,95,88),
 	HX_("weekIsLocked",a8,d0,e6,fb),
@@ -1534,8 +1545,8 @@ HXDLIN(  39)		lastDifficultyName = HX_("",00,00,00,00);
 HXDLIN(  71)		bgPaths = ::Array_obj< ::String >::fromData( _hx_array_data_c99c2505_24,26);
             	}
 {
-            	HX_STACKFRAME(&_hx_pos_22e2030ae3401175_276_boot)
-HXDLIN( 276)		vocals = null();
+            	HX_STACKFRAME(&_hx_pos_22e2030ae3401175_273_boot)
+HXDLIN( 273)		vocals = null();
             	}
 }
 

@@ -252,14 +252,11 @@ class FreeplayState extends MusicBeatState
 		super.closeSubState();
 	}
 
-	var newOffset = 0.05;
 	override function beatHit()
 		{
 			super.beatHit();
 			FlxG.camera.zoom = 1.05;
 			FlxTween.tween(FlxG.camera, {zoom: 1}, 0.3, {ease: FlxEase.quadOut});
-
-			googlechrom.offset = newOffset;
 		}
 
 	public function addSong(songName:String, weekNum:Int, songCharacter:String, color:Int)
@@ -284,7 +281,23 @@ class FreeplayState extends MusicBeatState
 			FlxG.sound.music.volume += 0.5 * FlxG.elapsed;
 		}
 
-		FlxTween.tween(googlechrom, {offset: 0.0},2, { ease: FlxEase.linear });
+		if (ClientPrefs.data.ChromaticAberration){
+			googlechrom.offset = FlxG.random.float(0.0003, 0.0001);
+			if (songs[curSelected].songName == "Reality-Breaking"){
+				googlechrom.offset = FlxG.random.float(0.005, 0.0015);
+			}
+			if (songs[curSelected].songName == "Rebound"){
+				googlechrom.offset = FlxG.random.float(0.007, 0.0020);
+			}
+			if (songs[curSelected].songName == "Disposition"){
+				googlechrom.offset = FlxG.random.float(0.008, 0.0021);
+			}
+			if (songs[curSelected].songName == "Upheaval"){
+				googlechrom.offset = FlxG.random.float(0.009, 0.0025);
+			}
+		}else{
+			googlechrom.offset = 0;
+		}
 
 		Conductor.songPosition = FlxG.sound.music.time;
 

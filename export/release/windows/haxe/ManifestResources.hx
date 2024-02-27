@@ -161,6 +161,7 @@ null
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_characters_bambi_json extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_characters_bambi3d_json extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_characters_bamburg_crazy_json extends null { }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_characters_bamburg_freeze_json extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_characters_bamburg_player_json extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_characters_bamburg_json extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_characters_bamburg_crazy_old_json extends null { }
@@ -710,6 +711,7 @@ null
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_chart_quant_xml extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_checkboxanim_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_checkboxanim_xml extends null { }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_checkeredbg_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_controllertype_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_credits_basser_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_credits_bb_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
@@ -797,12 +799,6 @@ null
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_icons_godly_goober_2_xml extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_icons_hell1_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_icons_hell2_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_icons_icon_3d_bambi_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_icons_icon_3d_bf___copy_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_icons_icon_3d_bf_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_icons_icon_3d_dave_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_icons_icon_3d_tristan_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_icons_icon_bambi_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_icons_icon_bambi3d_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_icons_icon_bambi3dunfair_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_icons_icon_bambigod_2_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
@@ -817,8 +813,6 @@ null
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_icons_icon_bamburg_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_icons_icon_bamburg_crazy_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_icons_icon_bamburg_freeze_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_icons_icon_bandu_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_icons_icon_bandy_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_icons_icon_banzord_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_icons_icon_bf_old_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_icons_icon_bf_oldbp_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
@@ -827,13 +821,10 @@ null
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_icons_icon_bf_pixel_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_icons_icon_bf_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_icons_icon_bf_xml extends null { }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_icons_icon_bombai_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_icons_icon_bombu_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_icons_icon_bombuexpunged_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_icons_icon_chaos_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_icons_icon_chaos_xml extends null { }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_icons_icon_cheating_expunged_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_icons_icon_collapse_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_icons_icon_complexdave_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_icons_icon_crimsondave_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_icons_icon_crusti_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
@@ -845,51 +836,27 @@ null
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_icons_icon_dave3d_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_icons_icon_daveandtristan_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_icons_icon_daveold_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_icons_icon_david_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_icons_icon_disability_dave_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_icons_icon_disruption_bambi_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_icons_icon_double_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_icons_icon_enraged_bambi_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_icons_icon_expunged_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_icons_icon_expungedduo_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_icons_icon_face_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_icons_icon_future_dave_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_icons_icon_gary_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_icons_icon_geometrical_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_icons_icon_gaytrio_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_icons_icon_gf_playable_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_icons_icon_gf_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_icons_icon_god_expunged_1_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_icons_icon_god_expunged_1_xml extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_icons_icon_goldentristan_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_icons_icon_hexagon_dave_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_icons_icon_instinct_bombu_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_icons_icon_intensity_dave_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_icons_icon_jeff_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_icons_icon_jimmy_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_icons_icon_joke_bambi_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_icons_icon_minion_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_icons_icon_mom_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_icons_icon_money_dave_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_icons_icon_muko_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_icons_icon_multiday_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_icons_icon_none_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_icons_icon_ohfuck_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_icons_icon_old_unfair_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_icons_icon_pie_eater_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_icons_icon_pissed_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_icons_icon_pissed_xml extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_icons_icon_pixelbf_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_icons_icon_playable_3d_dave_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_icons_icon_playable_bambi_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_icons_icon_playable_cheating_expunged_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_icons_icon_playable_dave_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_icons_icon_playable_tristan_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_icons_icon_rascal_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_icons_icon_reprisal_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_icons_icon_ringi_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_icons_icon_screwed_bambi_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_icons_icon_splitathon_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_icons_icon_sugar_rush_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_icons_icon_tristan_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_icons_icon_trueexpunged_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_icons_icon_uhmmm_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }

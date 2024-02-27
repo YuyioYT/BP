@@ -101,7 +101,6 @@ class HXCPP_CLASS_ATTRIBUTES FreeplayState_obj : public  ::backend::MusicBeatSta
 
 		void closeSubState();
 
-		Float newOffset;
 		void beatHit();
 
 		void addSong(::String songName,int weekNum,::String songCharacter,int color);

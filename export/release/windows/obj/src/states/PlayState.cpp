@@ -719,28 +719,28 @@ HX_LOCAL_STACK_FRAME(_hx_pos_801e532e222627de_6055_spawnNoteSplashOnNote,"states
 HX_LOCAL_STACK_FRAME(_hx_pos_801e532e222627de_6062_spawnNoteSplash,"states.PlayState","spawnNoteSplash",0x2955cbd7,"states.PlayState.spawnNoteSplash","states/PlayState.hx",6062,0x36e487ae)
 HX_LOCAL_STACK_FRAME(_hx_pos_801e532e222627de_6068_destroy,"states.PlayState","destroy",0x410194bd,"states.PlayState.destroy","states/PlayState.hx",6068,0x36e487ae)
 HX_LOCAL_STACK_FRAME(_hx_pos_801e532e222627de_6110_stepHit,"states.PlayState","stepHit",0x9dbd162a,"states.PlayState.stepHit","states/PlayState.hx",6110,0x36e487ae)
-HX_LOCAL_STACK_FRAME(_hx_pos_801e532e222627de_6681_beatHit,"states.PlayState","beatHit",0x90805240,"states.PlayState.beatHit","states/PlayState.hx",6681,0x36e487ae)
-HX_LOCAL_STACK_FRAME(_hx_pos_801e532e222627de_6741_beatHit,"states.PlayState","beatHit",0x90805240,"states.PlayState.beatHit","states/PlayState.hx",6741,0x36e487ae)
-HX_LOCAL_STACK_FRAME(_hx_pos_801e532e222627de_6764_sectionHit,"states.PlayState","sectionHit",0xf711898b,"states.PlayState.sectionHit","states/PlayState.hx",6764,0x36e487ae)
-HX_LOCAL_STACK_FRAME(_hx_pos_801e532e222627de_6795_startLuasNamed,"states.PlayState","startLuasNamed",0x3dbc27d9,"states.PlayState.startLuasNamed","states/PlayState.hx",6795,0x36e487ae)
-HX_LOCAL_STACK_FRAME(_hx_pos_801e532e222627de_6819_startHScriptsNamed,"states.PlayState","startHScriptsNamed",0xb8736e74,"states.PlayState.startHScriptsNamed","states/PlayState.hx",6819,0x36e487ae)
-HX_LOCAL_STACK_FRAME(_hx_pos_801e532e222627de_6836_initHScript,"states.PlayState","initHScript",0x1bf574a6,"states.PlayState.initHScript","states/PlayState.hx",6836,0x36e487ae)
-HX_LOCAL_STACK_FRAME(_hx_pos_801e532e222627de_6881_callOnScripts,"states.PlayState","callOnScripts",0x00f6942e,"states.PlayState.callOnScripts","states/PlayState.hx",6881,0x36e487ae)
-HX_LOCAL_STACK_FRAME(_hx_pos_801e532e222627de_6892_callOnLuas,"states.PlayState","callOnLuas",0x4db99bd5,"states.PlayState.callOnLuas","states/PlayState.hx",6892,0x36e487ae)
-HX_LOCAL_STACK_FRAME(_hx_pos_801e532e222627de_6927_callOnHScript,"states.PlayState","callOnHScript",0x34bf98b9,"states.PlayState.callOnHScript","states/PlayState.hx",6927,0x36e487ae)
-HX_LOCAL_STACK_FRAME(_hx_pos_801e532e222627de_6973_setOnScripts,"states.PlayState","setOnScripts",0xa8450a04,"states.PlayState.setOnScripts","states/PlayState.hx",6973,0x36e487ae)
-HX_LOCAL_STACK_FRAME(_hx_pos_801e532e222627de_6979_setOnLuas,"states.PlayState","setOnLuas",0x09e4c43f,"states.PlayState.setOnLuas","states/PlayState.hx",6979,0x36e487ae)
-HX_LOCAL_STACK_FRAME(_hx_pos_801e532e222627de_6991_setOnHScript,"states.PlayState","setOnHScript",0xdc0e0e8f,"states.PlayState.setOnHScript","states/PlayState.hx",6991,0x36e487ae)
-HX_LOCAL_STACK_FRAME(_hx_pos_801e532e222627de_7003_strumPlayAnim,"states.PlayState","strumPlayAnim",0x3aa71091,"states.PlayState.strumPlayAnim","states/PlayState.hx",7003,0x36e487ae)
-HX_LOCAL_STACK_FRAME(_hx_pos_801e532e222627de_7025_RecalculateRating,"states.PlayState","RecalculateRating",0x439ba533,"states.PlayState.RecalculateRating","states/PlayState.hx",7025,0x36e487ae)
-HX_LOCAL_STACK_FRAME(_hx_pos_801e532e222627de_7066_fullComboUpdate,"states.PlayState","fullComboUpdate",0x720f3e6b,"states.PlayState.fullComboUpdate","states/PlayState.hx",7066,0x36e487ae)
-HX_LOCAL_STACK_FRAME(_hx_pos_801e532e222627de_7093_checkForAchievement,"states.PlayState","checkForAchievement",0x64c84711,"states.PlayState.checkForAchievement","states/PlayState.hx",7093,0x36e487ae)
-HX_LOCAL_STACK_FRAME(_hx_pos_801e532e222627de_7150_createRuntimeShader,"states.PlayState","createRuntimeShader",0x1421d5c4,"states.PlayState.createRuntimeShader","states/PlayState.hx",7150,0x36e487ae)
-HX_LOCAL_STACK_FRAME(_hx_pos_801e532e222627de_7169_initLuaShader,"states.PlayState","initLuaShader",0xaa9985d0,"states.PlayState.initLuaShader","states/PlayState.hx",7169,0x36e487ae)
-HX_LOCAL_STACK_FRAME(_hx_pos_801e532e222627de_7277_popupWindow,"states.PlayState","popupWindow",0xeaa8007f,"states.PlayState.popupWindow","states/PlayState.hx",7277,0x36e487ae)
-HX_LOCAL_STACK_FRAME(_hx_pos_801e532e222627de_7286_popupWindow,"states.PlayState","popupWindow",0xeaa8007f,"states.PlayState.popupWindow","states/PlayState.hx",7286,0x36e487ae)
-HX_LOCAL_STACK_FRAME(_hx_pos_801e532e222627de_7224_popupWindow,"states.PlayState","popupWindow",0xeaa8007f,"states.PlayState.popupWindow","states/PlayState.hx",7224,0x36e487ae)
-HX_LOCAL_STACK_FRAME(_hx_pos_801e532e222627de_7300_generateWindowSprite,"states.PlayState","generateWindowSprite",0x705e5947,"states.PlayState.generateWindowSprite","states/PlayState.hx",7300,0x36e487ae)
+HX_LOCAL_STACK_FRAME(_hx_pos_801e532e222627de_6683_beatHit,"states.PlayState","beatHit",0x90805240,"states.PlayState.beatHit","states/PlayState.hx",6683,0x36e487ae)
+HX_LOCAL_STACK_FRAME(_hx_pos_801e532e222627de_6743_beatHit,"states.PlayState","beatHit",0x90805240,"states.PlayState.beatHit","states/PlayState.hx",6743,0x36e487ae)
+HX_LOCAL_STACK_FRAME(_hx_pos_801e532e222627de_6766_sectionHit,"states.PlayState","sectionHit",0xf711898b,"states.PlayState.sectionHit","states/PlayState.hx",6766,0x36e487ae)
+HX_LOCAL_STACK_FRAME(_hx_pos_801e532e222627de_6797_startLuasNamed,"states.PlayState","startLuasNamed",0x3dbc27d9,"states.PlayState.startLuasNamed","states/PlayState.hx",6797,0x36e487ae)
+HX_LOCAL_STACK_FRAME(_hx_pos_801e532e222627de_6821_startHScriptsNamed,"states.PlayState","startHScriptsNamed",0xb8736e74,"states.PlayState.startHScriptsNamed","states/PlayState.hx",6821,0x36e487ae)
+HX_LOCAL_STACK_FRAME(_hx_pos_801e532e222627de_6838_initHScript,"states.PlayState","initHScript",0x1bf574a6,"states.PlayState.initHScript","states/PlayState.hx",6838,0x36e487ae)
+HX_LOCAL_STACK_FRAME(_hx_pos_801e532e222627de_6883_callOnScripts,"states.PlayState","callOnScripts",0x00f6942e,"states.PlayState.callOnScripts","states/PlayState.hx",6883,0x36e487ae)
+HX_LOCAL_STACK_FRAME(_hx_pos_801e532e222627de_6894_callOnLuas,"states.PlayState","callOnLuas",0x4db99bd5,"states.PlayState.callOnLuas","states/PlayState.hx",6894,0x36e487ae)
+HX_LOCAL_STACK_FRAME(_hx_pos_801e532e222627de_6929_callOnHScript,"states.PlayState","callOnHScript",0x34bf98b9,"states.PlayState.callOnHScript","states/PlayState.hx",6929,0x36e487ae)
+HX_LOCAL_STACK_FRAME(_hx_pos_801e532e222627de_6975_setOnScripts,"states.PlayState","setOnScripts",0xa8450a04,"states.PlayState.setOnScripts","states/PlayState.hx",6975,0x36e487ae)
+HX_LOCAL_STACK_FRAME(_hx_pos_801e532e222627de_6981_setOnLuas,"states.PlayState","setOnLuas",0x09e4c43f,"states.PlayState.setOnLuas","states/PlayState.hx",6981,0x36e487ae)
+HX_LOCAL_STACK_FRAME(_hx_pos_801e532e222627de_6993_setOnHScript,"states.PlayState","setOnHScript",0xdc0e0e8f,"states.PlayState.setOnHScript","states/PlayState.hx",6993,0x36e487ae)
+HX_LOCAL_STACK_FRAME(_hx_pos_801e532e222627de_7005_strumPlayAnim,"states.PlayState","strumPlayAnim",0x3aa71091,"states.PlayState.strumPlayAnim","states/PlayState.hx",7005,0x36e487ae)
+HX_LOCAL_STACK_FRAME(_hx_pos_801e532e222627de_7027_RecalculateRating,"states.PlayState","RecalculateRating",0x439ba533,"states.PlayState.RecalculateRating","states/PlayState.hx",7027,0x36e487ae)
+HX_LOCAL_STACK_FRAME(_hx_pos_801e532e222627de_7068_fullComboUpdate,"states.PlayState","fullComboUpdate",0x720f3e6b,"states.PlayState.fullComboUpdate","states/PlayState.hx",7068,0x36e487ae)
+HX_LOCAL_STACK_FRAME(_hx_pos_801e532e222627de_7095_checkForAchievement,"states.PlayState","checkForAchievement",0x64c84711,"states.PlayState.checkForAchievement","states/PlayState.hx",7095,0x36e487ae)
+HX_LOCAL_STACK_FRAME(_hx_pos_801e532e222627de_7152_createRuntimeShader,"states.PlayState","createRuntimeShader",0x1421d5c4,"states.PlayState.createRuntimeShader","states/PlayState.hx",7152,0x36e487ae)
+HX_LOCAL_STACK_FRAME(_hx_pos_801e532e222627de_7171_initLuaShader,"states.PlayState","initLuaShader",0xaa9985d0,"states.PlayState.initLuaShader","states/PlayState.hx",7171,0x36e487ae)
+HX_LOCAL_STACK_FRAME(_hx_pos_801e532e222627de_7279_popupWindow,"states.PlayState","popupWindow",0xeaa8007f,"states.PlayState.popupWindow","states/PlayState.hx",7279,0x36e487ae)
+HX_LOCAL_STACK_FRAME(_hx_pos_801e532e222627de_7288_popupWindow,"states.PlayState","popupWindow",0xeaa8007f,"states.PlayState.popupWindow","states/PlayState.hx",7288,0x36e487ae)
+HX_LOCAL_STACK_FRAME(_hx_pos_801e532e222627de_7226_popupWindow,"states.PlayState","popupWindow",0xeaa8007f,"states.PlayState.popupWindow","states/PlayState.hx",7226,0x36e487ae)
+HX_LOCAL_STACK_FRAME(_hx_pos_801e532e222627de_7302_generateWindowSprite,"states.PlayState","generateWindowSprite",0x705e5947,"states.PlayState.generateWindowSprite","states/PlayState.hx",7302,0x36e487ae)
 HX_LOCAL_STACK_FRAME(_hx_pos_801e532e222627de_187_get_isPixelStage,"states.PlayState","get_isPixelStage",0x64d0cb48,"states.PlayState.get_isPixelStage","states/PlayState.hx",187,0x36e487ae)
 HX_LOCAL_STACK_FRAME(_hx_pos_801e532e222627de_3178_sortByTime,"states.PlayState","sortByTime",0xa7748f9f,"states.PlayState.sortByTime","states/PlayState.hx",3178,0x36e487ae)
 HX_LOCAL_STACK_FRAME(_hx_pos_801e532e222627de_3377_quickSpin,"states.PlayState","quickSpin",0x77492dd2,"states.PlayState.quickSpin","states/PlayState.hx",3377,0x36e487ae)
@@ -773,9 +773,9 @@ namespace states{
 
 void PlayState_obj::__construct( ::flixel::addons::transition::TransitionData TransIn, ::flixel::addons::transition::TransitionData TransOut){
             	HX_GC_STACKFRAME(&_hx_pos_801e532e222627de_101_new)
-HXLINE(7148)		this->runtimeShaders =  ::haxe::ds::StringMap_obj::__alloc( HX_CTX );
-HXLINE(7022)		this->ratingName = HX_("?",3f,00,00,00);
-HXLINE(6678)		this->lastBeatHit = -1;
+HXLINE(7150)		this->runtimeShaders =  ::haxe::ds::StringMap_obj::__alloc( HX_CTX );
+HXLINE(7024)		this->ratingName = HX_("?",3f,00,00,00);
+HXLINE(6680)		this->lastBeatHit = -1;
 HXLINE(6108)		this->lastStepHit = -1;
 HXLINE(5372)		this->strumsBlocked = ::Array_obj< bool >::__new(0);
 HXLINE(5161)		this->lastScore = ::Array_obj< ::Dynamic>::__new(0);
@@ -9788,7 +9788,7 @@ HXLINE(4856)					this->zoomAdd = ((Float)-0.15);
 HXDLIN(4856)					goto _hx_goto_220;
             				}
             				if (  (_hx_switch_0==HX_("bambi-scaryooo",ef,91,fc,bd)) ||  (_hx_switch_0==HX_("bamburg",16,c5,a2,b7)) ||  (_hx_switch_0==HX_("bamburg-player",f8,74,c4,a3)) ||  (_hx_switch_0==HX_("bombu",d3,93,f6,b6)) ||  (_hx_switch_0==HX_("bombu-v2",76,de,c1,3c)) ||  (_hx_switch_0==HX_("gary",61,f8,5e,44)) ){
-HXLINE(4854)					this->zoomAdd = ((Float)-0.5);
+HXLINE(4854)					this->zoomAdd = ((Float)-0.05);
 HXDLIN(4854)					goto _hx_goto_220;
             				}
             				if (  (_hx_switch_0==HX_("bambi-3d",49,96,a6,ee)) ||  (_hx_switch_0==HX_("bambi-piss-3d",8d,ac,67,5b)) ||  (_hx_switch_0==HX_("bambi-unfair",35,46,2f,c6)) ||  (_hx_switch_0==HX_("crimson-bambi",e7,e2,ed,14)) ||  (_hx_switch_0==HX_("crimson-dave",5a,ec,8c,5f)) ||  (_hx_switch_0==HX_("expunged",10,f2,d4,7d)) ||  (_hx_switch_0==HX_("god-expunged-1",25,60,94,3a)) ||  (_hx_switch_0==HX_("god-expunged-1-new",f8,40,2a,f8)) ){
@@ -12075,277 +12075,277 @@ HXLINE(6116)				this->resyncVocals();
 HXLINE(6120)		this->super::stepHit();
 HXLINE(6122)		::String _hx_switch_0 = ( (::String)(::states::PlayState_obj::SONG->__Field(HX_("song",d5,23,58,4c),::hx::paccDynamic)) ).toLowerCase();
             		if (  (_hx_switch_0==HX_("acquaintance",43,59,59,c9)) ){
-HXLINE(6528)			switch((int)(this->curStep)){
+HXLINE(6530)			switch((int)(this->curStep)){
             				case (int)0: {
-HXLINE(6531)					this->camZoomSnap = true;
+HXLINE(6533)					this->camZoomSnap = true;
             				}
             				break;
             				case (int)512: {
-HXLINE(6533)					this->camTilt = true;
+HXLINE(6535)					this->camTilt = true;
             				}
             				break;
             				case (int)768: {
-HXLINE(6535)					this->camZoomSnap = false;
-HXLINE(6536)					this->camTilt = false;
-HXLINE(6537)					if (::hx::IsNotNull( this->camTiltTween )) {
-HXLINE(6537)						this->camTiltTween->cancel();
+HXLINE(6537)					this->camZoomSnap = false;
+HXLINE(6538)					this->camTilt = false;
+HXLINE(6539)					if (::hx::IsNotNull( this->camTiltTween )) {
+HXLINE(6539)						this->camTiltTween->cancel();
             					}
-HXLINE(6538)					this->camTiltTween = ::flixel::tweens::FlxTween_obj::tween(this->camHUD, ::Dynamic(::hx::Anon_obj::Create(1)
+HXLINE(6540)					this->camTiltTween = ::flixel::tweens::FlxTween_obj::tween(this->camHUD, ::Dynamic(::hx::Anon_obj::Create(1)
             						->setFixed(0,HX_("angle",d3,43,e2,22),0)),(::backend::Conductor_obj::crochet / ( (Float)(1000) )), ::Dynamic(::hx::Anon_obj::Create(1)
             						->setFixed(0,HX_("ease",ee,8b,0c,43),::flixel::tweens::FlxEase_obj::quadOut_dyn())));
             				}
             				break;
             				case (int)1024: {
-HXLINE(6540)					this->camZoomSnap = true;
-HXLINE(6541)					this->camTilt = true;
+HXLINE(6542)					this->camZoomSnap = true;
+HXLINE(6543)					this->camTilt = true;
             				}
             				break;
             				case (int)1280: {
-HXLINE(6543)					this->camZoomSnap = false;
-HXLINE(6544)					this->camTilt = false;
-HXLINE(6545)					if (::hx::IsNotNull( this->camTiltTween )) {
-HXLINE(6545)						this->camTiltTween->cancel();
+HXLINE(6545)					this->camZoomSnap = false;
+HXLINE(6546)					this->camTilt = false;
+HXLINE(6547)					if (::hx::IsNotNull( this->camTiltTween )) {
+HXLINE(6547)						this->camTiltTween->cancel();
             					}
-HXLINE(6546)					this->camTiltTween = ::flixel::tweens::FlxTween_obj::tween(this->camHUD, ::Dynamic(::hx::Anon_obj::Create(1)
+HXLINE(6548)					this->camTiltTween = ::flixel::tweens::FlxTween_obj::tween(this->camHUD, ::Dynamic(::hx::Anon_obj::Create(1)
             						->setFixed(0,HX_("angle",d3,43,e2,22),0)),(::backend::Conductor_obj::crochet / ( (Float)(1000) )), ::Dynamic(::hx::Anon_obj::Create(1)
             						->setFixed(0,HX_("ease",ee,8b,0c,43),::flixel::tweens::FlxEase_obj::quadOut_dyn())));
             				}
             				break;
             			}
-HXLINE(6528)			goto _hx_goto_282;
+HXLINE(6530)			goto _hx_goto_282;
             		}
             		if (  (_hx_switch_0==HX_("disposition",f7,db,d9,c2)) ){
-HXLINE(6366)			switch((int)(this->curStep)){
+HXLINE(6368)			switch((int)(this->curStep)){
             				case (int)120: {
-HXLINE(6369)					::flixel::FlxG_obj::camera->set_visible(false);
-HXLINE(6370)					this->camZooming = true;
+HXLINE(6371)					::flixel::FlxG_obj::camera->set_visible(false);
+HXLINE(6372)					this->camZooming = true;
             				}
             				break;
             				case (int)127: {
-HXLINE(6372)					::flixel::FlxG_obj::camera->set_visible(true);
+HXLINE(6374)					::flixel::FlxG_obj::camera->set_visible(true);
             				}
             				break;
             				case (int)496: {
-HXLINE(6374)					 ::states::PlayState _hx_tmp = ::hx::ObjectPtr<OBJ_>(this);
-HXDLIN(6374)					_hx_tmp->defaultCamZoom = (_hx_tmp->defaultCamZoom + ((Float)0.135));
+HXLINE(6376)					 ::states::PlayState _hx_tmp = ::hx::ObjectPtr<OBJ_>(this);
+HXDLIN(6376)					_hx_tmp->defaultCamZoom = (_hx_tmp->defaultCamZoom + ((Float)0.135));
             				}
             				break;
             				case (int)504: {
-HXLINE(6376)					 ::states::PlayState _hx_tmp = ::hx::ObjectPtr<OBJ_>(this);
-HXDLIN(6376)					_hx_tmp->defaultCamZoom = (_hx_tmp->defaultCamZoom + ((Float)0.185));
+HXLINE(6378)					 ::states::PlayState _hx_tmp = ::hx::ObjectPtr<OBJ_>(this);
+HXDLIN(6378)					_hx_tmp->defaultCamZoom = (_hx_tmp->defaultCamZoom + ((Float)0.185));
             				}
             				break;
             				case (int)512: {
-HXLINE(6378)					 ::states::PlayState _hx_tmp = ::hx::ObjectPtr<OBJ_>(this);
-HXDLIN(6378)					_hx_tmp->defaultCamZoom = (_hx_tmp->defaultCamZoom - ((Float)0.32));
+HXLINE(6380)					 ::states::PlayState _hx_tmp = ::hx::ObjectPtr<OBJ_>(this);
+HXDLIN(6380)					_hx_tmp->defaultCamZoom = (_hx_tmp->defaultCamZoom - ((Float)0.32));
             				}
             				break;
             				case (int)752: {
-HXLINE(6380)					 ::states::PlayState _hx_tmp = ::hx::ObjectPtr<OBJ_>(this);
-HXDLIN(6380)					_hx_tmp->defaultCamZoom = (_hx_tmp->defaultCamZoom + ((Float)0.125));
+HXLINE(6382)					 ::states::PlayState _hx_tmp = ::hx::ObjectPtr<OBJ_>(this);
+HXDLIN(6382)					_hx_tmp->defaultCamZoom = (_hx_tmp->defaultCamZoom + ((Float)0.125));
             				}
             				break;
             				case (int)768: {
-HXLINE(6382)					 ::states::PlayState _hx_tmp = ::hx::ObjectPtr<OBJ_>(this);
-HXDLIN(6382)					_hx_tmp->defaultCamZoom = (_hx_tmp->defaultCamZoom - ((Float)0.125));
+HXLINE(6384)					 ::states::PlayState _hx_tmp = ::hx::ObjectPtr<OBJ_>(this);
+HXDLIN(6384)					_hx_tmp->defaultCamZoom = (_hx_tmp->defaultCamZoom - ((Float)0.125));
             				}
             				break;
             				case (int)1136: {
-HXLINE(6384)					 ::states::PlayState _hx_tmp = ::hx::ObjectPtr<OBJ_>(this);
-HXDLIN(6384)					_hx_tmp->defaultCamZoom = (_hx_tmp->defaultCamZoom + ((Float)0.3));
+HXLINE(6386)					 ::states::PlayState _hx_tmp = ::hx::ObjectPtr<OBJ_>(this);
+HXDLIN(6386)					_hx_tmp->defaultCamZoom = (_hx_tmp->defaultCamZoom + ((Float)0.3));
             				}
             				break;
             				case (int)1152: {
-HXLINE(6386)					 ::states::PlayState _hx_tmp = ::hx::ObjectPtr<OBJ_>(this);
-HXDLIN(6386)					_hx_tmp->defaultCamZoom = (_hx_tmp->defaultCamZoom - ((Float)0.3));
+HXLINE(6388)					 ::states::PlayState _hx_tmp = ::hx::ObjectPtr<OBJ_>(this);
+HXDLIN(6388)					_hx_tmp->defaultCamZoom = (_hx_tmp->defaultCamZoom - ((Float)0.3));
             				}
             				break;
             				case (int)1405: {
-HXLINE(6391)					::flixel::FlxG_obj::camera->set_angle(( (Float)(-2) ));
-HXLINE(6392)					this->camHUD->set_angle(( (Float)(-2) ));
+HXLINE(6393)					::flixel::FlxG_obj::camera->set_angle(( (Float)(-2) ));
+HXLINE(6394)					this->camHUD->set_angle(( (Float)(-2) ));
             				}
             				break;
             				case (int)1404: case (int)1406: {
-HXLINE(6388)					::flixel::FlxG_obj::camera->set_angle(( (Float)(2) ));
-HXLINE(6389)					this->camHUD->set_angle(( (Float)(2) ));
+HXLINE(6390)					::flixel::FlxG_obj::camera->set_angle(( (Float)(2) ));
+HXLINE(6391)					this->camHUD->set_angle(( (Float)(2) ));
             				}
             				break;
             				case (int)1407: {
-HXLINE(6394)					{
-HXLINE(6394)						 ::flixel::FlxCamera camerass = this->camHUD;
-HXLINE(6395)						::flixel::tweens::FlxTween_obj::tween(camerass, ::Dynamic(::hx::Anon_obj::Create(1)
+HXLINE(6396)					{
+HXLINE(6396)						 ::flixel::FlxCamera camerass = this->camHUD;
+HXLINE(6397)						::flixel::tweens::FlxTween_obj::tween(camerass, ::Dynamic(::hx::Anon_obj::Create(1)
             							->setFixed(0,HX_("angle",d3,43,e2,22),0)),2, ::Dynamic(::hx::Anon_obj::Create(1)
             							->setFixed(0,HX_("ease",ee,8b,0c,43),::flixel::tweens::FlxEase_obj::backOut_dyn())));
             					}
-HXLINE(6394)					{
-HXLINE(6394)						 ::flixel::FlxCamera camerass1 = this->camGame;
-HXLINE(6395)						::flixel::tweens::FlxTween_obj::tween(camerass1, ::Dynamic(::hx::Anon_obj::Create(1)
+HXLINE(6396)					{
+HXLINE(6396)						 ::flixel::FlxCamera camerass1 = this->camGame;
+HXLINE(6397)						::flixel::tweens::FlxTween_obj::tween(camerass1, ::Dynamic(::hx::Anon_obj::Create(1)
             							->setFixed(0,HX_("angle",d3,43,e2,22),0)),2, ::Dynamic(::hx::Anon_obj::Create(1)
             							->setFixed(0,HX_("ease",ee,8b,0c,43),::flixel::tweens::FlxEase_obj::backOut_dyn())));
             					}
             				}
             				break;
             				case (int)2296: case (int)2297: case (int)2298: case (int)2299: case (int)2300: {
-HXLINE(6397)					 ::flixel::FlxCamera fh = this->camHUD;
-HXDLIN(6397)					fh->set_y((fh->y + ((Float)22.25)));
-HXLINE(6398)					 ::flixel::FlxCamera fh1 = this->camHUD;
-HXDLIN(6398)					fh1->set_x((fh1->x + ((Float)22.25)));
+HXLINE(6399)					 ::flixel::FlxCamera fh = this->camHUD;
+HXDLIN(6399)					fh->set_y((fh->y + ((Float)22.25)));
+HXLINE(6400)					 ::flixel::FlxCamera fh1 = this->camHUD;
+HXDLIN(6400)					fh1->set_x((fh1->x + ((Float)22.25)));
             				}
             				break;
             				case (int)2301: {
-HXLINE(6400)					::flixel::FlxG_obj::camera->set_visible(false);
-HXLINE(6401)					this->camHUD->set_visible(false);
+HXLINE(6402)					::flixel::FlxG_obj::camera->set_visible(false);
+HXLINE(6403)					this->camHUD->set_visible(false);
             				}
             				break;
             				case (int)2303: {
-HXLINE(6403)					this->camHUD->set_y(( (Float)(0) ));
-HXLINE(6404)					this->camHUD->set_x(( (Float)(0) ));
-HXLINE(6405)					::flixel::FlxG_obj::camera->set_visible(true);
-HXLINE(6406)					this->camHUD->set_visible(true);
-HXLINE(6407)					this->camOther->flash(null(),null(),null(),null());
+HXLINE(6405)					this->camHUD->set_y(( (Float)(0) ));
+HXLINE(6406)					this->camHUD->set_x(( (Float)(0) ));
+HXLINE(6407)					::flixel::FlxG_obj::camera->set_visible(true);
+HXLINE(6408)					this->camHUD->set_visible(true);
+HXLINE(6409)					this->camOther->flash(null(),null(),null(),null());
             				}
             				break;
             			}
-HXLINE(6366)			goto _hx_goto_282;
+HXLINE(6368)			goto _hx_goto_282;
             		}
             		if (  (_hx_switch_0==HX_("disposition old",fe,0f,d8,b1)) ){
-HXLINE(6296)			switch((int)(this->curStep)){
+HXLINE(6298)			switch((int)(this->curStep)){
             				case (int)120: {
-HXLINE(6299)					::flixel::FlxG_obj::camera->set_visible(false);
-HXLINE(6300)					this->camZooming = true;
+HXLINE(6301)					::flixel::FlxG_obj::camera->set_visible(false);
+HXLINE(6302)					this->camZooming = true;
             				}
             				break;
             				case (int)127: {
-HXLINE(6302)					::flixel::FlxG_obj::camera->set_visible(true);
+HXLINE(6304)					::flixel::FlxG_obj::camera->set_visible(true);
             				}
             				break;
             				case (int)239: {
-HXLINE(6304)					this->tutorialTxt->set_alpha(( (Float)(1) ));
-HXLINE(6305)					this->tutorialTxt->set_text(HX_("I",49,00,00,00));
+HXLINE(6306)					this->tutorialTxt->set_alpha(( (Float)(1) ));
+HXLINE(6307)					this->tutorialTxt->set_text(HX_("I",49,00,00,00));
             				}
             				break;
             				case (int)242: {
-HXLINE(6307)					this->tutorialTxt->set_text(HX_("I-IS",ae,f8,62,30));
+HXLINE(6309)					this->tutorialTxt->set_text(HX_("I-IS",ae,f8,62,30));
             				}
             				break;
             				case (int)244: {
-HXLINE(6309)					this->tutorialTxt->set_text(HX_("I-ISAAC...",99,33,2e,4b));
+HXLINE(6311)					this->tutorialTxt->set_text(HX_("I-ISAAC...",99,33,2e,4b));
             				}
             				break;
             				case (int)248: {
-HXLINE(6311)					this->tutorialTxt->set_text(HX_("STOP!!!",7f,dc,11,c3));
+HXLINE(6313)					this->tutorialTxt->set_text(HX_("STOP!!!",7f,dc,11,c3));
             				}
             				break;
             				case (int)254: {
-HXLINE(6313)					this->tutorialTxt->set_text(HX_("S-TO",75,24,ff,36));
+HXLINE(6315)					this->tutorialTxt->set_text(HX_("S-TO",75,24,ff,36));
             				}
             				break;
             				case (int)255: {
-HXLINE(6315)					this->tutorialTxt->set_text(HX_("TO-TO",4d,04,03,92));
+HXLINE(6317)					this->tutorialTxt->set_text(HX_("TO-TO",4d,04,03,92));
             				}
             				break;
             				case (int)256: {
-HXLINE(6317)					this->tutorialTxt->set_text(HX_("",00,00,00,00));
-HXLINE(6318)					this->tutorialTxt->set_alpha(( (Float)(0) ));
+HXLINE(6319)					this->tutorialTxt->set_text(HX_("",00,00,00,00));
+HXLINE(6320)					this->tutorialTxt->set_alpha(( (Float)(0) ));
             				}
             				break;
             				case (int)496: {
-HXLINE(6320)					 ::states::PlayState _hx_tmp = ::hx::ObjectPtr<OBJ_>(this);
-HXDLIN(6320)					_hx_tmp->defaultCamZoom = (_hx_tmp->defaultCamZoom + ((Float)0.135));
+HXLINE(6322)					 ::states::PlayState _hx_tmp = ::hx::ObjectPtr<OBJ_>(this);
+HXDLIN(6322)					_hx_tmp->defaultCamZoom = (_hx_tmp->defaultCamZoom + ((Float)0.135));
             				}
             				break;
             				case (int)504: {
-HXLINE(6322)					 ::states::PlayState _hx_tmp = ::hx::ObjectPtr<OBJ_>(this);
-HXDLIN(6322)					_hx_tmp->defaultCamZoom = (_hx_tmp->defaultCamZoom + ((Float)0.185));
+HXLINE(6324)					 ::states::PlayState _hx_tmp = ::hx::ObjectPtr<OBJ_>(this);
+HXDLIN(6324)					_hx_tmp->defaultCamZoom = (_hx_tmp->defaultCamZoom + ((Float)0.185));
             				}
             				break;
             				case (int)512: {
-HXLINE(6324)					 ::states::PlayState _hx_tmp = ::hx::ObjectPtr<OBJ_>(this);
-HXDLIN(6324)					_hx_tmp->defaultCamZoom = (_hx_tmp->defaultCamZoom - ((Float)0.32));
+HXLINE(6326)					 ::states::PlayState _hx_tmp = ::hx::ObjectPtr<OBJ_>(this);
+HXDLIN(6326)					_hx_tmp->defaultCamZoom = (_hx_tmp->defaultCamZoom - ((Float)0.32));
             				}
             				break;
             				case (int)752: {
-HXLINE(6326)					 ::states::PlayState _hx_tmp = ::hx::ObjectPtr<OBJ_>(this);
-HXDLIN(6326)					_hx_tmp->defaultCamZoom = (_hx_tmp->defaultCamZoom + ((Float)0.125));
+HXLINE(6328)					 ::states::PlayState _hx_tmp = ::hx::ObjectPtr<OBJ_>(this);
+HXDLIN(6328)					_hx_tmp->defaultCamZoom = (_hx_tmp->defaultCamZoom + ((Float)0.125));
             				}
             				break;
             				case (int)768: {
-HXLINE(6328)					 ::states::PlayState _hx_tmp = ::hx::ObjectPtr<OBJ_>(this);
-HXDLIN(6328)					_hx_tmp->defaultCamZoom = (_hx_tmp->defaultCamZoom - ((Float)0.125));
+HXLINE(6330)					 ::states::PlayState _hx_tmp = ::hx::ObjectPtr<OBJ_>(this);
+HXDLIN(6330)					_hx_tmp->defaultCamZoom = (_hx_tmp->defaultCamZoom - ((Float)0.125));
             				}
             				break;
             				case (int)1136: {
-HXLINE(6331)					 ::states::PlayState _hx_tmp = ::hx::ObjectPtr<OBJ_>(this);
-HXDLIN(6331)					_hx_tmp->defaultCamZoom = (_hx_tmp->defaultCamZoom + ((Float)0.3));
-HXLINE(6332)					if (::backend::ClientPrefs_obj::data->BlackScreen) {
-HXLINE(6334)						::flixel::tweens::FlxTween_obj::tween(this->blackScreen, ::Dynamic(::hx::Anon_obj::Create(1)
+HXLINE(6333)					 ::states::PlayState _hx_tmp = ::hx::ObjectPtr<OBJ_>(this);
+HXDLIN(6333)					_hx_tmp->defaultCamZoom = (_hx_tmp->defaultCamZoom + ((Float)0.3));
+HXLINE(6334)					if (::backend::ClientPrefs_obj::data->BlackScreen) {
+HXLINE(6336)						::flixel::tweens::FlxTween_obj::tween(this->blackScreen, ::Dynamic(::hx::Anon_obj::Create(1)
             							->setFixed(0,HX_("alpha",5e,a7,96,21),((Float)0.35))),(::backend::Conductor_obj::stepCrochet / ( (Float)(500) )),null());
             					}
             				}
             				break;
             				case (int)1152: {
-HXLINE(6337)					 ::states::PlayState _hx_tmp = ::hx::ObjectPtr<OBJ_>(this);
-HXDLIN(6337)					_hx_tmp->defaultCamZoom = (_hx_tmp->defaultCamZoom - ((Float)0.3));
-HXLINE(6338)					if (::backend::ClientPrefs_obj::data->BlackScreen) {
-HXLINE(6340)						::flixel::tweens::FlxTween_obj::tween(this->blackScreen, ::Dynamic(::hx::Anon_obj::Create(1)
+HXLINE(6339)					 ::states::PlayState _hx_tmp = ::hx::ObjectPtr<OBJ_>(this);
+HXDLIN(6339)					_hx_tmp->defaultCamZoom = (_hx_tmp->defaultCamZoom - ((Float)0.3));
+HXLINE(6340)					if (::backend::ClientPrefs_obj::data->BlackScreen) {
+HXLINE(6342)						::flixel::tweens::FlxTween_obj::tween(this->blackScreen, ::Dynamic(::hx::Anon_obj::Create(1)
             							->setFixed(0,HX_("alpha",5e,a7,96,21),0)),(::backend::Conductor_obj::stepCrochet / ( (Float)(500) )),null());
             					}
             				}
             				break;
             				case (int)1405: {
-HXLINE(6346)					::flixel::FlxG_obj::camera->set_angle(( (Float)(-2) ));
-HXLINE(6347)					this->camHUD->set_angle(( (Float)(-2) ));
+HXLINE(6348)					::flixel::FlxG_obj::camera->set_angle(( (Float)(-2) ));
+HXLINE(6349)					this->camHUD->set_angle(( (Float)(-2) ));
             				}
             				break;
             				case (int)1404: case (int)1406: {
-HXLINE(6343)					::flixel::FlxG_obj::camera->set_angle(( (Float)(2) ));
-HXLINE(6344)					this->camHUD->set_angle(( (Float)(2) ));
+HXLINE(6345)					::flixel::FlxG_obj::camera->set_angle(( (Float)(2) ));
+HXLINE(6346)					this->camHUD->set_angle(( (Float)(2) ));
             				}
             				break;
             				case (int)1407: {
-HXLINE(6350)					{
-HXLINE(6350)						 ::flixel::FlxCamera camerass = this->camHUD;
-HXLINE(6351)						::flixel::tweens::FlxTween_obj::tween(camerass, ::Dynamic(::hx::Anon_obj::Create(1)
+HXLINE(6352)					{
+HXLINE(6352)						 ::flixel::FlxCamera camerass = this->camHUD;
+HXLINE(6353)						::flixel::tweens::FlxTween_obj::tween(camerass, ::Dynamic(::hx::Anon_obj::Create(1)
             							->setFixed(0,HX_("angle",d3,43,e2,22),0)),2, ::Dynamic(::hx::Anon_obj::Create(1)
             							->setFixed(0,HX_("ease",ee,8b,0c,43),::flixel::tweens::FlxEase_obj::backOut_dyn())));
             					}
-HXLINE(6350)					{
-HXLINE(6350)						 ::flixel::FlxCamera camerass1 = this->camGame;
-HXLINE(6351)						::flixel::tweens::FlxTween_obj::tween(camerass1, ::Dynamic(::hx::Anon_obj::Create(1)
+HXLINE(6352)					{
+HXLINE(6352)						 ::flixel::FlxCamera camerass1 = this->camGame;
+HXLINE(6353)						::flixel::tweens::FlxTween_obj::tween(camerass1, ::Dynamic(::hx::Anon_obj::Create(1)
             							->setFixed(0,HX_("angle",d3,43,e2,22),0)),2, ::Dynamic(::hx::Anon_obj::Create(1)
             							->setFixed(0,HX_("ease",ee,8b,0c,43),::flixel::tweens::FlxEase_obj::backOut_dyn())));
             					}
             				}
             				break;
             				case (int)2296: case (int)2297: case (int)2298: case (int)2299: case (int)2300: {
-HXLINE(6353)					 ::flixel::FlxCamera fh = this->camHUD;
-HXDLIN(6353)					fh->set_y((fh->y + ((Float)22.25)));
-HXLINE(6354)					 ::flixel::FlxCamera fh1 = this->camHUD;
-HXDLIN(6354)					fh1->set_x((fh1->x + ((Float)22.25)));
+HXLINE(6355)					 ::flixel::FlxCamera fh = this->camHUD;
+HXDLIN(6355)					fh->set_y((fh->y + ((Float)22.25)));
+HXLINE(6356)					 ::flixel::FlxCamera fh1 = this->camHUD;
+HXDLIN(6356)					fh1->set_x((fh1->x + ((Float)22.25)));
             				}
             				break;
             				case (int)2301: {
-HXLINE(6356)					::flixel::FlxG_obj::camera->set_visible(false);
-HXLINE(6357)					this->camHUD->set_visible(false);
+HXLINE(6358)					::flixel::FlxG_obj::camera->set_visible(false);
+HXLINE(6359)					this->camHUD->set_visible(false);
             				}
             				break;
             				case (int)2303: {
-HXLINE(6359)					this->camHUD->set_y(( (Float)(0) ));
-HXLINE(6360)					this->camHUD->set_x(( (Float)(0) ));
-HXLINE(6361)					::flixel::FlxG_obj::camera->set_visible(true);
-HXLINE(6362)					this->camHUD->set_visible(true);
-HXLINE(6363)					this->camOther->flash(null(),null(),null(),null());
+HXLINE(6361)					this->camHUD->set_y(( (Float)(0) ));
+HXLINE(6362)					this->camHUD->set_x(( (Float)(0) ));
+HXLINE(6363)					::flixel::FlxG_obj::camera->set_visible(true);
+HXLINE(6364)					this->camHUD->set_visible(true);
+HXLINE(6365)					this->camOther->flash(null(),null(),null(),null());
             				}
             				break;
             			}
-HXLINE(6296)			goto _hx_goto_282;
+HXLINE(6298)			goto _hx_goto_282;
             		}
             		if (  (_hx_switch_0==HX_("number 15",db,8f,51,1e)) ){
-HXLINE(6514)			if ((this->curStep == 1)) {
-HXLINE(6517)				this->cinematicBars(((::backend::Conductor_obj::stepCrochet * ( (Float)(3013) )) / ( (Float)(1000) )),( (Float)(400) ));
-HXLINE(6518)				this->cpuControlled = true;
+HXLINE(6516)			if ((this->curStep == 1)) {
+HXLINE(6519)				this->cinematicBars(((::backend::Conductor_obj::stepCrochet * ( (Float)(3013) )) / ( (Float)(1000) )),( (Float)(400) ));
+HXLINE(6520)				this->cpuControlled = true;
             			}
-HXLINE(6514)			goto _hx_goto_282;
+HXLINE(6516)			goto _hx_goto_282;
             		}
             		if (  (_hx_switch_0==HX_("reality breaking",13,62,18,36)) ){
 HXLINE(6146)			switch((int)(this->curStep)){
@@ -12367,219 +12367,223 @@ HXLINE(6156)					this->camZoomingMult = ( (Float)(1) );
             				case (int)624: case (int)880: {
 HXLINE(6158)					 ::states::PlayState _hx_tmp = ::hx::ObjectPtr<OBJ_>(this);
 HXDLIN(6158)					_hx_tmp->defaultCamZoom = (_hx_tmp->defaultCamZoom + ((Float)0.2));
-HXLINE(6159)					this->cinematicBars(((::backend::Conductor_obj::stepCrochet * ( (Float)(13) )) / ( (Float)(1000) )),( (Float)(400) ));
+HXLINE(6159)					this->cinematicBars(((::backend::Conductor_obj::stepCrochet * ((Float)6.6)) / ( (Float)(1000) )),( (Float)(400) ));
 HXLINE(6160)					this->tutorialTxt->set_alpha(( (Float)(1) ));
-HXLINE(6161)					this->tutorialTxt->set_text(HX_("HOLY SHIT",0c,46,7f,8c));
+HXLINE(6161)					this->tutorialTxt->set_text(HX_("HOLY",54,91,d3,2f));
+            				}
+            				break;
+            				case (int)632: case (int)888: {
+HXLINE(6163)					this->tutorialTxt->set_text(HX_("HOLY SHIT",0c,46,7f,8c));
             				}
             				break;
             				case (int)640: case (int)896: {
-HXLINE(6163)					this->tutorialTxt->set_alpha(( (Float)(0) ));
-HXLINE(6164)					 ::states::PlayState _hx_tmp = ::hx::ObjectPtr<OBJ_>(this);
-HXDLIN(6164)					_hx_tmp->defaultCamZoom = (_hx_tmp->defaultCamZoom - ((Float)0.2));
+HXLINE(6165)					this->tutorialTxt->set_alpha(( (Float)(0) ));
+HXLINE(6166)					 ::states::PlayState _hx_tmp = ::hx::ObjectPtr<OBJ_>(this);
+HXDLIN(6166)					_hx_tmp->defaultCamZoom = (_hx_tmp->defaultCamZoom - ((Float)0.2));
             				}
             				break;
             				case (int)992: case (int)1008: {
-HXLINE(6166)					 ::states::PlayState _hx_tmp = ::hx::ObjectPtr<OBJ_>(this);
-HXDLIN(6166)					_hx_tmp->defaultCamZoom = (_hx_tmp->defaultCamZoom + ((Float)0.1));
+HXLINE(6168)					 ::states::PlayState _hx_tmp = ::hx::ObjectPtr<OBJ_>(this);
+HXDLIN(6168)					_hx_tmp->defaultCamZoom = (_hx_tmp->defaultCamZoom + ((Float)0.1));
             				}
             				break;
             				case (int)1016: case (int)1020: {
-HXLINE(6168)					 ::flixel::FlxCamera fh = ::flixel::FlxG_obj::camera;
-HXDLIN(6168)					fh->set_zoom((fh->zoom + ((Float)0.075)));
+HXLINE(6170)					 ::flixel::FlxCamera fh = ::flixel::FlxG_obj::camera;
+HXDLIN(6170)					fh->set_zoom((fh->zoom + ((Float)0.075)));
             				}
             				break;
             				case (int)1024: {
-HXLINE(6170)					 ::states::PlayState _hx_tmp = ::hx::ObjectPtr<OBJ_>(this);
-HXDLIN(6170)					_hx_tmp->defaultCamZoom = (_hx_tmp->defaultCamZoom - ((Float)0.2));
-HXLINE(6171)					this->goofyZoom = true;
-HXLINE(6172)					this->realityShader = false;
-HXLINE(6173)					::flixel::FlxG_obj::camera->shake(((Float)0.015),((Float)0.015),null(),null(),null());
-HXLINE(6174)					if (::backend::ClientPrefs_obj::data->eyesores) {
-HXLINE(6176)						 ::flixel::FlxCamera _hx_tmp = this->camGame;
-HXDLIN(6176)						_hx_tmp->setFilters(::Array_obj< ::Dynamic>::__new(1)->init(0, ::openfl::filters::ShaderFilter_obj::__alloc( HX_CTX ,this->screenshader->shader)));
-HXLINE(6177)						this->screenshader->set_Enabled(true);
-HXLINE(6178)						this->shakeCam = true;
-HXLINE(6180)						::Array< Float > base = this->screenshader->shader->uTime->value;
-HXDLIN(6180)						int _hx_tmp1 = 0;
-HXDLIN(6180)						base[_hx_tmp1] = (base->__get(_hx_tmp1) + this->elapsedtime);
-HXLINE(6181)						if (this->screenshader->set_Enabled(true)) {
-HXLINE(6182)							this->screenshader->shader->uampmul->value[0] = ( (Float)(1) );
+HXLINE(6172)					 ::states::PlayState _hx_tmp = ::hx::ObjectPtr<OBJ_>(this);
+HXDLIN(6172)					_hx_tmp->defaultCamZoom = (_hx_tmp->defaultCamZoom - ((Float)0.2));
+HXLINE(6173)					this->goofyZoom = true;
+HXLINE(6174)					this->realityShader = false;
+HXLINE(6175)					::flixel::FlxG_obj::camera->shake(((Float)0.015),((Float)0.015),null(),null(),null());
+HXLINE(6176)					if (::backend::ClientPrefs_obj::data->eyesores) {
+HXLINE(6178)						 ::flixel::FlxCamera _hx_tmp = this->camGame;
+HXDLIN(6178)						_hx_tmp->setFilters(::Array_obj< ::Dynamic>::__new(1)->init(0, ::openfl::filters::ShaderFilter_obj::__alloc( HX_CTX ,this->screenshader->shader)));
+HXLINE(6179)						this->screenshader->set_Enabled(true);
+HXLINE(6180)						this->shakeCam = true;
+HXLINE(6182)						::Array< Float > base = this->screenshader->shader->uTime->value;
+HXDLIN(6182)						int _hx_tmp1 = 0;
+HXDLIN(6182)						base[_hx_tmp1] = (base->__get(_hx_tmp1) + this->elapsedtime);
+HXLINE(6183)						if (this->screenshader->set_Enabled(true)) {
+HXLINE(6184)							this->screenshader->shader->uampmul->value[0] = ( (Float)(1) );
             						}
             						else {
-HXLINE(6184)							::Array< Float > base = this->screenshader->shader->uampmul->value;
-HXDLIN(6184)							int _hx_tmp = 0;
-HXDLIN(6184)							base[_hx_tmp] = (base->__get(_hx_tmp) - (this->elapsedtime / ( (Float)(2) )));
+HXLINE(6186)							::Array< Float > base = this->screenshader->shader->uampmul->value;
+HXDLIN(6186)							int _hx_tmp = 0;
+HXDLIN(6186)							base[_hx_tmp] = (base->__get(_hx_tmp) - (this->elapsedtime / ( (Float)(2) )));
             						}
             					}
-HXLINE(6187)					if (::backend::ClientPrefs_obj::data->blockedGlitch) {
-HXLINE(6189)						 ::flixel::FlxCamera _hx_tmp = this->camHUD;
-HXDLIN(6189)						_hx_tmp->setFilters(::Array_obj< ::Dynamic>::__new(1)->init(0, ::openfl::filters::ShaderFilter_obj::__alloc( HX_CTX ,this->glitchShader->shader)));
+HXLINE(6189)					if (::backend::ClientPrefs_obj::data->blockedGlitch) {
+HXLINE(6191)						 ::flixel::FlxCamera _hx_tmp = this->camHUD;
+HXDLIN(6191)						_hx_tmp->setFilters(::Array_obj< ::Dynamic>::__new(1)->init(0, ::openfl::filters::ShaderFilter_obj::__alloc( HX_CTX ,this->glitchShader->shader)));
             					}
-HXLINE(6191)					::flixel::tweens::FlxTween_obj::tween(this->redGlow, ::Dynamic(::hx::Anon_obj::Create(1)
+HXLINE(6193)					::flixel::tweens::FlxTween_obj::tween(this->redGlow, ::Dynamic(::hx::Anon_obj::Create(1)
             						->setFixed(0,HX_("alpha",5e,a7,96,21),1)),1, ::Dynamic(::hx::Anon_obj::Create(1)
             						->setFixed(0,HX_("ease",ee,8b,0c,43),::flixel::tweens::FlxEase_obj::cubeOut_dyn())));
             				}
             				break;
             				case (int)1536: {
-HXLINE(6193)					this->screenshader->set_Enabled(false);
-HXLINE(6194)					this->goofyZoom = false;
-HXLINE(6195)					this->defaultCamZoom = this->ogDefaultCamZoom;
-HXLINE(6196)					this->camHUD->setFilters(::Array_obj< ::Dynamic>::__new(0));
-HXLINE(6197)					this->camGame->setFilters(::Array_obj< ::Dynamic>::__new(0));
-HXLINE(6198)					this->realityShader = true;
-HXLINE(6199)					 ::flixel::FlxCamera _hx_tmp = this->camGame;
-HXDLIN(6199)					 ::openfl::filters::ShaderFilter _hx_tmp1 =  ::openfl::filters::ShaderFilter_obj::__alloc( HX_CTX ,this->googlechrom->shader);
-HXDLIN(6199)					 ::openfl::filters::ShaderFilter _hx_tmp2 =  ::openfl::filters::ShaderFilter_obj::__alloc( HX_CTX ,this->heath->shader);
-HXDLIN(6199)					_hx_tmp->setFilters(::Array_obj< ::Dynamic>::__new(3)->init(0,_hx_tmp1)->init(1,_hx_tmp2)->init(2, ::openfl::filters::ShaderFilter_obj::__alloc( HX_CTX ,this->bloom->shader)));
-HXLINE(6200)					::flixel::tweens::FlxTween_obj::tween(this->redGlow, ::Dynamic(::hx::Anon_obj::Create(1)
+HXLINE(6195)					this->screenshader->set_Enabled(false);
+HXLINE(6196)					this->goofyZoom = false;
+HXLINE(6197)					this->defaultCamZoom = this->ogDefaultCamZoom;
+HXLINE(6198)					this->camHUD->setFilters(::Array_obj< ::Dynamic>::__new(0));
+HXLINE(6199)					this->camGame->setFilters(::Array_obj< ::Dynamic>::__new(0));
+HXLINE(6200)					this->realityShader = true;
+HXLINE(6201)					 ::flixel::FlxCamera _hx_tmp = this->camGame;
+HXDLIN(6201)					 ::openfl::filters::ShaderFilter _hx_tmp1 =  ::openfl::filters::ShaderFilter_obj::__alloc( HX_CTX ,this->googlechrom->shader);
+HXDLIN(6201)					 ::openfl::filters::ShaderFilter _hx_tmp2 =  ::openfl::filters::ShaderFilter_obj::__alloc( HX_CTX ,this->heath->shader);
+HXDLIN(6201)					_hx_tmp->setFilters(::Array_obj< ::Dynamic>::__new(3)->init(0,_hx_tmp1)->init(1,_hx_tmp2)->init(2, ::openfl::filters::ShaderFilter_obj::__alloc( HX_CTX ,this->bloom->shader)));
+HXLINE(6202)					::flixel::tweens::FlxTween_obj::tween(this->redGlow, ::Dynamic(::hx::Anon_obj::Create(1)
             						->setFixed(0,HX_("alpha",5e,a7,96,21),((Float)0.5))),1, ::Dynamic(::hx::Anon_obj::Create(1)
             						->setFixed(0,HX_("ease",ee,8b,0c,43),::flixel::tweens::FlxEase_obj::cubeOut_dyn())));
             				}
             				break;
             				case (int)1568: case (int)1600: case (int)1696: {
-HXLINE(6204)					 ::states::PlayState _hx_tmp = ::hx::ObjectPtr<OBJ_>(this);
-HXDLIN(6204)					_hx_tmp->defaultCamZoom = (_hx_tmp->defaultCamZoom - ((Float)0.1));
+HXLINE(6206)					 ::states::PlayState _hx_tmp = ::hx::ObjectPtr<OBJ_>(this);
+HXDLIN(6206)					_hx_tmp->defaultCamZoom = (_hx_tmp->defaultCamZoom - ((Float)0.1));
             				}
             				break;
             				case (int)1648: case (int)1776: {
-HXLINE(6206)					 ::states::PlayState _hx_tmp = ::hx::ObjectPtr<OBJ_>(this);
-HXDLIN(6206)					_hx_tmp->defaultCamZoom = (_hx_tmp->defaultCamZoom + ((Float)0.1));
+HXLINE(6208)					 ::states::PlayState _hx_tmp = ::hx::ObjectPtr<OBJ_>(this);
+HXDLIN(6208)					_hx_tmp->defaultCamZoom = (_hx_tmp->defaultCamZoom + ((Float)0.1));
             				}
             				break;
             				case (int)1656: case (int)1784: {
-HXLINE(6208)					 ::states::PlayState _hx_tmp = ::hx::ObjectPtr<OBJ_>(this);
-HXDLIN(6208)					_hx_tmp->defaultCamZoom = (_hx_tmp->defaultCamZoom + ((Float)0.2));
+HXLINE(6210)					 ::states::PlayState _hx_tmp = ::hx::ObjectPtr<OBJ_>(this);
+HXDLIN(6210)					_hx_tmp->defaultCamZoom = (_hx_tmp->defaultCamZoom + ((Float)0.2));
             				}
             				break;
             				case (int)1560: case (int)1592: case (int)1688: {
-HXLINE(6202)					 ::states::PlayState _hx_tmp = ::hx::ObjectPtr<OBJ_>(this);
-HXDLIN(6202)					_hx_tmp->defaultCamZoom = (_hx_tmp->defaultCamZoom + ((Float)0.1));
+HXLINE(6204)					 ::states::PlayState _hx_tmp = ::hx::ObjectPtr<OBJ_>(this);
+HXDLIN(6204)					_hx_tmp->defaultCamZoom = (_hx_tmp->defaultCamZoom + ((Float)0.1));
             				}
             				break;
             				case (int)1664: case (int)1792: {
-HXLINE(6210)					 ::states::PlayState _hx_tmp = ::hx::ObjectPtr<OBJ_>(this);
-HXDLIN(6210)					_hx_tmp->defaultCamZoom = (_hx_tmp->defaultCamZoom - ((Float)0.3));
+HXLINE(6212)					 ::states::PlayState _hx_tmp = ::hx::ObjectPtr<OBJ_>(this);
+HXDLIN(6212)					_hx_tmp->defaultCamZoom = (_hx_tmp->defaultCamZoom - ((Float)0.3));
             				}
             				break;
             				case (int)2048: {
-HXLINE(6212)					this->cameraSpeed = ((Float)0.5);
-HXLINE(6213)					::flixel::tweens::FlxTween_obj::tween(::hx::ObjectPtr<OBJ_>(this), ::Dynamic(::hx::Anon_obj::Create(1)
+HXLINE(6214)					this->cameraSpeed = ((Float)0.5);
+HXLINE(6215)					::flixel::tweens::FlxTween_obj::tween(::hx::ObjectPtr<OBJ_>(this), ::Dynamic(::hx::Anon_obj::Create(1)
             						->setFixed(0,HX_("defaultCamZoom",01,50,2a,0b),(this->defaultCamZoom + ((Float)0.3)))),((( (Float)(63) ) * ::backend::Conductor_obj::crochet) * ((Float)0.001)),null());
-HXLINE(6214)					::flixel::tweens::FlxTween_obj::tween(this->redGlow, ::Dynamic(::hx::Anon_obj::Create(1)
+HXLINE(6216)					::flixel::tweens::FlxTween_obj::tween(this->redGlow, ::Dynamic(::hx::Anon_obj::Create(1)
             						->setFixed(0,HX_("alpha",5e,a7,96,21),0)),((( (Float)(32) ) * ::backend::Conductor_obj::crochet) * ((Float)0.001)), ::Dynamic(::hx::Anon_obj::Create(1)
             						->setFixed(0,HX_("ease",ee,8b,0c,43),::flixel::tweens::FlxEase_obj::cubeOut_dyn())));
-HXLINE(6215)					{
-HXLINE(6215)						{
-HXLINE(6215)							 ::flixel::FlxSprite spr = this->healthBar;
-HXLINE(6216)							::flixel::tweens::FlxTween_obj::tween(spr, ::Dynamic(::hx::Anon_obj::Create(1)
+HXLINE(6217)					{
+HXLINE(6217)						{
+HXLINE(6217)							 ::flixel::FlxSprite spr = this->healthBar;
+HXLINE(6218)							::flixel::tweens::FlxTween_obj::tween(spr, ::Dynamic(::hx::Anon_obj::Create(1)
             								->setFixed(0,HX_("alpha",5e,a7,96,21),0)),1,null());
             						}
-HXLINE(6215)						{
-HXLINE(6215)							 ::flixel::FlxSprite spr1 = this->healthBarOverlay;
-HXLINE(6216)							::flixel::tweens::FlxTween_obj::tween(spr1, ::Dynamic(::hx::Anon_obj::Create(1)
+HXLINE(6217)						{
+HXLINE(6217)							 ::flixel::FlxSprite spr1 = this->healthBarOverlay;
+HXLINE(6218)							::flixel::tweens::FlxTween_obj::tween(spr1, ::Dynamic(::hx::Anon_obj::Create(1)
             								->setFixed(0,HX_("alpha",5e,a7,96,21),0)),1,null());
             						}
-HXLINE(6215)						{
-HXLINE(6215)							 ::flixel::FlxSprite spr2 = this->iconP1;
-HXLINE(6216)							::flixel::tweens::FlxTween_obj::tween(spr2, ::Dynamic(::hx::Anon_obj::Create(1)
+HXLINE(6217)						{
+HXLINE(6217)							 ::flixel::FlxSprite spr2 = this->iconP1;
+HXLINE(6218)							::flixel::tweens::FlxTween_obj::tween(spr2, ::Dynamic(::hx::Anon_obj::Create(1)
             								->setFixed(0,HX_("alpha",5e,a7,96,21),0)),1,null());
             						}
-HXLINE(6215)						{
-HXLINE(6215)							 ::flixel::FlxSprite spr3 = this->iconP2;
-HXLINE(6216)							::flixel::tweens::FlxTween_obj::tween(spr3, ::Dynamic(::hx::Anon_obj::Create(1)
+HXLINE(6217)						{
+HXLINE(6217)							 ::flixel::FlxSprite spr3 = this->iconP2;
+HXLINE(6218)							::flixel::tweens::FlxTween_obj::tween(spr3, ::Dynamic(::hx::Anon_obj::Create(1)
             								->setFixed(0,HX_("alpha",5e,a7,96,21),0)),1,null());
             						}
-HXLINE(6215)						{
-HXLINE(6215)							 ::flixel::FlxSprite spr4 = this->scoreTxt;
-HXLINE(6216)							::flixel::tweens::FlxTween_obj::tween(spr4, ::Dynamic(::hx::Anon_obj::Create(1)
+HXLINE(6217)						{
+HXLINE(6217)							 ::flixel::FlxSprite spr4 = this->scoreTxt;
+HXLINE(6218)							::flixel::tweens::FlxTween_obj::tween(spr4, ::Dynamic(::hx::Anon_obj::Create(1)
             								->setFixed(0,HX_("alpha",5e,a7,96,21),0)),1,null());
             						}
             					}
             				}
             				break;
             				case (int)2304: {
-HXLINE(6219)					this->cameraSpeed = ( (Float)(1) );
-HXLINE(6220)					 ::states::PlayState _hx_tmp = ::hx::ObjectPtr<OBJ_>(this);
-HXDLIN(6220)					_hx_tmp->defaultCamZoom = (_hx_tmp->defaultCamZoom - ((Float)0.1));
+HXLINE(6221)					this->cameraSpeed = ( (Float)(1) );
+HXLINE(6222)					 ::states::PlayState _hx_tmp = ::hx::ObjectPtr<OBJ_>(this);
+HXDLIN(6222)					_hx_tmp->defaultCamZoom = (_hx_tmp->defaultCamZoom - ((Float)0.1));
             				}
             				break;
             				case (int)2528: {
-HXLINE(6222)					 ::states::PlayState _hx_tmp = ::hx::ObjectPtr<OBJ_>(this);
-HXDLIN(6222)					_hx_tmp->defaultCamZoom = (_hx_tmp->defaultCamZoom - ((Float)0.2));
-HXLINE(6223)					::flixel::tweens::FlxTween_obj::tween(this->redGlow, ::Dynamic(::hx::Anon_obj::Create(1)
+HXLINE(6224)					 ::states::PlayState _hx_tmp = ::hx::ObjectPtr<OBJ_>(this);
+HXDLIN(6224)					_hx_tmp->defaultCamZoom = (_hx_tmp->defaultCamZoom - ((Float)0.2));
+HXLINE(6225)					::flixel::tweens::FlxTween_obj::tween(this->redGlow, ::Dynamic(::hx::Anon_obj::Create(1)
             						->setFixed(0,HX_("alpha",5e,a7,96,21),((Float)0.5))),1, ::Dynamic(::hx::Anon_obj::Create(1)
             						->setFixed(0,HX_("ease",ee,8b,0c,43),::flixel::tweens::FlxEase_obj::cubeOut_dyn())));
-HXLINE(6224)					{
-HXLINE(6224)						{
-HXLINE(6224)							 ::flixel::FlxSprite spr = this->healthBar;
-HXLINE(6225)							::flixel::tweens::FlxTween_obj::tween(spr, ::Dynamic(::hx::Anon_obj::Create(1)
+HXLINE(6226)					{
+HXLINE(6226)						{
+HXLINE(6226)							 ::flixel::FlxSprite spr = this->healthBar;
+HXLINE(6227)							::flixel::tweens::FlxTween_obj::tween(spr, ::Dynamic(::hx::Anon_obj::Create(1)
             								->setFixed(0,HX_("alpha",5e,a7,96,21),1)),1,null());
             						}
-HXLINE(6224)						{
-HXLINE(6224)							 ::flixel::FlxSprite spr1 = this->healthBarOverlay;
-HXLINE(6225)							::flixel::tweens::FlxTween_obj::tween(spr1, ::Dynamic(::hx::Anon_obj::Create(1)
+HXLINE(6226)						{
+HXLINE(6226)							 ::flixel::FlxSprite spr1 = this->healthBarOverlay;
+HXLINE(6227)							::flixel::tweens::FlxTween_obj::tween(spr1, ::Dynamic(::hx::Anon_obj::Create(1)
             								->setFixed(0,HX_("alpha",5e,a7,96,21),1)),1,null());
             						}
-HXLINE(6224)						{
-HXLINE(6224)							 ::flixel::FlxSprite spr2 = this->iconP1;
-HXLINE(6225)							::flixel::tweens::FlxTween_obj::tween(spr2, ::Dynamic(::hx::Anon_obj::Create(1)
+HXLINE(6226)						{
+HXLINE(6226)							 ::flixel::FlxSprite spr2 = this->iconP1;
+HXLINE(6227)							::flixel::tweens::FlxTween_obj::tween(spr2, ::Dynamic(::hx::Anon_obj::Create(1)
             								->setFixed(0,HX_("alpha",5e,a7,96,21),1)),1,null());
             						}
-HXLINE(6224)						{
-HXLINE(6224)							 ::flixel::FlxSprite spr3 = this->iconP2;
-HXLINE(6225)							::flixel::tweens::FlxTween_obj::tween(spr3, ::Dynamic(::hx::Anon_obj::Create(1)
+HXLINE(6226)						{
+HXLINE(6226)							 ::flixel::FlxSprite spr3 = this->iconP2;
+HXLINE(6227)							::flixel::tweens::FlxTween_obj::tween(spr3, ::Dynamic(::hx::Anon_obj::Create(1)
             								->setFixed(0,HX_("alpha",5e,a7,96,21),1)),1,null());
             						}
-HXLINE(6224)						{
-HXLINE(6224)							 ::flixel::FlxSprite spr4 = this->scoreTxt;
-HXLINE(6225)							::flixel::tweens::FlxTween_obj::tween(spr4, ::Dynamic(::hx::Anon_obj::Create(1)
+HXLINE(6226)						{
+HXLINE(6226)							 ::flixel::FlxSprite spr4 = this->scoreTxt;
+HXLINE(6227)							::flixel::tweens::FlxTween_obj::tween(spr4, ::Dynamic(::hx::Anon_obj::Create(1)
             								->setFixed(0,HX_("alpha",5e,a7,96,21),1)),1,null());
             						}
             					}
             				}
             				break;
             				case (int)2560: {
-HXLINE(6228)					this->camTilt = true;
-HXLINE(6229)					this->cameraSpeed = ((Float)1.5);
-HXLINE(6230)					 ::states::PlayState _hx_tmp = ::hx::ObjectPtr<OBJ_>(this);
-HXDLIN(6230)					_hx_tmp->defaultCamZoom = (_hx_tmp->defaultCamZoom + ((Float)0.2));
-HXLINE(6231)					::flixel::tweens::FlxTween_obj::tween(this->redGlow, ::Dynamic(::hx::Anon_obj::Create(1)
+HXLINE(6230)					this->camTilt = true;
+HXLINE(6231)					this->cameraSpeed = ((Float)1.5);
+HXLINE(6232)					 ::states::PlayState _hx_tmp = ::hx::ObjectPtr<OBJ_>(this);
+HXDLIN(6232)					_hx_tmp->defaultCamZoom = (_hx_tmp->defaultCamZoom + ((Float)0.2));
+HXLINE(6233)					::flixel::tweens::FlxTween_obj::tween(this->redGlow, ::Dynamic(::hx::Anon_obj::Create(1)
             						->setFixed(0,HX_("alpha",5e,a7,96,21),1)),1, ::Dynamic(::hx::Anon_obj::Create(1)
             						->setFixed(0,HX_("ease",ee,8b,0c,43),::flixel::tweens::FlxEase_obj::cubeOut_dyn())));
             				}
             				break;
             				case (int)3072: {
-HXLINE(6233)					 ::states::PlayState _hx_tmp = ::hx::ObjectPtr<OBJ_>(this);
-HXDLIN(6233)					_hx_tmp->defaultCamZoom = (_hx_tmp->defaultCamZoom - ((Float)0.1));
-HXLINE(6234)					::flixel::tweens::FlxTween_obj::tween(this->redGlow, ::Dynamic(::hx::Anon_obj::Create(1)
+HXLINE(6235)					 ::states::PlayState _hx_tmp = ::hx::ObjectPtr<OBJ_>(this);
+HXDLIN(6235)					_hx_tmp->defaultCamZoom = (_hx_tmp->defaultCamZoom - ((Float)0.1));
+HXLINE(6236)					::flixel::tweens::FlxTween_obj::tween(this->redGlow, ::Dynamic(::hx::Anon_obj::Create(1)
             						->setFixed(0,HX_("alpha",5e,a7,96,21),0)),((( (Float)(60) ) * ::backend::Conductor_obj::crochet) * ((Float)0.001)), ::Dynamic(::hx::Anon_obj::Create(1)
             						->setFixed(0,HX_("ease",ee,8b,0c,43),::flixel::tweens::FlxEase_obj::cubeOut_dyn())));
-HXLINE(6235)					this->camTilt = false;
-HXLINE(6236)					if (::hx::IsNotNull( this->camTiltTween )) {
-HXLINE(6236)						this->camTiltTween->cancel();
+HXLINE(6237)					this->camTilt = false;
+HXLINE(6238)					if (::hx::IsNotNull( this->camTiltTween )) {
+HXLINE(6238)						this->camTiltTween->cancel();
             					}
-HXLINE(6237)					this->camTiltTween = ::flixel::tweens::FlxTween_obj::tween(this->camHUD, ::Dynamic(::hx::Anon_obj::Create(1)
+HXLINE(6239)					this->camTiltTween = ::flixel::tweens::FlxTween_obj::tween(this->camHUD, ::Dynamic(::hx::Anon_obj::Create(1)
             						->setFixed(0,HX_("angle",d3,43,e2,22),0)),(::backend::Conductor_obj::crochet / ( (Float)(1000) )), ::Dynamic(::hx::Anon_obj::Create(1)
             						->setFixed(0,HX_("ease",ee,8b,0c,43),::flixel::tweens::FlxEase_obj::quadOut_dyn())));
             				}
             				break;
             				case (int)3328: {
-HXLINE(6239)					 ::states::PlayState _hx_tmp = ::hx::ObjectPtr<OBJ_>(this);
-HXDLIN(6239)					_hx_tmp->defaultCamZoom = (_hx_tmp->defaultCamZoom + ((Float)0.1));
-HXLINE(6240)					::flixel::tweens::FlxTween_obj::tween(this->redGlow, ::Dynamic(::hx::Anon_obj::Create(1)
+HXLINE(6241)					 ::states::PlayState _hx_tmp = ::hx::ObjectPtr<OBJ_>(this);
+HXDLIN(6241)					_hx_tmp->defaultCamZoom = (_hx_tmp->defaultCamZoom + ((Float)0.1));
+HXLINE(6242)					::flixel::tweens::FlxTween_obj::tween(this->redGlow, ::Dynamic(::hx::Anon_obj::Create(1)
             						->setFixed(0,HX_("alpha",5e,a7,96,21),1)),1, ::Dynamic(::hx::Anon_obj::Create(1)
             						->setFixed(0,HX_("ease",ee,8b,0c,43),::flixel::tweens::FlxEase_obj::cubeOut_dyn())));
             				}
             				break;
             				case (int)3352: {
-HXLINE(6242)					::flixel::tweens::FlxTween_obj::tween(::flixel::FlxG_obj::camera, ::Dynamic(::hx::Anon_obj::Create(1)
+HXLINE(6244)					::flixel::tweens::FlxTween_obj::tween(::flixel::FlxG_obj::camera, ::Dynamic(::hx::Anon_obj::Create(1)
             						->setFixed(0,HX_("zoom",13,a3,f8,50),((Float)2.5))),((( (Float)(2) ) * ::backend::Conductor_obj::crochet) * ((Float)0.001)), ::Dynamic(::hx::Anon_obj::Create(1)
             						->setFixed(0,HX_("ease",ee,8b,0c,43),::flixel::tweens::FlxEase_obj::backIn_dyn())));
             				}
             				break;
             				case (int)3360: {
-HXLINE(6244)					::flixel::FlxG_obj::camera->set_visible(false);
-HXLINE(6245)					::flixel::tweens::FlxTween_obj::tween(this->redGlow, ::Dynamic(::hx::Anon_obj::Create(1)
+HXLINE(6246)					::flixel::FlxG_obj::camera->set_visible(false);
+HXLINE(6247)					::flixel::tweens::FlxTween_obj::tween(this->redGlow, ::Dynamic(::hx::Anon_obj::Create(1)
             						->setFixed(0,HX_("alpha",5e,a7,96,21),0)),1, ::Dynamic(::hx::Anon_obj::Create(1)
             						->setFixed(0,HX_("ease",ee,8b,0c,43),::flixel::tweens::FlxEase_obj::cubeOut_dyn())));
             				}
@@ -12620,921 +12624,921 @@ HXLINE(6143)					this->camHUD->setFilters(::Array_obj< ::Dynamic>::__new(0));
 HXLINE(6125)			goto _hx_goto_282;
             		}
             		if (  (_hx_switch_0==HX_("rebound old",b2,21,d5,73)) ){
-HXLINE(6265)			switch((int)(this->curStep)){
+HXLINE(6267)			switch((int)(this->curStep)){
             				case (int)0: {
-HXLINE(6268)					this->hideshit();
+HXLINE(6270)					this->hideshit();
             				}
             				break;
             				case (int)1792: {
-HXLINE(6270)					::flixel::tweens::FlxTween_obj::tween(::hx::ObjectPtr<OBJ_>(this), ::Dynamic(::hx::Anon_obj::Create(1)
+HXLINE(6272)					::flixel::tweens::FlxTween_obj::tween(::hx::ObjectPtr<OBJ_>(this), ::Dynamic(::hx::Anon_obj::Create(1)
             						->setFixed(0,HX_("defaultCamZoom",01,50,2a,0b),((Float)1.30))),(((Float)10.82) / this->playbackRate),null());
-HXLINE(6271)					::flixel::tweens::FlxTween_obj::tween(this->scoreTxt, ::Dynamic(::hx::Anon_obj::Create(1)
+HXLINE(6273)					::flixel::tweens::FlxTween_obj::tween(this->scoreTxt, ::Dynamic(::hx::Anon_obj::Create(1)
             						->setFixed(0,HX_("alpha",5e,a7,96,21),0)),(( (Float)(1) ) / this->playbackRate),null());
-HXLINE(6272)					::flixel::tweens::FlxTween_obj::tween(this->timeBar, ::Dynamic(::hx::Anon_obj::Create(1)
+HXLINE(6274)					::flixel::tweens::FlxTween_obj::tween(this->timeBar, ::Dynamic(::hx::Anon_obj::Create(1)
             						->setFixed(0,HX_("alpha",5e,a7,96,21),0)),(( (Float)(1) ) / this->playbackRate),null());
-HXLINE(6273)					::flixel::tweens::FlxTween_obj::tween(this->timeTxt, ::Dynamic(::hx::Anon_obj::Create(1)
+HXLINE(6275)					::flixel::tweens::FlxTween_obj::tween(this->timeTxt, ::Dynamic(::hx::Anon_obj::Create(1)
             						->setFixed(0,HX_("alpha",5e,a7,96,21),0)),(( (Float)(1) ) / this->playbackRate),null());
-HXLINE(6274)					::flixel::tweens::FlxTween_obj::tween(this->judgementCounter, ::Dynamic(::hx::Anon_obj::Create(1)
+HXLINE(6276)					::flixel::tweens::FlxTween_obj::tween(this->judgementCounter, ::Dynamic(::hx::Anon_obj::Create(1)
             						->setFixed(0,HX_("alpha",5e,a7,96,21),0)),(( (Float)(1) ) / this->playbackRate),null());
-HXLINE(6275)					::flixel::tweens::FlxTween_obj::tween(this->healthBar, ::Dynamic(::hx::Anon_obj::Create(1)
+HXLINE(6277)					::flixel::tweens::FlxTween_obj::tween(this->healthBar, ::Dynamic(::hx::Anon_obj::Create(1)
             						->setFixed(0,HX_("alpha",5e,a7,96,21),0)),(( (Float)(1) ) / this->playbackRate),null());
-HXLINE(6276)					::flixel::tweens::FlxTween_obj::tween(this->healthBarOverlay, ::Dynamic(::hx::Anon_obj::Create(1)
+HXLINE(6278)					::flixel::tweens::FlxTween_obj::tween(this->healthBarOverlay, ::Dynamic(::hx::Anon_obj::Create(1)
             						->setFixed(0,HX_("alpha",5e,a7,96,21),0)),(( (Float)(1) ) / this->playbackRate),null());
-HXLINE(6277)					::flixel::tweens::FlxTween_obj::tween(this->iconP1, ::Dynamic(::hx::Anon_obj::Create(1)
+HXLINE(6279)					::flixel::tweens::FlxTween_obj::tween(this->iconP1, ::Dynamic(::hx::Anon_obj::Create(1)
             						->setFixed(0,HX_("alpha",5e,a7,96,21),0)),(( (Float)(1) ) / this->playbackRate),null());
-HXLINE(6278)					::flixel::tweens::FlxTween_obj::tween(this->iconP2, ::Dynamic(::hx::Anon_obj::Create(1)
+HXLINE(6280)					::flixel::tweens::FlxTween_obj::tween(this->iconP2, ::Dynamic(::hx::Anon_obj::Create(1)
             						->setFixed(0,HX_("alpha",5e,a7,96,21),0)),(( (Float)(1) ) / this->playbackRate),null());
-HXLINE(6279)					::flixel::tweens::FlxTween_obj::tween(this->botplayTxt, ::Dynamic(::hx::Anon_obj::Create(1)
+HXLINE(6281)					::flixel::tweens::FlxTween_obj::tween(this->botplayTxt, ::Dynamic(::hx::Anon_obj::Create(1)
             						->setFixed(0,HX_("alpha",5e,a7,96,21),0)),(( (Float)(1) ) / this->playbackRate),null());
             				}
             				break;
             				case (int)1920: {
-HXLINE(6281)					this->defaultCamZoom = ((Float)1.30);
-HXLINE(6282)					::flixel::tweens::FlxTween_obj::tween(::hx::ObjectPtr<OBJ_>(this), ::Dynamic(::hx::Anon_obj::Create(1)
+HXLINE(6283)					this->defaultCamZoom = ((Float)1.30);
+HXLINE(6284)					::flixel::tweens::FlxTween_obj::tween(::hx::ObjectPtr<OBJ_>(this), ::Dynamic(::hx::Anon_obj::Create(1)
             						->setFixed(0,HX_("defaultCamZoom",01,50,2a,0b),((Float)0.7))),(((Float)10.82) / this->playbackRate),null());
             				}
             				break;
             				case (int)2048: {
-HXLINE(6284)					this->defaultCamZoom = ((Float)0.7);
-HXLINE(6285)					::flixel::tweens::FlxTween_obj::tween(this->scoreTxt, ::Dynamic(::hx::Anon_obj::Create(1)
+HXLINE(6286)					this->defaultCamZoom = ((Float)0.7);
+HXLINE(6287)					::flixel::tweens::FlxTween_obj::tween(this->scoreTxt, ::Dynamic(::hx::Anon_obj::Create(1)
             						->setFixed(0,HX_("alpha",5e,a7,96,21),1)),(( (Float)(1) ) / this->playbackRate),null());
-HXLINE(6286)					::flixel::tweens::FlxTween_obj::tween(this->timeBar, ::Dynamic(::hx::Anon_obj::Create(1)
+HXLINE(6288)					::flixel::tweens::FlxTween_obj::tween(this->timeBar, ::Dynamic(::hx::Anon_obj::Create(1)
             						->setFixed(0,HX_("alpha",5e,a7,96,21),1)),(( (Float)(1) ) / this->playbackRate),null());
-HXLINE(6287)					::flixel::tweens::FlxTween_obj::tween(this->timeTxt, ::Dynamic(::hx::Anon_obj::Create(1)
+HXLINE(6289)					::flixel::tweens::FlxTween_obj::tween(this->timeTxt, ::Dynamic(::hx::Anon_obj::Create(1)
             						->setFixed(0,HX_("alpha",5e,a7,96,21),1)),(( (Float)(1) ) / this->playbackRate),null());
-HXLINE(6288)					::flixel::tweens::FlxTween_obj::tween(this->judgementCounter, ::Dynamic(::hx::Anon_obj::Create(1)
+HXLINE(6290)					::flixel::tweens::FlxTween_obj::tween(this->judgementCounter, ::Dynamic(::hx::Anon_obj::Create(1)
             						->setFixed(0,HX_("alpha",5e,a7,96,21),1)),(( (Float)(1) ) / this->playbackRate),null());
-HXLINE(6289)					::flixel::tweens::FlxTween_obj::tween(this->healthBar, ::Dynamic(::hx::Anon_obj::Create(1)
+HXLINE(6291)					::flixel::tweens::FlxTween_obj::tween(this->healthBar, ::Dynamic(::hx::Anon_obj::Create(1)
             						->setFixed(0,HX_("alpha",5e,a7,96,21),1)),(( (Float)(1) ) / this->playbackRate),null());
-HXLINE(6290)					::flixel::tweens::FlxTween_obj::tween(this->healthBarOverlay, ::Dynamic(::hx::Anon_obj::Create(1)
+HXLINE(6292)					::flixel::tweens::FlxTween_obj::tween(this->healthBarOverlay, ::Dynamic(::hx::Anon_obj::Create(1)
             						->setFixed(0,HX_("alpha",5e,a7,96,21),1)),(( (Float)(1) ) / this->playbackRate),null());
-HXLINE(6291)					::flixel::tweens::FlxTween_obj::tween(this->iconP1, ::Dynamic(::hx::Anon_obj::Create(1)
+HXLINE(6293)					::flixel::tweens::FlxTween_obj::tween(this->iconP1, ::Dynamic(::hx::Anon_obj::Create(1)
             						->setFixed(0,HX_("alpha",5e,a7,96,21),1)),(( (Float)(1) ) / this->playbackRate),null());
-HXLINE(6292)					::flixel::tweens::FlxTween_obj::tween(this->iconP2, ::Dynamic(::hx::Anon_obj::Create(1)
+HXLINE(6294)					::flixel::tweens::FlxTween_obj::tween(this->iconP2, ::Dynamic(::hx::Anon_obj::Create(1)
             						->setFixed(0,HX_("alpha",5e,a7,96,21),1)),(( (Float)(1) ) / this->playbackRate),null());
-HXLINE(6293)					::flixel::tweens::FlxTween_obj::tween(this->botplayTxt, ::Dynamic(::hx::Anon_obj::Create(1)
+HXLINE(6295)					::flixel::tweens::FlxTween_obj::tween(this->botplayTxt, ::Dynamic(::hx::Anon_obj::Create(1)
             						->setFixed(0,HX_("alpha",5e,a7,96,21),1)),(( (Float)(1) ) / this->playbackRate),null());
             				}
             				break;
             			}
-HXLINE(6265)			goto _hx_goto_282;
+HXLINE(6267)			goto _hx_goto_282;
             		}
             		if (  (_hx_switch_0==HX_("rsod old",9d,a6,c5,31)) ){
-HXLINE(6593)			switch((int)(this->curStep)){
+HXLINE(6595)			switch((int)(this->curStep)){
             				case (int)32: {
-HXLINE(6596)					::flixel::tweens::FlxTween_obj::tween(this->tutorialTxt, ::Dynamic(::hx::Anon_obj::Create(1)
+HXLINE(6598)					::flixel::tweens::FlxTween_obj::tween(this->tutorialTxt, ::Dynamic(::hx::Anon_obj::Create(1)
             						->setFixed(0,HX_("alpha",5e,a7,96,21),1)),((Float)0.35), ::Dynamic(::hx::Anon_obj::Create(1)
             						->setFixed(0,HX_("ease",ee,8b,0c,43),::flixel::tweens::FlxEase_obj::cubeInOut_dyn())));
             				}
             				break;
             				case (int)80: {
-HXLINE(6598)					::flixel::tweens::FlxTween_obj::tween(this->tutorialTxt, ::Dynamic(::hx::Anon_obj::Create(1)
+HXLINE(6600)					::flixel::tweens::FlxTween_obj::tween(this->tutorialTxt, ::Dynamic(::hx::Anon_obj::Create(1)
             						->setFixed(0,HX_("alpha",5e,a7,96,21),0)),((Float)1.25), ::Dynamic(::hx::Anon_obj::Create(1)
             						->setFixed(0,HX_("ease",ee,8b,0c,43),::flixel::tweens::FlxEase_obj::cubeInOut_dyn())));
             				}
             				break;
             				case (int)112: {
-HXLINE(6600)					this->remove(this->tutorialTxt,null());
+HXLINE(6602)					this->remove(this->tutorialTxt,null());
             				}
             				break;
             				case (int)417: case (int)1217: case (int)2241: {
-HXLINE(6644)					this->rsod->set_visible(false);
-HXLINE(6645)					this->notResponding->set_alpha(( (Float)(0) ));
-HXLINE(6646)					::flixel::FlxG_obj::camera->set_visible(true);
-HXLINE(6647)					this->restoreHUDElements();
-HXLINE(6648)					this->laggingRSOD = false;
-HXLINE(6649)					this->crap();
-HXLINE(6650)					this->camZooming = true;
-HXLINE(6651)					this->bgrsod->set_active(true);
-HXLINE(6652)					this->restoreTitleWin();
+HXLINE(6646)					this->rsod->set_visible(false);
+HXLINE(6647)					this->notResponding->set_alpha(( (Float)(0) ));
+HXLINE(6648)					::flixel::FlxG_obj::camera->set_visible(true);
+HXLINE(6649)					this->restoreHUDElements();
+HXLINE(6650)					this->laggingRSOD = false;
+HXLINE(6651)					this->crap();
+HXLINE(6652)					this->camZooming = true;
+HXLINE(6653)					this->bgrsod->set_active(true);
+HXLINE(6654)					this->restoreTitleWin();
             				}
             				break;
             				case (int)815: {
-HXLINE(6659)					this->camZooming = false;
-HXLINE(6660)					this->camHUD->set_zoom(( (Float)(1) ));
-HXLINE(6661)					 ::states::PlayState _hx_tmp = ::hx::ObjectPtr<OBJ_>(this);
-HXDLIN(6661)					_hx_tmp->defaultCamZoom = (_hx_tmp->defaultCamZoom + ((Float)0.0375));
-HXLINE(6662)					::flixel::tweens::FlxTween_obj::tween(::flixel::FlxG_obj::camera, ::Dynamic(::hx::Anon_obj::Create(1)
+HXLINE(6661)					this->camZooming = false;
+HXLINE(6662)					this->camHUD->set_zoom(( (Float)(1) ));
+HXLINE(6663)					 ::states::PlayState _hx_tmp = ::hx::ObjectPtr<OBJ_>(this);
+HXDLIN(6663)					_hx_tmp->defaultCamZoom = (_hx_tmp->defaultCamZoom + ((Float)0.0375));
+HXLINE(6664)					::flixel::tweens::FlxTween_obj::tween(::flixel::FlxG_obj::camera, ::Dynamic(::hx::Anon_obj::Create(1)
             						->setFixed(0,HX_("zoom",13,a3,f8,50),((Float)1.375))),((Float)0.95), ::Dynamic(::hx::Anon_obj::Create(1)
             						->setFixed(0,HX_("ease",ee,8b,0c,43),::flixel::tweens::FlxEase_obj::cubeInOut_dyn())));
             				}
             				break;
             				case (int)832: {
-HXLINE(6664)					this->camZooming = true;
+HXLINE(6666)					this->camZooming = true;
             				}
             				break;
             				case (int)368: case (int)1167: case (int)2192: {
-HXLINE(6602)					::flixel::tweens::FlxTween_obj::tween(this->notResponding, ::Dynamic(::hx::Anon_obj::Create(1)
+HXLINE(6604)					::flixel::tweens::FlxTween_obj::tween(this->notResponding, ::Dynamic(::hx::Anon_obj::Create(1)
             						->setFixed(0,HX_("alpha",5e,a7,96,21),((Float)0.5))),((Float)0.5),null());
-HXLINE(6603)					this->boyfriend->animation->stop();
-HXLINE(6604)					this->dad->animation->stop();
-HXLINE(6605)					this->gf->animation->stop();
-HXLINE(6606)					this->laggingRSOD = true;
-HXLINE(6607)					this->camZooming = false;
-HXLINE(6608)					this->bgrsod->set_active(false);
-HXLINE(6609)					if ((::backend::ClientPrefs_obj::data->Lenguage == HX_("English",10,8f,83,c6))) {
-HXLINE(6611)						::openfl::Lib_obj::get_application()->_hx___window->set_title(HX_("Bambi's Purgatory (Not Responding)",7d,c0,52,30));
+HXLINE(6605)					this->boyfriend->animation->stop();
+HXLINE(6606)					this->dad->animation->stop();
+HXLINE(6607)					this->gf->animation->stop();
+HXLINE(6608)					this->laggingRSOD = true;
+HXLINE(6609)					this->camZooming = false;
+HXLINE(6610)					this->bgrsod->set_active(false);
+HXLINE(6611)					if ((::backend::ClientPrefs_obj::data->Lenguage == HX_("English",10,8f,83,c6))) {
+HXLINE(6613)						::openfl::Lib_obj::get_application()->_hx___window->set_title(HX_("Bambi's Purgatory (Not Responding)",7d,c0,52,30));
             					}
             					else {
-HXLINE(6613)						::openfl::Lib_obj::get_application()->_hx___window->set_title(HX_("Bambi's Purgatory (No Responde)",ec,80,b5,6f));
+HXLINE(6615)						::openfl::Lib_obj::get_application()->_hx___window->set_title(HX_("Bambi's Purgatory (No Responde)",ec,80,b5,6f));
             					}
             				}
             				break;
             				case (int)400: case (int)1200: case (int)2224: {
-HXLINE(6616)					this->rsod->set_visible(true);
-HXLINE(6617)					this->showonlystrums();
-HXLINE(6618)					this->camHUD->shake(((Float)0.0055),((Float)0.35),null(),null(),null());
-HXLINE(6619)					::flixel::FlxG_obj::camera->set_visible(false);
-HXLINE(6620)					this->camZooming = false;
-HXLINE(6621)					this->camHUD->set_zoom(( (Float)(1) ));
-HXLINE(6622)					this->poop();
-HXLINE(6623)					this->notResponding->set_alpha(( (Float)(0) ));
+HXLINE(6618)					this->rsod->set_visible(true);
+HXLINE(6619)					this->showonlystrums();
+HXLINE(6620)					this->camHUD->shake(((Float)0.0055),((Float)0.35),null(),null(),null());
+HXLINE(6621)					::flixel::FlxG_obj::camera->set_visible(false);
+HXLINE(6622)					this->camZooming = false;
+HXLINE(6623)					this->camHUD->set_zoom(( (Float)(1) ));
+HXLINE(6624)					this->poop();
+HXLINE(6625)					this->notResponding->set_alpha(( (Float)(0) ));
             				}
             				break;
             				case (int)401: case (int)1201: case (int)2225: {
-HXLINE(6625)					this->rsod->set_visible(true);
-HXLINE(6626)					this->showonlystrums();
-HXLINE(6627)					::flixel::FlxG_obj::camera->set_visible(false);
-HXLINE(6628)					this->poop();
-HXLINE(6629)					this->camZooming = false;
+HXLINE(6627)					this->rsod->set_visible(true);
+HXLINE(6628)					this->showonlystrums();
+HXLINE(6629)					::flixel::FlxG_obj::camera->set_visible(false);
+HXLINE(6630)					this->poop();
+HXLINE(6631)					this->camZooming = false;
             				}
             				break;
             				case (int)544: case (int)831: case (int)1856: {
-HXLINE(6655)					this->camZoomSnap = true;
+HXLINE(6657)					this->camZoomSnap = true;
             				}
             				break;
             				case (int)416: case (int)1216: case (int)2240: {
-HXLINE(6631)					this->rsod->set_visible(false);
-HXLINE(6632)					this->notResponding->set_alpha(( (Float)(0) ));
-HXLINE(6633)					::flixel::FlxG_obj::camera->set_visible(true);
-HXLINE(6634)					this->camOther->flash(-16777216,((Float)0.55),null(),null());
-HXLINE(6635)					::flixel::FlxG_obj::camera->flash(-16777216,((Float)0.55),null(),null());
-HXLINE(6636)					this->restoreHUDElements();
-HXLINE(6637)					this->camZooming = true;
-HXLINE(6638)					this->laggingRSOD = false;
-HXLINE(6639)					this->bgrsod->set_active(true);
-HXLINE(6640)					this->crap();
-HXLINE(6641)					this->restoreTitleWin();
+HXLINE(6633)					this->rsod->set_visible(false);
+HXLINE(6634)					this->notResponding->set_alpha(( (Float)(0) ));
+HXLINE(6635)					::flixel::FlxG_obj::camera->set_visible(true);
+HXLINE(6636)					this->camOther->flash(-16777216,((Float)0.55),null(),null());
+HXLINE(6637)					::flixel::FlxG_obj::camera->flash(-16777216,((Float)0.55),null(),null());
+HXLINE(6638)					this->restoreHUDElements();
+HXLINE(6639)					this->camZooming = true;
+HXLINE(6640)					this->laggingRSOD = false;
+HXLINE(6641)					this->bgrsod->set_active(true);
+HXLINE(6642)					this->crap();
+HXLINE(6643)					this->restoreTitleWin();
             				}
             				break;
             				case (int)799: case (int)1344: case (int)2367: {
-HXLINE(6657)					this->camZoomSnap = false;
+HXLINE(6659)					this->camZoomSnap = false;
             				}
             				break;
             				case (int)2628: {
-HXLINE(6666)					this->camZooming = false;
+HXLINE(6668)					this->camZooming = false;
             				}
             				break;
             			}
-HXLINE(6593)			goto _hx_goto_282;
+HXLINE(6595)			goto _hx_goto_282;
             		}
             		if (  (_hx_switch_0==HX_("shattered",b8,12,8d,2f)) ){
-HXLINE(6410)			switch((int)(this->curStep)){
+HXLINE(6412)			switch((int)(this->curStep)){
             				case (int)0: {
-HXLINE(6413)					this->hideshit();
+HXLINE(6415)					this->hideshit();
             				}
             				break;
             				case (int)1: {
-HXLINE(6415)					this->camHUD->set_alpha(( (Float)(0) ));
-HXLINE(6416)					this->restoreHUDElements();
+HXLINE(6417)					this->camHUD->set_alpha(( (Float)(0) ));
+HXLINE(6418)					this->restoreHUDElements();
             				}
             				break;
             				case (int)120: {
-HXLINE(6418)					this->showHUDFade();
+HXLINE(6420)					this->showHUDFade();
             				}
             				break;
             				case (int)760: {
-HXLINE(6420)					 ::states::PlayState _hx_tmp = ::hx::ObjectPtr<OBJ_>(this);
-HXDLIN(6420)					_hx_tmp->defaultCamZoom = (_hx_tmp->defaultCamZoom - ((Float)0.32));
-HXLINE(6421)					this->camHUD->set_visible(false);
-HXLINE(6422)					this->dad->set_visible(false);
-HXLINE(6423)					this->boyfriend->set_visible(false);
-HXLINE(6424)					this->gf->set_visible(false);
+HXLINE(6422)					 ::states::PlayState _hx_tmp = ::hx::ObjectPtr<OBJ_>(this);
+HXDLIN(6422)					_hx_tmp->defaultCamZoom = (_hx_tmp->defaultCamZoom - ((Float)0.32));
+HXLINE(6423)					this->camHUD->set_visible(false);
+HXLINE(6424)					this->dad->set_visible(false);
+HXLINE(6425)					this->boyfriend->set_visible(false);
+HXLINE(6426)					this->gf->set_visible(false);
             				}
             				break;
             				case (int)768: {
-HXLINE(6426)					 ::states::PlayState _hx_tmp = ::hx::ObjectPtr<OBJ_>(this);
-HXDLIN(6426)					_hx_tmp->defaultCamZoom = (_hx_tmp->defaultCamZoom + ((Float)0.32));
-HXLINE(6427)					this->camHUD->set_visible(true);
-HXLINE(6428)					this->dad->set_visible(true);
-HXLINE(6429)					this->boyfriend->set_visible(true);
-HXLINE(6430)					this->add(this->shartGrad);
-HXLINE(6431)					this->addBehindDad(this->shartGrad);
-HXLINE(6432)					this->addBehindBF(this->shartGrad);
-HXLINE(6433)					this->addBehindDad(this->shartLine);
-HXLINE(6434)					this->addBehindBF(this->shartLine);
-HXLINE(6435)					::flixel::tweens::FlxTween_obj::tween(this->shartGrad, ::Dynamic(::hx::Anon_obj::Create(1)
+HXLINE(6428)					 ::states::PlayState _hx_tmp = ::hx::ObjectPtr<OBJ_>(this);
+HXDLIN(6428)					_hx_tmp->defaultCamZoom = (_hx_tmp->defaultCamZoom + ((Float)0.32));
+HXLINE(6429)					this->camHUD->set_visible(true);
+HXLINE(6430)					this->dad->set_visible(true);
+HXLINE(6431)					this->boyfriend->set_visible(true);
+HXLINE(6432)					this->add(this->shartGrad);
+HXLINE(6433)					this->addBehindDad(this->shartGrad);
+HXLINE(6434)					this->addBehindBF(this->shartGrad);
+HXLINE(6435)					this->addBehindDad(this->shartLine);
+HXLINE(6436)					this->addBehindBF(this->shartLine);
+HXLINE(6437)					::flixel::tweens::FlxTween_obj::tween(this->shartGrad, ::Dynamic(::hx::Anon_obj::Create(1)
             						->setFixed(0,HX_("alpha",5e,a7,96,21),1)),((Float)0.1),null());
-HXLINE(6436)					this->add(this->shartLine);
-HXLINE(6437)					::flixel::tweens::FlxTween_obj::tween(this->shartLine, ::Dynamic(::hx::Anon_obj::Create(1)
+HXLINE(6438)					this->add(this->shartLine);
+HXLINE(6439)					::flixel::tweens::FlxTween_obj::tween(this->shartLine, ::Dynamic(::hx::Anon_obj::Create(1)
             						->setFixed(0,HX_("alpha",5e,a7,96,21),1)),((Float)0.1),null());
             				}
             				break;
             				case (int)832: {
-HXLINE(6439)					if (::backend::ClientPrefs_obj::data->BlackScreen) {
-HXLINE(6441)						this->add(this->blackScreen);
-HXLINE(6442)						::flixel::tweens::FlxTween_obj::tween(this->blackScreen, ::Dynamic(::hx::Anon_obj::Create(1)
+HXLINE(6441)					if (::backend::ClientPrefs_obj::data->BlackScreen) {
+HXLINE(6443)						this->add(this->blackScreen);
+HXLINE(6444)						::flixel::tweens::FlxTween_obj::tween(this->blackScreen, ::Dynamic(::hx::Anon_obj::Create(1)
             							->setFixed(0,HX_("alpha",5e,a7,96,21),1)),0,null());
             					}
-HXLINE(6444)					::flixel::tweens::FlxTween_obj::tween(this->shartGrad, ::Dynamic(::hx::Anon_obj::Create(1)
+HXLINE(6446)					::flixel::tweens::FlxTween_obj::tween(this->shartGrad, ::Dynamic(::hx::Anon_obj::Create(1)
             						->setFixed(0,HX_("alpha",5e,a7,96,21),0)),0,null());
-HXLINE(6445)					::flixel::tweens::FlxTween_obj::tween(this->shartLine, ::Dynamic(::hx::Anon_obj::Create(1)
+HXLINE(6447)					::flixel::tweens::FlxTween_obj::tween(this->shartLine, ::Dynamic(::hx::Anon_obj::Create(1)
             						->setFixed(0,HX_("alpha",5e,a7,96,21),0)),0,null());
-HXLINE(6447)					int Alpha = 255;
-HXDLIN(6447)					int color = ::flixel::util::_FlxColor::FlxColor_Impl__obj::_new(null());
-HXDLIN(6447)					{
-HXLINE(6447)						color = (color & -16711681);
-HXDLIN(6447)						color = (color | 16711680);
+HXLINE(6449)					int Alpha = 255;
+HXDLIN(6449)					int color = ::flixel::util::_FlxColor::FlxColor_Impl__obj::_new(null());
+HXDLIN(6449)					{
+HXLINE(6449)						color = (color & -16711681);
+HXDLIN(6449)						color = (color | 16711680);
             					}
-HXDLIN(6447)					{
-HXLINE(6447)						color = (color & -65281);
-HXDLIN(6447)						color = (color | 36608);
+HXDLIN(6449)					{
+HXLINE(6449)						color = (color & -65281);
+HXDLIN(6449)						color = (color | 36608);
             					}
-HXDLIN(6447)					{
-HXLINE(6447)						color = (color & -256);
-HXDLIN(6447)						color = (color | 178);
+HXDLIN(6449)					{
+HXLINE(6449)						color = (color & -256);
+HXDLIN(6449)						color = (color | 178);
             					}
-HXDLIN(6447)					{
-HXLINE(6447)						color = (color & 16777215);
-HXDLIN(6447)						int color1;
-HXDLIN(6447)						if ((Alpha > 255)) {
-HXLINE(6447)							color1 = 255;
+HXDLIN(6449)					{
+HXLINE(6449)						color = (color & 16777215);
+HXDLIN(6449)						int color1;
+HXDLIN(6449)						if ((Alpha > 255)) {
+HXLINE(6449)							color1 = 255;
             						}
             						else {
-HXLINE(6447)							if ((Alpha < 0)) {
-HXLINE(6447)								color1 = 0;
+HXLINE(6449)							if ((Alpha < 0)) {
+HXLINE(6449)								color1 = 0;
             							}
             							else {
-HXLINE(6447)								color1 = Alpha;
+HXLINE(6449)								color1 = Alpha;
             							}
             						}
-HXDLIN(6447)						color = (color | (color1 << 24));
+HXDLIN(6449)						color = (color | (color1 << 24));
             					}
-HXDLIN(6447)					int sunsetColor = color;
-HXLINE(6448)					int nightColor = -7895161;
-HXLINE(6449)					 ::flixel::tweens::misc::ColorTween bfTween;
-HXLINE(6451)					this->waoscolorshatt = false;
-HXLINE(6453)					::flixel::tweens::FlxTween_obj::color(this->boyfriend,10,sunsetColor,nightColor, ::Dynamic(::hx::Anon_obj::Create(1)
+HXDLIN(6449)					int sunsetColor = color;
+HXLINE(6450)					int nightColor = -7895161;
+HXLINE(6451)					 ::flixel::tweens::misc::ColorTween bfTween;
+HXLINE(6453)					this->waoscolorshatt = false;
+HXLINE(6455)					::flixel::tweens::FlxTween_obj::color(this->boyfriend,10,sunsetColor,nightColor, ::Dynamic(::hx::Anon_obj::Create(1)
             						->setFixed(0,HX_("ease",ee,8b,0c,43),::flixel::tweens::FlxEase_obj::circOut_dyn())));
-HXLINE(6454)					::flixel::tweens::FlxTween_obj::color(this->gf,10,sunsetColor,nightColor, ::Dynamic(::hx::Anon_obj::Create(1)
+HXLINE(6456)					::flixel::tweens::FlxTween_obj::color(this->gf,10,sunsetColor,nightColor, ::Dynamic(::hx::Anon_obj::Create(1)
             						->setFixed(0,HX_("ease",ee,8b,0c,43),::flixel::tweens::FlxEase_obj::circOut_dyn())));
-HXLINE(6455)					::flixel::tweens::FlxTween_obj::color(this->dad,10,sunsetColor,nightColor, ::Dynamic(::hx::Anon_obj::Create(1)
+HXLINE(6457)					::flixel::tweens::FlxTween_obj::color(this->dad,10,sunsetColor,nightColor, ::Dynamic(::hx::Anon_obj::Create(1)
             						->setFixed(0,HX_("ease",ee,8b,0c,43),::flixel::tweens::FlxEase_obj::circOut_dyn())));
             				}
             				break;
             				case (int)840: {
-HXLINE(6457)					this->shartGrad->set_visible(false);
-HXLINE(6458)					this->shartLine->set_visible(false);
-HXLINE(6459)					this->gf->set_visible(true);
-HXLINE(6460)					if (::backend::ClientPrefs_obj::data->BlackScreen) {
-HXLINE(6462)						this->blackScreen->set_visible(false);
-HXLINE(6463)						::flixel::tweens::FlxTween_obj::tween(this->blackScreen, ::Dynamic(::hx::Anon_obj::Create(1)
+HXLINE(6459)					this->shartGrad->set_visible(false);
+HXLINE(6460)					this->shartLine->set_visible(false);
+HXLINE(6461)					this->gf->set_visible(true);
+HXLINE(6462)					if (::backend::ClientPrefs_obj::data->BlackScreen) {
+HXLINE(6464)						this->blackScreen->set_visible(false);
+HXLINE(6465)						::flixel::tweens::FlxTween_obj::tween(this->blackScreen, ::Dynamic(::hx::Anon_obj::Create(1)
             							->setFixed(0,HX_("alpha",5e,a7,96,21),1)),0,null());
             					}
             				}
             				break;
             				case (int)1151: {
-HXLINE(6466)					if (::backend::ClientPrefs_obj::data->BlackScreen) {
-HXLINE(6468)						this->blackScreen->set_visible(true);
-HXLINE(6469)						::flixel::tweens::FlxTween_obj::tween(this->blackScreen, ::Dynamic(::hx::Anon_obj::Create(1)
+HXLINE(6468)					if (::backend::ClientPrefs_obj::data->BlackScreen) {
+HXLINE(6470)						this->blackScreen->set_visible(true);
+HXLINE(6471)						::flixel::tweens::FlxTween_obj::tween(this->blackScreen, ::Dynamic(::hx::Anon_obj::Create(1)
             							->setFixed(0,HX_("alpha",5e,a7,96,21),0)),10,null());
             					}
             				}
             				break;
             				case (int)1215: {
-HXLINE(6472)					if (::backend::ClientPrefs_obj::data->BlackScreen) {
-HXLINE(6474)						::flixel::tweens::FlxTween_obj::tween(this->blackScreen, ::Dynamic(::hx::Anon_obj::Create(1)
+HXLINE(6474)					if (::backend::ClientPrefs_obj::data->BlackScreen) {
+HXLINE(6476)						::flixel::tweens::FlxTween_obj::tween(this->blackScreen, ::Dynamic(::hx::Anon_obj::Create(1)
             							->setFixed(0,HX_("alpha",5e,a7,96,21),1)),5,null());
             					}
             				}
             				break;
             				case (int)1280: {
-HXLINE(6477)					if (::backend::ClientPrefs_obj::data->BlackScreen) {
-HXLINE(6479)						::flixel::tweens::FlxTween_obj::tween(this->blackScreen, ::Dynamic(::hx::Anon_obj::Create(1)
+HXLINE(6479)					if (::backend::ClientPrefs_obj::data->BlackScreen) {
+HXLINE(6481)						::flixel::tweens::FlxTween_obj::tween(this->blackScreen, ::Dynamic(::hx::Anon_obj::Create(1)
             							->setFixed(0,HX_("alpha",5e,a7,96,21),0)),2,null());
             					}
             				}
             				break;
             				case (int)1665: {
-HXLINE(6482)					this->boyfriend->playAnim(HX_("hurt",0f,5c,17,45),true,null(),null());
-HXLINE(6483)					this->glow->set_color(-65536);
+HXLINE(6484)					this->boyfriend->playAnim(HX_("hurt",0f,5c,17,45),true,null(),null());
+HXLINE(6485)					this->glow->set_color(-65536);
             				}
             				break;
             				case (int)1792: {
-HXLINE(6485)					this->redGlow->set_visible(true);
+HXLINE(6487)					this->redGlow->set_visible(true);
             				}
             				break;
             			}
-HXLINE(6410)			goto _hx_goto_282;
+HXLINE(6412)			goto _hx_goto_282;
             		}
             		if (  (_hx_switch_0==HX_("shattered oldest",67,1e,54,3a)) ){
-HXLINE(6489)			switch((int)(this->curStep)){
+HXLINE(6491)			switch((int)(this->curStep)){
             				case (int)0: {
-HXLINE(6492)					this->hideshit();
+HXLINE(6494)					this->hideshit();
             				}
             				break;
             				case (int)1: {
-HXLINE(6494)					this->camHUD->set_alpha(( (Float)(0) ));
-HXLINE(6495)					this->restoreHUDElements();
+HXLINE(6496)					this->camHUD->set_alpha(( (Float)(0) ));
+HXLINE(6497)					this->restoreHUDElements();
             				}
             				break;
             				case (int)120: {
-HXLINE(6497)					this->showHUDFade();
+HXLINE(6499)					this->showHUDFade();
             				}
             				break;
             				case (int)895: {
-HXLINE(6499)					this->add(this->blackScreen);
+HXLINE(6501)					this->add(this->blackScreen);
             				}
             				break;
             				case (int)896: {
-HXLINE(6501)					::flixel::tweens::FlxTween_obj::tween(this->blackScreen, ::Dynamic(::hx::Anon_obj::Create(1)
+HXLINE(6503)					::flixel::tweens::FlxTween_obj::tween(this->blackScreen, ::Dynamic(::hx::Anon_obj::Create(1)
             						->setFixed(0,HX_("alpha",5e,a7,96,21),0)),10,null());
             				}
             				break;
             				case (int)1024: {
-HXLINE(6503)					::flixel::tweens::FlxTween_obj::tween(this->blackScreen, ::Dynamic(::hx::Anon_obj::Create(1)
+HXLINE(6505)					::flixel::tweens::FlxTween_obj::tween(this->blackScreen, ::Dynamic(::hx::Anon_obj::Create(1)
             						->setFixed(0,HX_("alpha",5e,a7,96,21),1)),5,null());
             				}
             				break;
             				case (int)1090: {
-HXLINE(6505)					::flixel::tweens::FlxTween_obj::tween(this->blackScreen, ::Dynamic(::hx::Anon_obj::Create(1)
+HXLINE(6507)					::flixel::tweens::FlxTween_obj::tween(this->blackScreen, ::Dynamic(::hx::Anon_obj::Create(1)
             						->setFixed(0,HX_("alpha",5e,a7,96,21),0)),2,null());
             				}
             				break;
             				case (int)1665: {
-HXLINE(6507)					this->triggerEvent(HX_("Change Character",f9,50,ef,9c),HX_("0",30,00,00,00),HX_("bf-scared",c9,02,f4,15),( (Float)(1) ));
-HXLINE(6508)					this->boyfriend->playAnim(HX_("hurt",0f,5c,17,45),true,null(),null());
-HXLINE(6509)					this->glow->set_color(-65536);
+HXLINE(6509)					this->triggerEvent(HX_("Change Character",f9,50,ef,9c),HX_("0",30,00,00,00),HX_("bf-scared",c9,02,f4,15),( (Float)(1) ));
+HXLINE(6510)					this->boyfriend->playAnim(HX_("hurt",0f,5c,17,45),true,null(),null());
+HXLINE(6511)					this->glow->set_color(-65536);
             				}
             				break;
             				case (int)1792: {
-HXLINE(6511)					this->redGlow->set_visible(true);
+HXLINE(6513)					this->redGlow->set_visible(true);
             				}
             				break;
             			}
-HXLINE(6489)			goto _hx_goto_282;
+HXLINE(6491)			goto _hx_goto_282;
             		}
             		if (  (_hx_switch_0==HX_("supplanted",bc,cb,b5,52)) ){
-HXLINE(6549)			switch((int)(this->curStep)){
+HXLINE(6551)			switch((int)(this->curStep)){
             				case (int)128: {
-HXLINE(6552)					if (::backend::ClientPrefs_obj::data->flashing) {
-HXLINE(6552)						::flixel::FlxG_obj::camera->flash(-1,1,null(),null());
+HXLINE(6554)					if (::backend::ClientPrefs_obj::data->flashing) {
+HXLINE(6554)						::flixel::FlxG_obj::camera->flash(-1,1,null(),null());
             					}
-HXLINE(6553)					this->redGlow->set_visible(true);
+HXLINE(6555)					this->redGlow->set_visible(true);
             				}
             				break;
             				case (int)802: {
-HXLINE(6555)					this->defaultCamZoom = ((Float)1.5);
+HXLINE(6557)					this->defaultCamZoom = ((Float)1.5);
             				}
             				break;
             				case (int)805: {
-HXLINE(6557)					this->defaultCamZoom = ((Float)0.85);
+HXLINE(6559)					this->defaultCamZoom = ((Float)0.85);
             				}
             				break;
             				case (int)859: {
-HXLINE(6559)					this->defaultCamZoom = ((Float)1.75);
+HXLINE(6561)					this->defaultCamZoom = ((Float)1.75);
             				}
             				break;
             				case (int)863: {
-HXLINE(6561)					this->defaultCamZoom = ((Float)0.85);
+HXLINE(6563)					this->defaultCamZoom = ((Float)0.85);
             				}
             				break;
             				case (int)892: {
-HXLINE(6563)					this->defaultCamZoom = ((Float)1.5);
+HXLINE(6565)					this->defaultCamZoom = ((Float)1.5);
             				}
             				break;
             				case (int)895: {
-HXLINE(6565)					this->defaultCamZoom = ((Float)0.85);
+HXLINE(6567)					this->defaultCamZoom = ((Float)0.85);
             				}
             				break;
             				case (int)1344: {
-HXLINE(6571)					if (::backend::ClientPrefs_obj::data->flashing) {
-HXLINE(6571)						::flixel::FlxG_obj::camera->flash(-1,1,null(),null());
+HXLINE(6573)					if (::backend::ClientPrefs_obj::data->flashing) {
+HXLINE(6573)						::flixel::FlxG_obj::camera->flash(-1,1,null(),null());
             					}
             				}
             				break;
             				case (int)720: case (int)960: case (int)1856: {
-HXLINE(6569)					this->camZoomSnap = true;
+HXLINE(6571)					this->camZoomSnap = true;
             				}
             				break;
             				case (int)944: case (int)1343: case (int)2176: {
-HXLINE(6567)					this->camZoomSnap = false;
+HXLINE(6569)					this->camZoomSnap = false;
             				}
             				break;
             				case (int)2368: {
-HXLINE(6573)					if (::backend::ClientPrefs_obj::data->flashing) {
-HXLINE(6573)						::flixel::FlxG_obj::camera->flash(-1,1,null(),null());
+HXLINE(6575)					if (::backend::ClientPrefs_obj::data->flashing) {
+HXLINE(6575)						::flixel::FlxG_obj::camera->flash(-1,1,null(),null());
             					}
-HXLINE(6574)					this->redGlow->set_visible(false);
-HXLINE(6575)					::flixel::tweens::FlxTween_obj::tween(this->camFollow, ::Dynamic(::hx::Anon_obj::Create(1)
+HXLINE(6576)					this->redGlow->set_visible(false);
+HXLINE(6577)					::flixel::tweens::FlxTween_obj::tween(this->camFollow, ::Dynamic(::hx::Anon_obj::Create(1)
             						->setFixed(0,HX_("y",79,00,00,00),(this->camFollow->y - ( (Float)(1000) )))),5, ::Dynamic(::hx::Anon_obj::Create(1)
             						->setFixed(0,HX_("ease",ee,8b,0c,43),::flixel::tweens::FlxEase_obj::expoOut_dyn())));
-HXLINE(6576)					this->camZooming = false;
+HXLINE(6578)					this->camZooming = false;
             				}
             				break;
             				case (int)2384: {
-HXLINE(6578)					this->add(this->blackScreen);
+HXLINE(6580)					this->add(this->blackScreen);
             				}
             				break;
             				case (int)2386: {
-HXLINE(6580)					::flixel::tweens::FlxTween_obj::tween(this->blackScreen, ::Dynamic(::hx::Anon_obj::Create(1)
+HXLINE(6582)					::flixel::tweens::FlxTween_obj::tween(this->blackScreen, ::Dynamic(::hx::Anon_obj::Create(1)
             						->setFixed(0,HX_("alpha",5e,a7,96,21),1)),5,null());
-HXLINE(6581)					this->camZooming = true;
+HXLINE(6583)					this->camZooming = true;
             				}
             				break;
             				case (int)2656: {
-HXLINE(6583)					::flixel::tweens::FlxTween_obj::tween(this->blackScreen, ::Dynamic(::hx::Anon_obj::Create(1)
+HXLINE(6585)					::flixel::tweens::FlxTween_obj::tween(this->blackScreen, ::Dynamic(::hx::Anon_obj::Create(1)
             						->setFixed(0,HX_("alpha",5e,a7,96,21),0)),3,null());
             				}
             				break;
             				case (int)2688: {
-HXLINE(6585)					this->redGlow->set_visible(true);
-HXLINE(6586)					this->camZooming = true;
+HXLINE(6587)					this->redGlow->set_visible(true);
+HXLINE(6588)					this->camZooming = true;
             				}
             				break;
             				case (int)2960: {
-HXLINE(6588)					this->dad->set_color(-16777216);
-HXLINE(6589)					this->defaultCamZoom = ((Float)1.35);
+HXLINE(6590)					this->dad->set_color(-16777216);
+HXLINE(6591)					this->defaultCamZoom = ((Float)1.35);
             				}
             				break;
             			}
-HXLINE(6549)			goto _hx_goto_282;
+HXLINE(6551)			goto _hx_goto_282;
             		}
             		if (  (_hx_switch_0==HX_("technology",0c,d3,aa,8a)) ){
-HXLINE(6521)			if ((this->curStep == 394)) {
-HXLINE(6524)				this->cinematicBars(((::backend::Conductor_obj::stepCrochet * ( (Float)(40) )) / ( (Float)(1000) )),( (Float)(400) ));
+HXLINE(6523)			if ((this->curStep == 394)) {
+HXLINE(6526)				this->cinematicBars(((::backend::Conductor_obj::stepCrochet * ( (Float)(40) )) / ( (Float)(1000) )),( (Float)(400) ));
             			}
-HXLINE(6521)			goto _hx_goto_282;
+HXLINE(6523)			goto _hx_goto_282;
             		}
             		if (  (_hx_switch_0==HX_("upheaval",38,cb,7f,52)) ){
-HXLINE(6248)			switch((int)(this->curStep)){
+HXLINE(6250)			switch((int)(this->curStep)){
             				case (int)512: {
-HXLINE(6251)					this->dad->set_visible(true);
-HXLINE(6252)					this->gf->set_visible(false);
-HXLINE(6253)					::flixel::FlxG_obj::camera->set_alpha(( (Float)(1) ));
-HXLINE(6254)					this->camOther->flash(-1,3,null(),null());
-HXLINE(6255)					this->scoreTxt->scale->set_x(( (Float)(1) ));
-HXLINE(6256)					this->scoreTxt->scale->set_y(( (Float)(1) ));
-HXLINE(6257)					this->healthBar->set_angle(( (Float)(0) ));
-HXLINE(6258)					this->camHUD->set_angle(( (Float)(0) ));
+HXLINE(6253)					this->dad->set_visible(true);
+HXLINE(6254)					this->gf->set_visible(false);
+HXLINE(6255)					::flixel::FlxG_obj::camera->set_alpha(( (Float)(1) ));
+HXLINE(6256)					this->camOther->flash(-1,3,null(),null());
+HXLINE(6257)					this->scoreTxt->scale->set_x(( (Float)(1) ));
+HXLINE(6258)					this->scoreTxt->scale->set_y(( (Float)(1) ));
+HXLINE(6259)					this->healthBar->set_angle(( (Float)(0) ));
+HXLINE(6260)					this->camHUD->set_angle(( (Float)(0) ));
             				}
             				break;
             				case (int)767: {
-HXLINE(6260)					this->ogCamBopVAL = ((Float)0.05);
-HXLINE(6261)					this->ogCamHUDBopVAL = ((Float)0.1);
-HXLINE(6262)					this->camOther->flash(-1,((Float)1.5),null(),null());
+HXLINE(6262)					this->ogCamBopVAL = ((Float)0.05);
+HXLINE(6263)					this->ogCamHUDBopVAL = ((Float)0.1);
+HXLINE(6264)					this->camOther->flash(-1,((Float)1.5),null(),null());
             				}
             				break;
             			}
-HXLINE(6248)			goto _hx_goto_282;
+HXLINE(6250)			goto _hx_goto_282;
             		}
             		_hx_goto_282:;
-HXLINE(6669)		if ((this->curStep == this->lastStepHit)) {
-HXLINE(6670)			return;
+HXLINE(6671)		if ((this->curStep == this->lastStepHit)) {
+HXLINE(6672)			return;
             		}
-HXLINE(6673)		this->lastStepHit = this->curStep;
-HXLINE(6674)		this->setOnScripts(HX_("curStep",ec,58,71,b7),this->curStep,null());
-HXLINE(6675)		this->callOnScripts(HX_("onStepHit",08,67,ec,58),null(),null(),null(),null());
+HXLINE(6675)		this->lastStepHit = this->curStep;
+HXLINE(6676)		this->setOnScripts(HX_("curStep",ec,58,71,b7),this->curStep,null());
+HXLINE(6677)		this->callOnScripts(HX_("onStepHit",08,67,ec,58),null(),null(),null(),null());
             	}
 
 
 void PlayState_obj::beatHit(){
-            	HX_STACKFRAME(&_hx_pos_801e532e222627de_6681_beatHit)
-HXLINE(6682)		if (::backend::ClientPrefs_obj::data->wiggle) {
-HXLINE(6684)			this->wiggleShit->set_waveAmplitude(((Float)0.035));
-HXLINE(6685)			this->wiggleShit->set_waveFrequency(( (Float)(10) ));
+            	HX_STACKFRAME(&_hx_pos_801e532e222627de_6683_beatHit)
+HXLINE(6684)		if (::backend::ClientPrefs_obj::data->wiggle) {
+HXLINE(6686)			this->wiggleShit->set_waveAmplitude(((Float)0.035));
+HXLINE(6687)			this->wiggleShit->set_waveFrequency(( (Float)(10) ));
             		}
-HXLINE(6688)		if ((this->lastBeatHit >= this->curBeat)) {
-HXLINE(6690)			return;
+HXLINE(6690)		if ((this->lastBeatHit >= this->curBeat)) {
+HXLINE(6692)			return;
             		}
-HXLINE(6693)		Float funny = ((this->healthBar->percent * ((Float)0.01)) + ((Float)0.01));
-HXLINE(6695)		bool _hx_tmp;
-HXDLIN(6695)		if (this->dnbBounce) {
-HXLINE(6695)			_hx_tmp = !(this->laggingRSOD);
+HXLINE(6695)		Float funny = ((this->healthBar->percent * ((Float)0.01)) + ((Float)0.01));
+HXLINE(6697)		bool _hx_tmp;
+HXDLIN(6697)		if (this->dnbBounce) {
+HXLINE(6697)			_hx_tmp = !(this->laggingRSOD);
             		}
             		else {
-HXLINE(6695)			_hx_tmp = false;
+HXLINE(6697)			_hx_tmp = false;
             		}
-HXDLIN(6695)		if (_hx_tmp) {
-HXLINE(6696)			if (!(this->iconP1->isAnim)) {
-HXLINE(6696)				 ::objects::HealthIcon _hx_tmp = this->iconP1;
-HXDLIN(6696)				int _hx_tmp1 = ::Std_obj::_hx_int((this->iconP1->get_width() + (( (Float)(50) ) * (( (Float)(2) ) - funny))));
-HXDLIN(6696)				_hx_tmp->setGraphicSize(_hx_tmp1,::Std_obj::_hx_int((this->iconP1->get_height() - (( (Float)(25) ) * (( (Float)(2) ) - funny)))));
+HXDLIN(6697)		if (_hx_tmp) {
+HXLINE(6698)			if (!(this->iconP1->isAnim)) {
+HXLINE(6698)				 ::objects::HealthIcon _hx_tmp = this->iconP1;
+HXDLIN(6698)				int _hx_tmp1 = ::Std_obj::_hx_int((this->iconP1->get_width() + (( (Float)(50) ) * (( (Float)(2) ) - funny))));
+HXDLIN(6698)				_hx_tmp->setGraphicSize(_hx_tmp1,::Std_obj::_hx_int((this->iconP1->get_height() - (( (Float)(25) ) * (( (Float)(2) ) - funny)))));
             			}
-HXLINE(6697)			this->iconP1->updateHitbox();
-HXLINE(6699)			if (!(this->iconP2->isAnim)) {
-HXLINE(6699)				 ::objects::HealthIcon _hx_tmp = this->iconP2;
-HXDLIN(6699)				int _hx_tmp1 = ::Std_obj::_hx_int((this->iconP2->get_width() + (( (Float)(50) ) * (( (Float)(2) ) - funny))));
-HXDLIN(6699)				_hx_tmp->setGraphicSize(_hx_tmp1,::Std_obj::_hx_int((this->iconP2->get_height() - (( (Float)(25) ) * (( (Float)(2) ) - funny)))));
+HXLINE(6699)			this->iconP1->updateHitbox();
+HXLINE(6701)			if (!(this->iconP2->isAnim)) {
+HXLINE(6701)				 ::objects::HealthIcon _hx_tmp = this->iconP2;
+HXDLIN(6701)				int _hx_tmp1 = ::Std_obj::_hx_int((this->iconP2->get_width() + (( (Float)(50) ) * (( (Float)(2) ) - funny))));
+HXDLIN(6701)				_hx_tmp->setGraphicSize(_hx_tmp1,::Std_obj::_hx_int((this->iconP2->get_height() - (( (Float)(25) ) * (( (Float)(2) ) - funny)))));
             			}
-HXLINE(6700)			this->iconP2->updateHitbox();
+HXLINE(6702)			this->iconP2->updateHitbox();
             		}
-HXLINE(6702)		bool _hx_tmp1;
-HXDLIN(6702)		if (this->ogBounce) {
-HXLINE(6702)			_hx_tmp1 = !(this->laggingRSOD);
-            		}
-            		else {
-HXLINE(6702)			_hx_tmp1 = false;
-            		}
-HXDLIN(6702)		if (_hx_tmp1) {
-HXLINE(6703)			 ::objects::HealthIcon _hx_tmp = this->iconP1;
-HXDLIN(6703)			_hx_tmp->setGraphicSize(::Std_obj::_hx_int((this->iconP1->get_width() + 30)),null());
-HXLINE(6704)			this->iconP1->updateHitbox();
-HXLINE(6706)			 ::objects::HealthIcon _hx_tmp1 = this->iconP2;
-HXDLIN(6706)			_hx_tmp1->setGraphicSize(::Std_obj::_hx_int((this->iconP2->get_width() + 30)),null());
-HXLINE(6707)			this->iconP2->updateHitbox();
-            		}
-HXLINE(6710)		bool _hx_tmp2;
-HXDLIN(6710)		bool _hx_tmp3;
-HXDLIN(6710)		bool _hx_tmp4;
-HXDLIN(6710)		bool _hx_tmp5;
-HXDLIN(6710)		if (this->camZooming) {
-HXLINE(6710)			_hx_tmp5 = (::flixel::FlxG_obj::camera->zoom < ((Float)1.35));
+HXLINE(6704)		bool _hx_tmp1;
+HXDLIN(6704)		if (this->ogBounce) {
+HXLINE(6704)			_hx_tmp1 = !(this->laggingRSOD);
             		}
             		else {
-HXLINE(6710)			_hx_tmp5 = false;
+HXLINE(6704)			_hx_tmp1 = false;
             		}
-HXDLIN(6710)		if (_hx_tmp5) {
-HXLINE(6710)			_hx_tmp4 = ::backend::ClientPrefs_obj::data->camZooms;
+HXDLIN(6704)		if (_hx_tmp1) {
+HXLINE(6705)			 ::objects::HealthIcon _hx_tmp = this->iconP1;
+HXDLIN(6705)			_hx_tmp->setGraphicSize(::Std_obj::_hx_int((this->iconP1->get_width() + 30)),null());
+HXLINE(6706)			this->iconP1->updateHitbox();
+HXLINE(6708)			 ::objects::HealthIcon _hx_tmp1 = this->iconP2;
+HXDLIN(6708)			_hx_tmp1->setGraphicSize(::Std_obj::_hx_int((this->iconP2->get_width() + 30)),null());
+HXLINE(6709)			this->iconP2->updateHitbox();
+            		}
+HXLINE(6712)		bool _hx_tmp2;
+HXDLIN(6712)		bool _hx_tmp3;
+HXDLIN(6712)		bool _hx_tmp4;
+HXDLIN(6712)		bool _hx_tmp5;
+HXDLIN(6712)		if (this->camZooming) {
+HXLINE(6712)			_hx_tmp5 = (::flixel::FlxG_obj::camera->zoom < ((Float)1.35));
             		}
             		else {
-HXLINE(6710)			_hx_tmp4 = false;
+HXLINE(6712)			_hx_tmp5 = false;
             		}
-HXDLIN(6710)		if (_hx_tmp4) {
-HXLINE(6710)			_hx_tmp3 = this->camZoomSnap;
-            		}
-            		else {
-HXLINE(6710)			_hx_tmp3 = false;
-            		}
-HXDLIN(6710)		if (_hx_tmp3) {
-HXLINE(6710)			_hx_tmp2 = !(this->laggingRSOD);
+HXDLIN(6712)		if (_hx_tmp5) {
+HXLINE(6712)			_hx_tmp4 = ::backend::ClientPrefs_obj::data->camZooms;
             		}
             		else {
-HXLINE(6710)			_hx_tmp2 = false;
+HXLINE(6712)			_hx_tmp4 = false;
             		}
-HXDLIN(6710)		if (_hx_tmp2) {
-HXLINE(6712)			bool _hx_tmp;
-HXDLIN(6712)			if (this->allowGamecamToZoom) {
-HXLINE(6712)				_hx_tmp = !(this->doingSMzoom);
+HXDLIN(6712)		if (_hx_tmp4) {
+HXLINE(6712)			_hx_tmp3 = this->camZoomSnap;
+            		}
+            		else {
+HXLINE(6712)			_hx_tmp3 = false;
+            		}
+HXDLIN(6712)		if (_hx_tmp3) {
+HXLINE(6712)			_hx_tmp2 = !(this->laggingRSOD);
+            		}
+            		else {
+HXLINE(6712)			_hx_tmp2 = false;
+            		}
+HXDLIN(6712)		if (_hx_tmp2) {
+HXLINE(6714)			bool _hx_tmp;
+HXDLIN(6714)			if (this->allowGamecamToZoom) {
+HXLINE(6714)				_hx_tmp = !(this->doingSMzoom);
             			}
             			else {
-HXLINE(6712)				_hx_tmp = false;
+HXLINE(6714)				_hx_tmp = false;
             			}
-HXDLIN(6712)			if (_hx_tmp) {
-HXLINE(6712)				 ::flixel::FlxCamera fh = ::flixel::FlxG_obj::camera;
-HXDLIN(6712)				fh->set_zoom((fh->zoom + (this->camBopVAL * this->camZoomingMult)));
+HXDLIN(6714)			if (_hx_tmp) {
+HXLINE(6714)				 ::flixel::FlxCamera fh = ::flixel::FlxG_obj::camera;
+HXDLIN(6714)				fh->set_zoom((fh->zoom + (this->camBopVAL * this->camZoomingMult)));
             			}
-HXLINE(6713)			if (this->allowHUDcamToZoom) {
-HXLINE(6713)				 ::flixel::FlxCamera fh = this->camHUD;
-HXDLIN(6713)				fh->set_zoom((fh->zoom + (this->camHUDBopVAL * this->camZoomingMult)));
-            			}
-            		}
-HXLINE(6716)		if (this->goofyZoom) {
-HXLINE(6717)			if ((::hx::Mod(this->curBeat,4) == 0)) {
-HXLINE(6719)				this->zoomAdd = ( (Float)(0) );
-            			}
-HXLINE(6720)			if ((::hx::Mod(this->curBeat,4) == 2)) {
-HXLINE(6722)				this->zoomAdd = ((Float)0.25);
+HXLINE(6715)			if (this->allowHUDcamToZoom) {
+HXLINE(6715)				 ::flixel::FlxCamera fh = this->camHUD;
+HXDLIN(6715)				fh->set_zoom((fh->zoom + (this->camHUDBopVAL * this->camZoomingMult)));
             			}
             		}
-HXLINE(6725)		if (this->camTilt) {
-HXLINE(6727)			if (::hx::IsNotNull( this->camTiltTween )) {
-HXLINE(6727)				this->camTiltTween->cancel();
+HXLINE(6718)		if (this->goofyZoom) {
+HXLINE(6719)			if ((::hx::Mod(this->curBeat,4) == 0)) {
+HXLINE(6721)				this->zoomAdd = ( (Float)(0) );
             			}
-HXLINE(6728)			if ((::hx::Mod(this->curBeat,4) == 0)) {
-HXLINE(6729)				this->camTiltTween = ::flixel::tweens::FlxTween_obj::tween(this->camHUD, ::Dynamic(::hx::Anon_obj::Create(1)
+HXLINE(6722)			if ((::hx::Mod(this->curBeat,4) == 2)) {
+HXLINE(6724)				this->zoomAdd = ((Float)0.25);
+            			}
+            		}
+HXLINE(6727)		if (this->camTilt) {
+HXLINE(6729)			if (::hx::IsNotNull( this->camTiltTween )) {
+HXLINE(6729)				this->camTiltTween->cancel();
+            			}
+HXLINE(6730)			if ((::hx::Mod(this->curBeat,4) == 0)) {
+HXLINE(6731)				this->camTiltTween = ::flixel::tweens::FlxTween_obj::tween(this->camHUD, ::Dynamic(::hx::Anon_obj::Create(1)
             					->setFixed(0,HX_("angle",d3,43,e2,22),-2)),(::backend::Conductor_obj::crochet / ( (Float)(1000) )), ::Dynamic(::hx::Anon_obj::Create(1)
             					->setFixed(0,HX_("ease",ee,8b,0c,43),::flixel::tweens::FlxEase_obj::quadOut_dyn())));
             			}
-HXLINE(6730)			if ((::hx::Mod(this->curBeat,4) == 2)) {
-HXLINE(6731)				this->camTiltTween = ::flixel::tweens::FlxTween_obj::tween(this->camHUD, ::Dynamic(::hx::Anon_obj::Create(1)
+HXLINE(6732)			if ((::hx::Mod(this->curBeat,4) == 2)) {
+HXLINE(6733)				this->camTiltTween = ::flixel::tweens::FlxTween_obj::tween(this->camHUD, ::Dynamic(::hx::Anon_obj::Create(1)
             					->setFixed(0,HX_("angle",d3,43,e2,22),2)),(::backend::Conductor_obj::crochet / ( (Float)(1000) )), ::Dynamic(::hx::Anon_obj::Create(1)
             					->setFixed(0,HX_("ease",ee,8b,0c,43),::flixel::tweens::FlxEase_obj::quadOut_dyn())));
             			}
             		}
-HXLINE(6734)		if (!(this->laggingRSOD)) {
-HXLINE(6735)			if (!(this->uphIntroTime)) {
-HXLINE(6736)				::flixel::tweens::FlxTween_obj::angle(this->iconP1,( (Float)(-15) ),( (Float)(0) ),(((::backend::Conductor_obj::crochet / ( (Float)(1300) )) * ( (Float)(this->gfSpeed) )) / this->playbackRate), ::Dynamic(::hx::Anon_obj::Create(1)
+HXLINE(6736)		if (!(this->laggingRSOD)) {
+HXLINE(6737)			if (!(this->uphIntroTime)) {
+HXLINE(6738)				::flixel::tweens::FlxTween_obj::angle(this->iconP1,( (Float)(-15) ),( (Float)(0) ),(((::backend::Conductor_obj::crochet / ( (Float)(1300) )) * ( (Float)(this->gfSpeed) )) / this->playbackRate), ::Dynamic(::hx::Anon_obj::Create(1)
             					->setFixed(0,HX_("ease",ee,8b,0c,43),::flixel::tweens::FlxEase_obj::quadOut_dyn())));
-HXLINE(6737)				::flixel::tweens::FlxTween_obj::angle(this->iconP2,( (Float)(15) ),( (Float)(0) ),(((::backend::Conductor_obj::crochet / ( (Float)(1300) )) * ( (Float)(this->gfSpeed) )) / this->playbackRate), ::Dynamic(::hx::Anon_obj::Create(1)
+HXLINE(6739)				::flixel::tweens::FlxTween_obj::angle(this->iconP2,( (Float)(15) ),( (Float)(0) ),(((::backend::Conductor_obj::crochet / ( (Float)(1300) )) * ( (Float)(this->gfSpeed) )) / this->playbackRate), ::Dynamic(::hx::Anon_obj::Create(1)
             					->setFixed(0,HX_("ease",ee,8b,0c,43),::flixel::tweens::FlxEase_obj::quadOut_dyn())));
             			}
-HXLINE(6740)			if (this->generatedMusic) {
+HXLINE(6742)			if (this->generatedMusic) {
             				HX_BEGIN_LOCAL_FUNC_S2(::hx::LocalFunc,_hx_Closure_0,int,a1, ::Dynamic,_g) HXARGC(2)
             				int _hx_run( ::objects::Note a2, ::objects::Note a3){
-            					HX_STACKFRAME(&_hx_pos_801e532e222627de_6741_beatHit)
-HXLINE(6741)					return ( (int)(_g(a1,a2,a3)) );
+            					HX_STACKFRAME(&_hx_pos_801e532e222627de_6743_beatHit)
+HXLINE(6743)					return ( (int)(_g(a1,a2,a3)) );
             				}
             				HX_END_LOCAL_FUNC2(return)
 
-HXLINE(6741)				int Order;
-HXDLIN(6741)				if (::backend::ClientPrefs_obj::data->downScroll) {
-HXLINE(6741)					Order = -1;
+HXLINE(6743)				int Order;
+HXDLIN(6743)				if (::backend::ClientPrefs_obj::data->downScroll) {
+HXLINE(6743)					Order = -1;
             				}
             				else {
-HXLINE(6741)					Order = 1;
+HXLINE(6743)					Order = 1;
             				}
-HXDLIN(6741)				 ::Dynamic _g = ::flixel::util::FlxSort_obj::byY_dyn();
-HXDLIN(6741)				int a1 = Order;
-HXDLIN(6741)				 ::Dynamic _hx_tmp =  ::Dynamic(new _hx_Closure_0(a1,_g));
-HXDLIN(6741)				this->notes->members->sort(_hx_tmp);
+HXDLIN(6743)				 ::Dynamic _g = ::flixel::util::FlxSort_obj::byY_dyn();
+HXDLIN(6743)				int a1 = Order;
+HXDLIN(6743)				 ::Dynamic _hx_tmp =  ::Dynamic(new _hx_Closure_0(a1,_g));
+HXDLIN(6743)				this->notes->members->sort(_hx_tmp);
             			}
-HXLINE(6743)			bool _hx_tmp;
-HXDLIN(6743)			bool _hx_tmp1;
-HXDLIN(6743)			bool _hx_tmp2;
-HXDLIN(6743)			bool _hx_tmp3;
-HXDLIN(6743)			if (::hx::IsNotNull( this->gf )) {
-HXLINE(6743)				_hx_tmp3 = (::hx::Mod(this->curBeat,::Math_obj::round(( (Float)((this->gfSpeed * this->gf->danceEveryNumBeats)) ))) == 0);
-            			}
-            			else {
-HXLINE(6743)				_hx_tmp3 = false;
-            			}
-HXDLIN(6743)			if (_hx_tmp3) {
-HXLINE(6743)				_hx_tmp2 = ::hx::IsNotNull( this->gf->animation->_curAnim );
+HXLINE(6745)			bool _hx_tmp;
+HXDLIN(6745)			bool _hx_tmp1;
+HXDLIN(6745)			bool _hx_tmp2;
+HXDLIN(6745)			bool _hx_tmp3;
+HXDLIN(6745)			if (::hx::IsNotNull( this->gf )) {
+HXLINE(6745)				_hx_tmp3 = (::hx::Mod(this->curBeat,::Math_obj::round(( (Float)((this->gfSpeed * this->gf->danceEveryNumBeats)) ))) == 0);
             			}
             			else {
-HXLINE(6743)				_hx_tmp2 = false;
+HXLINE(6745)				_hx_tmp3 = false;
             			}
-HXDLIN(6743)			if (_hx_tmp2) {
-HXLINE(6743)				_hx_tmp1 = !(::StringTools_obj::startsWith(this->gf->animation->_curAnim->name,HX_("sing",4f,96,53,4c)));
-            			}
-            			else {
-HXLINE(6743)				_hx_tmp1 = false;
-            			}
-HXDLIN(6743)			if (_hx_tmp1) {
-HXLINE(6743)				_hx_tmp = !(this->gf->stunned);
+HXDLIN(6745)			if (_hx_tmp3) {
+HXLINE(6745)				_hx_tmp2 = ::hx::IsNotNull( this->gf->animation->_curAnim );
             			}
             			else {
-HXLINE(6743)				_hx_tmp = false;
+HXLINE(6745)				_hx_tmp2 = false;
             			}
-HXDLIN(6743)			if (_hx_tmp) {
-HXLINE(6744)				if (!(this->laggingRSOD)) {
-HXLINE(6745)					this->gf->dance();
+HXDLIN(6745)			if (_hx_tmp2) {
+HXLINE(6745)				_hx_tmp1 = !(::StringTools_obj::startsWith(this->gf->animation->_curAnim->name,HX_("sing",4f,96,53,4c)));
+            			}
+            			else {
+HXLINE(6745)				_hx_tmp1 = false;
+            			}
+HXDLIN(6745)			if (_hx_tmp1) {
+HXLINE(6745)				_hx_tmp = !(this->gf->stunned);
+            			}
+            			else {
+HXLINE(6745)				_hx_tmp = false;
+            			}
+HXDLIN(6745)			if (_hx_tmp) {
+HXLINE(6746)				if (!(this->laggingRSOD)) {
+HXLINE(6747)					this->gf->dance();
             				}
             			}
-HXLINE(6746)			bool _hx_tmp4;
-HXDLIN(6746)			bool _hx_tmp5;
-HXDLIN(6746)			bool _hx_tmp6;
-HXDLIN(6746)			if ((::hx::Mod(this->curBeat,this->boyfriend->danceEveryNumBeats) == 0)) {
-HXLINE(6746)				_hx_tmp6 = ::hx::IsNotNull( this->boyfriend->animation->_curAnim );
+HXLINE(6748)			bool _hx_tmp4;
+HXDLIN(6748)			bool _hx_tmp5;
+HXDLIN(6748)			bool _hx_tmp6;
+HXDLIN(6748)			if ((::hx::Mod(this->curBeat,this->boyfriend->danceEveryNumBeats) == 0)) {
+HXLINE(6748)				_hx_tmp6 = ::hx::IsNotNull( this->boyfriend->animation->_curAnim );
             			}
             			else {
-HXLINE(6746)				_hx_tmp6 = false;
+HXLINE(6748)				_hx_tmp6 = false;
             			}
-HXDLIN(6746)			if (_hx_tmp6) {
-HXLINE(6746)				_hx_tmp5 = !(::StringTools_obj::startsWith(this->boyfriend->animation->_curAnim->name,HX_("sing",4f,96,53,4c)));
-            			}
-            			else {
-HXLINE(6746)				_hx_tmp5 = false;
-            			}
-HXDLIN(6746)			if (_hx_tmp5) {
-HXLINE(6746)				_hx_tmp4 = !(this->boyfriend->stunned);
+HXDLIN(6748)			if (_hx_tmp6) {
+HXLINE(6748)				_hx_tmp5 = !(::StringTools_obj::startsWith(this->boyfriend->animation->_curAnim->name,HX_("sing",4f,96,53,4c)));
             			}
             			else {
-HXLINE(6746)				_hx_tmp4 = false;
+HXLINE(6748)				_hx_tmp5 = false;
             			}
-HXDLIN(6746)			if (_hx_tmp4) {
-HXLINE(6747)				this->boyfriend->dance();
-            			}
-HXLINE(6748)			bool _hx_tmp7;
-HXDLIN(6748)			bool _hx_tmp8;
-HXDLIN(6748)			bool _hx_tmp9;
-HXDLIN(6748)			if ((::hx::Mod(this->curBeat,this->dad->danceEveryNumBeats) == 0)) {
-HXLINE(6748)				_hx_tmp9 = ::hx::IsNotNull( this->dad->animation->_curAnim );
+HXDLIN(6748)			if (_hx_tmp5) {
+HXLINE(6748)				_hx_tmp4 = !(this->boyfriend->stunned);
             			}
             			else {
-HXLINE(6748)				_hx_tmp9 = false;
+HXLINE(6748)				_hx_tmp4 = false;
             			}
-HXDLIN(6748)			if (_hx_tmp9) {
-HXLINE(6748)				_hx_tmp8 = !(::StringTools_obj::startsWith(this->dad->animation->_curAnim->name,HX_("sing",4f,96,53,4c)));
+HXDLIN(6748)			if (_hx_tmp4) {
+HXLINE(6749)				this->boyfriend->dance();
             			}
-            			else {
-HXLINE(6748)				_hx_tmp8 = false;
-            			}
-HXDLIN(6748)			if (_hx_tmp8) {
-HXLINE(6748)				_hx_tmp7 = !(this->dad->stunned);
-            			}
-            			else {
-HXLINE(6748)				_hx_tmp7 = false;
-            			}
-HXDLIN(6748)			if (_hx_tmp7) {
-HXLINE(6749)				this->dad->dance();
-            			}
-HXLINE(6750)			bool _hx_tmp10;
-HXDLIN(6750)			bool _hx_tmp11;
-HXDLIN(6750)			bool _hx_tmp12;
-HXDLIN(6750)			if ((::hx::Mod(this->curBeat,this->player3->danceEveryNumBeats) == 0)) {
-HXLINE(6750)				_hx_tmp12 = ::hx::IsNotNull( this->player3->animation->_curAnim );
+HXLINE(6750)			bool _hx_tmp7;
+HXDLIN(6750)			bool _hx_tmp8;
+HXDLIN(6750)			bool _hx_tmp9;
+HXDLIN(6750)			if ((::hx::Mod(this->curBeat,this->dad->danceEveryNumBeats) == 0)) {
+HXLINE(6750)				_hx_tmp9 = ::hx::IsNotNull( this->dad->animation->_curAnim );
             			}
             			else {
-HXLINE(6750)				_hx_tmp12 = false;
+HXLINE(6750)				_hx_tmp9 = false;
             			}
-HXDLIN(6750)			if (_hx_tmp12) {
-HXLINE(6750)				_hx_tmp11 = !(::StringTools_obj::startsWith(this->player3->animation->_curAnim->name,HX_("sing",4f,96,53,4c)));
-            			}
-            			else {
-HXLINE(6750)				_hx_tmp11 = false;
-            			}
-HXDLIN(6750)			if (_hx_tmp11) {
-HXLINE(6750)				_hx_tmp10 = !(this->player3->stunned);
+HXDLIN(6750)			if (_hx_tmp9) {
+HXLINE(6750)				_hx_tmp8 = !(::StringTools_obj::startsWith(this->dad->animation->_curAnim->name,HX_("sing",4f,96,53,4c)));
             			}
             			else {
-HXLINE(6750)				_hx_tmp10 = false;
+HXLINE(6750)				_hx_tmp8 = false;
             			}
-HXDLIN(6750)			if (_hx_tmp10) {
-HXLINE(6751)				this->player3->dance();
+HXDLIN(6750)			if (_hx_tmp8) {
+HXLINE(6750)				_hx_tmp7 = !(this->dad->stunned);
             			}
-HXLINE(6753)			this->super::beatHit();
-HXLINE(6754)			this->lastBeatHit = this->curBeat;
-HXLINE(6755)			this->dancingLeft = !(this->dancingLeft);
+            			else {
+HXLINE(6750)				_hx_tmp7 = false;
+            			}
+HXDLIN(6750)			if (_hx_tmp7) {
+HXLINE(6751)				this->dad->dance();
+            			}
+HXLINE(6752)			bool _hx_tmp10;
+HXDLIN(6752)			bool _hx_tmp11;
+HXDLIN(6752)			bool _hx_tmp12;
+HXDLIN(6752)			if ((::hx::Mod(this->curBeat,this->player3->danceEveryNumBeats) == 0)) {
+HXLINE(6752)				_hx_tmp12 = ::hx::IsNotNull( this->player3->animation->_curAnim );
+            			}
+            			else {
+HXLINE(6752)				_hx_tmp12 = false;
+            			}
+HXDLIN(6752)			if (_hx_tmp12) {
+HXLINE(6752)				_hx_tmp11 = !(::StringTools_obj::startsWith(this->player3->animation->_curAnim->name,HX_("sing",4f,96,53,4c)));
+            			}
+            			else {
+HXLINE(6752)				_hx_tmp11 = false;
+            			}
+HXDLIN(6752)			if (_hx_tmp11) {
+HXLINE(6752)				_hx_tmp10 = !(this->player3->stunned);
+            			}
+            			else {
+HXLINE(6752)				_hx_tmp10 = false;
+            			}
+HXDLIN(6752)			if (_hx_tmp10) {
+HXLINE(6753)				this->player3->dance();
+            			}
+HXLINE(6755)			this->super::beatHit();
+HXLINE(6756)			this->lastBeatHit = this->curBeat;
+HXLINE(6757)			this->dancingLeft = !(this->dancingLeft);
             		}
-HXLINE(6759)		this->setOnScripts(HX_("curBeat",16,53,29,ac),this->curBeat,null());
-HXLINE(6760)		this->callOnScripts(HX_("onBeatHit",1e,a3,af,4b),null(),null(),null(),null());
+HXLINE(6761)		this->setOnScripts(HX_("curBeat",16,53,29,ac),this->curBeat,null());
+HXLINE(6762)		this->callOnScripts(HX_("onBeatHit",1e,a3,af,4b),null(),null(),null(),null());
             	}
 
 
 void PlayState_obj::sectionHit(){
-            	HX_STACKFRAME(&_hx_pos_801e532e222627de_6764_sectionHit)
-HXLINE(6765)		if (::hx::IsNotNull(  ::Dynamic(::states::PlayState_obj::SONG->__Field(HX_("notes",41,dc,ca,9f),::hx::paccDynamic))->__GetItem(this->curSection) )) {
-HXLINE(6770)			bool _hx_tmp;
-HXDLIN(6770)			bool _hx_tmp1;
-HXDLIN(6770)			bool _hx_tmp2;
-HXDLIN(6770)			bool _hx_tmp3;
-HXDLIN(6770)			if (this->camZooming) {
-HXLINE(6770)				_hx_tmp3 = (::flixel::FlxG_obj::camera->zoom < ((Float)1.35));
+            	HX_STACKFRAME(&_hx_pos_801e532e222627de_6766_sectionHit)
+HXLINE(6767)		if (::hx::IsNotNull(  ::Dynamic(::states::PlayState_obj::SONG->__Field(HX_("notes",41,dc,ca,9f),::hx::paccDynamic))->__GetItem(this->curSection) )) {
+HXLINE(6772)			bool _hx_tmp;
+HXDLIN(6772)			bool _hx_tmp1;
+HXDLIN(6772)			bool _hx_tmp2;
+HXDLIN(6772)			bool _hx_tmp3;
+HXDLIN(6772)			if (this->camZooming) {
+HXLINE(6772)				_hx_tmp3 = (::flixel::FlxG_obj::camera->zoom < ((Float)1.35));
             			}
             			else {
-HXLINE(6770)				_hx_tmp3 = false;
+HXLINE(6772)				_hx_tmp3 = false;
             			}
-HXDLIN(6770)			if (_hx_tmp3) {
-HXLINE(6770)				_hx_tmp2 = ::backend::ClientPrefs_obj::data->camZooms;
-            			}
-            			else {
-HXLINE(6770)				_hx_tmp2 = false;
-            			}
-HXDLIN(6770)			if (_hx_tmp2) {
-HXLINE(6770)				_hx_tmp1 = !(this->camZoomSnap);
+HXDLIN(6772)			if (_hx_tmp3) {
+HXLINE(6772)				_hx_tmp2 = ::backend::ClientPrefs_obj::data->camZooms;
             			}
             			else {
-HXLINE(6770)				_hx_tmp1 = false;
+HXLINE(6772)				_hx_tmp2 = false;
             			}
-HXDLIN(6770)			if (_hx_tmp1) {
-HXLINE(6770)				_hx_tmp = !(this->laggingRSOD);
+HXDLIN(6772)			if (_hx_tmp2) {
+HXLINE(6772)				_hx_tmp1 = !(this->camZoomSnap);
             			}
             			else {
-HXLINE(6770)				_hx_tmp = false;
+HXLINE(6772)				_hx_tmp1 = false;
             			}
-HXDLIN(6770)			if (_hx_tmp) {
-HXLINE(6772)				bool _hx_tmp;
-HXDLIN(6772)				if (this->allowGamecamToZoom) {
-HXLINE(6772)					_hx_tmp = !(this->doingSMzoom);
+HXDLIN(6772)			if (_hx_tmp1) {
+HXLINE(6772)				_hx_tmp = !(this->laggingRSOD);
+            			}
+            			else {
+HXLINE(6772)				_hx_tmp = false;
+            			}
+HXDLIN(6772)			if (_hx_tmp) {
+HXLINE(6774)				bool _hx_tmp;
+HXDLIN(6774)				if (this->allowGamecamToZoom) {
+HXLINE(6774)					_hx_tmp = !(this->doingSMzoom);
             				}
             				else {
-HXLINE(6772)					_hx_tmp = false;
+HXLINE(6774)					_hx_tmp = false;
             				}
-HXDLIN(6772)				if (_hx_tmp) {
-HXLINE(6772)					 ::flixel::FlxCamera fh = ::flixel::FlxG_obj::camera;
-HXDLIN(6772)					fh->set_zoom((fh->zoom + (this->camBopVAL * this->camZoomingMult)));
+HXDLIN(6774)				if (_hx_tmp) {
+HXLINE(6774)					 ::flixel::FlxCamera fh = ::flixel::FlxG_obj::camera;
+HXDLIN(6774)					fh->set_zoom((fh->zoom + (this->camBopVAL * this->camZoomingMult)));
             				}
-HXLINE(6773)				if (this->allowHUDcamToZoom) {
-HXLINE(6773)					 ::flixel::FlxCamera fh = this->camHUD;
-HXDLIN(6773)					fh->set_zoom((fh->zoom + (this->camHUDBopVAL * this->camZoomingMult)));
+HXLINE(6775)				if (this->allowHUDcamToZoom) {
+HXLINE(6775)					 ::flixel::FlxCamera fh = this->camHUD;
+HXDLIN(6775)					fh->set_zoom((fh->zoom + (this->camHUDBopVAL * this->camZoomingMult)));
             				}
             			}
-HXLINE(6776)			if (( (bool)( ::Dynamic(::states::PlayState_obj::SONG->__Field(HX_("notes",41,dc,ca,9f),::hx::paccDynamic))->__GetItem(this->curSection)->__Field(HX_("changeBPM",4f,4f,f8,1d),::hx::paccDynamic)) )) {
-HXLINE(6778)				::backend::Conductor_obj::set_bpm(( (Float)( ::Dynamic(::states::PlayState_obj::SONG->__Field(HX_("notes",41,dc,ca,9f),::hx::paccDynamic))->__GetItem(this->curSection)->__Field(HX_("bpm",df,be,4a,00),::hx::paccDynamic)) ));
-HXLINE(6779)				this->setOnScripts(HX_("curBpm",3f,61,c3,3e),::backend::Conductor_obj::bpm,null());
-HXLINE(6780)				this->setOnScripts(HX_("crochet",34,d5,b5,d4),::backend::Conductor_obj::crochet,null());
-HXLINE(6781)				this->setOnScripts(HX_("stepCrochet",48,d7,ff,e6),::backend::Conductor_obj::stepCrochet,null());
+HXLINE(6778)			if (( (bool)( ::Dynamic(::states::PlayState_obj::SONG->__Field(HX_("notes",41,dc,ca,9f),::hx::paccDynamic))->__GetItem(this->curSection)->__Field(HX_("changeBPM",4f,4f,f8,1d),::hx::paccDynamic)) )) {
+HXLINE(6780)				::backend::Conductor_obj::set_bpm(( (Float)( ::Dynamic(::states::PlayState_obj::SONG->__Field(HX_("notes",41,dc,ca,9f),::hx::paccDynamic))->__GetItem(this->curSection)->__Field(HX_("bpm",df,be,4a,00),::hx::paccDynamic)) ));
+HXLINE(6781)				this->setOnScripts(HX_("curBpm",3f,61,c3,3e),::backend::Conductor_obj::bpm,null());
+HXLINE(6782)				this->setOnScripts(HX_("crochet",34,d5,b5,d4),::backend::Conductor_obj::crochet,null());
+HXLINE(6783)				this->setOnScripts(HX_("stepCrochet",48,d7,ff,e6),::backend::Conductor_obj::stepCrochet,null());
             			}
-HXLINE(6783)			this->setOnScripts(HX_("mustHitSection",3b,5f,87,62), ::Dynamic( ::Dynamic(::states::PlayState_obj::SONG->__Field(HX_("notes",41,dc,ca,9f),::hx::paccDynamic))->__GetItem(this->curSection)->__Field(HX_("mustHitSection",3b,5f,87,62),::hx::paccDynamic)),null());
-HXLINE(6784)			this->setOnScripts(HX_("altAnim",da,f3,f2,e5), ::Dynamic( ::Dynamic(::states::PlayState_obj::SONG->__Field(HX_("notes",41,dc,ca,9f),::hx::paccDynamic))->__GetItem(this->curSection)->__Field(HX_("altAnim",da,f3,f2,e5),::hx::paccDynamic)),null());
-HXLINE(6785)			this->setOnScripts(HX_("gfSection",86,e5,63,d4), ::Dynamic( ::Dynamic(::states::PlayState_obj::SONG->__Field(HX_("notes",41,dc,ca,9f),::hx::paccDynamic))->__GetItem(this->curSection)->__Field(HX_("gfSection",86,e5,63,d4),::hx::paccDynamic)),null());
+HXLINE(6785)			this->setOnScripts(HX_("mustHitSection",3b,5f,87,62), ::Dynamic( ::Dynamic(::states::PlayState_obj::SONG->__Field(HX_("notes",41,dc,ca,9f),::hx::paccDynamic))->__GetItem(this->curSection)->__Field(HX_("mustHitSection",3b,5f,87,62),::hx::paccDynamic)),null());
+HXLINE(6786)			this->setOnScripts(HX_("altAnim",da,f3,f2,e5), ::Dynamic( ::Dynamic(::states::PlayState_obj::SONG->__Field(HX_("notes",41,dc,ca,9f),::hx::paccDynamic))->__GetItem(this->curSection)->__Field(HX_("altAnim",da,f3,f2,e5),::hx::paccDynamic)),null());
+HXLINE(6787)			this->setOnScripts(HX_("gfSection",86,e5,63,d4), ::Dynamic( ::Dynamic(::states::PlayState_obj::SONG->__Field(HX_("notes",41,dc,ca,9f),::hx::paccDynamic))->__GetItem(this->curSection)->__Field(HX_("gfSection",86,e5,63,d4),::hx::paccDynamic)),null());
             		}
-HXLINE(6787)		this->super::sectionHit();
-HXLINE(6789)		this->setOnScripts(HX_("curSection",45,58,c1,68),this->curSection,null());
-HXLINE(6790)		this->callOnScripts(HX_("onSectionHit",6d,97,11,97),null(),null(),null(),null());
+HXLINE(6789)		this->super::sectionHit();
+HXLINE(6791)		this->setOnScripts(HX_("curSection",45,58,c1,68),this->curSection,null());
+HXLINE(6792)		this->callOnScripts(HX_("onSectionHit",6d,97,11,97),null(),null(),null(),null());
             	}
 
 
 bool PlayState_obj::startLuasNamed(::String luaFile){
-            	HX_GC_STACKFRAME(&_hx_pos_801e532e222627de_6795_startLuasNamed)
-HXLINE(6797)		::String luaToLoad = ::backend::Paths_obj::modFolders(luaFile);
-HXLINE(6798)		if (!(::sys::FileSystem_obj::exists(luaToLoad))) {
-HXLINE(6799)			::String file = luaFile;
-HXDLIN(6799)			if (::hx::IsNull( file )) {
-HXLINE(6799)				file = HX_("",00,00,00,00);
+            	HX_GC_STACKFRAME(&_hx_pos_801e532e222627de_6797_startLuasNamed)
+HXLINE(6799)		::String luaToLoad = ::backend::Paths_obj::modFolders(luaFile);
+HXLINE(6800)		if (!(::sys::FileSystem_obj::exists(luaToLoad))) {
+HXLINE(6801)			::String file = luaFile;
+HXDLIN(6801)			if (::hx::IsNull( file )) {
+HXLINE(6801)				file = HX_("",00,00,00,00);
             			}
-HXDLIN(6799)			luaToLoad = (HX_("assets/",4c,2a,dc,36) + file);
+HXDLIN(6801)			luaToLoad = (HX_("assets/",4c,2a,dc,36) + file);
             		}
-HXLINE(6801)		if (::sys::FileSystem_obj::exists(luaToLoad)) {
-HXLINE(6807)			{
-HXLINE(6807)				int _g = 0;
-HXDLIN(6807)				::Array< ::Dynamic> _g1 = this->luaArray;
-HXDLIN(6807)				while((_g < _g1->length)){
-HXLINE(6807)					 ::psychlua::FunkinLua script = _g1->__get(_g).StaticCast<  ::psychlua::FunkinLua >();
-HXDLIN(6807)					_g = (_g + 1);
-HXLINE(6808)					if ((script->scriptName == luaToLoad)) {
-HXLINE(6808)						return false;
+HXLINE(6803)		if (::sys::FileSystem_obj::exists(luaToLoad)) {
+HXLINE(6809)			{
+HXLINE(6809)				int _g = 0;
+HXDLIN(6809)				::Array< ::Dynamic> _g1 = this->luaArray;
+HXDLIN(6809)				while((_g < _g1->length)){
+HXLINE(6809)					 ::psychlua::FunkinLua script = _g1->__get(_g).StaticCast<  ::psychlua::FunkinLua >();
+HXDLIN(6809)					_g = (_g + 1);
+HXLINE(6810)					if ((script->scriptName == luaToLoad)) {
+HXLINE(6810)						return false;
             					}
             				}
             			}
-HXLINE(6810)			 ::psychlua::FunkinLua_obj::__alloc( HX_CTX ,luaToLoad);
-HXLINE(6811)			return true;
+HXLINE(6812)			 ::psychlua::FunkinLua_obj::__alloc( HX_CTX ,luaToLoad);
+HXLINE(6813)			return true;
             		}
-HXLINE(6813)		return false;
+HXLINE(6815)		return false;
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC1(PlayState_obj,startLuasNamed,return )
 
 bool PlayState_obj::startHScriptsNamed(::String scriptFile){
-            	HX_STACKFRAME(&_hx_pos_801e532e222627de_6819_startHScriptsNamed)
-HXLINE(6820)		::String scriptToLoad = ::backend::Paths_obj::modFolders(scriptFile);
-HXLINE(6821)		if (!(::sys::FileSystem_obj::exists(scriptToLoad))) {
-HXLINE(6822)			::String file = scriptFile;
-HXDLIN(6822)			if (::hx::IsNull( file )) {
-HXLINE(6822)				file = HX_("",00,00,00,00);
+            	HX_STACKFRAME(&_hx_pos_801e532e222627de_6821_startHScriptsNamed)
+HXLINE(6822)		::String scriptToLoad = ::backend::Paths_obj::modFolders(scriptFile);
+HXLINE(6823)		if (!(::sys::FileSystem_obj::exists(scriptToLoad))) {
+HXLINE(6824)			::String file = scriptFile;
+HXDLIN(6824)			if (::hx::IsNull( file )) {
+HXLINE(6824)				file = HX_("",00,00,00,00);
             			}
-HXDLIN(6822)			scriptToLoad = (HX_("assets/",4c,2a,dc,36) + file);
+HXDLIN(6824)			scriptToLoad = (HX_("assets/",4c,2a,dc,36) + file);
             		}
-HXLINE(6824)		if (::sys::FileSystem_obj::exists(scriptToLoad)) {
-HXLINE(6826)			if (::tea::SScript_obj::global->exists(scriptToLoad)) {
-HXLINE(6826)				return false;
+HXLINE(6826)		if (::sys::FileSystem_obj::exists(scriptToLoad)) {
+HXLINE(6828)			if (::tea::SScript_obj::global->exists(scriptToLoad)) {
+HXLINE(6828)				return false;
             			}
-HXLINE(6828)			this->initHScript(scriptToLoad);
-HXLINE(6829)			return true;
+HXLINE(6830)			this->initHScript(scriptToLoad);
+HXLINE(6831)			return true;
             		}
-HXLINE(6831)		return false;
+HXLINE(6833)		return false;
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC1(PlayState_obj,startHScriptsNamed,return )
 
 void PlayState_obj::initHScript(::String file){
-            	HX_GC_STACKFRAME(&_hx_pos_801e532e222627de_6836_initHScript)
-HXDLIN(6836)		try {
+            	HX_GC_STACKFRAME(&_hx_pos_801e532e222627de_6838_initHScript)
+HXDLIN(6838)		try {
             			HX_STACK_CATCHABLE( ::Dynamic, 0);
-HXLINE(6838)			 ::psychlua::HScript newScript =  ::psychlua::HScript_obj::__alloc( HX_CTX ,null(),file);
-HXLINE(6840)			bool _hx_tmp;
-HXDLIN(6840)			if (::hx::IsNotNull( newScript->parsingExceptions )) {
-HXLINE(6840)				_hx_tmp = (newScript->parsingExceptions->length > 0);
+HXLINE(6840)			 ::psychlua::HScript newScript =  ::psychlua::HScript_obj::__alloc( HX_CTX ,null(),file);
+HXLINE(6842)			bool _hx_tmp;
+HXDLIN(6842)			if (::hx::IsNotNull( newScript->parsingExceptions )) {
+HXLINE(6842)				_hx_tmp = (newScript->parsingExceptions->length > 0);
             			}
             			else {
-HXLINE(6840)				_hx_tmp = false;
+HXLINE(6842)				_hx_tmp = false;
             			}
-HXDLIN(6840)			if (_hx_tmp) {
-HXLINE(6843)				{
-HXLINE(6843)					int _g = 0;
-HXDLIN(6843)					::Array< ::Dynamic> _g1 = newScript->parsingExceptions;
-HXDLIN(6843)					while((_g < _g1->length)){
-HXLINE(6843)						 ::haxe::Exception e = _g1->__get(_g).StaticCast<  ::haxe::Exception >();
-HXDLIN(6843)						_g = (_g + 1);
-HXLINE(6844)						if (::hx::IsNotNull( e )) {
-HXLINE(6845)							::String _hx_tmp = e->get_message();
-HXDLIN(6845)							this->addTextToDebug((((HX_("ERROR ON LOADING (",9b,0e,50,9a) + file) + HX_("): ",0f,4f,1f,00)) + _hx_tmp.substr(0,e->get_message().indexOf(HX_("\n",0a,00,00,00),null()))),-65536);
+HXDLIN(6842)			if (_hx_tmp) {
+HXLINE(6845)				{
+HXLINE(6845)					int _g = 0;
+HXDLIN(6845)					::Array< ::Dynamic> _g1 = newScript->parsingExceptions;
+HXDLIN(6845)					while((_g < _g1->length)){
+HXLINE(6845)						 ::haxe::Exception e = _g1->__get(_g).StaticCast<  ::haxe::Exception >();
+HXDLIN(6845)						_g = (_g + 1);
+HXLINE(6846)						if (::hx::IsNotNull( e )) {
+HXLINE(6847)							::String _hx_tmp = e->get_message();
+HXDLIN(6847)							this->addTextToDebug((((HX_("ERROR ON LOADING (",9b,0e,50,9a) + file) + HX_("): ",0f,4f,1f,00)) + _hx_tmp.substr(0,e->get_message().indexOf(HX_("\n",0a,00,00,00),null()))),-65536);
             						}
             					}
             				}
-HXLINE(6846)				newScript->destroy();
-HXLINE(6847)				return;
+HXLINE(6848)				newScript->destroy();
+HXLINE(6849)				return;
             			}
-HXLINE(6850)			this->hscriptArray->push(newScript);
-HXLINE(6851)			if (newScript->exists(HX_("onCreate",7b,5d,bc,5b))) {
-HXLINE(6853)				 ::Dynamic callValue = newScript->call(HX_("onCreate",7b,5d,bc,5b),null(),null());
-HXLINE(6854)				if (!(( (bool)(callValue->__Field(HX_("succeeded",61,56,29,fb),::hx::paccDynamic)) ))) {
-HXLINE(6856)					{
-HXLINE(6856)						int _g = 0;
-HXDLIN(6856)						::Array< ::Dynamic> _g1 = ( (::Array< ::Dynamic>)(callValue->__Field(HX_("exceptions",44,35,34,1d),::hx::paccDynamic)) );
-HXDLIN(6856)						while((_g < _g1->length)){
-HXLINE(6856)							 ::haxe::Exception e = _g1->__get(_g).StaticCast<  ::haxe::Exception >();
-HXDLIN(6856)							_g = (_g + 1);
-HXLINE(6857)							if (::hx::IsNotNull( e )) {
-HXLINE(6858)								::String _hx_tmp = e->get_message();
-HXDLIN(6858)								this->addTextToDebug((((HX_("ERROR (",b0,59,de,69) + file) + HX_(": onCreate) - ",8b,f9,7e,ee)) + _hx_tmp.substr(0,e->get_message().indexOf(HX_("\n",0a,00,00,00),null()))),-65536);
+HXLINE(6852)			this->hscriptArray->push(newScript);
+HXLINE(6853)			if (newScript->exists(HX_("onCreate",7b,5d,bc,5b))) {
+HXLINE(6855)				 ::Dynamic callValue = newScript->call(HX_("onCreate",7b,5d,bc,5b),null(),null());
+HXLINE(6856)				if (!(( (bool)(callValue->__Field(HX_("succeeded",61,56,29,fb),::hx::paccDynamic)) ))) {
+HXLINE(6858)					{
+HXLINE(6858)						int _g = 0;
+HXDLIN(6858)						::Array< ::Dynamic> _g1 = ( (::Array< ::Dynamic>)(callValue->__Field(HX_("exceptions",44,35,34,1d),::hx::paccDynamic)) );
+HXDLIN(6858)						while((_g < _g1->length)){
+HXLINE(6858)							 ::haxe::Exception e = _g1->__get(_g).StaticCast<  ::haxe::Exception >();
+HXDLIN(6858)							_g = (_g + 1);
+HXLINE(6859)							if (::hx::IsNotNull( e )) {
+HXLINE(6860)								::String _hx_tmp = e->get_message();
+HXDLIN(6860)								this->addTextToDebug((((HX_("ERROR (",b0,59,de,69) + file) + HX_(": onCreate) - ",8b,f9,7e,ee)) + _hx_tmp.substr(0,e->get_message().indexOf(HX_("\n",0a,00,00,00),null()))),-65536);
             							}
             						}
             					}
-HXLINE(6860)					newScript->destroy();
-HXLINE(6861)					this->hscriptArray->remove(newScript);
-HXLINE(6862)					::haxe::Log_obj::trace(((HX_("failed to initialize sscript interp!!! (",e5,b5,08,55) + file) + HX_(")",29,00,00,00)),::hx::SourceInfo(HX_("source/states/PlayState.hx",3a,21,29,28),6862,HX_("states.PlayState",31,cd,20,04),HX_("initHScript",63,6f,17,19)));
+HXLINE(6862)					newScript->destroy();
+HXLINE(6863)					this->hscriptArray->remove(newScript);
+HXLINE(6864)					::haxe::Log_obj::trace(((HX_("failed to initialize sscript interp!!! (",e5,b5,08,55) + file) + HX_(")",29,00,00,00)),::hx::SourceInfo(HX_("source/states/PlayState.hx",3a,21,29,28),6864,HX_("states.PlayState",31,cd,20,04),HX_("initHScript",63,6f,17,19)));
             				}
             				else {
-HXLINE(6864)					::haxe::Log_obj::trace((HX_("initialized sscript interp successfully: ",ab,87,ec,b5) + file),::hx::SourceInfo(HX_("source/states/PlayState.hx",3a,21,29,28),6864,HX_("states.PlayState",31,cd,20,04),HX_("initHScript",63,6f,17,19)));
+HXLINE(6866)					::haxe::Log_obj::trace((HX_("initialized sscript interp successfully: ",ab,87,ec,b5) + file),::hx::SourceInfo(HX_("source/states/PlayState.hx",3a,21,29,28),6866,HX_("states.PlayState",31,cd,20,04),HX_("initHScript",63,6f,17,19)));
             				}
             			}
             		} catch( ::Dynamic _hx_e) {
             			if (_hx_e.IsClass<  ::Dynamic >() ){
             				HX_STACK_BEGIN_CATCH
             				 ::Dynamic _g = _hx_e;
-HXLINE(6868)				 ::haxe::Exception e = ::haxe::Exception_obj::caught(_g);
-HXLINE(6869)				{
-HXLINE(6870)					::String _hx_tmp = e->get_message();
-HXDLIN(6870)					this->addTextToDebug((((HX_("ERROR (",b0,59,de,69) + file) + HX_(") - ",ea,2e,32,1b)) + _hx_tmp.substr(0,e->get_message().indexOf(HX_("\n",0a,00,00,00),null()))),-65536);
-HXLINE(6871)					 ::psychlua::HScript newScript = ::hx::TCast<  ::psychlua::HScript >::cast(( ( ::tea::SScript)(::tea::SScript_obj::global->get(file)) ));
-HXLINE(6872)					if (::hx::IsNotNull( newScript )) {
-HXLINE(6874)						newScript->destroy();
-HXLINE(6875)						this->hscriptArray->remove(newScript);
+HXLINE(6870)				 ::haxe::Exception e = ::haxe::Exception_obj::caught(_g);
+HXLINE(6871)				{
+HXLINE(6872)					::String _hx_tmp = e->get_message();
+HXDLIN(6872)					this->addTextToDebug((((HX_("ERROR (",b0,59,de,69) + file) + HX_(") - ",ea,2e,32,1b)) + _hx_tmp.substr(0,e->get_message().indexOf(HX_("\n",0a,00,00,00),null()))),-65536);
+HXLINE(6873)					 ::psychlua::HScript newScript = ::hx::TCast<  ::psychlua::HScript >::cast(( ( ::tea::SScript)(::tea::SScript_obj::global->get(file)) ));
+HXLINE(6874)					if (::hx::IsNotNull( newScript )) {
+HXLINE(6876)						newScript->destroy();
+HXLINE(6877)						this->hscriptArray->remove(newScript);
             					}
             				}
             			}
@@ -13549,29 +13553,29 @@ HX_DEFINE_DYNAMIC_FUNC1(PlayState_obj,initHScript,(void))
 
  ::Dynamic PlayState_obj::callOnScripts(::String funcToCall,::cpp::VirtualArray args,::hx::Null< bool >  __o_ignoreStops,::Array< ::String > exclusions,::cpp::VirtualArray excludeValues){
             		bool ignoreStops = __o_ignoreStops.Default(false);
-            	HX_STACKFRAME(&_hx_pos_801e532e222627de_6881_callOnScripts)
-HXLINE(6882)		 ::Dynamic returnVal = ::psychlua::FunkinLua_obj::Function_Continue;
-HXLINE(6883)		if (::hx::IsNull( args )) {
-HXLINE(6883)			args = ::cpp::VirtualArray_obj::__new(0);
+            	HX_STACKFRAME(&_hx_pos_801e532e222627de_6883_callOnScripts)
+HXLINE(6884)		 ::Dynamic returnVal = ::psychlua::FunkinLua_obj::Function_Continue;
+HXLINE(6885)		if (::hx::IsNull( args )) {
+HXLINE(6885)			args = ::cpp::VirtualArray_obj::__new(0);
             		}
-HXLINE(6884)		if (::hx::IsNull( exclusions )) {
-HXLINE(6884)			exclusions = ::Array_obj< ::String >::__new(0);
+HXLINE(6886)		if (::hx::IsNull( exclusions )) {
+HXLINE(6886)			exclusions = ::Array_obj< ::String >::__new(0);
             		}
-HXLINE(6885)		if (::hx::IsNull( excludeValues )) {
-HXLINE(6885)			excludeValues = ::cpp::VirtualArray_obj::__new(1)->init(0,::psychlua::FunkinLua_obj::Function_Continue);
+HXLINE(6887)		if (::hx::IsNull( excludeValues )) {
+HXLINE(6887)			excludeValues = ::cpp::VirtualArray_obj::__new(1)->init(0,::psychlua::FunkinLua_obj::Function_Continue);
             		}
-HXLINE(6887)		 ::Dynamic result = this->callOnLuas(funcToCall,args,ignoreStops,exclusions,excludeValues);
-HXLINE(6888)		bool _hx_tmp;
-HXDLIN(6888)		if (::hx::IsNotNull( result )) {
-HXLINE(6888)			_hx_tmp = excludeValues->contains(result);
+HXLINE(6889)		 ::Dynamic result = this->callOnLuas(funcToCall,args,ignoreStops,exclusions,excludeValues);
+HXLINE(6890)		bool _hx_tmp;
+HXDLIN(6890)		if (::hx::IsNotNull( result )) {
+HXLINE(6890)			_hx_tmp = excludeValues->contains(result);
             		}
             		else {
-HXLINE(6888)			_hx_tmp = true;
+HXLINE(6890)			_hx_tmp = true;
             		}
-HXDLIN(6888)		if (_hx_tmp) {
-HXLINE(6888)			result = this->callOnHScript(funcToCall,args,ignoreStops,exclusions,excludeValues);
+HXDLIN(6890)		if (_hx_tmp) {
+HXLINE(6890)			result = this->callOnHScript(funcToCall,args,ignoreStops,exclusions,excludeValues);
             		}
-HXLINE(6889)		return result;
+HXLINE(6891)		return result;
             	}
 
 
@@ -13579,70 +13583,70 @@ HX_DEFINE_DYNAMIC_FUNC5(PlayState_obj,callOnScripts,return )
 
  ::Dynamic PlayState_obj::callOnLuas(::String funcToCall,::cpp::VirtualArray args,::hx::Null< bool >  __o_ignoreStops,::Array< ::String > exclusions,::cpp::VirtualArray excludeValues){
             		bool ignoreStops = __o_ignoreStops.Default(false);
-            	HX_STACKFRAME(&_hx_pos_801e532e222627de_6892_callOnLuas)
-HXLINE(6893)		 ::Dynamic returnVal = ::psychlua::FunkinLua_obj::Function_Continue;
-HXLINE(6895)		if (::hx::IsNull( args )) {
-HXLINE(6895)			args = ::cpp::VirtualArray_obj::__new(0);
+            	HX_STACKFRAME(&_hx_pos_801e532e222627de_6894_callOnLuas)
+HXLINE(6895)		 ::Dynamic returnVal = ::psychlua::FunkinLua_obj::Function_Continue;
+HXLINE(6897)		if (::hx::IsNull( args )) {
+HXLINE(6897)			args = ::cpp::VirtualArray_obj::__new(0);
             		}
-HXLINE(6896)		if (::hx::IsNull( exclusions )) {
-HXLINE(6896)			exclusions = ::Array_obj< ::String >::__new(0);
+HXLINE(6898)		if (::hx::IsNull( exclusions )) {
+HXLINE(6898)			exclusions = ::Array_obj< ::String >::__new(0);
             		}
-HXLINE(6897)		if (::hx::IsNull( excludeValues )) {
-HXLINE(6897)			excludeValues = ::cpp::VirtualArray_obj::__new(1)->init(0,::psychlua::FunkinLua_obj::Function_Continue);
+HXLINE(6899)		if (::hx::IsNull( excludeValues )) {
+HXLINE(6899)			excludeValues = ::cpp::VirtualArray_obj::__new(1)->init(0,::psychlua::FunkinLua_obj::Function_Continue);
             		}
-HXLINE(6899)		int len = this->luaArray->length;
-HXLINE(6900)		int i = 0;
-HXLINE(6901)		while((i < len)){
-HXLINE(6903)			 ::psychlua::FunkinLua script = this->luaArray->__get(i).StaticCast<  ::psychlua::FunkinLua >();
-HXLINE(6904)			if (exclusions->contains(script->scriptName)) {
-HXLINE(6906)				i = (i + 1);
-HXLINE(6907)				continue;
+HXLINE(6901)		int len = this->luaArray->length;
+HXLINE(6902)		int i = 0;
+HXLINE(6903)		while((i < len)){
+HXLINE(6905)			 ::psychlua::FunkinLua script = this->luaArray->__get(i).StaticCast<  ::psychlua::FunkinLua >();
+HXLINE(6906)			if (exclusions->contains(script->scriptName)) {
+HXLINE(6908)				i = (i + 1);
+HXLINE(6909)				continue;
             			}
-HXLINE(6910)			 ::Dynamic myValue = script->call(funcToCall,args);
-HXLINE(6911)			bool _hx_tmp;
-HXDLIN(6911)			bool _hx_tmp1;
-HXDLIN(6911)			bool _hx_tmp2;
-HXDLIN(6911)			if (::hx::IsNotEq( myValue,::psychlua::FunkinLua_obj::Function_StopLua )) {
-HXLINE(6911)				_hx_tmp2 = ::hx::IsEq( myValue,::psychlua::FunkinLua_obj::Function_StopAll );
-            			}
-            			else {
-HXLINE(6911)				_hx_tmp2 = true;
-            			}
-HXDLIN(6911)			if (_hx_tmp2) {
-HXLINE(6911)				_hx_tmp1 = !(excludeValues->contains(myValue));
+HXLINE(6912)			 ::Dynamic myValue = script->call(funcToCall,args);
+HXLINE(6913)			bool _hx_tmp;
+HXDLIN(6913)			bool _hx_tmp1;
+HXDLIN(6913)			bool _hx_tmp2;
+HXDLIN(6913)			if (::hx::IsNotEq( myValue,::psychlua::FunkinLua_obj::Function_StopLua )) {
+HXLINE(6913)				_hx_tmp2 = ::hx::IsEq( myValue,::psychlua::FunkinLua_obj::Function_StopAll );
             			}
             			else {
-HXLINE(6911)				_hx_tmp1 = false;
+HXLINE(6913)				_hx_tmp2 = true;
             			}
-HXDLIN(6911)			if (_hx_tmp1) {
-HXLINE(6911)				_hx_tmp = !(ignoreStops);
-            			}
-            			else {
-HXLINE(6911)				_hx_tmp = false;
-            			}
-HXDLIN(6911)			if (_hx_tmp) {
-HXLINE(6913)				returnVal = myValue;
-HXLINE(6914)				goto _hx_goto_294;
-            			}
-HXLINE(6917)			bool _hx_tmp3;
-HXDLIN(6917)			if (::hx::IsNotNull( myValue )) {
-HXLINE(6917)				_hx_tmp3 = !(excludeValues->contains(myValue));
+HXDLIN(6913)			if (_hx_tmp2) {
+HXLINE(6913)				_hx_tmp1 = !(excludeValues->contains(myValue));
             			}
             			else {
-HXLINE(6917)				_hx_tmp3 = false;
+HXLINE(6913)				_hx_tmp1 = false;
             			}
-HXDLIN(6917)			if (_hx_tmp3) {
-HXLINE(6918)				returnVal = myValue;
-            			}
-HXLINE(6920)			if (!(script->closed)) {
-HXLINE(6920)				i = (i + 1);
+HXDLIN(6913)			if (_hx_tmp1) {
+HXLINE(6913)				_hx_tmp = !(ignoreStops);
             			}
             			else {
-HXLINE(6921)				len = (len - 1);
+HXLINE(6913)				_hx_tmp = false;
+            			}
+HXDLIN(6913)			if (_hx_tmp) {
+HXLINE(6915)				returnVal = myValue;
+HXLINE(6916)				goto _hx_goto_294;
+            			}
+HXLINE(6919)			bool _hx_tmp3;
+HXDLIN(6919)			if (::hx::IsNotNull( myValue )) {
+HXLINE(6919)				_hx_tmp3 = !(excludeValues->contains(myValue));
+            			}
+            			else {
+HXLINE(6919)				_hx_tmp3 = false;
+            			}
+HXDLIN(6919)			if (_hx_tmp3) {
+HXLINE(6920)				returnVal = myValue;
+            			}
+HXLINE(6922)			if (!(script->closed)) {
+HXLINE(6922)				i = (i + 1);
+            			}
+            			else {
+HXLINE(6923)				len = (len - 1);
             			}
             		}
             		_hx_goto_294:;
-HXLINE(6924)		return returnVal;
+HXLINE(6926)		return returnVal;
             	}
 
 
@@ -13651,129 +13655,129 @@ HX_DEFINE_DYNAMIC_FUNC5(PlayState_obj,callOnLuas,return )
  ::Dynamic PlayState_obj::callOnHScript(::String funcToCall,::cpp::VirtualArray args, ::Dynamic __o_ignoreStops,::Array< ::String > exclusions,::cpp::VirtualArray excludeValues){
             		 ::Dynamic ignoreStops = __o_ignoreStops;
             		if (::hx::IsNull(__o_ignoreStops)) ignoreStops = false;
-            	HX_STACKFRAME(&_hx_pos_801e532e222627de_6927_callOnHScript)
-HXLINE(6928)		 ::Dynamic returnVal = ::psychlua::FunkinLua_obj::Function_Continue;
-HXLINE(6931)		if (::hx::IsNull( exclusions )) {
-HXLINE(6931)			exclusions = ::Array_obj< ::String >::__new();
+            	HX_STACKFRAME(&_hx_pos_801e532e222627de_6929_callOnHScript)
+HXLINE(6930)		 ::Dynamic returnVal = ::psychlua::FunkinLua_obj::Function_Continue;
+HXLINE(6933)		if (::hx::IsNull( exclusions )) {
+HXLINE(6933)			exclusions = ::Array_obj< ::String >::__new();
             		}
-HXLINE(6932)		if (::hx::IsNull( excludeValues )) {
-HXLINE(6932)			excludeValues = ::cpp::VirtualArray_obj::__new();
+HXLINE(6934)		if (::hx::IsNull( excludeValues )) {
+HXLINE(6934)			excludeValues = ::cpp::VirtualArray_obj::__new();
             		}
-HXLINE(6933)		excludeValues->push(::psychlua::FunkinLua_obj::Function_Continue);
-HXLINE(6935)		int len = this->hscriptArray->length;
-HXLINE(6936)		if ((len < 1)) {
-HXLINE(6937)			return returnVal;
+HXLINE(6935)		excludeValues->push(::psychlua::FunkinLua_obj::Function_Continue);
+HXLINE(6937)		int len = this->hscriptArray->length;
+HXLINE(6938)		if ((len < 1)) {
+HXLINE(6939)			return returnVal;
             		}
-HXLINE(6938)		{
-HXLINE(6938)			int _g = 0;
-HXDLIN(6938)			int _g1 = len;
-HXDLIN(6938)			while((_g < _g1)){
-HXLINE(6938)				_g = (_g + 1);
-HXDLIN(6938)				int i = (_g - 1);
-HXLINE(6940)				 ::psychlua::HScript script = this->hscriptArray->__get(i).StaticCast<  ::psychlua::HScript >();
-HXLINE(6941)				bool _hx_tmp;
-HXDLIN(6941)				bool _hx_tmp1;
-HXDLIN(6941)				if (::hx::IsNotNull( script )) {
-HXLINE(6941)					_hx_tmp1 = !(script->exists(funcToCall));
+HXLINE(6940)		{
+HXLINE(6940)			int _g = 0;
+HXDLIN(6940)			int _g1 = len;
+HXDLIN(6940)			while((_g < _g1)){
+HXLINE(6940)				_g = (_g + 1);
+HXDLIN(6940)				int i = (_g - 1);
+HXLINE(6942)				 ::psychlua::HScript script = this->hscriptArray->__get(i).StaticCast<  ::psychlua::HScript >();
+HXLINE(6943)				bool _hx_tmp;
+HXDLIN(6943)				bool _hx_tmp1;
+HXDLIN(6943)				if (::hx::IsNotNull( script )) {
+HXLINE(6943)					_hx_tmp1 = !(script->exists(funcToCall));
             				}
             				else {
-HXLINE(6941)					_hx_tmp1 = true;
+HXLINE(6943)					_hx_tmp1 = true;
             				}
-HXDLIN(6941)				if (!(_hx_tmp1)) {
-HXLINE(6941)					_hx_tmp = exclusions->contains(script->origin);
+HXDLIN(6943)				if (!(_hx_tmp1)) {
+HXLINE(6943)					_hx_tmp = exclusions->contains(script->origin);
             				}
             				else {
-HXLINE(6941)					_hx_tmp = true;
+HXLINE(6943)					_hx_tmp = true;
             				}
-HXDLIN(6941)				if (_hx_tmp) {
-HXLINE(6942)					continue;
+HXDLIN(6943)				if (_hx_tmp) {
+HXLINE(6944)					continue;
             				}
-HXLINE(6944)				 ::Dynamic myValue = null();
-HXLINE(6946)				{
-HXLINE(6947)					 ::Dynamic callValue = script->call(funcToCall,args,null());
-HXLINE(6948)					if (!(( (bool)(callValue->__Field(HX_("succeeded",61,56,29,fb),::hx::paccDynamic)) ))) {
-HXLINE(6950)						 ::haxe::Exception e = Dynamic(  ::Dynamic(callValue->__Field(HX_("exceptions",44,35,34,1d),::hx::paccDynamic))->__GetItem(0)).StaticCast<  ::haxe::Exception >();
-HXLINE(6951)						if (::hx::IsNotNull( e )) {
-HXLINE(6952)							::String _hx_tmp = ( (::String)(((((HX_("ERROR (",b0,59,de,69) + script->origin) + HX_(": ",a6,32,00,00)) + callValue->__Field(HX_("calledFunction",b5,00,41,03),::hx::paccDynamic)) + HX_(") - ",ea,2e,32,1b))) );
-HXDLIN(6952)							::String _hx_tmp1 = e->get_message();
-HXDLIN(6952)							::psychlua::FunkinLua_obj::luaTrace((_hx_tmp + _hx_tmp1.substr(0,e->get_message().indexOf(HX_("\n",0a,00,00,00),null()))),true,false,-65536);
+HXLINE(6946)				 ::Dynamic myValue = null();
+HXLINE(6948)				{
+HXLINE(6949)					 ::Dynamic callValue = script->call(funcToCall,args,null());
+HXLINE(6950)					if (!(( (bool)(callValue->__Field(HX_("succeeded",61,56,29,fb),::hx::paccDynamic)) ))) {
+HXLINE(6952)						 ::haxe::Exception e = Dynamic(  ::Dynamic(callValue->__Field(HX_("exceptions",44,35,34,1d),::hx::paccDynamic))->__GetItem(0)).StaticCast<  ::haxe::Exception >();
+HXLINE(6953)						if (::hx::IsNotNull( e )) {
+HXLINE(6954)							::String _hx_tmp = ( (::String)(((((HX_("ERROR (",b0,59,de,69) + script->origin) + HX_(": ",a6,32,00,00)) + callValue->__Field(HX_("calledFunction",b5,00,41,03),::hx::paccDynamic)) + HX_(") - ",ea,2e,32,1b))) );
+HXDLIN(6954)							::String _hx_tmp1 = e->get_message();
+HXDLIN(6954)							::psychlua::FunkinLua_obj::luaTrace((_hx_tmp + _hx_tmp1.substr(0,e->get_message().indexOf(HX_("\n",0a,00,00,00),null()))),true,false,-65536);
             						}
             					}
             					else {
-HXLINE(6956)						myValue =  ::Dynamic(callValue->__Field(HX_("returnValue",a1,4c,95,3e),::hx::paccDynamic));
-HXLINE(6957)						bool _hx_tmp;
-HXDLIN(6957)						bool _hx_tmp1;
-HXDLIN(6957)						bool _hx_tmp2;
-HXDLIN(6957)						if (::hx::IsNotEq( myValue,::psychlua::FunkinLua_obj::Function_StopHScript )) {
-HXLINE(6957)							_hx_tmp2 = ::hx::IsEq( myValue,::psychlua::FunkinLua_obj::Function_StopAll );
+HXLINE(6958)						myValue =  ::Dynamic(callValue->__Field(HX_("returnValue",a1,4c,95,3e),::hx::paccDynamic));
+HXLINE(6959)						bool _hx_tmp;
+HXDLIN(6959)						bool _hx_tmp1;
+HXDLIN(6959)						bool _hx_tmp2;
+HXDLIN(6959)						if (::hx::IsNotEq( myValue,::psychlua::FunkinLua_obj::Function_StopHScript )) {
+HXLINE(6959)							_hx_tmp2 = ::hx::IsEq( myValue,::psychlua::FunkinLua_obj::Function_StopAll );
             						}
             						else {
-HXLINE(6957)							_hx_tmp2 = true;
+HXLINE(6959)							_hx_tmp2 = true;
             						}
-HXDLIN(6957)						if (_hx_tmp2) {
-HXLINE(6957)							_hx_tmp1 = !(excludeValues->contains(myValue));
-            						}
-            						else {
-HXLINE(6957)							_hx_tmp1 = false;
-            						}
-HXDLIN(6957)						if (_hx_tmp1) {
-HXLINE(6957)							_hx_tmp = !(( (bool)(ignoreStops) ));
+HXDLIN(6959)						if (_hx_tmp2) {
+HXLINE(6959)							_hx_tmp1 = !(excludeValues->contains(myValue));
             						}
             						else {
-HXLINE(6957)							_hx_tmp = false;
+HXLINE(6959)							_hx_tmp1 = false;
             						}
-HXDLIN(6957)						if (_hx_tmp) {
-HXLINE(6959)							returnVal = myValue;
-HXLINE(6960)							goto _hx_goto_296;
-            						}
-HXLINE(6963)						bool _hx_tmp3;
-HXDLIN(6963)						if (::hx::IsNotNull( myValue )) {
-HXLINE(6963)							_hx_tmp3 = !(excludeValues->contains(myValue));
+HXDLIN(6959)						if (_hx_tmp1) {
+HXLINE(6959)							_hx_tmp = !(( (bool)(ignoreStops) ));
             						}
             						else {
-HXLINE(6963)							_hx_tmp3 = false;
+HXLINE(6959)							_hx_tmp = false;
             						}
-HXDLIN(6963)						if (_hx_tmp3) {
-HXLINE(6964)							returnVal = myValue;
+HXDLIN(6959)						if (_hx_tmp) {
+HXLINE(6961)							returnVal = myValue;
+HXLINE(6962)							goto _hx_goto_296;
+            						}
+HXLINE(6965)						bool _hx_tmp3;
+HXDLIN(6965)						if (::hx::IsNotNull( myValue )) {
+HXLINE(6965)							_hx_tmp3 = !(excludeValues->contains(myValue));
+            						}
+            						else {
+HXLINE(6965)							_hx_tmp3 = false;
+            						}
+HXDLIN(6965)						if (_hx_tmp3) {
+HXLINE(6966)							returnVal = myValue;
             						}
             					}
             				}
             			}
             			_hx_goto_296:;
             		}
-HXLINE(6970)		return returnVal;
+HXLINE(6972)		return returnVal;
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC5(PlayState_obj,callOnHScript,return )
 
 void PlayState_obj::setOnScripts(::String variable, ::Dynamic arg,::Array< ::String > exclusions){
-            	HX_STACKFRAME(&_hx_pos_801e532e222627de_6973_setOnScripts)
-HXLINE(6974)		if (::hx::IsNull( exclusions )) {
-HXLINE(6974)			exclusions = ::Array_obj< ::String >::__new(0);
+            	HX_STACKFRAME(&_hx_pos_801e532e222627de_6975_setOnScripts)
+HXLINE(6976)		if (::hx::IsNull( exclusions )) {
+HXLINE(6976)			exclusions = ::Array_obj< ::String >::__new(0);
             		}
-HXLINE(6975)		this->setOnLuas(variable,arg,exclusions);
-HXLINE(6976)		this->setOnHScript(variable,arg,exclusions);
+HXLINE(6977)		this->setOnLuas(variable,arg,exclusions);
+HXLINE(6978)		this->setOnHScript(variable,arg,exclusions);
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC3(PlayState_obj,setOnScripts,(void))
 
 void PlayState_obj::setOnLuas(::String variable, ::Dynamic arg,::Array< ::String > exclusions){
-            	HX_STACKFRAME(&_hx_pos_801e532e222627de_6979_setOnLuas)
-HXLINE(6981)		if (::hx::IsNull( exclusions )) {
-HXLINE(6981)			exclusions = ::Array_obj< ::String >::__new(0);
+            	HX_STACKFRAME(&_hx_pos_801e532e222627de_6981_setOnLuas)
+HXLINE(6983)		if (::hx::IsNull( exclusions )) {
+HXLINE(6983)			exclusions = ::Array_obj< ::String >::__new(0);
             		}
-HXLINE(6982)		{
-HXLINE(6982)			int _g = 0;
-HXDLIN(6982)			::Array< ::Dynamic> _g1 = this->luaArray;
-HXDLIN(6982)			while((_g < _g1->length)){
-HXLINE(6982)				 ::psychlua::FunkinLua script = _g1->__get(_g).StaticCast<  ::psychlua::FunkinLua >();
-HXDLIN(6982)				_g = (_g + 1);
-HXLINE(6983)				if (exclusions->contains(script->scriptName)) {
-HXLINE(6984)					continue;
+HXLINE(6984)		{
+HXLINE(6984)			int _g = 0;
+HXDLIN(6984)			::Array< ::Dynamic> _g1 = this->luaArray;
+HXDLIN(6984)			while((_g < _g1->length)){
+HXLINE(6984)				 ::psychlua::FunkinLua script = _g1->__get(_g).StaticCast<  ::psychlua::FunkinLua >();
+HXDLIN(6984)				_g = (_g + 1);
+HXLINE(6985)				if (exclusions->contains(script->scriptName)) {
+HXLINE(6986)					continue;
             				}
-HXLINE(6986)				script->set(variable,arg);
+HXLINE(6988)				script->set(variable,arg);
             			}
             		}
             	}
@@ -13782,20 +13786,20 @@ HXLINE(6986)				script->set(variable,arg);
 HX_DEFINE_DYNAMIC_FUNC3(PlayState_obj,setOnLuas,(void))
 
 void PlayState_obj::setOnHScript(::String variable, ::Dynamic arg,::Array< ::String > exclusions){
-            	HX_STACKFRAME(&_hx_pos_801e532e222627de_6991_setOnHScript)
-HXLINE(6993)		if (::hx::IsNull( exclusions )) {
-HXLINE(6993)			exclusions = ::Array_obj< ::String >::__new(0);
+            	HX_STACKFRAME(&_hx_pos_801e532e222627de_6993_setOnHScript)
+HXLINE(6995)		if (::hx::IsNull( exclusions )) {
+HXLINE(6995)			exclusions = ::Array_obj< ::String >::__new(0);
             		}
-HXLINE(6994)		{
-HXLINE(6994)			int _g = 0;
-HXDLIN(6994)			::Array< ::Dynamic> _g1 = this->hscriptArray;
-HXDLIN(6994)			while((_g < _g1->length)){
-HXLINE(6994)				 ::psychlua::HScript script = _g1->__get(_g).StaticCast<  ::psychlua::HScript >();
-HXDLIN(6994)				_g = (_g + 1);
-HXLINE(6995)				if (exclusions->contains(script->origin)) {
-HXLINE(6996)					continue;
+HXLINE(6996)		{
+HXLINE(6996)			int _g = 0;
+HXDLIN(6996)			::Array< ::Dynamic> _g1 = this->hscriptArray;
+HXDLIN(6996)			while((_g < _g1->length)){
+HXLINE(6996)				 ::psychlua::HScript script = _g1->__get(_g).StaticCast<  ::psychlua::HScript >();
+HXDLIN(6996)				_g = (_g + 1);
+HXLINE(6997)				if (exclusions->contains(script->origin)) {
+HXLINE(6998)					continue;
             				}
-HXLINE(6998)				script->set(variable,arg);
+HXLINE(7000)				script->set(variable,arg);
             			}
             		}
             	}
@@ -13805,23 +13809,23 @@ HX_DEFINE_DYNAMIC_FUNC3(PlayState_obj,setOnHScript,(void))
 
 void PlayState_obj::strumPlayAnim(bool isDad,int id,Float time,::hx::Null< bool >  __o_isAlt){
             		bool isAlt = __o_isAlt.Default(false);
-            	HX_STACKFRAME(&_hx_pos_801e532e222627de_7003_strumPlayAnim)
-HXLINE(7004)		 ::objects::StrumNote spr = null();
-HXLINE(7005)		if (isDad) {
-HXLINE(7006)			if (!(isAlt)) {
-HXLINE(7007)				spr = Dynamic( this->strumLineNotes->members->__get(id)).StaticCast<  ::objects::StrumNote >();
+            	HX_STACKFRAME(&_hx_pos_801e532e222627de_7005_strumPlayAnim)
+HXLINE(7006)		 ::objects::StrumNote spr = null();
+HXLINE(7007)		if (isDad) {
+HXLINE(7008)			if (!(isAlt)) {
+HXLINE(7009)				spr = Dynamic( this->strumLineNotes->members->__get(id)).StaticCast<  ::objects::StrumNote >();
             			}
             			else {
-HXLINE(7009)				spr = Dynamic( this->altStrumLineNotes->members->__get(id)).StaticCast<  ::objects::StrumNote >();
+HXLINE(7011)				spr = Dynamic( this->altStrumLineNotes->members->__get(id)).StaticCast<  ::objects::StrumNote >();
             			}
             		}
             		else {
-HXLINE(7011)			spr = Dynamic( this->playerStrums->members->__get(id)).StaticCast<  ::objects::StrumNote >();
+HXLINE(7013)			spr = Dynamic( this->playerStrums->members->__get(id)).StaticCast<  ::objects::StrumNote >();
             		}
-HXLINE(7014)		if (::hx::IsNotNull( spr )) {
-HXLINE(7015)			if (!(this->laggingRSOD)) {
-HXLINE(7016)				spr->playAnim(HX_("confirm",00,9d,39,10),true);
-HXLINE(7017)				spr->resetAnim = time;
+HXLINE(7016)		if (::hx::IsNotNull( spr )) {
+HXLINE(7017)			if (!(this->laggingRSOD)) {
+HXLINE(7018)				spr->playAnim(HX_("confirm",00,9d,39,10),true);
+HXLINE(7019)				spr->resetAnim = time;
             			}
             		}
             	}
@@ -13831,99 +13835,99 @@ HX_DEFINE_DYNAMIC_FUNC4(PlayState_obj,strumPlayAnim,(void))
 
 void PlayState_obj::RecalculateRating(::hx::Null< bool >  __o_badHit){
             		bool badHit = __o_badHit.Default(false);
-            	HX_STACKFRAME(&_hx_pos_801e532e222627de_7025_RecalculateRating)
-HXLINE(7026)		this->setOnScripts(HX_("score",52,73,d9,78),this->songScore,null());
-HXLINE(7027)		this->setOnScripts(HX_("misses",6a,62,54,56),this->songMisses,null());
-HXLINE(7028)		this->setOnScripts(HX_("hits",c0,42,0e,45),this->songHits,null());
-HXLINE(7029)		this->setOnScripts(HX_("combo",4e,28,5d,4a),this->combo,null());
-HXLINE(7031)		int sicks = this->ratingsData->__get(1).StaticCast<  ::backend::Rating >()->hits;
-HXLINE(7032)		int goods = this->ratingsData->__get(2).StaticCast<  ::backend::Rating >()->hits;
-HXLINE(7033)		int bads = this->ratingsData->__get(3).StaticCast<  ::backend::Rating >()->hits;
-HXLINE(7034)		int shits = this->ratingsData->__get(4).StaticCast<  ::backend::Rating >()->hits;
-HXLINE(7036)		 ::Dynamic ret = this->callOnScripts(HX_("onRecalculateRating",b1,37,6a,10),null(),true,null(),null());
-HXLINE(7037)		if (::hx::IsNotEq( ret,::psychlua::FunkinLua_obj::Function_Stop )) {
-HXLINE(7039)			this->ratingName = HX_("?",3f,00,00,00);
-HXLINE(7040)			if ((this->totalPlayed != 0)) {
-HXLINE(7043)				this->ratingPercent = ::Math_obj::min(( (Float)(1) ),::Math_obj::max(( (Float)(0) ),(this->totalNotesHit / ( (Float)(this->totalPlayed) ))));
-HXLINE(7047)				this->ratingName = ( (::String)(::states::PlayState_obj::ratingStuff->__get((::states::PlayState_obj::ratingStuff->get_length() - 1))->__GetItem(0)) );
-HXLINE(7048)				if ((this->ratingPercent < 1)) {
-HXLINE(7049)					int _g = 0;
-HXDLIN(7049)					int _g1 = (::states::PlayState_obj::ratingStuff->get_length() - 1);
-HXDLIN(7049)					while((_g < _g1)){
-HXLINE(7049)						_g = (_g + 1);
-HXDLIN(7049)						int i = (_g - 1);
-HXLINE(7050)						if (::hx::IsLess( this->ratingPercent,::states::PlayState_obj::ratingStuff->__get(i)->__GetItem(1) )) {
-HXLINE(7052)							this->ratingName = ( (::String)(::states::PlayState_obj::ratingStuff->__get(i)->__GetItem(0)) );
-HXLINE(7053)							goto _hx_goto_304;
+            	HX_STACKFRAME(&_hx_pos_801e532e222627de_7027_RecalculateRating)
+HXLINE(7028)		this->setOnScripts(HX_("score",52,73,d9,78),this->songScore,null());
+HXLINE(7029)		this->setOnScripts(HX_("misses",6a,62,54,56),this->songMisses,null());
+HXLINE(7030)		this->setOnScripts(HX_("hits",c0,42,0e,45),this->songHits,null());
+HXLINE(7031)		this->setOnScripts(HX_("combo",4e,28,5d,4a),this->combo,null());
+HXLINE(7033)		int sicks = this->ratingsData->__get(1).StaticCast<  ::backend::Rating >()->hits;
+HXLINE(7034)		int goods = this->ratingsData->__get(2).StaticCast<  ::backend::Rating >()->hits;
+HXLINE(7035)		int bads = this->ratingsData->__get(3).StaticCast<  ::backend::Rating >()->hits;
+HXLINE(7036)		int shits = this->ratingsData->__get(4).StaticCast<  ::backend::Rating >()->hits;
+HXLINE(7038)		 ::Dynamic ret = this->callOnScripts(HX_("onRecalculateRating",b1,37,6a,10),null(),true,null(),null());
+HXLINE(7039)		if (::hx::IsNotEq( ret,::psychlua::FunkinLua_obj::Function_Stop )) {
+HXLINE(7041)			this->ratingName = HX_("?",3f,00,00,00);
+HXLINE(7042)			if ((this->totalPlayed != 0)) {
+HXLINE(7045)				this->ratingPercent = ::Math_obj::min(( (Float)(1) ),::Math_obj::max(( (Float)(0) ),(this->totalNotesHit / ( (Float)(this->totalPlayed) ))));
+HXLINE(7049)				this->ratingName = ( (::String)(::states::PlayState_obj::ratingStuff->__get((::states::PlayState_obj::ratingStuff->get_length() - 1))->__GetItem(0)) );
+HXLINE(7050)				if ((this->ratingPercent < 1)) {
+HXLINE(7051)					int _g = 0;
+HXDLIN(7051)					int _g1 = (::states::PlayState_obj::ratingStuff->get_length() - 1);
+HXDLIN(7051)					while((_g < _g1)){
+HXLINE(7051)						_g = (_g + 1);
+HXDLIN(7051)						int i = (_g - 1);
+HXLINE(7052)						if (::hx::IsLess( this->ratingPercent,::states::PlayState_obj::ratingStuff->__get(i)->__GetItem(1) )) {
+HXLINE(7054)							this->ratingName = ( (::String)(::states::PlayState_obj::ratingStuff->__get(i)->__GetItem(0)) );
+HXLINE(7055)							goto _hx_goto_304;
             						}
             					}
             					_hx_goto_304:;
             				}
             			}
-HXLINE(7056)			this->fullComboFunction();
+HXLINE(7058)			this->fullComboFunction();
             		}
-HXLINE(7058)		this->updateScore(badHit);
-HXLINE(7059)		this->setOnScripts(HX_("rating",1d,34,8a,bb),this->ratingPercent,null());
-HXLINE(7060)		this->setOnScripts(HX_("ratingName",08,a5,2b,05),this->ratingName,null());
-HXLINE(7061)		this->setOnScripts(HX_("ratingFC",9a,72,95,59),this->ratingFC,null());
-HXLINE(7062)		this->judgementCounter->set_text((((((((HX_("Sicks: ",bb,1b,ab,be) + sicks) + HX_("\nGoods: ",d2,a1,f4,51)) + goods) + HX_("\nBads: ",de,84,b3,1f)) + bads) + HX_("\nShits: ",2f,9b,a2,0e)) + shits));
+HXLINE(7060)		this->updateScore(badHit);
+HXLINE(7061)		this->setOnScripts(HX_("rating",1d,34,8a,bb),this->ratingPercent,null());
+HXLINE(7062)		this->setOnScripts(HX_("ratingName",08,a5,2b,05),this->ratingName,null());
+HXLINE(7063)		this->setOnScripts(HX_("ratingFC",9a,72,95,59),this->ratingFC,null());
+HXLINE(7064)		this->judgementCounter->set_text((((((((HX_("Sicks: ",bb,1b,ab,be) + sicks) + HX_("\nGoods: ",d2,a1,f4,51)) + goods) + HX_("\nBads: ",de,84,b3,1f)) + bads) + HX_("\nShits: ",2f,9b,a2,0e)) + shits));
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC1(PlayState_obj,RecalculateRating,(void))
 
 void PlayState_obj::fullComboUpdate(){
-            	HX_STACKFRAME(&_hx_pos_801e532e222627de_7066_fullComboUpdate)
-HXLINE(7067)		int perfect = this->ratingsData->__get(0).StaticCast<  ::backend::Rating >()->hits;
-HXLINE(7068)		int sicks = this->ratingsData->__get(1).StaticCast<  ::backend::Rating >()->hits;
-HXLINE(7069)		int goods = this->ratingsData->__get(2).StaticCast<  ::backend::Rating >()->hits;
-HXLINE(7070)		int bads = this->ratingsData->__get(3).StaticCast<  ::backend::Rating >()->hits;
-HXLINE(7071)		int shits = this->ratingsData->__get(4).StaticCast<  ::backend::Rating >()->hits;
-HXLINE(7073)		this->ratingFC = HX_("Clear",6d,e1,88,db);
-HXLINE(7074)		if ((this->songMisses < 1)) {
-HXLINE(7076)			bool _hx_tmp;
-HXDLIN(7076)			if ((bads <= 0)) {
-HXLINE(7076)				_hx_tmp = (shits > 0);
+            	HX_STACKFRAME(&_hx_pos_801e532e222627de_7068_fullComboUpdate)
+HXLINE(7069)		int perfect = this->ratingsData->__get(0).StaticCast<  ::backend::Rating >()->hits;
+HXLINE(7070)		int sicks = this->ratingsData->__get(1).StaticCast<  ::backend::Rating >()->hits;
+HXLINE(7071)		int goods = this->ratingsData->__get(2).StaticCast<  ::backend::Rating >()->hits;
+HXLINE(7072)		int bads = this->ratingsData->__get(3).StaticCast<  ::backend::Rating >()->hits;
+HXLINE(7073)		int shits = this->ratingsData->__get(4).StaticCast<  ::backend::Rating >()->hits;
+HXLINE(7075)		this->ratingFC = HX_("Clear",6d,e1,88,db);
+HXLINE(7076)		if ((this->songMisses < 1)) {
+HXLINE(7078)			bool _hx_tmp;
+HXDLIN(7078)			if ((bads <= 0)) {
+HXLINE(7078)				_hx_tmp = (shits > 0);
             			}
             			else {
-HXLINE(7076)				_hx_tmp = true;
+HXLINE(7078)				_hx_tmp = true;
             			}
-HXDLIN(7076)			if (_hx_tmp) {
-HXLINE(7076)				this->ratingFC = HX_("FC",3d,3d,00,00);
+HXDLIN(7078)			if (_hx_tmp) {
+HXLINE(7078)				this->ratingFC = HX_("FC",3d,3d,00,00);
             			}
             			else {
-HXLINE(7077)				if ((goods > 0)) {
-HXLINE(7077)					this->ratingFC = HX_("GFC",44,1d,36,00);
+HXLINE(7079)				if ((goods > 0)) {
+HXLINE(7079)					this->ratingFC = HX_("GFC",44,1d,36,00);
             				}
             				else {
-HXLINE(7078)					if ((sicks > 0)) {
-HXLINE(7078)						this->ratingFC = HX_("SFC",50,38,3f,00);
+HXLINE(7080)					if ((sicks > 0)) {
+HXLINE(7080)						this->ratingFC = HX_("SFC",50,38,3f,00);
             					}
             					else {
-HXLINE(7079)						bool _hx_tmp;
-HXDLIN(7079)						if ((perfect > 0)) {
-HXLINE(7079)							_hx_tmp = !(::backend::ClientPrefs_obj::data->removePerfs);
+HXLINE(7081)						bool _hx_tmp;
+HXDLIN(7081)						if ((perfect > 0)) {
+HXLINE(7081)							_hx_tmp = !(::backend::ClientPrefs_obj::data->removePerfs);
             						}
             						else {
-HXLINE(7079)							_hx_tmp = false;
+HXLINE(7081)							_hx_tmp = false;
             						}
-HXDLIN(7079)						if (_hx_tmp) {
-HXLINE(7079)							this->ratingFC = HX_("MFC",ca,aa,3a,00);
+HXDLIN(7081)						if (_hx_tmp) {
+HXLINE(7081)							this->ratingFC = HX_("MFC",ca,aa,3a,00);
             						}
             					}
             				}
             			}
             		}
             		else {
-HXLINE(7081)			if ((this->songMisses < 10)) {
-HXLINE(7082)				this->ratingFC = HX_("SDCB",70,89,10,37);
+HXLINE(7083)			if ((this->songMisses < 10)) {
+HXLINE(7084)				this->ratingFC = HX_("SDCB",70,89,10,37);
             			}
             		}
-HXLINE(7084)		if (::backend::ClientPrefs_obj::data->removePerfs) {
-HXLINE(7085)			this->judgementCounter->set_text((((((((HX_("Sicks: ",bb,1b,ab,be) + sicks) + HX_("\nGoods: ",d2,a1,f4,51)) + goods) + HX_("\nBads: ",de,84,b3,1f)) + bads) + HX_("\nShits: ",2f,9b,a2,0e)) + shits));
+HXLINE(7086)		if (::backend::ClientPrefs_obj::data->removePerfs) {
+HXLINE(7087)			this->judgementCounter->set_text((((((((HX_("Sicks: ",bb,1b,ab,be) + sicks) + HX_("\nGoods: ",d2,a1,f4,51)) + goods) + HX_("\nBads: ",de,84,b3,1f)) + bads) + HX_("\nShits: ",2f,9b,a2,0e)) + shits));
             		}
             		else {
-HXLINE(7087)			this->judgementCounter->set_text((((((((((HX_("Perfects: ",0c,1b,43,0a) + perfect) + HX_("\nSicks: ",f1,90,a3,fa)) + sicks) + HX_("\nGoods: ",d2,a1,f4,51)) + goods) + HX_("\nBads: ",de,84,b3,1f)) + bads) + HX_("\nShits: ",2f,9b,a2,0e)) + shits));
+HXLINE(7089)			this->judgementCounter->set_text((((((((((HX_("Perfects: ",0c,1b,43,0a) + perfect) + HX_("\nSicks: ",f1,90,a3,fa)) + sicks) + HX_("\nGoods: ",d2,a1,f4,51)) + goods) + HX_("\nBads: ",de,84,b3,1f)) + bads) + HX_("\nShits: ",2f,9b,a2,0e)) + shits));
             		}
             	}
 
@@ -13931,216 +13935,216 @@ HXLINE(7087)			this->judgementCounter->set_text((((((((((HX_("Perfects: ",0c,1b,
 HX_DEFINE_DYNAMIC_FUNC0(PlayState_obj,fullComboUpdate,(void))
 
 ::String PlayState_obj::checkForAchievement(::Array< ::String > achievesToCheck){
-            	HX_GC_STACKFRAME(&_hx_pos_801e532e222627de_7093_checkForAchievement)
-HXLINE(7094)		if (::states::PlayState_obj::chartingMode) {
-HXLINE(7094)			return null();
+            	HX_GC_STACKFRAME(&_hx_pos_801e532e222627de_7095_checkForAchievement)
+HXLINE(7096)		if (::states::PlayState_obj::chartingMode) {
+HXLINE(7096)			return null();
             		}
-HXLINE(7096)		bool usedPractice;
-HXDLIN(7096)		 ::Dynamic defaultValue = null();
-HXDLIN(7096)		defaultValue = ::backend::ClientPrefs_obj::defaultData->gameplaySettings->get(HX_("practice",bb,00,e7,a0));
-HXDLIN(7096)		 ::Dynamic usedPractice1;
-HXDLIN(7096)		if (::backend::ClientPrefs_obj::data->gameplaySettings->exists(HX_("practice",bb,00,e7,a0))) {
-HXLINE(7096)			usedPractice1 = ::backend::ClientPrefs_obj::data->gameplaySettings->get(HX_("practice",bb,00,e7,a0));
+HXLINE(7098)		bool usedPractice;
+HXDLIN(7098)		 ::Dynamic defaultValue = null();
+HXDLIN(7098)		defaultValue = ::backend::ClientPrefs_obj::defaultData->gameplaySettings->get(HX_("practice",bb,00,e7,a0));
+HXDLIN(7098)		 ::Dynamic usedPractice1;
+HXDLIN(7098)		if (::backend::ClientPrefs_obj::data->gameplaySettings->exists(HX_("practice",bb,00,e7,a0))) {
+HXLINE(7098)			usedPractice1 = ::backend::ClientPrefs_obj::data->gameplaySettings->get(HX_("practice",bb,00,e7,a0));
             		}
             		else {
-HXLINE(7096)			usedPractice1 = defaultValue;
+HXLINE(7098)			usedPractice1 = defaultValue;
             		}
-HXDLIN(7096)		if (!(( (bool)(usedPractice1) ))) {
-HXLINE(7096)			 ::Dynamic defaultValue = null();
-HXDLIN(7096)			defaultValue = ::backend::ClientPrefs_obj::defaultData->gameplaySettings->get(HX_("botplay",7b,fb,a9,61));
-HXDLIN(7096)			if (::backend::ClientPrefs_obj::data->gameplaySettings->exists(HX_("botplay",7b,fb,a9,61))) {
-HXLINE(7096)				usedPractice = ::backend::ClientPrefs_obj::data->gameplaySettings->get_bool(HX_("botplay",7b,fb,a9,61));
+HXDLIN(7098)		if (!(( (bool)(usedPractice1) ))) {
+HXLINE(7098)			 ::Dynamic defaultValue = null();
+HXDLIN(7098)			defaultValue = ::backend::ClientPrefs_obj::defaultData->gameplaySettings->get(HX_("botplay",7b,fb,a9,61));
+HXDLIN(7098)			if (::backend::ClientPrefs_obj::data->gameplaySettings->exists(HX_("botplay",7b,fb,a9,61))) {
+HXLINE(7098)				usedPractice = ::backend::ClientPrefs_obj::data->gameplaySettings->get_bool(HX_("botplay",7b,fb,a9,61));
             			}
             			else {
-HXLINE(7096)				usedPractice = ( (bool)(defaultValue) );
+HXLINE(7098)				usedPractice = ( (bool)(defaultValue) );
             			}
             		}
             		else {
-HXLINE(7096)			usedPractice = true;
+HXLINE(7098)			usedPractice = true;
             		}
-HXLINE(7097)		{
-HXLINE(7097)			int _g = 0;
-HXDLIN(7097)			int _g1 = achievesToCheck->length;
-HXDLIN(7097)			while((_g < _g1)){
-HXLINE(7097)				_g = (_g + 1);
-HXDLIN(7097)				int i = (_g - 1);
-HXLINE(7098)				::String achievementName = achievesToCheck->__get(i);
-HXLINE(7099)				bool _hx_tmp;
-HXDLIN(7099)				bool _hx_tmp1;
-HXDLIN(7099)				if (!(::backend::Achievements_obj::isAchievementUnlocked(achievementName))) {
-HXLINE(7099)					_hx_tmp1 = !(this->cpuControlled);
+HXLINE(7099)		{
+HXLINE(7099)			int _g = 0;
+HXDLIN(7099)			int _g1 = achievesToCheck->length;
+HXDLIN(7099)			while((_g < _g1)){
+HXLINE(7099)				_g = (_g + 1);
+HXDLIN(7099)				int i = (_g - 1);
+HXLINE(7100)				::String achievementName = achievesToCheck->__get(i);
+HXLINE(7101)				bool _hx_tmp;
+HXDLIN(7101)				bool _hx_tmp1;
+HXDLIN(7101)				if (!(::backend::Achievements_obj::isAchievementUnlocked(achievementName))) {
+HXLINE(7101)					_hx_tmp1 = !(this->cpuControlled);
             				}
             				else {
-HXLINE(7099)					_hx_tmp1 = false;
+HXLINE(7101)					_hx_tmp1 = false;
             				}
-HXDLIN(7099)				if (_hx_tmp1) {
-HXLINE(7099)					_hx_tmp = (::backend::Achievements_obj::getAchievementIndex(achievementName) > -1);
+HXDLIN(7101)				if (_hx_tmp1) {
+HXLINE(7101)					_hx_tmp = (::backend::Achievements_obj::getAchievementIndex(achievementName) > -1);
             				}
             				else {
-HXLINE(7099)					_hx_tmp = false;
+HXLINE(7101)					_hx_tmp = false;
             				}
-HXDLIN(7099)				if (_hx_tmp) {
-HXLINE(7100)					bool unlock = false;
-HXLINE(7101)					if ((achievementName == (::backend::WeekData_obj::getWeekFileName() + HX_("_nomiss",5c,79,8f,9b)))) {
-HXLINE(7103)						bool _hx_tmp;
-HXDLIN(7103)						bool _hx_tmp1;
-HXDLIN(7103)						bool _hx_tmp2;
-HXDLIN(7103)						bool _hx_tmp3;
-HXDLIN(7103)						bool _hx_tmp4;
-HXDLIN(7103)						if (::states::PlayState_obj::isStoryMode) {
-HXLINE(7103)							_hx_tmp4 = ((::states::PlayState_obj::campaignMisses + this->songMisses) < 1);
+HXDLIN(7101)				if (_hx_tmp) {
+HXLINE(7102)					bool unlock = false;
+HXLINE(7103)					if ((achievementName == (::backend::WeekData_obj::getWeekFileName() + HX_("_nomiss",5c,79,8f,9b)))) {
+HXLINE(7105)						bool _hx_tmp;
+HXDLIN(7105)						bool _hx_tmp1;
+HXDLIN(7105)						bool _hx_tmp2;
+HXDLIN(7105)						bool _hx_tmp3;
+HXDLIN(7105)						bool _hx_tmp4;
+HXDLIN(7105)						if (::states::PlayState_obj::isStoryMode) {
+HXLINE(7105)							_hx_tmp4 = ((::states::PlayState_obj::campaignMisses + this->songMisses) < 1);
             						}
             						else {
-HXLINE(7103)							_hx_tmp4 = false;
+HXLINE(7105)							_hx_tmp4 = false;
             						}
-HXDLIN(7103)						if (_hx_tmp4) {
-HXLINE(7103)							 ::Dynamic num = null();
-HXDLIN(7103)							 ::Dynamic _hx_tmp;
-HXDLIN(7103)							if (::hx::IsNull( num )) {
-HXLINE(7103)								_hx_tmp = ::states::PlayState_obj::storyDifficulty;
+HXDLIN(7105)						if (_hx_tmp4) {
+HXLINE(7105)							 ::Dynamic num = null();
+HXDLIN(7105)							 ::Dynamic _hx_tmp;
+HXDLIN(7105)							if (::hx::IsNull( num )) {
+HXLINE(7105)								_hx_tmp = ::states::PlayState_obj::storyDifficulty;
             							}
             							else {
-HXLINE(7103)								_hx_tmp = num;
+HXLINE(7105)								_hx_tmp = num;
             							}
-HXDLIN(7103)							_hx_tmp3 = (::backend::Difficulty_obj::list->__get(( (int)(_hx_tmp) )).toUpperCase() == HX_("HARD",eb,f6,c8,2f));
+HXDLIN(7105)							_hx_tmp3 = (::backend::Difficulty_obj::list->__get(( (int)(_hx_tmp) )).toUpperCase() == HX_("HARD",eb,f6,c8,2f));
             						}
             						else {
-HXLINE(7103)							_hx_tmp3 = false;
+HXLINE(7105)							_hx_tmp3 = false;
             						}
-HXDLIN(7103)						if (_hx_tmp3) {
-HXLINE(7103)							_hx_tmp2 = (::states::PlayState_obj::storyPlaylist->length <= 1);
-            						}
-            						else {
-HXLINE(7103)							_hx_tmp2 = false;
-            						}
-HXDLIN(7103)						if (_hx_tmp2) {
-HXLINE(7103)							_hx_tmp1 = !(::states::PlayState_obj::changedDifficulty);
+HXDLIN(7105)						if (_hx_tmp3) {
+HXLINE(7105)							_hx_tmp2 = (::states::PlayState_obj::storyPlaylist->length <= 1);
             						}
             						else {
-HXLINE(7103)							_hx_tmp1 = false;
+HXLINE(7105)							_hx_tmp2 = false;
             						}
-HXDLIN(7103)						if (_hx_tmp1) {
-HXLINE(7103)							_hx_tmp = !(usedPractice);
+HXDLIN(7105)						if (_hx_tmp2) {
+HXLINE(7105)							_hx_tmp1 = !(::states::PlayState_obj::changedDifficulty);
             						}
             						else {
-HXLINE(7103)							_hx_tmp = false;
+HXLINE(7105)							_hx_tmp1 = false;
             						}
-HXDLIN(7103)						if (_hx_tmp) {
-HXLINE(7105)							unlock = true;
+HXDLIN(7105)						if (_hx_tmp1) {
+HXLINE(7105)							_hx_tmp = !(usedPractice);
+            						}
+            						else {
+HXLINE(7105)							_hx_tmp = false;
+            						}
+HXDLIN(7105)						if (_hx_tmp) {
+HXLINE(7107)							unlock = true;
             						}
             					}
             					else {
-HXLINE(7109)						::String _hx_switch_0 = achievementName;
+HXLINE(7111)						::String _hx_switch_0 = achievementName;
             						if (  (_hx_switch_0==HX_("debugger",21,24,eb,90)) ){
-HXLINE(7133)							::String path = ( (::String)(::states::PlayState_obj::SONG->__Field(HX_("song",d5,23,58,4c),::hx::paccDynamic)) );
-HXDLIN(7133)							 ::EReg invalidChars =  ::EReg_obj::__alloc( HX_CTX ,HX_("[~&\\\\;:<>#]",7e,4d,88,67),HX_("",00,00,00,00));
-HXDLIN(7133)							 ::EReg hideChars =  ::EReg_obj::__alloc( HX_CTX ,HX_("[.,'\"%?!]",ca,d9,c0,ac),HX_("",00,00,00,00));
-HXDLIN(7133)							::String path1 = invalidChars->split(::StringTools_obj::replace(path,HX_(" ",20,00,00,00),HX_("-",2d,00,00,00)))->join(HX_("-",2d,00,00,00));
-HXDLIN(7133)							if ((hideChars->split(path1)->join(HX_("",00,00,00,00)).toLowerCase() == HX_("test",52,c8,f9,4c))) {
-HXLINE(7133)								unlock = !(usedPractice);
+HXLINE(7135)							::String path = ( (::String)(::states::PlayState_obj::SONG->__Field(HX_("song",d5,23,58,4c),::hx::paccDynamic)) );
+HXDLIN(7135)							 ::EReg invalidChars =  ::EReg_obj::__alloc( HX_CTX ,HX_("[~&\\\\;:<>#]",7e,4d,88,67),HX_("",00,00,00,00));
+HXDLIN(7135)							 ::EReg hideChars =  ::EReg_obj::__alloc( HX_CTX ,HX_("[.,'\"%?!]",ca,d9,c0,ac),HX_("",00,00,00,00));
+HXDLIN(7135)							::String path1 = invalidChars->split(::StringTools_obj::replace(path,HX_(" ",20,00,00,00),HX_("-",2d,00,00,00)))->join(HX_("-",2d,00,00,00));
+HXDLIN(7135)							if ((hideChars->split(path1)->join(HX_("",00,00,00,00)).toLowerCase() == HX_("test",52,c8,f9,4c))) {
+HXLINE(7135)								unlock = !(usedPractice);
             							}
             							else {
-HXLINE(7133)								unlock = false;
+HXLINE(7135)								unlock = false;
             							}
-HXDLIN(7133)							goto _hx_goto_308;
+HXDLIN(7135)							goto _hx_goto_308;
             						}
             						if (  (_hx_switch_0==HX_("hype",46,63,1a,45)) ){
-HXLINE(7124)							if (!(this->boyfriendIdled)) {
-HXLINE(7124)								unlock = !(usedPractice);
+HXLINE(7126)							if (!(this->boyfriendIdled)) {
+HXLINE(7126)								unlock = !(usedPractice);
             							}
             							else {
-HXLINE(7124)								unlock = false;
+HXLINE(7126)								unlock = false;
             							}
-HXDLIN(7124)							goto _hx_goto_308;
+HXDLIN(7126)							goto _hx_goto_308;
             						}
             						if (  (_hx_switch_0==HX_("oversinging",1f,13,8f,78)) ){
-HXLINE(7121)							if ((this->boyfriend->holdTimer >= 10)) {
-HXLINE(7121)								unlock = !(usedPractice);
+HXLINE(7123)							if ((this->boyfriend->holdTimer >= 10)) {
+HXLINE(7123)								unlock = !(usedPractice);
             							}
             							else {
-HXLINE(7121)								unlock = false;
+HXLINE(7123)								unlock = false;
             							}
-HXDLIN(7121)							goto _hx_goto_308;
+HXDLIN(7123)							goto _hx_goto_308;
             						}
             						if (  (_hx_switch_0==HX_("roadkill_enthusiast",15,e2,55,56)) ){
-HXLINE(7118)							unlock = (::backend::Achievements_obj::henchmenDeath >= 50);
-HXDLIN(7118)							goto _hx_goto_308;
+HXLINE(7120)							unlock = (::backend::Achievements_obj::henchmenDeath >= 50);
+HXDLIN(7120)							goto _hx_goto_308;
             						}
             						if (  (_hx_switch_0==HX_("toastie",43,0c,91,5f)) ){
-HXLINE(7130)							bool unlock1;
-HXDLIN(7130)							if (!(::backend::ClientPrefs_obj::data->shaders)) {
-HXLINE(7130)								unlock1 = ::backend::ClientPrefs_obj::data->lowQuality;
+HXLINE(7132)							bool unlock1;
+HXDLIN(7132)							if (!(::backend::ClientPrefs_obj::data->shaders)) {
+HXLINE(7132)								unlock1 = ::backend::ClientPrefs_obj::data->lowQuality;
             							}
             							else {
-HXLINE(7130)								unlock1 = false;
+HXLINE(7132)								unlock1 = false;
             							}
-HXDLIN(7130)							if (unlock1) {
-HXLINE(7130)								unlock = !(::backend::ClientPrefs_obj::data->antialiasing);
+HXDLIN(7132)							if (unlock1) {
+HXLINE(7132)								unlock = !(::backend::ClientPrefs_obj::data->antialiasing);
             							}
             							else {
-HXLINE(7130)								unlock = false;
+HXLINE(7132)								unlock = false;
             							}
-HXDLIN(7130)							goto _hx_goto_308;
+HXDLIN(7132)							goto _hx_goto_308;
             						}
             						if (  (_hx_switch_0==HX_("two_keys",c7,f4,0a,9b)) ){
-HXLINE(7127)							if (!(usedPractice)) {
-HXLINE(7127)								unlock = (this->keysPressed->length <= 2);
+HXLINE(7129)							if (!(usedPractice)) {
+HXLINE(7129)								unlock = (this->keysPressed->length <= 2);
             							}
             							else {
-HXLINE(7127)								unlock = false;
+HXLINE(7129)								unlock = false;
             							}
-HXDLIN(7127)							goto _hx_goto_308;
+HXDLIN(7129)							goto _hx_goto_308;
             						}
             						if (  (_hx_switch_0==HX_("ur_bad",a3,4f,85,aa)) ){
-HXLINE(7112)							if ((this->ratingPercent < ((Float)0.2))) {
-HXLINE(7112)								unlock = !(this->practiceMode);
+HXLINE(7114)							if ((this->ratingPercent < ((Float)0.2))) {
+HXLINE(7114)								unlock = !(this->practiceMode);
             							}
             							else {
-HXLINE(7112)								unlock = false;
+HXLINE(7114)								unlock = false;
             							}
-HXDLIN(7112)							goto _hx_goto_308;
+HXDLIN(7114)							goto _hx_goto_308;
             						}
             						if (  (_hx_switch_0==HX_("ur_good",9f,19,79,8d)) ){
-HXLINE(7115)							if ((this->ratingPercent >= 1)) {
-HXLINE(7115)								unlock = !(usedPractice);
+HXLINE(7117)							if ((this->ratingPercent >= 1)) {
+HXLINE(7117)								unlock = !(usedPractice);
             							}
             							else {
-HXLINE(7115)								unlock = false;
+HXLINE(7117)								unlock = false;
             							}
-HXDLIN(7115)							goto _hx_goto_308;
+HXDLIN(7117)							goto _hx_goto_308;
             						}
             						_hx_goto_308:;
             					}
-HXLINE(7137)					if (unlock) {
-HXLINE(7138)						::backend::Achievements_obj::unlockAchievement(achievementName);
-HXLINE(7139)						return achievementName;
+HXLINE(7139)					if (unlock) {
+HXLINE(7140)						::backend::Achievements_obj::unlockAchievement(achievementName);
+HXLINE(7141)						return achievementName;
             					}
             				}
             			}
             		}
-HXLINE(7143)		return null();
+HXLINE(7145)		return null();
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC1(PlayState_obj,checkForAchievement,return )
 
  ::flixel::addons::display::FlxRuntimeShader PlayState_obj::createRuntimeShader(::String name){
-            	HX_GC_STACKFRAME(&_hx_pos_801e532e222627de_7150_createRuntimeShader)
-HXLINE(7151)		if (!(::backend::ClientPrefs_obj::data->shaders)) {
-HXLINE(7151)			return  ::flixel::addons::display::FlxRuntimeShader_obj::__alloc( HX_CTX ,null(),null(),null());
+            	HX_GC_STACKFRAME(&_hx_pos_801e532e222627de_7152_createRuntimeShader)
+HXLINE(7153)		if (!(::backend::ClientPrefs_obj::data->shaders)) {
+HXLINE(7153)			return  ::flixel::addons::display::FlxRuntimeShader_obj::__alloc( HX_CTX ,null(),null(),null());
             		}
-HXLINE(7154)		bool _hx_tmp;
-HXDLIN(7154)		if (!(this->runtimeShaders->exists(name))) {
-HXLINE(7154)			_hx_tmp = !(this->initLuaShader(name,null()));
+HXLINE(7156)		bool _hx_tmp;
+HXDLIN(7156)		if (!(this->runtimeShaders->exists(name))) {
+HXLINE(7156)			_hx_tmp = !(this->initLuaShader(name,null()));
             		}
             		else {
-HXLINE(7154)			_hx_tmp = false;
+HXLINE(7156)			_hx_tmp = false;
             		}
-HXDLIN(7154)		if (_hx_tmp) {
-HXLINE(7157)			return  ::flixel::addons::display::FlxRuntimeShader_obj::__alloc( HX_CTX ,null(),null(),null());
+HXDLIN(7156)		if (_hx_tmp) {
+HXLINE(7159)			return  ::flixel::addons::display::FlxRuntimeShader_obj::__alloc( HX_CTX ,null(),null(),null());
             		}
-HXLINE(7160)		::Array< ::String > arr = ( (::Array< ::String >)(this->runtimeShaders->get(name)) );
-HXLINE(7161)		return  ::flixel::addons::display::FlxRuntimeShader_obj::__alloc( HX_CTX ,arr->__get(0),arr->__get(1),null());
+HXLINE(7162)		::Array< ::String > arr = ( (::Array< ::String >)(this->runtimeShaders->get(name)) );
+HXLINE(7163)		return  ::flixel::addons::display::FlxRuntimeShader_obj::__alloc( HX_CTX ,arr->__get(0),arr->__get(1),null());
             	}
 
 
@@ -14149,76 +14153,76 @@ HX_DEFINE_DYNAMIC_FUNC1(PlayState_obj,createRuntimeShader,return )
 bool PlayState_obj::initLuaShader(::String name, ::Dynamic __o_glslVersion){
             		 ::Dynamic glslVersion = __o_glslVersion;
             		if (::hx::IsNull(__o_glslVersion)) glslVersion = 120;
-            	HX_STACKFRAME(&_hx_pos_801e532e222627de_7169_initLuaShader)
-HXLINE(7170)		if (!(::backend::ClientPrefs_obj::data->shaders)) {
-HXLINE(7170)			return false;
+            	HX_STACKFRAME(&_hx_pos_801e532e222627de_7171_initLuaShader)
+HXLINE(7172)		if (!(::backend::ClientPrefs_obj::data->shaders)) {
+HXLINE(7172)			return false;
             		}
-HXLINE(7173)		if (this->runtimeShaders->exists(name)) {
-HXLINE(7176)			return true;
+HXLINE(7175)		if (this->runtimeShaders->exists(name)) {
+HXLINE(7178)			return true;
             		}
-HXLINE(7179)		::String key = HX_("shaders/",c1,f6,2a,36);
-HXDLIN(7179)		if (::hx::IsNull( key )) {
-HXLINE(7179)			key = HX_("",00,00,00,00);
+HXLINE(7181)		::String key = HX_("shaders/",c1,f6,2a,36);
+HXDLIN(7181)		if (::hx::IsNull( key )) {
+HXLINE(7181)			key = HX_("",00,00,00,00);
             		}
-HXDLIN(7179)		::Array< ::String > foldersToCheck = ::Array_obj< ::String >::__new(1)->init(0,(HX_("mods/",9e,2f,58,0c) + key));
-HXLINE(7180)		bool _hx_tmp;
-HXDLIN(7180)		if (::hx::IsNotNull( ::backend::Mods_obj::currentModDirectory )) {
-HXLINE(7180)			_hx_tmp = (::backend::Mods_obj::currentModDirectory.length > 0);
+HXDLIN(7181)		::Array< ::String > foldersToCheck = ::Array_obj< ::String >::__new(1)->init(0,(HX_("mods/",9e,2f,58,0c) + key));
+HXLINE(7182)		bool _hx_tmp;
+HXDLIN(7182)		if (::hx::IsNotNull( ::backend::Mods_obj::currentModDirectory )) {
+HXLINE(7182)			_hx_tmp = (::backend::Mods_obj::currentModDirectory.length > 0);
             		}
             		else {
-HXLINE(7180)			_hx_tmp = false;
+HXLINE(7182)			_hx_tmp = false;
             		}
-HXDLIN(7180)		if (_hx_tmp) {
-HXLINE(7181)			::String key = (::backend::Mods_obj::currentModDirectory + HX_("/shaders/",f0,3d,7d,f0));
-HXDLIN(7181)			if (::hx::IsNull( key )) {
-HXLINE(7181)				key = HX_("",00,00,00,00);
+HXDLIN(7182)		if (_hx_tmp) {
+HXLINE(7183)			::String key = (::backend::Mods_obj::currentModDirectory + HX_("/shaders/",f0,3d,7d,f0));
+HXDLIN(7183)			if (::hx::IsNull( key )) {
+HXLINE(7183)				key = HX_("",00,00,00,00);
             			}
-HXDLIN(7181)			foldersToCheck->insert(0,(HX_("mods/",9e,2f,58,0c) + key));
+HXDLIN(7183)			foldersToCheck->insert(0,(HX_("mods/",9e,2f,58,0c) + key));
             		}
-HXLINE(7183)		{
-HXLINE(7183)			int _g = 0;
-HXDLIN(7183)			::Array< ::String > _g1 = ::backend::Mods_obj::globalMods;
-HXDLIN(7183)			while((_g < _g1->length)){
-HXLINE(7183)				::String mod = _g1->__get(_g);
-HXDLIN(7183)				_g = (_g + 1);
-HXLINE(7184)				::String key = (mod + HX_("/shaders/",f0,3d,7d,f0));
-HXDLIN(7184)				if (::hx::IsNull( key )) {
-HXLINE(7184)					key = HX_("",00,00,00,00);
+HXLINE(7185)		{
+HXLINE(7185)			int _g = 0;
+HXDLIN(7185)			::Array< ::String > _g1 = ::backend::Mods_obj::globalMods;
+HXDLIN(7185)			while((_g < _g1->length)){
+HXLINE(7185)				::String mod = _g1->__get(_g);
+HXDLIN(7185)				_g = (_g + 1);
+HXLINE(7186)				::String key = (mod + HX_("/shaders/",f0,3d,7d,f0));
+HXDLIN(7186)				if (::hx::IsNull( key )) {
+HXLINE(7186)					key = HX_("",00,00,00,00);
             				}
-HXDLIN(7184)				foldersToCheck->insert(0,(HX_("mods/",9e,2f,58,0c) + key));
+HXDLIN(7186)				foldersToCheck->insert(0,(HX_("mods/",9e,2f,58,0c) + key));
             			}
             		}
-HXLINE(7186)		{
-HXLINE(7186)			int _g2 = 0;
-HXDLIN(7186)			while((_g2 < foldersToCheck->length)){
-HXLINE(7186)				::String folder = foldersToCheck->__get(_g2);
-HXDLIN(7186)				_g2 = (_g2 + 1);
-HXLINE(7188)				if (::sys::FileSystem_obj::exists(folder)) {
-HXLINE(7190)					::String frag = ((folder + name) + HX_(".frag",60,48,31,c0));
-HXLINE(7191)					::String vert = ((folder + name) + HX_(".vert",df,e3,ba,ca));
-HXLINE(7192)					bool found = false;
-HXLINE(7193)					if (::sys::FileSystem_obj::exists(frag)) {
-HXLINE(7195)						frag = ::sys::io::File_obj::getContent(frag);
-HXLINE(7196)						found = true;
+HXLINE(7188)		{
+HXLINE(7188)			int _g2 = 0;
+HXDLIN(7188)			while((_g2 < foldersToCheck->length)){
+HXLINE(7188)				::String folder = foldersToCheck->__get(_g2);
+HXDLIN(7188)				_g2 = (_g2 + 1);
+HXLINE(7190)				if (::sys::FileSystem_obj::exists(folder)) {
+HXLINE(7192)					::String frag = ((folder + name) + HX_(".frag",60,48,31,c0));
+HXLINE(7193)					::String vert = ((folder + name) + HX_(".vert",df,e3,ba,ca));
+HXLINE(7194)					bool found = false;
+HXLINE(7195)					if (::sys::FileSystem_obj::exists(frag)) {
+HXLINE(7197)						frag = ::sys::io::File_obj::getContent(frag);
+HXLINE(7198)						found = true;
             					}
             					else {
-HXLINE(7198)						frag = null();
+HXLINE(7200)						frag = null();
             					}
-HXLINE(7200)					if (::sys::FileSystem_obj::exists(vert)) {
-HXLINE(7202)						vert = ::sys::io::File_obj::getContent(vert);
-HXLINE(7203)						found = true;
+HXLINE(7202)					if (::sys::FileSystem_obj::exists(vert)) {
+HXLINE(7204)						vert = ::sys::io::File_obj::getContent(vert);
+HXLINE(7205)						found = true;
             					}
             					else {
-HXLINE(7205)						vert = null();
+HXLINE(7207)						vert = null();
             					}
-HXLINE(7207)					if (found) {
-HXLINE(7209)						this->runtimeShaders->set(name,::Array_obj< ::String >::__new(2)->init(0,frag)->init(1,vert));
-HXLINE(7211)						return true;
+HXLINE(7209)					if (found) {
+HXLINE(7211)						this->runtimeShaders->set(name,::Array_obj< ::String >::__new(2)->init(0,frag)->init(1,vert));
+HXLINE(7213)						return true;
             					}
             				}
             			}
             		}
-HXLINE(7219)		return false;
+HXLINE(7221)		return false;
             	}
 
 
@@ -14227,85 +14231,85 @@ HX_DEFINE_DYNAMIC_FUNC2(PlayState_obj,initLuaShader,return )
 void PlayState_obj::popupWindow(){
             		HX_BEGIN_LOCAL_FUNC_S1(::hx::LocalFunc,_hx_Closure_0, ::states::PlayState,_gthis) HXARGC(1)
             		void _hx_run( ::flixel::tweens::FlxTween tween){
-            			HX_GC_STACKFRAME(&_hx_pos_801e532e222627de_7277_popupWindow)
-HXLINE(7278)			_gthis->ExpungedWindowCenterPos->set_x(_gthis->expungedOffset->x);
-HXLINE(7279)			_gthis->ExpungedWindowCenterPos->set_y(_gthis->expungedOffset->y);
-HXLINE(7280)			_gthis->expungedMoving = false;
+            			HX_GC_STACKFRAME(&_hx_pos_801e532e222627de_7279_popupWindow)
+HXLINE(7280)			_gthis->ExpungedWindowCenterPos->set_x(_gthis->expungedOffset->x);
+HXLINE(7281)			_gthis->ExpungedWindowCenterPos->set_y(_gthis->expungedOffset->y);
+HXLINE(7282)			_gthis->expungedMoving = false;
             		}
             		HX_END_LOCAL_FUNC1((void))
 
             		HX_BEGIN_LOCAL_FUNC_S0(::hx::LocalFunc,_hx_Closure_1) HXARGC(0)
             		void _hx_run(){
-            			HX_GC_STACKFRAME(&_hx_pos_801e532e222627de_7286_popupWindow)
-HXLINE(7286)			if (::hx::IsNotNull( ::states::PlayState_obj::window )) {
-HXLINE(7288)				::states::PlayState_obj::window->close();
+            			HX_GC_STACKFRAME(&_hx_pos_801e532e222627de_7288_popupWindow)
+HXLINE(7288)			if (::hx::IsNotNull( ::states::PlayState_obj::window )) {
+HXLINE(7290)				::states::PlayState_obj::window->close();
             			}
             		}
             		HX_END_LOCAL_FUNC0((void))
 
-            	HX_GC_STACKFRAME(&_hx_pos_801e532e222627de_7224_popupWindow)
-HXDLIN(7224)		 ::states::PlayState _gthis = ::hx::ObjectPtr<OBJ_>(this);
-HXLINE(7225)		Float screenwidth = ::lime::app::Application_obj::current->_hx___window->get_display()->bounds->width;
-HXLINE(7226)		Float screenheight = ::lime::app::Application_obj::current->_hx___window->get_display()->bounds->height;
-HXLINE(7229)		 ::lime::ui::Window _hx_tmp = ::lime::app::Application_obj::current->_hx___window;
-HXDLIN(7229)		_hx_tmp->set_x(::Std_obj::_hx_int(((screenwidth / ( (Float)(2) )) - ((Float)640.))));
-HXLINE(7230)		 ::lime::ui::Window _hx_tmp1 = ::lime::app::Application_obj::current->_hx___window;
-HXDLIN(7230)		_hx_tmp1->set_y(::Std_obj::_hx_int(((screenheight / ( (Float)(2) )) - ((Float)360.))));
-HXLINE(7231)		::lime::app::Application_obj::current->_hx___window->set_width(1280);
-HXLINE(7232)		::lime::app::Application_obj::current->_hx___window->set_height(720);
-HXLINE(7234)		::states::PlayState_obj::window = ::lime::app::Application_obj::current->createWindow( ::Dynamic(::hx::Anon_obj::Create(5)
+            	HX_GC_STACKFRAME(&_hx_pos_801e532e222627de_7226_popupWindow)
+HXDLIN(7226)		 ::states::PlayState _gthis = ::hx::ObjectPtr<OBJ_>(this);
+HXLINE(7227)		Float screenwidth = ::lime::app::Application_obj::current->_hx___window->get_display()->bounds->width;
+HXLINE(7228)		Float screenheight = ::lime::app::Application_obj::current->_hx___window->get_display()->bounds->height;
+HXLINE(7231)		 ::lime::ui::Window _hx_tmp = ::lime::app::Application_obj::current->_hx___window;
+HXDLIN(7231)		_hx_tmp->set_x(::Std_obj::_hx_int(((screenwidth / ( (Float)(2) )) - ((Float)640.))));
+HXLINE(7232)		 ::lime::ui::Window _hx_tmp1 = ::lime::app::Application_obj::current->_hx___window;
+HXDLIN(7232)		_hx_tmp1->set_y(::Std_obj::_hx_int(((screenheight / ( (Float)(2) )) - ((Float)360.))));
+HXLINE(7233)		::lime::app::Application_obj::current->_hx___window->set_width(1280);
+HXLINE(7234)		::lime::app::Application_obj::current->_hx___window->set_height(720);
+HXLINE(7236)		::states::PlayState_obj::window = ::lime::app::Application_obj::current->createWindow( ::Dynamic(::hx::Anon_obj::Create(5)
             			->setFixed(0,HX_("width",06,b6,62,ca),800)
             			->setFixed(1,HX_("height",e7,07,4c,02),800)
             			->setFixed(2,HX_("title",98,15,3b,10),HX_("Bambi God 2D.dat",8a,c1,12,12))
             			->setFixed(3,HX_("alwaysOnTop",67,4d,53,16),true)
             			->setFixed(4,HX_("borderless",45,46,71,17),true)));
-HXLINE(7242)		::states::PlayState_obj::window->stage->set_color(-1);
-HXLINE(7244)		::states::PlayState_obj::window->stage->addEventListener(HX_("keyDown",a1,69,47,9c),::flixel::FlxG_obj::keys->onKeyDown_dyn(),null(),null(),null());
-HXLINE(7246)		::states::PlayState_obj::window->stage->addEventListener(HX_("keyUp",da,b9,fe,de),::flixel::FlxG_obj::keys->onKeyUp_dyn(),null(),null(),null());
-HXLINE(7247)		::backend::PlatformUtil_obj::getWindowsTransparent(null());
-HXLINE(7249)		this->preDadPos = this->dad->getPosition(null());
-HXLINE(7250)		this->dad->set_x(( (Float)(0) ));
-HXLINE(7251)		this->dad->set_y(( (Float)(0) ));
-HXLINE(7253)		::flixel::FlxG_obj::mouse->set_useSystemCursor(true);
-HXLINE(7255)		this->generateWindowSprite();
-HXLINE(7257)		 ::openfl::display::Sprite _hx_tmp2 = this->expungedScroll;
-HXDLIN(7257)		_hx_tmp2->set_scrollRect( ::openfl::geom::Rectangle_obj::__alloc( HX_CTX ,null(),null(),null(),null()));
-HXLINE(7258)		::states::PlayState_obj::window->stage->addChild(this->expungedScroll);
-HXLINE(7259)		this->expungedScroll->addChild(this->expungedSpr);
-HXLINE(7260)		this->expungedScroll->set_scaleX(((Float)0.5));
-HXLINE(7261)		this->expungedScroll->set_scaleY(((Float)0.5));
-HXLINE(7263)		this->expungedOffset->set_x(( (Float)(::lime::app::Application_obj::current->_hx___window->_hx___x) ));
-HXLINE(7264)		this->expungedOffset->set_y(( (Float)(::lime::app::Application_obj::current->_hx___window->_hx___y) ));
-HXLINE(7266)		this->dad->set_visible(false);
-HXLINE(7268)		int windowX = ::lime::app::Application_obj::current->_hx___window->_hx___x;
-HXDLIN(7268)		Float windowX1 = (windowX + (::lime::app::Application_obj::current->_hx___window->get_display()->bounds->width * ((Float)0.140625)));
-HXLINE(7270)		this->windowSteadyX = windowX1;
-HXLINE(7272)		::flixel::tweens::FlxTween_obj::tween(this->expungedOffset, ::Dynamic(::hx::Anon_obj::Create(1)
+HXLINE(7244)		::states::PlayState_obj::window->stage->set_color(-1);
+HXLINE(7246)		::states::PlayState_obj::window->stage->addEventListener(HX_("keyDown",a1,69,47,9c),::flixel::FlxG_obj::keys->onKeyDown_dyn(),null(),null(),null());
+HXLINE(7248)		::states::PlayState_obj::window->stage->addEventListener(HX_("keyUp",da,b9,fe,de),::flixel::FlxG_obj::keys->onKeyUp_dyn(),null(),null(),null());
+HXLINE(7249)		::backend::PlatformUtil_obj::getWindowsTransparent(null());
+HXLINE(7251)		this->preDadPos = this->dad->getPosition(null());
+HXLINE(7252)		this->dad->set_x(( (Float)(0) ));
+HXLINE(7253)		this->dad->set_y(( (Float)(0) ));
+HXLINE(7255)		::flixel::FlxG_obj::mouse->set_useSystemCursor(true);
+HXLINE(7257)		this->generateWindowSprite();
+HXLINE(7259)		 ::openfl::display::Sprite _hx_tmp2 = this->expungedScroll;
+HXDLIN(7259)		_hx_tmp2->set_scrollRect( ::openfl::geom::Rectangle_obj::__alloc( HX_CTX ,null(),null(),null(),null()));
+HXLINE(7260)		::states::PlayState_obj::window->stage->addChild(this->expungedScroll);
+HXLINE(7261)		this->expungedScroll->addChild(this->expungedSpr);
+HXLINE(7262)		this->expungedScroll->set_scaleX(((Float)0.5));
+HXLINE(7263)		this->expungedScroll->set_scaleY(((Float)0.5));
+HXLINE(7265)		this->expungedOffset->set_x(( (Float)(::lime::app::Application_obj::current->_hx___window->_hx___x) ));
+HXLINE(7266)		this->expungedOffset->set_y(( (Float)(::lime::app::Application_obj::current->_hx___window->_hx___y) ));
+HXLINE(7268)		this->dad->set_visible(false);
+HXLINE(7270)		int windowX = ::lime::app::Application_obj::current->_hx___window->_hx___x;
+HXDLIN(7270)		Float windowX1 = (windowX + (::lime::app::Application_obj::current->_hx___window->get_display()->bounds->width * ((Float)0.140625)));
+HXLINE(7272)		this->windowSteadyX = windowX1;
+HXLINE(7274)		::flixel::tweens::FlxTween_obj::tween(this->expungedOffset, ::Dynamic(::hx::Anon_obj::Create(1)
             			->setFixed(0,HX_("x",78,00,00,00),-20)),2, ::Dynamic(::hx::Anon_obj::Create(1)
             			->setFixed(0,HX_("ease",ee,8b,0c,43),::flixel::tweens::FlxEase_obj::elasticOut_dyn())));
-HXLINE(7274)		::flixel::tweens::FlxTween_obj::tween(::lime::app::Application_obj::current->_hx___window, ::Dynamic(::hx::Anon_obj::Create(1)
+HXLINE(7276)		::flixel::tweens::FlxTween_obj::tween(::lime::app::Application_obj::current->_hx___window, ::Dynamic(::hx::Anon_obj::Create(1)
             			->setFixed(0,HX_("x",78,00,00,00),windowX1)),((Float)2.2), ::Dynamic(::hx::Anon_obj::Create(2)
             			->setFixed(0,HX_("ease",ee,8b,0c,43),::flixel::tweens::FlxEase_obj::elasticOut_dyn())
             			->setFixed(1,HX_("onComplete",f8,d4,7e,5d), ::Dynamic(new _hx_Closure_0(_gthis)))));
-HXLINE(7284)		::lime::app::Application_obj::current->_hx___window->onClose->add( ::Dynamic(new _hx_Closure_1()),false,100);
-HXLINE(7292)		::lime::app::Application_obj::current->_hx___window->focus();
-HXLINE(7293)		this->expungedWindowMode = true;
-HXLINE(7296)		this->lastFrame = this->dad->_frame;
+HXLINE(7286)		::lime::app::Application_obj::current->_hx___window->onClose->add( ::Dynamic(new _hx_Closure_1()),false,100);
+HXLINE(7294)		::lime::app::Application_obj::current->_hx___window->focus();
+HXLINE(7295)		this->expungedWindowMode = true;
+HXLINE(7298)		this->lastFrame = this->dad->_frame;
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC0(PlayState_obj,popupWindow,(void))
 
 void PlayState_obj::generateWindowSprite(){
-            	HX_GC_STACKFRAME(&_hx_pos_801e532e222627de_7300_generateWindowSprite)
-HXLINE(7301)		 ::openfl::geom::Matrix m =  ::openfl::geom::Matrix_obj::__alloc( HX_CTX ,null(),null(),null(),null(),null(),null());
-HXLINE(7302)		m->translate(( (Float)(0) ),( (Float)(0) ));
-HXLINE(7303)		 ::openfl::display::Graphics _hx_tmp = this->expungedSpr->get_graphics();
-HXDLIN(7303)		_hx_tmp->beginBitmapFill(this->dad->get_pixels(),m,null(),null());
-HXLINE(7304)		 ::openfl::display::Graphics _hx_tmp1 = this->expungedSpr->get_graphics();
-HXDLIN(7304)		int _hx_tmp2 = this->dad->get_pixels()->width;
-HXDLIN(7304)		_hx_tmp1->drawRect(( (Float)(0) ),( (Float)(0) ),( (Float)(_hx_tmp2) ),( (Float)(this->dad->get_pixels()->height) ));
-HXLINE(7305)		this->expungedSpr->get_graphics()->endFill();
+            	HX_GC_STACKFRAME(&_hx_pos_801e532e222627de_7302_generateWindowSprite)
+HXLINE(7303)		 ::openfl::geom::Matrix m =  ::openfl::geom::Matrix_obj::__alloc( HX_CTX ,null(),null(),null(),null(),null(),null());
+HXLINE(7304)		m->translate(( (Float)(0) ),( (Float)(0) ));
+HXLINE(7305)		 ::openfl::display::Graphics _hx_tmp = this->expungedSpr->get_graphics();
+HXDLIN(7305)		_hx_tmp->beginBitmapFill(this->dad->get_pixels(),m,null(),null());
+HXLINE(7306)		 ::openfl::display::Graphics _hx_tmp1 = this->expungedSpr->get_graphics();
+HXDLIN(7306)		int _hx_tmp2 = this->dad->get_pixels()->width;
+HXDLIN(7306)		_hx_tmp1->drawRect(( (Float)(0) ),( (Float)(0) ),( (Float)(_hx_tmp2) ),( (Float)(this->dad->get_pixels()->height) ));
+HXLINE(7307)		this->expungedSpr->get_graphics()->endFill();
             	}
 
 

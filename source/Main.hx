@@ -1,5 +1,9 @@
 package;
+
+import flixel.graphics.FlxGraphic;
+
 import flixel.FlxGame;
+import flixel.FlxState;
 import openfl.Assets;
 import openfl.Lib;
 import openfl.display.FPS;
@@ -8,7 +12,6 @@ import openfl.events.Event;
 import openfl.display.StageScaleMode;
 import lime.app.Application;
 import states.TitleState;
-import states.TitleStatee;
 
 import flixel.graphics.FlxGraphic;
 import flixel.FlxG;
@@ -29,7 +32,7 @@ class Main extends Sprite
 {
 	var gameWidth:Int = 1280; // Width of the game in pixels (might be less / more in actual pixels depending on your zoom).
 	var gameHeight:Int = 720; // Height of the game in pixels (might be less / more in actual pixels depending on your zoom).
-	var initialState:Class<FlxState> = TitleStatee; // The FlxState the game starts with.
+	var initialState:Class<FlxState> = TitleState; // The FlxState the game starts with.
 	var zoom:Float = -1; // If -1, zoom is automatically calculated to fit the window dimensions.
 	var framerate:Int = 60; // How many frames per second the game should run at.
 	var skipSplash:Bool = true; // Whether to skip the flixel splash screen that appears in release mode.
@@ -154,7 +157,7 @@ class Main extends Sprite
 		dateNow = dateNow.replace(" ", "_");
 		dateNow = dateNow.replace(":", "'");
 
-		path = "./crash/" + "PsychEngine_" + dateNow + ".txt";
+		path = "./crash/" + "Corn engine_" + dateNow + ".txt";
 
 		for (stackItem in callStack)
 		{

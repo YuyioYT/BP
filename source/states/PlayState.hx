@@ -4851,7 +4851,7 @@ function hideshit() // basically a camHUD.visible = false; except it doesnt fuck
 					switch(dad.curCharacter)
 					{
 						case 'bombu-v2','bombu','bambi-scaryooo', 'gary', 'bamburg', 'bamburg-player':
-							zoomAdd	= -0.5; 
+							zoomAdd	= -0.05; 
 						case 'bambi-god-2', 'baiburg', 'crusturn', 'hell-1', 'hell-2', 'bambi-hell', '404','404-old':
 							zoomAdd	= -0.15;
 						case 'bambi-3d','god-expunged-1-new', 'god-expunged-1', 'bambi-unfair', 'expunged', 'bambi-piss-3d', 'crimson-dave', 'crimson-bambi':
@@ -6156,8 +6156,10 @@ function hideshit() // basically a camHUD.visible = false; except it doesnt fuck
 						camZoomingMult = 1;
 					case 624 | 880:
 						defaultCamZoom += 0.2;
-						cinematicBars(((Conductor.stepCrochet * 13) / 1000), 400);
+						cinematicBars(((Conductor.stepCrochet * 6.6) / 1000), 400);
 						tutorialTxt.alpha = 1;
+						tutorialTxt.text = 'HOLY';
+					case 632|888:
 						tutorialTxt.text = 'HOLY SHIT';
 					case 640 | 896:
 						tutorialTxt.alpha = 0;

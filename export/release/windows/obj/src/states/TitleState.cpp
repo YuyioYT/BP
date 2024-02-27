@@ -405,14 +405,14 @@ HXLINE(  85)					int _g = 0;
 HXDLIN(  85)					::String path = HX_("modsList.txt",f1,ca,08,ac);
 HXDLIN(  85)					::String daList = null();
 HXDLIN(  85)					::Array< ::String > formatted = path.split(HX_(":",3a,00,00,00));
-HXLINE(  73)					path = formatted->__get((formatted->length - 1));
+HXLINE(  88)					path = formatted->__get((formatted->length - 1));
 HXLINE(  85)					if (::sys::FileSystem_obj::exists(path)) {
-HXLINE(  74)						daList = ::sys::io::File_obj::getContent(path);
+HXLINE(  89)						daList = ::sys::io::File_obj::getContent(path);
             					}
 HXLINE(  85)					::Array< ::String > _g1;
 HXDLIN(  85)					if (::hx::IsNotNull( daList )) {
 HXLINE(  85)						::Array< ::String > daList1 = ::Array_obj< ::String >::__new(0);
-HXLINE( 145)						daList1 = ::StringTools_obj::trim(daList).split(HX_("\n",0a,00,00,00));
+HXLINE( 160)						daList1 = ::StringTools_obj::trim(daList).split(HX_("\n",0a,00,00,00));
 HXLINE(  85)						{
 HXLINE(  85)							int _g = 0;
 HXDLIN(  85)							int _g2 = daList1->length;

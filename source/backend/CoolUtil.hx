@@ -41,6 +41,21 @@ class CoolUtil
 		{
 			return difficulties[PlayState.storyDifficulty].toUpperCase();
 		}
+	
+
+		public static function getSizeLabel(num:UInt):String{
+			var size:Float = num;
+			var data = 0;
+			var dataTexts = ["B", "KB", "MB", "GB", "TB", "PB"]; // IS THAT A QT MOD REFERENCE!!!??!!111!!11???
+			while(size > 1024 && data < dataTexts.length - 1) {
+			  data++;
+			  size = size / 1024;
+			}
+			
+			size = Math.round(size * 100) / 100;
+			return size + " " + dataTexts[data];
+		}
+	
 
 	public static function getMinAndMax(value1:Float, value2:Float):Array<Float>
 		{

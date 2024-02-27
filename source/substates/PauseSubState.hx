@@ -1,5 +1,6 @@
 package substates;
 
+import flixel.addons.display.FlxBackdrop;
 import backend.WeekData;
 import backend.Highscore;
 import backend.Song;
@@ -20,13 +21,14 @@ class PauseSubState extends MusicBeatSubstate
 	var menuItemsOG:Array<String> = ['Resume', 'Restart Song', 'Change Difficulty', 'Options', 'Exit to menu'];
 	var difficultyChoices = [];
 	var curSelected:Int = 0;
-
-
+	
 	var pauseMusic:FlxSound;
 	var practiceText:FlxText;
 	var skipTimeText:FlxText;
 	var skipTimeTracker:Alphabet;
 	var curTime:Float = Math.max(0, Conductor.songPosition);
+
+	var bg:FlxSprite;
 
 	var missingTextBG:FlxSprite;
 	var missingText:FlxText;
@@ -75,8 +77,15 @@ class PauseSubState extends MusicBeatSubstate
 		var typografy: String;
 		typografy = 'comic-sans.ttf';
 
-		var bg:FlxSprite = new FlxSprite().makeGraphic(FlxG.width, FlxG.height, FlxColor.BLACK);
+		var backBg:FlxSprite = new FlxSprite();
+		backBg.makeGraphic(FlxG.width + 1, FlxG.height + 1, FlxColor.BLACK);
+		backBg.alpha = 0;
+		backBg.scrollFactor.set();
+		add(backBg);
+
+		bg = new FlxBackdrop(Paths.image('checkeredBG'), XY);
 		bg.alpha = 0;
+		bg.antialiasing = true;
 		bg.scrollFactor.set();
 		add(bg);
 
@@ -158,6 +167,10 @@ class PauseSubState extends MusicBeatSubstate
 	var cantUnpause:Float = 0.1;
 	override function update(elapsed:Float)
 	{
+		var scrollSpeed:Float = 50;
+		bg.x -= scrollSpeed * elapsed;
+		bg.y -= scrollSpeed * elapsed;
+		
 		cantUnpause -= elapsed;
 		if (pauseMusic.volume < 0.5)
 			pauseMusic.volume += 0.01 * elapsed;

@@ -1,36 +1,36 @@
 {
 	"animations": [
 		{
-			"loop": true,
 			"offsets": [
 				-230,
 				190
 			],
-			"anim": "idle",
+			"loop": true,
 			"fps": 12,
-			"name": "PCMANEVILNEW idle",
-			"indices": []
+			"anim": "idle",
+			"indices": [],
+			"name": "PCMANEVILNEW idle"
 		},
 		{
 			"offsets": [
 				-220,
-				40
+				170
 			],
-			"loop": true,
+			"indices": [],
 			"fps": 12,
 			"anim": "singDOWN",
-			"indices": [],
+			"loop": false,
 			"name": "PCMANEVILNEW down"
 		},
 		{
 			"offsets": [
-				-160,
-				220
+				-170,
+				210
 			],
-			"loop": true,
+			"indices": [],
 			"fps": 12,
 			"anim": "singRIGHT",
-			"indices": [],
+			"loop": false,
 			"name": "PCMANEVILNEW left"
 		},
 		{
@@ -38,10 +38,10 @@
 				-310,
 				230
 			],
-			"loop": true,
+			"indices": [],
 			"fps": 12,
 			"anim": "singLEFT",
-			"indices": [],
+			"loop": false,
 			"name": "PCMANEVILNEW right"
 		},
 		{
@@ -49,10 +49,10 @@
 				-210,
 				180
 			],
-			"loop": true,
+			"indices": [],
 			"fps": 12,
 			"anim": "singUP",
-			"indices": [],
+			"loop": false,
 			"name": "PCMANEVILNEW up"
 		}
 	],

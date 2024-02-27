@@ -293,11 +293,13 @@
    <depend name="include/flixel/FlxSprite.h"/>
    <depend name="include/flixel/FlxState.h"/>
    <depend name="include/flixel/FlxSubState.h"/>
+   <depend name="include/flixel/addons/display/FlxBackdrop.h"/>
    <depend name="include/flixel/addons/transition/FlxTransitionableState.h"/>
    <depend name="include/flixel/addons/transition/TransitionData.h"/>
    <depend name="include/flixel/addons/ui/FlxUIState.h"/>
    <depend name="include/flixel/addons/ui/interfaces/IEventGetter.h"/>
    <depend name="include/flixel/addons/ui/interfaces/IFlxUIState.h"/>
+   <depend name="include/flixel/graphics/FlxGraphic.h"/>
    <depend name="include/flixel/graphics/tile/FlxGraphicsShader.h"/>
    <depend name="include/flixel/group/FlxTypedGroup.h"/>
    <depend name="include/flixel/group/FlxTypedSpriteGroup.h"/>

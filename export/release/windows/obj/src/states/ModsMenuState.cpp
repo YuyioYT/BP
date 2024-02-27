@@ -471,14 +471,14 @@ HXLINE(  81)			int _g = 0;
 HXDLIN(  81)			::String path = HX_("modsList.txt",f1,ca,08,ac);
 HXDLIN(  81)			::String daList = null();
 HXDLIN(  81)			::Array< ::String > formatted = path.split(HX_(":",3a,00,00,00));
-HXLINE(  73)			path = formatted->__get((formatted->length - 1));
+HXLINE(  88)			path = formatted->__get((formatted->length - 1));
 HXLINE(  81)			if (::sys::FileSystem_obj::exists(path)) {
-HXLINE(  74)				daList = ::sys::io::File_obj::getContent(path);
+HXLINE(  89)				daList = ::sys::io::File_obj::getContent(path);
             			}
 HXLINE(  81)			::Array< ::String > _g1;
 HXDLIN(  81)			if (::hx::IsNotNull( daList )) {
 HXLINE(  81)				::Array< ::String > daList1 = ::Array_obj< ::String >::__new(0);
-HXLINE( 145)				daList1 = ::StringTools_obj::trim(daList).split(HX_("\n",0a,00,00,00));
+HXLINE( 160)				daList1 = ::StringTools_obj::trim(daList).split(HX_("\n",0a,00,00,00));
 HXLINE(  81)				{
 HXLINE(  81)					int _g = 0;
 HXDLIN(  81)					int _g2 = daList1->length;
@@ -843,14 +843,14 @@ HXLINE( 407)					int _g = 0;
 HXDLIN( 407)					::String path = HX_("modsList.txt",f1,ca,08,ac);
 HXDLIN( 407)					::String daList = null();
 HXDLIN( 407)					::Array< ::String > formatted = path.split(HX_(":",3a,00,00,00));
-HXLINE(  73)					path = formatted->__get((formatted->length - 1));
+HXLINE(  88)					path = formatted->__get((formatted->length - 1));
 HXLINE( 407)					if (::sys::FileSystem_obj::exists(path)) {
-HXLINE(  74)						daList = ::sys::io::File_obj::getContent(path);
+HXLINE(  89)						daList = ::sys::io::File_obj::getContent(path);
             					}
 HXLINE( 407)					::Array< ::String > _g1;
 HXDLIN( 407)					if (::hx::IsNotNull( daList )) {
 HXLINE( 407)						::Array< ::String > daList1 = ::Array_obj< ::String >::__new(0);
-HXLINE( 145)						daList1 = ::StringTools_obj::trim(daList).split(HX_("\n",0a,00,00,00));
+HXLINE( 160)						daList1 = ::StringTools_obj::trim(daList).split(HX_("\n",0a,00,00,00));
 HXLINE( 407)						{
 HXLINE( 407)							int _g = 0;
 HXDLIN( 407)							int _g2 = daList1->length;

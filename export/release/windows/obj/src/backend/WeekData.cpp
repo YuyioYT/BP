@@ -83,11 +83,12 @@ HX_LOCAL_STACK_FRAME(_hx_pos_40e6927fd11a022a_191_reloadWeekFiles,"backend.WeekD
 static const ::String _hx_array_data_7c17a7f8_27[] = {
 	HX_("mods/",9e,2f,58,0c),HX_("assets/",4c,2a,dc,36),
 };
-HX_LOCAL_STACK_FRAME(_hx_pos_40e6927fd11a022a_258_addWeek,"backend.WeekData","addWeek",0x92b7843f,"backend.WeekData.addWeek","backend/WeekData.hx",258,0x34ba5365)
-HX_LOCAL_STACK_FRAME(_hx_pos_40e6927fd11a022a_279_getWeekFile,"backend.WeekData","getWeekFile",0x083495d0,"backend.WeekData.getWeekFile","backend/WeekData.hx",279,0x34ba5365)
-HX_LOCAL_STACK_FRAME(_hx_pos_40e6927fd11a022a_301_getWeekFileName,"backend.WeekData","getWeekFileName",0xddd45c3b,"backend.WeekData.getWeekFileName","backend/WeekData.hx",301,0x34ba5365)
-HX_LOCAL_STACK_FRAME(_hx_pos_40e6927fd11a022a_306_getCurrentWeek,"backend.WeekData","getCurrentWeek",0xeba04f8d,"backend.WeekData.getCurrentWeek","backend/WeekData.hx",306,0x34ba5365)
-HX_LOCAL_STACK_FRAME(_hx_pos_40e6927fd11a022a_309_setDirectoryFromWeek,"backend.WeekData","setDirectoryFromWeek",0x52a1f03f,"backend.WeekData.setDirectoryFromWeek","backend/WeekData.hx",309,0x34ba5365)
+HX_LOCAL_STACK_FRAME(_hx_pos_40e6927fd11a022a_257_loadTheFirstEnabledMod,"backend.WeekData","loadTheFirstEnabledMod",0xed62e11c,"backend.WeekData.loadTheFirstEnabledMod","backend/WeekData.hx",257,0x34ba5365)
+HX_LOCAL_STACK_FRAME(_hx_pos_40e6927fd11a022a_280_addWeek,"backend.WeekData","addWeek",0x92b7843f,"backend.WeekData.addWeek","backend/WeekData.hx",280,0x34ba5365)
+HX_LOCAL_STACK_FRAME(_hx_pos_40e6927fd11a022a_301_getWeekFile,"backend.WeekData","getWeekFile",0x083495d0,"backend.WeekData.getWeekFile","backend/WeekData.hx",301,0x34ba5365)
+HX_LOCAL_STACK_FRAME(_hx_pos_40e6927fd11a022a_323_getWeekFileName,"backend.WeekData","getWeekFileName",0xddd45c3b,"backend.WeekData.getWeekFileName","backend/WeekData.hx",323,0x34ba5365)
+HX_LOCAL_STACK_FRAME(_hx_pos_40e6927fd11a022a_328_getCurrentWeek,"backend.WeekData","getCurrentWeek",0xeba04f8d,"backend.WeekData.getCurrentWeek","backend/WeekData.hx",328,0x34ba5365)
+HX_LOCAL_STACK_FRAME(_hx_pos_40e6927fd11a022a_331_setDirectoryFromWeek,"backend.WeekData","setDirectoryFromWeek",0x52a1f03f,"backend.WeekData.setDirectoryFromWeek","backend/WeekData.hx",331,0x34ba5365)
 HX_LOCAL_STACK_FRAME(_hx_pos_40e6927fd11a022a_31_boot,"backend.WeekData","boot",0xcfd6a868,"backend.WeekData.boot","backend/WeekData.hx",31,0x34ba5365)
 HX_LOCAL_STACK_FRAME(_hx_pos_40e6927fd11a022a_32_boot,"backend.WeekData","boot",0xcfd6a868,"backend.WeekData.boot","backend/WeekData.hx",32,0x34ba5365)
 namespace backend{
@@ -430,14 +431,14 @@ HXLINE( 198)				int _g = 0;
 HXDLIN( 198)				::String path = HX_("modsList.txt",f1,ca,08,ac);
 HXDLIN( 198)				::String daList = null();
 HXDLIN( 198)				::Array< ::String > formatted = path.split(HX_(":",3a,00,00,00));
-HXLINE(  73)				path = formatted->__get((formatted->length - 1));
+HXLINE(  88)				path = formatted->__get((formatted->length - 1));
 HXLINE( 198)				if (::sys::FileSystem_obj::exists(path)) {
-HXLINE(  74)					daList = ::sys::io::File_obj::getContent(path);
+HXLINE(  89)					daList = ::sys::io::File_obj::getContent(path);
             				}
 HXLINE( 198)				::Array< ::String > _g1;
 HXDLIN( 198)				if (::hx::IsNotNull( daList )) {
 HXLINE( 198)					::Array< ::String > daList1 = ::Array_obj< ::String >::__new(0);
-HXLINE( 145)					daList1 = ::StringTools_obj::trim(daList).split(HX_("\n",0a,00,00,00));
+HXLINE( 160)					daList1 = ::StringTools_obj::trim(daList).split(HX_("\n",0a,00,00,00));
 HXLINE( 198)					{
 HXLINE( 198)						int _g = 0;
 HXDLIN( 198)						int _g2 = daList1->length;
@@ -496,14 +497,14 @@ HXLINE( 205)			file = HX_("",00,00,00,00);
 HXDLIN( 205)		::String path = (HX_("assets/",4c,2a,dc,36) + file);
 HXDLIN( 205)		::String daList = null();
 HXDLIN( 205)		::Array< ::String > formatted = path.split(HX_(":",3a,00,00,00));
-HXLINE(  73)		path = formatted->__get((formatted->length - 1));
+HXLINE(  88)		path = formatted->__get((formatted->length - 1));
 HXLINE( 205)		if (::sys::FileSystem_obj::exists(path)) {
-HXLINE(  74)			daList = ::sys::io::File_obj::getContent(path);
+HXLINE(  89)			daList = ::sys::io::File_obj::getContent(path);
             		}
 HXLINE( 205)		::Array< ::String > sexList;
 HXDLIN( 205)		if (::hx::IsNotNull( daList )) {
 HXLINE( 205)			::Array< ::String > daList1 = ::Array_obj< ::String >::__new(0);
-HXLINE( 145)			daList1 = ::StringTools_obj::trim(daList).split(HX_("\n",0a,00,00,00));
+HXLINE( 160)			daList1 = ::StringTools_obj::trim(daList).split(HX_("\n",0a,00,00,00));
 HXLINE( 205)			{
 HXLINE( 205)				int _g = 0;
 HXDLIN( 205)				int _g1 = daList1->length;
@@ -588,14 +589,14 @@ HXLINE( 232)				if (::sys::FileSystem_obj::exists(directory)) {
 HXLINE( 233)					::String path = (directory + HX_("weekList.txt",74,12,92,5d));
 HXDLIN( 233)					::String daList = null();
 HXDLIN( 233)					::Array< ::String > formatted = path.split(HX_(":",3a,00,00,00));
-HXLINE(  73)					path = formatted->__get((formatted->length - 1));
+HXLINE(  88)					path = formatted->__get((formatted->length - 1));
 HXLINE( 233)					if (::sys::FileSystem_obj::exists(path)) {
-HXLINE(  74)						daList = ::sys::io::File_obj::getContent(path);
+HXLINE(  89)						daList = ::sys::io::File_obj::getContent(path);
             					}
 HXLINE( 233)					::Array< ::String > listOfWeeks;
 HXDLIN( 233)					if (::hx::IsNotNull( daList )) {
 HXLINE( 233)						::Array< ::String > daList1 = ::Array_obj< ::String >::__new(0);
-HXLINE( 145)						daList1 = ::StringTools_obj::trim(daList).split(HX_("\n",0a,00,00,00));
+HXLINE( 160)						daList1 = ::StringTools_obj::trim(daList).split(HX_("\n",0a,00,00,00));
 HXLINE( 233)						{
 HXLINE( 233)							int _g = 0;
 HXDLIN( 233)							int _g1 = daList1->length;
@@ -649,37 +650,79 @@ HXDLIN( 248)								::backend::WeekData_obj::addWeek(_hx_tmp,path,directories->_
 
 STATIC_HX_DEFINE_DYNAMIC_FUNC1(WeekData_obj,reloadWeekFiles,(void))
 
-void WeekData_obj::addWeek(::String weekToCheck,::String path,::String directory,int i,int originalLength){
-            	HX_GC_STACKFRAME(&_hx_pos_40e6927fd11a022a_258_addWeek)
-HXDLIN( 258)		if (!(::backend::WeekData_obj::weeksLoaded->exists(weekToCheck))) {
-HXLINE( 260)			 ::Dynamic week = ::backend::WeekData_obj::getWeekFile(path);
-HXLINE( 261)			if (::hx::IsNotNull( week )) {
-HXLINE( 263)				 ::backend::WeekData weekFile =  ::backend::WeekData_obj::__alloc( HX_CTX ,week,weekToCheck);
-HXLINE( 264)				if ((i >= originalLength)) {
-HXLINE( 267)					weekFile->folder = directory.substring(HX_("mods/",9e,2f,58,0c).length,(directory.length - 1));
+void WeekData_obj::loadTheFirstEnabledMod(){
+            	HX_STACKFRAME(&_hx_pos_40e6927fd11a022a_257_loadTheFirstEnabledMod)
+HXLINE( 258)		::backend::Paths_obj::currentModDirectory = HX_("",00,00,00,00);
+HXLINE( 261)		if (::sys::FileSystem_obj::exists(HX_("modsList.txt",f1,ca,08,ac))) {
+HXLINE( 263)			::Array< ::String > daList = ::Array_obj< ::String >::__new(0);
+HXDLIN( 263)			daList = ::StringTools_obj::trim(::sys::io::File_obj::getContent(HX_("modsList.txt",f1,ca,08,ac))).split(HX_("\n",0a,00,00,00));
+HXDLIN( 263)			{
+HXLINE( 263)				int _g = 0;
+HXDLIN( 263)				int _g1 = daList->length;
+HXDLIN( 263)				while((_g < _g1)){
+HXLINE( 263)					_g = (_g + 1);
+HXDLIN( 263)					int i = (_g - 1);
+HXDLIN( 263)					daList[i] = ::StringTools_obj::trim(daList->__get(i));
             				}
-HXLINE( 270)				bool _hx_tmp;
-HXDLIN( 270)				bool _hx_tmp1;
-HXDLIN( 270)				if (::states::PlayState_obj::isStoryMode) {
-HXLINE( 270)					_hx_tmp1 = !(weekFile->hideStoryMode);
-            				}
-            				else {
-HXLINE( 270)					_hx_tmp1 = false;
-            				}
-HXDLIN( 270)				if (!(_hx_tmp1)) {
-HXLINE( 270)					if (!(::states::PlayState_obj::isStoryMode)) {
-HXLINE( 270)						_hx_tmp = !(weekFile->hideFreeplay);
+            			}
+HXDLIN( 263)			::Array< ::String > list = daList;
+HXLINE( 264)			bool foundTheTop = false;
+HXLINE( 265)			{
+HXLINE( 265)				int _g2 = 0;
+HXDLIN( 265)				while((_g2 < list->length)){
+HXLINE( 265)					::String i = list->__get(_g2);
+HXDLIN( 265)					_g2 = (_g2 + 1);
+HXLINE( 267)					::Array< ::String > dat = i.split(HX_("|",7c,00,00,00));
+HXLINE( 268)					bool _hx_tmp;
+HXDLIN( 268)					if ((dat->__get(1) == HX_("1",31,00,00,00))) {
+HXLINE( 268)						_hx_tmp = !(foundTheTop);
             					}
             					else {
-HXLINE( 270)						_hx_tmp = false;
+HXLINE( 268)						_hx_tmp = false;
+            					}
+HXDLIN( 268)					if (_hx_tmp) {
+HXLINE( 270)						foundTheTop = true;
+HXLINE( 271)						::backend::Paths_obj::currentModDirectory = dat->__get(0);
+            					}
+            				}
+            			}
+            		}
+            	}
+
+
+STATIC_HX_DEFINE_DYNAMIC_FUNC0(WeekData_obj,loadTheFirstEnabledMod,(void))
+
+void WeekData_obj::addWeek(::String weekToCheck,::String path,::String directory,int i,int originalLength){
+            	HX_GC_STACKFRAME(&_hx_pos_40e6927fd11a022a_280_addWeek)
+HXDLIN( 280)		if (!(::backend::WeekData_obj::weeksLoaded->exists(weekToCheck))) {
+HXLINE( 282)			 ::Dynamic week = ::backend::WeekData_obj::getWeekFile(path);
+HXLINE( 283)			if (::hx::IsNotNull( week )) {
+HXLINE( 285)				 ::backend::WeekData weekFile =  ::backend::WeekData_obj::__alloc( HX_CTX ,week,weekToCheck);
+HXLINE( 286)				if ((i >= originalLength)) {
+HXLINE( 289)					weekFile->folder = directory.substring(HX_("mods/",9e,2f,58,0c).length,(directory.length - 1));
+            				}
+HXLINE( 292)				bool _hx_tmp;
+HXDLIN( 292)				bool _hx_tmp1;
+HXDLIN( 292)				if (::states::PlayState_obj::isStoryMode) {
+HXLINE( 292)					_hx_tmp1 = !(weekFile->hideStoryMode);
+            				}
+            				else {
+HXLINE( 292)					_hx_tmp1 = false;
+            				}
+HXDLIN( 292)				if (!(_hx_tmp1)) {
+HXLINE( 292)					if (!(::states::PlayState_obj::isStoryMode)) {
+HXLINE( 292)						_hx_tmp = !(weekFile->hideFreeplay);
+            					}
+            					else {
+HXLINE( 292)						_hx_tmp = false;
             					}
             				}
             				else {
-HXLINE( 270)					_hx_tmp = true;
+HXLINE( 292)					_hx_tmp = true;
             				}
-HXDLIN( 270)				if (_hx_tmp) {
-HXLINE( 272)					::backend::WeekData_obj::weeksLoaded->set(weekToCheck,weekFile);
-HXLINE( 273)					::backend::WeekData_obj::weeksList->push(weekToCheck);
+HXDLIN( 292)				if (_hx_tmp) {
+HXLINE( 294)					::backend::WeekData_obj::weeksLoaded->set(weekToCheck,weekFile);
+HXLINE( 295)					::backend::WeekData_obj::weeksList->push(weekToCheck);
             				}
             			}
             		}
@@ -689,62 +732,62 @@ HXLINE( 273)					::backend::WeekData_obj::weeksList->push(weekToCheck);
 STATIC_HX_DEFINE_DYNAMIC_FUNC5(WeekData_obj,addWeek,(void))
 
  ::Dynamic WeekData_obj::getWeekFile(::String path){
-            	HX_STACKFRAME(&_hx_pos_40e6927fd11a022a_279_getWeekFile)
-HXLINE( 280)		::String rawJson = null();
-HXLINE( 282)		if (::sys::FileSystem_obj::exists(path)) {
-HXLINE( 283)			rawJson = ::sys::io::File_obj::getContent(path);
+            	HX_STACKFRAME(&_hx_pos_40e6927fd11a022a_301_getWeekFile)
+HXLINE( 302)		::String rawJson = null();
+HXLINE( 304)		if (::sys::FileSystem_obj::exists(path)) {
+HXLINE( 305)			rawJson = ::sys::io::File_obj::getContent(path);
             		}
-HXLINE( 291)		bool _hx_tmp;
-HXDLIN( 291)		if (::hx::IsNotNull( rawJson )) {
-HXLINE( 291)			_hx_tmp = (rawJson.length > 0);
+HXLINE( 313)		bool _hx_tmp;
+HXDLIN( 313)		if (::hx::IsNotNull( rawJson )) {
+HXLINE( 313)			_hx_tmp = (rawJson.length > 0);
             		}
             		else {
-HXLINE( 291)			_hx_tmp = false;
+HXLINE( 313)			_hx_tmp = false;
             		}
-HXDLIN( 291)		if (_hx_tmp) {
-HXLINE( 292)			return ::tjson::TJSON_obj::parse(rawJson,null(),null());
+HXDLIN( 313)		if (_hx_tmp) {
+HXLINE( 314)			return ::tjson::TJSON_obj::parse(rawJson,null(),null());
             		}
-HXLINE( 294)		return null();
+HXLINE( 316)		return null();
             	}
 
 
 STATIC_HX_DEFINE_DYNAMIC_FUNC1(WeekData_obj,getWeekFile,return )
 
 ::String WeekData_obj::getWeekFileName(){
-            	HX_STACKFRAME(&_hx_pos_40e6927fd11a022a_301_getWeekFileName)
-HXDLIN( 301)		return ::backend::WeekData_obj::weeksList->__get(::states::PlayState_obj::storyWeek);
+            	HX_STACKFRAME(&_hx_pos_40e6927fd11a022a_323_getWeekFileName)
+HXDLIN( 323)		return ::backend::WeekData_obj::weeksList->__get(::states::PlayState_obj::storyWeek);
             	}
 
 
 STATIC_HX_DEFINE_DYNAMIC_FUNC0(WeekData_obj,getWeekFileName,return )
 
  ::backend::WeekData WeekData_obj::getCurrentWeek(){
-            	HX_STACKFRAME(&_hx_pos_40e6927fd11a022a_306_getCurrentWeek)
-HXDLIN( 306)		return ( ( ::backend::WeekData)(::backend::WeekData_obj::weeksLoaded->get(::backend::WeekData_obj::weeksList->__get(::states::PlayState_obj::storyWeek))) );
+            	HX_STACKFRAME(&_hx_pos_40e6927fd11a022a_328_getCurrentWeek)
+HXDLIN( 328)		return ( ( ::backend::WeekData)(::backend::WeekData_obj::weeksLoaded->get(::backend::WeekData_obj::weeksList->__get(::states::PlayState_obj::storyWeek))) );
             	}
 
 
 STATIC_HX_DEFINE_DYNAMIC_FUNC0(WeekData_obj,getCurrentWeek,return )
 
 void WeekData_obj::setDirectoryFromWeek( ::backend::WeekData data){
-            	HX_STACKFRAME(&_hx_pos_40e6927fd11a022a_309_setDirectoryFromWeek)
-HXLINE( 310)		::backend::Mods_obj::currentModDirectory = HX_("",00,00,00,00);
-HXLINE( 311)		bool _hx_tmp;
-HXDLIN( 311)		bool _hx_tmp1;
-HXDLIN( 311)		if (::hx::IsNotNull( data )) {
-HXLINE( 311)			_hx_tmp1 = ::hx::IsNotNull( data->folder );
+            	HX_STACKFRAME(&_hx_pos_40e6927fd11a022a_331_setDirectoryFromWeek)
+HXLINE( 332)		::backend::Mods_obj::currentModDirectory = HX_("",00,00,00,00);
+HXLINE( 333)		bool _hx_tmp;
+HXDLIN( 333)		bool _hx_tmp1;
+HXDLIN( 333)		if (::hx::IsNotNull( data )) {
+HXLINE( 333)			_hx_tmp1 = ::hx::IsNotNull( data->folder );
             		}
             		else {
-HXLINE( 311)			_hx_tmp1 = false;
+HXLINE( 333)			_hx_tmp1 = false;
             		}
-HXDLIN( 311)		if (_hx_tmp1) {
-HXLINE( 311)			_hx_tmp = (data->folder.length > 0);
+HXDLIN( 333)		if (_hx_tmp1) {
+HXLINE( 333)			_hx_tmp = (data->folder.length > 0);
             		}
             		else {
-HXLINE( 311)			_hx_tmp = false;
+HXLINE( 333)			_hx_tmp = false;
             		}
-HXDLIN( 311)		if (_hx_tmp) {
-HXLINE( 312)			::backend::Mods_obj::currentModDirectory = data->folder;
+HXDLIN( 333)		if (_hx_tmp) {
+HXLINE( 334)			::backend::Mods_obj::currentModDirectory = data->folder;
             		}
             	}
 
@@ -866,6 +909,9 @@ bool WeekData_obj::__GetStatic(const ::String &inName, Dynamic &outValue, ::hx::
 		break;
 	case 21:
 		if (HX_FIELD_EQ(inName,"reloadCustomWeekFiles") ) { outValue = reloadCustomWeekFiles_dyn(); return true; }
+		break;
+	case 22:
+		if (HX_FIELD_EQ(inName,"loadTheFirstEnabledMod") ) { outValue = loadTheFirstEnabledMod_dyn(); return true; }
 	}
 	return false;
 }
@@ -1012,6 +1058,7 @@ static ::String WeekData_obj_sStaticFields[] = {
 	HX_("createWeekFile",ac,e3,25,7d),
 	HX_("reloadCustomWeekFiles",99,54,61,e8),
 	HX_("reloadWeekFiles",4a,73,e1,0b),
+	HX_("loadTheFirstEnabledMod",66,77,4c,2c),
 	HX_("addWeek",b5,a2,32,8b),
 	HX_("getWeekFile",46,27,df,50),
 	HX_("getWeekFileName",b1,e0,e3,ce),

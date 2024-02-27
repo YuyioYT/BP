@@ -1544,11 +1544,11 @@ HXLINE( 564)						::Dynamic this1 = game->modchartTweens;
 HXDLIN( 564)						 ::EReg hideChars =  ::EReg_obj::__alloc( HX_CTX ,HX_("[\t\n\r]",ac,57,71,6b),HX_("",00,00,00,00));
 HXDLIN( 564)						::String color = ::StringTools_obj::trim(hideChars->split(targetColor)->join(HX_("",00,00,00,00)));
 HXDLIN( 564)						if (::StringTools_obj::startsWith(color,HX_("0x",48,2a,00,00))) {
-HXLINE( 135)							color = color.substring((color.length - 6),null());
+HXLINE( 150)							color = color.substring((color.length - 6),null());
             						}
 HXLINE( 564)						 ::Dynamic colorNum = ::flixel::util::_FlxColor::FlxColor_Impl__obj::fromString(color);
 HXDLIN( 564)						if (::hx::IsNull( colorNum )) {
-HXLINE( 138)							colorNum = ::flixel::util::_FlxColor::FlxColor_Impl__obj::fromString((HX_("#",23,00,00,00) + color));
+HXLINE( 153)							colorNum = ::flixel::util::_FlxColor::FlxColor_Impl__obj::fromString((HX_("#",23,00,00,00) + color));
             						}
 HXLINE( 564)						int value;
 HXDLIN( 564)						if (::hx::IsNotNull( colorNum )) {
@@ -2421,11 +2421,11 @@ HXLINE( 887)				 ::flixel::FlxCamera _hx_tmp = ::psychlua::LuaUtils_obj::cameraF
 HXDLIN( 887)				 ::EReg hideChars =  ::EReg_obj::__alloc( HX_CTX ,HX_("[\t\n\r]",ac,57,71,6b),HX_("",00,00,00,00));
 HXDLIN( 887)				::String color1 = ::StringTools_obj::trim(hideChars->split(color)->join(HX_("",00,00,00,00)));
 HXDLIN( 887)				if (::StringTools_obj::startsWith(color1,HX_("0x",48,2a,00,00))) {
-HXLINE( 135)					color1 = color1.substring((color1.length - 6),null());
+HXLINE( 150)					color1 = color1.substring((color1.length - 6),null());
             				}
 HXLINE( 887)				 ::Dynamic colorNum = ::flixel::util::_FlxColor::FlxColor_Impl__obj::fromString(color1);
 HXDLIN( 887)				if (::hx::IsNull( colorNum )) {
-HXLINE( 138)					colorNum = ::flixel::util::_FlxColor::FlxColor_Impl__obj::fromString((HX_("#",23,00,00,00) + color1));
+HXLINE( 153)					colorNum = ::flixel::util::_FlxColor::FlxColor_Impl__obj::fromString((HX_("#",23,00,00,00) + color1));
             				}
 HXLINE( 887)				int _hx_tmp1;
 HXDLIN( 887)				if (::hx::IsNotNull( colorNum )) {
@@ -2450,11 +2450,11 @@ HXLINE( 890)				 ::flixel::FlxCamera _hx_tmp = ::psychlua::LuaUtils_obj::cameraF
 HXDLIN( 890)				 ::EReg hideChars =  ::EReg_obj::__alloc( HX_CTX ,HX_("[\t\n\r]",ac,57,71,6b),HX_("",00,00,00,00));
 HXDLIN( 890)				::String color1 = ::StringTools_obj::trim(hideChars->split(color)->join(HX_("",00,00,00,00)));
 HXDLIN( 890)				if (::StringTools_obj::startsWith(color1,HX_("0x",48,2a,00,00))) {
-HXLINE( 135)					color1 = color1.substring((color1.length - 6),null());
+HXLINE( 150)					color1 = color1.substring((color1.length - 6),null());
             				}
 HXLINE( 890)				 ::Dynamic colorNum = ::flixel::util::_FlxColor::FlxColor_Impl__obj::fromString(color1);
 HXDLIN( 890)				if (::hx::IsNull( colorNum )) {
-HXLINE( 138)					colorNum = ::flixel::util::_FlxColor::FlxColor_Impl__obj::fromString((HX_("#",23,00,00,00) + color1));
+HXLINE( 153)					colorNum = ::flixel::util::_FlxColor::FlxColor_Impl__obj::fromString((HX_("#",23,00,00,00) + color1));
             				}
 HXLINE( 890)				int _hx_tmp1;
 HXDLIN( 890)				if (::hx::IsNotNull( colorNum )) {
@@ -2774,11 +2774,11 @@ HXLINE(1006)				if (::hx::IsNotNull( spr )) {
 HXLINE(1006)					 ::EReg hideChars =  ::EReg_obj::__alloc( HX_CTX ,HX_("[\t\n\r]",ac,57,71,6b),HX_("",00,00,00,00));
 HXDLIN(1006)					::String color1 = ::StringTools_obj::trim(hideChars->split(color)->join(HX_("",00,00,00,00)));
 HXDLIN(1006)					if (::StringTools_obj::startsWith(color1,HX_("0x",48,2a,00,00))) {
-HXLINE( 135)						color1 = color1.substring((color1.length - 6),null());
+HXLINE( 150)						color1 = color1.substring((color1.length - 6),null());
             					}
 HXLINE(1006)					 ::Dynamic colorNum = ::flixel::util::_FlxColor::FlxColor_Impl__obj::fromString(color1);
 HXDLIN(1006)					if (::hx::IsNull( colorNum )) {
-HXLINE( 138)						colorNum = ::flixel::util::_FlxColor::FlxColor_Impl__obj::fromString((HX_("#",23,00,00,00) + color1));
+HXLINE( 153)						colorNum = ::flixel::util::_FlxColor::FlxColor_Impl__obj::fromString((HX_("#",23,00,00,00) + color1));
             					}
 HXLINE(1006)					int _hx_tmp;
 HXDLIN(1006)					if (::hx::IsNotNull( colorNum )) {
@@ -3814,11 +3814,11 @@ HXLINE(1467)				 ::objects::HealthBar game1 = game->healthBar;
 HXDLIN(1467)				 ::EReg hideChars =  ::EReg_obj::__alloc( HX_CTX ,HX_("[\t\n\r]",ac,57,71,6b),HX_("",00,00,00,00));
 HXDLIN(1467)				::String color = ::StringTools_obj::trim(hideChars->split(left)->join(HX_("",00,00,00,00)));
 HXDLIN(1467)				if (::StringTools_obj::startsWith(color,HX_("0x",48,2a,00,00))) {
-HXLINE( 135)					color = color.substring((color.length - 6),null());
+HXLINE( 150)					color = color.substring((color.length - 6),null());
             				}
 HXLINE(1467)				 ::Dynamic colorNum = ::flixel::util::_FlxColor::FlxColor_Impl__obj::fromString(color);
 HXDLIN(1467)				if (::hx::IsNull( colorNum )) {
-HXLINE( 138)					colorNum = ::flixel::util::_FlxColor::FlxColor_Impl__obj::fromString((HX_("#",23,00,00,00) + color));
+HXLINE( 153)					colorNum = ::flixel::util::_FlxColor::FlxColor_Impl__obj::fromString((HX_("#",23,00,00,00) + color));
             				}
 HXLINE(1467)				int _hx_tmp;
 HXDLIN(1467)				if (::hx::IsNotNull( colorNum )) {
@@ -3830,11 +3830,11 @@ HXLINE(1467)					_hx_tmp = -1;
 HXDLIN(1467)				 ::EReg hideChars1 =  ::EReg_obj::__alloc( HX_CTX ,HX_("[\t\n\r]",ac,57,71,6b),HX_("",00,00,00,00));
 HXDLIN(1467)				::String color1 = ::StringTools_obj::trim(hideChars1->split(right)->join(HX_("",00,00,00,00)));
 HXDLIN(1467)				if (::StringTools_obj::startsWith(color1,HX_("0x",48,2a,00,00))) {
-HXLINE( 135)					color1 = color1.substring((color1.length - 6),null());
+HXLINE( 150)					color1 = color1.substring((color1.length - 6),null());
             				}
 HXLINE(1467)				 ::Dynamic colorNum1 = ::flixel::util::_FlxColor::FlxColor_Impl__obj::fromString(color1);
 HXDLIN(1467)				if (::hx::IsNull( colorNum1 )) {
-HXLINE( 138)					colorNum1 = ::flixel::util::_FlxColor::FlxColor_Impl__obj::fromString((HX_("#",23,00,00,00) + color1));
+HXLINE( 153)					colorNum1 = ::flixel::util::_FlxColor::FlxColor_Impl__obj::fromString((HX_("#",23,00,00,00) + color1));
             				}
 HXLINE(1467)				int _hx_tmp1;
 HXDLIN(1467)				if (::hx::IsNotNull( colorNum1 )) {
@@ -3859,11 +3859,11 @@ HXLINE(1470)				 ::objects::HealthBar game1 = game->timeBar;
 HXDLIN(1470)				 ::EReg hideChars =  ::EReg_obj::__alloc( HX_CTX ,HX_("[\t\n\r]",ac,57,71,6b),HX_("",00,00,00,00));
 HXDLIN(1470)				::String color = ::StringTools_obj::trim(hideChars->split(left)->join(HX_("",00,00,00,00)));
 HXDLIN(1470)				if (::StringTools_obj::startsWith(color,HX_("0x",48,2a,00,00))) {
-HXLINE( 135)					color = color.substring((color.length - 6),null());
+HXLINE( 150)					color = color.substring((color.length - 6),null());
             				}
 HXLINE(1470)				 ::Dynamic colorNum = ::flixel::util::_FlxColor::FlxColor_Impl__obj::fromString(color);
 HXDLIN(1470)				if (::hx::IsNull( colorNum )) {
-HXLINE( 138)					colorNum = ::flixel::util::_FlxColor::FlxColor_Impl__obj::fromString((HX_("#",23,00,00,00) + color));
+HXLINE( 153)					colorNum = ::flixel::util::_FlxColor::FlxColor_Impl__obj::fromString((HX_("#",23,00,00,00) + color));
             				}
 HXLINE(1470)				int _hx_tmp;
 HXDLIN(1470)				if (::hx::IsNotNull( colorNum )) {
@@ -3875,11 +3875,11 @@ HXLINE(1470)					_hx_tmp = -1;
 HXDLIN(1470)				 ::EReg hideChars1 =  ::EReg_obj::__alloc( HX_CTX ,HX_("[\t\n\r]",ac,57,71,6b),HX_("",00,00,00,00));
 HXDLIN(1470)				::String color1 = ::StringTools_obj::trim(hideChars1->split(right)->join(HX_("",00,00,00,00)));
 HXDLIN(1470)				if (::StringTools_obj::startsWith(color1,HX_("0x",48,2a,00,00))) {
-HXLINE( 135)					color1 = color1.substring((color1.length - 6),null());
+HXLINE( 150)					color1 = color1.substring((color1.length - 6),null());
             				}
 HXLINE(1470)				 ::Dynamic colorNum1 = ::flixel::util::_FlxColor::FlxColor_Impl__obj::fromString(color1);
 HXDLIN(1470)				if (::hx::IsNull( colorNum1 )) {
-HXLINE( 138)					colorNum1 = ::flixel::util::_FlxColor::FlxColor_Impl__obj::fromString((HX_("#",23,00,00,00) + color1));
+HXLINE( 153)					colorNum1 = ::flixel::util::_FlxColor::FlxColor_Impl__obj::fromString((HX_("#",23,00,00,00) + color1));
             				}
 HXLINE(1470)				int _hx_tmp1;
 HXDLIN(1470)				if (::hx::IsNotNull( colorNum1 )) {
@@ -4609,11 +4609,11 @@ HXLINE(1722)				 ::states::PlayState _hx_tmp = ::states::PlayState_obj::instance
 HXDLIN(1722)				 ::EReg hideChars =  ::EReg_obj::__alloc( HX_CTX ,HX_("[\t\n\r]",ac,57,71,6b),HX_("",00,00,00,00));
 HXDLIN(1722)				::String color1 = ::StringTools_obj::trim(hideChars->split(color)->join(HX_("",00,00,00,00)));
 HXDLIN(1722)				if (::StringTools_obj::startsWith(color1,HX_("0x",48,2a,00,00))) {
-HXLINE( 135)					color1 = color1.substring((color1.length - 6),null());
+HXLINE( 150)					color1 = color1.substring((color1.length - 6),null());
             				}
 HXLINE(1722)				 ::Dynamic colorNum = ::flixel::util::_FlxColor::FlxColor_Impl__obj::fromString(color1);
 HXDLIN(1722)				if (::hx::IsNull( colorNum )) {
-HXLINE( 138)					colorNum = ::flixel::util::_FlxColor::FlxColor_Impl__obj::fromString((HX_("#",23,00,00,00) + color1));
+HXLINE( 153)					colorNum = ::flixel::util::_FlxColor::FlxColor_Impl__obj::fromString((HX_("#",23,00,00,00) + color1));
             				}
 HXLINE(1722)				int _hx_tmp1;
 HXDLIN(1722)				if (::hx::IsNotNull( colorNum )) {

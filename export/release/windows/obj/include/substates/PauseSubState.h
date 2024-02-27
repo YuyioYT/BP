@@ -74,6 +74,7 @@ class HXCPP_CLASS_ATTRIBUTES PauseSubState_obj : public  ::backend::MusicBeatSub
 		 ::flixel::text::FlxText skipTimeText;
 		 ::objects::Alphabet skipTimeTracker;
 		Float curTime;
+		 ::flixel::FlxSprite bg;
 		 ::flixel::FlxSprite missingTextBG;
 		 ::flixel::text::FlxText missingText;
 		Float holdTime;

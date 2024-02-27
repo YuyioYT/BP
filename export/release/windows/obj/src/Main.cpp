@@ -199,7 +199,7 @@ HX_LOCAL_STACK_FRAME(_hx_pos_e47a9afac0942eb9_42_boot,"Main","boot",0xe5d36c67,"
 void Main_obj::__construct(){
             	HX_STACKFRAME(&_hx_pos_e47a9afac0942eb9_31_new)
 HXLINE(  39)		this->startFullscreen = false;
-HXLINE(  38)		this->skipSplash = false;
+HXLINE(  38)		this->skipSplash = true;
 HXLINE(  37)		this->framerate = 60;
 HXLINE(  36)		this->zoom = ((Float)-1);
 HXLINE(  35)		this->initialState = ::hx::ClassOf< ::states::TitleState >();
@@ -330,7 +330,7 @@ HXLINE( 154)		::Array< ::Dynamic> callStack = ::haxe::_CallStack::CallStack_Impl
 HXLINE( 155)		::String dateNow = ::Date_obj::now()->toString();
 HXLINE( 157)		dateNow = ::StringTools_obj::replace(dateNow,HX_(" ",20,00,00,00),HX_("_",5f,00,00,00));
 HXLINE( 158)		dateNow = ::StringTools_obj::replace(dateNow,HX_(":",3a,00,00,00),HX_("'",27,00,00,00));
-HXLINE( 153)		::String path = (((HX_("./crash/",69,79,f9,62) + HX_("PsychEngine_",82,ba,54,e7)) + dateNow) + HX_(".txt",02,3f,c0,1e));
+HXLINE( 153)		::String path = (((HX_("./crash/",69,79,f9,62) + HX_("Corn engine_",c5,77,f7,77)) + dateNow) + HX_(".txt",02,3f,c0,1e));
 HXLINE( 162)		{
 HXLINE( 162)			int _g = 0;
 HXDLIN( 162)			while((_g < callStack->length)){

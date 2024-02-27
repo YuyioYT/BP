@@ -64,6 +64,9 @@ class HXCPP_CLASS_ATTRIBUTES CoolUtil_obj : public ::hx::Object
 		static ::String difficultyString();
 		static ::Dynamic difficultyString_dyn();
 
+		static ::String getSizeLabel(int num);
+		static ::Dynamic getSizeLabel_dyn();
+
 		static ::Array< Float > getMinAndMax(Float value1,Float value2);
 		static ::Dynamic getMinAndMax_dyn();
 
