@@ -22,13 +22,13 @@
 #include <shaders/WaveBurstShader.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_7e062c9146d30214_2919_new,"shaders.WaveBurstEffect","new",0x9fe8cd2a,"shaders.WaveBurstEffect.new","shaders/Shaders.hx",2919,0x7800d7f1)
+HX_DEFINE_STACK_FRAME(_hx_pos_7e062c9146d30214_3140_new,"shaders.WaveBurstEffect","new",0x9fe8cd2a,"shaders.WaveBurstEffect.new","shaders/Shaders.hx",3140,0x7800d7f1)
 namespace shaders{
 
 void WaveBurstEffect_obj::__construct(Float strength){
-            	HX_GC_STACKFRAME(&_hx_pos_7e062c9146d30214_2919_new)
-HXLINE(2921)		this->shader =  ::shaders::WaveBurstShader_obj::__alloc( HX_CTX );
-HXLINE(2926)		this->shader->strength->value = ::Array_obj< Float >::__new(1)->init(0,strength);
+            	HX_GC_STACKFRAME(&_hx_pos_7e062c9146d30214_3140_new)
+HXLINE(3142)		this->shader =  ::shaders::WaveBurstShader_obj::__alloc( HX_CTX );
+HXLINE(3147)		this->shader->strength->value = ::Array_obj< Float >::__new(1)->init(0,strength);
             	}
 
 Dynamic WaveBurstEffect_obj::__CreateEmpty() { return new WaveBurstEffect_obj; }

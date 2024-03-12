@@ -7,8 +7,17 @@
 #ifndef INCLUDED_Std
 #include <Std.h>
 #endif
+#ifndef INCLUDED_flixel_FlxBasic
+#include <flixel/FlxBasic.h>
+#endif
 #ifndef INCLUDED_flixel_math_FlxRandom
 #include <flixel/math/FlxRandom.h>
+#endif
+#ifndef INCLUDED_flixel_sound_FlxSound
+#include <flixel/sound/FlxSound.h>
+#endif
+#ifndef INCLUDED_flixel_util_IFlxDestroyable
+#include <flixel/util/IFlxDestroyable.h>
 #endif
 #ifndef INCLUDED_flixel_util__FlxColor_FlxColor_Impl_
 #include <flixel/util/_FlxColor/FlxColor_Impl_.h>
@@ -17,6 +26,7 @@
 HX_DEFINE_STACK_FRAME(_hx_pos_eba801adaf62ef5c_8_new,"flixel.math.FlxRandom","new",0x97b4f113,"flixel.math.FlxRandom.new","flixel/math/FlxRandom.hx",8,0x4fa37e1d)
 HX_LOCAL_STACK_FRAME(_hx_pos_eba801adaf62ef5c_260_getObject_flixel_group_FlxTypedGroup_T,"flixel.math.FlxRandom","getObject_flixel_group_FlxTypedGroup_T",0x29a53b90,"flixel.math.FlxRandom.getObject_flixel_group_FlxTypedGroup_T","flixel/math/FlxRandom.hx",260,0x4fa37e1d)
 HX_LOCAL_STACK_FRAME(_hx_pos_eba801adaf62ef5c_260_getObject_Array_String,"flixel.math.FlxRandom","getObject_Array_String",0x4ecf532e,"flixel.math.FlxRandom.getObject_Array_String","flixel/math/FlxRandom.hx",260,0x4fa37e1d)
+HX_LOCAL_STACK_FRAME(_hx_pos_eba801adaf62ef5c_260_getObject_flixel_system_FlxSound,"flixel.math.FlxRandom","getObject_flixel_system_FlxSound",0x4e088a41,"flixel.math.FlxRandom.getObject_flixel_system_FlxSound","flixel/math/FlxRandom.hx",260,0x4fa37e1d)
 HX_LOCAL_STACK_FRAME(_hx_pos_eba801adaf62ef5c_49_resetInitialSeed,"flixel.math.FlxRandom","resetInitialSeed",0xb48811f3,"flixel.math.FlxRandom.resetInitialSeed","flixel/math/FlxRandom.hx",49,0x4fa37e1d)
 HX_LOCAL_STACK_FRAME(_hx_pos_eba801adaf62ef5c_63_int,"flixel.math.FlxRandom","int",0x97b12da2,"flixel.math.FlxRandom.int","flixel/math/FlxRandom.hx",63,0x4fa37e1d)
 HX_LOCAL_STACK_FRAME(_hx_pos_eba801adaf62ef5c_110_float,"flixel.math.FlxRandom","float",0x0d07b90f,"flixel.math.FlxRandom.float","flixel/math/FlxRandom.hx",110,0x4fa37e1d)
@@ -333,6 +343,101 @@ HXLINE( 295)		return selected;
 
 HX_DEFINE_DYNAMIC_FUNC4(FlxRandom_obj,getObject_Array_String,return )
 
+ ::flixel::sound::FlxSound FlxRandom_obj::getObject_flixel_system_FlxSound(::Array< ::Dynamic> Objects,::Array< Float > WeightsArray,::hx::Null< int >  __o_StartIndex, ::Dynamic EndIndex){
+            		int StartIndex = __o_StartIndex.Default(0);
+            	HX_STACKFRAME(&_hx_pos_eba801adaf62ef5c_260_getObject_flixel_system_FlxSound)
+HXLINE( 261)		 ::flixel::sound::FlxSound selected = null();
+HXLINE( 263)		if ((Objects->length != 0)) {
+HXLINE( 265)			if (::hx::IsNull( WeightsArray )) {
+HXLINE( 267)				::Array< Float > _g = ::Array_obj< Float >::__new(0);
+HXDLIN( 267)				{
+HXLINE( 267)					int _g1 = 0;
+HXDLIN( 267)					int _g2 = Objects->length;
+HXDLIN( 267)					while((_g1 < _g2)){
+HXLINE( 267)						_g1 = (_g1 + 1);
+HXDLIN( 267)						int i = (_g1 - 1);
+HXDLIN( 267)						_g->push(1);
+            					}
+            				}
+HXDLIN( 267)				WeightsArray = _g;
+            			}
+HXLINE( 270)			if (::hx::IsNull( EndIndex )) {
+HXLINE( 272)				EndIndex = (Objects->length - 1);
+            			}
+HXLINE( 275)			 ::Dynamic Max = (Objects->length - 1);
+HXDLIN( 275)			Float lowerBound;
+HXDLIN( 275)			if ((StartIndex < 0)) {
+HXLINE( 275)				lowerBound = ( (Float)(0) );
+            			}
+            			else {
+HXLINE( 275)				lowerBound = ( (Float)(StartIndex) );
+            			}
+HXDLIN( 275)			Float StartIndex1;
+HXDLIN( 275)			bool StartIndex2;
+HXDLIN( 275)			if (::hx::IsNotNull( Max )) {
+HXLINE( 275)				StartIndex2 = ::hx::IsGreater( lowerBound,Max );
+            			}
+            			else {
+HXLINE( 275)				StartIndex2 = false;
+            			}
+HXDLIN( 275)			if (StartIndex2) {
+HXLINE( 275)				StartIndex1 = ( (Float)(Max) );
+            			}
+            			else {
+HXLINE( 275)				StartIndex1 = lowerBound;
+            			}
+HXDLIN( 275)			StartIndex = ::Std_obj::_hx_int(StartIndex1);
+HXLINE( 276)			Float Value = ( (Float)(EndIndex) );
+HXDLIN( 276)			 ::Dynamic Max1 = (Objects->length - 1);
+HXDLIN( 276)			Float lowerBound1;
+HXDLIN( 276)			if ((Value < 0)) {
+HXLINE( 276)				lowerBound1 = ( (Float)(0) );
+            			}
+            			else {
+HXLINE( 276)				lowerBound1 = Value;
+            			}
+HXDLIN( 276)			Float EndIndex1;
+HXDLIN( 276)			bool EndIndex2;
+HXDLIN( 276)			if (::hx::IsNotNull( Max1 )) {
+HXLINE( 276)				EndIndex2 = ::hx::IsGreater( lowerBound1,Max1 );
+            			}
+            			else {
+HXLINE( 276)				EndIndex2 = false;
+            			}
+HXDLIN( 276)			if (EndIndex2) {
+HXLINE( 276)				EndIndex1 = ( (Float)(Max1) );
+            			}
+            			else {
+HXLINE( 276)				EndIndex1 = lowerBound1;
+            			}
+HXDLIN( 276)			EndIndex = ::Std_obj::_hx_int(EndIndex1);
+HXLINE( 279)			if (::hx::IsLess( EndIndex,StartIndex )) {
+HXLINE( 281)				StartIndex = (StartIndex + EndIndex);
+HXLINE( 282)				EndIndex = (StartIndex - ( (int)(EndIndex) ));
+HXLINE( 283)				StartIndex = (StartIndex - ( (int)(EndIndex) ));
+            			}
+HXLINE( 286)			if (::hx::IsGreater( EndIndex,(WeightsArray->length - 1) )) {
+HXLINE( 288)				EndIndex = (WeightsArray->length - 1);
+            			}
+HXLINE( 291)			::Array< Float > _g = ::Array_obj< Float >::__new(0);
+HXDLIN( 291)			{
+HXLINE( 291)				int _g1 = StartIndex;
+HXDLIN( 291)				int _g2 = (EndIndex + 1);
+HXDLIN( 291)				while((_g1 < _g2)){
+HXLINE( 291)					_g1 = (_g1 + 1);
+HXDLIN( 291)					int i = (_g1 - 1);
+HXDLIN( 291)					_g->push(WeightsArray->__get(i));
+            				}
+            			}
+HXDLIN( 291)			::flixel::math::FlxRandom_obj::_arrayFloatHelper = _g;
+HXLINE( 292)			selected = Objects->__get((StartIndex + this->weightedPick(::flixel::math::FlxRandom_obj::_arrayFloatHelper))).StaticCast<  ::flixel::sound::FlxSound >();
+            		}
+HXLINE( 295)		return selected;
+            	}
+
+
+HX_DEFINE_DYNAMIC_FUNC4(FlxRandom_obj,getObject_flixel_system_FlxSound,return )
+
 int FlxRandom_obj::resetInitialSeed(){
             	HX_STACKFRAME(&_hx_pos_eba801adaf62ef5c_49_resetInitialSeed)
 HXDLIN(  49)		int Value = ::Std_obj::_hx_int((::Math_obj::random() * ( (Float)((int)2147483647) )));
@@ -425,10 +530,10 @@ HXLINE(  87)					int result = 0;
 HXLINE(  89)					while(true){
 HXLINE(  91)						result = ::Math_obj::floor((Min + (((this->internalSeed = ::hx::Mod((this->internalSeed * ((Float)48271.0)),(int)2147483647)) / ( (Float)((int)2147483647) )) * ( (Float)(((Max - Min) + 1)) ))));
 HXLINE(  89)						if (!((Excludes->indexOf(result,null()) >= 0))) {
-HXLINE(  89)							goto _hx_goto_8;
+HXLINE(  89)							goto _hx_goto_11;
             						}
             					}
-            					_hx_goto_8:;
+            					_hx_goto_11:;
 HXLINE(  95)					return result;
             				}
             			}
@@ -478,10 +583,10 @@ HXLINE( 133)					result = (Min + (((this->internalSeed = ::hx::Mod((this->intern
 HXLINE( 137)					while(true){
 HXLINE( 139)						result = (Min + (((this->internalSeed = ::hx::Mod((this->internalSeed * ((Float)48271.0)),(int)2147483647)) / ( (Float)((int)2147483647) )) * (Max - Min)));
 HXLINE( 137)						if (!((Excludes->indexOf(result,null()) >= 0))) {
-HXLINE( 137)							goto _hx_goto_10;
+HXLINE( 137)							goto _hx_goto_13;
             						}
             					}
-            					_hx_goto_10:;
+            					_hx_goto_13:;
             				}
             			}
             		}
@@ -557,11 +662,11 @@ HXLINE( 233)				_g1 = (_g1 + 1);
 HXDLIN( 233)				int i = (_g1 - 1);
 HXLINE( 235)				if ((totalWeight < WeightsArray->__get(i))) {
 HXLINE( 237)					pick = i;
-HXLINE( 238)					goto _hx_goto_16;
+HXLINE( 238)					goto _hx_goto_19;
             				}
 HXLINE( 241)				totalWeight = (totalWeight - WeightsArray->__get(i));
             			}
-            			_hx_goto_16:;
+            			_hx_goto_19:;
             		}
 HXLINE( 244)		return pick;
             	}
@@ -901,6 +1006,9 @@ FlxRandom_obj::FlxRandom_obj()
 	case 22:
 		if (HX_FIELD_EQ(inName,"getObject_Array_String") ) { return ::hx::Val( getObject_Array_String_dyn() ); }
 		break;
+	case 32:
+		if (HX_FIELD_EQ(inName,"getObject_flixel_system_FlxSound") ) { return ::hx::Val( getObject_flixel_system_FlxSound_dyn() ); }
+		break;
 	case 38:
 		if (HX_FIELD_EQ(inName,"getObject_flixel_group_FlxTypedGroup_T") ) { return ::hx::Val( getObject_flixel_group_FlxTypedGroup_T_dyn() ); }
 	}
@@ -989,6 +1097,7 @@ static ::hx::StaticInfo FlxRandom_obj_sStaticStorageInfo[] = {
 static ::String FlxRandom_obj_sMemberFields[] = {
 	HX_("getObject_flixel_group_FlxTypedGroup_T",63,56,b1,8d),
 	HX_("getObject_Array_String",01,58,9d,f8),
+	HX_("getObject_flixel_system_FlxSound",d4,f4,55,36),
 	HX_("initialSeed",15,54,75,28),
 	HX_("resetInitialSeed",86,e6,eb,4a),
 	HX_("int",ef,0c,50,00),

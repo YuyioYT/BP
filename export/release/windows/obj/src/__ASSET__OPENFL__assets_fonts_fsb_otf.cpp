@@ -13,13 +13,13 @@
 #include <openfl/text/Font.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_fd232978015c4eb6_1750_new,"__ASSET__OPENFL__assets_fonts_fsb_otf","new",0x630b1c52,"__ASSET__OPENFL__assets_fonts_fsb_otf.new","ManifestResources.hx",1750,0xf77aa668)
+HX_DEFINE_STACK_FRAME(_hx_pos_fd232978015c4eb6_1758_new,"__ASSET__OPENFL__assets_fonts_fsb_otf","new",0x630b1c52,"__ASSET__OPENFL__assets_fonts_fsb_otf.new","ManifestResources.hx",1758,0xf77aa668)
 
 void __ASSET__OPENFL__assets_fonts_fsb_otf_obj::__construct(){
-            	HX_STACKFRAME(&_hx_pos_fd232978015c4eb6_1750_new)
-HXDLIN(1750)		this->_hx___fontPath = (::ManifestResources_obj::rootPath + HX_("assets/fonts/fsb.otf",d1,7e,17,14));
-HXDLIN(1750)		this->name = HX_("Fighting Spirit turbo Bold Italic",08,c1,1c,7a);
-HXDLIN(1750)		super::__construct(null());
+            	HX_STACKFRAME(&_hx_pos_fd232978015c4eb6_1758_new)
+HXDLIN(1758)		this->_hx___fontPath = (::ManifestResources_obj::rootPath + HX_("assets/fonts/fsb.otf",d1,7e,17,14));
+HXDLIN(1758)		this->name = HX_("Fighting Spirit turbo Bold Italic",08,c1,1c,7a);
+HXDLIN(1758)		super::__construct(null());
             	}
 
 Dynamic __ASSET__OPENFL__assets_fonts_fsb_otf_obj::__CreateEmpty() { return new __ASSET__OPENFL__assets_fonts_fsb_otf_obj; }

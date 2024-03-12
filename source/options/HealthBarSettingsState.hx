@@ -12,7 +12,7 @@ class HealthBarSettingsState extends BaseOptionsMenu
 		"What should the Health bar Overlay display?",
 		'healthBarOverlay',
 		'string',
-		['Purgatory','Animated','Disabled']);
+		['Purgatory','Dab','Animated','Disabled']);
 		addOption(option);
 
 		var option:Option = new Option('Original Time bar colors',

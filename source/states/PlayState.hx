@@ -345,6 +345,8 @@ class PlayState extends MusicBeatState
 	public var hudZoomSpeed:Float = 0.95;
 	var czspeedDefault:Float = 0;
 
+	var enableangle:Bool = true;
+
 	private var generatedMusic:Bool = false;
 	public var endingSong:Bool = false;
 	public var startingSong:Bool = false;
@@ -362,8 +364,8 @@ class PlayState extends MusicBeatState
 	var noteCharacters2:Array<String> = ['bambi-mad-guitar'];
 	var noteCharacters:Array<String> = ['bambi-god-2','bombu-v2','bambi-3d','bombai-v2','god-expunged-1-new','dave-3d', 'bambi-3d', 'baiburg', 'crusturn', 'god-expunged-1', 'bambi-unfair', 'expunged', 'bambi-piss-3d', 'bambi-scaryooo', 'hell-1', 'hell-2', 'bambi-hell', 'bombu', 'bombai', 'crimson-dave', 'crimson-bambi', 'gary', 'bamburg', 'bamburg-player', '404','404-old'];
 	
-	var funnyFloatyBoys:Array<String> = ['bambi-god-2','bombu-v2','bombai-v2','bambi-3d','god-expunged-1-new','dave-3d', 'bambi-3d', 'baiburg', 'crusturn', 'god-expunged-1', 'bambi-unfair', 'expunged', 'bambi-piss-3d', 'bambi-scaryooo', 'hell-1', 'hell-2', 'bambi-god2d', 'bambi-god-2-24fps', 'bambi-hell', 'bombu', 'bombai', 'crimson-dave', 'crimson-bambi', 'gary', 'bamburg', 'bamburg-player', '404','404-old'];
-	var funnySideFloatyBoys:Array<String> = ['bambi-god-2','bombai-v2','bambi-3d','bombu-v2','bombu', 'god-expunged-1-new','god-expunged-1', 'bombai'];
+	var funnyFloatyBoys:Array<String> = ['bambi3d','bambi-god-2','bombu-v2','bombai-v2','bambi-3d','god-expunged-1-new','dave-3d', 'bambi-3d', 'baiburg', 'crusturn', 'god-expunged-1', 'bambi-unfair', 'expunged', 'bambi-piss-3d', 'bambi-scaryooo', 'hell-1', 'hell-2', 'bambi-god2d', 'bambi-god-2-24fps', 'bambi-hell', 'bombu', 'bombai', 'crimson-dave', 'crimson-bambi', 'gary', 'bamburg', 'bamburg-player', '404','404-old'];
+	var funnySideFloatyBoys:Array<String> = ['bambi3d','bambi-god-2','bombai-v2','bambi-3d','bombu-v2','bombu', 'god-expunged-1-new','god-expunged-1', 'bombai'];
 	var funnyRotatorBoys:Array<String> = ['bombu-v2','bombai-v2','god-expunged-1-new','hell-2', 'god-expunged-1'];
 	var canSlide:Bool = true;
 	var canFloat:Bool = true;
@@ -455,6 +457,12 @@ class PlayState extends MusicBeatState
 
 	var realityShader = true;
 
+	public var subtitleManager:SubtitleManager;
+
+	var pauseTweens:Array<FlxTween> = new Array<FlxTween>();
+
+	var movecameracountdownbeacuaseyes = false;
+
 	// trails!!1 //
 	var evilTrail:FlxTrail;
 	var scaryTrail:FlxTrail;
@@ -515,6 +523,8 @@ class PlayState extends MusicBeatState
 
 	var wiggleShit:WiggleEffect = new WiggleEffect();
 	var susWiggle:ShaderFilter;
+	var chromglitch:ChromBlockedEffect = new ChromBlockedEffect();
+	var googlechrombordes:ChromBordesEffect = new ChromBordesEffect();
 	var googlechrom:DoChromaticAberrationEffect = new DoChromaticAberrationEffect();
 	public var shader_chromatic_abberation:ChromaticAberrationEffect;
 	public var grain_shader:GrainEffect;
@@ -754,6 +764,8 @@ class PlayState extends MusicBeatState
 		{
 			filtersnotes.push(blurNotes); // blur :D - PurSnake
 			filterSUSnotes.push(blurNotes);
+		}else{
+			camSus.setFilters([]);
 		}
 		if (ClientPrefs.data.eyesores)
 		{
@@ -1630,7 +1642,7 @@ class PlayState extends MusicBeatState
 			timeTxt.y += 3;
 		}
 
-		timeBar = new HealthBar(0, timeTxt.y + (timeTxt.height / 4), 'hud/bars/timeBarCircle', function() return songPercent, 0, 1);
+		timeBar = new HealthBar(0, timeTxt.y + (timeTxt.height / 4), 'hud/bars/HealthBarBp', function() return songPercent, 0, 1);
 		if(SONG.song.toLowerCase() == "antagonism") 
 		{
 			timeBar = new HealthBar(0, timeTxt.y + (timeTxt.height / 4), 'hud/bars/healthBarEvil', function() return songPercent, 0, 1);
@@ -1706,7 +1718,9 @@ class PlayState extends MusicBeatState
 		switch(ClientPrefs.data.healthBarOverlay)
 		{
 			case 'Purgatory':
-				healthBarOverlay = new FlxSprite().loadGraphic(Paths.image('hud/overlays/healthBarOverlayPurgatory'));
+				healthBarOverlay = new FlxSprite().loadGraphic(Paths.image('hud/overlays/healthBarOverlayBp'));
+			case 'Dab':
+				healthBarOverlay = new FlxSprite().loadGraphic(Paths.image('hud/overlays/healthBarOverlaydab'));
 			case 'Animated':
 				healthBarOverlay = new FlxSprite();
 				healthBarOverlay.frames = Paths.getSparrowAtlas("hud/overlays/healthBarOverlayAnimated");
@@ -1896,16 +1910,13 @@ class PlayState extends MusicBeatState
 		redGlow.visible = false;
 		redGlow.cameras = [camOther];
 
-		if (ClientPrefs.data.BlackScreen)
-		{
-			blackScreen = new FlxSprite(-215, -120).loadGraphic(Paths.image('StagesBP/ui/white'));
-			blackScreen.scrollFactor.set();
-			blackScreen.cameras = [camHUD];
-			blackScreen.alpha = 0;
-			blackScreen.color = FlxColor.BLACK;
-			blackScreen.scale.set(Std.int(FlxG.width * 100),Std.int(FlxG.height * 150));
-			add(blackScreen);
-		}
+		blackScreen = new FlxSprite(-215, -120).loadGraphic(Paths.image('StagesBP/ui/white'));
+		blackScreen.scrollFactor.set();
+		blackScreen.cameras = [camHUD];
+		blackScreen.color = FlxColor.BLACK;
+		blackScreen.alpha = 0;
+		blackScreen.scale.set(Std.int(FlxG.width * 100),Std.int(FlxG.height * 150));
+		add(blackScreen);
 
 		whiteflash = new FlxSprite(-100, -100).makeGraphic(Std.int(FlxG.width * 100), Std.int(FlxG.height * 100), FlxColor.WHITE);
 		whiteflash.scrollFactor.set();
@@ -1920,6 +1931,10 @@ class PlayState extends MusicBeatState
 		if(SONG.song.toLowerCase() == "rsod old") add(notResponding);
 		notResponding.alpha = 0;
 		notResponding.cameras = [camHUD];
+
+		subtitleManager = new SubtitleManager();
+		subtitleManager.cameras = [camHUD];
+		add(subtitleManager);
 
 		strumLineNotes.cameras = [camHUD];
 		grpNoteSplashes.cameras = [camHUD];
@@ -2573,6 +2588,7 @@ class PlayState extends MusicBeatState
 				switch (swagCounter)
 				{
 					case 0:
+						movecameracountdownbeacuaseyes = false;
 						FlxG.sound.play(Paths.sound('321/intro3' + introSoundsSuffix), 0.6);
 						tick = THREE;
 						if(ClientPrefs.data.moveCameraonCountdown)	{moveCamera(false);}
@@ -2589,6 +2605,8 @@ class PlayState extends MusicBeatState
 								countdownReady.destroy();
 							}
 						});
+						opponentStrums.visible = false;
+						playerStrums.visible = false;
 						defaultCamZoom += 0.1;
 						if(ClientPrefs.data.moveCameraonCountdown)	{moveCamera(true);}
 					case 2:
@@ -2597,6 +2615,8 @@ class PlayState extends MusicBeatState
 						tick = ONE;
 						if(ClientPrefs.data.moveCameraonCountdown)	{moveCamera(false);}
 						defaultCamZoom += 0.1;
+						opponentStrums.visible = true;
+						playerStrums.visible = false;
 					case 3:
 						countdownGo = createCountdownSprite(introAlts[2], antialias);
 						FlxG.sound.play(Paths.sound('321/introGo' + introSoundsSuffix), 0.6);
@@ -2612,7 +2632,10 @@ class PlayState extends MusicBeatState
 							}
 						defaultCamZoom += 0.1;
 						boyfriend.playAnim('hey', true);
+						opponentStrums.visible = true;
+						playerStrums.visible = true;
 					case 4:
+						movecameracountdownbeacuaseyes = true;
 						tick = START;
 						defaultCamZoom -= 0.4;
 
@@ -3268,6 +3291,10 @@ function hideshit() // basically a camHUD.visible = false; except it doesnt fuck
 		stagesFunc(function(stage:BaseStage) stage.openSubState(SubState));
 		if (paused)
 		{
+			for (tween in pauseTweens)
+				{
+					tween.active = false;
+				}
 			if (FlxG.sound.music != null)
 			{
 				FlxG.sound.music.pause();
@@ -3535,6 +3562,11 @@ function hideshit() // basically a camHUD.visible = false; except it doesnt fuck
 					// FlxTween.angle(dad, -5, 5, Conductor.crochet / 300, {ease: FlxEase.sineInOut, type: PINGPONG});
 				}
 			}
+
+			if(funnyFloatyBoys.contains(dad.curCharacter.toLowerCase()) && canFloat)
+				{
+					iconP2.y += (Math.sin(elapsedtime) * 0.1);
+				}
 		if(canFloat && !funnyFloatyBoys.contains(boyfriend.curCharacter.toLowerCase())) 
 		{
 			switch (curStage) 
@@ -3727,7 +3759,7 @@ function hideshit() // basically a camHUD.visible = false; except it doesnt fuck
 
 		super.update(elapsed);
 
-		if (generatedMusic && !endingSong && !isCameraOnForcedPos && !laggingRSOD)
+		if (movecameracountdownbeacuaseyes = true && generatedMusic && !endingSong && !isCameraOnForcedPos && !laggingRSOD)
 			moveCameraSection();
 
 		if(ClientPrefs.data.eyesores)
@@ -4540,6 +4572,8 @@ function hideshit() // basically a camHUD.visible = false; except it doesnt fuck
 								}
 							});
 
+							camGame.setFilters([]);
+
 							for (charactersAll in [gf, boyfriend, dad]) {
 								FlxTween.color(charactersAll, 0.5, FlxColor.BLACK, colorBack, {ease: FlxEase.circOut,
 									onComplete: function (twn:FlxTween)
@@ -4554,6 +4588,11 @@ function hideshit() // basically a camHUD.visible = false; except it doesnt fuck
 						if (boyfriend != null) colorBack = boyfriend.color;
 
 						if (whiteScreenEvents == null) {
+
+							camGame.setFilters([new ShaderFilter(googlechrombordes.shader)]);
+
+							googlechrombordes.aberration = 0.2;
+							googlechrombordes.effectTime = 0.1;
 
 							whiteScreenEvents = new FlxSprite(0, 0).makeGraphic(Std.int(FlxG.width * 2.25), Std.int(FlxG.height * 2.25), FlxColor.WHITE);
 							whiteScreenEvents.screenCenter();
@@ -4854,7 +4893,7 @@ function hideshit() // basically a camHUD.visible = false; except it doesnt fuck
 							zoomAdd	= -0.05; 
 						case 'bambi-god-2', 'baiburg', 'crusturn', 'hell-1', 'hell-2', 'bambi-hell', '404','404-old':
 							zoomAdd	= -0.15;
-						case 'bambi-3d','god-expunged-1-new', 'god-expunged-1', 'bambi-unfair', 'expunged', 'bambi-piss-3d', 'crimson-dave', 'crimson-bambi':
+						case 'bambi-3d','bambi3d','bombai','bombai-v2','god-expunged-1-new', 'god-expunged-1', 'bambi-unfair', 'expunged', 'bambi-piss-3d', 'crimson-dave', 'crimson-bambi':
 							zoomAdd	= -0.28;
 					}
 				}
@@ -4886,6 +4925,12 @@ function hideshit() // basically a camHUD.visible = false; except it doesnt fuck
 	
 				if (autoZoom && !laggingRSOD)
 				{
+					switch(boyfriend.curCharacter)
+					{
+						case 'bf':
+							zoomAdd = 0;
+					}
+
 					switch(dad.curCharacter)
 					{
 						case 'bombu-v2', 'bambi-scaryooo', 'bombu', 'gary', 'bamburg', 'bamburg-player':
@@ -5571,7 +5616,7 @@ function hideshit() // basically a camHUD.visible = false; except it doesnt fuck
 	public function healthBarShake(intensity:Float) // Litle rewrite - PurSnake
 		{
 	
-			for (helem in [healthBar]) {
+			for (helem in [healthBar,healthBarOverlay]) {
 				if (helem != null) {
 					for (timer in [
 						{time: 0.01, forse:  (10 * intensity)},
@@ -5604,6 +5649,22 @@ function hideshit() // basically a camHUD.visible = false; except it doesnt fuck
 		iconP2.changeIconStatus(1);
 		iconP1.changeIconStatus(2);
 
+		if (daNote != null)
+			{
+				switch (daNote.noteType)
+				{
+					case 'phone':
+						var hitAnimation:Bool = boyfriend.animation.getByName("hit") != null;
+						boyfriend.playAnim(hitAnimation ? 'hit' : 'singRIGHTmiss', true);
+						FlxTween.cancelTweensOf(daNote.MyStrum);
+						daNote.MyStrum.alpha = 0.01;
+						var noteTween = FlxTween.tween(daNote.MyStrum, {alpha: 1}, 7, {ease: FlxEase.expoIn});
+						pauseTweens.push(noteTween);
+						health -= 0.07;
+						return;
+				}
+			}
+
 		if(instakillOnMiss)
 			{
 				if(daNote.noteType != 'Restart PC Note')
@@ -5612,11 +5673,11 @@ function hideshit() // basically a camHUD.visible = false; except it doesnt fuck
 				doDeathCheck(true);
 			}
 	
-			if(!daNote.noMissAnimation)
+		if(!daNote.noMissAnimation)
 			{
 				switch(daNote.noteType) {
 					case 'Restart PC Note': //used for rsod
-						 camOther.flash(FlxColor.BLACK, 4.5, null, true);
+						camOther.flash(FlxColor.BLACK, 4.5, null, true);
 						camHUD.shake(0.0055, 0.35);
 						FlxG.camera.flash(FlxColor.BLACK, 1, null, true);
 						health -= 1;
@@ -5652,6 +5713,7 @@ function hideshit() // basically a camHUD.visible = false; except it doesnt fuck
 			vocals.volume = 0;
 			doDeathCheck(true);
 		}
+
 		combo = 0;
 
 		if(!practiceMode) songScore -= 10;
@@ -5690,19 +5752,9 @@ function hideshit() // basically a camHUD.visible = false; except it doesnt fuck
 			dad.playAnim('hey', true);
 			dad.specialAnim = true;
 			dad.heyTimer = 0.6;
-		} else if ((note.noteType == 'Phone Alt Notes' && dad.animOffsets.exists('-alt')))
-		{
-			dad.playAnim('-alt', true);
-			dad.specialAnim = true;
 
-		} else if ((note.noteType == 'Phone Break Notes' && dad.animOffsets.exists('break')))
-		{
+		} else if(note.noteType == 'phone' && dad.animOffsets.exists('break')) {
 			dad.playAnim('break', true);
-			dad.specialAnim = true;
-
-		} else if ((note.noteType == 'Phone Throw Notes' && dad.animOffsets.exists('throw')))
-		{
-			dad.playAnim('throw', true);
 			dad.specialAnim = true;
 
 		} else if(!note.noAnimation) {
@@ -5710,6 +5762,10 @@ function hideshit() // basically a camHUD.visible = false; except it doesnt fuck
 
 			if (SONG.notes[curSection] != null)
 			{
+				if (note.noteType == 'phone-alt')
+					{
+						altAnim = '-alt';
+					}
 				if (SONG.notes[curSection].altAnim && !SONG.notes[curSection].gfSection) {
 					altAnim = '-alt';
 				}
@@ -5717,9 +5773,8 @@ function hideshit() // basically a camHUD.visible = false; except it doesnt fuck
 
 			var char:Character = dad;
 			var animToPlay:String = singAnimations[Std.int(Math.abs(note.noteData))] + altAnim;
-
 			
-			if (ClientPrefs.data.followarrow == true)
+			if (ClientPrefs.data.followarrow == true && enableangle)
 				{
 					if (!dad.stunned)
 						{
@@ -5734,46 +5789,26 @@ function hideshit() // basically a camHUD.visible = false; except it doesnt fuck
 						}
 				}
 
-			if(note.gfNote) {
-				char = gf;
-			}
+				if(note.gfNote)
+					char = gf;
 
-			if(note.altStrum) {
-				char = player3;
-			}
+				if(note.altStrum)
+					char = player3;
 
-			if(char != null)
-			{
-				if(!laggingRSOD)
-					char.playAnim(animToPlay, true);
-				char.holdTimer = 0;
-			}
+				if(char != null)
+						if(!laggingRSOD)
+							char.playAnim(animToPlay, true);
+							char.holdTimer = 0;
 
-			if (!note.altStrum) cameraMoveOnNote(note.noteData, 'dad');
+				if (!note.altStrum) cameraMoveOnNote(note.noteData, 'dad');
 
-			if(note.gfNote) {
-				char = gf;
-			}
+				if(note.gfNote)
+					char = gf;
 
-			if(char != null)
-			{
-				char.playAnim(animToPlay, true);
-				char.holdTimer = 0;
-			}
+				if(char != null)
+						char.playAnim(animToPlay, true);
+						char.holdTimer = 0;
 		}
-
-		switch (note.noteType)
-		{
-			case 'phone':
-				var hitAnimation:Bool = boyfriend.animation.getByName("dodge") != null;
-				var heyAnimation:Bool = boyfriend.animation.getByName("hey") != null;
-				boyfriend.playAnim(hitAnimation ? 'dodge' : (heyAnimation ? 'hey' : 'singUPmiss'), true);
-				gf.playAnim('cheer', true);
-				if (note.health != 2)
-				{
-					dad.playAnim(dad.animation.getByName("throw") == null ? 'smash' : 'throw', true);
-				}
-			}
 
 		var newOffset:Float = 0.03;
 		var newgrainsize:Float = 2;
@@ -5830,13 +5865,15 @@ function hideshit() // basically a camHUD.visible = false; except it doesnt fuck
 				if (realityShader){
 
 					if(ClientPrefs.data.ChromaticAberration) { 
-						camHUD.setFilters([new ShaderFilter(googlechrom.shader),new ShaderFilter(grain.shader)]);
+						camHUD.setFilters([new ShaderFilter(googlechrom.shader),new ShaderFilter(grain.shader),new ShaderFilter(chromglitch.shader)]);
 						googlechrom.offset += newOffset;
 						FlxTween.tween(googlechrom, {offset: 0.002}, 0.1, { ease: FlxEase.linear });
 
 					} else {
 						camHUD.setFilters([new ShaderFilter(grain.shader)]);
 					}
+
+					chromglitch.floatGlitchvec2 = 0.2;
 	
 					grain.grainsize += newgrainsize;
 					grain.lumamount += newgrainluma;
@@ -5933,6 +5970,18 @@ function hideshit() // basically a camHUD.visible = false; except it doesnt fuck
 					}
 				}
 
+				if(note.noteType == 'phone' && dad.animOffsets.exists('dodge')) {
+					boyfriend.playAnim('dodge', true);
+					gf.playAnim('cheer', true);
+					boyfriend.specialAnim = true;
+					dad.specialAnim = true;
+					gf.specialAnim = true;
+					if (note.health != 2)
+						{
+							dad.playAnim('throw', true);
+						}
+				}
+
 				if (!note.isSustainNote)
 				{
 					note.kill();
@@ -5941,18 +5990,6 @@ function hideshit() // basically a camHUD.visible = false; except it doesnt fuck
 				}
 				return;
 			}
-			switch (note.noteType)
-			{
-				case 'phone':
-					var hitAnimation:Bool = boyfriend.animation.getByName("dodge") != null;
-					var heyAnimation:Bool = boyfriend.animation.getByName("hey") != null;
-					boyfriend.playAnim(hitAnimation ? 'dodge' : (heyAnimation ? 'hey' : 'singUPmiss'), true);
-					gf.playAnim('cheer', true);
-					if (note.health != 2)
-					{
-						dad.playAnim(dad.animation.getByName("throw") == null ? 'smash' : 'throw', true);
-					}
-				}
 
 			if (!note.isSustainNote)
 			{	
@@ -5972,7 +6009,7 @@ function hideshit() // basically a camHUD.visible = false; except it doesnt fuck
 				var char:Character = boyfriend;
 				var animCheck:String = 'hey';
 
-				if (ClientPrefs.data.followarrow == true)
+				if (ClientPrefs.data.followarrow == true && enableangle)
 					{
 						if (!boyfriend.stunned)
 							{
@@ -6156,11 +6193,20 @@ function hideshit() // basically a camHUD.visible = false; except it doesnt fuck
 						camZoomingMult = 1;
 					case 624 | 880:
 						defaultCamZoom += 0.2;
-						cinematicBars(((Conductor.stepCrochet * 6.6) / 1000), 400);
-						tutorialTxt.alpha = 1;
-						tutorialTxt.text = 'HOLY';
+						cinematicBars(((Conductor.stepCrochet * 13.2) / 1000), 400);
+						if (ClientPrefs.data.Lenguage == 'English')
+							{
+								subtitleManager.addSubtitle('HOLY',0.02, 1);
+							}else{
+								subtitleManager.addSubtitle('A LA',0.02, 1);
+							}
 					case 632|888:
-						tutorialTxt.text = 'HOLY SHIT';
+						if (ClientPrefs.data.Lenguage == 'English')
+							{
+								subtitleManager.addSubtitle('SHIT',0.02, 0.5, {subtitleSize: 60});
+							}else{
+								subtitleManager.addSubtitle('MIERDA',0.02, 0.5, {subtitleSize: 60});
+							}
 					case 640 | 896:
 						tutorialTxt.alpha = 0;
 						defaultCamZoom -= 0.2;
@@ -6418,6 +6464,87 @@ function hideshit() // basically a camHUD.visible = false; except it doesnt fuck
 						restoreHUDElements();
 					case 120:
 						showHUDFade();
+					case 192:
+						if(ClientPrefs.data.flashing) FlxG.camera.flash(FlxColor.WHITE, 1);
+					case 248:
+						if (ClientPrefs.data.Lenguage == 'English')
+							{
+								subtitleManager.addSubtitle('Fucking',0.02, 0.5);
+							}else{
+								subtitleManager.addSubtitle('P####',0.02, 0.5);
+							}
+					case 252:
+						if (ClientPrefs.data.Lenguage == 'English')
+							{
+								subtitleManager.addSubtitle('IDIOTS',0.02, 0.5);
+							}else{
+								subtitleManager.addSubtitle('IDIOTAS',0.02,0.5);
+							}
+					case 452:
+						if (ClientPrefs.data.Lenguage == 'English')
+							{
+								subtitleManager.addSubtitle('Lemme',0.02, 0.5);
+							}else{
+								subtitleManager.addSubtitle('Dejame',0.02, 0.5);
+							}
+					case 454:
+						if (ClientPrefs.data.Lenguage == 'English')
+							{
+								subtitleManager.addSubtitle('Show yo-',0.02, 0.5);
+							}else{
+								subtitleManager.addSubtitle('Mostrart-',0.02, 0.5);
+							}
+					case 456:
+						if (ClientPrefs.data.Lenguage == 'English')
+							{
+								subtitleManager.addSubtitle('HOLD ON!',0.02, 0.5);
+							}else{
+								subtitleManager.addSubtitle('¡QUE ESPERAS!',0.02, 0.5);
+							}
+					case 462:
+						if (ClientPrefs.data.Lenguage == 'English')
+							{
+								subtitleManager.addSubtitle('Let...',0.02, 0.5);
+							}else{
+								subtitleManager.addSubtitle('Deja',0.02, 0.5);
+							}
+					case 464:
+						if (ClientPrefs.data.Lenguage == 'English')
+							{
+								subtitleManager.addSubtitle('Me',0.02, 0.5);
+							}else{
+								subtitleManager.addSubtitle('Dejame',0.02, 0.5);
+							}
+					case 466:
+						if (ClientPrefs.data.Lenguage == 'English')
+							{
+								subtitleManager.addSubtitle('Show',0.02, 0.5);
+							}else{
+								subtitleManager.addSubtitle('Mostrar',0.02, 0.5);
+							}
+					case 467:
+						if (ClientPrefs.data.Lenguage == 'English')
+							{
+								subtitleManager.addSubtitle('You',0.02, 0.5);
+							}else{
+								subtitleManager.addSubtitle('Mostrarte',0.02, 1);
+							}
+					case 472:
+						if (ClientPrefs.data.Lenguage == 'English')
+							{
+								subtitleManager.addSubtitle('Lemme Fucking Show You...',0.02, 0.5);
+							}else{
+								subtitleManager.addSubtitle('Dejame De Joder Mostrarte',0.02, 0.5);
+							}
+					case 482:
+						if (ClientPrefs.data.Lenguage == 'English')
+							{
+								subtitleManager.addSubtitle('LET ME SHOW YOU!',0.02, 0.5,{subtitleSize: 80});
+							}else{
+								subtitleManager.addSubtitle('¡DEJAME MOSTRARTE!',0.02, 0.5,{subtitleSize: 80});
+							}
+					case 568:
+						subtitleManager.addSubtitle('OMG',0.02, 0.5,{subtitleSize: 50});
 					case 760:
 						defaultCamZoom -= 0.32;
 						camHUD.visible = false;
@@ -6438,55 +6565,29 @@ function hideshit() // basically a camHUD.visible = false; except it doesnt fuck
 						add(shartLine);
 						FlxTween.tween(shartLine, {alpha:1}, 0.1);
 					case 832:
-						if (ClientPrefs.data.BlackScreen)
-							{
-								add(blackScreen);
-								FlxTween.tween(blackScreen, {alpha:1}, 0);
-							}
-							FlxTween.tween(shartGrad, {alpha:0}, 0);
-							FlxTween.tween(shartLine, {alpha:0}, 0);
-
-							var sunsetColor:FlxColor = FlxColor.fromRGB(255, 143, 178);
-							var nightColor:FlxColor = 0xFF878787;
-							var bfTween:ColorTween;
-
-							waoscolorshatt = false;
-
-							FlxTween.color(boyfriend, 10,sunsetColor, nightColor, {ease: FlxEase.circOut});
-							FlxTween.color(gf,10,sunsetColor, nightColor, {ease: FlxEase.circOut});
-							FlxTween.color(dad,10,sunsetColor, nightColor, {ease: FlxEase.circOut});
+						blackScreen.visible = true;
+						FlxTween.tween(blackScreen, {alpha:1}, 0);
+						FlxTween.tween(shartGrad, {alpha:0}, 0);
+						FlxTween.tween(shartLine, {alpha:0}, 0);
 					case 840:
 						shartGrad.visible = false;
 						shartLine.visible = false;
 						gf.visible = true;
-						if (ClientPrefs.data.BlackScreen)
-							{
-								blackScreen.visible = false;
-								FlxTween.tween(blackScreen, {alpha:1}, 0);
-							}
+						blackScreen.visible = false;
+						FlxTween.tween(blackScreen, {alpha:1}, 0);
 					case 1151:
-						if (ClientPrefs.data.BlackScreen)
-							{
-								blackScreen.visible = true;
-								FlxTween.tween(blackScreen, {alpha:0}, 10);
-							}
+						blackScreen.visible = true;
+						FlxTween.tween(blackScreen, {alpha:0}, 10);
 					case 1215:
-						if (ClientPrefs.data.BlackScreen)
-							{
-								FlxTween.tween(blackScreen, {alpha:1}, 5);
-							}
+						FlxTween.tween(blackScreen, {alpha:1}, 5);
 					case 1280:
-						if (ClientPrefs.data.BlackScreen)
-							{
-								FlxTween.tween(blackScreen, {alpha:0}, 2);
-							}
+						FlxTween.tween(blackScreen, {alpha:0}, 2);
 					case 1665:
 						boyfriend.playAnim('hurt', true);
 						glow.color = 0xFFFF0000;					
 					case 1792:
 						redGlow.visible = true;
 				}
-
 				case 'shattered oldest':
 					switch (curStep)
 					{
@@ -6581,6 +6682,7 @@ function hideshit() // basically a camHUD.visible = false; except it doesnt fuck
 				case 2386: // 2386
 					FlxTween.tween(blackScreen, {alpha:1}, 5);
 					camZooming = true;
+				case 2625:
 				case 2656: // 2656
 			    	FlxTween.tween(blackScreen, {alpha:0}, 3);
 				case 2688:

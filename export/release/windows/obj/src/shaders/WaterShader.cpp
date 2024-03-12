@@ -16,20 +16,20 @@
 #include <shaders/WaterShader.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_78cbe4fee2f4fd89_3022_new,"shaders.WaterShader","new",0x61dfbeae,"shaders.WaterShader.new","shaders/Shaders.hx",3022,0x7800d7f1)
+HX_DEFINE_STACK_FRAME(_hx_pos_78cbe4fee2f4fd89_3243_new,"shaders.WaterShader","new",0x61dfbeae,"shaders.WaterShader.new","shaders/Shaders.hx",3243,0x7800d7f1)
 namespace shaders{
 
 void WaterShader_obj::__construct(){
-            	HX_STACKFRAME(&_hx_pos_78cbe4fee2f4fd89_3022_new)
+            	HX_STACKFRAME(&_hx_pos_78cbe4fee2f4fd89_3243_new)
 HXLINE( 182)		if (::hx::IsNull( this->_hx___glFragmentSource )) {
 HXLINE( 184)			this->_hx___glFragmentSource = HX_("\n        varying float openfl_Alphav;\n\t\tvarying vec4 openfl_ColorMultiplierv;\n\t\tvarying vec4 openfl_ColorOffsetv;\n\t\tvarying vec2 openfl_TextureCoordv;\n\n\t\tuniform bool openfl_HasColorTransform;\n\t\tuniform vec2 openfl_TextureSize;\n\t\tuniform sampler2D bitmap;\n\n\t\tuniform bool hasTransform;\n\t\tuniform bool hasColorTransform;\n\n\t\tvec4 flixel_texture2D(sampler2D bitmap, vec2 coord)\n\t\t{\n\t\t\tvec4 color = texture2D(bitmap, coord);\n\t\t\tif (!hasTransform)\n\t\t\t{\n\t\t\t\treturn color;\n\t\t\t}\n\n\t\t\tif (color.a == 0.0)\n\t\t\t{\n\t\t\t\treturn vec4(0.0, 0.0, 0.0, 0.0);\n\t\t\t}\n\n\t\t\tif (!hasColorTransform)\n\t\t\t{\n\t\t\t\treturn color * openfl_Alphav;\n\t\t\t}\n\n\t\t\tcolor = vec4(color.rgb / color.a, color.a);\n\n\t\t\tmat4 colorMultiplier = mat4(0);\n\t\t\tcolorMultiplier[0][0] = openfl_ColorMultiplierv.x;\n\t\t\tcolorMultiplier[1][1] = openfl_ColorMultiplierv.y;\n\t\t\tcolorMultiplier[2][2] = openfl_ColorMultiplierv.z;\n\t\t\tcolorMultiplier[3][3] = openfl_ColorMultiplierv.w;\n\n\t\t\tcolor = clamp(openfl_ColorOffsetv + (color * colorMultiplier), 0.0, 1.0);\n\n\t\t\tif (color.a > 0.0)\n\t\t\t{\n\t\t\t\treturn vec4(color.rgb * color.a * openfl_Alphav, color.a * openfl_Alphav);\n\t\t\t}\n\t\t\treturn vec4(0.0, 0.0, 0.0, 0.0);\n\t\t}\n\t\n\n            \n        uniform float iTime;\n        uniform float strength;\n        \n        vec2 mirror(vec2 uv)\n        {\n            if ((uv.x > 1.0 || uv.x < 0.0) && abs(mod(uv.x, 2.0)) > 1.0)\n                uv.x = (0.0-uv.x)+1.0;\n            if ((uv.y > 1.0 || uv.y < 0.0) && abs(mod(uv.y, 2.0)) > 1.0)\n                uv.y = (0.0-uv.y)+1.0;\n            return vec2(abs(mod(uv.x, 1.0)), abs(mod(uv.y, 1.0)));\n        }\n        vec2 warp(vec2 uv)\n        {\n            vec2 warp = strength*(uv+iTime);\n            uv = vec2(cos(warp.x-warp.y)*cos(warp.y),\n            sin(warp.x-warp.y)*sin(warp.y));\n            return uv;\n        }\n        \n        void main()\n        {\t\n            \n            vec2 uv = openfl_TextureCoordv.xy;\n            vec4 col = flixel_texture2D( bitmap, mirror(uv + (warp(uv)-warp(uv+1.0))*(0.0035) ) );\n        \n            gl_FragColor = col;\n        }\n\n        ",22,41,6a,cc);
             		}
 HXLINE( 174)		if (::hx::IsNull( this->_hx___glVertexSource )) {
 HXLINE( 176)			this->_hx___glVertexSource = HX_("\n\t\tattribute float openfl_Alpha;\n\t\tattribute vec4 openfl_ColorMultiplier;\n\t\tattribute vec4 openfl_ColorOffset;\n\t\tattribute vec4 openfl_Position;\n\t\tattribute vec2 openfl_TextureCoord;\n\n\t\tvarying float openfl_Alphav;\n\t\tvarying vec4 openfl_ColorMultiplierv;\n\t\tvarying vec4 openfl_ColorOffsetv;\n\t\tvarying vec2 openfl_TextureCoordv;\n\n\t\tuniform mat4 openfl_Matrix;\n\t\tuniform bool openfl_HasColorTransform;\n\t\tuniform vec2 openfl_TextureSize;\n\n\t\t\n\t\tattribute float alpha;\n\t\tattribute vec4 colorMultiplier;\n\t\tattribute vec4 colorOffset;\n\t\tuniform bool hasColorTransform;\n\t\t\n\t\tvoid main(void)\n\t\t{\n\t\t\topenfl_Alphav = openfl_Alpha;\n\t\topenfl_TextureCoordv = openfl_TextureCoord;\n\n\t\tif (openfl_HasColorTransform) {\n\n\t\t\topenfl_ColorMultiplierv = openfl_ColorMultiplier;\n\t\t\topenfl_ColorOffsetv = openfl_ColorOffset / 255.0;\n\n\t\t}\n\n\t\tgl_Position = openfl_Matrix * openfl_Position;\n\n\t\t\t\n\t\t\topenfl_Alphav = openfl_Alpha * alpha;\n\t\t\t\n\t\t\tif (hasColorTransform)\n\t\t\t{\n\t\t\t\topenfl_ColorOffsetv = colorOffset / 255.0;\n\t\t\t\topenfl_ColorMultiplierv = colorMultiplier;\n\t\t\t}\n\t\t}",f3,1e,fa,79);
             		}
-HXLINE(3023)		super::__construct();
-HXLINE(2987)		this->_hx___isGenerated = true;
-HXDLIN(2987)		this->_hx___initGL();
+HXLINE(3244)		super::__construct();
+HXLINE(3208)		this->_hx___isGenerated = true;
+HXDLIN(3208)		this->_hx___initGL();
             	}
 
 Dynamic WaterShader_obj::__CreateEmpty() { return new WaterShader_obj; }

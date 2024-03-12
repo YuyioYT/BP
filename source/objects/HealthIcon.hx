@@ -45,7 +45,7 @@ class HealthIcon extends FlxSprite
 		'bambiGod3d'
 	];
 
-	var scaryTrail:FlxTrail;
+	//var scaryTrail:FlxTrail;
 
 
 	public function new(char:String = 'bf', isPlayer:Bool = false, ?allowGPU:Bool = true)
@@ -55,15 +55,26 @@ class HealthIcon extends FlxSprite
 		this.isPlayer = isPlayer;
 		changeIcon(char);
 		scrollFactor.set();
+
+	//	scaryTrail = new FlxTrail(this, null, 10, 3, 0.3, 0.02); //nice
+		//FlxG.state.add(scaryTrail);
 	}
 
 	override function update(elapsed:Float)
 	{
 		super.update(elapsed);
+
+		//scaryTrail.visible = false;
+
 		offset.set(Std.int(FlxMath.bound(width - 150,0)),Std.int(FlxMath.bound(height - 150,0))); // this is for the dnb bounce to work properly //
 		// note to self: turn this into a switch statement
 		if(this.char == 'bambiGod2d') {
+			//scaryTrail.visible = true;
 			//fuckin offsets
+			var aberrationEffect = new DoChromaticAberrationEffect(); // Ajusta el valor de offset cromático según tus preferencias
+
+			this.shader = aberrationEffect.shader;
+			aberrationEffect.offset = FlxG.random.float(0.003, 0.0010);
 			switch(animation.curAnim.name) {
 				case 'neutral':
 					offset.y += 140;
@@ -83,7 +94,6 @@ class HealthIcon extends FlxSprite
 					offset.y += FlxG.random.int(-1, 1);
 					angle = FlxG.random.int(-1, 1);
 			}
-			scaryTrail = new FlxTrail(this, null, 10, 3, 0.3, 0.02); //nice
 		}
 		if(this.char == 'bf') {
 			//fuckin offsets
@@ -139,6 +149,8 @@ class HealthIcon extends FlxSprite
 			offset.y += FlxG.random.int(-2, 2);
 			angle = FlxG.random.int(-2, 2);
 		}
+
+		//scaryTrail.update(elapsed);
 
 		if (sprTracker != null)
 			setPosition(sprTracker.x + sprTracker.width + 10, sprTracker.y - 30);

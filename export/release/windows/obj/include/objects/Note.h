@@ -125,6 +125,9 @@ class HXCPP_CLASS_ATTRIBUTES Note_obj : public  ::flixel::FlxSprite_obj
 		bool hitsoundChartEditor;
 		::String hitsound;
 		bool altStrum;
+		int notetolookfor;
+		 ::objects::StrumNote MyStrum;
+		Float alphaMult;
 		Float set_multSpeed(Float value);
 		::Dynamic set_multSpeed_dyn();
 
@@ -158,6 +161,12 @@ class HXCPP_CLASS_ATTRIBUTES Note_obj : public  ::flixel::FlxSprite_obj
 
 		void followStrumNote( ::objects::StrumNote myStrum,Float fakeCrochet,::hx::Null< Float >  songSpeed);
 		::Dynamic followStrumNote_dyn();
+
+		void SearchForStrum(bool musthit);
+		::Dynamic SearchForStrum_dyn();
+
+		void GoToStrum( ::objects::StrumNote strum);
+		::Dynamic GoToStrum_dyn();
 
 		void clipToStrumNote( ::objects::StrumNote myStrum);
 		::Dynamic clipToStrumNote_dyn();

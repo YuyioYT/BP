@@ -18,7 +18,7 @@
 	"songs": [
 		[
 			"upheaval-unfinished-fanmade",
-			"god_expunged_1-animated",
+			"god-expunged-1",
 			[
 				20,
 				0,
@@ -27,7 +27,7 @@
 		],
 		[
 			"uheaval-v1",
-			"god_expunged_1-animated",
+			"god-expunged-1",
 			[
 				20,
 				0,
@@ -36,7 +36,7 @@
 		],
 		[
 			"upheaval-v25",
-			"god_expunged_1-animated",
+			"god-expunged-1",
 			[
 				20,
 				0,
@@ -45,7 +45,7 @@
 		],
 		[
 			"upheaval-v3",
-			"god_expunged_1-animated",
+			"god-expunged-1",
 			[
 				20,
 				0,
@@ -54,7 +54,7 @@
 		],
 		[
 			"upheaval-yuyio",
-			"god_expunged_1-animated",
+			"god-expunged-1",
 			[
 				20,
 				0,
@@ -63,7 +63,16 @@
 		],
 		[
 			"upheaval-yuyio-v2",
-			"god_expunged_1-animated",
+			"god-expunged-1",
+			[
+				20,
+				0,
+				0
+			]
+		],
+		[
+			"rsod-remix",
+			"icon-bombuExpunged",
 			[
 				20,
 				0,

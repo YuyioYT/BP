@@ -139,6 +139,7 @@ null
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_fonts_fsb_otf extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_fonts_pixel_otf extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_fonts_vcr_ttf extends null { }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_characters_3d_bf_json extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_characters_404_old_json extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_characters_404_oldest_json extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_characters_404_json extends null { }
@@ -280,11 +281,9 @@ null
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_data_double_act_double_act_null_json extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_data_double_act_old_double_act_hard_json extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_data_double_act_old_events_json extends null { }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_data_fallowed_color_lua extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_data_fallowed_events_json extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_data_fallowed_fallowed_hard_json extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_data_fallowed_fallowed_null_json extends null { }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_data_fallowed_lightmagent_lua extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_data_fast_food_events_json extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_data_fast_food_fast_food_null_json extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_data_fast_food_fast_food_json extends null { }
@@ -319,6 +318,13 @@ null
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_data_rebound_rebound_null_json extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_data_rebound_script_lua extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_data_rebound_script2_lua extends null { }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_data_rebound_beta_events_json extends null { }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_data_rebound_beta_goofyshader_lua extends null { }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_data_rebound_beta_lightmagent_lua extends null { }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_data_rebound_beta_rebound_hard_json extends null { }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_data_rebound_beta_rebound_null_json extends null { }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_data_rebound_beta_script_lua extends null { }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_data_rebound_beta_script2_lua extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_data_rebound_old_by_credits_text_lua extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_data_rebound_old_events_json extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_data_rebound_old_floating_lua_lua extends null { }
@@ -345,16 +351,10 @@ null
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_data_rsod_rsod_null_json extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_data_rsod_old_events_json extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_data_rsod_old_rsod_old_null_json extends null { }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_data_rsod_older_events_json extends null { }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_data_rsod_older_freeze_chart_lua extends null { }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_data_rsod_older_freeze_chart_txt extends null { }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_data_rsod_older_rsod_older_hard_json extends null { }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_data_rsod_older_rsod_older_null_json extends null { }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_data_rsod_older_rsod_lua extends null { }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_data_rsod_remix_events_json extends null { }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_data_rsod_remix_rsod_remix_null_json extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_data_script2_lua extends null { }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_data_shattered_color_lua extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_data_shattered_events_json extends null { }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_data_shattered_lightmagent_lua extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_data_shattered_shattered_hard_json extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_data_shattered_shattered_null_json extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_data_shattered_old_events_json extends null { }
@@ -589,6 +589,8 @@ null
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_characters_bamburg_bamburg_crazy_xml extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_characters_bamburg_crimsonbamburg_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_characters_bamburg_crimsonbamburg_xml extends null { }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_characters_bf_3dbf_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_characters_bf_3dbf_xml extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_characters_bf_bfcar_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_characters_bf_bfcar_xml extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_characters_bf_bfchristmas_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
@@ -776,13 +778,15 @@ null
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_goreal_go_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_goreal_ready_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_goreal_set_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_hud_bars_healthbarbp_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_hud_bars_healthbarcircle_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_hud_bars_healthbarevil_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_hud_bars_timebarcircle_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_hud_overlays_healthbaroverlayanimated_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_hud_overlays_healthbaroverlayanimated_xml extends null { }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_hud_overlays_healthbaroverlaybp_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_hud_overlays_healthbaroverlaydab_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_hud_overlays_healthbaroverlaydisabled_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_hud_overlays_healthbaroverlaypurgatory_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_hud_shattered_shartgrad_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_hud_shattered_shartline_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_hud_shattered_strumshred_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
@@ -799,6 +803,7 @@ null
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_icons_godly_goober_2_xml extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_icons_hell1_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_icons_hell2_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_icons_icon_3d_bf_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_icons_icon_bambi3d_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_icons_icon_bambi3dunfair_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_icons_icon_bambigod_2_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
@@ -1149,6 +1154,7 @@ null
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_unknownmod_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_music_gameover_gameover_ogg extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_music_gameover_gameoverend_ogg extends null { }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_music_menu_charselectsong_ogg extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_music_menu_gates_of_the_hell_old_ogg extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_music_menu_gates_of_the_hell_ogg extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_music_options_offsetsong_ogg extends null { }
@@ -1271,6 +1277,8 @@ null
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_songs_reality_breaking_oldest_inst_ogg extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_songs_reality_breaking_oldest_voices_ogg extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_songs_rebound_inst_ogg extends null { }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_songs_rebound_voices_ogg extends null { }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_songs_rebound_beta_inst_ogg extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_songs_rebound_old_inst_ogg extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_songs_rebound_old_voices_ogg extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_songs_reheated_inst_ogg extends null { }

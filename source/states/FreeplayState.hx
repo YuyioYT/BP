@@ -1,5 +1,6 @@
 package states;
 
+import flixel.ui.FlxBar;
 import openfl.filters.ShaderFilter;
 import flixel.addons.display.FlxBackdrop;
 import substates.ResetScoreSubState;
@@ -54,6 +55,15 @@ class FreeplayState extends MusicBeatState
 	var bg:FlxSprite;
 	var intendedColor:Int;
 	var colorTween:FlxTween;
+
+	var songBG:FlxSprite;
+	var songBar:FlxBar;
+
+	var yeahNormal:Bool = false;
+
+	var selectedThing:Bool = false;
+
+	static var curPlayedSong:String = '';
 
 	var googlechrom:DoChromaticAberrationEffect = new DoChromaticAberrationEffect();
 
@@ -438,7 +448,7 @@ class FreeplayState extends MusicBeatState
 			if (FlxG.keys.pressed.SHIFT){
 				LoadingState.loadAndSwitchState(new ChartingState());
 			}else{
-				LoadingState.loadAndSwitchState(new CharacterSelectState());
+				playSong();
 			}
 
 			FlxG.sound.music.volume = 0;
@@ -452,6 +462,11 @@ class FreeplayState extends MusicBeatState
 			FlxG.sound.play(Paths.sound('menu/scrollMenu'));
 		}
 	}
+	
+	function playSong()
+		{
+			LoadingState.loadAndSwitchState(new CharacterSelectState());
+		}
 
 	public static function destroyFreeplayVocals() {
 		if(vocals != null) {

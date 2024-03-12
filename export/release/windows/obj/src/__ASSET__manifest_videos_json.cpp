@@ -11,7 +11,7 @@
 #endif
 
 HX_DEFINE_STACK_FRAME(_hx_pos_6b77b9641b49db2a_34_new,"__ASSET__manifest_videos_json","new",0xfdb599e1,"__ASSET__manifest_videos_json.new","lime/_internal/macros/AssetsMacro.hx",34,0xc651f030)
-HX_LOCAL_STACK_FRAME(_hx_pos_28a2dc93e7e69c61_1706_boot,"__ASSET__manifest_videos_json","boot",0xf94a0b91,"__ASSET__manifest_videos_json.boot","ManifestResources.hx",1706,0xf77aa668)
+HX_LOCAL_STACK_FRAME(_hx_pos_28a2dc93e7e69c61_1714_boot,"__ASSET__manifest_videos_json","boot",0xf94a0b91,"__ASSET__manifest_videos_json.boot","ManifestResources.hx",1714,0xf77aa668)
 
 void __ASSET__manifest_videos_json_obj::__construct( ::Dynamic length,::Array< unsigned char > bytesData){
             	HX_STACKFRAME(&_hx_pos_6b77b9641b49db2a_34_new)
@@ -132,8 +132,8 @@ void __ASSET__manifest_videos_json_obj::__register()
 void __ASSET__manifest_videos_json_obj::__boot()
 {
 {
-            	HX_STACKFRAME(&_hx_pos_28a2dc93e7e69c61_1706_boot)
-HXDLIN(1706)		resourceName = HX_("__ASSET__:file___ASSET__manifest_videos_json",16,52,30,ad);
+            	HX_STACKFRAME(&_hx_pos_28a2dc93e7e69c61_1714_boot)
+HXDLIN(1714)		resourceName = HX_("__ASSET__:file___ASSET__manifest_videos_json",16,52,30,ad);
             	}
 }
 

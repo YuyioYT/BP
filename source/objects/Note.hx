@@ -121,6 +121,10 @@ class Note extends FlxSprite
 	public var hitsound:String = 'hitsound';
 	public var altStrum:Bool = false;
 
+	private var notetolookfor = 0;
+	public var MyStrum:StrumNote;
+
+	public var alphaMult:Float = 1.0;
 
 	private function set_multSpeed(value:Float):Float {
 		resizeByRatio(value / multSpeed);
@@ -204,66 +208,65 @@ class Note extends FlxSprite
 					gfNote = true;
 				case 'Alt Strum':
 					altStrum = true;
-				case 'Phone Alt Notes':
-				if (!isSustainNote)
-					{
-						frames = Paths.getSparrowAtlas('notes/PHONENOTE_assets');
-					}
-					else
-					{
-						frames = Paths.getSparrowAtlas('notes/PHONENOTE_assets');
-					}
-					animation.addByPrefix('greenScroll', 'green0');
-					animation.addByPrefix('redScroll', 'red0');
-					animation.addByPrefix('blueScroll', 'blue0');
-					animation.addByPrefix('purpleScroll', 'purple0');
+				case 'guitarHero':
+					frames = Paths.getSparrowAtlas('notes/NOTEGH_assets', 'shared');
 
-					animation.addByPrefix('purpleholdend', 'pruple end hold');
-					animation.addByPrefix('greenholdend', 'green hold end');
-					animation.addByPrefix('redholdend', 'red hold end');
-					animation.addByPrefix('blueholdend', 'blue hold end');
-		
-					animation.addByPrefix('purplehold', 'purple hold piece');
-					animation.addByPrefix('greenhold', 'green hold piece');
-					animation.addByPrefix('redhold', 'red hold piece');
-					animation.addByPrefix('bluehold', 'blue hold piece'); 
-			
-					altStrum = true;
+					animation.addByPrefix('greenScroll', 'A Note');
+					animation.addByPrefix('greenhold', 'A Hold Piece');
+					animation.addByPrefix('greenholdend', 'A Hold End');
+
+
+					animation.addByPrefix('redScroll', 'B Note');
+					animation.addByPrefix('redhold', 'B Hold Piece');
+					animation.addByPrefix('redholdend', 'B Hold End');
+
+					animation.addByPrefix('yellowScroll', 'C Note');
+					animation.addByPrefix('yellowhold', 'C Hold Piece');
+					animation.addByPrefix('yellowholdend', 'C Hold End');
+
+					animation.addByPrefix('blueScroll', 'D Note');
+					animation.addByPrefix('bluehold', 'D Hold Piece');
+					animation.addByPrefix('blueholdend', 'D Hold End');
+
+					animation.addByPrefix('orangeScroll', 'E Note');
+					animation.addByPrefix('orangehold', 'E Hold Piece');
+					animation.addByPrefix('orangeholdend', 'E Hold End');
+
 					setGraphicSize(Std.int(width * noteSize));
 					updateHitbox();
 					antialiasing = true;
-				
-					noteOffset = 20;
-				case 'Phone Break Notes'|'Phone Throw Notes':
+
+				case 'phone' | 'phone-alt':
 					if (!isSustainNote)
-					{
-						frames = Paths.getSparrowAtlas('notes/PHONENOTE_assets');
-					}
-					else
-					{
-						frames = Paths.getSparrowAtlas('notes/PHONENOTE_assets');
-					}
-					animation.addByPrefix('greenScroll', 'green0');
-					animation.addByPrefix('redScroll', 'red0');
-					animation.addByPrefix('blueScroll', 'blue0');
-					animation.addByPrefix('purpleScroll', 'purple0');
-
-					animation.addByPrefix('purpleholdend', 'pruple end hold');
-					animation.addByPrefix('greenholdend', 'green hold end');
-					animation.addByPrefix('redholdend', 'red hold end');
-					animation.addByPrefix('blueholdend', 'blue hold end');
+						{
+							frames = Paths.getSparrowAtlas('notes/NOTE_phone');
+						}
+						else
+						{
+							frames = Paths.getSparrowAtlas('notes/NOTE_assets');
+						}
+						animation.addByPrefix('greenScroll', 'green0');
+						animation.addByPrefix('redScroll', 'red0');
+						animation.addByPrefix('blueScroll', 'blue0');
+						animation.addByPrefix('purpleScroll', 'purple0');
 		
-					animation.addByPrefix('purplehold', 'purple hold piece');
-					animation.addByPrefix('greenhold', 'green hold piece');
-					animation.addByPrefix('redhold', 'red hold piece');
-					animation.addByPrefix('bluehold', 'blue hold piece'); 
+						animation.addByPrefix('purpleholdend', 'pruple end hold');
+						animation.addByPrefix('greenholdend', 'green hold end');
+						animation.addByPrefix('redholdend', 'red hold end');
+						animation.addByPrefix('blueholdend', 'blue hold end');
 				
-					setGraphicSize(Std.int(width * noteSize));
-					updateHitbox();
-					antialiasing = true;
-				
-					noteOffset = 20;
+						animation.addByPrefix('purplehold', 'purple hold piece');
+						animation.addByPrefix('greenhold', 'green hold piece');
+						animation.addByPrefix('redhold', 'red hold piece');
+						animation.addByPrefix('bluehold', 'blue hold piece');
+						
+						setGraphicSize(Std.int(width * noteSize));
+						updateHitbox();
+						antialiasing = true;
+						
+						noteOffset = 20;
 			}
+		
 			if (value != null && value.length > 1) NoteTypesConfig.applyNoteTypeData(this, value);
 			if (hitsound != 'hitsound' && ClientPrefs.data.hitsoundVolume > 0) Paths.sound(hitsound); //precache new sound for being idiot-proof
 			noteType = value;
@@ -481,6 +484,11 @@ class Note extends FlxSprite
 	{
 		super.update(elapsed);
 
+		if (MyStrum != null)
+			{
+				GoToStrum(MyStrum);
+			}
+
 		if (mustPress)
 		{
 			canBeHit = (strumTime > Conductor.songPosition - (Conductor.safeZoneOffset * lateHitMult) &&
@@ -505,6 +513,11 @@ class Note extends FlxSprite
 			if (alpha > 0.3)
 				alpha = 0.3;
 		}
+
+		if (tooLate)
+			{
+				alphaMult = 0.3;
+			}
 	}
 
 	override public function destroy()
@@ -546,6 +559,46 @@ class Note extends FlxSprite
 				y -= (frameHeight * scale.y) - (Note.swagWidth / 2);
 			}
 		}
+	}
+
+	public function SearchForStrum(musthit:Bool)
+		{
+			var state:PlayState = cast(FlxG.state, PlayState);
+			if (musthit)
+			{
+				state.playerStrums.forEach(function(spr:StrumNote)
+				{
+					if (spr.ID == notetolookfor)
+					{
+						GoToStrum(spr);
+						MyStrum = spr;
+						return;
+					}
+				});
+			}
+			else
+			{
+				state.opponentStrums.forEach(function(spr:StrumNote)
+				{
+					if (spr.ID == notetolookfor)
+					{
+						GoToStrum(spr);
+						MyStrum = spr;
+						return;
+					}
+				});
+			}
+		}
+	
+	public function GoToStrum(strum:StrumNote)
+	{
+		x = strum.x + noteOffset;
+		alpha = strum.alpha * alphaMult;
+
+		if (noteType == "shape")
+			{
+				alpha *= 0.5;
+			}
 	}
 
 	public function clipToStrumNote(myStrum:StrumNote)

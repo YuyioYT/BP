@@ -94,20 +94,27 @@ class CharacterSelectState extends MusicBeatState
 	
 	public var characters:Array<CharacterInSelect> = 
 	[
+		 //["character name", 'character json name',notes,notetype]
 		new CharacterInSelect('bf', [1, 1, 1, 1], [
-			new CharacterForm('bf', 'Boyfriend', [1,1,1,1]),
+			new CharacterForm('bf', 'boyfriend', [1,1,1,1]),
 			new CharacterForm('3D BF', '3D Boyfriend', [1,1,1,1], '3D'),
-			new CharacterForm('pixelBF', 'Pixel Boyfriend', [1,1,1,1])
+		//	new CharacterForm('pixelBF', 'Pixel Boyfriend', [1,1,1,1])
 		]),
 
         new CharacterInSelect('Dave', [1, 1, 1, 1], [
-			new CharacterForm('Playable Dave', 'Dave', [1,1,1,1]),
-            new CharacterForm('Playable 3D Dave', '3D Dave', [1,1,1,1])
+			new CharacterForm('dave', 'Dave', [1,1,1,1]),
 		]),
 
         new CharacterInSelect('Bambi', [1, 1, 1, 1], [
-			new CharacterForm('Playable Bambi', 'Bambi', [1,1,1,1]),
-            new CharacterForm('Playable Cheating Expunged', 'Cheating Expunged', [1,1,1,1], '3D'),
+			new CharacterForm('bambi', 'Bambi', [1,1,1,1]),
+		]),
+
+		new CharacterInSelect('Bombai', [1, 1, 1, 1], [
+			new CharacterForm('bombai-v2', 'Bombai v2', [1,1,1,1]),
+		]),
+
+		new CharacterInSelect('Bombu', [1, 1, 1, 1], [
+			new CharacterForm('bombu-v2', 'Bombu v2', [1,1,1,1]),
 		]),
 	];
 	#if SHADERS_ENABLED
@@ -167,14 +174,14 @@ class CharacterSelectState extends MusicBeatState
 		}
 		currentSelectedCharacter = characters[current];
 
-		FlxG.sound.playMusic(Paths.music("charSelectSong"), 1, true);
+		FlxG.sound.playMusic(Paths.music("menu/charSelectSong"), 1, true);
 
-			preload(Paths.mods('images/characters/3dBf'));
-			preload(Paths.mods('images/characters/Magical'));
-			preload(Paths.mods('images/characters/Dave/Swirl Dave'));
-			preload(Paths.mods('images/characters/Dave/Temporal Dave'));
-			preload(Paths.mods('images/characters/Bambi/Bambi'));
-			preload(Paths.mods('images/characters/Bambi/Cheating Expunged'));
+		preload('characters/bf/3dBf');
+		preload('characters/Magical');
+		preload('characters/Dave/Swirl Dave');
+		preload('characters/Dave/Temporal Dave');
+		preload('characters/Bambi/Bambi');
+		preload('characters/Bambi/Cheating Expunged');
 
 		var bg = new FlxSprite().loadGraphic(randomizeBG());
 		bg.antialiasing = ClientPrefs.data.antialiasing;
@@ -327,8 +334,6 @@ class CharacterSelectState extends MusicBeatState
 	}
 	override public function update(elapsed:Float):Void 
 	{
-
-
 		#if SHADERS_ENABLED
 		if (bgShader != null)
 		{
@@ -347,6 +352,7 @@ class CharacterSelectState extends MusicBeatState
 
 		if (FlxG.keys.justPressed.ESCAPE)
 		{
+			FlxG.sound.playMusic(Paths.music('menu/Gates of the hell'), 7);
 			if (wasInFullscreen)
 			{
 				FlxG.fullscreen = true;
@@ -550,6 +556,7 @@ class CharacterSelectState extends MusicBeatState
 		characterText.text = currentSelectedCharacter.forms[curForm].polishedName;
 		char.destroy();
 		char = new Boyfriend(char.x, char.y, currentSelectedCharacter.forms[curForm].name);
+		add(char);
 
 		switch (currentSelectedCharacter.forms[curForm].name)
 		{

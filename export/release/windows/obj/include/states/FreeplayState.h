@@ -22,6 +22,7 @@ HX_DECLARE_CLASS2(flixel,group,FlxTypedGroup)
 HX_DECLARE_CLASS2(flixel,sound,FlxSound)
 HX_DECLARE_CLASS2(flixel,text,FlxText)
 HX_DECLARE_CLASS2(flixel,tweens,FlxTween)
+HX_DECLARE_CLASS2(flixel,ui,FlxBar)
 HX_DECLARE_CLASS2(flixel,util,IFlxDestroyable)
 HX_DECLARE_CLASS1(objects,HealthIcon)
 HX_DECLARE_CLASS1(shaders,DoChromaticAberrationEffect)
@@ -69,6 +70,7 @@ class HXCPP_CLASS_ATTRIBUTES FreeplayState_obj : public  ::backend::MusicBeatSta
 		static void __boot();
 		static int curSelected;
 		static ::String lastDifficultyName;
+		static ::String curPlayedSong;
 		static  ::Dynamic randomizeBG();
 		static ::Dynamic randomizeBG_dyn();
 
@@ -93,6 +95,10 @@ class HXCPP_CLASS_ATTRIBUTES FreeplayState_obj : public  ::backend::MusicBeatSta
 		 ::flixel::FlxSprite bg;
 		int intendedColor;
 		 ::flixel::tweens::FlxTween colorTween;
+		 ::flixel::FlxSprite songBG;
+		 ::flixel::ui::FlxBar songBar;
+		bool yeahNormal;
+		bool selectedThing;
 		 ::shaders::DoChromaticAberrationEffect googlechrom;
 		 ::flixel::FlxSprite check;
 		 ::flixel::FlxSprite glow;
@@ -112,6 +118,9 @@ class HXCPP_CLASS_ATTRIBUTES FreeplayState_obj : public  ::backend::MusicBeatSta
 		int instPlaying;
 		Float holdTime;
 		void update(Float elapsed);
+
+		void playSong();
+		::Dynamic playSong_dyn();
 
 		void changeDiff(::hx::Null< int >  change);
 		::Dynamic changeDiff_dyn();

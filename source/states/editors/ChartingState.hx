@@ -1,5 +1,6 @@
 package states.editors;
 
+import openfl.Lib;
 import flixel.util.FlxGradient;
 import flash.geom.Rectangle;
 import tjson.TJSON as Json;
@@ -55,9 +56,8 @@ class ChartingState extends MusicBeatState
 	public static var noteTypeList:Array<String> = //Used for backwards compatibility with 0.1 - 0.3.2 charts, though, you should add your hardcoded custom note types here too.
 	[
 		'',
-		'Phone Alt Notes',
-		'Phone Break Notes',
-		'Phone Throw Notes',
+		'phone-alt',
+		'phone',
 		'Alt Animation',
 		'Hey!',
 		'Hurt Note',
@@ -218,6 +218,8 @@ class ChartingState extends MusicBeatState
 	var char:Character;
 	override function create()
 	{
+		Lib.setInterval(autosaveSong, 5 * 60 * 1000); // <arubz> * 60 * 1000
+
 		if (PlayState.SONG != null)
 			_song = PlayState.SONG;
 		else

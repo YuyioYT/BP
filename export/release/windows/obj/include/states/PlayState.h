@@ -47,6 +47,7 @@ HX_DECLARE_CLASS1(objects,DepthSprite)
 HX_DECLARE_CLASS1(objects,HealthBar)
 HX_DECLARE_CLASS1(objects,HealthIcon)
 HX_DECLARE_CLASS1(objects,Note)
+HX_DECLARE_CLASS1(objects,SubtitleManager)
 HX_DECLARE_CLASS2(openfl,display,DisplayObject)
 HX_DECLARE_CLASS2(openfl,display,DisplayObjectContainer)
 HX_DECLARE_CLASS2(openfl,display,GraphicsShader)
@@ -65,6 +66,8 @@ HX_DECLARE_CLASS1(psychlua,FunkinLua)
 HX_DECLARE_CLASS1(psychlua,HScript)
 HX_DECLARE_CLASS1(shaders,BlockedGlitchEffect)
 HX_DECLARE_CLASS1(shaders,BloomEffect)
+HX_DECLARE_CLASS1(shaders,ChromBlockedEffect)
+HX_DECLARE_CLASS1(shaders,ChromBordesEffect)
 HX_DECLARE_CLASS1(shaders,ChromaticAberrationEffect)
 HX_DECLARE_CLASS1(shaders,DoChromaticAberrationEffect)
 HX_DECLARE_CLASS1(shaders,Effect)
@@ -286,6 +289,7 @@ class HXCPP_CLASS_ATTRIBUTES PlayState_obj : public  ::backend::MusicBeatState_o
 		Float camZoomSpeed;
 		Float hudZoomSpeed;
 		Float czspeedDefault;
+		bool enableangle;
 		bool generatedMusic;
 		bool endingSong;
 		bool startingSong;
@@ -357,6 +361,9 @@ class HXCPP_CLASS_ATTRIBUTES PlayState_obj : public  ::backend::MusicBeatState_o
 		Float zoomAdd;
 		bool autoZoom;
 		bool realityShader;
+		 ::objects::SubtitleManager subtitleManager;
+		::Array< ::Dynamic> pauseTweens;
+		bool movecameracountdownbeacuaseyes;
 		 ::flixel::addons::effects::FlxTrail evilTrail;
 		 ::flixel::addons::effects::FlxTrail scaryTrail;
 		 ::flixel::addons::effects::FlxTrail playerTrail;
@@ -399,6 +406,8 @@ class HXCPP_CLASS_ATTRIBUTES PlayState_obj : public  ::backend::MusicBeatState_o
 		Float cameraSpeed;
 		 ::shaders::WiggleEffect wiggleShit;
 		 ::openfl::filters::ShaderFilter susWiggle;
+		 ::shaders::ChromBlockedEffect chromglitch;
+		 ::shaders::ChromBordesEffect googlechrombordes;
 		 ::shaders::DoChromaticAberrationEffect googlechrom;
 		 ::shaders::ChromaticAberrationEffect shader_chromatic_abberation;
 		 ::shaders::GrainEffect grain_shader;

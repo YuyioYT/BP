@@ -30,7 +30,7 @@
 
 HX_DEFINE_STACK_FRAME(_hx_pos_e2b681f97176f402_6_new,"options.HealthBarSettingsState","new",0xa46294b9,"options.HealthBarSettingsState.new","options/HealthBarSettingsState.hx",6,0x0ace8ab6)
 static const ::String _hx_array_data_8601c447_1[] = {
-	HX_("Purgatory",89,a7,af,e9),HX_("Animated",c3,2e,a4,62),HX_("Disabled",9c,fd,b5,55),
+	HX_("Purgatory",89,a7,af,e9),HX_("Dab",25,ee,33,00),HX_("Animated",c3,2e,a4,62),HX_("Disabled",9c,fd,b5,55),
 };
 namespace options{
 
@@ -38,7 +38,7 @@ void HealthBarSettingsState_obj::__construct(){
             	HX_GC_STACKFRAME(&_hx_pos_e2b681f97176f402_6_new)
 HXLINE(   7)		this->title = HX_("Health Bar",4f,e8,c6,dd);
 HXLINE(   8)		this->rpcTitle = HX_("Health Bar Settings Menu",6b,de,b6,07);
-HXLINE(  11)		 ::options::Option option =  ::options::Option_obj::__alloc( HX_CTX ,HX_("Health Bar Overlay:",bb,cc,20,8a),HX_("What should the Health bar Overlay display?",5e,4a,69,3a),HX_("healthBarOverlay",b9,71,55,78),HX_("string",d1,28,30,11),::Array_obj< ::String >::fromData( _hx_array_data_8601c447_1,3));
+HXLINE(  11)		 ::options::Option option =  ::options::Option_obj::__alloc( HX_CTX ,HX_("Health Bar Overlay:",bb,cc,20,8a),HX_("What should the Health bar Overlay display?",5e,4a,69,3a),HX_("healthBarOverlay",b9,71,55,78),HX_("string",d1,28,30,11),::Array_obj< ::String >::fromData( _hx_array_data_8601c447_1,4));
 HXLINE(  16)		this->addOption(option);
 HXLINE(  18)		 ::options::Option option1 =  ::options::Option_obj::__alloc( HX_CTX ,HX_("Original Time bar colors",c1,97,b6,fb),HX_("His name say all.",09,2a,44,48),HX_("originalhealthbarColor",3d,97,ad,b6),HX_("bool",2a,84,1b,41),null());
 HXLINE(  22)		this->addOption(option1);

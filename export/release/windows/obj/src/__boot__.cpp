@@ -1344,9 +1344,6 @@
 #ifndef INCLUDED_flixel_addons_ui_FlxInputText
 #include <flixel/addons/ui/FlxInputText.h>
 #endif
-#ifndef INCLUDED_flixel_text_FlxText
-#include <flixel/text/FlxText.h>
-#endif
 #ifndef INCLUDED_flixel_addons_ui_Anchor
 #include <flixel/addons/ui/Anchor.h>
 #endif
@@ -1364,6 +1361,15 @@
 #endif
 #ifndef INCLUDED_openfl_display_BitmapData
 #include <openfl/display/BitmapData.h>
+#endif
+#ifndef INCLUDED_flixel_addons_text_FlxTypeText
+#include <flixel/addons/text/FlxTypeText.h>
+#endif
+#ifndef INCLUDED_flixel_text_FlxText
+#include <flixel/text/FlxText.h>
+#endif
+#ifndef INCLUDED_flixel_addons_text_TypeSound
+#include <flixel/addons/text/TypeSound.h>
 #endif
 #ifndef INCLUDED_flixel_addons_display_FlxRuntimeShader
 #include <flixel/addons/display/FlxRuntimeShader.h>
@@ -1779,6 +1785,18 @@
 #ifndef INCLUDED_shaders_ChromAberrationBlueSwapEffect
 #include <shaders/ChromAberrationBlueSwapEffect.h>
 #endif
+#ifndef INCLUDED_shaders_ChromBlockedShader
+#include <shaders/ChromBlockedShader.h>
+#endif
+#ifndef INCLUDED_shaders_ChromBlockedEffect
+#include <shaders/ChromBlockedEffect.h>
+#endif
+#ifndef INCLUDED_shaders_ChromBordesEffectShader
+#include <shaders/ChromBordesEffectShader.h>
+#endif
+#ifndef INCLUDED_shaders_ChromBordesEffect
+#include <shaders/ChromBordesEffect.h>
+#endif
 #ifndef INCLUDED_shaders_MotionBlurShader
 #include <shaders/MotionBlurShader.h>
 #endif
@@ -2100,9 +2118,6 @@
 #ifndef INCLUDED_openfl_media_SoundChannel
 #include <openfl/media/SoundChannel.h>
 #endif
-#ifndef INCLUDED_openfl_media_Sound
-#include <openfl/media/Sound.h>
-#endif
 #ifndef INCLUDED_openfl_media_ID3Info
 #include <openfl/media/ID3Info.h>
 #endif
@@ -2378,6 +2393,12 @@
 #endif
 #ifndef INCLUDED_objects_TypedAlphabet
 #include <objects/TypedAlphabet.h>
+#endif
+#ifndef INCLUDED_objects_SubtitleManager
+#include <objects/SubtitleManager.h>
+#endif
+#ifndef INCLUDED_objects_Subtitle
+#include <objects/Subtitle.h>
 #endif
 #ifndef INCLUDED_objects_StrumNote
 #include <objects/StrumNote.h>
@@ -3936,6 +3957,9 @@
 #ifndef INCLUDED_lime_math_Vector2
 #include <lime/math/Vector2.h>
 #endif
+#ifndef INCLUDED_openfl_media_Sound
+#include <openfl/media/Sound.h>
+#endif
 #ifndef INCLUDED_flixel_addons_effects_FlxTrailArea
 #include <flixel/addons/effects/FlxTrailArea.h>
 #endif
@@ -4694,13 +4718,15 @@ __files__boot();
 ::openfl::geom::Point_obj::__register();
 ::flixel::addons::ui::FlxUISprite_obj::__register();
 ::flixel::addons::ui::FlxInputText_obj::__register();
-::flixel::text::FlxText_obj::__register();
 ::flixel::addons::ui::Anchor_obj::__register();
 ::flixel::addons::transition::_TransitionFade::GraphicDiagonalGradient_obj::__register();
 ::flixel::addons::transition::GraphicTransTileSquare_obj::__register();
 ::flixel::addons::transition::GraphicTransTileDiamond_obj::__register();
 ::flixel::addons::transition::GraphicTransTileCircle_obj::__register();
 ::openfl::display::BitmapData_obj::__register();
+::flixel::addons::text::FlxTypeText_obj::__register();
+::flixel::text::FlxText_obj::__register();
+::flixel::addons::text::TypeSound_obj::__register();
 ::flixel::addons::display::FlxRuntimeShader_obj::__register();
 ::openfl::display::Shader_obj::__register();
 ::flixel::FlxG_obj::__register();
@@ -4839,6 +4865,10 @@ __files__boot();
 ::shaders::PerlinSmokeEffect_obj::__register();
 ::shaders::ChromAberrationBlueSwapShader_obj::__register();
 ::shaders::ChromAberrationBlueSwapEffect_obj::__register();
+::shaders::ChromBlockedShader_obj::__register();
+::shaders::ChromBlockedEffect_obj::__register();
+::shaders::ChromBordesEffectShader_obj::__register();
+::shaders::ChromBordesEffect_obj::__register();
 ::shaders::MotionBlurShader_obj::__register();
 ::shaders::MotionBlurEffect_obj::__register();
 ::shaders::MosaicShader_obj::__register();
@@ -4946,7 +4976,6 @@ __files__boot();
 ::openfl::net::FileFilter_obj::__register();
 ::openfl::media::SoundLoaderContext_obj::__register();
 ::openfl::media::SoundChannel_obj::__register();
-::openfl::media::Sound_obj::__register();
 ::openfl::media::ID3Info_obj::__register();
 ::openfl::geom::Vector3D_obj::__register();
 ::openfl::geom::Transform_obj::__register();
@@ -5039,6 +5068,8 @@ __files__boot();
 ::openfl::display::DisplayObjectShader_obj::__register();
 ::openfl::display::Bitmap_obj::__register();
 ::objects::TypedAlphabet_obj::__register();
+::objects::SubtitleManager_obj::__register();
+::objects::Subtitle_obj::__register();
 ::objects::StrumNote_obj::__register();
 ::objects::PixelSplashShader_obj::__register();
 ::objects::PixelSplashShaderRef_obj::__register();
@@ -5558,6 +5589,7 @@ __files__boot();
 ::flixel::addons::transition::Transition_obj::__register();
 ::flixel::addons::transition::FlxTransitionSprite_obj::__register();
 ::lime::math::Vector2_obj::__register();
+::openfl::media::Sound_obj::__register();
 ::flixel::addons::effects::FlxTrailArea_obj::__register();
 ::flixel::addons::effects::FlxTrail_obj::__register();
 ::flixel::addons::display::shapes::FlxShapeCircle_obj::__register();
@@ -5825,13 +5857,15 @@ __files__boot();
 ::flixel::FlxG_obj::__boot();
 ::openfl::display::Shader_obj::__boot();
 ::flixel::addons::display::FlxRuntimeShader_obj::__boot();
+::flixel::addons::text::TypeSound_obj::__boot();
+::flixel::text::FlxText_obj::__boot();
+::flixel::addons::text::FlxTypeText_obj::__boot();
 ::openfl::display::BitmapData_obj::__boot();
 ::flixel::addons::transition::GraphicTransTileCircle_obj::__boot();
 ::flixel::addons::transition::GraphicTransTileDiamond_obj::__boot();
 ::flixel::addons::transition::GraphicTransTileSquare_obj::__boot();
 ::flixel::addons::transition::_TransitionFade::GraphicDiagonalGradient_obj::__boot();
 ::flixel::addons::ui::Anchor_obj::__boot();
-::flixel::text::FlxText_obj::__boot();
 ::flixel::addons::ui::FlxInputText_obj::__boot();
 ::flixel::addons::ui::FlxUISprite_obj::__boot();
 ::openfl::geom::Point_obj::__boot();

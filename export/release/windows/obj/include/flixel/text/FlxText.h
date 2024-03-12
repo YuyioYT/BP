@@ -92,7 +92,7 @@ class HXCPP_CLASS_ATTRIBUTES FlxText_obj : public  ::flixel::FlxSprite_obj
 		bool stampOnAtlas( ::flixel::graphics::atlas::FlxAtlas atlas);
 		::Dynamic stampOnAtlas_dyn();
 
-		 ::flixel::text::FlxText applyMarkup(::String input,::Array< ::Dynamic> rules);
+		virtual  ::flixel::text::FlxText applyMarkup(::String input,::Array< ::Dynamic> rules);
 		::Dynamic applyMarkup_dyn();
 
 		 ::flixel::text::FlxText addFormat( ::flixel::text::FlxTextFormat Format,::hx::Null< int >  Start,::hx::Null< int >  End);
