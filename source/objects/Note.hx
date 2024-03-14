@@ -239,11 +239,11 @@ class Note extends FlxSprite
 				case 'phone' | 'phone-alt':
 					if (!isSustainNote)
 						{
-							frames = Paths.getSparrowAtlas('notes/NOTE_phone');
+							frames = Paths.getSparrowAtlas('notes/PHONENOTE_assets');
 						}
 						else
 						{
-							frames = Paths.getSparrowAtlas('notes/NOTE_assets');
+							frames = Paths.getSparrowAtlas('notes/PHONENOTE_assets');
 						}
 						animation.addByPrefix('greenScroll', 'green0');
 						animation.addByPrefix('redScroll', 'red0');

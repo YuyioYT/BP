@@ -24,7 +24,7 @@ import lime.app.Application;
 import openfl.filters.BlurFilter;
 import psychlua.ModchartSprite;
 
-import backend.Achievements;
+import backend.Achievements; 
 import backend.Highscore;
 import backend.StageData;
 import backend.WeekData;
@@ -5646,24 +5646,6 @@ function hideshit() // basically a camHUD.visible = false; except it doesnt fuck
 		});
 
 		healthBarShake(0.35);
-		iconP2.changeIconStatus(1);
-		iconP1.changeIconStatus(2);
-
-		if (daNote != null)
-			{
-				switch (daNote.noteType)
-				{
-					case 'phone':
-						var hitAnimation:Bool = boyfriend.animation.getByName("hit") != null;
-						boyfriend.playAnim(hitAnimation ? 'hit' : 'singRIGHTmiss', true);
-						FlxTween.cancelTweensOf(daNote.MyStrum);
-						daNote.MyStrum.alpha = 0.01;
-						var noteTween = FlxTween.tween(daNote.MyStrum, {alpha: 1}, 7, {ease: FlxEase.expoIn});
-						pauseTweens.push(noteTween);
-						health -= 0.07;
-						return;
-				}
-			}
 
 		if(instakillOnMiss)
 			{
@@ -5715,6 +5697,22 @@ function hideshit() // basically a camHUD.visible = false; except it doesnt fuck
 		}
 
 		combo = 0;
+		
+		if (note != null)
+			{
+				switch (note.noteType)
+				{
+					case 'phone':
+						var hitAnimation:Bool = boyfriend.animation.getByName("hurt") != null;
+						boyfriend.playAnim(hitAnimation ? 'hurt' : 'singRIGHTmiss', true);
+						FlxTween.cancelTweensOf(note);
+						note.alpha = 0.01;
+						var noteTween = FlxTween.tween(note, {alpha: 1}, 7, {ease: FlxEase.expoIn});
+						pauseTweens.push(noteTween);
+						health -= 0.07;
+						return;
+				}
+			}
 
 		if(!practiceMode) songScore -= 10;
 		if(!endingSong) songMisses++;
@@ -5817,7 +5815,7 @@ function hideshit() // basically a camHUD.visible = false; except it doesnt fuck
 		var newgraincoloramount:Float = 2;
 		var newbloomeffect:Float = 9;
 		var newbloomstrength:Float = 1;
-		var newbloomcontrast:Float = 1;
+		var newbloomcontrast:Float = 1; 
 		var newbloombrightness:Float = 0;
 
 		switch(dad.curCharacter)
@@ -5827,7 +5825,7 @@ function hideshit() // basically a camHUD.visible = false; except it doesnt fuck
 			if (realityShader){
 
 					if(ClientPrefs.data.ChromaticAberration) { 
-						camHUD.setFilters([new ShaderFilter(googlechrom.shader),new ShaderFilter(grain.shader)]);
+						camHUD.setFilters([new ShaderFilter(googlechrom.shader),new ShaderFilter(grain.shader),new ShaderFilter(glitchShader.shader)]);
 						googlechrom.offset += newOffset;
 						FlxTween.tween(googlechrom, {offset: 0.002}, 0.1, { ease: FlxEase.linear });
 
@@ -5958,9 +5956,7 @@ function hideshit() // basically a camHUD.visible = false; except it doesnt fuck
 				noteMiss(note);
 				if(!note.noteSplashData.disabled && !note.isSustainNote)
 					spawnNoteSplashOnNote(note);
-
-				if(!note.noMissAnimation)
-				{
+				if(!note.noMissAnimation) {
 					switch(note.noteType) {
 						case 'Hurt Note': //Hurt note
 							if(boyfriend.animation.getByName('hurt') != null) {
@@ -5970,17 +5966,7 @@ function hideshit() // basically a camHUD.visible = false; except it doesnt fuck
 					}
 				}
 
-				if(note.noteType == 'phone' && dad.animOffsets.exists('dodge')) {
-					boyfriend.playAnim('dodge', true);
-					gf.playAnim('cheer', true);
-					boyfriend.specialAnim = true;
-					dad.specialAnim = true;
-					gf.specialAnim = true;
-					if (note.health != 2)
-						{
-							dad.playAnim('throw', true);
-						}
-				}
+	
 
 				if (!note.isSustainNote)
 				{
@@ -6001,7 +5987,17 @@ function hideshit() // basically a camHUD.visible = false; except it doesnt fuck
 			}
 			health += note.hitHealth * healthGain;
 
-			if(!note.noAnimation) {
+			if(note.noteType == 'phone' && boyfriend.animOffsets.exists('dodge')) {
+				boyfriend.playAnim('dodge', true);
+				gf.playAnim('cheer', true);
+				boyfriend.specialAnim = true;
+				dad.specialAnim = true;
+				gf.specialAnim = true;
+				if (note.health != 2)
+					{
+						dad.playAnim('throw', true);
+					}
+				}else if(!note.noAnimation) {
 				var animToPlay:String = singAnimations[Std.int(Math.abs(note.noteData))];
 
 				cameraMoveOnNote(note.noteData, 'bf');

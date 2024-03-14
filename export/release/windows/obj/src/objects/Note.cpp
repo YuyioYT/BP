@@ -586,9 +586,9 @@ HXLINE( 211)				goto _hx_goto_5;
             			if (  (_hx_switch_0==HX_("phone",6e,c3,f3,c1)) ||  (_hx_switch_0==HX_("phone-alt",8a,a5,ad,ce)) ){
 HXLINE( 240)				if (!(this->isSustainNote)) {
 HXLINE( 242)					::String library = null();
-HXDLIN( 242)					 ::flixel::graphics::FlxGraphic imageLoaded = ::backend::Paths_obj::image(HX_("notes/NOTE_phone",6f,96,fc,83),null(),true);
+HXDLIN( 242)					 ::flixel::graphics::FlxGraphic imageLoaded = ::backend::Paths_obj::image(HX_("notes/PHONENOTE_assets",b0,60,f7,bd),null(),true);
 HXDLIN( 242)					bool xmlExists = false;
-HXDLIN( 242)					::String xml = ::backend::Paths_obj::modFolders(((HX_("images/",77,50,74,c1) + HX_("notes/NOTE_phone",6f,96,fc,83)) + HX_(".xml",69,3e,c3,1e)));
+HXDLIN( 242)					::String xml = ::backend::Paths_obj::modFolders(((HX_("images/",77,50,74,c1) + HX_("notes/PHONENOTE_assets",b0,60,f7,bd)) + HX_(".xml",69,3e,c3,1e)));
 HXDLIN( 242)					if (::sys::FileSystem_obj::exists(xml)) {
 HXLINE( 242)						xmlExists = true;
             					}
@@ -597,22 +597,22 @@ HXDLIN( 242)					if (::hx::IsNotNull( imageLoaded )) {
 HXLINE( 242)						_hx_tmp = imageLoaded;
             					}
             					else {
-HXLINE( 242)						_hx_tmp = ::backend::Paths_obj::image(HX_("notes/NOTE_phone",6f,96,fc,83),library,true);
+HXLINE( 242)						_hx_tmp = ::backend::Paths_obj::image(HX_("notes/PHONENOTE_assets",b0,60,f7,bd),library,true);
             					}
 HXDLIN( 242)					::String _hx_tmp1;
 HXDLIN( 242)					if (xmlExists) {
 HXLINE( 242)						_hx_tmp1 = ::sys::io::File_obj::getContent(xml);
             					}
             					else {
-HXLINE( 242)						_hx_tmp1 = ::backend::Paths_obj::getPath(((HX_("images/",77,50,74,c1) + HX_("notes/NOTE_phone",6f,96,fc,83)) + HX_(".xml",69,3e,c3,1e)),null(),library,null());
+HXLINE( 242)						_hx_tmp1 = ::backend::Paths_obj::getPath(((HX_("images/",77,50,74,c1) + HX_("notes/PHONENOTE_assets",b0,60,f7,bd)) + HX_(".xml",69,3e,c3,1e)),null(),library,null());
             					}
 HXDLIN( 242)					this->set_frames(::flixel::graphics::frames::FlxAtlasFrames_obj::fromSparrow(_hx_tmp,_hx_tmp1));
             				}
             				else {
 HXLINE( 246)					::String library = null();
-HXDLIN( 246)					 ::flixel::graphics::FlxGraphic imageLoaded = ::backend::Paths_obj::image(HX_("notes/NOTE_assets",62,16,b3,51),null(),true);
+HXDLIN( 246)					 ::flixel::graphics::FlxGraphic imageLoaded = ::backend::Paths_obj::image(HX_("notes/PHONENOTE_assets",b0,60,f7,bd),null(),true);
 HXDLIN( 246)					bool xmlExists = false;
-HXDLIN( 246)					::String xml = ::backend::Paths_obj::modFolders(((HX_("images/",77,50,74,c1) + HX_("notes/NOTE_assets",62,16,b3,51)) + HX_(".xml",69,3e,c3,1e)));
+HXDLIN( 246)					::String xml = ::backend::Paths_obj::modFolders(((HX_("images/",77,50,74,c1) + HX_("notes/PHONENOTE_assets",b0,60,f7,bd)) + HX_(".xml",69,3e,c3,1e)));
 HXDLIN( 246)					if (::sys::FileSystem_obj::exists(xml)) {
 HXLINE( 246)						xmlExists = true;
             					}
@@ -621,14 +621,14 @@ HXDLIN( 246)					if (::hx::IsNotNull( imageLoaded )) {
 HXLINE( 246)						_hx_tmp = imageLoaded;
             					}
             					else {
-HXLINE( 246)						_hx_tmp = ::backend::Paths_obj::image(HX_("notes/NOTE_assets",62,16,b3,51),library,true);
+HXLINE( 246)						_hx_tmp = ::backend::Paths_obj::image(HX_("notes/PHONENOTE_assets",b0,60,f7,bd),library,true);
             					}
 HXDLIN( 246)					::String _hx_tmp1;
 HXDLIN( 246)					if (xmlExists) {
 HXLINE( 246)						_hx_tmp1 = ::sys::io::File_obj::getContent(xml);
             					}
             					else {
-HXLINE( 246)						_hx_tmp1 = ::backend::Paths_obj::getPath(((HX_("images/",77,50,74,c1) + HX_("notes/NOTE_assets",62,16,b3,51)) + HX_(".xml",69,3e,c3,1e)),null(),library,null());
+HXLINE( 246)						_hx_tmp1 = ::backend::Paths_obj::getPath(((HX_("images/",77,50,74,c1) + HX_("notes/PHONENOTE_assets",b0,60,f7,bd)) + HX_(".xml",69,3e,c3,1e)),null(),library,null());
             					}
 HXDLIN( 246)					this->set_frames(::flixel::graphics::frames::FlxAtlasFrames_obj::fromSparrow(_hx_tmp,_hx_tmp1));
             				}

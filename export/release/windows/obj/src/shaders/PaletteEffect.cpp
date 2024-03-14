@@ -22,17 +22,17 @@
 #include <shaders/PaletteShader.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_430c8fb2ae83bd83_3430_new,"shaders.PaletteEffect","new",0xe9a3e77e,"shaders.PaletteEffect.new","shaders/Shaders.hx",3430,0x7800d7f1)
-HX_LOCAL_STACK_FRAME(_hx_pos_430c8fb2ae83bd83_3443_update,"shaders.PaletteEffect","update",0x977235ab,"shaders.PaletteEffect.update","shaders/Shaders.hx",3443,0x7800d7f1)
+HX_DEFINE_STACK_FRAME(_hx_pos_430c8fb2ae83bd83_3431_new,"shaders.PaletteEffect","new",0xe9a3e77e,"shaders.PaletteEffect.new","shaders/Shaders.hx",3431,0x7800d7f1)
+HX_LOCAL_STACK_FRAME(_hx_pos_430c8fb2ae83bd83_3444_update,"shaders.PaletteEffect","update",0x977235ab,"shaders.PaletteEffect.update","shaders/Shaders.hx",3444,0x7800d7f1)
 namespace shaders{
 
 void PaletteEffect_obj::__construct(){
-            	HX_GC_STACKFRAME(&_hx_pos_430c8fb2ae83bd83_3430_new)
-HXLINE(3434)		this->paletteSize = ((Float)8.0);
-HXLINE(3433)		this->strength = ((Float)0.0);
-HXLINE(3432)		this->shader =  ::shaders::PaletteShader_obj::__alloc( HX_CTX );
-HXLINE(3438)		this->shader->strength->value = ::Array_obj< Float >::__new(1)->init(0,this->strength);
-HXLINE(3439)		this->shader->paletteSize->value = ::Array_obj< Float >::__new(1)->init(0,this->paletteSize);
+            	HX_GC_STACKFRAME(&_hx_pos_430c8fb2ae83bd83_3431_new)
+HXLINE(3435)		this->paletteSize = ((Float)8.0);
+HXLINE(3434)		this->strength = ((Float)0.0);
+HXLINE(3433)		this->shader =  ::shaders::PaletteShader_obj::__alloc( HX_CTX );
+HXLINE(3439)		this->shader->strength->value = ::Array_obj< Float >::__new(1)->init(0,this->strength);
+HXLINE(3440)		this->shader->paletteSize->value = ::Array_obj< Float >::__new(1)->init(0,this->paletteSize);
             	}
 
 Dynamic PaletteEffect_obj::__CreateEmpty() { return new PaletteEffect_obj; }
@@ -55,9 +55,9 @@ bool PaletteEffect_obj::_hx_isInstanceOf(int inClassId) {
 }
 
 void PaletteEffect_obj::update(Float elapsed){
-            	HX_STACKFRAME(&_hx_pos_430c8fb2ae83bd83_3443_update)
-HXLINE(3444)		this->shader->strength->value = ::Array_obj< Float >::__new(1)->init(0,this->strength);
-HXLINE(3445)		this->shader->paletteSize->value = ::Array_obj< Float >::__new(1)->init(0,this->paletteSize);
+            	HX_STACKFRAME(&_hx_pos_430c8fb2ae83bd83_3444_update)
+HXLINE(3445)		this->shader->strength->value = ::Array_obj< Float >::__new(1)->init(0,this->strength);
+HXLINE(3446)		this->shader->paletteSize->value = ::Array_obj< Float >::__new(1)->init(0,this->paletteSize);
             	}
 
 

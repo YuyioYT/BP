@@ -23,14 +23,17 @@
 #endif
 
 HX_DEFINE_STACK_FRAME(_hx_pos_020f881b391b1d1d_2818_new,"shaders.ChromBlockedEffect","new",0xf1dda3e4,"shaders.ChromBlockedEffect.new","shaders/Shaders.hx",2818,0x7800d7f1)
-HX_LOCAL_STACK_FRAME(_hx_pos_020f881b391b1d1d_2830_set_floatGlitchvec2,"shaders.ChromBlockedEffect","set_floatGlitchvec2",0x065f9c36,"shaders.ChromBlockedEffect.set_floatGlitchvec2","shaders/Shaders.hx",2830,0x7800d7f1)
+HX_LOCAL_STACK_FRAME(_hx_pos_020f881b391b1d1d_2833_set_floatGlitchvec2,"shaders.ChromBlockedEffect","set_floatGlitchvec2",0x065f9c36,"shaders.ChromBlockedEffect.set_floatGlitchvec2","shaders/Shaders.hx",2833,0x7800d7f1)
+HX_LOCAL_STACK_FRAME(_hx_pos_020f881b391b1d1d_2841_update,"shaders.ChromBlockedEffect","update",0x4061bd05,"shaders.ChromBlockedEffect.update","shaders/Shaders.hx",2841,0x7800d7f1)
 namespace shaders{
 
 void ChromBlockedEffect_obj::__construct(){
             	HX_GC_STACKFRAME(&_hx_pos_020f881b391b1d1d_2818_new)
+HXLINE(2823)		this->iTime = ((Float)0.0);
 HXLINE(2822)		this->floatGlitchvec2 = ((Float)0);
-HXLINE(2826)		this->shader =  ::shaders::ChromBlockedShader_obj::__alloc( HX_CTX );
-HXLINE(2827)		this->set_floatGlitchvec2(( (Float)(0) ));
+HXLINE(2827)		this->shader =  ::shaders::ChromBlockedShader_obj::__alloc( HX_CTX );
+HXLINE(2828)		this->set_floatGlitchvec2(( (Float)(0) ));
+HXLINE(2830)		this->shader->iTime->value = ::Array_obj< Float >::__new(1)->init(0,this->iTime);
             	}
 
 Dynamic ChromBlockedEffect_obj::__CreateEmpty() { return new ChromBlockedEffect_obj; }
@@ -53,14 +56,21 @@ bool ChromBlockedEffect_obj::_hx_isInstanceOf(int inClassId) {
 }
 
 Float ChromBlockedEffect_obj::set_floatGlitchvec2(Float value){
-            	HX_STACKFRAME(&_hx_pos_020f881b391b1d1d_2830_set_floatGlitchvec2)
-HXLINE(2831)		this->floatGlitchvec2 = value;
-HXLINE(2832)		this->shader->floatGlitch->value = ::Array_obj< Float >::__new(1)->init(0,value);
-HXLINE(2833)		return this->floatGlitchvec2;
+            	HX_STACKFRAME(&_hx_pos_020f881b391b1d1d_2833_set_floatGlitchvec2)
+HXLINE(2834)		this->floatGlitchvec2 = value;
+HXLINE(2835)		this->shader->floatGlitch->value = ::Array_obj< Float >::__new(1)->init(0,value);
+HXLINE(2836)		return this->floatGlitchvec2;
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC1(ChromBlockedEffect_obj,set_floatGlitchvec2,return )
+
+void ChromBlockedEffect_obj::update(Float elapsed){
+            	HX_STACKFRAME(&_hx_pos_020f881b391b1d1d_2841_update)
+HXDLIN(2841)		 ::shaders::ChromBlockedEffect _hx_tmp = ::hx::ObjectPtr<OBJ_>(this);
+HXDLIN(2841)		_hx_tmp->iTime = (_hx_tmp->iTime + elapsed);
+            	}
+
 
 
 ::hx::ObjectPtr< ChromBlockedEffect_obj > ChromBlockedEffect_obj::__new() {
@@ -85,6 +95,7 @@ void ChromBlockedEffect_obj::__Mark(HX_MARK_PARAMS)
 	HX_MARK_BEGIN_CLASS(ChromBlockedEffect);
 	HX_MARK_MEMBER_NAME(shader,"shader");
 	HX_MARK_MEMBER_NAME(floatGlitchvec2,"floatGlitchvec2");
+	HX_MARK_MEMBER_NAME(iTime,"iTime");
 	HX_MARK_END_CLASS();
 }
 
@@ -92,13 +103,18 @@ void ChromBlockedEffect_obj::__Visit(HX_VISIT_PARAMS)
 {
 	HX_VISIT_MEMBER_NAME(shader,"shader");
 	HX_VISIT_MEMBER_NAME(floatGlitchvec2,"floatGlitchvec2");
+	HX_VISIT_MEMBER_NAME(iTime,"iTime");
 }
 
 ::hx::Val ChromBlockedEffect_obj::__Field(const ::String &inName,::hx::PropertyAccess inCallProp)
 {
 	switch(inName.length) {
+	case 5:
+		if (HX_FIELD_EQ(inName,"iTime") ) { return ::hx::Val( iTime ); }
+		break;
 	case 6:
 		if (HX_FIELD_EQ(inName,"shader") ) { return ::hx::Val( shader ); }
+		if (HX_FIELD_EQ(inName,"update") ) { return ::hx::Val( update_dyn() ); }
 		break;
 	case 15:
 		if (HX_FIELD_EQ(inName,"floatGlitchvec2") ) { return ::hx::Val( floatGlitchvec2 ); }
@@ -112,6 +128,9 @@ void ChromBlockedEffect_obj::__Visit(HX_VISIT_PARAMS)
 ::hx::Val ChromBlockedEffect_obj::__SetField(const ::String &inName,const ::hx::Val &inValue,::hx::PropertyAccess inCallProp)
 {
 	switch(inName.length) {
+	case 5:
+		if (HX_FIELD_EQ(inName,"iTime") ) { iTime=inValue.Cast< Float >(); return inValue; }
+		break;
 	case 6:
 		if (HX_FIELD_EQ(inName,"shader") ) { shader=inValue.Cast<  ::shaders::ChromBlockedShader >(); return inValue; }
 		break;
@@ -125,6 +144,7 @@ void ChromBlockedEffect_obj::__GetFields(Array< ::String> &outFields)
 {
 	outFields->push(HX_("shader",25,bf,20,1d));
 	outFields->push(HX_("floatGlitchvec2",8f,be,5f,6f));
+	outFields->push(HX_("iTime",16,e1,e8,ac));
 	super::__GetFields(outFields);
 };
 
@@ -132,6 +152,7 @@ void ChromBlockedEffect_obj::__GetFields(Array< ::String> &outFields)
 static ::hx::StorageInfo ChromBlockedEffect_obj_sMemberStorageInfo[] = {
 	{::hx::fsObject /*  ::shaders::ChromBlockedShader */ ,(int)offsetof(ChromBlockedEffect_obj,shader),HX_("shader",25,bf,20,1d)},
 	{::hx::fsFloat,(int)offsetof(ChromBlockedEffect_obj,floatGlitchvec2),HX_("floatGlitchvec2",8f,be,5f,6f)},
+	{::hx::fsFloat,(int)offsetof(ChromBlockedEffect_obj,iTime),HX_("iTime",16,e1,e8,ac)},
 	{ ::hx::fsUnknown, 0, null()}
 };
 static ::hx::StaticInfo *ChromBlockedEffect_obj_sStaticStorageInfo = 0;
@@ -140,7 +161,9 @@ static ::hx::StaticInfo *ChromBlockedEffect_obj_sStaticStorageInfo = 0;
 static ::String ChromBlockedEffect_obj_sMemberFields[] = {
 	HX_("shader",25,bf,20,1d),
 	HX_("floatGlitchvec2",8f,be,5f,6f),
+	HX_("iTime",16,e1,e8,ac),
 	HX_("set_floatGlitchvec2",b2,80,07,37),
+	HX_("update",09,86,05,87),
 	::String(null()) };
 
 ::hx::Class ChromBlockedEffect_obj::__mClass;

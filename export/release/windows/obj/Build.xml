@@ -2548,6 +2548,7 @@
    <depend name="include/flixel/graphics/tile/FlxGraphicsShader.h"/>
    <depend name="include/openfl/display/GraphicsShader.h"/>
    <depend name="include/openfl/display/Shader.h"/>
+   <depend name="include/openfl/display/ShaderInput_openfl_display_BitmapData.h"/>
    <depend name="include/openfl/display/ShaderParameter_Float.h"/>
    <depend name="include/shaders/ChromBlockedShader.h"/>
   </file>

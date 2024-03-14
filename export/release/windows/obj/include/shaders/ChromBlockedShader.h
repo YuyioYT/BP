@@ -11,6 +11,7 @@
 HX_DECLARE_CLASS3(flixel,graphics,tile,FlxGraphicsShader)
 HX_DECLARE_CLASS2(openfl,display,GraphicsShader)
 HX_DECLARE_CLASS2(openfl,display,Shader)
+HX_DECLARE_CLASS2(openfl,display,ShaderInput_openfl_display_BitmapData)
 HX_DECLARE_CLASS2(openfl,display,ShaderParameter_Float)
 HX_DECLARE_CLASS1(shaders,ChromBlockedShader)
 
@@ -49,7 +50,10 @@ class HXCPP_CLASS_ATTRIBUTES ChromBlockedShader_obj : public  ::flixel::graphics
 		bool _hx_isInstanceOf(int inClassId);
 		::String __ToString() const { return HX_("ChromBlockedShader",c6,df,12,75); }
 
+		 ::openfl::display::ShaderParameter_Float iResolution;
+		 ::openfl::display::ShaderParameter_Float iTime;
 		 ::openfl::display::ShaderParameter_Float floatGlitch;
+		 ::openfl::display::ShaderInput_openfl_display_BitmapData iChannel0;
 };
 
 } // end namespace shaders

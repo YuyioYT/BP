@@ -52,8 +52,11 @@ class HXCPP_CLASS_ATTRIBUTES ChromBlockedEffect_obj : public  ::shaders::Effect_
 
 		 ::shaders::ChromBlockedShader shader;
 		Float floatGlitchvec2;
+		Float iTime;
 		Float set_floatGlitchvec2(Float value);
 		::Dynamic set_floatGlitchvec2_dyn();
+
+		void update(Float elapsed);
 
 };
 

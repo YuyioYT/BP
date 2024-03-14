@@ -22,13 +22,13 @@
 #include <shaders/Effect.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_807ca2a15f7b3d7b_2956_new,"shaders.ChromAberrationBlueSwapEffect","new",0x1ad96c6c,"shaders.ChromAberrationBlueSwapEffect.new","shaders/Shaders.hx",2956,0x7800d7f1)
+HX_DEFINE_STACK_FRAME(_hx_pos_807ca2a15f7b3d7b_2957_new,"shaders.ChromAberrationBlueSwapEffect","new",0x1ad96c6c,"shaders.ChromAberrationBlueSwapEffect.new","shaders/Shaders.hx",2957,0x7800d7f1)
 namespace shaders{
 
 void ChromAberrationBlueSwapEffect_obj::__construct(Float strength){
-            	HX_GC_STACKFRAME(&_hx_pos_807ca2a15f7b3d7b_2956_new)
-HXLINE(2957)		this->shader =  ::shaders::ChromAberrationBlueSwapShader_obj::__alloc( HX_CTX );
-HXLINE(2958)		this->shader->strength->value = ::Array_obj< Float >::__new(1)->init(0,strength);
+            	HX_GC_STACKFRAME(&_hx_pos_807ca2a15f7b3d7b_2957_new)
+HXLINE(2958)		this->shader =  ::shaders::ChromAberrationBlueSwapShader_obj::__alloc( HX_CTX );
+HXLINE(2959)		this->shader->strength->value = ::Array_obj< Float >::__new(1)->init(0,strength);
             	}
 
 Dynamic ChromAberrationBlueSwapEffect_obj::__CreateEmpty() { return new ChromAberrationBlueSwapEffect_obj; }
