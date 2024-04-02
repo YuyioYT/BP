@@ -1,40 +1,7 @@
 #include <hxcpp.h>
 
-#ifndef INCLUDED_backend_MusicBeatState
-#include <backend/MusicBeatState.h>
-#endif
-#ifndef INCLUDED_flixel_FlxBasic
-#include <flixel/FlxBasic.h>
-#endif
-#ifndef INCLUDED_flixel_FlxG
-#include <flixel/FlxG.h>
-#endif
-#ifndef INCLUDED_flixel_FlxState
-#include <flixel/FlxState.h>
-#endif
-#ifndef INCLUDED_flixel_addons_transition_FlxTransitionableState
-#include <flixel/addons/transition/FlxTransitionableState.h>
-#endif
-#ifndef INCLUDED_flixel_addons_ui_FlxUIState
-#include <flixel/addons/ui/FlxUIState.h>
-#endif
-#ifndef INCLUDED_flixel_addons_ui_interfaces_IEventGetter
-#include <flixel/addons/ui/interfaces/IEventGetter.h>
-#endif
-#ifndef INCLUDED_flixel_addons_ui_interfaces_IFlxUIState
-#include <flixel/addons/ui/interfaces/IFlxUIState.h>
-#endif
 #ifndef INCLUDED_flixel_graphics_tile_FlxGraphicsShader
 #include <flixel/graphics/tile/FlxGraphicsShader.h>
-#endif
-#ifndef INCLUDED_flixel_group_FlxTypedGroup
-#include <flixel/group/FlxTypedGroup.h>
-#endif
-#ifndef INCLUDED_flixel_math_FlxRandom
-#include <flixel/math/FlxRandom.h>
-#endif
-#ifndef INCLUDED_flixel_util_IFlxDestroyable
-#include <flixel/util/IFlxDestroyable.h>
 #endif
 #ifndef INCLUDED_openfl_display_GraphicsShader
 #include <openfl/display/GraphicsShader.h>
@@ -54,21 +21,21 @@
 #ifndef INCLUDED_shaders_StaticShader
 #include <shaders/StaticShader.h>
 #endif
-#ifndef INCLUDED_states_PlayState
-#include <states/PlayState.h>
-#endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_071ce3ef8ccd3a8e_449_new,"shaders.StaticEffect","new",0x00c23131,"shaders.StaticEffect.new","shaders/Shaders.hx",449,0x7800d7f1)
-HX_LOCAL_STACK_FRAME(_hx_pos_071ce3ef8ccd3a8e_460_update,"shaders.StaticEffect","update",0xfdf8bdd8,"shaders.StaticEffect.update","shaders/Shaders.hx",460,0x7800d7f1)
+HX_DEFINE_STACK_FRAME(_hx_pos_071ce3ef8ccd3a8e_580_new,"shaders.StaticEffect","new",0x00c23131,"shaders.StaticEffect.new","shaders/Shaders.hx",580,0x7800d7f1)
+static const Float _hx_array_data_5d4bc4bf_1[] = {
+	(Float)0,
+};
+HX_LOCAL_STACK_FRAME(_hx_pos_071ce3ef8ccd3a8e_593_update,"shaders.StaticEffect","update",0xfdf8bdd8,"shaders.StaticEffect.update","shaders/Shaders.hx",593,0x7800d7f1)
+HX_LOCAL_STACK_FRAME(_hx_pos_071ce3ef8ccd3a8e_598_set_strength,"shaders.StaticEffect","set_strength",0xc433270d,"shaders.StaticEffect.set_strength","shaders/Shaders.hx",598,0x7800d7f1)
 namespace shaders{
 
-void StaticEffect_obj::__construct(Float strength){
-            	HX_GC_STACKFRAME(&_hx_pos_071ce3ef8ccd3a8e_449_new)
-HXLINE( 451)		this->shader =  ::shaders::StaticShader_obj::__alloc( HX_CTX );
-HXLINE( 455)		this->shader->strength->value = ::Array_obj< Float >::__new(1)->init(0,strength);
-HXLINE( 456)		Float _hx_tmp = ::flixel::FlxG_obj::random->_hx_float(0,8,null());
-HXDLIN( 456)		this->shader->iTime->value = ::Array_obj< Float >::__new(1)->init(0,_hx_tmp);
-HXLINE( 457)		::states::PlayState_obj::instance->shaderUpdates->push(this->update_dyn());
+void StaticEffect_obj::__construct(){
+            	HX_GC_STACKFRAME(&_hx_pos_071ce3ef8ccd3a8e_580_new)
+HXLINE( 584)		this->strength = ((Float)0);
+HXLINE( 582)		this->shader =  ::shaders::StaticShader_obj::__alloc( HX_CTX );
+HXLINE( 588)		this->set_strength(( (Float)(0) ));
+HXLINE( 589)		this->shader->iTime->value = ::Array_obj< Float >::fromData( _hx_array_data_5d4bc4bf_1,1);
             	}
 
 Dynamic StaticEffect_obj::__CreateEmpty() { return new StaticEffect_obj; }
@@ -78,7 +45,7 @@ void *StaticEffect_obj::_hx_vtable = 0;
 Dynamic StaticEffect_obj::__Create(::hx::DynamicArray inArgs)
 {
 	::hx::ObjectPtr< StaticEffect_obj > _hx_result = new StaticEffect_obj();
-	_hx_result->__construct(inArgs[0]);
+	_hx_result->__construct();
 	return _hx_result;
 }
 
@@ -91,24 +58,34 @@ bool StaticEffect_obj::_hx_isInstanceOf(int inClassId) {
 }
 
 void StaticEffect_obj::update(Float elapsed){
-            	HX_STACKFRAME(&_hx_pos_071ce3ef8ccd3a8e_460_update)
-HXLINE( 461)		::Array< Float > base = this->shader->iTime->value;
-HXDLIN( 461)		int _hx_tmp = 0;
-HXDLIN( 461)		base[_hx_tmp] = (base->__get(_hx_tmp) + elapsed);
+            	HX_STACKFRAME(&_hx_pos_071ce3ef8ccd3a8e_593_update)
+HXLINE( 594)		::Array< Float > base = this->shader->iTime->value;
+HXDLIN( 594)		int _hx_tmp = 0;
+HXDLIN( 594)		base[_hx_tmp] = (base->__get(_hx_tmp) + elapsed);
             	}
 
 
+Float StaticEffect_obj::set_strength(Float value){
+            	HX_STACKFRAME(&_hx_pos_071ce3ef8ccd3a8e_598_set_strength)
+HXLINE( 599)		this->strength = value;
+HXLINE( 600)		this->shader->strength->value = ::Array_obj< Float >::__new(1)->init(0,value);
+HXLINE( 601)		return value;
+            	}
 
-::hx::ObjectPtr< StaticEffect_obj > StaticEffect_obj::__new(Float strength) {
+
+HX_DEFINE_DYNAMIC_FUNC1(StaticEffect_obj,set_strength,return )
+
+
+::hx::ObjectPtr< StaticEffect_obj > StaticEffect_obj::__new() {
 	::hx::ObjectPtr< StaticEffect_obj > __this = new StaticEffect_obj();
-	__this->__construct(strength);
+	__this->__construct();
 	return __this;
 }
 
-::hx::ObjectPtr< StaticEffect_obj > StaticEffect_obj::__alloc(::hx::Ctx *_hx_ctx,Float strength) {
+::hx::ObjectPtr< StaticEffect_obj > StaticEffect_obj::__alloc(::hx::Ctx *_hx_ctx) {
 	StaticEffect_obj *__this = (StaticEffect_obj*)(::hx::Ctx::alloc(_hx_ctx, sizeof(StaticEffect_obj), true, "shaders.StaticEffect"));
 	*(void **)__this = StaticEffect_obj::_hx_vtable;
-	__this->__construct(strength);
+	__this->__construct();
 	return __this;
 }
 
@@ -120,12 +97,14 @@ void StaticEffect_obj::__Mark(HX_MARK_PARAMS)
 {
 	HX_MARK_BEGIN_CLASS(StaticEffect);
 	HX_MARK_MEMBER_NAME(shader,"shader");
+	HX_MARK_MEMBER_NAME(strength,"strength");
 	HX_MARK_END_CLASS();
 }
 
 void StaticEffect_obj::__Visit(HX_VISIT_PARAMS)
 {
 	HX_VISIT_MEMBER_NAME(shader,"shader");
+	HX_VISIT_MEMBER_NAME(strength,"strength");
 }
 
 ::hx::Val StaticEffect_obj::__Field(const ::String &inName,::hx::PropertyAccess inCallProp)
@@ -134,6 +113,12 @@ void StaticEffect_obj::__Visit(HX_VISIT_PARAMS)
 	case 6:
 		if (HX_FIELD_EQ(inName,"shader") ) { return ::hx::Val( shader ); }
 		if (HX_FIELD_EQ(inName,"update") ) { return ::hx::Val( update_dyn() ); }
+		break;
+	case 8:
+		if (HX_FIELD_EQ(inName,"strength") ) { return ::hx::Val( strength ); }
+		break;
+	case 12:
+		if (HX_FIELD_EQ(inName,"set_strength") ) { return ::hx::Val( set_strength_dyn() ); }
 	}
 	return super::__Field(inName,inCallProp);
 }
@@ -143,6 +128,9 @@ void StaticEffect_obj::__Visit(HX_VISIT_PARAMS)
 	switch(inName.length) {
 	case 6:
 		if (HX_FIELD_EQ(inName,"shader") ) { shader=inValue.Cast<  ::shaders::StaticShader >(); return inValue; }
+		break;
+	case 8:
+		if (HX_FIELD_EQ(inName,"strength") ) { if (inCallProp == ::hx::paccAlways) return ::hx::Val( set_strength(inValue.Cast< Float >()) );strength=inValue.Cast< Float >(); return inValue; }
 	}
 	return super::__SetField(inName,inValue,inCallProp);
 }
@@ -150,12 +138,14 @@ void StaticEffect_obj::__Visit(HX_VISIT_PARAMS)
 void StaticEffect_obj::__GetFields(Array< ::String> &outFields)
 {
 	outFields->push(HX_("shader",25,bf,20,1d));
+	outFields->push(HX_("strength",81,d2,8e,8e));
 	super::__GetFields(outFields);
 };
 
 #ifdef HXCPP_SCRIPTABLE
 static ::hx::StorageInfo StaticEffect_obj_sMemberStorageInfo[] = {
 	{::hx::fsObject /*  ::shaders::StaticShader */ ,(int)offsetof(StaticEffect_obj,shader),HX_("shader",25,bf,20,1d)},
+	{::hx::fsFloat,(int)offsetof(StaticEffect_obj,strength),HX_("strength",81,d2,8e,8e)},
 	{ ::hx::fsUnknown, 0, null()}
 };
 static ::hx::StaticInfo *StaticEffect_obj_sStaticStorageInfo = 0;
@@ -163,7 +153,9 @@ static ::hx::StaticInfo *StaticEffect_obj_sStaticStorageInfo = 0;
 
 static ::String StaticEffect_obj_sMemberFields[] = {
 	HX_("shader",25,bf,20,1d),
+	HX_("strength",81,d2,8e,8e),
 	HX_("update",09,86,05,87),
+	HX_("set_strength",fe,a9,a1,58),
 	::String(null()) };
 
 ::hx::Class StaticEffect_obj::__mClass;

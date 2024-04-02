@@ -52,20 +52,20 @@
 #include <states/PlayState.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_210832529457f9ca_1983_new,"shaders.MirrorRepeatEffect","new",0xcab94a7d,"shaders.MirrorRepeatEffect.new","shaders/Shaders.hx",1983,0x7800d7f1)
-HX_LOCAL_STACK_FRAME(_hx_pos_210832529457f9ca_2004_update,"shaders.MirrorRepeatEffect","update",0x40f37c0c,"shaders.MirrorRepeatEffect.update","shaders/Shaders.hx",2004,0x7800d7f1)
+HX_DEFINE_STACK_FRAME(_hx_pos_210832529457f9ca_2130_new,"shaders.MirrorRepeatEffect","new",0xcab94a7d,"shaders.MirrorRepeatEffect.new","shaders/Shaders.hx",2130,0x7800d7f1)
+HX_LOCAL_STACK_FRAME(_hx_pos_210832529457f9ca_2151_update,"shaders.MirrorRepeatEffect","update",0x40f37c0c,"shaders.MirrorRepeatEffect.update","shaders/Shaders.hx",2151,0x7800d7f1)
 namespace shaders{
 
 void MirrorRepeatEffect_obj::__construct(Float zoom,Float angle,Float iTime,Float x,Float y){
-            	HX_GC_STACKFRAME(&_hx_pos_210832529457f9ca_1983_new)
-HXLINE(1987)		this->iTime = ((Float)0.0);
-HXLINE(1994)		this->shader =  ::shaders::MirrorRepeatShader_obj::__alloc( HX_CTX );
-HXLINE(1995)		this->shader->zoom->value = ::Array_obj< Float >::__new(1)->init(0,zoom);
-HXLINE(1996)		this->shader->angle->value = ::Array_obj< Float >::__new(1)->init(0,angle);
-HXLINE(1997)		this->shader->iTime->value = ::Array_obj< Float >::__new(1)->init(0,iTime);
-HXLINE(1998)		this->shader->x->value = ::Array_obj< Float >::__new(1)->init(0,x);
-HXLINE(1999)		this->shader->y->value = ::Array_obj< Float >::__new(1)->init(0,y);
-HXLINE(2000)		::states::PlayState_obj::instance->shaderUpdates->push(this->update_dyn());
+            	HX_GC_STACKFRAME(&_hx_pos_210832529457f9ca_2130_new)
+HXLINE(2134)		this->iTime = ((Float)0.0);
+HXLINE(2141)		this->shader =  ::shaders::MirrorRepeatShader_obj::__alloc( HX_CTX );
+HXLINE(2142)		this->shader->zoom->value = ::Array_obj< Float >::__new(1)->init(0,zoom);
+HXLINE(2143)		this->shader->angle->value = ::Array_obj< Float >::__new(1)->init(0,angle);
+HXLINE(2144)		this->shader->iTime->value = ::Array_obj< Float >::__new(1)->init(0,iTime);
+HXLINE(2145)		this->shader->x->value = ::Array_obj< Float >::__new(1)->init(0,x);
+HXLINE(2146)		this->shader->y->value = ::Array_obj< Float >::__new(1)->init(0,y);
+HXLINE(2147)		::states::PlayState_obj::instance->shaderUpdates->push(this->update_dyn());
             	}
 
 Dynamic MirrorRepeatEffect_obj::__CreateEmpty() { return new MirrorRepeatEffect_obj; }
@@ -88,10 +88,10 @@ bool MirrorRepeatEffect_obj::_hx_isInstanceOf(int inClassId) {
 }
 
 void MirrorRepeatEffect_obj::update(Float elapsed){
-            	HX_STACKFRAME(&_hx_pos_210832529457f9ca_2004_update)
-HXLINE(2007)		 ::shaders::MirrorRepeatEffect _hx_tmp = ::hx::ObjectPtr<OBJ_>(this);
-HXDLIN(2007)		_hx_tmp->iTime = (_hx_tmp->iTime + elapsed);
-HXLINE(2008)		this->shader->iTime->value = ::Array_obj< Float >::__new(1)->init(0,this->iTime);
+            	HX_STACKFRAME(&_hx_pos_210832529457f9ca_2151_update)
+HXLINE(2154)		 ::shaders::MirrorRepeatEffect _hx_tmp = ::hx::ObjectPtr<OBJ_>(this);
+HXDLIN(2154)		_hx_tmp->iTime = (_hx_tmp->iTime + elapsed);
+HXLINE(2155)		this->shader->iTime->value = ::Array_obj< Float >::__new(1)->init(0,this->iTime);
             	}
 
 

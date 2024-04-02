@@ -19,12 +19,12 @@
 #include <shaders/GreyscaleShader.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_569ab79099227fc1_595_new,"shaders.GreyscaleEffect","new",0x3e39c3ce,"shaders.GreyscaleEffect.new","shaders/Shaders.hx",595,0x7800d7f1)
+HX_DEFINE_STACK_FRAME(_hx_pos_569ab79099227fc1_742_new,"shaders.GreyscaleEffect","new",0x3e39c3ce,"shaders.GreyscaleEffect.new","shaders/Shaders.hx",742,0x7800d7f1)
 namespace shaders{
 
 void GreyscaleEffect_obj::__construct(){
-            	HX_GC_STACKFRAME(&_hx_pos_569ab79099227fc1_595_new)
-HXDLIN( 595)		this->shader =  ::shaders::GreyscaleShader_obj::__alloc( HX_CTX );
+            	HX_GC_STACKFRAME(&_hx_pos_569ab79099227fc1_742_new)
+HXDLIN( 742)		this->shader =  ::shaders::GreyscaleShader_obj::__alloc( HX_CTX );
             	}
 
 Dynamic GreyscaleEffect_obj::__CreateEmpty() { return new GreyscaleEffect_obj; }

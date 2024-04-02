@@ -62,7 +62,7 @@
 -D ACHIEVEMENTS_ALLOWED
 -D lime-opengl
 -D LINC_LUA_RELATIVE_DYNAMIC_LIB
--D JAVA_HOME=C:\Program Files\Java\jdk-21\bin
+-D JAVA_HOME=C:\Program Files\Android\jdk\jdk-8.0.302.8-hotspot\jdk8u302-b08
 -D windows
 -D desktop
 --remap flash:openfl

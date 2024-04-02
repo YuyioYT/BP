@@ -1,4 +1,3 @@
-local shityourself = true
 local Chromacrap = 0;
 
 function boundTo(value, min, max)
@@ -13,40 +12,38 @@ function setChrome(chromeOffset)
 end
 
 function opponentNoteHit(id, noteData, noteType, isSustainNote)
-    if shityourself then
-        --Chromacrap = Chromacrap + 0.008 -- edit this
+    Chromacrap = Chromacrap + 0.0025 -- edit this
+    if Chromacrap > 0.01 then
+        Chromacrap = 0.01
     end
 end
 
 function onCreatePost()
-    initLuaShader("vcr")
-    
-    makeLuaSprite("temporaryShader")
-    makeGraphic("temporaryShader", screenWidth, screenHeight)
-    
-    setSpriteShader("temporaryShader", "vcr")
-    
-    addHaxeLibrary("ShaderFilter", "openfl.filters")
+
 end
 
-function onUpdatePost(elapsed)
-    Chromacrap = math.lerp(Chromacrap, 0, boundTo(elapsed * 20, 0, 1))
-    setChrome(Chromacrap)
-
-    if not shityourself then 
-        if curBeat % 1 == 0 then
-            Chromacrap = 0.020 -- edit this
-        end
+function onUpdate(elapsed)
+    if curBeat >= 30 then
+        Chromacrap = math.lerp(Chromacrap, 0, boundTo(elapsed * 20, 0, 1))
+        setChrome(Chromacrap)
     end
+end
 
-    if curStep == 1024 then shityourself = false end
-    if curStep == 1536 then shityourself = true end
-    if curStep == 2560 then shityourself = false end
-    if curStep == 3072 then shityourself = true end
-
-    runHaxeCode([[
-        // trace(ShaderFilter);
-        //game.camGame.setFilters([new ShaderFilter(game.getLuaObject("temporaryShader").shader), new ShaderFilter(game.screenshader.shader)]);
-        game.camHUD.setFilters([new ShaderFilter(game.getLuaObject("temporaryShader").shader), new ShaderFilter(game.glitchShader.shader)]);
-    ]])
+function onBeatHit()
+    if curBeat == 30 then --cant believe this shit didnt crash wtf!
+        initLuaShader("vcr")
+    
+        makeLuaSprite("temporaryShader")
+        makeGraphic("temporaryShader", screenWidth, screenHeight)
+        
+        setSpriteShader("temporaryShader", "vcr")
+        
+        addHaxeLibrary("ShaderFilter", "openfl.filters")
+        runHaxeCode([[
+            //trace(ShaderFilter);
+            //game.camGame.setFilters([new ShaderFilter(game.getLuaObject("temporaryShader").shader)]);
+            //game.camHUD.setFilters([new ShaderFilter(game.getLuaObject("temporaryShader").shader)]);
+            game.dad.shader = game.getLuaObject("temporaryShader").shader;
+        ]])
+    end
 end

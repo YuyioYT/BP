@@ -22,13 +22,13 @@
 #include <shaders/MotionBlurShader.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_c91bc7cdbcfcebd3_2700_new,"shaders.MotionBlurEffect","new",0x04be6540,"shaders.MotionBlurEffect.new","shaders/Shaders.hx",2700,0x7800d7f1)
+HX_DEFINE_STACK_FRAME(_hx_pos_c91bc7cdbcfcebd3_2847_new,"shaders.MotionBlurEffect","new",0x04be6540,"shaders.MotionBlurEffect.new","shaders/Shaders.hx",2847,0x7800d7f1)
 namespace shaders{
 
 void MotionBlurEffect_obj::__construct(Float strength){
-            	HX_GC_STACKFRAME(&_hx_pos_c91bc7cdbcfcebd3_2700_new)
-HXLINE(2701)		this->shader =  ::shaders::MotionBlurShader_obj::__alloc( HX_CTX );
-HXLINE(2702)		this->shader->strength->value = ::Array_obj< Float >::__new(1)->init(0,strength);
+            	HX_GC_STACKFRAME(&_hx_pos_c91bc7cdbcfcebd3_2847_new)
+HXLINE(2848)		this->shader =  ::shaders::MotionBlurShader_obj::__alloc( HX_CTX );
+HXLINE(2849)		this->shader->strength->value = ::Array_obj< Float >::__new(1)->init(0,strength);
             	}
 
 Dynamic MotionBlurEffect_obj::__CreateEmpty() { return new MotionBlurEffect_obj; }

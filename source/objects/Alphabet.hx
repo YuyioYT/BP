@@ -16,8 +16,6 @@ class Alphabet extends FlxSpriteGroup
 	public var bold:Bool = false;
 	public var letters:Array<AlphaCharacter> = [];
 
-	public var forceX:Float = Math.NEGATIVE_INFINITY;
-	public var lerpOnForceX:Bool = true;
 	public var isMenuItem:Bool = false;
 	public var targetY:Int = 0;
 	public var targetX:Float = 0;
@@ -28,7 +26,6 @@ class Alphabet extends FlxSpriteGroup
 	public var yAdd:Float = 0;
 
 	public var isOptionItem:Bool = false;
-	public var isFreeplay:Bool = false;
 	public var wasChoosed:Bool = false;
 	public var selected:Bool = false;
 
@@ -195,43 +192,6 @@ class Alphabet extends FlxSpriteGroup
 	
 				y = FlxMath.lerp(y, (scaledY * 120) + (FlxG.height * 0.48), 0.30);
 				//x = FlxMath.lerp(x, (targetY * 20) + 90, 0.30);
-			}
-		
-		if (forceX == Math.NEGATIVE_INFINITY)
-			{
-				if (!isFreeplay)
-				{
-					if (!isOptionItem)
-						y = FlxMath.lerp(y, (scaledY * 120) + (FlxG.height * 0.48) + yAdd, CoolUtil.boundTo(elapsed * 6, 0, 1));
-					else
-						y = FlxMath.lerp(y, (scaledY * 100) + (FlxG.height * 0.48) + yAdd, CoolUtil.boundTo(elapsed * 6, 0, 1));
-					if (!isOptionItem)
-						x = FlxMath.lerp(x, (targetY * 20) + 120 + xAdd, CoolUtil.boundTo(elapsed * 6, 0, 1));
-					else
-						screenCenter(X);
-				}
-				else
-				{
-					y = FlxMath.lerp(y, (scaledY * 120) + (FlxG.height * 0.48) + yAdd, CoolUtil.boundTo(elapsed * 6, 0, 1));
-					if (!wasChoosed)
-					{
-						if (!selected)
-							x = FlxMath.lerp(x, 120 + xAdd, CoolUtil.boundTo(elapsed * 6, 0, 1));
-						else
-							x = FlxMath.lerp(x, 200 + xAdd, CoolUtil.boundTo(elapsed * 6, 0, 1));
-					}
-					else
-					{
-						x = FlxMath.lerp(x, (FlxG.width / 2) - (width / 2) + xAdd, CoolUtil.boundTo(elapsed * 6, 0, 1));
-					}
-				}
-			}
-			else
-			{
-				if (lerpOnForceX)
-					x = FlxMath.lerp(x, forceX, CoolUtil.boundTo(elapsed * 6, 0, 1));
-				else
-					x = forceX;
 			}
 
 		switch (itemType)

@@ -25,24 +25,24 @@
 #include <shaders/Effect.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_2b630411b78e8674_2411_new,"shaders.BarrelBlurEffect","new",0xdba5e070,"shaders.BarrelBlurEffect.new","shaders/Shaders.hx",2411,0x7800d7f1)
+HX_DEFINE_STACK_FRAME(_hx_pos_2b630411b78e8674_2558_new,"shaders.BarrelBlurEffect","new",0xdba5e070,"shaders.BarrelBlurEffect.new","shaders/Shaders.hx",2558,0x7800d7f1)
 static const Float _hx_array_data_d8b9287e_1[] = {
 	0.0,
 };
-HX_LOCAL_STACK_FRAME(_hx_pos_2b630411b78e8674_2436_update,"shaders.BarrelBlurEffect","update",0xa8f0dff9,"shaders.BarrelBlurEffect.update","shaders/Shaders.hx",2436,0x7800d7f1)
+HX_LOCAL_STACK_FRAME(_hx_pos_2b630411b78e8674_2583_update,"shaders.BarrelBlurEffect","update",0xa8f0dff9,"shaders.BarrelBlurEffect.update","shaders/Shaders.hx",2583,0x7800d7f1)
 namespace shaders{
 
 void BarrelBlurEffect_obj::__construct(Float barrel,Float zoom,bool doChroma,Float angle,Float x,Float y){
-            	HX_GC_STACKFRAME(&_hx_pos_2b630411b78e8674_2411_new)
-HXLINE(2417)		this->iTime = ((Float)0.0);
-HXLINE(2413)		this->shader =  ::shaders::BarrelBlurShader_obj::__alloc( HX_CTX );
-HXLINE(2426)		this->shader->barrel->value = ::Array_obj< Float >::__new(1)->init(0,barrel);
-HXLINE(2427)		this->shader->zoom->value = ::Array_obj< Float >::__new(1)->init(0,zoom);
-HXLINE(2428)		this->shader->doChroma->value = ::Array_obj< bool >::__new(1)->init(0,doChroma);
-HXLINE(2429)		this->shader->angle->value = ::Array_obj< Float >::__new(1)->init(0,angle);
-HXLINE(2430)		this->shader->iTime->value = ::Array_obj< Float >::fromData( _hx_array_data_d8b9287e_1,1);
-HXLINE(2431)		this->shader->x->value = ::Array_obj< Float >::__new(1)->init(0,x);
-HXLINE(2432)		this->shader->y->value = ::Array_obj< Float >::__new(1)->init(0,y);
+            	HX_GC_STACKFRAME(&_hx_pos_2b630411b78e8674_2558_new)
+HXLINE(2564)		this->iTime = ((Float)0.0);
+HXLINE(2560)		this->shader =  ::shaders::BarrelBlurShader_obj::__alloc( HX_CTX );
+HXLINE(2573)		this->shader->barrel->value = ::Array_obj< Float >::__new(1)->init(0,barrel);
+HXLINE(2574)		this->shader->zoom->value = ::Array_obj< Float >::__new(1)->init(0,zoom);
+HXLINE(2575)		this->shader->doChroma->value = ::Array_obj< bool >::__new(1)->init(0,doChroma);
+HXLINE(2576)		this->shader->angle->value = ::Array_obj< Float >::__new(1)->init(0,angle);
+HXLINE(2577)		this->shader->iTime->value = ::Array_obj< Float >::fromData( _hx_array_data_d8b9287e_1,1);
+HXLINE(2578)		this->shader->x->value = ::Array_obj< Float >::__new(1)->init(0,x);
+HXLINE(2579)		this->shader->y->value = ::Array_obj< Float >::__new(1)->init(0,y);
             	}
 
 Dynamic BarrelBlurEffect_obj::__CreateEmpty() { return new BarrelBlurEffect_obj; }
@@ -65,10 +65,10 @@ bool BarrelBlurEffect_obj::_hx_isInstanceOf(int inClassId) {
 }
 
 void BarrelBlurEffect_obj::update(Float elapsed){
-            	HX_STACKFRAME(&_hx_pos_2b630411b78e8674_2436_update)
-HXLINE(2441)		 ::shaders::BarrelBlurEffect _hx_tmp = ::hx::ObjectPtr<OBJ_>(this);
-HXDLIN(2441)		_hx_tmp->iTime = (_hx_tmp->iTime + elapsed);
-HXLINE(2442)		this->shader->iTime->value = ::Array_obj< Float >::__new(1)->init(0,this->iTime);
+            	HX_STACKFRAME(&_hx_pos_2b630411b78e8674_2583_update)
+HXLINE(2588)		 ::shaders::BarrelBlurEffect _hx_tmp = ::hx::ObjectPtr<OBJ_>(this);
+HXDLIN(2588)		_hx_tmp->iTime = (_hx_tmp->iTime + elapsed);
+HXLINE(2589)		this->shader->iTime->value = ::Array_obj< Float >::__new(1)->init(0,this->iTime);
             	}
 
 

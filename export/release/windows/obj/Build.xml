@@ -1689,6 +1689,9 @@
    <depend name="include/flixel/FlxSubState.h"/>
    <depend name="include/flixel/addons/display/FlxRuntimeShader.h"/>
    <depend name="include/flixel/addons/effects/FlxTrail.h"/>
+   <depend name="include/flixel/addons/effects/chainable/FlxGlitchDirection.h"/>
+   <depend name="include/flixel/addons/effects/chainable/FlxGlitchEffect.h"/>
+   <depend name="include/flixel/addons/effects/chainable/IFlxEffect.h"/>
    <depend name="include/flixel/addons/transition/FlxTransitionableState.h"/>
    <depend name="include/flixel/addons/transition/TransitionData.h"/>
    <depend name="include/flixel/addons/ui/FlxUIState.h"/>
@@ -1795,6 +1798,7 @@
    <depend name="include/shaders/BloomShader.h"/>
    <depend name="include/shaders/ChromBlockedEffect.h"/>
    <depend name="include/shaders/ChromBlockedShader.h"/>
+   <depend name="include/shaders/ChromBordes2Effect.h"/>
    <depend name="include/shaders/ChromBordesEffect.h"/>
    <depend name="include/shaders/ChromBordesEffectShader.h"/>
    <depend name="include/shaders/ChromaticAberrationEffect.h"/>
@@ -1805,11 +1809,15 @@
    <depend name="include/shaders/GlitchShader.h"/>
    <depend name="include/shaders/Grain.h"/>
    <depend name="include/shaders/GrainEffect.h"/>
+   <depend name="include/shaders/Grey2Effect.h"/>
+   <depend name="include/shaders/Grey2Shader.h"/>
    <depend name="include/shaders/HeatEffect.h"/>
    <depend name="include/shaders/HeatShader.h"/>
    <depend name="include/shaders/PulseEffect.h"/>
    <depend name="include/shaders/PulseShader.h"/>
    <depend name="include/shaders/RGBPalette.h"/>
+   <depend name="include/shaders/StaticEffect.h"/>
+   <depend name="include/shaders/StaticShader.h"/>
    <depend name="include/shaders/WiggleEffect.h"/>
    <depend name="include/shaders/WiggleEffectType.h"/>
    <depend name="include/shaders/WiggleShader.h"/>
@@ -2544,21 +2552,20 @@
    <depend name="include/shaders/ChromAberrationBlueSwapShader.h"/>
    <depend name="include/shaders/Effect.h"/>
   </file>
-  <file name="src/shaders/ChromBlockedShader.cpp" >
+  <file name="src/shaders/ChromBordes2EffectShader.cpp" >
    <depend name="include/flixel/graphics/tile/FlxGraphicsShader.h"/>
    <depend name="include/openfl/display/GraphicsShader.h"/>
    <depend name="include/openfl/display/Shader.h"/>
-   <depend name="include/openfl/display/ShaderInput_openfl_display_BitmapData.h"/>
    <depend name="include/openfl/display/ShaderParameter_Float.h"/>
-   <depend name="include/shaders/ChromBlockedShader.h"/>
+   <depend name="include/shaders/ChromBordes2EffectShader.h"/>
   </file>
-  <file name="src/shaders/ChromBlockedEffect.cpp" >
+  <file name="src/shaders/ChromBordes2Effect.cpp" >
    <depend name="include/flixel/graphics/tile/FlxGraphicsShader.h"/>
    <depend name="include/openfl/display/GraphicsShader.h"/>
    <depend name="include/openfl/display/Shader.h"/>
    <depend name="include/openfl/display/ShaderParameter_Float.h"/>
-   <depend name="include/shaders/ChromBlockedEffect.h"/>
-   <depend name="include/shaders/ChromBlockedShader.h"/>
+   <depend name="include/shaders/ChromBordes2Effect.h"/>
+   <depend name="include/shaders/ChromBordes2EffectShader.h"/>
    <depend name="include/shaders/Effect.h"/>
   </file>
   <file name="src/shaders/ChromBordesEffectShader.cpp" >
@@ -3051,25 +3058,13 @@
    <depend name="include/shaders/StaticShader.h"/>
   </file>
   <file name="src/shaders/StaticEffect.cpp" >
-   <depend name="include/backend/MusicBeatState.h"/>
-   <depend name="include/flixel/FlxBasic.h"/>
-   <depend name="include/flixel/FlxG.h"/>
-   <depend name="include/flixel/FlxState.h"/>
-   <depend name="include/flixel/addons/transition/FlxTransitionableState.h"/>
-   <depend name="include/flixel/addons/ui/FlxUIState.h"/>
-   <depend name="include/flixel/addons/ui/interfaces/IEventGetter.h"/>
-   <depend name="include/flixel/addons/ui/interfaces/IFlxUIState.h"/>
    <depend name="include/flixel/graphics/tile/FlxGraphicsShader.h"/>
-   <depend name="include/flixel/group/FlxTypedGroup.h"/>
-   <depend name="include/flixel/math/FlxRandom.h"/>
-   <depend name="include/flixel/util/IFlxDestroyable.h"/>
    <depend name="include/openfl/display/GraphicsShader.h"/>
    <depend name="include/openfl/display/Shader.h"/>
    <depend name="include/openfl/display/ShaderParameter_Float.h"/>
    <depend name="include/shaders/Effect.h"/>
    <depend name="include/shaders/StaticEffect.h"/>
    <depend name="include/shaders/StaticShader.h"/>
-   <depend name="include/states/PlayState.h"/>
   </file>
   <file name="src/shaders/Tiltshift.cpp" >
    <depend name="include/flixel/graphics/tile/FlxGraphicsShader.h"/>
@@ -3127,6 +3122,22 @@
    <depend name="include/shaders/Effect.h"/>
    <depend name="include/shaders/ScanlineEffect.h"/>
    <depend name="include/shaders/ScanlineShader.h"/>
+  </file>
+  <file name="src/shaders/ChromBlockedShader.cpp" >
+   <depend name="include/flixel/graphics/tile/FlxGraphicsShader.h"/>
+   <depend name="include/openfl/display/GraphicsShader.h"/>
+   <depend name="include/openfl/display/Shader.h"/>
+   <depend name="include/openfl/display/ShaderParameter_Float.h"/>
+   <depend name="include/shaders/ChromBlockedShader.h"/>
+  </file>
+  <file name="src/shaders/ChromBlockedEffect.cpp" >
+   <depend name="include/flixel/graphics/tile/FlxGraphicsShader.h"/>
+   <depend name="include/openfl/display/GraphicsShader.h"/>
+   <depend name="include/openfl/display/Shader.h"/>
+   <depend name="include/openfl/display/ShaderParameter_Float.h"/>
+   <depend name="include/shaders/ChromBlockedEffect.h"/>
+   <depend name="include/shaders/ChromBlockedShader.h"/>
+   <depend name="include/shaders/Effect.h"/>
   </file>
   <file name="src/shaders/ScanlineShader2.cpp" >
    <depend name="include/flixel/graphics/tile/FlxGraphicsShader.h"/>
@@ -3556,7 +3567,6 @@
    <depend name="include/shaders/DoChromaticAberrationEffect.h"/>
    <depend name="include/shaders/Effect.h"/>
    <depend name="include/shaders/EyesoresEffect.h"/>
-   <depend name="include/shaders/Grey2Effect.h"/>
    <depend name="include/shaders/GreyscaleEffect.h"/>
    <depend name="include/shaders/InvertColorsEffect.h"/>
    <depend name="include/shaders/MirrorRepeatEffect.h"/>
@@ -3566,7 +3576,6 @@
    <depend name="include/shaders/ScanlineEffect.h"/>
    <depend name="include/shaders/ScanlineEffect2.h"/>
    <depend name="include/shaders/SobelEffect.h"/>
-   <depend name="include/shaders/StaticEffect.h"/>
    <depend name="include/shaders/VCRDistortionEffect.h"/>
    <depend name="include/shaders/VignetteEffect.h"/>
    <depend name="include/shaders/WaveBurstEffect.h"/>
@@ -15122,6 +15131,35 @@
    <depend name="include/openfl/utils/IDataOutput.h"/>
    <depend name="include/openfl/utils/_ByteArray/ByteArray_Impl_.h"/>
   </file>
+  <file name="src/flixel/addons/effects/chainable/FlxGlitchDirection.cpp" >
+   <depend name="include/flixel/addons/effects/chainable/FlxGlitchDirection.h"/>
+  </file>
+  <file name="src/flixel/addons/effects/chainable/FlxGlitchEffect.cpp" >
+   <depend name="include/Std.h"/>
+   <depend name="include/flixel/FlxG.h"/>
+   <depend name="include/flixel/addons/effects/chainable/FlxGlitchDirection.h"/>
+   <depend name="include/flixel/addons/effects/chainable/FlxGlitchEffect.h"/>
+   <depend name="include/flixel/addons/effects/chainable/IFlxEffect.h"/>
+   <depend name="include/flixel/math/FlxBasePoint.h"/>
+   <depend name="include/flixel/math/FlxRandom.h"/>
+   <depend name="include/flixel/util/FlxDestroyUtil.h"/>
+   <depend name="include/flixel/util/FlxPool_flixel_math_FlxBasePoint.h"/>
+   <depend name="include/flixel/util/IFlxDestroyable.h"/>
+   <depend name="include/flixel/util/IFlxPool.h"/>
+   <depend name="include/flixel/util/IFlxPooled.h"/>
+   <depend name="include/openfl/display/BitmapData.h"/>
+   <depend name="include/openfl/display/IBitmapDrawable.h"/>
+   <depend name="include/openfl/geom/Point.h"/>
+   <depend name="include/openfl/geom/Rectangle.h"/>
+  </file>
+  <file name="src/flixel/addons/effects/chainable/IFlxEffect.cpp" >
+   <depend name="include/flixel/addons/effects/chainable/IFlxEffect.h"/>
+   <depend name="include/flixel/math/FlxBasePoint.h"/>
+   <depend name="include/flixel/util/IFlxDestroyable.h"/>
+   <depend name="include/flixel/util/IFlxPooled.h"/>
+   <depend name="include/openfl/display/BitmapData.h"/>
+   <depend name="include/openfl/display/IBitmapDrawable.h"/>
+  </file>
   <file name="src/flixel/addons/effects/FlxTrailArea.cpp" >
    <depend name="include/Std.h"/>
    <depend name="include/flixel/FlxBasic.h"/>
@@ -17759,6 +17797,7 @@
    <depend name="include/flixel/addons/ui/GamepadAutoConnectPreference.h"/>
    <depend name="include/flixel/addons/ui/Rounding.h"/>
    <depend name="include/flixel/addons/ui/XY.h"/>
+   <depend name="include/flixel/addons/effects/chainable/FlxGlitchDirection.h"/>
    <depend name="include/flixel/addons/display/shapes/FlxShapeType.h"/>
    <depend name="include/flixel/addons/display/BackdropBlitMode.h"/>
    <depend name="include/flixel/FlxRenderMethod.h"/>

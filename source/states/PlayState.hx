@@ -10,6 +10,7 @@ package states;
 // "function eventEarlyTrigger" - Used for making your event start a few MILLISECONDS earlier
 // "function triggerEvent" - Called when the song hits your event's timestamp, this is probably what you were looking for
 	
+import flixel.addons.effects.chainable.FlxGlitchEffect;
 import flixel.tweens.misc.ColorTween;
 import flixel.graphics.frames.FlxFrame;
 import flixel.system.debug.Window;
@@ -222,14 +223,13 @@ class PlayState extends MusicBeatState
 	var disableTheTripper:Bool = false;
 	var disableTheTripperAt:Int;
 
-	private var shakeCam:Bool = false;
-	private var shakeCamALT:Bool = false;
+	private var strumLine:FlxSprite;
+	private var altStrumLine:FlxSprite;
 
 	public var strumLineNotes:FlxTypedGroup<StrumNote>;
 	public var opponentStrums:FlxTypedGroup<StrumNote>;
 	public var playerStrums:FlxTypedGroup<StrumNote>;
 	public var grpNoteSplashes:FlxTypedGroup<NoteSplash>;
-	private var altStrumLine:FlxSprite;
 	public var altStrumLineNotes:FlxTypedGroup<StrumNote>;
 	public var altStrums:FlxTypedGroup<StrumNote>;
 
@@ -339,11 +339,12 @@ class PlayState extends MusicBeatState
 	var misses:FlxText;
 	var comboBreaks:FlxText;
 
-	private var strumLine:FlxSprite;
-
 	public var camZoomSpeed:Float = 0.95;
 	public var hudZoomSpeed:Float = 0.95;
 	var czspeedDefault:Float = 0;
+	
+	private var shakeCam:Bool = false;
+	private var shakeCamALT:Bool = false;
 
 	var enableangle:Bool = true;
 
@@ -353,8 +354,7 @@ class PlayState extends MusicBeatState
 	public static var changedDifficulty:Bool = false;
 	public static var chartingMode:Bool = false;
 
-	var whiteflash:FlxSprite;
-	var redGlow:FlxSprite;
+
 
 	public var elapsedexpungedtime:Float = 0;
 
@@ -371,6 +371,9 @@ class PlayState extends MusicBeatState
 	var canFloat:Bool = true;
 	var canRotate:Bool = true;
 
+	var sectionHitvar = 0;
+	var beatHitvar = 0;
+
 	// some stuff for icons //
 	var dnbBounce:Bool = true;
 	var ogBounce:Bool = false;
@@ -383,6 +386,10 @@ class PlayState extends MusicBeatState
 	var ogCamBopVAL:Float = 0.015; //camGame
 	var ogCamHUDBopVAL:Float = 0.03; //camHUD
 
+	// for cameras
+	private var cameraOnDad:Bool = false;
+	private var cameraOnBF:Bool = false;
+
 	// rsod bullshit //
 	var rsod:FlxSprite;
 	var notResponding:FlxSprite;
@@ -391,9 +398,6 @@ class PlayState extends MusicBeatState
 	// shit for upheaval!!1 //
 	var uphIntroTime:Bool = false;
 	var fakenotes:FlxSprite;
-
-	private var cameraOnDad:Bool = false;
-	private var cameraOnBF:Bool = false;
 
 	// stuff for the stages !! //
 	var bg:DepthSprite;
@@ -422,6 +426,12 @@ class PlayState extends MusicBeatState
 	var olddaveGate:FlxSprite;
 	var olddaveHills:FlxSprite;
 
+	var expungedBG:BGSprite;
+	var glow:BGSprite;
+
+	var whiteflash:FlxSprite;
+	var redGlow:FlxSprite;
+
 	public static var window:Window;
 	var expungedScroll = new Sprite();
 	var expungedSpr = new Sprite();
@@ -435,13 +445,10 @@ class PlayState extends MusicBeatState
 
 	private var windowSteadyX:Float;
 
-	var expungedBG:BGSprite;
 	public static var scrollType:String;
 	var preDadPos:FlxPoint = new FlxPoint();
 
-	var glow:BGSprite;
-
-		// shit for events
+	// shit for events
 	var allowGamecamToZoom:Bool = true;
 	var allowHUDcamToZoom:Bool = true;
 
@@ -470,6 +477,19 @@ class PlayState extends MusicBeatState
 			
 	var bounce:Float = 1.05;
 	var bounce2:Float = 1.15;
+
+	var screenWidth = FlxG.width;
+	var screenHeight = FlxG.height;
+
+	var barLeft:FlxSprite;
+	var barRight:FlxSprite;
+
+	var bgstage:BGSprite;
+	var stageFront:BGSprite;
+	var stageLight:BGSprite;
+	var stageCurtains:BGSprite;
+
+	var upheavalmoment:Bool = false;
 
 	public var defaultCamZoom:Float = 1.05;
 	public var defaultHUDZoom:Float = 1;
@@ -500,10 +520,6 @@ class PlayState extends MusicBeatState
 	public var botplaySine:Float = 0;
 	public var botplayTxt:FlxText;
 
-	//icon bop
-	var dancingLeft:Bool = false;
-	var sbEngineIconBounce:Bool = true;
-
 	var gfNoteCamOffset:Array<Float> = new Array<Float>();
 	var bfNoteCamOffset:Array<Float> = new Array<Float>();
 	var dadNoteCamOffset:Array<Float> = new Array<Float>();
@@ -511,7 +527,7 @@ class PlayState extends MusicBeatState
 	public var iconP1:HealthIcon;
 	public var iconP2:HealthIcon;
 
-	var blurNotes:BlurFilter;
+	var dancingLeft:Bool = false;
 
 	public var camHUD:FlxCamera;
 	public var camGame:FlxCamera;
@@ -521,16 +537,21 @@ class PlayState extends MusicBeatState
 	public var camSus:FlxCamera;
 	public var cameraSpeed:Float = 1;
 
+	var blurNotes:BlurFilter;
+	var glitcheffect:FlxGlitchEffect = new FlxGlitchEffect(4,1,1,HORIZONTAL);
 	var wiggleShit:WiggleEffect = new WiggleEffect();
+	var staticshader:StaticEffect = new StaticEffect();
+	var greyeffect:Grey2Effect = new Grey2Effect();
 	var susWiggle:ShaderFilter;
 	var chromglitch:ChromBlockedEffect = new ChromBlockedEffect();
 	var googlechrombordes:ChromBordesEffect = new ChromBordesEffect();
+	var googlechrombordes2:ChromBordes2Effect = new ChromBordes2Effect();
 	var googlechrom:DoChromaticAberrationEffect = new DoChromaticAberrationEffect();
 	public var shader_chromatic_abberation:ChromaticAberrationEffect;
-	public var grain_shader:GrainEffect;
+	public var grain_shader:GrainEffect = new GrainEffect();
 	var heath:HeatEffect;
-	var bloom:BloomEffect;
-	var grain:GrainEffect;
+	var bloom:BloomEffect = new BloomEffect();
+	var grain:GrainEffect = new GrainEffect();
 
 	public var songScore:Int = 0;
 	public var songHits:Int = 0;
@@ -617,10 +638,6 @@ class PlayState extends MusicBeatState
 		];
 
 		shader_chromatic_abberation = new ChromaticAberrationEffect(0.0075); // i think this one was from psych itself?
-		grain_shader = new GrainEffect();
-		grain = new GrainEffect();
-		bloom = new BloomEffect();
-		heath = new HeatEffect(1.0);
 
 		var filterSUSnotes:Array<BitmapFilter> = [];
 		var filtersnotes:Array<BitmapFilter> = [];
@@ -667,6 +684,8 @@ class PlayState extends MusicBeatState
 
 		camNOTES.setFilters(filtersnotes); 
         camNOTES.filtersEnabled = true;
+
+		heath = new HeatEffect(1.0);
 
 		grpNoteSplashes = new FlxTypedGroup<NoteSplash>();
 
@@ -775,7 +794,7 @@ class PlayState extends MusicBeatState
 			screenshader.waveSpeed = 1;
 			screenshader.shader.uTime.value[0] = new flixel.math.FlxRandom().float(-100000, 100000);
 			
-			FlxG.camera.setFilters([new ShaderFilter(screenshader.shader)]);
+			camGame.setFilters([new ShaderFilter(screenshader.shader)]);
 		}
 		if (ClientPrefs.data.wiggle)
 			{				
@@ -1089,14 +1108,21 @@ class PlayState extends MusicBeatState
 					defaultCamZoom = 0.8;
 					curStage = 'farmNight';
 
+					camGame.setFilters([new ShaderFilter(googlechrombordes.shader)]);
+
+					googlechrombordes.aberration = 0.1;
+					googlechrombordes.effectTime = 0.1;
+
 					if (SONG.song.toLowerCase() == 'reality breaking')
 						{
 							if (realityShader){
-								camGame.setFilters([new ShaderFilter(googlechrom.shader),new ShaderFilter(heath.shader),new ShaderFilter(bloom.shader)]);	
+								camGame.setFilters([new ShaderFilter(googlechrom.shader),new ShaderFilter(heath.shader),new ShaderFilter(bloom.shader),new ShaderFilter(googlechrombordes.shader)]);	
 								bloom.effect = 5;
 								bloom.strength = 0;
 								bloom.contrast = 1;
 								bloom.brightness = 0;
+								googlechrombordes.aberration = 0.2;
+								googlechrombordes.effectTime = 0.2;
 								googlechrom.set_offset(0.002);
 							}
 						}
@@ -1312,6 +1338,14 @@ class PlayState extends MusicBeatState
 					{
 						defaultCamZoom = 0.7;
 						curStage = 'bambersHell';
+
+						camGame.setFilters([new ShaderFilter(googlechrombordes.shader),new ShaderFilter(staticshader.shader),new ShaderFilter(greyeffect.shader),new ShaderFilter(screenshader.shader)]);
+
+						googlechrombordes.aberration = 0.2;
+						googlechrombordes.effectTime = 0.3;
+
+						greyeffect.iStrength = 0;
+						staticshader.strength = 0;
 	
 						gridBG = new FlxSprite(-600, -200).loadGraphic(Paths.image('StagesBP/purgatory/grid'));
 						gridBG.antialiasing = true;
@@ -1500,26 +1534,6 @@ class PlayState extends MusicBeatState
 			startCharacterScripts(gf.curCharacter);
 		}
 
-		shartGrad = new FlxSprite(-120, -120).loadGraphic(Paths.image('hud/shattered/shartGrad'));
-		shartGrad.scrollFactor.set();
-		shartGrad.antialiasing = true;
-		shartGrad.screenCenter();
-		shartGrad.blend = ADD;
-		shartGrad.scale.x = 2;
-		shartGrad.scale.y = 2;
-		shartGrad.alpha = 0;
-		shartGrad.cameras = [camHUD];
-
-		shartLine = new FlxSprite(-120, -120).loadGraphic(Paths.image('hud/shattered/shartLine'));
-		shartLine.scrollFactor.set();
-		shartLine.antialiasing = true;
-		shartLine.screenCenter();
-		shartLine.blend = ADD;
-		shartLine.scale.x = 2;
-		shartLine.scale.y = 2;
-		shartLine.alpha = 0;
-		shartLine.cameras = [camHUD];
-
 		dad = new Character(0, 0, SONG.player2);
 		startCharacterPos(dad, true);
 		dadGroup.add(dad);
@@ -1579,7 +1593,7 @@ class PlayState extends MusicBeatState
 		playerTrail.visible = false;
 		switch(boyfriend.curCharacter)
 		{
-			case 'hell-2' | 'bambi-god2d' | 'expunged':
+			case 'hell-2'|'bamburg-crazy'|'bamburg'|'bambi-mad-guitar'|'404-old'|'404'|'hell-1'| 'bambi-god2d' | 'expunged'|'god-expunged-1'|'god-expunged-1-new'|'complex-dave'|'ChaosCrimson'|'bombu'|'bombu-v2':
 				playerTrail.visible = true;
 		}
 
@@ -1607,8 +1621,8 @@ class PlayState extends MusicBeatState
 		if(SONG.song.toLowerCase() == "antagonism") 
 			{
 				if (ClientPrefs.data.timeBarType == "Song Name + Time"){
-						timeTxt.size = 17 + 10;
-						timeTxt.y += 0;
+					timeTxt.size = 17 + 10;
+					timeTxt.y += 0;
 				}else if (ClientPrefs.data.timeBarType == "Modern Time"){
 					timeTxt.size = 17 + 10;
 					timeTxt.y += 0;
@@ -1668,17 +1682,18 @@ class PlayState extends MusicBeatState
 
 		songLength = FlxG.sound.music.length;
 
-		var splash:NoteSplash = new NoteSplash(100, 100);
-		grpNoteSplashes.add(splash);
-		splash.alpha = 0.000001; //cant make it invisible or it won't allow precaching
+		altStrumLine = new FlxSprite(0, 0);
 
 		strumLineNotes = new FlxTypedGroup<StrumNote>();
 		add(strumLineNotes);
-		add(grpNoteSplashes);
 
-		altStrumLine = new FlxSprite(0, 0);
 		altStrumLineNotes = new FlxTypedGroup<StrumNote>();
 		add(altStrumLineNotes);
+
+		var splash:NoteSplash = new NoteSplash(100, 100);
+		grpNoteSplashes.add(splash);
+		splash.alpha = 0.000001; //cant make it invisible or it won't allow precaching
+		add(grpNoteSplashes);
 
 		opponentStrums = new FlxTypedGroup<StrumNote>();
 		playerStrums = new FlxTypedGroup<StrumNote>();
@@ -1788,8 +1803,8 @@ class PlayState extends MusicBeatState
 			songWatermark.borderSize = 1.25 + 1;
 			songWatermark.antialiasing = !ClientPrefs.data.antialiasing;
 			songWatermark.visible = !ClientPrefs.data.hideHud;
-			if(chartingMode)
-				songWatermark.text += ' [CHARTING MODE]';
+			if (chartingMode)
+				songWatermark.text = songWatermark.text + ' [CHARTING MODE]' + beatHitvar + sectionHitvar;			
 			add(songWatermark);
 		}
 		
@@ -1910,6 +1925,81 @@ class PlayState extends MusicBeatState
 		redGlow.visible = false;
 		redGlow.cameras = [camOther];
 
+		shartGrad = new FlxSprite().loadGraphic(Paths.image('hud/shattered/shartGrad'));
+		insert(members.indexOf(gfGroup), shartGrad);
+		insert(members.indexOf(dadGroup), shartGrad);
+		insert(members.indexOf(boyfriendGroup), shartGrad);
+		shartGrad.scrollFactor.set();
+		shartGrad.antialiasing = ClientPrefs.data.antialiasing;
+		shartGrad.screenCenter();
+		shartGrad.blend = ADD;
+		shartGrad.scale.x = 2;
+		shartGrad.scale.y = 2;
+		shartGrad.alpha = 0;
+
+		shartGrad.updateHitbox();
+		shartGrad.cameras = [camHUD];
+		add(shartGrad);
+
+		shartLine = new FlxSprite().loadGraphic(Paths.image('hud/shattered/shartLine'));
+		insert(members.indexOf(gfGroup), shartLine);
+		insert(members.indexOf(dadGroup), shartLine);
+		insert(members.indexOf(boyfriendGroup), shartLine);
+		shartLine.scrollFactor.set();
+		shartLine.antialiasing = ClientPrefs.data.antialiasing;
+		shartLine.screenCenter();
+		shartLine.blend = ADD;
+		shartLine.scale.x = 2;
+		shartLine.scale.y = 2;
+		shartLine.alpha = 0;
+		shartLine.updateHitbox();
+		shartLine.cameras = [camHUD];
+		add(shartLine);
+
+		bgstage = new BGSprite('StagesBP/stage/stageback', -600, -200, 0.9, 0.9);
+		insert(members.indexOf(gfGroup), bgstage);
+		insert(members.indexOf(dadGroup), bgstage);
+		insert(members.indexOf(boyfriendGroup), bgstage);
+		bgstage.visible = false;
+		add(bgstage);
+
+		stageFront = new BGSprite('StagesBP/stage/stagefront', -650, 600, 0.9, 0.9);
+		stageFront.setGraphicSize(Std.int(stageFront.width * 1.1));
+		stageFront.updateHitbox();
+		insert(members.indexOf(gfGroup), stageFront);
+		insert(members.indexOf(dadGroup), stageFront);
+		insert(members.indexOf(boyfriendGroup), stageFront);
+		stageFront.visible = false;
+		add(stageFront);
+
+		stageLight = new BGSprite('StagesBP/stage/stage_light', -125, -100, 0.9, 0.9);
+		stageLight.setGraphicSize(Std.int(stageLight.width * 1.1));
+		stageLight.updateHitbox();
+		insert(members.indexOf(gfGroup), stageLight);
+		insert(members.indexOf(dadGroup), stageLight);
+		insert(members.indexOf(boyfriendGroup), stageLight);
+		stageLight.visible = false;
+		add(stageLight);
+
+		stageLight = new BGSprite('StagesBP/stage/stage_light', 1225, -100, 0.9, 0.9);
+		stageLight.setGraphicSize(Std.int(stageLight.width * 1.1));
+		stageLight.updateHitbox();
+		stageLight.flipX = true;
+		insert(members.indexOf(gfGroup), stageLight);
+		insert(members.indexOf(dadGroup), stageLight);
+		insert(members.indexOf(boyfriendGroup), stageLight);
+		stageLight.visible = false;
+		add(stageLight);
+
+		stageCurtains = new BGSprite('StagesBP/stage/stagecurtains', -500, -300, 1.3, 1.3);
+		stageCurtains.setGraphicSize(Std.int(stageCurtains.width * 0.9));
+		stageCurtains.updateHitbox();
+		insert(members.indexOf(gfGroup), stageCurtains);
+		insert(members.indexOf(dadGroup), stageCurtains);
+		insert(members.indexOf(boyfriendGroup), stageCurtains);
+		stageCurtains.visible = false;
+		add(stageCurtains);
+
 		blackScreen = new FlxSprite(-215, -120).loadGraphic(Paths.image('StagesBP/ui/white'));
 		blackScreen.scrollFactor.set();
 		blackScreen.cameras = [camHUD];
@@ -1917,6 +2007,16 @@ class PlayState extends MusicBeatState
 		blackScreen.alpha = 0;
 		blackScreen.scale.set(Std.int(FlxG.width * 100),Std.int(FlxG.height * 150));
 		add(blackScreen);
+
+		barLeft = new FlxSprite(0, 0).makeGraphic(Std.int(screenWidth / 2), screenHeight, 0xFF000000);
+		barLeft.cameras = [camOther];
+		barLeft.visible = false;
+		add(barLeft);
+
+		barRight = new FlxSprite(screenWidth / 2, 0).makeGraphic(Std.int(screenWidth / 2), screenHeight, 0xFF000000);
+		barRight.cameras = [camOther];
+		barRight.visible = false;
+		add(barRight);
 
 		whiteflash = new FlxSprite(-100, -100).makeGraphic(Std.int(FlxG.width * 100), Std.int(FlxG.height * 100), FlxColor.WHITE);
 		whiteflash.scrollFactor.set();
@@ -3563,10 +3663,19 @@ function hideshit() // basically a camHUD.visible = false; except it doesnt fuck
 				}
 			}
 
-			if(funnyFloatyBoys.contains(dad.curCharacter.toLowerCase()) && canFloat)
+			if(funnyFloatyBoys.contains(dad.curCharacter.toLowerCase()) && canFloat && !laggingRSOD)
 				{
 					iconP2.y += (Math.sin(elapsedtime) * 0.1);
 				}
+			if(funnySideFloatyBoys.contains(dad.curCharacter.toLowerCase()) && canFloat && !laggingRSOD)
+				{
+					iconP2.x += (Math.cos(elapsedtime) * 0.6);
+				}
+			if(funnyRotatorBoys.contains(dad.curCharacter.toLowerCase()) && canFloat && !laggingRSOD)
+				{
+					iconP2.angle += (Math.sin(elapsedtime) * 0.015);
+				}
+
 		if(canFloat && !funnyFloatyBoys.contains(boyfriend.curCharacter.toLowerCase())) 
 		{
 			switch (curStage) 
@@ -3596,6 +3705,9 @@ function hideshit() // basically a camHUD.visible = false; except it doesnt fuck
 
 		grain.update(elapsed);
 		heath.update(elapsed);
+		staticshader.update(elapsed);
+		greyeffect.update(elapsed);
+		chromglitch.update(elapsed);
 
 		if (SONG.song.toLowerCase() == 'reality breaking oldest')
 			{
@@ -4801,7 +4913,7 @@ function hideshit() // basically a camHUD.visible = false; except it doesnt fuck
 								// iconP2.changeIcon(dad.healthIcon);
 							}
 							// setOnLuas('dadName', dad.curCharacter);
-							// refreshTrail(1);
+							 //refreshTrail(1);
 					}
 					reloadHealthBarColors();	
 					reloadTimeBarColors();
@@ -4876,7 +4988,7 @@ function hideshit() // basically a camHUD.visible = false; except it doesnt fuck
 	var cameraTwn:FlxTween;
 	public function moveCamera(isDad:Bool)
 		{
-			if(isDad)
+			if(isDad && upheavalmoment == false)
 			{
 				camFollow.setPosition(dad.getMidpoint().x + 150, dad.getMidpoint().y - 100);
 				camFollow.x += dad.cameraPosition[0] + opponentCameraOffset[0];
@@ -4893,7 +5005,7 @@ function hideshit() // basically a camHUD.visible = false; except it doesnt fuck
 							zoomAdd	= -0.05; 
 						case 'bambi-god-2', 'baiburg', 'crusturn', 'hell-1', 'hell-2', 'bambi-hell', '404','404-old':
 							zoomAdd	= -0.15;
-						case 'bambi-3d','bambi3d','bombai','bombai-v2','god-expunged-1-new', 'god-expunged-1', 'bambi-unfair', 'expunged', 'bambi-piss-3d', 'crimson-dave', 'crimson-bambi':
+						case 'bambi-3d','complex-dave','ChaosCrimson','bambi3d','bombai','bombai-v2','god-expunged-1-new', 'god-expunged-1', 'bambi-unfair', 'expunged', 'bambi-piss-3d', 'crimson-dave', 'crimson-bambi':
 							zoomAdd	= -0.28;
 					}
 				}
@@ -4927,18 +5039,8 @@ function hideshit() // basically a camHUD.visible = false; except it doesnt fuck
 				{
 					switch(boyfriend.curCharacter)
 					{
-						case 'bf':
+						case 'bf','bf-scared':
 							zoomAdd = 0;
-					}
-
-					switch(dad.curCharacter)
-					{
-						case 'bombu-v2', 'bambi-scaryooo', 'bombu', 'gary', 'bamburg', 'bamburg-player':
-							zoomAdd	= 0;
-						case 'bambi-god-2', 'baiburg', 'crusturn', 'hell-1', 'hell-2', 'bambi-hell', '404','404-old':
-							zoomAdd	= 0;
-						case 'bambi-3d','god-expunged-1-new', 'god-expunged-1', 'bambi-unfair', 'expunged', 'bambi-piss-3d','crimson-dave', 'crimson-bambi':
-							zoomAdd	= 0;
 					}
 				}
 	
@@ -5654,6 +5756,21 @@ function hideshit() // basically a camHUD.visible = false; except it doesnt fuck
 	
 				doDeathCheck(true);
 			}
+
+		var char:Character = boyfriend;
+		if((daNote.noteType == 'phone' && char.animOffsets.exists('hurt')) || daNote.noteType == 'phone') {
+			playerStrums.members[daNote.noteData].alpha = 0;
+			daNote.alpha = 0;
+			char.playAnim('hurt', true);
+			new FlxTimer().start(3, function(tmr:FlxTimer)
+			{
+				FlxTween.tween(playerStrums.members[daNote.noteData], {alpha: 1}, 5, {ease: FlxEase.linear});
+				if (!daNote.isSustainNote)
+					FlxTween.tween(daNote, {alpha: 1}, 5, {ease: FlxEase.linear});
+				else
+					FlxTween.tween(daNote, {alpha: 0.4}, 5, {ease: FlxEase.linear});
+			});
+		}
 	
 		if(!daNote.noMissAnimation)
 			{
@@ -5697,22 +5814,6 @@ function hideshit() // basically a camHUD.visible = false; except it doesnt fuck
 		}
 
 		combo = 0;
-		
-		if (note != null)
-			{
-				switch (note.noteType)
-				{
-					case 'phone':
-						var hitAnimation:Bool = boyfriend.animation.getByName("hurt") != null;
-						boyfriend.playAnim(hitAnimation ? 'hurt' : 'singRIGHTmiss', true);
-						FlxTween.cancelTweensOf(note);
-						note.alpha = 0.01;
-						var noteTween = FlxTween.tween(note, {alpha: 1}, 7, {ease: FlxEase.expoIn});
-						pauseTweens.push(noteTween);
-						health -= 0.07;
-						return;
-				}
-			}
 
 		if(!practiceMode) songScore -= 10;
 		if(!endingSong) songMisses++;
@@ -5820,7 +5921,7 @@ function hideshit() // basically a camHUD.visible = false; except it doesnt fuck
 
 		switch(dad.curCharacter)
 		{
-			case 'bambi-god-2','bombu-v2','bambi-3d','bombai-v2','god-expunged-1-new','dave-3d', 'baiburg', 'crusturn', 'god-expunged-1', 'bambi-unfair', 'expunged', 'bambi-piss-3d', 'bambi-scaryooo', 'hell-1', 'hell-2', 'bambi-hell', 'bombu', 'bombai', 'crimson-dave', 'crimson-bambi', 'gary', 'bamburg', 'bamburg-player', '404','404-old':
+			case 'bambi-god-2','bambi-3d','bombai-v2','god-expunged-1-new','dave-3d', 'baiburg', 'crusturn', 'god-expunged-1', 'bambi-unfair', 'expunged', 'bambi-piss-3d', 'bambi-scaryooo', 'hell-1', 'hell-2', 'bambi-hell', 'bombai', 'crimson-dave', 'crimson-bambi', 'bamburg-player', '404','404-old':
 				
 			if (realityShader){
 
@@ -5832,6 +5933,8 @@ function hideshit() // basically a camHUD.visible = false; except it doesnt fuck
 					} else {
 						camHUD.setFilters([new ShaderFilter(grain.shader)]);
 					}
+
+					glitchShader.Enabled = true;
 	
 					grain.grainsize += newgrainsize;
 					grain.lumamount += newgrainluma;
@@ -5871,7 +5974,7 @@ function hideshit() // basically a camHUD.visible = false; except it doesnt fuck
 						camHUD.setFilters([new ShaderFilter(grain.shader)]);
 					}
 
-					chromglitch.floatGlitchvec2 = 0.2;
+					chromglitch.GLITCH = 0.3;
 	
 					grain.grainsize += newgrainsize;
 					grain.lumamount += newgrainluma;
@@ -6189,7 +6292,7 @@ function hideshit() // basically a camHUD.visible = false; except it doesnt fuck
 						camZoomingMult = 1;
 					case 624 | 880:
 						defaultCamZoom += 0.2;
-						cinematicBars(((Conductor.stepCrochet * 13.2) / 1000), 400);
+						cinematicBars(((Conductor.stepCrochet * 26.4) / 1000), 400);
 						if (ClientPrefs.data.Lenguage == 'English')
 							{
 								subtitleManager.addSubtitle('HOLY',0.02, 1);
@@ -6291,19 +6394,109 @@ function hideshit() // basically a camHUD.visible = false; except it doesnt fuck
 			case 'upheaval':
 				switch (curStep)
 				{
+					case 1:
+						greyeffect.iStrength = 1;
+						staticshader.strength = 0.25;
+
+						barLeft.visible = true;
+						barRight.visible = true;
+	
+						bgstage.visible = true;
+						stageFront.visible = true;
+						stageLight.visible = true;
+						stageCurtains.visible = true;
+						stageLight.visible = true;
+	
+						cloudsH.visible = false;
+	
+						dad.visible = false;
+						camHUD.visible = false;
+						camGame.zoom = 1.25;
+						dramaticbnwTime = true;
+	
+						upheavalmoment = true;
+	
+						gf.color = 0xFFffffff;
+						boyfriend.color = 0xFFffffff;
+					case 192:
+						FlxTween.tween(barLeft, {x: -480}, 4, {ease: FlxEase.cubeOut});
+						FlxTween.tween(barRight, {x: Std.int(screenWidth/2) + 480}, 4, {ease: FlxEase.cubeOut});
+						FlxTween.tween(camGame, {zoom: 0.9}, 10, {ease: FlxEase.cubeOut});
+					case 448:
+						//bars
+						FlxTween.tween(barLeft, {x: screenWidth/-2}, 3.5, {ease: FlxEase.cubeIn});
+						FlxTween.tween(barRight, {x: screenWidth}, 3.5, {ease: FlxEase.cubeIn});
+						//shaders
+						FlxTween.tween(greyeffect, {iStrength: 0.5}, 5.05, { ease: FlxEase.quadIn });
+						FlxTween.tween(staticshader, {strength: 0.5}, 5.05, { ease: FlxEase.quadIn });
+						FlxTween.tween(googlechrombordes, {aberration: 1}, 0.5, { ease: FlxEase.quadIn });
+						//cam
+						FlxTween.tween(camGame, {zoom: 1.5}, 5.05, {ease: FlxEase.quadIn});
+						FlxTween.tween(camGame, {angle: 7}, 5.05, {ease: FlxEase.quadIn});
+						//gf
+						FlxTween.tween(gfGroup, {y: -400}, 3.5, {ease: FlxEase.cubeIn});
+						FlxTween.tween(gfGroup, {angle: 10}, 3.5, {ease: FlxEase.cubeIn});
+						FlxTween.tween(gfGroup, {alpha: 0}, 3.5, {ease: FlxEase.linear});
 					case 512:
+						//characters
 						dad.visible = true;
+						dad.alpha = 1;
 						gf.visible = false;
+						dramaticbnwTime = false;
+						//camera
+						camGame.setFilters([new ShaderFilter(googlechrombordes.shader),new ShaderFilter(screenshader.shader)]);
 						FlxG.camera.alpha = 1;
 						camOther.flash(FlxColor.WHITE, 3);
 						scoreTxt.scale.x = 1;
 						scoreTxt.scale.y = 1;
 						healthBar.angle = 0;
 					    camHUD.angle = 0;
+						camGame.angle = 0;
+						camHUD.visible = true;
+						barRight.visible = true;
+						barLeft.visible = true;
+						upheavalmoment = false;
+						FlxTween.cancelTweensOf(camGame);
+						//stage
+						FlxTween.tween(camGame, {zoom: 0.7}, 0);
+						defaultCamZoom = 0.7;
+						bgstage.visible = false;
+						bgstage.alpha = 0;
+						stageFront.visible = false;
+						stageFront.alpha = 0;
+						stageLight.visible = false;
+						stageLight.alpha = 0;
+						stageCurtains.visible = false;
+						stageCurtains.alpha = 0;
+						stageLight.visible = false;
+						stageLight.alpha = 0;
+						cloudsH.visible = true;
+						cloudsH.alpha = 1;
+						//coolshader
+						googlechrombordes.aberration = 1;
+						FlxTween.tween(staticshader, {strength: 0}, 0);
+						FlxTween.tween(googlechrombordes, {aberration: 0.2}, 5, { ease: FlxEase.quadIn });
+					case 513:
+						googlechrombordes.aberration = 0.2;
+					case 750:	
+						camGame.setFilters([new ShaderFilter(googlechrombordes.shader),new ShaderFilter(staticshader.shader),new ShaderFilter(greyeffect.shader),new ShaderFilter(screenshader.shader)]);
+						greyeffect.iStrength = 0.4;
+						staticshader.strength = 0;
+					case 759:
+						FlxTween.tween(googlechrombordes, {aberration: 1}, 0.5, { ease: FlxEase.quadIn });
+						FlxTween.tween(staticshader, {strength: 0.5}, 0.5, { ease: FlxEase.quadIn });
 					case 767:
+						googlechrombordes.aberration = 0.2;
+						greyeffect.iStrength = 0.4;
+						staticshader.strength = 0;
 						ogCamBopVAL = 0.05;
 						ogCamHUDBopVAL = 0.1;
 						camOther.flash(FlxColor.WHITE, 1.5);
+				}
+			case 'rebound':
+				switch (curStep)
+				{
+					case 1:
 				}
 			case 'rebound old':
 				switch (curStep)
@@ -6542,42 +6735,36 @@ function hideshit() // basically a camHUD.visible = false; except it doesnt fuck
 					case 568:
 						subtitleManager.addSubtitle('OMG',0.02, 0.5,{subtitleSize: 50});
 					case 760:
-						defaultCamZoom -= 0.32;
+						defaultCamZoom -= 0.15;
 						camHUD.visible = false;
 						dad.visible = false;
 						boyfriend.visible = false;	
 						gf.visible = false;		
-					case 768:
-						defaultCamZoom += 0.32;
+					case 767:
+						defaultCamZoom += 0.15;
 						camHUD.visible = true;
 						dad.visible = true;
 						boyfriend.visible = true;		
 						add(shartGrad);
-						addBehindDad(shartGrad);
-						addBehindBF(shartGrad);
-						addBehindDad(shartLine);
-						addBehindBF(shartLine);
-						FlxTween.tween(shartGrad, {alpha:1}, 0.1);
+						shartGrad.alpha = 1;
 						add(shartLine);
-						FlxTween.tween(shartLine, {alpha:1}, 0.1);
-					case 832:
-						blackScreen.visible = true;
-						FlxTween.tween(blackScreen, {alpha:1}, 0);
-						FlxTween.tween(shartGrad, {alpha:0}, 0);
-						FlxTween.tween(shartLine, {alpha:0}, 0);
+						shartLine.alpha = 1;
+					case 831:
+						blackScreen.alpha = 1;
+						shartGrad.alpha = 0;
+						shartLine.alpha = 0;
 					case 840:
-						shartGrad.visible = false;
-						shartLine.visible = false;
 						gf.visible = true;
-						blackScreen.visible = false;
-						FlxTween.tween(blackScreen, {alpha:1}, 0);
+						blackScreen.alpha = 0;
 					case 1151:
 						blackScreen.visible = true;
-						FlxTween.tween(blackScreen, {alpha:0}, 10);
+						FlxTween.tween(blackScreen, {alpha:1}, 7);
 					case 1215:
-						FlxTween.tween(blackScreen, {alpha:1}, 5);
-					case 1280:
-						FlxTween.tween(blackScreen, {alpha:0}, 2);
+						FlxTween.tween(blackScreen, {alpha:0}, 5.5);
+					case 1264:
+						FlxTween.tween(blackScreen, {alpha:1}, 10);
+					case 1336:
+						FlxTween.tween(blackScreen, {alpha:0}, 5);
 					case 1665:
 						boyfriend.playAnim('hurt', true);
 						glow.color = 0xFFFF0000;					
@@ -6620,9 +6807,22 @@ function hideshit() // basically a camHUD.visible = false; except it doesnt fuck
 				switch (curStep)
 				{
 					case 394:
-						cinematicBars(((Conductor.stepCrochet *40) / 1000), 400)
-				;
-				}
+						cinematicBars(((Conductor.stepCrochet *80) / 1000), 400);
+					case 397:
+						subtitleManager.addSubtitle('This is a real life',0.02, 1);
+					case 406:
+						subtitleManager.addSubtitle('from roblox',0.02, 1,{subtitleSize: 50});
+					case 423:
+						subtitleManager.addSubtitle('of a future',0.02, 1);
+					case 452:
+						subtitleManager.addSubtitle('Look at the weird',0.02, 1);
+					case 470:
+						subtitleManager.addSubtitle('DONE!!!',0.02, 1,{subtitleSize: 80});
+					case 483:
+						subtitleManager.addSubtitle('OH it\'s a magic',0.02, 1,{subtitleSize: 50});
+					case 495:
+						subtitleManager.addSubtitle('com pom its my favorite',0.02, 1);
+					}
 			case 'acquaintance':
 				switch (curStep)
 				{
@@ -6779,6 +6979,7 @@ function hideshit() // basically a camHUD.visible = false; except it doesnt fuck
 
 	override function beatHit()
 	{
+		beatHitvar += 1;
 		if (ClientPrefs.data.wiggle)
 			{	
 				wiggleShit.waveAmplitude = 0.035;
@@ -6862,6 +7063,7 @@ function hideshit() // basically a camHUD.visible = false; except it doesnt fuck
 
 	override function sectionHit()
 	{
+		sectionHitvar += 1;
 		if (SONG.notes[curSection] != null)
 		{
 			/*if (generatedMusic && !endingSong && !isCameraOnForcedPos)

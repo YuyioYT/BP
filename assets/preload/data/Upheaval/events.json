@@ -47,7 +47,7 @@
 					[
 						"Change Character",
 						"1",
-						"god-expunged-1-new"
+						"god-expunged-1"
 					],
 					[
 						"Change Character",
@@ -131,6 +131,36 @@
 				[
 					[
 						"Quick note spin",
+						"0",
+						""
+					]
+				]
+			],
+			[
+				74526.3157894736,
+				[
+					[
+						"Toggle Blocked Glitch",
+						"1",
+						""
+					],
+					[
+						"Toggle Eyesores",
+						"1",
+						""
+					]
+				]
+			],
+			[
+				75236.8421052631,
+				[
+					[
+						"Toggle Blocked Glitch",
+						"0",
+						""
+					],
+					[
+						"Toggle Eyesores",
 						"0",
 						""
 					]

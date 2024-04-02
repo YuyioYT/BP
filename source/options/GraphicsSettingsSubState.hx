@@ -37,7 +37,7 @@ class GraphicsSettingsSubState extends BaseOptionsMenu
 			'antialiasing',
 			'bool');
 		option.onChange = onChangeAntiAliasing; //Changing onChange is only needed if you want to make a special interaction after it changes the value
-		addOption(option);
+		addOption(option); 
 		antialiasingOption = optionsArray.length-1;
 
 		var option:Option = new Option('Blur',

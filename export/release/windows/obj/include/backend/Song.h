@@ -5,7 +5,7 @@
 #include <hxcpp.h>
 #endif
 
-HX_DECLARE_STACK_FRAME(_hx_pos_db09ff2b98ac40f1_48_new)
+HX_DECLARE_STACK_FRAME(_hx_pos_db09ff2b98ac40f1_46_new)
 HX_DECLARE_CLASS1(backend,Song)
 
 namespace backend{
@@ -37,25 +37,23 @@ class HXCPP_CLASS_ATTRIBUTES Song_obj : public ::hx::Object
 			Song_obj *__this = (Song_obj*)(::hx::Ctx::alloc(_hx_ctx, sizeof(Song_obj), true, "backend.Song"));
 			*(void **)__this = Song_obj::_hx_vtable;
 {
-            	HX_STACKFRAME(&_hx_pos_db09ff2b98ac40f1_48_new)
-HXLINE(  78)		( ( ::backend::Song)(__this) )->songInstVolume = ((Float)1);
-HXLINE(  77)		( ( ::backend::Song)(__this) )->gfVersion = HX_("gf",1f,5a,00,00);
-HXLINE(  76)		( ( ::backend::Song)(__this) )->player3 = HX_("dad",47,36,4c,00);
-HXLINE(  75)		( ( ::backend::Song)(__this) )->player2 = HX_("dad",47,36,4c,00);
-HXLINE(  74)		( ( ::backend::Song)(__this) )->player1 = HX_("bf",c4,55,00,00);
-HXLINE(  72)		( ( ::backend::Song)(__this) )->speed = ((Float)1);
-HXLINE(  71)		( ( ::backend::Song)(__this) )->disableNoteRGB = false;
-HXLINE(  69)		( ( ::backend::Song)(__this) )->swapStrumLines = false;
-HXLINE(  68)		( ( ::backend::Song)(__this) )->disableDebugButtons = false;
-HXLINE(  67)		( ( ::backend::Song)(__this) )->disableAntiMash = false;
-HXLINE(  66)		( ( ::backend::Song)(__this) )->healthdrainKill = false;
-HXLINE(  65)		( ( ::backend::Song)(__this) )->canFly = false;
-HXLINE(  64)		( ( ::backend::Song)(__this) )->cameraMoveOnNotes = false;
-HXLINE(  62)		( ( ::backend::Song)(__this) )->healthdrain = ((Float)0);
-HXLINE(  54)		( ( ::backend::Song)(__this) )->needsVoices = true;
-HXLINE( 122)		( ( ::backend::Song)(__this) )->song = song;
-HXLINE( 123)		( ( ::backend::Song)(__this) )->notes = notes;
-HXLINE( 124)		( ( ::backend::Song)(__this) )->bpm = bpm;
+            	HX_STACKFRAME(&_hx_pos_db09ff2b98ac40f1_46_new)
+HXLINE(  73)		( ( ::backend::Song)(__this) )->songInstVolume = ((Float)1);
+HXLINE(  72)		( ( ::backend::Song)(__this) )->gfVersion = HX_("gf",1f,5a,00,00);
+HXLINE(  71)		( ( ::backend::Song)(__this) )->player3 = HX_("dad",47,36,4c,00);
+HXLINE(  70)		( ( ::backend::Song)(__this) )->player2 = HX_("dad",47,36,4c,00);
+HXLINE(  69)		( ( ::backend::Song)(__this) )->player1 = HX_("bf",c4,55,00,00);
+HXLINE(  67)		( ( ::backend::Song)(__this) )->speed = ((Float)1);
+HXLINE(  66)		( ( ::backend::Song)(__this) )->disableNoteRGB = false;
+HXLINE(  64)		( ( ::backend::Song)(__this) )->swapStrumLines = false;
+HXLINE(  63)		( ( ::backend::Song)(__this) )->disableDebugButtons = false;
+HXLINE(  62)		( ( ::backend::Song)(__this) )->disableAntiMash = false;
+HXLINE(  61)		( ( ::backend::Song)(__this) )->canFly = false;
+HXLINE(  60)		( ( ::backend::Song)(__this) )->cameraMoveOnNotes = false;
+HXLINE(  52)		( ( ::backend::Song)(__this) )->needsVoices = true;
+HXLINE( 117)		( ( ::backend::Song)(__this) )->song = song;
+HXLINE( 118)		( ( ::backend::Song)(__this) )->notes = notes;
+HXLINE( 119)		( ( ::backend::Song)(__this) )->bpm = bpm;
             	}
 		
 			return __this;
@@ -97,10 +95,8 @@ HXLINE( 124)		( ( ::backend::Song)(__this) )->bpm = bpm;
 		::String gameOverSound;
 		::String gameOverLoop;
 		::String gameOverEnd;
-		Float healthdrain;
 		bool cameraMoveOnNotes;
 		bool canFly;
-		bool healthdrainKill;
 		bool disableAntiMash;
 		bool disableDebugButtons;
 		bool swapStrumLines;

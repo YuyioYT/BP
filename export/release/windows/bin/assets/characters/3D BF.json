@@ -59,7 +59,7 @@
 	"no_antialiasing": true,
 	"image": "characters/bf/3dbf",
 	"position": [
-		150,
+		140,
 		380
 	],
 	"healthicon": "3D BF",
@@ -74,5 +74,5 @@
 		-90
 	],
 	"sing_duration": 4,
-	"scale": 1.6
+	"scale": 1.8
 }

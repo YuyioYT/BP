@@ -20,6 +20,8 @@ HX_DECLARE_CLASS1(flixel,FlxState)
 HX_DECLARE_CLASS1(flixel,FlxSubState)
 HX_DECLARE_CLASS3(flixel,addons,display,FlxRuntimeShader)
 HX_DECLARE_CLASS3(flixel,addons,effects,FlxTrail)
+HX_DECLARE_CLASS4(flixel,addons,effects,chainable,FlxGlitchEffect)
+HX_DECLARE_CLASS4(flixel,addons,effects,chainable,IFlxEffect)
 HX_DECLARE_CLASS3(flixel,addons,transition,FlxTransitionableState)
 HX_DECLARE_CLASS3(flixel,addons,transition,TransitionData)
 HX_DECLARE_CLASS3(flixel,addons,ui,FlxUIState)
@@ -67,13 +69,16 @@ HX_DECLARE_CLASS1(psychlua,HScript)
 HX_DECLARE_CLASS1(shaders,BlockedGlitchEffect)
 HX_DECLARE_CLASS1(shaders,BloomEffect)
 HX_DECLARE_CLASS1(shaders,ChromBlockedEffect)
+HX_DECLARE_CLASS1(shaders,ChromBordes2Effect)
 HX_DECLARE_CLASS1(shaders,ChromBordesEffect)
 HX_DECLARE_CLASS1(shaders,ChromaticAberrationEffect)
 HX_DECLARE_CLASS1(shaders,DoChromaticAberrationEffect)
 HX_DECLARE_CLASS1(shaders,Effect)
 HX_DECLARE_CLASS1(shaders,GrainEffect)
+HX_DECLARE_CLASS1(shaders,Grey2Effect)
 HX_DECLARE_CLASS1(shaders,HeatEffect)
 HX_DECLARE_CLASS1(shaders,PulseEffect)
+HX_DECLARE_CLASS1(shaders,StaticEffect)
 HX_DECLARE_CLASS1(shaders,WiggleEffect)
 HX_DECLARE_CLASS1(states,PlayState)
 HX_DECLARE_CLASS1(tea,SScript)
@@ -205,13 +210,12 @@ class HXCPP_CLASS_ATTRIBUTES PlayState_obj : public  ::backend::MusicBeatState_o
 		 ::flixel::FlxObject camFollow;
 		bool disableTheTripper;
 		int disableTheTripperAt;
-		bool shakeCam;
-		bool shakeCamALT;
+		 ::flixel::FlxSprite strumLine;
+		 ::flixel::FlxSprite altStrumLine;
 		 ::flixel::group::FlxTypedGroup strumLineNotes;
 		 ::flixel::group::FlxTypedGroup opponentStrums;
 		 ::flixel::group::FlxTypedGroup playerStrums;
 		 ::flixel::group::FlxTypedGroup grpNoteSplashes;
-		 ::flixel::FlxSprite altStrumLine;
 		 ::flixel::group::FlxTypedGroup altStrumLineNotes;
 		 ::flixel::group::FlxTypedGroup altStrums;
 		 ::flixel::text::FlxText songWatermark;
@@ -285,16 +289,15 @@ class HXCPP_CLASS_ATTRIBUTES PlayState_obj : public  ::backend::MusicBeatState_o
 		 ::flixel::text::FlxText totalNotes;
 		 ::flixel::text::FlxText misses;
 		 ::flixel::text::FlxText comboBreaks;
-		 ::flixel::FlxSprite strumLine;
 		Float camZoomSpeed;
 		Float hudZoomSpeed;
 		Float czspeedDefault;
+		bool shakeCam;
+		bool shakeCamALT;
 		bool enableangle;
 		bool generatedMusic;
 		bool endingSong;
 		bool startingSong;
-		 ::flixel::FlxSprite whiteflash;
-		 ::flixel::FlxSprite redGlow;
 		Float elapsedexpungedtime;
 		::Array< ::String > noteCharacters2;
 		::Array< ::String > noteCharacters;
@@ -304,19 +307,21 @@ class HXCPP_CLASS_ATTRIBUTES PlayState_obj : public  ::backend::MusicBeatState_o
 		bool canSlide;
 		bool canFloat;
 		bool canRotate;
+		int sectionHitvar;
+		int beatHitvar;
 		bool dnbBounce;
 		bool ogBounce;
 		Float camBopVAL;
 		Float camHUDBopVAL;
 		Float ogCamBopVAL;
 		Float ogCamHUDBopVAL;
+		bool cameraOnDad;
+		bool cameraOnBF;
 		 ::flixel::FlxSprite rsod;
 		 ::flixel::FlxSprite notResponding;
 		bool laggingRSOD;
 		bool uphIntroTime;
 		 ::flixel::FlxSprite fakenotes;
-		bool cameraOnDad;
-		bool cameraOnBF;
 		 ::objects::DepthSprite bg;
 		 ::objects::DepthSprite hills;
 		 ::objects::DepthSprite gate;
@@ -339,6 +344,10 @@ class HXCPP_CLASS_ATTRIBUTES PlayState_obj : public  ::backend::MusicBeatState_o
 		 ::flixel::FlxSprite olddaveGrass;
 		 ::flixel::FlxSprite olddaveGate;
 		 ::flixel::FlxSprite olddaveHills;
+		 ::objects::BGSprite expungedBG;
+		 ::objects::BGSprite glow;
+		 ::flixel::FlxSprite whiteflash;
+		 ::flixel::FlxSprite redGlow;
 		 ::openfl::display::Sprite expungedScroll;
 		 ::openfl::display::Sprite expungedSpr;
 		::cpp::VirtualArray windowProperties;
@@ -348,9 +357,7 @@ class HXCPP_CLASS_ATTRIBUTES PlayState_obj : public  ::backend::MusicBeatState_o
 		 ::flixel::graphics::frames::FlxFrame lastFrame;
 		 ::flixel::math::FlxBasePoint ExpungedWindowCenterPos;
 		Float windowSteadyX;
-		 ::objects::BGSprite expungedBG;
 		 ::flixel::math::FlxBasePoint preDadPos;
-		 ::objects::BGSprite glow;
 		bool allowGamecamToZoom;
 		bool allowHUDcamToZoom;
 		 ::flixel::tweens::FlxTween camGameTween;
@@ -369,6 +376,15 @@ class HXCPP_CLASS_ATTRIBUTES PlayState_obj : public  ::backend::MusicBeatState_o
 		 ::flixel::addons::effects::FlxTrail playerTrail;
 		Float bounce;
 		Float bounce2;
+		int screenWidth;
+		int screenHeight;
+		 ::flixel::FlxSprite barLeft;
+		 ::flixel::FlxSprite barRight;
+		 ::objects::BGSprite bgstage;
+		 ::objects::BGSprite stageFront;
+		 ::objects::BGSprite stageLight;
+		 ::objects::BGSprite stageCurtains;
+		bool upheavalmoment;
 		Float defaultCamZoom;
 		Float defaultHUDZoom;
 		Float ogDefaultCamZoom;
@@ -389,14 +405,12 @@ class HXCPP_CLASS_ATTRIBUTES PlayState_obj : public  ::backend::MusicBeatState_o
 		bool trollingMode;
 		Float botplaySine;
 		 ::flixel::text::FlxText botplayTxt;
-		bool dancingLeft;
-		bool sbEngineIconBounce;
 		::Array< Float > gfNoteCamOffset;
 		::Array< Float > bfNoteCamOffset;
 		::Array< Float > dadNoteCamOffset;
 		 ::objects::HealthIcon iconP1;
 		 ::objects::HealthIcon iconP2;
-		 ::openfl::filters::BlurFilter blurNotes;
+		bool dancingLeft;
 		 ::flixel::FlxCamera camHUD;
 		 ::flixel::FlxCamera camGame;
 		 ::flixel::FlxCamera camOther;
@@ -404,10 +418,15 @@ class HXCPP_CLASS_ATTRIBUTES PlayState_obj : public  ::backend::MusicBeatState_o
 		 ::flixel::FlxCamera camNOTES;
 		 ::flixel::FlxCamera camSus;
 		Float cameraSpeed;
+		 ::openfl::filters::BlurFilter blurNotes;
+		 ::flixel::addons::effects::chainable::FlxGlitchEffect glitcheffect;
 		 ::shaders::WiggleEffect wiggleShit;
+		 ::shaders::StaticEffect staticshader;
+		 ::shaders::Grey2Effect greyeffect;
 		 ::openfl::filters::ShaderFilter susWiggle;
 		 ::shaders::ChromBlockedEffect chromglitch;
 		 ::shaders::ChromBordesEffect googlechrombordes;
+		 ::shaders::ChromBordes2Effect googlechrombordes2;
 		 ::shaders::DoChromaticAberrationEffect googlechrom;
 		 ::shaders::ChromaticAberrationEffect shader_chromatic_abberation;
 		 ::shaders::GrainEffect grain_shader;

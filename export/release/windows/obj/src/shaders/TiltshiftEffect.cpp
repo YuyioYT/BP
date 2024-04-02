@@ -22,14 +22,14 @@
 #include <shaders/TiltshiftEffect.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_625c4b7884703cdc_219_new,"shaders.TiltshiftEffect","new",0x890c99a8,"shaders.TiltshiftEffect.new","shaders/Shaders.hx",219,0x7800d7f1)
+HX_DEFINE_STACK_FRAME(_hx_pos_625c4b7884703cdc_350_new,"shaders.TiltshiftEffect","new",0x890c99a8,"shaders.TiltshiftEffect.new","shaders/Shaders.hx",350,0x7800d7f1)
 namespace shaders{
 
 void TiltshiftEffect_obj::__construct(Float blurAmount,Float center){
-            	HX_GC_STACKFRAME(&_hx_pos_625c4b7884703cdc_219_new)
-HXLINE( 220)		this->shader =  ::shaders::Tiltshift_obj::__alloc( HX_CTX );
-HXLINE( 221)		this->shader->bluramount->value = ::Array_obj< Float >::__new(1)->init(0,blurAmount);
-HXLINE( 222)		this->shader->center->value = ::Array_obj< Float >::__new(1)->init(0,center);
+            	HX_GC_STACKFRAME(&_hx_pos_625c4b7884703cdc_350_new)
+HXLINE( 351)		this->shader =  ::shaders::Tiltshift_obj::__alloc( HX_CTX );
+HXLINE( 352)		this->shader->bluramount->value = ::Array_obj< Float >::__new(1)->init(0,blurAmount);
+HXLINE( 353)		this->shader->center->value = ::Array_obj< Float >::__new(1)->init(0,center);
             	}
 
 Dynamic TiltshiftEffect_obj::__CreateEmpty() { return new TiltshiftEffect_obj; }

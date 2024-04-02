@@ -22,7 +22,7 @@
 #include <shaders/ThreeDShader.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_5a2f90f6dc7ee1ac_997_new,"shaders.ThreeDEffect","new",0x017558a9,"shaders.ThreeDEffect.new","shaders/Shaders.hx",997,0x7800d7f1)
+HX_DEFINE_STACK_FRAME(_hx_pos_5a2f90f6dc7ee1ac_1144_new,"shaders.ThreeDEffect","new",0x017558a9,"shaders.ThreeDEffect.new","shaders/Shaders.hx",1144,0x7800d7f1)
 namespace shaders{
 
 void ThreeDEffect_obj::__construct(::hx::Null< Float >  __o_xrotation,::hx::Null< Float >  __o_yrotation,::hx::Null< Float >  __o_zrotation,::hx::Null< Float >  __o_depth){
@@ -30,12 +30,12 @@ void ThreeDEffect_obj::__construct(::hx::Null< Float >  __o_xrotation,::hx::Null
             		Float yrotation = __o_yrotation.Default(0);
             		Float zrotation = __o_zrotation.Default(0);
             		Float depth = __o_depth.Default(0);
-            	HX_GC_STACKFRAME(&_hx_pos_5a2f90f6dc7ee1ac_997_new)
-HXLINE( 999)		this->shader =  ::shaders::ThreeDShader_obj::__alloc( HX_CTX );
-HXLINE(1001)		this->shader->xrot->value = ::Array_obj< Float >::__new(1)->init(0,xrotation);
-HXLINE(1002)		this->shader->yrot->value = ::Array_obj< Float >::__new(1)->init(0,yrotation);
-HXLINE(1003)		this->shader->zrot->value = ::Array_obj< Float >::__new(1)->init(0,zrotation);
-HXLINE(1004)		this->shader->dept->value = ::Array_obj< Float >::__new(1)->init(0,depth);
+            	HX_GC_STACKFRAME(&_hx_pos_5a2f90f6dc7ee1ac_1144_new)
+HXLINE(1146)		this->shader =  ::shaders::ThreeDShader_obj::__alloc( HX_CTX );
+HXLINE(1148)		this->shader->xrot->value = ::Array_obj< Float >::__new(1)->init(0,xrotation);
+HXLINE(1149)		this->shader->yrot->value = ::Array_obj< Float >::__new(1)->init(0,yrotation);
+HXLINE(1150)		this->shader->zrot->value = ::Array_obj< Float >::__new(1)->init(0,zrotation);
+HXLINE(1151)		this->shader->dept->value = ::Array_obj< Float >::__new(1)->init(0,depth);
             	}
 
 Dynamic ThreeDEffect_obj::__CreateEmpty() { return new ThreeDEffect_obj; }

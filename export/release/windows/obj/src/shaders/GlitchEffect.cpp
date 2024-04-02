@@ -19,23 +19,23 @@
 #include <shaders/GlitchShader.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_58f7148e0c889b43_1549_new,"shaders.GlitchEffect","new",0x11e96738,"shaders.GlitchEffect.new","shaders/Shaders.hx",1549,0x7800d7f1)
+HX_DEFINE_STACK_FRAME(_hx_pos_58f7148e0c889b43_1696_new,"shaders.GlitchEffect","new",0x11e96738,"shaders.GlitchEffect.new","shaders/Shaders.hx",1696,0x7800d7f1)
 static const Float _hx_array_data_bc6fab46_1[] = {
 	(Float)0,
 };
-HX_LOCAL_STACK_FRAME(_hx_pos_58f7148e0c889b43_1563_update,"shaders.GlitchEffect","update",0x9557c631,"shaders.GlitchEffect.update","shaders/Shaders.hx",1563,0x7800d7f1)
-HX_LOCAL_STACK_FRAME(_hx_pos_58f7148e0c889b43_1569_set_waveSpeed,"shaders.GlitchEffect","set_waveSpeed",0x2e9d8dc9,"shaders.GlitchEffect.set_waveSpeed","shaders/Shaders.hx",1569,0x7800d7f1)
-HX_LOCAL_STACK_FRAME(_hx_pos_58f7148e0c889b43_1576_set_waveFrequency,"shaders.GlitchEffect","set_waveFrequency",0x11c3c1de,"shaders.GlitchEffect.set_waveFrequency","shaders/Shaders.hx",1576,0x7800d7f1)
-HX_LOCAL_STACK_FRAME(_hx_pos_58f7148e0c889b43_1583_set_waveAmplitude,"shaders.GlitchEffect","set_waveAmplitude",0xbfd45485,"shaders.GlitchEffect.set_waveAmplitude","shaders/Shaders.hx",1583,0x7800d7f1)
+HX_LOCAL_STACK_FRAME(_hx_pos_58f7148e0c889b43_1710_update,"shaders.GlitchEffect","update",0x9557c631,"shaders.GlitchEffect.update","shaders/Shaders.hx",1710,0x7800d7f1)
+HX_LOCAL_STACK_FRAME(_hx_pos_58f7148e0c889b43_1716_set_waveSpeed,"shaders.GlitchEffect","set_waveSpeed",0x2e9d8dc9,"shaders.GlitchEffect.set_waveSpeed","shaders/Shaders.hx",1716,0x7800d7f1)
+HX_LOCAL_STACK_FRAME(_hx_pos_58f7148e0c889b43_1723_set_waveFrequency,"shaders.GlitchEffect","set_waveFrequency",0x11c3c1de,"shaders.GlitchEffect.set_waveFrequency","shaders/Shaders.hx",1723,0x7800d7f1)
+HX_LOCAL_STACK_FRAME(_hx_pos_58f7148e0c889b43_1730_set_waveAmplitude,"shaders.GlitchEffect","set_waveAmplitude",0xbfd45485,"shaders.GlitchEffect.set_waveAmplitude","shaders/Shaders.hx",1730,0x7800d7f1)
 namespace shaders{
 
 void GlitchEffect_obj::__construct(){
-            	HX_GC_STACKFRAME(&_hx_pos_58f7148e0c889b43_1549_new)
-HXLINE(1555)		this->waveAmplitude = ((Float)0);
-HXLINE(1554)		this->waveFrequency = ((Float)0);
-HXLINE(1553)		this->waveSpeed = ((Float)0);
-HXLINE(1551)		this->shader =  ::shaders::GlitchShader_obj::__alloc( HX_CTX );
-HXLINE(1559)		this->shader->uTime->value = ::Array_obj< Float >::fromData( _hx_array_data_bc6fab46_1,1);
+            	HX_GC_STACKFRAME(&_hx_pos_58f7148e0c889b43_1696_new)
+HXLINE(1702)		this->waveAmplitude = ((Float)0);
+HXLINE(1701)		this->waveFrequency = ((Float)0);
+HXLINE(1700)		this->waveSpeed = ((Float)0);
+HXLINE(1698)		this->shader =  ::shaders::GlitchShader_obj::__alloc( HX_CTX );
+HXLINE(1706)		this->shader->uTime->value = ::Array_obj< Float >::fromData( _hx_array_data_bc6fab46_1,1);
             	}
 
 Dynamic GlitchEffect_obj::__CreateEmpty() { return new GlitchEffect_obj; }
@@ -54,40 +54,40 @@ bool GlitchEffect_obj::_hx_isInstanceOf(int inClassId) {
 }
 
 void GlitchEffect_obj::update(Float elapsed){
-            	HX_STACKFRAME(&_hx_pos_58f7148e0c889b43_1563_update)
-HXLINE(1564)		::Array< Float > base = this->shader->uTime->value;
-HXDLIN(1564)		int _hx_tmp = 0;
-HXDLIN(1564)		base[_hx_tmp] = (base->__get(_hx_tmp) + elapsed);
+            	HX_STACKFRAME(&_hx_pos_58f7148e0c889b43_1710_update)
+HXLINE(1711)		::Array< Float > base = this->shader->uTime->value;
+HXDLIN(1711)		int _hx_tmp = 0;
+HXDLIN(1711)		base[_hx_tmp] = (base->__get(_hx_tmp) + elapsed);
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC1(GlitchEffect_obj,update,(void))
 
 Float GlitchEffect_obj::set_waveSpeed(Float v){
-            	HX_STACKFRAME(&_hx_pos_58f7148e0c889b43_1569_set_waveSpeed)
-HXLINE(1570)		this->waveSpeed = v;
-HXLINE(1571)		this->shader->uSpeed->value = ::Array_obj< Float >::__new(1)->init(0,this->waveSpeed);
-HXLINE(1572)		return v;
+            	HX_STACKFRAME(&_hx_pos_58f7148e0c889b43_1716_set_waveSpeed)
+HXLINE(1717)		this->waveSpeed = v;
+HXLINE(1718)		this->shader->uSpeed->value = ::Array_obj< Float >::__new(1)->init(0,this->waveSpeed);
+HXLINE(1719)		return v;
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC1(GlitchEffect_obj,set_waveSpeed,return )
 
 Float GlitchEffect_obj::set_waveFrequency(Float v){
-            	HX_STACKFRAME(&_hx_pos_58f7148e0c889b43_1576_set_waveFrequency)
-HXLINE(1577)		this->waveFrequency = v;
-HXLINE(1578)		this->shader->uFrequency->value = ::Array_obj< Float >::__new(1)->init(0,this->waveFrequency);
-HXLINE(1579)		return v;
+            	HX_STACKFRAME(&_hx_pos_58f7148e0c889b43_1723_set_waveFrequency)
+HXLINE(1724)		this->waveFrequency = v;
+HXLINE(1725)		this->shader->uFrequency->value = ::Array_obj< Float >::__new(1)->init(0,this->waveFrequency);
+HXLINE(1726)		return v;
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC1(GlitchEffect_obj,set_waveFrequency,return )
 
 Float GlitchEffect_obj::set_waveAmplitude(Float v){
-            	HX_STACKFRAME(&_hx_pos_58f7148e0c889b43_1583_set_waveAmplitude)
-HXLINE(1584)		this->waveAmplitude = v;
-HXLINE(1585)		this->shader->uWaveAmplitude->value = ::Array_obj< Float >::__new(1)->init(0,this->waveAmplitude);
-HXLINE(1586)		return v;
+            	HX_STACKFRAME(&_hx_pos_58f7148e0c889b43_1730_set_waveAmplitude)
+HXLINE(1731)		this->waveAmplitude = v;
+HXLINE(1732)		this->shader->uWaveAmplitude->value = ::Array_obj< Float >::__new(1)->init(0,this->waveAmplitude);
+HXLINE(1733)		return v;
             	}
 
 

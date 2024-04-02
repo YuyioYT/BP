@@ -13,13 +13,13 @@
 #include <openfl/text/Font.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_c9e97b57610c7820_1754_new,"__ASSET__OPENFL__assets_fonts_comic_sans_ms_bold_ttf","new",0x8df7f6e6,"__ASSET__OPENFL__assets_fonts_comic_sans_ms_bold_ttf.new","ManifestResources.hx",1754,0xf77aa668)
+HX_DEFINE_STACK_FRAME(_hx_pos_c9e97b57610c7820_1755_new,"__ASSET__OPENFL__assets_fonts_comic_sans_ms_bold_ttf","new",0x8df7f6e6,"__ASSET__OPENFL__assets_fonts_comic_sans_ms_bold_ttf.new","ManifestResources.hx",1755,0xf77aa668)
 
 void __ASSET__OPENFL__assets_fonts_comic_sans_ms_bold_ttf_obj::__construct(){
-            	HX_STACKFRAME(&_hx_pos_c9e97b57610c7820_1754_new)
-HXDLIN(1754)		this->_hx___fontPath = (::ManifestResources_obj::rootPath + HX_("assets/fonts/Comic Sans MS Bold.ttf",66,74,a6,0e));
-HXDLIN(1754)		this->name = HX_("Comic Sans MS Bold",f7,90,1e,7c);
-HXDLIN(1754)		super::__construct(null());
+            	HX_STACKFRAME(&_hx_pos_c9e97b57610c7820_1755_new)
+HXDLIN(1755)		this->_hx___fontPath = (::ManifestResources_obj::rootPath + HX_("assets/fonts/Comic Sans MS Bold.ttf",66,74,a6,0e));
+HXDLIN(1755)		this->name = HX_("Comic Sans MS Bold",f7,90,1e,7c);
+HXDLIN(1755)		super::__construct(null());
             	}
 
 Dynamic __ASSET__OPENFL__assets_fonts_comic_sans_ms_bold_ttf_obj::__CreateEmpty() { return new __ASSET__OPENFL__assets_fonts_comic_sans_ms_bold_ttf_obj; }

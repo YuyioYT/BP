@@ -2,7 +2,7 @@
 function onCreatePost()
     doChromaticPulse("game", 0.02, 0.1, "sineIn")
     doChromaticPulse("hud", 0.02, 0.1, "sineIn")
-    --addChromaticAbberationEffect("dad",0.0009);
+    addChromaticAbberationEffect("dad",0.0009);
     addChromaticAbberationEffect("hud");
     addGrainEffect("hud",1,1,1,true)
     --addBloomEffect2('obj1')

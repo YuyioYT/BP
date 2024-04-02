@@ -61,8 +61,6 @@ class HXCPP_CLASS_ATTRIBUTES Alphabet_obj : public  ::flixel::group::FlxTypedSpr
 		::String text;
 		bool bold;
 		::Array< ::Dynamic> letters;
-		Float forceX;
-		bool lerpOnForceX;
 		bool isMenuItem;
 		int targetY;
 		Float targetX;
@@ -72,7 +70,6 @@ class HXCPP_CLASS_ATTRIBUTES Alphabet_obj : public  ::flixel::group::FlxTypedSpr
 		Float xAdd;
 		Float yAdd;
 		bool isOptionItem;
-		bool isFreeplay;
 		bool wasChoosed;
 		bool selected;
 		bool isPauseItem;

@@ -192,6 +192,9 @@
 #ifndef INCLUDED_flixel_addons_ui_XY
 #include <flixel/addons/ui/XY.h>
 #endif
+#ifndef INCLUDED_flixel_addons_effects_chainable_FlxGlitchDirection
+#include <flixel/addons/effects/chainable/FlxGlitchDirection.h>
+#endif
 #ifndef INCLUDED_flixel_addons_display_shapes_FlxShapeType
 #include <flixel/addons/display/shapes/FlxShapeType.h>
 #endif
@@ -1785,11 +1788,11 @@
 #ifndef INCLUDED_shaders_ChromAberrationBlueSwapEffect
 #include <shaders/ChromAberrationBlueSwapEffect.h>
 #endif
-#ifndef INCLUDED_shaders_ChromBlockedShader
-#include <shaders/ChromBlockedShader.h>
+#ifndef INCLUDED_shaders_ChromBordes2EffectShader
+#include <shaders/ChromBordes2EffectShader.h>
 #endif
-#ifndef INCLUDED_shaders_ChromBlockedEffect
-#include <shaders/ChromBlockedEffect.h>
+#ifndef INCLUDED_shaders_ChromBordes2Effect
+#include <shaders/ChromBordes2Effect.h>
 #endif
 #ifndef INCLUDED_shaders_ChromBordesEffectShader
 #include <shaders/ChromBordesEffectShader.h>
@@ -1964,6 +1967,12 @@
 #endif
 #ifndef INCLUDED_shaders_ScanlineEffect
 #include <shaders/ScanlineEffect.h>
+#endif
+#ifndef INCLUDED_shaders_ChromBlockedShader
+#include <shaders/ChromBlockedShader.h>
+#endif
+#ifndef INCLUDED_shaders_ChromBlockedEffect
+#include <shaders/ChromBlockedEffect.h>
 #endif
 #ifndef INCLUDED_shaders_ScanlineShader2
 #include <shaders/ScanlineShader2.h>
@@ -3960,6 +3969,12 @@
 #ifndef INCLUDED_openfl_media_Sound
 #include <openfl/media/Sound.h>
 #endif
+#ifndef INCLUDED_flixel_addons_effects_chainable_FlxGlitchEffect
+#include <flixel/addons/effects/chainable/FlxGlitchEffect.h>
+#endif
+#ifndef INCLUDED_flixel_addons_effects_chainable_IFlxEffect
+#include <flixel/addons/effects/chainable/IFlxEffect.h>
+#endif
 #ifndef INCLUDED_flixel_addons_effects_FlxTrailArea
 #include <flixel/addons/effects/FlxTrailArea.h>
 #endif
@@ -4334,6 +4349,7 @@ __files__boot();
 ::flixel::addons::ui::GamepadAutoConnectPreference_obj::__register();
 ::flixel::addons::ui::Rounding_obj::__register();
 ::flixel::addons::ui::XY_obj::__register();
+::flixel::addons::effects::chainable::FlxGlitchDirection_obj::__register();
 ::flixel::addons::display::shapes::FlxShapeType_obj::__register();
 ::flixel::addons::display::BackdropBlitMode_obj::__register();
 ::flixel::FlxRenderMethod_obj::__register();
@@ -4865,8 +4881,8 @@ __files__boot();
 ::shaders::PerlinSmokeEffect_obj::__register();
 ::shaders::ChromAberrationBlueSwapShader_obj::__register();
 ::shaders::ChromAberrationBlueSwapEffect_obj::__register();
-::shaders::ChromBlockedShader_obj::__register();
-::shaders::ChromBlockedEffect_obj::__register();
+::shaders::ChromBordes2EffectShader_obj::__register();
+::shaders::ChromBordes2Effect_obj::__register();
 ::shaders::ChromBordesEffectShader_obj::__register();
 ::shaders::ChromBordesEffect_obj::__register();
 ::shaders::MotionBlurShader_obj::__register();
@@ -4925,6 +4941,8 @@ __files__boot();
 ::shaders::TiltshiftEffect_obj::__register();
 ::shaders::ScanlineShader_obj::__register();
 ::shaders::ScanlineEffect_obj::__register();
+::shaders::ChromBlockedShader_obj::__register();
+::shaders::ChromBlockedEffect_obj::__register();
 ::shaders::ScanlineShader2_obj::__register();
 ::shaders::ScanlineEffect2_obj::__register();
 ::shaders::DoChromaticAberrationEffect_obj::__register();
@@ -5590,6 +5608,8 @@ __files__boot();
 ::flixel::addons::transition::FlxTransitionSprite_obj::__register();
 ::lime::math::Vector2_obj::__register();
 ::openfl::media::Sound_obj::__register();
+::flixel::addons::effects::chainable::FlxGlitchEffect_obj::__register();
+::flixel::addons::effects::chainable::IFlxEffect_obj::__register();
 ::flixel::addons::effects::FlxTrailArea_obj::__register();
 ::flixel::addons::effects::FlxTrail_obj::__register();
 ::flixel::addons::display::shapes::FlxShapeCircle_obj::__register();
@@ -5755,6 +5775,7 @@ __files__boot();
 ::flixel::addons::ui::GamepadAutoConnectPreference_obj::__boot();
 ::flixel::addons::ui::Rounding_obj::__boot();
 ::flixel::addons::ui::XY_obj::__boot();
+::flixel::addons::effects::chainable::FlxGlitchDirection_obj::__boot();
 ::flixel::addons::display::shapes::FlxShapeType_obj::__boot();
 ::flixel::addons::display::BackdropBlitMode_obj::__boot();
 ::flixel::FlxRenderMethod_obj::__boot();

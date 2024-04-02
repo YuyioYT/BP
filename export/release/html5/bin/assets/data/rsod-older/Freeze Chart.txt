@@ -1,3 +1,0 @@
-Value 1: Just put a true there.
-
-Value 2: A timer that activates da scroll again.

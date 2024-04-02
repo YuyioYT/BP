@@ -28,13 +28,13 @@ class HXCPP_CLASS_ATTRIBUTES StaticEffect_obj : public  ::shaders::Effect_obj
 	public:
 		enum { _hx_ClassId = 0x01d62c2d };
 
-		void __construct(Float strength);
+		void __construct();
 		inline void *operator new(size_t inSize, bool inContainer=true,const char *inName="shaders.StaticEffect")
 			{ return ::hx::Object::operator new(inSize,inContainer,inName); }
 		inline void *operator new(size_t inSize, int extra)
 			{ return ::hx::Object::operator new(inSize+extra,true,"shaders.StaticEffect"); }
-		static ::hx::ObjectPtr< StaticEffect_obj > __new(Float strength);
-		static ::hx::ObjectPtr< StaticEffect_obj > __alloc(::hx::Ctx *_hx_ctx,Float strength);
+		static ::hx::ObjectPtr< StaticEffect_obj > __new();
+		static ::hx::ObjectPtr< StaticEffect_obj > __alloc(::hx::Ctx *_hx_ctx);
 		static void * _hx_vtable;
 		static Dynamic __CreateEmpty();
 		static Dynamic __Create(::hx::DynamicArray inArgs);
@@ -51,7 +51,11 @@ class HXCPP_CLASS_ATTRIBUTES StaticEffect_obj : public  ::shaders::Effect_obj
 		::String __ToString() const { return HX_("StaticEffect",ff,ad,29,47); }
 
 		 ::shaders::StaticShader shader;
+		Float strength;
 		void update(Float elapsed);
+
+		Float set_strength(Float value);
+		::Dynamic set_strength_dyn();
 
 };
 

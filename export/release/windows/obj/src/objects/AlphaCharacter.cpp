@@ -73,16 +73,16 @@
 #include <sys/io/File.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_0ebe4a949189dc15_362_new,"objects.AlphaCharacter","new",0xef969e57,"objects.AlphaCharacter.new","objects/Alphabet.hx",362,0x083c86d0)
+HX_DEFINE_STACK_FRAME(_hx_pos_0ebe4a949189dc15_322_new,"objects.AlphaCharacter","new",0xef969e57,"objects.AlphaCharacter.new","objects/Alphabet.hx",322,0x083c86d0)
 static const Float _hx_array_data_718d26e5_1[] = {
 	(Float)0,(Float)0,
 };
-HX_LOCAL_STACK_FRAME(_hx_pos_0ebe4a949189dc15_447_setupAlphaCharacter,"objects.AlphaCharacter","setupAlphaCharacter",0x78bc67bf,"objects.AlphaCharacter.setupAlphaCharacter","objects/Alphabet.hx",447,0x083c86d0)
-HX_LOCAL_STACK_FRAME(_hx_pos_0ebe4a949189dc15_509_set_image,"objects.AlphaCharacter","set_image",0x807388f5,"objects.AlphaCharacter.set_image","objects/Alphabet.hx",509,0x083c86d0)
-HX_LOCAL_STACK_FRAME(_hx_pos_0ebe4a949189dc15_539_updateLetterOffset,"objects.AlphaCharacter","updateLetterOffset",0xb95f24ab,"objects.AlphaCharacter.updateLetterOffset","objects/Alphabet.hx",539,0x083c86d0)
-HX_LOCAL_STACK_FRAME(_hx_pos_0ebe4a949189dc15_570_updateHitbox,"objects.AlphaCharacter","updateHitbox",0x9940cfaa,"objects.AlphaCharacter.updateHitbox","objects/Alphabet.hx",570,0x083c86d0)
-HX_LOCAL_STACK_FRAME(_hx_pos_0ebe4a949189dc15_499_isTypeAlphabet,"objects.AlphaCharacter","isTypeAlphabet",0x6db66c00,"objects.AlphaCharacter.isTypeAlphabet","objects/Alphabet.hx",499,0x083c86d0)
-HX_LOCAL_STACK_FRAME(_hx_pos_0ebe4a949189dc15_370_boot,"objects.AlphaCharacter","boot",0xac4cee5b,"objects.AlphaCharacter.boot","objects/Alphabet.hx",370,0x083c86d0)
+HX_LOCAL_STACK_FRAME(_hx_pos_0ebe4a949189dc15_407_setupAlphaCharacter,"objects.AlphaCharacter","setupAlphaCharacter",0x78bc67bf,"objects.AlphaCharacter.setupAlphaCharacter","objects/Alphabet.hx",407,0x083c86d0)
+HX_LOCAL_STACK_FRAME(_hx_pos_0ebe4a949189dc15_469_set_image,"objects.AlphaCharacter","set_image",0x807388f5,"objects.AlphaCharacter.set_image","objects/Alphabet.hx",469,0x083c86d0)
+HX_LOCAL_STACK_FRAME(_hx_pos_0ebe4a949189dc15_499_updateLetterOffset,"objects.AlphaCharacter","updateLetterOffset",0xb95f24ab,"objects.AlphaCharacter.updateLetterOffset","objects/Alphabet.hx",499,0x083c86d0)
+HX_LOCAL_STACK_FRAME(_hx_pos_0ebe4a949189dc15_530_updateHitbox,"objects.AlphaCharacter","updateHitbox",0x9940cfaa,"objects.AlphaCharacter.updateHitbox","objects/Alphabet.hx",530,0x083c86d0)
+HX_LOCAL_STACK_FRAME(_hx_pos_0ebe4a949189dc15_459_isTypeAlphabet,"objects.AlphaCharacter","isTypeAlphabet",0x6db66c00,"objects.AlphaCharacter.isTypeAlphabet","objects/Alphabet.hx",459,0x083c86d0)
+HX_LOCAL_STACK_FRAME(_hx_pos_0ebe4a949189dc15_330_boot,"objects.AlphaCharacter","boot",0xac4cee5b,"objects.AlphaCharacter.boot","objects/Alphabet.hx",330,0x083c86d0)
 static const Float _hx_array_data_718d26e5_8[] = {
 	(Float)0,(Float)-11,
 };
@@ -203,16 +203,16 @@ static const Float _hx_array_data_718d26e5_46[] = {
 namespace objects{
 
 void AlphaCharacter_obj::__construct(){
-            	HX_STACKFRAME(&_hx_pos_0ebe4a949189dc15_362_new)
-HXLINE( 445)		this->curLetter = null();
-HXLINE( 437)		this->character = HX_("?",3f,00,00,00);
-HXLINE( 436)		this->rowWidth = ((Float)0);
-HXLINE( 435)		this->row = 0;
-HXLINE( 433)		this->letterOffset = ::Array_obj< Float >::fromData( _hx_array_data_718d26e5_1,2);
-HXLINE( 432)		this->alignOffset = ((Float)0);
-HXLINE( 440)		super::__construct(this->x,this->y,null());
-HXLINE( 441)		this->set_image(HX_("alphabet",b3,7c,38,21));
-HXLINE( 442)		this->set_antialiasing(::backend::ClientPrefs_obj::data->antialiasing);
+            	HX_STACKFRAME(&_hx_pos_0ebe4a949189dc15_322_new)
+HXLINE( 405)		this->curLetter = null();
+HXLINE( 397)		this->character = HX_("?",3f,00,00,00);
+HXLINE( 396)		this->rowWidth = ((Float)0);
+HXLINE( 395)		this->row = 0;
+HXLINE( 393)		this->letterOffset = ::Array_obj< Float >::fromData( _hx_array_data_718d26e5_1,2);
+HXLINE( 392)		this->alignOffset = ((Float)0);
+HXLINE( 400)		super::__construct(this->x,this->y,null());
+HXLINE( 401)		this->set_image(HX_("alphabet",b3,7c,38,21));
+HXLINE( 402)		this->set_antialiasing(::backend::ClientPrefs_obj::data->antialiasing);
             	}
 
 Dynamic AlphaCharacter_obj::__CreateEmpty() { return new AlphaCharacter_obj; }
@@ -239,182 +239,182 @@ bool AlphaCharacter_obj::_hx_isInstanceOf(int inClassId) {
 }
 
 void AlphaCharacter_obj::setupAlphaCharacter(Float x,Float y,::String character, ::Dynamic bold){
-            	HX_STACKFRAME(&_hx_pos_0ebe4a949189dc15_447_setupAlphaCharacter)
-HXLINE( 448)		this->set_x(x);
-HXLINE( 449)		this->set_y(y);
-HXLINE( 451)		if (::hx::IsNotNull( this->parent )) {
-HXLINE( 453)			if (::hx::IsNull( bold )) {
-HXLINE( 454)				bold = this->parent->bold;
+            	HX_STACKFRAME(&_hx_pos_0ebe4a949189dc15_407_setupAlphaCharacter)
+HXLINE( 408)		this->set_x(x);
+HXLINE( 409)		this->set_y(y);
+HXLINE( 411)		if (::hx::IsNotNull( this->parent )) {
+HXLINE( 413)			if (::hx::IsNull( bold )) {
+HXLINE( 414)				bold = this->parent->bold;
             			}
-HXLINE( 455)			this->scale->set_x(this->parent->scaleX);
-HXLINE( 456)			this->scale->set_y(this->parent->scaleY);
+HXLINE( 415)			this->scale->set_x(this->parent->scaleX);
+HXLINE( 416)			this->scale->set_y(this->parent->scaleY);
             		}
-HXLINE( 459)		if (::hx::IsNotNull( character )) {
-HXLINE( 461)			this->character = character;
-HXLINE( 462)			this->curLetter = null();
-HXLINE( 463)			::String lowercase = this->character.toLowerCase();
-HXLINE( 464)			if (::objects::AlphaCharacter_obj::allLetters->exists(lowercase)) {
-HXLINE( 464)				this->curLetter = ::objects::AlphaCharacter_obj::allLetters->get(lowercase);
+HXLINE( 419)		if (::hx::IsNotNull( character )) {
+HXLINE( 421)			this->character = character;
+HXLINE( 422)			this->curLetter = null();
+HXLINE( 423)			::String lowercase = this->character.toLowerCase();
+HXLINE( 424)			if (::objects::AlphaCharacter_obj::allLetters->exists(lowercase)) {
+HXLINE( 424)				this->curLetter = ::objects::AlphaCharacter_obj::allLetters->get(lowercase);
             			}
             			else {
-HXLINE( 465)				this->curLetter = ::objects::AlphaCharacter_obj::allLetters->get(HX_("?",3f,00,00,00));
+HXLINE( 425)				this->curLetter = ::objects::AlphaCharacter_obj::allLetters->get(HX_("?",3f,00,00,00));
             			}
-HXLINE( 467)			::String suffix = HX_("",00,00,00,00);
-HXLINE( 468)			if (!(( (bool)(bold) ))) {
-HXLINE( 470)				if (::objects::AlphaCharacter_obj::isTypeAlphabet(lowercase)) {
-HXLINE( 472)					if ((lowercase != this->character)) {
-HXLINE( 473)						suffix = HX_(" uppercase",f2,8c,8d,f0);
+HXLINE( 427)			::String suffix = HX_("",00,00,00,00);
+HXLINE( 428)			if (!(( (bool)(bold) ))) {
+HXLINE( 430)				if (::objects::AlphaCharacter_obj::isTypeAlphabet(lowercase)) {
+HXLINE( 432)					if ((lowercase != this->character)) {
+HXLINE( 433)						suffix = HX_(" uppercase",f2,8c,8d,f0);
             					}
             					else {
-HXLINE( 475)						suffix = HX_(" lowercase",11,a9,f4,6f);
+HXLINE( 435)						suffix = HX_(" lowercase",11,a9,f4,6f);
             					}
             				}
             				else {
-HXLINE( 477)					suffix = HX_(" normal",47,4a,18,63);
+HXLINE( 437)					suffix = HX_(" normal",47,4a,18,63);
             				}
             			}
             			else {
-HXLINE( 479)				suffix = HX_(" bold",a5,11,ee,ad);
+HXLINE( 439)				suffix = HX_(" bold",a5,11,ee,ad);
             			}
-HXLINE( 481)			::String alphaAnim = lowercase;
-HXLINE( 482)			bool _hx_tmp;
-HXDLIN( 482)			if (::hx::IsNotNull( this->curLetter )) {
-HXLINE( 482)				_hx_tmp = ::hx::IsNotNull( this->curLetter->__Field(HX_("anim",11,86,71,40),::hx::paccDynamic) );
+HXLINE( 441)			::String alphaAnim = lowercase;
+HXLINE( 442)			bool _hx_tmp;
+HXDLIN( 442)			if (::hx::IsNotNull( this->curLetter )) {
+HXLINE( 442)				_hx_tmp = ::hx::IsNotNull( this->curLetter->__Field(HX_("anim",11,86,71,40),::hx::paccDynamic) );
             			}
             			else {
-HXLINE( 482)				_hx_tmp = false;
+HXLINE( 442)				_hx_tmp = false;
             			}
-HXDLIN( 482)			if (_hx_tmp) {
-HXLINE( 482)				alphaAnim = ( (::String)(this->curLetter->__Field(HX_("anim",11,86,71,40),::hx::paccDynamic)) );
+HXDLIN( 442)			if (_hx_tmp) {
+HXLINE( 442)				alphaAnim = ( (::String)(this->curLetter->__Field(HX_("anim",11,86,71,40),::hx::paccDynamic)) );
             			}
-HXLINE( 484)			::String anim = (alphaAnim + suffix);
-HXLINE( 485)			this->animation->addByPrefix(anim,anim,24,null(),null(),null());
-HXLINE( 486)			this->animation->play(anim,true,null(),null());
-HXLINE( 487)			if (::hx::IsNull( this->animation->_curAnim )) {
-HXLINE( 489)				if ((suffix != HX_(" bold",a5,11,ee,ad))) {
-HXLINE( 489)					suffix = HX_(" normal",47,4a,18,63);
+HXLINE( 444)			::String anim = (alphaAnim + suffix);
+HXLINE( 445)			this->animation->addByPrefix(anim,anim,24,null(),null(),null());
+HXLINE( 446)			this->animation->play(anim,true,null(),null());
+HXLINE( 447)			if (::hx::IsNull( this->animation->_curAnim )) {
+HXLINE( 449)				if ((suffix != HX_(" bold",a5,11,ee,ad))) {
+HXLINE( 449)					suffix = HX_(" normal",47,4a,18,63);
             				}
-HXLINE( 490)				anim = (HX_("question",26,9b,b0,26) + suffix);
-HXLINE( 491)				this->animation->addByPrefix(anim,anim,24,null(),null(),null());
-HXLINE( 492)				this->animation->play(anim,true,null(),null());
+HXLINE( 450)				anim = (HX_("question",26,9b,b0,26) + suffix);
+HXLINE( 451)				this->animation->addByPrefix(anim,anim,24,null(),null(),null());
+HXLINE( 452)				this->animation->play(anim,true,null(),null());
             			}
             		}
-HXLINE( 495)		this->updateHitbox();
+HXLINE( 455)		this->updateHitbox();
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC4(AlphaCharacter_obj,setupAlphaCharacter,(void))
 
 ::String AlphaCharacter_obj::set_image(::String name){
-            	HX_STACKFRAME(&_hx_pos_0ebe4a949189dc15_509_set_image)
-HXLINE( 510)		if (::hx::IsNull( this->frames )) {
-HXLINE( 512)			this->image = name;
-HXLINE( 513)			::String library = null();
-HXDLIN( 513)			 ::flixel::graphics::FlxGraphic imageLoaded = ::backend::Paths_obj::image(name,null(),true);
-HXDLIN( 513)			bool xmlExists = false;
-HXDLIN( 513)			::String xml = ::backend::Paths_obj::modFolders(((HX_("images/",77,50,74,c1) + name) + HX_(".xml",69,3e,c3,1e)));
-HXDLIN( 513)			if (::sys::FileSystem_obj::exists(xml)) {
-HXLINE( 513)				xmlExists = true;
+            	HX_STACKFRAME(&_hx_pos_0ebe4a949189dc15_469_set_image)
+HXLINE( 470)		if (::hx::IsNull( this->frames )) {
+HXLINE( 472)			this->image = name;
+HXLINE( 473)			::String library = null();
+HXDLIN( 473)			 ::flixel::graphics::FlxGraphic imageLoaded = ::backend::Paths_obj::image(name,null(),true);
+HXDLIN( 473)			bool xmlExists = false;
+HXDLIN( 473)			::String xml = ::backend::Paths_obj::modFolders(((HX_("images/",77,50,74,c1) + name) + HX_(".xml",69,3e,c3,1e)));
+HXDLIN( 473)			if (::sys::FileSystem_obj::exists(xml)) {
+HXLINE( 473)				xmlExists = true;
             			}
-HXDLIN( 513)			 ::Dynamic _hx_tmp;
-HXDLIN( 513)			if (::hx::IsNotNull( imageLoaded )) {
-HXLINE( 513)				_hx_tmp = imageLoaded;
-            			}
-            			else {
-HXLINE( 513)				_hx_tmp = ::backend::Paths_obj::image(name,library,true);
-            			}
-HXDLIN( 513)			::String _hx_tmp1;
-HXDLIN( 513)			if (xmlExists) {
-HXLINE( 513)				_hx_tmp1 = ::sys::io::File_obj::getContent(xml);
+HXDLIN( 473)			 ::Dynamic _hx_tmp;
+HXDLIN( 473)			if (::hx::IsNotNull( imageLoaded )) {
+HXLINE( 473)				_hx_tmp = imageLoaded;
             			}
             			else {
-HXLINE( 513)				_hx_tmp1 = ::backend::Paths_obj::getPath(((HX_("images/",77,50,74,c1) + name) + HX_(".xml",69,3e,c3,1e)),null(),library,null());
+HXLINE( 473)				_hx_tmp = ::backend::Paths_obj::image(name,library,true);
             			}
-HXDLIN( 513)			this->set_frames(::flixel::graphics::frames::FlxAtlasFrames_obj::fromSparrow(_hx_tmp,_hx_tmp1));
-HXLINE( 514)			return name;
+HXDLIN( 473)			::String _hx_tmp1;
+HXDLIN( 473)			if (xmlExists) {
+HXLINE( 473)				_hx_tmp1 = ::sys::io::File_obj::getContent(xml);
+            			}
+            			else {
+HXLINE( 473)				_hx_tmp1 = ::backend::Paths_obj::getPath(((HX_("images/",77,50,74,c1) + name) + HX_(".xml",69,3e,c3,1e)),null(),library,null());
+            			}
+HXDLIN( 473)			this->set_frames(::flixel::graphics::frames::FlxAtlasFrames_obj::fromSparrow(_hx_tmp,_hx_tmp1));
+HXLINE( 474)			return name;
             		}
-HXLINE( 517)		::String lastAnim = null();
-HXLINE( 518)		if (::hx::IsNotNull( this->animation )) {
-HXLINE( 520)			lastAnim = this->animation->get_name();
+HXLINE( 477)		::String lastAnim = null();
+HXLINE( 478)		if (::hx::IsNotNull( this->animation )) {
+HXLINE( 480)			lastAnim = this->animation->get_name();
             		}
-HXLINE( 522)		this->image = name;
-HXLINE( 523)		::String library = null();
-HXDLIN( 523)		 ::flixel::graphics::FlxGraphic imageLoaded = ::backend::Paths_obj::image(name,null(),true);
-HXDLIN( 523)		bool xmlExists = false;
-HXDLIN( 523)		::String xml = ::backend::Paths_obj::modFolders(((HX_("images/",77,50,74,c1) + name) + HX_(".xml",69,3e,c3,1e)));
-HXDLIN( 523)		if (::sys::FileSystem_obj::exists(xml)) {
-HXLINE( 523)			xmlExists = true;
+HXLINE( 482)		this->image = name;
+HXLINE( 483)		::String library = null();
+HXDLIN( 483)		 ::flixel::graphics::FlxGraphic imageLoaded = ::backend::Paths_obj::image(name,null(),true);
+HXDLIN( 483)		bool xmlExists = false;
+HXDLIN( 483)		::String xml = ::backend::Paths_obj::modFolders(((HX_("images/",77,50,74,c1) + name) + HX_(".xml",69,3e,c3,1e)));
+HXDLIN( 483)		if (::sys::FileSystem_obj::exists(xml)) {
+HXLINE( 483)			xmlExists = true;
             		}
-HXDLIN( 523)		 ::Dynamic _hx_tmp;
-HXDLIN( 523)		if (::hx::IsNotNull( imageLoaded )) {
-HXLINE( 523)			_hx_tmp = imageLoaded;
+HXDLIN( 483)		 ::Dynamic _hx_tmp;
+HXDLIN( 483)		if (::hx::IsNotNull( imageLoaded )) {
+HXLINE( 483)			_hx_tmp = imageLoaded;
             		}
             		else {
-HXLINE( 523)			_hx_tmp = ::backend::Paths_obj::image(name,library,true);
+HXLINE( 483)			_hx_tmp = ::backend::Paths_obj::image(name,library,true);
             		}
-HXDLIN( 523)		::String _hx_tmp1;
-HXDLIN( 523)		if (xmlExists) {
-HXLINE( 523)			_hx_tmp1 = ::sys::io::File_obj::getContent(xml);
+HXDLIN( 483)		::String _hx_tmp1;
+HXDLIN( 483)		if (xmlExists) {
+HXLINE( 483)			_hx_tmp1 = ::sys::io::File_obj::getContent(xml);
             		}
             		else {
-HXLINE( 523)			_hx_tmp1 = ::backend::Paths_obj::getPath(((HX_("images/",77,50,74,c1) + name) + HX_(".xml",69,3e,c3,1e)),null(),library,null());
+HXLINE( 483)			_hx_tmp1 = ::backend::Paths_obj::getPath(((HX_("images/",77,50,74,c1) + name) + HX_(".xml",69,3e,c3,1e)),null(),library,null());
             		}
-HXDLIN( 523)		this->set_frames(::flixel::graphics::frames::FlxAtlasFrames_obj::fromSparrow(_hx_tmp,_hx_tmp1));
-HXLINE( 524)		this->scale->set_x(this->parent->scaleX);
-HXLINE( 525)		this->scale->set_y(this->parent->scaleY);
-HXLINE( 526)		this->alignOffset = ( (Float)(0) );
-HXLINE( 528)		if (::hx::IsNotNull( lastAnim )) {
-HXLINE( 530)			this->animation->addByPrefix(lastAnim,lastAnim,24,null(),null(),null());
-HXLINE( 531)			this->animation->play(lastAnim,true,null(),null());
-HXLINE( 533)			this->updateHitbox();
+HXDLIN( 483)		this->set_frames(::flixel::graphics::frames::FlxAtlasFrames_obj::fromSparrow(_hx_tmp,_hx_tmp1));
+HXLINE( 484)		this->scale->set_x(this->parent->scaleX);
+HXLINE( 485)		this->scale->set_y(this->parent->scaleY);
+HXLINE( 486)		this->alignOffset = ( (Float)(0) );
+HXLINE( 488)		if (::hx::IsNotNull( lastAnim )) {
+HXLINE( 490)			this->animation->addByPrefix(lastAnim,lastAnim,24,null(),null(),null());
+HXLINE( 491)			this->animation->play(lastAnim,true,null(),null());
+HXLINE( 493)			this->updateHitbox();
             		}
-HXLINE( 535)		return name;
+HXLINE( 495)		return name;
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC1(AlphaCharacter_obj,set_image,return )
 
 void AlphaCharacter_obj::updateLetterOffset(){
-            	HX_STACKFRAME(&_hx_pos_0ebe4a949189dc15_539_updateLetterOffset)
-HXLINE( 540)		if (::hx::IsNull( this->animation->_curAnim )) {
-HXLINE( 542)			::haxe::Log_obj::trace(this->character,::hx::SourceInfo(HX_("source/objects/Alphabet.hx",5c,20,81,f9),542,HX_("objects.AlphaCharacter",e5,26,8d,71),HX_("updateLetterOffset",c2,a4,fb,6d)));
-HXLINE( 543)			return;
+            	HX_STACKFRAME(&_hx_pos_0ebe4a949189dc15_499_updateLetterOffset)
+HXLINE( 500)		if (::hx::IsNull( this->animation->_curAnim )) {
+HXLINE( 502)			::haxe::Log_obj::trace(this->character,::hx::SourceInfo(HX_("source/objects/Alphabet.hx",5c,20,81,f9),502,HX_("objects.AlphaCharacter",e5,26,8d,71),HX_("updateLetterOffset",c2,a4,fb,6d)));
+HXLINE( 503)			return;
             		}
-HXLINE( 546)		Float add = ( (Float)(110) );
-HXLINE( 547)		if (::StringTools_obj::endsWith(this->animation->_curAnim->name,HX_("bold",85,81,1b,41))) {
-HXLINE( 549)			bool _hx_tmp;
-HXDLIN( 549)			if (::hx::IsNotNull( this->curLetter )) {
-HXLINE( 549)				_hx_tmp = ::hx::IsNotNull( this->curLetter->__Field(HX_("offsetsBold",25,77,5c,68),::hx::paccDynamic) );
+HXLINE( 506)		Float add = ( (Float)(110) );
+HXLINE( 507)		if (::StringTools_obj::endsWith(this->animation->_curAnim->name,HX_("bold",85,81,1b,41))) {
+HXLINE( 509)			bool _hx_tmp;
+HXDLIN( 509)			if (::hx::IsNotNull( this->curLetter )) {
+HXLINE( 509)				_hx_tmp = ::hx::IsNotNull( this->curLetter->__Field(HX_("offsetsBold",25,77,5c,68),::hx::paccDynamic) );
             			}
             			else {
-HXLINE( 549)				_hx_tmp = false;
+HXLINE( 509)				_hx_tmp = false;
             			}
-HXDLIN( 549)			if (_hx_tmp) {
-HXLINE( 551)				this->letterOffset[0] = ( (Float)( ::Dynamic(this->curLetter->__Field(HX_("offsetsBold",25,77,5c,68),::hx::paccDynamic))->__GetItem(0)) );
-HXLINE( 552)				this->letterOffset[1] = ( (Float)( ::Dynamic(this->curLetter->__Field(HX_("offsetsBold",25,77,5c,68),::hx::paccDynamic))->__GetItem(1)) );
+HXDLIN( 509)			if (_hx_tmp) {
+HXLINE( 511)				this->letterOffset[0] = ( (Float)( ::Dynamic(this->curLetter->__Field(HX_("offsetsBold",25,77,5c,68),::hx::paccDynamic))->__GetItem(0)) );
+HXLINE( 512)				this->letterOffset[1] = ( (Float)( ::Dynamic(this->curLetter->__Field(HX_("offsetsBold",25,77,5c,68),::hx::paccDynamic))->__GetItem(1)) );
             			}
-HXLINE( 554)			add = ( (Float)(70) );
+HXLINE( 514)			add = ( (Float)(70) );
             		}
             		else {
-HXLINE( 558)			bool _hx_tmp;
-HXDLIN( 558)			if (::hx::IsNotNull( this->curLetter )) {
-HXLINE( 558)				_hx_tmp = ::hx::IsNotNull( this->curLetter->__Field(HX_("offsets",80,09,65,d7),::hx::paccDynamic) );
+HXLINE( 518)			bool _hx_tmp;
+HXDLIN( 518)			if (::hx::IsNotNull( this->curLetter )) {
+HXLINE( 518)				_hx_tmp = ::hx::IsNotNull( this->curLetter->__Field(HX_("offsets",80,09,65,d7),::hx::paccDynamic) );
             			}
             			else {
-HXLINE( 558)				_hx_tmp = false;
+HXLINE( 518)				_hx_tmp = false;
             			}
-HXDLIN( 558)			if (_hx_tmp) {
-HXLINE( 560)				this->letterOffset[0] = ( (Float)( ::Dynamic(this->curLetter->__Field(HX_("offsets",80,09,65,d7),::hx::paccDynamic))->__GetItem(0)) );
-HXLINE( 561)				this->letterOffset[1] = ( (Float)( ::Dynamic(this->curLetter->__Field(HX_("offsets",80,09,65,d7),::hx::paccDynamic))->__GetItem(1)) );
+HXDLIN( 518)			if (_hx_tmp) {
+HXLINE( 520)				this->letterOffset[0] = ( (Float)( ::Dynamic(this->curLetter->__Field(HX_("offsets",80,09,65,d7),::hx::paccDynamic))->__GetItem(0)) );
+HXLINE( 521)				this->letterOffset[1] = ( (Float)( ::Dynamic(this->curLetter->__Field(HX_("offsets",80,09,65,d7),::hx::paccDynamic))->__GetItem(1)) );
             			}
             		}
-HXLINE( 564)		add = (add * this->scale->y);
-HXLINE( 565)		this->offset->set_x((this->offset->x + (this->letterOffset->__get(0) * this->scale->x)));
-HXLINE( 566)		{
-HXLINE( 566)			 ::flixel::math::FlxBasePoint this1 = this->offset;
-HXDLIN( 566)			Float y = this->offset->y;
-HXDLIN( 566)			Float y1 = (this->letterOffset->__get(1) * this->scale->y);
-HXDLIN( 566)			this1->set_y((y + (y1 - (add - this->get_height()))));
+HXLINE( 524)		add = (add * this->scale->y);
+HXLINE( 525)		this->offset->set_x((this->offset->x + (this->letterOffset->__get(0) * this->scale->x)));
+HXLINE( 526)		{
+HXLINE( 526)			 ::flixel::math::FlxBasePoint this1 = this->offset;
+HXDLIN( 526)			Float y = this->offset->y;
+HXDLIN( 526)			Float y1 = (this->letterOffset->__get(1) * this->scale->y);
+HXDLIN( 526)			this1->set_y((y + (y1 - (add - this->get_height()))));
             		}
             	}
 
@@ -422,72 +422,72 @@ HXDLIN( 566)			this1->set_y((y + (y1 - (add - this->get_height()))));
 HX_DEFINE_DYNAMIC_FUNC0(AlphaCharacter_obj,updateLetterOffset,(void))
 
 void AlphaCharacter_obj::updateHitbox(){
-            	HX_STACKFRAME(&_hx_pos_0ebe4a949189dc15_570_updateHitbox)
-HXLINE( 571)		this->super::updateHitbox();
-HXLINE( 572)		this->updateLetterOffset();
+            	HX_STACKFRAME(&_hx_pos_0ebe4a949189dc15_530_updateHitbox)
+HXLINE( 531)		this->super::updateHitbox();
+HXLINE( 532)		this->updateLetterOffset();
             	}
 
 
  ::haxe::ds::StringMap AlphaCharacter_obj::allLetters;
 
 bool AlphaCharacter_obj::isTypeAlphabet(::String c){
-            	HX_STACKFRAME(&_hx_pos_0ebe4a949189dc15_499_isTypeAlphabet)
-HXLINE( 500)		int ascii = c.cca(0);
-HXLINE( 501)		bool _hx_tmp;
-HXDLIN( 501)		bool _hx_tmp1;
-HXDLIN( 501)		bool _hx_tmp2;
-HXDLIN( 501)		bool _hx_tmp3;
-HXDLIN( 501)		if ((ascii >= 65)) {
-HXLINE( 501)			_hx_tmp3 = (ascii <= 90);
+            	HX_STACKFRAME(&_hx_pos_0ebe4a949189dc15_459_isTypeAlphabet)
+HXLINE( 460)		int ascii = c.cca(0);
+HXLINE( 461)		bool _hx_tmp;
+HXDLIN( 461)		bool _hx_tmp1;
+HXDLIN( 461)		bool _hx_tmp2;
+HXDLIN( 461)		bool _hx_tmp3;
+HXDLIN( 461)		if ((ascii >= 65)) {
+HXLINE( 461)			_hx_tmp3 = (ascii <= 90);
             		}
             		else {
-HXLINE( 501)			_hx_tmp3 = false;
+HXLINE( 461)			_hx_tmp3 = false;
             		}
-HXDLIN( 501)		if (!(_hx_tmp3)) {
-HXLINE( 502)			if ((ascii >= 97)) {
-HXLINE( 501)				_hx_tmp2 = (ascii <= 122);
+HXDLIN( 461)		if (!(_hx_tmp3)) {
+HXLINE( 462)			if ((ascii >= 97)) {
+HXLINE( 461)				_hx_tmp2 = (ascii <= 122);
             			}
             			else {
-HXLINE( 501)				_hx_tmp2 = false;
+HXLINE( 461)				_hx_tmp2 = false;
             			}
             		}
             		else {
-HXLINE( 501)			_hx_tmp2 = true;
+HXLINE( 461)			_hx_tmp2 = true;
             		}
-HXDLIN( 501)		if (!(_hx_tmp2)) {
-HXLINE( 503)			if ((ascii >= 192)) {
-HXLINE( 501)				_hx_tmp1 = (ascii <= 214);
+HXDLIN( 461)		if (!(_hx_tmp2)) {
+HXLINE( 463)			if ((ascii >= 192)) {
+HXLINE( 461)				_hx_tmp1 = (ascii <= 214);
             			}
             			else {
-HXLINE( 501)				_hx_tmp1 = false;
+HXLINE( 461)				_hx_tmp1 = false;
             			}
             		}
             		else {
-HXLINE( 501)			_hx_tmp1 = true;
+HXLINE( 461)			_hx_tmp1 = true;
             		}
-HXDLIN( 501)		if (!(_hx_tmp1)) {
-HXLINE( 504)			if ((ascii >= 216)) {
-HXLINE( 501)				_hx_tmp = (ascii <= 246);
+HXDLIN( 461)		if (!(_hx_tmp1)) {
+HXLINE( 464)			if ((ascii >= 216)) {
+HXLINE( 461)				_hx_tmp = (ascii <= 246);
             			}
             			else {
-HXLINE( 501)				_hx_tmp = false;
+HXLINE( 461)				_hx_tmp = false;
             			}
             		}
             		else {
-HXLINE( 501)			_hx_tmp = true;
+HXLINE( 461)			_hx_tmp = true;
             		}
-HXDLIN( 501)		if (!(_hx_tmp)) {
-HXLINE( 505)			if ((ascii >= 248)) {
-HXLINE( 505)				return (ascii <= 255);
+HXDLIN( 461)		if (!(_hx_tmp)) {
+HXLINE( 465)			if ((ascii >= 248)) {
+HXLINE( 465)				return (ascii <= 255);
             			}
             			else {
-HXLINE( 505)				return false;
+HXLINE( 465)				return false;
             			}
             		}
             		else {
-HXLINE( 501)			return true;
+HXLINE( 461)			return true;
             		}
-HXDLIN( 501)		return false;
+HXDLIN( 461)		return false;
             	}
 
 
@@ -721,397 +721,397 @@ void AlphaCharacter_obj::__boot()
 {
             		HX_BEGIN_LOCAL_FUNC_S0(::hx::LocalFunc,_hx_Closure_0) HXARGC(0)
             		 ::haxe::ds::StringMap _hx_run(){
-            			HX_GC_STACKFRAME(&_hx_pos_0ebe4a949189dc15_370_boot)
-HXDLIN( 370)			 ::haxe::ds::StringMap _g =  ::haxe::ds::StringMap_obj::__alloc( HX_CTX );
-HXDLIN( 370)			{
-HXDLIN( 370)				 ::Dynamic value = null();
-HXDLIN( 370)				_g->set(HX_("a",61,00,00,00),value);
+            			HX_GC_STACKFRAME(&_hx_pos_0ebe4a949189dc15_330_boot)
+HXDLIN( 330)			 ::haxe::ds::StringMap _g =  ::haxe::ds::StringMap_obj::__alloc( HX_CTX );
+HXDLIN( 330)			{
+HXDLIN( 330)				 ::Dynamic value = null();
+HXDLIN( 330)				_g->set(HX_("a",61,00,00,00),value);
             			}
-HXDLIN( 370)			{
-HXDLIN( 370)				 ::Dynamic value1 = null();
-HXDLIN( 370)				_g->set(HX_("b",62,00,00,00),value1);
+HXDLIN( 330)			{
+HXDLIN( 330)				 ::Dynamic value1 = null();
+HXDLIN( 330)				_g->set(HX_("b",62,00,00,00),value1);
             			}
-HXDLIN( 370)			{
-HXDLIN( 370)				 ::Dynamic value2 = null();
-HXDLIN( 370)				_g->set(HX_("c",63,00,00,00),value2);
+HXDLIN( 330)			{
+HXDLIN( 330)				 ::Dynamic value2 = null();
+HXDLIN( 330)				_g->set(HX_("c",63,00,00,00),value2);
             			}
-HXDLIN( 370)			{
-HXDLIN( 370)				 ::Dynamic value3 = null();
-HXDLIN( 370)				_g->set(HX_("d",64,00,00,00),value3);
+HXDLIN( 330)			{
+HXDLIN( 330)				 ::Dynamic value3 = null();
+HXDLIN( 330)				_g->set(HX_("d",64,00,00,00),value3);
             			}
-HXDLIN( 370)			{
-HXDLIN( 370)				 ::Dynamic value4 = null();
-HXDLIN( 370)				_g->set(HX_("e",65,00,00,00),value4);
+HXDLIN( 330)			{
+HXDLIN( 330)				 ::Dynamic value4 = null();
+HXDLIN( 330)				_g->set(HX_("e",65,00,00,00),value4);
             			}
-HXDLIN( 370)			{
-HXDLIN( 370)				 ::Dynamic value5 = null();
-HXDLIN( 370)				_g->set(HX_("f",66,00,00,00),value5);
+HXDLIN( 330)			{
+HXDLIN( 330)				 ::Dynamic value5 = null();
+HXDLIN( 330)				_g->set(HX_("f",66,00,00,00),value5);
             			}
-HXDLIN( 370)			{
-HXDLIN( 370)				 ::Dynamic value6 = null();
-HXDLIN( 370)				_g->set(HX_("g",67,00,00,00),value6);
+HXDLIN( 330)			{
+HXDLIN( 330)				 ::Dynamic value6 = null();
+HXDLIN( 330)				_g->set(HX_("g",67,00,00,00),value6);
             			}
-HXDLIN( 370)			{
-HXDLIN( 370)				 ::Dynamic value7 = null();
-HXDLIN( 370)				_g->set(HX_("h",68,00,00,00),value7);
+HXDLIN( 330)			{
+HXDLIN( 330)				 ::Dynamic value7 = null();
+HXDLIN( 330)				_g->set(HX_("h",68,00,00,00),value7);
             			}
-HXDLIN( 370)			{
-HXDLIN( 370)				 ::Dynamic value8 = null();
-HXDLIN( 370)				_g->set(HX_("i",69,00,00,00),value8);
+HXDLIN( 330)			{
+HXDLIN( 330)				 ::Dynamic value8 = null();
+HXDLIN( 330)				_g->set(HX_("i",69,00,00,00),value8);
             			}
-HXDLIN( 370)			{
-HXDLIN( 370)				 ::Dynamic value9 = null();
-HXDLIN( 370)				_g->set(HX_("j",6a,00,00,00),value9);
+HXDLIN( 330)			{
+HXDLIN( 330)				 ::Dynamic value9 = null();
+HXDLIN( 330)				_g->set(HX_("j",6a,00,00,00),value9);
             			}
-HXDLIN( 370)			{
-HXDLIN( 370)				 ::Dynamic value10 = null();
-HXDLIN( 370)				_g->set(HX_("k",6b,00,00,00),value10);
+HXDLIN( 330)			{
+HXDLIN( 330)				 ::Dynamic value10 = null();
+HXDLIN( 330)				_g->set(HX_("k",6b,00,00,00),value10);
             			}
-HXDLIN( 370)			{
-HXDLIN( 370)				 ::Dynamic value11 = null();
-HXDLIN( 370)				_g->set(HX_("l",6c,00,00,00),value11);
+HXDLIN( 330)			{
+HXDLIN( 330)				 ::Dynamic value11 = null();
+HXDLIN( 330)				_g->set(HX_("l",6c,00,00,00),value11);
             			}
-HXDLIN( 370)			{
-HXDLIN( 370)				 ::Dynamic value12 = null();
-HXDLIN( 370)				_g->set(HX_("m",6d,00,00,00),value12);
+HXDLIN( 330)			{
+HXDLIN( 330)				 ::Dynamic value12 = null();
+HXDLIN( 330)				_g->set(HX_("m",6d,00,00,00),value12);
             			}
-HXDLIN( 370)			{
-HXDLIN( 370)				 ::Dynamic value13 = null();
-HXDLIN( 370)				_g->set(HX_("n",6e,00,00,00),value13);
+HXDLIN( 330)			{
+HXDLIN( 330)				 ::Dynamic value13 = null();
+HXDLIN( 330)				_g->set(HX_("n",6e,00,00,00),value13);
             			}
-HXDLIN( 370)			{
-HXDLIN( 370)				 ::Dynamic value14 = null();
-HXDLIN( 370)				_g->set(HX_("o",6f,00,00,00),value14);
+HXDLIN( 330)			{
+HXDLIN( 330)				 ::Dynamic value14 = null();
+HXDLIN( 330)				_g->set(HX_("o",6f,00,00,00),value14);
             			}
-HXDLIN( 370)			{
-HXDLIN( 370)				 ::Dynamic value15 = null();
-HXDLIN( 370)				_g->set(HX_("p",70,00,00,00),value15);
+HXDLIN( 330)			{
+HXDLIN( 330)				 ::Dynamic value15 = null();
+HXDLIN( 330)				_g->set(HX_("p",70,00,00,00),value15);
             			}
-HXDLIN( 370)			{
-HXDLIN( 370)				 ::Dynamic value16 = null();
-HXDLIN( 370)				_g->set(HX_("q",71,00,00,00),value16);
+HXDLIN( 330)			{
+HXDLIN( 330)				 ::Dynamic value16 = null();
+HXDLIN( 330)				_g->set(HX_("q",71,00,00,00),value16);
             			}
-HXDLIN( 370)			{
-HXDLIN( 370)				 ::Dynamic value17 = null();
-HXDLIN( 370)				_g->set(HX_("r",72,00,00,00),value17);
+HXDLIN( 330)			{
+HXDLIN( 330)				 ::Dynamic value17 = null();
+HXDLIN( 330)				_g->set(HX_("r",72,00,00,00),value17);
             			}
-HXDLIN( 370)			{
-HXDLIN( 370)				 ::Dynamic value18 = null();
-HXDLIN( 370)				_g->set(HX_("s",73,00,00,00),value18);
+HXDLIN( 330)			{
+HXDLIN( 330)				 ::Dynamic value18 = null();
+HXDLIN( 330)				_g->set(HX_("s",73,00,00,00),value18);
             			}
-HXDLIN( 370)			{
-HXDLIN( 370)				 ::Dynamic value19 = null();
-HXDLIN( 370)				_g->set(HX_("t",74,00,00,00),value19);
+HXDLIN( 330)			{
+HXDLIN( 330)				 ::Dynamic value19 = null();
+HXDLIN( 330)				_g->set(HX_("t",74,00,00,00),value19);
             			}
-HXDLIN( 370)			{
-HXDLIN( 370)				 ::Dynamic value20 = null();
-HXDLIN( 370)				_g->set(HX_("u",75,00,00,00),value20);
+HXDLIN( 330)			{
+HXDLIN( 330)				 ::Dynamic value20 = null();
+HXDLIN( 330)				_g->set(HX_("u",75,00,00,00),value20);
             			}
-HXDLIN( 370)			{
-HXDLIN( 370)				 ::Dynamic value21 = null();
-HXDLIN( 370)				_g->set(HX_("v",76,00,00,00),value21);
+HXDLIN( 330)			{
+HXDLIN( 330)				 ::Dynamic value21 = null();
+HXDLIN( 330)				_g->set(HX_("v",76,00,00,00),value21);
             			}
-HXDLIN( 370)			{
-HXDLIN( 370)				 ::Dynamic value22 = null();
-HXDLIN( 370)				_g->set(HX_("w",77,00,00,00),value22);
+HXDLIN( 330)			{
+HXDLIN( 330)				 ::Dynamic value22 = null();
+HXDLIN( 330)				_g->set(HX_("w",77,00,00,00),value22);
             			}
-HXDLIN( 370)			{
-HXDLIN( 370)				 ::Dynamic value23 = null();
-HXDLIN( 370)				_g->set(HX_("x",78,00,00,00),value23);
+HXDLIN( 330)			{
+HXDLIN( 330)				 ::Dynamic value23 = null();
+HXDLIN( 330)				_g->set(HX_("x",78,00,00,00),value23);
             			}
-HXDLIN( 370)			{
-HXDLIN( 370)				 ::Dynamic value24 = null();
-HXDLIN( 370)				_g->set(HX_("y",79,00,00,00),value24);
+HXDLIN( 330)			{
+HXDLIN( 330)				 ::Dynamic value24 = null();
+HXDLIN( 330)				_g->set(HX_("y",79,00,00,00),value24);
             			}
-HXDLIN( 370)			{
-HXDLIN( 370)				 ::Dynamic value25 = null();
-HXDLIN( 370)				_g->set(HX_("z",7a,00,00,00),value25);
+HXDLIN( 330)			{
+HXDLIN( 330)				 ::Dynamic value25 = null();
+HXDLIN( 330)				_g->set(HX_("z",7a,00,00,00),value25);
             			}
-HXDLIN( 370)			{
-HXDLIN( 370)				 ::Dynamic value26 = null();
-HXDLIN( 370)				_g->set(HX_W(u"\u00e1",aa7e,0000),value26);
+HXDLIN( 330)			{
+HXDLIN( 330)				 ::Dynamic value26 = null();
+HXDLIN( 330)				_g->set(HX_W(u"\u00e1",aa7e,0000),value26);
             			}
-HXDLIN( 370)			{
-HXDLIN( 370)				 ::Dynamic value27 = null();
-HXDLIN( 370)				_g->set(HX_W(u"\u00e9",aa86,0000),value27);
+HXDLIN( 330)			{
+HXDLIN( 330)				 ::Dynamic value27 = null();
+HXDLIN( 330)				_g->set(HX_W(u"\u00e9",aa86,0000),value27);
             			}
-HXDLIN( 370)			{
-HXDLIN( 370)				 ::Dynamic value28 = null();
-HXDLIN( 370)				_g->set(HX_W(u"\u00ed",aa8a,0000),value28);
+HXDLIN( 330)			{
+HXDLIN( 330)				 ::Dynamic value28 = null();
+HXDLIN( 330)				_g->set(HX_W(u"\u00ed",aa8a,0000),value28);
             			}
-HXDLIN( 370)			{
-HXDLIN( 370)				 ::Dynamic value29 = null();
-HXDLIN( 370)				_g->set(HX_W(u"\u00f3",aa90,0000),value29);
+HXDLIN( 330)			{
+HXDLIN( 330)				 ::Dynamic value29 = null();
+HXDLIN( 330)				_g->set(HX_W(u"\u00f3",aa90,0000),value29);
             			}
-HXDLIN( 370)			{
-HXDLIN( 370)				 ::Dynamic value30 = null();
-HXDLIN( 370)				_g->set(HX_W(u"\u00fa",aa97,0000),value30);
+HXDLIN( 330)			{
+HXDLIN( 330)				 ::Dynamic value30 = null();
+HXDLIN( 330)				_g->set(HX_W(u"\u00fa",aa97,0000),value30);
             			}
-HXDLIN( 370)			{
-HXDLIN( 370)				 ::Dynamic value31 = null();
-HXDLIN( 370)				_g->set(HX_W(u"\u00e0",aa7d,0000),value31);
+HXDLIN( 330)			{
+HXDLIN( 330)				 ::Dynamic value31 = null();
+HXDLIN( 330)				_g->set(HX_W(u"\u00e0",aa7d,0000),value31);
             			}
-HXDLIN( 370)			{
-HXDLIN( 370)				 ::Dynamic value32 = null();
-HXDLIN( 370)				_g->set(HX_W(u"\u00e8",aa85,0000),value32);
+HXDLIN( 330)			{
+HXDLIN( 330)				 ::Dynamic value32 = null();
+HXDLIN( 330)				_g->set(HX_W(u"\u00e8",aa85,0000),value32);
             			}
-HXDLIN( 370)			{
-HXDLIN( 370)				 ::Dynamic value33 = null();
-HXDLIN( 370)				_g->set(HX_W(u"\u00ec",aa89,0000),value33);
+HXDLIN( 330)			{
+HXDLIN( 330)				 ::Dynamic value33 = null();
+HXDLIN( 330)				_g->set(HX_W(u"\u00ec",aa89,0000),value33);
             			}
-HXDLIN( 370)			{
-HXDLIN( 370)				 ::Dynamic value34 = null();
-HXDLIN( 370)				_g->set(HX_W(u"\u00f2",aa8f,0000),value34);
+HXDLIN( 330)			{
+HXDLIN( 330)				 ::Dynamic value34 = null();
+HXDLIN( 330)				_g->set(HX_W(u"\u00f2",aa8f,0000),value34);
             			}
-HXDLIN( 370)			{
-HXDLIN( 370)				 ::Dynamic value35 = null();
-HXDLIN( 370)				_g->set(HX_W(u"\u00f9",aa96,0000),value35);
+HXDLIN( 330)			{
+HXDLIN( 330)				 ::Dynamic value35 = null();
+HXDLIN( 330)				_g->set(HX_W(u"\u00f9",aa96,0000),value35);
             			}
-HXDLIN( 370)			{
-HXDLIN( 370)				 ::Dynamic value36 = null();
-HXDLIN( 370)				_g->set(HX_W(u"\u00e2",aa7f,0000),value36);
+HXDLIN( 330)			{
+HXDLIN( 330)				 ::Dynamic value36 = null();
+HXDLIN( 330)				_g->set(HX_W(u"\u00e2",aa7f,0000),value36);
             			}
-HXDLIN( 370)			{
-HXDLIN( 370)				 ::Dynamic value37 = null();
-HXDLIN( 370)				_g->set(HX_W(u"\u00ea",aa87,0000),value37);
+HXDLIN( 330)			{
+HXDLIN( 330)				 ::Dynamic value37 = null();
+HXDLIN( 330)				_g->set(HX_W(u"\u00ea",aa87,0000),value37);
             			}
-HXDLIN( 370)			{
-HXDLIN( 370)				 ::Dynamic value38 = null();
-HXDLIN( 370)				_g->set(HX_W(u"\u00ee",aa8b,0000),value38);
+HXDLIN( 330)			{
+HXDLIN( 330)				 ::Dynamic value38 = null();
+HXDLIN( 330)				_g->set(HX_W(u"\u00ee",aa8b,0000),value38);
             			}
-HXDLIN( 370)			{
-HXDLIN( 370)				 ::Dynamic value39 = null();
-HXDLIN( 370)				_g->set(HX_W(u"\u00f4",aa91,0000),value39);
+HXDLIN( 330)			{
+HXDLIN( 330)				 ::Dynamic value39 = null();
+HXDLIN( 330)				_g->set(HX_W(u"\u00f4",aa91,0000),value39);
             			}
-HXDLIN( 370)			{
-HXDLIN( 370)				 ::Dynamic value40 = null();
-HXDLIN( 370)				_g->set(HX_W(u"\u00fb",aa98,0000),value40);
+HXDLIN( 330)			{
+HXDLIN( 330)				 ::Dynamic value40 = null();
+HXDLIN( 330)				_g->set(HX_W(u"\u00fb",aa98,0000),value40);
             			}
-HXDLIN( 370)			{
-HXDLIN( 370)				 ::Dynamic value41 = null();
-HXDLIN( 370)				_g->set(HX_W(u"\u00e3",aa80,0000),value41);
+HXDLIN( 330)			{
+HXDLIN( 330)				 ::Dynamic value41 = null();
+HXDLIN( 330)				_g->set(HX_W(u"\u00e3",aa80,0000),value41);
             			}
-HXDLIN( 370)			{
-HXDLIN( 370)				 ::Dynamic value42 = null();
-HXDLIN( 370)				_g->set(HX_W(u"\u00eb",aa88,0000),value42);
+HXDLIN( 330)			{
+HXDLIN( 330)				 ::Dynamic value42 = null();
+HXDLIN( 330)				_g->set(HX_W(u"\u00eb",aa88,0000),value42);
             			}
-HXDLIN( 370)			{
-HXDLIN( 370)				 ::Dynamic value43 = null();
-HXDLIN( 370)				_g->set(HX_W(u"\u00ef",aa8c,0000),value43);
+HXDLIN( 330)			{
+HXDLIN( 330)				 ::Dynamic value43 = null();
+HXDLIN( 330)				_g->set(HX_W(u"\u00ef",aa8c,0000),value43);
             			}
-HXDLIN( 370)			{
-HXDLIN( 370)				 ::Dynamic value44 = null();
-HXDLIN( 370)				_g->set(HX_W(u"\u00f5",aa92,0000),value44);
+HXDLIN( 330)			{
+HXDLIN( 330)				 ::Dynamic value44 = null();
+HXDLIN( 330)				_g->set(HX_W(u"\u00f5",aa92,0000),value44);
             			}
-HXDLIN( 370)			{
-HXDLIN( 370)				 ::Dynamic value45 = null();
-HXDLIN( 370)				_g->set(HX_W(u"\u00fc",aa99,0000),value45);
+HXDLIN( 330)			{
+HXDLIN( 330)				 ::Dynamic value45 = null();
+HXDLIN( 330)				_g->set(HX_W(u"\u00fc",aa99,0000),value45);
             			}
-HXDLIN( 370)			{
-HXDLIN( 370)				 ::Dynamic value46 = null();
-HXDLIN( 370)				_g->set(HX_W(u"\u00e4",aa81,0000),value46);
+HXDLIN( 330)			{
+HXDLIN( 330)				 ::Dynamic value46 = null();
+HXDLIN( 330)				_g->set(HX_W(u"\u00e4",aa81,0000),value46);
             			}
-HXDLIN( 370)			{
-HXDLIN( 370)				 ::Dynamic value47 = null();
-HXDLIN( 370)				_g->set(HX_W(u"\u00f6",aa93,0000),value47);
+HXDLIN( 330)			{
+HXDLIN( 330)				 ::Dynamic value47 = null();
+HXDLIN( 330)				_g->set(HX_W(u"\u00f6",aa93,0000),value47);
             			}
-HXDLIN( 370)			{
-HXDLIN( 370)				 ::Dynamic value48 = null();
-HXDLIN( 370)				_g->set(HX_W(u"\u00e5",aa82,0000),value48);
+HXDLIN( 330)			{
+HXDLIN( 330)				 ::Dynamic value48 = null();
+HXDLIN( 330)				_g->set(HX_W(u"\u00e5",aa82,0000),value48);
             			}
-HXDLIN( 370)			{
-HXDLIN( 370)				 ::Dynamic value49 = null();
-HXDLIN( 370)				_g->set(HX_W(u"\u00f8",aa95,0000),value49);
+HXDLIN( 330)			{
+HXDLIN( 330)				 ::Dynamic value49 = null();
+HXDLIN( 330)				_g->set(HX_W(u"\u00f8",aa95,0000),value49);
             			}
-HXDLIN( 370)			{
-HXDLIN( 370)				 ::Dynamic value50 = null();
-HXDLIN( 370)				_g->set(HX_W(u"\u00e6",aa83,0000),value50);
+HXDLIN( 330)			{
+HXDLIN( 330)				 ::Dynamic value50 = null();
+HXDLIN( 330)				_g->set(HX_W(u"\u00e6",aa83,0000),value50);
             			}
-HXDLIN( 370)			{
-HXDLIN( 370)				 ::Dynamic value51 = null();
-HXDLIN( 370)				_g->set(HX_W(u"\u00f1",aa8e,0000),value51);
+HXDLIN( 330)			{
+HXDLIN( 330)				 ::Dynamic value51 = null();
+HXDLIN( 330)				_g->set(HX_W(u"\u00f1",aa8e,0000),value51);
             			}
-HXDLIN( 370)			_g->set(HX_W(u"\u00e7",aa84,0000), ::Dynamic(::hx::Anon_obj::Create(1)
+HXDLIN( 330)			_g->set(HX_W(u"\u00e7",aa84,0000), ::Dynamic(::hx::Anon_obj::Create(1)
             				->setFixed(0,HX_("offsetsBold",25,77,5c,68),::Array_obj< Float >::fromData( _hx_array_data_718d26e5_8,2))));
-HXDLIN( 370)			{
-HXDLIN( 370)				 ::Dynamic value52 = null();
-HXDLIN( 370)				_g->set(HX_W(u"\u0161",ac3c,0000),value52);
+HXDLIN( 330)			{
+HXDLIN( 330)				 ::Dynamic value52 = null();
+HXDLIN( 330)				_g->set(HX_W(u"\u0161",ac3c,0000),value52);
             			}
-HXDLIN( 370)			{
-HXDLIN( 370)				 ::Dynamic value53 = null();
-HXDLIN( 370)				_g->set(HX_W(u"\u017e",ac59,0000),value53);
+HXDLIN( 330)			{
+HXDLIN( 330)				 ::Dynamic value53 = null();
+HXDLIN( 330)				_g->set(HX_W(u"\u017e",ac59,0000),value53);
             			}
-HXDLIN( 370)			{
-HXDLIN( 370)				 ::Dynamic value54 = null();
-HXDLIN( 370)				_g->set(HX_W(u"\u00fd",aa9a,0000),value54);
+HXDLIN( 330)			{
+HXDLIN( 330)				 ::Dynamic value54 = null();
+HXDLIN( 330)				_g->set(HX_W(u"\u00fd",aa9a,0000),value54);
             			}
-HXDLIN( 370)			{
-HXDLIN( 370)				 ::Dynamic value55 = null();
-HXDLIN( 370)				_g->set(HX_W(u"\u00ff",aa9c,0000),value55);
+HXDLIN( 330)			{
+HXDLIN( 330)				 ::Dynamic value55 = null();
+HXDLIN( 330)				_g->set(HX_W(u"\u00ff",aa9c,0000),value55);
             			}
-HXDLIN( 370)			{
-HXDLIN( 370)				 ::Dynamic value56 = null();
-HXDLIN( 370)				_g->set(HX_W(u"\u00df",aa7c,0000),value56);
+HXDLIN( 330)			{
+HXDLIN( 330)				 ::Dynamic value56 = null();
+HXDLIN( 330)				_g->set(HX_W(u"\u00df",aa7c,0000),value56);
             			}
-HXDLIN( 370)			{
-HXDLIN( 370)				 ::Dynamic value57 = null();
-HXDLIN( 370)				_g->set(HX_("0",30,00,00,00),value57);
+HXDLIN( 330)			{
+HXDLIN( 330)				 ::Dynamic value57 = null();
+HXDLIN( 330)				_g->set(HX_("0",30,00,00,00),value57);
             			}
-HXDLIN( 370)			{
-HXDLIN( 370)				 ::Dynamic value58 = null();
-HXDLIN( 370)				_g->set(HX_("1",31,00,00,00),value58);
+HXDLIN( 330)			{
+HXDLIN( 330)				 ::Dynamic value58 = null();
+HXDLIN( 330)				_g->set(HX_("1",31,00,00,00),value58);
             			}
-HXDLIN( 370)			{
-HXDLIN( 370)				 ::Dynamic value59 = null();
-HXDLIN( 370)				_g->set(HX_("2",32,00,00,00),value59);
+HXDLIN( 330)			{
+HXDLIN( 330)				 ::Dynamic value59 = null();
+HXDLIN( 330)				_g->set(HX_("2",32,00,00,00),value59);
             			}
-HXDLIN( 370)			{
-HXDLIN( 370)				 ::Dynamic value60 = null();
-HXDLIN( 370)				_g->set(HX_("3",33,00,00,00),value60);
+HXDLIN( 330)			{
+HXDLIN( 330)				 ::Dynamic value60 = null();
+HXDLIN( 330)				_g->set(HX_("3",33,00,00,00),value60);
             			}
-HXDLIN( 370)			{
-HXDLIN( 370)				 ::Dynamic value61 = null();
-HXDLIN( 370)				_g->set(HX_("4",34,00,00,00),value61);
+HXDLIN( 330)			{
+HXDLIN( 330)				 ::Dynamic value61 = null();
+HXDLIN( 330)				_g->set(HX_("4",34,00,00,00),value61);
             			}
-HXDLIN( 370)			{
-HXDLIN( 370)				 ::Dynamic value62 = null();
-HXDLIN( 370)				_g->set(HX_("5",35,00,00,00),value62);
+HXDLIN( 330)			{
+HXDLIN( 330)				 ::Dynamic value62 = null();
+HXDLIN( 330)				_g->set(HX_("5",35,00,00,00),value62);
             			}
-HXDLIN( 370)			{
-HXDLIN( 370)				 ::Dynamic value63 = null();
-HXDLIN( 370)				_g->set(HX_("6",36,00,00,00),value63);
+HXDLIN( 330)			{
+HXDLIN( 330)				 ::Dynamic value63 = null();
+HXDLIN( 330)				_g->set(HX_("6",36,00,00,00),value63);
             			}
-HXDLIN( 370)			{
-HXDLIN( 370)				 ::Dynamic value64 = null();
-HXDLIN( 370)				_g->set(HX_("7",37,00,00,00),value64);
+HXDLIN( 330)			{
+HXDLIN( 330)				 ::Dynamic value64 = null();
+HXDLIN( 330)				_g->set(HX_("7",37,00,00,00),value64);
             			}
-HXDLIN( 370)			{
-HXDLIN( 370)				 ::Dynamic value65 = null();
-HXDLIN( 370)				_g->set(HX_("8",38,00,00,00),value65);
+HXDLIN( 330)			{
+HXDLIN( 330)				 ::Dynamic value65 = null();
+HXDLIN( 330)				_g->set(HX_("8",38,00,00,00),value65);
             			}
-HXDLIN( 370)			{
-HXDLIN( 370)				 ::Dynamic value66 = null();
-HXDLIN( 370)				_g->set(HX_("9",39,00,00,00),value66);
+HXDLIN( 330)			{
+HXDLIN( 330)				 ::Dynamic value66 = null();
+HXDLIN( 330)				_g->set(HX_("9",39,00,00,00),value66);
             			}
-HXDLIN( 370)			_g->set(HX_("&",26,00,00,00), ::Dynamic(::hx::Anon_obj::Create(1)
+HXDLIN( 330)			_g->set(HX_("&",26,00,00,00), ::Dynamic(::hx::Anon_obj::Create(1)
             				->setFixed(0,HX_("offsetsBold",25,77,5c,68),::Array_obj< Float >::fromData( _hx_array_data_718d26e5_9,2))));
-HXDLIN( 370)			_g->set(HX_("(",28,00,00,00), ::Dynamic(::hx::Anon_obj::Create(1)
+HXDLIN( 330)			_g->set(HX_("(",28,00,00,00), ::Dynamic(::hx::Anon_obj::Create(1)
             				->setFixed(0,HX_("offsetsBold",25,77,5c,68),::Array_obj< Float >::fromData( _hx_array_data_718d26e5_10,2))));
-HXDLIN( 370)			_g->set(HX_(")",29,00,00,00), ::Dynamic(::hx::Anon_obj::Create(1)
+HXDLIN( 330)			_g->set(HX_(")",29,00,00,00), ::Dynamic(::hx::Anon_obj::Create(1)
             				->setFixed(0,HX_("offsetsBold",25,77,5c,68),::Array_obj< Float >::fromData( _hx_array_data_718d26e5_11,2))));
-HXDLIN( 370)			{
-HXDLIN( 370)				 ::Dynamic value67 = null();
-HXDLIN( 370)				_g->set(HX_("[",5b,00,00,00),value67);
+HXDLIN( 330)			{
+HXDLIN( 330)				 ::Dynamic value67 = null();
+HXDLIN( 330)				_g->set(HX_("[",5b,00,00,00),value67);
             			}
-HXDLIN( 370)			_g->set(HX_("]",5d,00,00,00), ::Dynamic(::hx::Anon_obj::Create(1)
+HXDLIN( 330)			_g->set(HX_("]",5d,00,00,00), ::Dynamic(::hx::Anon_obj::Create(1)
             				->setFixed(0,HX_("offsets",80,09,65,d7),::Array_obj< Float >::fromData( _hx_array_data_718d26e5_12,2))));
-HXDLIN( 370)			_g->set(HX_("*",2a,00,00,00), ::Dynamic(::hx::Anon_obj::Create(2)
+HXDLIN( 330)			_g->set(HX_("*",2a,00,00,00), ::Dynamic(::hx::Anon_obj::Create(2)
             				->setFixed(0,HX_("offsets",80,09,65,d7),::Array_obj< Float >::fromData( _hx_array_data_718d26e5_13,2))
             				->setFixed(1,HX_("offsetsBold",25,77,5c,68),::Array_obj< Float >::fromData( _hx_array_data_718d26e5_14,2))));
-HXDLIN( 370)			_g->set(HX_("+",2b,00,00,00), ::Dynamic(::hx::Anon_obj::Create(2)
+HXDLIN( 330)			_g->set(HX_("+",2b,00,00,00), ::Dynamic(::hx::Anon_obj::Create(2)
             				->setFixed(0,HX_("offsets",80,09,65,d7),::Array_obj< Float >::fromData( _hx_array_data_718d26e5_15,2))
             				->setFixed(1,HX_("offsetsBold",25,77,5c,68),::Array_obj< Float >::fromData( _hx_array_data_718d26e5_16,2))));
-HXDLIN( 370)			_g->set(HX_("-",2d,00,00,00), ::Dynamic(::hx::Anon_obj::Create(2)
+HXDLIN( 330)			_g->set(HX_("-",2d,00,00,00), ::Dynamic(::hx::Anon_obj::Create(2)
             				->setFixed(0,HX_("offsets",80,09,65,d7),::Array_obj< Float >::fromData( _hx_array_data_718d26e5_17,2))
             				->setFixed(1,HX_("offsetsBold",25,77,5c,68),::Array_obj< Float >::fromData( _hx_array_data_718d26e5_18,2))));
-HXDLIN( 370)			_g->set(HX_("<",3c,00,00,00), ::Dynamic(::hx::Anon_obj::Create(1)
+HXDLIN( 330)			_g->set(HX_("<",3c,00,00,00), ::Dynamic(::hx::Anon_obj::Create(1)
             				->setFixed(0,HX_("offsetsBold",25,77,5c,68),::Array_obj< Float >::fromData( _hx_array_data_718d26e5_19,2))));
-HXDLIN( 370)			_g->set(HX_(">",3e,00,00,00), ::Dynamic(::hx::Anon_obj::Create(1)
+HXDLIN( 330)			_g->set(HX_(">",3e,00,00,00), ::Dynamic(::hx::Anon_obj::Create(1)
             				->setFixed(0,HX_("offsetsBold",25,77,5c,68),::Array_obj< Float >::fromData( _hx_array_data_718d26e5_20,2))));
-HXDLIN( 370)			_g->set(HX_("'",27,00,00,00), ::Dynamic(::hx::Anon_obj::Create(3)
+HXDLIN( 330)			_g->set(HX_("'",27,00,00,00), ::Dynamic(::hx::Anon_obj::Create(3)
             				->setFixed(0,HX_("offsets",80,09,65,d7),::Array_obj< Float >::fromData( _hx_array_data_718d26e5_21,2))
             				->setFixed(1,HX_("anim",11,86,71,40),HX_("apostrophe",ef,32,a1,ef))
             				->setFixed(2,HX_("offsetsBold",25,77,5c,68),::Array_obj< Float >::fromData( _hx_array_data_718d26e5_22,2))));
-HXDLIN( 370)			_g->set(HX_("\"",22,00,00,00), ::Dynamic(::hx::Anon_obj::Create(3)
+HXDLIN( 330)			_g->set(HX_("\"",22,00,00,00), ::Dynamic(::hx::Anon_obj::Create(3)
             				->setFixed(0,HX_("offsets",80,09,65,d7),::Array_obj< Float >::fromData( _hx_array_data_718d26e5_23,2))
             				->setFixed(1,HX_("anim",11,86,71,40),HX_("quote",3c,23,f2,5d))
             				->setFixed(2,HX_("offsetsBold",25,77,5c,68),::Array_obj< Float >::fromData( _hx_array_data_718d26e5_24,2))));
-HXDLIN( 370)			_g->set(HX_("!",21,00,00,00), ::Dynamic(::hx::Anon_obj::Create(1)
+HXDLIN( 330)			_g->set(HX_("!",21,00,00,00), ::Dynamic(::hx::Anon_obj::Create(1)
             				->setFixed(0,HX_("anim",11,86,71,40),HX_("exclamation",ed,a7,af,2c))));
-HXDLIN( 370)			_g->set(HX_("?",3f,00,00,00), ::Dynamic(::hx::Anon_obj::Create(1)
+HXDLIN( 330)			_g->set(HX_("?",3f,00,00,00), ::Dynamic(::hx::Anon_obj::Create(1)
             				->setFixed(0,HX_("anim",11,86,71,40),HX_("question",26,9b,b0,26))));
-HXDLIN( 370)			_g->set(HX_(".",2e,00,00,00), ::Dynamic(::hx::Anon_obj::Create(1)
+HXDLIN( 330)			_g->set(HX_(".",2e,00,00,00), ::Dynamic(::hx::Anon_obj::Create(1)
             				->setFixed(0,HX_("anim",11,86,71,40),HX_("period",01,61,1b,3b))));
-HXDLIN( 370)			_g->set(HX_W(u"\u275d",06c2,00ac), ::Dynamic(::hx::Anon_obj::Create(3)
+HXDLIN( 330)			_g->set(HX_W(u"\u275d",06c2,00ac), ::Dynamic(::hx::Anon_obj::Create(3)
             				->setFixed(0,HX_("offsets",80,09,65,d7),::Array_obj< Float >::fromData( _hx_array_data_718d26e5_25,2))
             				->setFixed(1,HX_("anim",11,86,71,40),HX_("start quote",fe,98,af,6c))
             				->setFixed(2,HX_("offsetsBold",25,77,5c,68),::Array_obj< Float >::fromData( _hx_array_data_718d26e5_26,2))));
-HXDLIN( 370)			_g->set(HX_W(u"\u275e",06c3,00ac), ::Dynamic(::hx::Anon_obj::Create(3)
+HXDLIN( 330)			_g->set(HX_W(u"\u275e",06c3,00ac), ::Dynamic(::hx::Anon_obj::Create(3)
             				->setFixed(0,HX_("offsets",80,09,65,d7),::Array_obj< Float >::fromData( _hx_array_data_718d26e5_27,2))
             				->setFixed(1,HX_("anim",11,86,71,40),HX_("end quote",37,89,ab,34))
             				->setFixed(2,HX_("offsetsBold",25,77,5c,68),::Array_obj< Float >::fromData( _hx_array_data_718d26e5_28,2))));
-HXDLIN( 370)			{
-HXDLIN( 370)				 ::Dynamic value68 = null();
-HXDLIN( 370)				_g->set(HX_("_",5f,00,00,00),value68);
+HXDLIN( 330)			{
+HXDLIN( 330)				 ::Dynamic value68 = null();
+HXDLIN( 330)				_g->set(HX_("_",5f,00,00,00),value68);
             			}
-HXDLIN( 370)			{
-HXDLIN( 370)				 ::Dynamic value69 = null();
-HXDLIN( 370)				_g->set(HX_("#",23,00,00,00),value69);
+HXDLIN( 330)			{
+HXDLIN( 330)				 ::Dynamic value69 = null();
+HXDLIN( 330)				_g->set(HX_("#",23,00,00,00),value69);
             			}
-HXDLIN( 370)			{
-HXDLIN( 370)				 ::Dynamic value70 = null();
-HXDLIN( 370)				_g->set(HX_("$",24,00,00,00),value70);
+HXDLIN( 330)			{
+HXDLIN( 330)				 ::Dynamic value70 = null();
+HXDLIN( 330)				_g->set(HX_("$",24,00,00,00),value70);
             			}
-HXDLIN( 370)			{
-HXDLIN( 370)				 ::Dynamic value71 = null();
-HXDLIN( 370)				_g->set(HX_("%",25,00,00,00),value71);
+HXDLIN( 330)			{
+HXDLIN( 330)				 ::Dynamic value71 = null();
+HXDLIN( 330)				_g->set(HX_("%",25,00,00,00),value71);
             			}
-HXDLIN( 370)			_g->set(HX_(":",3a,00,00,00), ::Dynamic(::hx::Anon_obj::Create(2)
+HXDLIN( 330)			_g->set(HX_(":",3a,00,00,00), ::Dynamic(::hx::Anon_obj::Create(2)
             				->setFixed(0,HX_("offsets",80,09,65,d7),::Array_obj< Float >::fromData( _hx_array_data_718d26e5_29,2))
             				->setFixed(1,HX_("offsetsBold",25,77,5c,68),::Array_obj< Float >::fromData( _hx_array_data_718d26e5_30,2))));
-HXDLIN( 370)			_g->set(HX_(";",3b,00,00,00), ::Dynamic(::hx::Anon_obj::Create(2)
+HXDLIN( 330)			_g->set(HX_(";",3b,00,00,00), ::Dynamic(::hx::Anon_obj::Create(2)
             				->setFixed(0,HX_("offsets",80,09,65,d7),::Array_obj< Float >::fromData( _hx_array_data_718d26e5_31,2))
             				->setFixed(1,HX_("offsetsBold",25,77,5c,68),::Array_obj< Float >::fromData( _hx_array_data_718d26e5_32,2))));
-HXDLIN( 370)			{
-HXDLIN( 370)				 ::Dynamic value72 = null();
-HXDLIN( 370)				_g->set(HX_("@",40,00,00,00),value72);
+HXDLIN( 330)			{
+HXDLIN( 330)				 ::Dynamic value72 = null();
+HXDLIN( 330)				_g->set(HX_("@",40,00,00,00),value72);
             			}
-HXDLIN( 370)			_g->set(HX_("^",5e,00,00,00), ::Dynamic(::hx::Anon_obj::Create(2)
+HXDLIN( 330)			_g->set(HX_("^",5e,00,00,00), ::Dynamic(::hx::Anon_obj::Create(2)
             				->setFixed(0,HX_("offsets",80,09,65,d7),::Array_obj< Float >::fromData( _hx_array_data_718d26e5_33,2))
             				->setFixed(1,HX_("offsetsBold",25,77,5c,68),::Array_obj< Float >::fromData( _hx_array_data_718d26e5_34,2))));
-HXDLIN( 370)			_g->set(HX_(",",2c,00,00,00), ::Dynamic(::hx::Anon_obj::Create(3)
+HXDLIN( 330)			_g->set(HX_(",",2c,00,00,00), ::Dynamic(::hx::Anon_obj::Create(3)
             				->setFixed(0,HX_("offsets",80,09,65,d7),::Array_obj< Float >::fromData( _hx_array_data_718d26e5_35,2))
             				->setFixed(1,HX_("anim",11,86,71,40),HX_("comma",d5,31,5d,4a))
             				->setFixed(2,HX_("offsetsBold",25,77,5c,68),::Array_obj< Float >::fromData( _hx_array_data_718d26e5_36,2))));
-HXDLIN( 370)			_g->set(HX_("\\",5c,00,00,00), ::Dynamic(::hx::Anon_obj::Create(2)
+HXDLIN( 330)			_g->set(HX_("\\",5c,00,00,00), ::Dynamic(::hx::Anon_obj::Create(2)
             				->setFixed(0,HX_("offsets",80,09,65,d7),::Array_obj< Float >::fromData( _hx_array_data_718d26e5_37,2))
             				->setFixed(1,HX_("anim",11,86,71,40),HX_("back slash",84,bd,22,54))));
-HXDLIN( 370)			_g->set(HX_("/",2f,00,00,00), ::Dynamic(::hx::Anon_obj::Create(2)
+HXDLIN( 330)			_g->set(HX_("/",2f,00,00,00), ::Dynamic(::hx::Anon_obj::Create(2)
             				->setFixed(0,HX_("offsets",80,09,65,d7),::Array_obj< Float >::fromData( _hx_array_data_718d26e5_38,2))
             				->setFixed(1,HX_("anim",11,86,71,40),HX_("forward slash",a2,4f,db,00))));
-HXDLIN( 370)			{
-HXDLIN( 370)				 ::Dynamic value73 = null();
-HXDLIN( 370)				_g->set(HX_("|",7c,00,00,00),value73);
+HXDLIN( 330)			{
+HXDLIN( 330)				 ::Dynamic value73 = null();
+HXDLIN( 330)				_g->set(HX_("|",7c,00,00,00),value73);
             			}
-HXDLIN( 370)			_g->set(HX_("~",7e,00,00,00), ::Dynamic(::hx::Anon_obj::Create(2)
+HXDLIN( 330)			_g->set(HX_("~",7e,00,00,00), ::Dynamic(::hx::Anon_obj::Create(2)
             				->setFixed(0,HX_("offsets",80,09,65,d7),::Array_obj< Float >::fromData( _hx_array_data_718d26e5_39,2))
             				->setFixed(1,HX_("offsetsBold",25,77,5c,68),::Array_obj< Float >::fromData( _hx_array_data_718d26e5_40,2))));
-HXDLIN( 370)			_g->set(HX_W(u"\u00a1",a99f,0000), ::Dynamic(::hx::Anon_obj::Create(3)
+HXDLIN( 330)			_g->set(HX_W(u"\u00a1",a99f,0000), ::Dynamic(::hx::Anon_obj::Create(3)
             				->setFixed(0,HX_("offsets",80,09,65,d7),::Array_obj< Float >::fromData( _hx_array_data_718d26e5_41,2))
             				->setFixed(1,HX_("anim",11,86,71,40),HX_("inverted exclamation",42,28,cf,f6))
             				->setFixed(2,HX_("offsetsBold",25,77,5c,68),::Array_obj< Float >::fromData( _hx_array_data_718d26e5_42,2))));
-HXDLIN( 370)			_g->set(HX_W(u"\u00bf",a9bd,0000), ::Dynamic(::hx::Anon_obj::Create(3)
+HXDLIN( 330)			_g->set(HX_W(u"\u00bf",a9bd,0000), ::Dynamic(::hx::Anon_obj::Create(3)
             				->setFixed(0,HX_("offsets",80,09,65,d7),::Array_obj< Float >::fromData( _hx_array_data_718d26e5_43,2))
             				->setFixed(1,HX_("anim",11,86,71,40),HX_("inverted question",b1,c3,3a,1b))
             				->setFixed(2,HX_("offsetsBold",25,77,5c,68),::Array_obj< Float >::fromData( _hx_array_data_718d26e5_44,2))));
-HXDLIN( 370)			{
-HXDLIN( 370)				 ::Dynamic value74 = null();
-HXDLIN( 370)				_g->set(HX_("{",7b,00,00,00),value74);
+HXDLIN( 330)			{
+HXDLIN( 330)				 ::Dynamic value74 = null();
+HXDLIN( 330)				_g->set(HX_("{",7b,00,00,00),value74);
             			}
-HXDLIN( 370)			{
-HXDLIN( 370)				 ::Dynamic value75 = null();
-HXDLIN( 370)				_g->set(HX_("}",7d,00,00,00),value75);
+HXDLIN( 330)			{
+HXDLIN( 330)				 ::Dynamic value75 = null();
+HXDLIN( 330)				_g->set(HX_("}",7d,00,00,00),value75);
             			}
-HXDLIN( 370)			_g->set(HX_W(u"\u2022",ed84,00ab), ::Dynamic(::hx::Anon_obj::Create(3)
+HXDLIN( 330)			_g->set(HX_W(u"\u2022",ed84,00ab), ::Dynamic(::hx::Anon_obj::Create(3)
             				->setFixed(0,HX_("offsets",80,09,65,d7),::Array_obj< Float >::fromData( _hx_array_data_718d26e5_45,2))
             				->setFixed(1,HX_("anim",11,86,71,40),HX_("bullet",42,92,90,d4))
             				->setFixed(2,HX_("offsetsBold",25,77,5c,68),::Array_obj< Float >::fromData( _hx_array_data_718d26e5_46,2))));
-HXDLIN( 370)			return _g;
+HXDLIN( 330)			return _g;
             		}
             		HX_END_LOCAL_FUNC0(return)
 
-            	HX_STACKFRAME(&_hx_pos_0ebe4a949189dc15_370_boot)
-HXDLIN( 370)		allLetters = ( ( ::haxe::ds::StringMap)( ::Dynamic(new _hx_Closure_0())()) );
+            	HX_STACKFRAME(&_hx_pos_0ebe4a949189dc15_330_boot)
+HXDLIN( 330)		allLetters = ( ( ::haxe::ds::StringMap)( ::Dynamic(new _hx_Closure_0())()) );
             	}
 }
 

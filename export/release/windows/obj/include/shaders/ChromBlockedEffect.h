@@ -51,12 +51,11 @@ class HXCPP_CLASS_ATTRIBUTES ChromBlockedEffect_obj : public  ::shaders::Effect_
 		::String __ToString() const { return HX_("ChromBlockedEffect",32,7b,95,b8); }
 
 		 ::shaders::ChromBlockedShader shader;
-		Float floatGlitchvec2;
-		Float iTime;
-		Float set_floatGlitchvec2(Float value);
-		::Dynamic set_floatGlitchvec2_dyn();
-
+		Float GLITCH;
 		void update(Float elapsed);
+
+		Float set_GLITCH(Float v);
+		::Dynamic set_GLITCH_dyn();
 
 };
 

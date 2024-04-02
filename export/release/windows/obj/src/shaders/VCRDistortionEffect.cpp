@@ -88,7 +88,7 @@
 #include <states/PlayState.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_738cd521df63558e_821_new,"shaders.VCRDistortionEffect","new",0xafe61125,"shaders.VCRDistortionEffect.new","shaders/Shaders.hx",821,0x7800d7f1)
+HX_DEFINE_STACK_FRAME(_hx_pos_738cd521df63558e_968_new,"shaders.VCRDistortionEffect","new",0xafe61125,"shaders.VCRDistortionEffect.new","shaders/Shaders.hx",968,0x7800d7f1)
 static const Float _hx_array_data_619b9ab3_1[] = {
 	(Float)0,
 };
@@ -98,31 +98,31 @@ static const bool _hx_array_data_619b9ab3_2[] = {
 static const bool _hx_array_data_619b9ab3_3[] = {
 	1,
 };
-HX_LOCAL_STACK_FRAME(_hx_pos_738cd521df63558e_836_update,"shaders.VCRDistortionEffect","update",0x2e924e64,"shaders.VCRDistortionEffect.update","shaders/Shaders.hx",836,0x7800d7f1)
-HX_LOCAL_STACK_FRAME(_hx_pos_738cd521df63558e_842_setVignette,"shaders.VCRDistortionEffect","setVignette",0xa3781841,"shaders.VCRDistortionEffect.setVignette","shaders/Shaders.hx",842,0x7800d7f1)
-HX_LOCAL_STACK_FRAME(_hx_pos_738cd521df63558e_846_setPerspective,"shaders.VCRDistortionEffect","setPerspective",0x12153c55,"shaders.VCRDistortionEffect.setPerspective","shaders/Shaders.hx",846,0x7800d7f1)
-HX_LOCAL_STACK_FRAME(_hx_pos_738cd521df63558e_850_setGlitchModifier,"shaders.VCRDistortionEffect","setGlitchModifier",0x4b1c5f33,"shaders.VCRDistortionEffect.setGlitchModifier","shaders/Shaders.hx",850,0x7800d7f1)
-HX_LOCAL_STACK_FRAME(_hx_pos_738cd521df63558e_854_setDistortion,"shaders.VCRDistortionEffect","setDistortion",0x7f48fba4,"shaders.VCRDistortionEffect.setDistortion","shaders/Shaders.hx",854,0x7800d7f1)
-HX_LOCAL_STACK_FRAME(_hx_pos_738cd521df63558e_858_setScanlines,"shaders.VCRDistortionEffect","setScanlines",0x9c9d99fb,"shaders.VCRDistortionEffect.setScanlines","shaders/Shaders.hx",858,0x7800d7f1)
-HX_LOCAL_STACK_FRAME(_hx_pos_738cd521df63558e_862_setVignetteMoving,"shaders.VCRDistortionEffect","setVignetteMoving",0x20d1a5af,"shaders.VCRDistortionEffect.setVignetteMoving","shaders/Shaders.hx",862,0x7800d7f1)
+HX_LOCAL_STACK_FRAME(_hx_pos_738cd521df63558e_983_update,"shaders.VCRDistortionEffect","update",0x2e924e64,"shaders.VCRDistortionEffect.update","shaders/Shaders.hx",983,0x7800d7f1)
+HX_LOCAL_STACK_FRAME(_hx_pos_738cd521df63558e_989_setVignette,"shaders.VCRDistortionEffect","setVignette",0xa3781841,"shaders.VCRDistortionEffect.setVignette","shaders/Shaders.hx",989,0x7800d7f1)
+HX_LOCAL_STACK_FRAME(_hx_pos_738cd521df63558e_993_setPerspective,"shaders.VCRDistortionEffect","setPerspective",0x12153c55,"shaders.VCRDistortionEffect.setPerspective","shaders/Shaders.hx",993,0x7800d7f1)
+HX_LOCAL_STACK_FRAME(_hx_pos_738cd521df63558e_997_setGlitchModifier,"shaders.VCRDistortionEffect","setGlitchModifier",0x4b1c5f33,"shaders.VCRDistortionEffect.setGlitchModifier","shaders/Shaders.hx",997,0x7800d7f1)
+HX_LOCAL_STACK_FRAME(_hx_pos_738cd521df63558e_1001_setDistortion,"shaders.VCRDistortionEffect","setDistortion",0x7f48fba4,"shaders.VCRDistortionEffect.setDistortion","shaders/Shaders.hx",1001,0x7800d7f1)
+HX_LOCAL_STACK_FRAME(_hx_pos_738cd521df63558e_1005_setScanlines,"shaders.VCRDistortionEffect","setScanlines",0x9c9d99fb,"shaders.VCRDistortionEffect.setScanlines","shaders/Shaders.hx",1005,0x7800d7f1)
+HX_LOCAL_STACK_FRAME(_hx_pos_738cd521df63558e_1009_setVignetteMoving,"shaders.VCRDistortionEffect","setVignetteMoving",0x20d1a5af,"shaders.VCRDistortionEffect.setVignetteMoving","shaders/Shaders.hx",1009,0x7800d7f1)
 namespace shaders{
 
 void VCRDistortionEffect_obj::__construct(Float glitchFactor,::hx::Null< bool >  __o_distortion,::hx::Null< bool >  __o_perspectiveOn,::hx::Null< bool >  __o_vignetteMoving){
             		bool distortion = __o_distortion.Default(true);
             		bool perspectiveOn = __o_perspectiveOn.Default(true);
             		bool vignetteMoving = __o_vignetteMoving.Default(true);
-            	HX_GC_STACKFRAME(&_hx_pos_738cd521df63558e_821_new)
-HXLINE( 823)		this->shader =  ::shaders::VCRDistortionShader_obj::__alloc( HX_CTX );
-HXLINE( 825)		this->shader->iTime->value = ::Array_obj< Float >::fromData( _hx_array_data_619b9ab3_1,1);
-HXLINE( 826)		this->shader->vignetteOn->value = ::Array_obj< bool >::fromData( _hx_array_data_619b9ab3_2,1);
-HXLINE( 827)		this->shader->perspectiveOn->value = ::Array_obj< bool >::__new(1)->init(0,perspectiveOn);
-HXLINE( 828)		this->shader->distortionOn->value = ::Array_obj< bool >::__new(1)->init(0,distortion);
-HXLINE( 829)		this->shader->scanlinesOn->value = ::Array_obj< bool >::fromData( _hx_array_data_619b9ab3_3,1);
-HXLINE( 830)		this->shader->vignetteMoving->value = ::Array_obj< bool >::__new(1)->init(0,vignetteMoving);
-HXLINE( 831)		this->shader->glitchModifier->value = ::Array_obj< Float >::__new(1)->init(0,glitchFactor);
-HXLINE( 832)		int _hx_tmp = ::openfl::Lib_obj::get_current()->stage->stageWidth;
-HXDLIN( 832)		this->shader->iResolution->value = ::Array_obj< Float >::__new(2)->init(0,_hx_tmp)->init(1,::openfl::Lib_obj::get_current()->stage->stageHeight);
-HXLINE( 833)		::states::PlayState_obj::instance->shaderUpdates->push(this->update_dyn());
+            	HX_GC_STACKFRAME(&_hx_pos_738cd521df63558e_968_new)
+HXLINE( 970)		this->shader =  ::shaders::VCRDistortionShader_obj::__alloc( HX_CTX );
+HXLINE( 972)		this->shader->iTime->value = ::Array_obj< Float >::fromData( _hx_array_data_619b9ab3_1,1);
+HXLINE( 973)		this->shader->vignetteOn->value = ::Array_obj< bool >::fromData( _hx_array_data_619b9ab3_2,1);
+HXLINE( 974)		this->shader->perspectiveOn->value = ::Array_obj< bool >::__new(1)->init(0,perspectiveOn);
+HXLINE( 975)		this->shader->distortionOn->value = ::Array_obj< bool >::__new(1)->init(0,distortion);
+HXLINE( 976)		this->shader->scanlinesOn->value = ::Array_obj< bool >::fromData( _hx_array_data_619b9ab3_3,1);
+HXLINE( 977)		this->shader->vignetteMoving->value = ::Array_obj< bool >::__new(1)->init(0,vignetteMoving);
+HXLINE( 978)		this->shader->glitchModifier->value = ::Array_obj< Float >::__new(1)->init(0,glitchFactor);
+HXLINE( 979)		int _hx_tmp = ::openfl::Lib_obj::get_current()->stage->stageWidth;
+HXDLIN( 979)		this->shader->iResolution->value = ::Array_obj< Float >::__new(2)->init(0,_hx_tmp)->init(1,::openfl::Lib_obj::get_current()->stage->stageHeight);
+HXLINE( 980)		::states::PlayState_obj::instance->shaderUpdates->push(this->update_dyn());
             	}
 
 Dynamic VCRDistortionEffect_obj::__CreateEmpty() { return new VCRDistortionEffect_obj; }
@@ -145,58 +145,58 @@ bool VCRDistortionEffect_obj::_hx_isInstanceOf(int inClassId) {
 }
 
 void VCRDistortionEffect_obj::update(Float elapsed){
-            	HX_STACKFRAME(&_hx_pos_738cd521df63558e_836_update)
-HXLINE( 837)		::Array< Float > base = this->shader->iTime->value;
-HXDLIN( 837)		int _hx_tmp = 0;
-HXDLIN( 837)		base[_hx_tmp] = (base->__get(_hx_tmp) + elapsed);
-HXLINE( 838)		int _hx_tmp1 = ::openfl::Lib_obj::get_current()->stage->stageWidth;
-HXDLIN( 838)		this->shader->iResolution->value = ::Array_obj< Float >::__new(2)->init(0,_hx_tmp1)->init(1,::openfl::Lib_obj::get_current()->stage->stageHeight);
+            	HX_STACKFRAME(&_hx_pos_738cd521df63558e_983_update)
+HXLINE( 984)		::Array< Float > base = this->shader->iTime->value;
+HXDLIN( 984)		int _hx_tmp = 0;
+HXDLIN( 984)		base[_hx_tmp] = (base->__get(_hx_tmp) + elapsed);
+HXLINE( 985)		int _hx_tmp1 = ::openfl::Lib_obj::get_current()->stage->stageWidth;
+HXDLIN( 985)		this->shader->iResolution->value = ::Array_obj< Float >::__new(2)->init(0,_hx_tmp1)->init(1,::openfl::Lib_obj::get_current()->stage->stageHeight);
             	}
 
 
 void VCRDistortionEffect_obj::setVignette(bool state){
-            	HX_STACKFRAME(&_hx_pos_738cd521df63558e_842_setVignette)
-HXDLIN( 842)		this->shader->vignetteOn->value[0] = state;
+            	HX_STACKFRAME(&_hx_pos_738cd521df63558e_989_setVignette)
+HXDLIN( 989)		this->shader->vignetteOn->value[0] = state;
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC1(VCRDistortionEffect_obj,setVignette,(void))
 
 void VCRDistortionEffect_obj::setPerspective(bool state){
-            	HX_STACKFRAME(&_hx_pos_738cd521df63558e_846_setPerspective)
-HXDLIN( 846)		this->shader->perspectiveOn->value[0] = state;
+            	HX_STACKFRAME(&_hx_pos_738cd521df63558e_993_setPerspective)
+HXDLIN( 993)		this->shader->perspectiveOn->value[0] = state;
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC1(VCRDistortionEffect_obj,setPerspective,(void))
 
 void VCRDistortionEffect_obj::setGlitchModifier(Float modifier){
-            	HX_STACKFRAME(&_hx_pos_738cd521df63558e_850_setGlitchModifier)
-HXDLIN( 850)		this->shader->glitchModifier->value[0] = modifier;
+            	HX_STACKFRAME(&_hx_pos_738cd521df63558e_997_setGlitchModifier)
+HXDLIN( 997)		this->shader->glitchModifier->value[0] = modifier;
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC1(VCRDistortionEffect_obj,setGlitchModifier,(void))
 
 void VCRDistortionEffect_obj::setDistortion(bool state){
-            	HX_STACKFRAME(&_hx_pos_738cd521df63558e_854_setDistortion)
-HXDLIN( 854)		this->shader->distortionOn->value[0] = state;
+            	HX_STACKFRAME(&_hx_pos_738cd521df63558e_1001_setDistortion)
+HXDLIN(1001)		this->shader->distortionOn->value[0] = state;
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC1(VCRDistortionEffect_obj,setDistortion,(void))
 
 void VCRDistortionEffect_obj::setScanlines(bool state){
-            	HX_STACKFRAME(&_hx_pos_738cd521df63558e_858_setScanlines)
-HXDLIN( 858)		this->shader->scanlinesOn->value[0] = state;
+            	HX_STACKFRAME(&_hx_pos_738cd521df63558e_1005_setScanlines)
+HXDLIN(1005)		this->shader->scanlinesOn->value[0] = state;
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC1(VCRDistortionEffect_obj,setScanlines,(void))
 
 void VCRDistortionEffect_obj::setVignetteMoving(bool state){
-            	HX_STACKFRAME(&_hx_pos_738cd521df63558e_862_setVignetteMoving)
-HXDLIN( 862)		this->shader->vignetteMoving->value[0] = state;
+            	HX_STACKFRAME(&_hx_pos_738cd521df63558e_1009_setVignetteMoving)
+HXDLIN(1009)		this->shader->vignetteMoving->value[0] = state;
             	}
 
 

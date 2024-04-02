@@ -22,7 +22,7 @@
 #include <shaders/PulseShader.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_b43969b3ad08500f_1638_new,"shaders.PulseEffect","new",0xdb64459c,"shaders.PulseEffect.new","shaders/Shaders.hx",1638,0x7800d7f1)
+HX_DEFINE_STACK_FRAME(_hx_pos_b43969b3ad08500f_1785_new,"shaders.PulseEffect","new",0xdb64459c,"shaders.PulseEffect.new","shaders/Shaders.hx",1785,0x7800d7f1)
 static const Float _hx_array_data_9d3a87aa_1[] = {
 	(Float)0,
 };
@@ -32,23 +32,23 @@ static const Float _hx_array_data_9d3a87aa_2[] = {
 static const bool _hx_array_data_9d3a87aa_3[] = {
 	0,
 };
-HX_LOCAL_STACK_FRAME(_hx_pos_b43969b3ad08500f_1655_update,"shaders.PulseEffect","update",0x7394fe4d,"shaders.PulseEffect.update","shaders/Shaders.hx",1655,0x7800d7f1)
-HX_LOCAL_STACK_FRAME(_hx_pos_b43969b3ad08500f_1661_set_waveSpeed,"shaders.PulseEffect","set_waveSpeed",0x8c7bd12d,"shaders.PulseEffect.set_waveSpeed","shaders/Shaders.hx",1661,0x7800d7f1)
-HX_LOCAL_STACK_FRAME(_hx_pos_b43969b3ad08500f_1668_set_Enabled,"shaders.PulseEffect","set_Enabled",0x0c8ba4c0,"shaders.PulseEffect.set_Enabled","shaders/Shaders.hx",1668,0x7800d7f1)
-HX_LOCAL_STACK_FRAME(_hx_pos_b43969b3ad08500f_1675_set_waveFrequency,"shaders.PulseEffect","set_waveFrequency",0x23918742,"shaders.PulseEffect.set_waveFrequency","shaders/Shaders.hx",1675,0x7800d7f1)
-HX_LOCAL_STACK_FRAME(_hx_pos_b43969b3ad08500f_1682_set_waveAmplitude,"shaders.PulseEffect","set_waveAmplitude",0xd1a219e9,"shaders.PulseEffect.set_waveAmplitude","shaders/Shaders.hx",1682,0x7800d7f1)
+HX_LOCAL_STACK_FRAME(_hx_pos_b43969b3ad08500f_1802_update,"shaders.PulseEffect","update",0x7394fe4d,"shaders.PulseEffect.update","shaders/Shaders.hx",1802,0x7800d7f1)
+HX_LOCAL_STACK_FRAME(_hx_pos_b43969b3ad08500f_1808_set_waveSpeed,"shaders.PulseEffect","set_waveSpeed",0x8c7bd12d,"shaders.PulseEffect.set_waveSpeed","shaders/Shaders.hx",1808,0x7800d7f1)
+HX_LOCAL_STACK_FRAME(_hx_pos_b43969b3ad08500f_1815_set_Enabled,"shaders.PulseEffect","set_Enabled",0x0c8ba4c0,"shaders.PulseEffect.set_Enabled","shaders/Shaders.hx",1815,0x7800d7f1)
+HX_LOCAL_STACK_FRAME(_hx_pos_b43969b3ad08500f_1822_set_waveFrequency,"shaders.PulseEffect","set_waveFrequency",0x23918742,"shaders.PulseEffect.set_waveFrequency","shaders/Shaders.hx",1822,0x7800d7f1)
+HX_LOCAL_STACK_FRAME(_hx_pos_b43969b3ad08500f_1829_set_waveAmplitude,"shaders.PulseEffect","set_waveAmplitude",0xd1a219e9,"shaders.PulseEffect.set_waveAmplitude","shaders/Shaders.hx",1829,0x7800d7f1)
 namespace shaders{
 
 void PulseEffect_obj::__construct(){
-            	HX_GC_STACKFRAME(&_hx_pos_b43969b3ad08500f_1638_new)
-HXLINE(1645)		this->Enabled = false;
-HXLINE(1644)		this->waveAmplitude = ((Float)0);
-HXLINE(1643)		this->waveFrequency = ((Float)0);
-HXLINE(1642)		this->waveSpeed = ((Float)0);
-HXLINE(1640)		this->shader =  ::shaders::PulseShader_obj::__alloc( HX_CTX );
-HXLINE(1649)		this->shader->uTime->value = ::Array_obj< Float >::fromData( _hx_array_data_9d3a87aa_1,1);
-HXLINE(1650)		this->shader->uampmul->value = ::Array_obj< Float >::fromData( _hx_array_data_9d3a87aa_2,1);
-HXLINE(1651)		this->shader->uEnabled->value = ::Array_obj< bool >::fromData( _hx_array_data_9d3a87aa_3,1);
+            	HX_GC_STACKFRAME(&_hx_pos_b43969b3ad08500f_1785_new)
+HXLINE(1792)		this->Enabled = false;
+HXLINE(1791)		this->waveAmplitude = ((Float)0);
+HXLINE(1790)		this->waveFrequency = ((Float)0);
+HXLINE(1789)		this->waveSpeed = ((Float)0);
+HXLINE(1787)		this->shader =  ::shaders::PulseShader_obj::__alloc( HX_CTX );
+HXLINE(1796)		this->shader->uTime->value = ::Array_obj< Float >::fromData( _hx_array_data_9d3a87aa_1,1);
+HXLINE(1797)		this->shader->uampmul->value = ::Array_obj< Float >::fromData( _hx_array_data_9d3a87aa_2,1);
+HXLINE(1798)		this->shader->uEnabled->value = ::Array_obj< bool >::fromData( _hx_array_data_9d3a87aa_3,1);
             	}
 
 Dynamic PulseEffect_obj::__CreateEmpty() { return new PulseEffect_obj; }
@@ -67,50 +67,50 @@ bool PulseEffect_obj::_hx_isInstanceOf(int inClassId) {
 }
 
 void PulseEffect_obj::update(Float elapsed){
-            	HX_STACKFRAME(&_hx_pos_b43969b3ad08500f_1655_update)
-HXLINE(1656)		::Array< Float > base = this->shader->uTime->value;
-HXDLIN(1656)		int _hx_tmp = 0;
-HXDLIN(1656)		base[_hx_tmp] = (base->__get(_hx_tmp) + elapsed);
+            	HX_STACKFRAME(&_hx_pos_b43969b3ad08500f_1802_update)
+HXLINE(1803)		::Array< Float > base = this->shader->uTime->value;
+HXDLIN(1803)		int _hx_tmp = 0;
+HXDLIN(1803)		base[_hx_tmp] = (base->__get(_hx_tmp) + elapsed);
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC1(PulseEffect_obj,update,(void))
 
 Float PulseEffect_obj::set_waveSpeed(Float v){
-            	HX_STACKFRAME(&_hx_pos_b43969b3ad08500f_1661_set_waveSpeed)
-HXLINE(1662)		this->waveSpeed = v;
-HXLINE(1663)		this->shader->uSpeed->value = ::Array_obj< Float >::__new(1)->init(0,this->waveSpeed);
-HXLINE(1664)		return v;
+            	HX_STACKFRAME(&_hx_pos_b43969b3ad08500f_1808_set_waveSpeed)
+HXLINE(1809)		this->waveSpeed = v;
+HXLINE(1810)		this->shader->uSpeed->value = ::Array_obj< Float >::__new(1)->init(0,this->waveSpeed);
+HXLINE(1811)		return v;
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC1(PulseEffect_obj,set_waveSpeed,return )
 
 bool PulseEffect_obj::set_Enabled(bool v){
-            	HX_STACKFRAME(&_hx_pos_b43969b3ad08500f_1668_set_Enabled)
-HXLINE(1669)		this->Enabled = v;
-HXLINE(1670)		this->shader->uEnabled->value = ::Array_obj< bool >::__new(1)->init(0,this->Enabled);
-HXLINE(1671)		return v;
+            	HX_STACKFRAME(&_hx_pos_b43969b3ad08500f_1815_set_Enabled)
+HXLINE(1816)		this->Enabled = v;
+HXLINE(1817)		this->shader->uEnabled->value = ::Array_obj< bool >::__new(1)->init(0,this->Enabled);
+HXLINE(1818)		return v;
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC1(PulseEffect_obj,set_Enabled,return )
 
 Float PulseEffect_obj::set_waveFrequency(Float v){
-            	HX_STACKFRAME(&_hx_pos_b43969b3ad08500f_1675_set_waveFrequency)
-HXLINE(1676)		this->waveFrequency = v;
-HXLINE(1677)		this->shader->uFrequency->value = ::Array_obj< Float >::__new(1)->init(0,this->waveFrequency);
-HXLINE(1678)		return v;
+            	HX_STACKFRAME(&_hx_pos_b43969b3ad08500f_1822_set_waveFrequency)
+HXLINE(1823)		this->waveFrequency = v;
+HXLINE(1824)		this->shader->uFrequency->value = ::Array_obj< Float >::__new(1)->init(0,this->waveFrequency);
+HXLINE(1825)		return v;
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC1(PulseEffect_obj,set_waveFrequency,return )
 
 Float PulseEffect_obj::set_waveAmplitude(Float v){
-            	HX_STACKFRAME(&_hx_pos_b43969b3ad08500f_1682_set_waveAmplitude)
-HXLINE(1683)		this->waveAmplitude = v;
-HXLINE(1684)		this->shader->uWaveAmplitude->value = ::Array_obj< Float >::__new(1)->init(0,this->waveAmplitude);
-HXLINE(1685)		return v;
+            	HX_STACKFRAME(&_hx_pos_b43969b3ad08500f_1829_set_waveAmplitude)
+HXLINE(1830)		this->waveAmplitude = v;
+HXLINE(1831)		this->shader->uWaveAmplitude->value = ::Array_obj< Float >::__new(1)->init(0,this->waveAmplitude);
+HXLINE(1832)		return v;
             	}
 
 

@@ -52,16 +52,16 @@
 #include <states/PlayState.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_2162f18c63617506_1886_new,"shaders.RainEffect","new",0x254eb157,"shaders.RainEffect.new","shaders/Shaders.hx",1886,0x7800d7f1)
-HX_LOCAL_STACK_FRAME(_hx_pos_2162f18c63617506_1899_update,"shaders.RainEffect","update",0xed5a5972,"shaders.RainEffect.update","shaders/Shaders.hx",1899,0x7800d7f1)
+HX_DEFINE_STACK_FRAME(_hx_pos_2162f18c63617506_2033_new,"shaders.RainEffect","new",0x254eb157,"shaders.RainEffect.new","shaders/Shaders.hx",2033,0x7800d7f1)
+HX_LOCAL_STACK_FRAME(_hx_pos_2162f18c63617506_2046_update,"shaders.RainEffect","update",0xed5a5972,"shaders.RainEffect.update","shaders/Shaders.hx",2046,0x7800d7f1)
 namespace shaders{
 
 void RainEffect_obj::__construct(Float iTime){
-            	HX_GC_STACKFRAME(&_hx_pos_2162f18c63617506_1886_new)
-HXLINE(1889)		this->iTime = ((Float)0.0);
-HXLINE(1893)		this->shader =  ::shaders::RainShader_obj::__alloc( HX_CTX );
-HXLINE(1894)		this->shader->iTime->value = ::Array_obj< Float >::__new(1)->init(0,iTime);
-HXLINE(1895)		::states::PlayState_obj::instance->shaderUpdates->push(this->update_dyn());
+            	HX_GC_STACKFRAME(&_hx_pos_2162f18c63617506_2033_new)
+HXLINE(2036)		this->iTime = ((Float)0.0);
+HXLINE(2040)		this->shader =  ::shaders::RainShader_obj::__alloc( HX_CTX );
+HXLINE(2041)		this->shader->iTime->value = ::Array_obj< Float >::__new(1)->init(0,iTime);
+HXLINE(2042)		::states::PlayState_obj::instance->shaderUpdates->push(this->update_dyn());
             	}
 
 Dynamic RainEffect_obj::__CreateEmpty() { return new RainEffect_obj; }
@@ -84,10 +84,10 @@ bool RainEffect_obj::_hx_isInstanceOf(int inClassId) {
 }
 
 void RainEffect_obj::update(Float elapsed){
-            	HX_STACKFRAME(&_hx_pos_2162f18c63617506_1899_update)
-HXLINE(1900)		 ::shaders::RainEffect _hx_tmp = ::hx::ObjectPtr<OBJ_>(this);
-HXDLIN(1900)		_hx_tmp->iTime = (_hx_tmp->iTime + elapsed);
-HXLINE(1901)		this->shader->iTime->value = ::Array_obj< Float >::__new(1)->init(0,this->iTime);
+            	HX_STACKFRAME(&_hx_pos_2162f18c63617506_2046_update)
+HXLINE(2047)		 ::shaders::RainEffect _hx_tmp = ::hx::ObjectPtr<OBJ_>(this);
+HXDLIN(2047)		_hx_tmp->iTime = (_hx_tmp->iTime + elapsed);
+HXLINE(2048)		this->shader->iTime->value = ::Array_obj< Float >::__new(1)->init(0,this->iTime);
             	}
 
 

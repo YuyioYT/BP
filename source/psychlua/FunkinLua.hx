@@ -1424,16 +1424,6 @@ class FunkinLua {
 					PlayState.instance.addShaderToCamera(camera, new InvertColorsEffect(lockAlpha));
 					
 				});
-				Lua_helper.add_callback(lua, "addStaticEffect", function(camera:String,strength:Float = 10) {
-					
-					PlayState.instance.addShaderToCamera(camera, new StaticEffect(strength));
-					
-				});
-				Lua_helper.add_callback(lua, "addGreyscaleEffect", function(camera:String,iStrength:Float = 10) {
-					
-					PlayState.instance.addShaderToCamera(camera, new Grey2Effect(iStrength));
-					
-				});
 				Lua_helper.add_callback(lua, "addGrayscaleEffect", function(camera:String) {
 					
 					PlayState.instance.addShaderToCamera(camera, new GreyscaleEffect());

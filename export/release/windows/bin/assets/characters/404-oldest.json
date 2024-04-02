@@ -3,76 +3,76 @@
 		{
 			"loop": false,
 			"offsets": [
-				310,
-				0
-			],
-			"anim": "singLEFT",
-			"fps": 24,
-			"name": "Left",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				-10,
-				-120
-			],
-			"anim": "singDOWN",
-			"fps": 24,
-			"name": "Down",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				40,
-				150
-			],
-			"anim": "singUP",
-			"fps": 24,
-			"name": "Up",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				-90,
+				180,
 				-40
 			],
 			"anim": "singRIGHT",
 			"fps": 24,
-			"name": "Right",
+			"name": "right",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-20,
+				-4
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "left",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-20,
+				-60
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				10,
+				60
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "up",
 			"indices": []
 		},
 		{
 			"offsets": [
-				0,
-				0
+				1,
+				1
 			],
-			"loop": true,
-			"fps": 24,
-			"anim": "idle",
 			"indices": [],
-			"name": "Idle"
+			"fps": 20,
+			"anim": "idle",
+			"loop": true,
+			"name": "idle"
 		}
 	],
 	"no_antialiasing": true,
 	"image": "characters/404_REBOUND",
 	"position": [
-		-300,
-		0
+		-400,
+		-10
 	],
-	"healthicon": "404",
+	"healthicon": "bambiGod3d",
 	"flip_x": false,
 	"healthbar_colors": [
-		0,
-		0,
-		0
+		237,
+		237,
+		237
 	],
 	"camera_position": [
-		-50,
-		-150
+		-40,
+		60
 	],
 	"sing_duration": 6.1,
-	"scale": 1.5
+	"scale": 1.2
 }

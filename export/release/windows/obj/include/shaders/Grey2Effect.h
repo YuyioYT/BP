@@ -28,13 +28,13 @@ class HXCPP_CLASS_ATTRIBUTES Grey2Effect_obj : public  ::shaders::Effect_obj
 	public:
 		enum { _hx_ClassId = 0x50716056 };
 
-		void __construct(Float iStrength);
+		void __construct();
 		inline void *operator new(size_t inSize, bool inContainer=true,const char *inName="shaders.Grey2Effect")
 			{ return ::hx::Object::operator new(inSize,inContainer,inName); }
 		inline void *operator new(size_t inSize, int extra)
 			{ return ::hx::Object::operator new(inSize+extra,true,"shaders.Grey2Effect"); }
-		static ::hx::ObjectPtr< Grey2Effect_obj > __new(Float iStrength);
-		static ::hx::ObjectPtr< Grey2Effect_obj > __alloc(::hx::Ctx *_hx_ctx,Float iStrength);
+		static ::hx::ObjectPtr< Grey2Effect_obj > __new();
+		static ::hx::ObjectPtr< Grey2Effect_obj > __alloc(::hx::Ctx *_hx_ctx);
 		static void * _hx_vtable;
 		static Dynamic __CreateEmpty();
 		static Dynamic __Create(::hx::DynamicArray inArgs);
@@ -51,6 +51,10 @@ class HXCPP_CLASS_ATTRIBUTES Grey2Effect_obj : public  ::shaders::Effect_obj
 		::String __ToString() const { return HX_("Grey2Effect",c4,7e,58,55); }
 
 		 ::shaders::Grey2Shader shader;
+		Float iStrength;
+		Float set_iStrength(Float value);
+		::Dynamic set_iStrength_dyn();
+
 };
 
 } // end namespace shaders

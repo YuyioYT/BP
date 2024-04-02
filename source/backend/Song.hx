@@ -17,7 +17,6 @@ typedef SwagSong =
 	var bpm:Float;
 
 	var speed:Float;
-	var healthdrain:Float;
 	var songInstVolume:Float;
 
 	var player1:String;
@@ -38,7 +37,6 @@ typedef SwagSong =
 	var disableAntiMash:Bool;
 	var disableDebugButtons:Bool;
 	var swapStrumLines:Bool;
-	var healthdrainKill:Bool;
 	var canFly:Bool;
 
 	@:optional var arrowSkin:String;
@@ -59,11 +57,8 @@ class Song
 	public var gameOverLoop:String;
 	public var gameOverEnd:String;
 
-	public var healthdrain:Float = 0;
-
 	public var cameraMoveOnNotes:Bool = false;
 	public var canFly:Bool = false;
-	public var healthdrainKill:Bool = false;
 	public var disableAntiMash:Bool = false;
 	public var disableDebugButtons:Bool = false;
 	public var swapStrumLines:Bool = false;

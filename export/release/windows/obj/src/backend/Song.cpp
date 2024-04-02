@@ -25,32 +25,30 @@
 #include <tjson/TJSON.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_db09ff2b98ac40f1_48_new,"backend.Song","new",0x743f8f01,"backend.Song.new","backend/Song.hx",48,0x16217dae)
-HX_LOCAL_STACK_FRAME(_hx_pos_db09ff2b98ac40f1_82_onLoadJson,"backend.Song","onLoadJson",0xada0af2c,"backend.Song.onLoadJson","backend/Song.hx",82,0x16217dae)
-HX_LOCAL_STACK_FRAME(_hx_pos_db09ff2b98ac40f1_128_loadFromJson,"backend.Song","loadFromJson",0xc81ee237,"backend.Song.loadFromJson","backend/Song.hx",128,0x16217dae)
-HX_LOCAL_STACK_FRAME(_hx_pos_db09ff2b98ac40f1_161_parseJSONshit,"backend.Song","parseJSONshit",0x02743afc,"backend.Song.parseJSONshit","backend/Song.hx",161,0x16217dae)
+HX_DEFINE_STACK_FRAME(_hx_pos_db09ff2b98ac40f1_46_new,"backend.Song","new",0x743f8f01,"backend.Song.new","backend/Song.hx",46,0x16217dae)
+HX_LOCAL_STACK_FRAME(_hx_pos_db09ff2b98ac40f1_77_onLoadJson,"backend.Song","onLoadJson",0xada0af2c,"backend.Song.onLoadJson","backend/Song.hx",77,0x16217dae)
+HX_LOCAL_STACK_FRAME(_hx_pos_db09ff2b98ac40f1_123_loadFromJson,"backend.Song","loadFromJson",0xc81ee237,"backend.Song.loadFromJson","backend/Song.hx",123,0x16217dae)
+HX_LOCAL_STACK_FRAME(_hx_pos_db09ff2b98ac40f1_156_parseJSONshit,"backend.Song","parseJSONshit",0x02743afc,"backend.Song.parseJSONshit","backend/Song.hx",156,0x16217dae)
 namespace backend{
 
 void Song_obj::__construct(::String song,::Array< ::Dynamic> notes,Float bpm){
-            	HX_STACKFRAME(&_hx_pos_db09ff2b98ac40f1_48_new)
-HXLINE(  78)		this->songInstVolume = ((Float)1);
-HXLINE(  77)		this->gfVersion = HX_("gf",1f,5a,00,00);
-HXLINE(  76)		this->player3 = HX_("dad",47,36,4c,00);
-HXLINE(  75)		this->player2 = HX_("dad",47,36,4c,00);
-HXLINE(  74)		this->player1 = HX_("bf",c4,55,00,00);
-HXLINE(  72)		this->speed = ((Float)1);
-HXLINE(  71)		this->disableNoteRGB = false;
-HXLINE(  69)		this->swapStrumLines = false;
-HXLINE(  68)		this->disableDebugButtons = false;
-HXLINE(  67)		this->disableAntiMash = false;
-HXLINE(  66)		this->healthdrainKill = false;
-HXLINE(  65)		this->canFly = false;
-HXLINE(  64)		this->cameraMoveOnNotes = false;
-HXLINE(  62)		this->healthdrain = ((Float)0);
-HXLINE(  54)		this->needsVoices = true;
-HXLINE( 122)		this->song = song;
-HXLINE( 123)		this->notes = notes;
-HXLINE( 124)		this->bpm = bpm;
+            	HX_STACKFRAME(&_hx_pos_db09ff2b98ac40f1_46_new)
+HXLINE(  73)		this->songInstVolume = ((Float)1);
+HXLINE(  72)		this->gfVersion = HX_("gf",1f,5a,00,00);
+HXLINE(  71)		this->player3 = HX_("dad",47,36,4c,00);
+HXLINE(  70)		this->player2 = HX_("dad",47,36,4c,00);
+HXLINE(  69)		this->player1 = HX_("bf",c4,55,00,00);
+HXLINE(  67)		this->speed = ((Float)1);
+HXLINE(  66)		this->disableNoteRGB = false;
+HXLINE(  64)		this->swapStrumLines = false;
+HXLINE(  63)		this->disableDebugButtons = false;
+HXLINE(  62)		this->disableAntiMash = false;
+HXLINE(  61)		this->canFly = false;
+HXLINE(  60)		this->cameraMoveOnNotes = false;
+HXLINE(  52)		this->needsVoices = true;
+HXLINE( 117)		this->song = song;
+HXLINE( 118)		this->notes = notes;
+HXLINE( 119)		this->bpm = bpm;
             	}
 
 Dynamic Song_obj::__CreateEmpty() { return new Song_obj; }
@@ -69,36 +67,36 @@ bool Song_obj::_hx_isInstanceOf(int inClassId) {
 }
 
 void Song_obj::onLoadJson( ::Dynamic songJson){
-            	HX_STACKFRAME(&_hx_pos_db09ff2b98ac40f1_82_onLoadJson)
-HXLINE(  83)		if (::hx::IsNull( songJson->__Field(HX_("gfVersion",b9,c6,7d,f3),::hx::paccDynamic) )) {
-HXLINE(  85)			songJson->__SetField(HX_("gfVersion",b9,c6,7d,f3),songJson->__Field(HX_("player3",b2,09,15,8a),::hx::paccDynamic),::hx::paccDynamic);
-HXLINE(  86)			songJson->__SetField(HX_("player3",b2,09,15,8a),null(),::hx::paccDynamic);
+            	HX_STACKFRAME(&_hx_pos_db09ff2b98ac40f1_77_onLoadJson)
+HXLINE(  78)		if (::hx::IsNull( songJson->__Field(HX_("gfVersion",b9,c6,7d,f3),::hx::paccDynamic) )) {
+HXLINE(  80)			songJson->__SetField(HX_("gfVersion",b9,c6,7d,f3),songJson->__Field(HX_("player3",b2,09,15,8a),::hx::paccDynamic),::hx::paccDynamic);
+HXLINE(  81)			songJson->__SetField(HX_("player3",b2,09,15,8a),null(),::hx::paccDynamic);
             		}
-HXLINE(  89)		if (::hx::IsNull( songJson->__Field(HX_("gfVersion",b9,c6,7d,f3),::hx::paccDynamic) )) {
-HXLINE(  91)			songJson->__SetField(HX_("gfVersion",b9,c6,7d,f3),songJson->__Field(HX_("player3",b2,09,15,8a),::hx::paccDynamic),::hx::paccDynamic);
-HXLINE(  92)			songJson->__SetField(HX_("player3",b2,09,15,8a),null(),::hx::paccDynamic);
+HXLINE(  84)		if (::hx::IsNull( songJson->__Field(HX_("gfVersion",b9,c6,7d,f3),::hx::paccDynamic) )) {
+HXLINE(  86)			songJson->__SetField(HX_("gfVersion",b9,c6,7d,f3),songJson->__Field(HX_("player3",b2,09,15,8a),::hx::paccDynamic),::hx::paccDynamic);
+HXLINE(  87)			songJson->__SetField(HX_("player3",b2,09,15,8a),null(),::hx::paccDynamic);
             		}
-HXLINE(  95)		if (::hx::IsNull( songJson->__Field(HX_("events",19,4f,6a,96),::hx::paccDynamic) )) {
-HXLINE(  97)			songJson->__SetField(HX_("events",19,4f,6a,96),::cpp::VirtualArray_obj::__new(0),::hx::paccDynamic);
-HXLINE(  98)			{
-HXLINE(  98)				int _g = 0;
-HXDLIN(  98)				int _g1 = ( (int)( ::Dynamic(songJson->__Field(HX_("notes",41,dc,ca,9f),::hx::paccDynamic))->__Field(HX_("length",e6,94,07,9f),::hx::paccDynamic)) );
-HXDLIN(  98)				while((_g < _g1)){
-HXLINE(  98)					_g = (_g + 1);
-HXDLIN(  98)					int secNum = (_g - 1);
-HXLINE( 100)					 ::Dynamic sec =  ::Dynamic(songJson->__Field(HX_("notes",41,dc,ca,9f),::hx::paccDynamic))->__GetItem(secNum);
-HXLINE( 102)					int i = 0;
-HXLINE( 103)					::cpp::VirtualArray notes = ( (::cpp::VirtualArray)(sec->__Field(HX_("sectionNotes",1c,c8,a7,fe),::hx::paccDynamic)) );
-HXLINE( 104)					int len = notes->get_length();
-HXLINE( 105)					while((i < len)){
-HXLINE( 107)						::cpp::VirtualArray note = ( (::cpp::VirtualArray)(notes->__get(i)) );
-HXLINE( 108)						if (::hx::IsLess( note->__get(1),0 )) {
-HXLINE( 110)							 ::Dynamic(songJson->__Field(HX_("events",19,4f,6a,96),::hx::paccDynamic))->__Field(HX_("push",da,11,61,4a),::hx::paccDynamic)(::Array_obj< ::Dynamic>::__new(2)->init(0,note->__get(0))->init(1,::Array_obj< ::Dynamic>::__new(1)->init(0,::cpp::VirtualArray_obj::__new(3)->init(0,note->__get(2))->init(1,note->__get(3))->init(2,note->__get(4)))));
-HXLINE( 111)							notes->remove(note);
-HXLINE( 112)							len = notes->get_length();
+HXLINE(  90)		if (::hx::IsNull( songJson->__Field(HX_("events",19,4f,6a,96),::hx::paccDynamic) )) {
+HXLINE(  92)			songJson->__SetField(HX_("events",19,4f,6a,96),::cpp::VirtualArray_obj::__new(0),::hx::paccDynamic);
+HXLINE(  93)			{
+HXLINE(  93)				int _g = 0;
+HXDLIN(  93)				int _g1 = ( (int)( ::Dynamic(songJson->__Field(HX_("notes",41,dc,ca,9f),::hx::paccDynamic))->__Field(HX_("length",e6,94,07,9f),::hx::paccDynamic)) );
+HXDLIN(  93)				while((_g < _g1)){
+HXLINE(  93)					_g = (_g + 1);
+HXDLIN(  93)					int secNum = (_g - 1);
+HXLINE(  95)					 ::Dynamic sec =  ::Dynamic(songJson->__Field(HX_("notes",41,dc,ca,9f),::hx::paccDynamic))->__GetItem(secNum);
+HXLINE(  97)					int i = 0;
+HXLINE(  98)					::cpp::VirtualArray notes = ( (::cpp::VirtualArray)(sec->__Field(HX_("sectionNotes",1c,c8,a7,fe),::hx::paccDynamic)) );
+HXLINE(  99)					int len = notes->get_length();
+HXLINE( 100)					while((i < len)){
+HXLINE( 102)						::cpp::VirtualArray note = ( (::cpp::VirtualArray)(notes->__get(i)) );
+HXLINE( 103)						if (::hx::IsLess( note->__get(1),0 )) {
+HXLINE( 105)							 ::Dynamic(songJson->__Field(HX_("events",19,4f,6a,96),::hx::paccDynamic))->__Field(HX_("push",da,11,61,4a),::hx::paccDynamic)(::Array_obj< ::Dynamic>::__new(2)->init(0,note->__get(0))->init(1,::Array_obj< ::Dynamic>::__new(1)->init(0,::cpp::VirtualArray_obj::__new(3)->init(0,note->__get(2))->init(1,note->__get(3))->init(2,note->__get(4)))));
+HXLINE( 106)							notes->remove(note);
+HXLINE( 107)							len = notes->get_length();
             						}
             						else {
-HXLINE( 114)							i = (i + 1);
+HXLINE( 109)							i = (i + 1);
             						}
             					}
             				}
@@ -110,41 +108,41 @@ HXLINE( 114)							i = (i + 1);
 STATIC_HX_DEFINE_DYNAMIC_FUNC1(Song_obj,onLoadJson,(void))
 
  ::Dynamic Song_obj::loadFromJson(::String jsonInput,::String folder){
-            	HX_GC_STACKFRAME(&_hx_pos_db09ff2b98ac40f1_128_loadFromJson)
-HXLINE( 129)		::String rawJson = null();
-HXLINE( 131)		 ::EReg invalidChars =  ::EReg_obj::__alloc( HX_CTX ,HX_("[~&\\\\;:<>#]",7e,4d,88,67),HX_("",00,00,00,00));
-HXDLIN( 131)		 ::EReg hideChars =  ::EReg_obj::__alloc( HX_CTX ,HX_("[.,'\"%?!]",ca,d9,c0,ac),HX_("",00,00,00,00));
-HXDLIN( 131)		::String path = invalidChars->split(::StringTools_obj::replace(folder,HX_(" ",20,00,00,00),HX_("-",2d,00,00,00)))->join(HX_("-",2d,00,00,00));
-HXDLIN( 131)		::String formattedFolder = hideChars->split(path)->join(HX_("",00,00,00,00)).toLowerCase();
-HXLINE( 132)		 ::EReg invalidChars1 =  ::EReg_obj::__alloc( HX_CTX ,HX_("[~&\\\\;:<>#]",7e,4d,88,67),HX_("",00,00,00,00));
-HXDLIN( 132)		 ::EReg hideChars1 =  ::EReg_obj::__alloc( HX_CTX ,HX_("[.,'\"%?!]",ca,d9,c0,ac),HX_("",00,00,00,00));
-HXDLIN( 132)		::String path1 = invalidChars1->split(::StringTools_obj::replace(jsonInput,HX_(" ",20,00,00,00),HX_("-",2d,00,00,00)))->join(HX_("-",2d,00,00,00));
-HXDLIN( 132)		::String formattedSong = hideChars1->split(path1)->join(HX_("",00,00,00,00)).toLowerCase();
-HXLINE( 134)		::String moddyFile = ::backend::Paths_obj::modFolders(((HX_("data/",c5,0e,88,d4) + ((formattedFolder + HX_("/",2f,00,00,00)) + formattedSong)) + HX_(".json",56,f1,d6,c2)));
-HXLINE( 135)		if (::sys::FileSystem_obj::exists(moddyFile)) {
-HXLINE( 136)			rawJson = ::StringTools_obj::trim(::sys::io::File_obj::getContent(moddyFile));
+            	HX_GC_STACKFRAME(&_hx_pos_db09ff2b98ac40f1_123_loadFromJson)
+HXLINE( 124)		::String rawJson = null();
+HXLINE( 126)		 ::EReg invalidChars =  ::EReg_obj::__alloc( HX_CTX ,HX_("[~&\\\\;:<>#]",7e,4d,88,67),HX_("",00,00,00,00));
+HXDLIN( 126)		 ::EReg hideChars =  ::EReg_obj::__alloc( HX_CTX ,HX_("[.,'\"%?!]",ca,d9,c0,ac),HX_("",00,00,00,00));
+HXDLIN( 126)		::String path = invalidChars->split(::StringTools_obj::replace(folder,HX_(" ",20,00,00,00),HX_("-",2d,00,00,00)))->join(HX_("-",2d,00,00,00));
+HXDLIN( 126)		::String formattedFolder = hideChars->split(path)->join(HX_("",00,00,00,00)).toLowerCase();
+HXLINE( 127)		 ::EReg invalidChars1 =  ::EReg_obj::__alloc( HX_CTX ,HX_("[~&\\\\;:<>#]",7e,4d,88,67),HX_("",00,00,00,00));
+HXDLIN( 127)		 ::EReg hideChars1 =  ::EReg_obj::__alloc( HX_CTX ,HX_("[.,'\"%?!]",ca,d9,c0,ac),HX_("",00,00,00,00));
+HXDLIN( 127)		::String path1 = invalidChars1->split(::StringTools_obj::replace(jsonInput,HX_(" ",20,00,00,00),HX_("-",2d,00,00,00)))->join(HX_("-",2d,00,00,00));
+HXDLIN( 127)		::String formattedSong = hideChars1->split(path1)->join(HX_("",00,00,00,00)).toLowerCase();
+HXLINE( 129)		::String moddyFile = ::backend::Paths_obj::modFolders(((HX_("data/",c5,0e,88,d4) + ((formattedFolder + HX_("/",2f,00,00,00)) + formattedSong)) + HX_(".json",56,f1,d6,c2)));
+HXLINE( 130)		if (::sys::FileSystem_obj::exists(moddyFile)) {
+HXLINE( 131)			rawJson = ::StringTools_obj::trim(::sys::io::File_obj::getContent(moddyFile));
             		}
-HXLINE( 140)		if (::hx::IsNull( rawJson )) {
-HXLINE( 142)			::String library = null();
-HXDLIN( 142)			rawJson = ::StringTools_obj::trim(::sys::io::File_obj::getContent(::backend::Paths_obj::getPath(((HX_("data/",c5,0e,88,d4) + ((formattedFolder + HX_("/",2f,00,00,00)) + formattedSong)) + HX_(".json",56,f1,d6,c2)),HX_("TEXT",ad,94,ba,37),library,null())));
+HXLINE( 135)		if (::hx::IsNull( rawJson )) {
+HXLINE( 137)			::String library = null();
+HXDLIN( 137)			rawJson = ::StringTools_obj::trim(::sys::io::File_obj::getContent(::backend::Paths_obj::getPath(((HX_("data/",c5,0e,88,d4) + ((formattedFolder + HX_("/",2f,00,00,00)) + formattedSong)) + HX_(".json",56,f1,d6,c2)),HX_("TEXT",ad,94,ba,37),library,null())));
             		}
-HXLINE( 148)		while(!(::StringTools_obj::endsWith(rawJson,HX_("}",7d,00,00,00)))){
-HXLINE( 150)			rawJson = rawJson.substr(0,(rawJson.length - 1));
+HXLINE( 143)		while(!(::StringTools_obj::endsWith(rawJson,HX_("}",7d,00,00,00)))){
+HXLINE( 145)			rawJson = rawJson.substr(0,(rawJson.length - 1));
             		}
-HXLINE( 153)		 ::Dynamic songJson = ::backend::Song_obj::parseJSONshit(rawJson);
-HXLINE( 154)		if ((jsonInput != HX_("events",19,4f,6a,96))) {
-HXLINE( 154)			::backend::StageData_obj::loadDirectory(songJson);
+HXLINE( 148)		 ::Dynamic songJson = ::backend::Song_obj::parseJSONshit(rawJson);
+HXLINE( 149)		if ((jsonInput != HX_("events",19,4f,6a,96))) {
+HXLINE( 149)			::backend::StageData_obj::loadDirectory(songJson);
             		}
-HXLINE( 155)		::backend::Song_obj::onLoadJson(songJson);
-HXLINE( 156)		return songJson;
+HXLINE( 150)		::backend::Song_obj::onLoadJson(songJson);
+HXLINE( 151)		return songJson;
             	}
 
 
 STATIC_HX_DEFINE_DYNAMIC_FUNC2(Song_obj,loadFromJson,return )
 
  ::Dynamic Song_obj::parseJSONshit(::String rawJson){
-            	HX_STACKFRAME(&_hx_pos_db09ff2b98ac40f1_161_parseJSONshit)
-HXDLIN( 161)		return ::tjson::TJSON_obj::parse(rawJson,null(),null())->__Field(HX_("song",d5,23,58,4c),::hx::paccDynamic);
+            	HX_STACKFRAME(&_hx_pos_db09ff2b98ac40f1_156_parseJSONshit)
+HXDLIN( 156)		return ::tjson::TJSON_obj::parse(rawJson,null(),null())->__Field(HX_("song",d5,23,58,4c),::hx::paccDynamic);
             	}
 
 
@@ -169,10 +167,8 @@ void Song_obj::__Mark(HX_MARK_PARAMS)
 	HX_MARK_MEMBER_NAME(gameOverSound,"gameOverSound");
 	HX_MARK_MEMBER_NAME(gameOverLoop,"gameOverLoop");
 	HX_MARK_MEMBER_NAME(gameOverEnd,"gameOverEnd");
-	HX_MARK_MEMBER_NAME(healthdrain,"healthdrain");
 	HX_MARK_MEMBER_NAME(cameraMoveOnNotes,"cameraMoveOnNotes");
 	HX_MARK_MEMBER_NAME(canFly,"canFly");
-	HX_MARK_MEMBER_NAME(healthdrainKill,"healthdrainKill");
 	HX_MARK_MEMBER_NAME(disableAntiMash,"disableAntiMash");
 	HX_MARK_MEMBER_NAME(disableDebugButtons,"disableDebugButtons");
 	HX_MARK_MEMBER_NAME(swapStrumLines,"swapStrumLines");
@@ -200,10 +196,8 @@ void Song_obj::__Visit(HX_VISIT_PARAMS)
 	HX_VISIT_MEMBER_NAME(gameOverSound,"gameOverSound");
 	HX_VISIT_MEMBER_NAME(gameOverLoop,"gameOverLoop");
 	HX_VISIT_MEMBER_NAME(gameOverEnd,"gameOverEnd");
-	HX_VISIT_MEMBER_NAME(healthdrain,"healthdrain");
 	HX_VISIT_MEMBER_NAME(cameraMoveOnNotes,"cameraMoveOnNotes");
 	HX_VISIT_MEMBER_NAME(canFly,"canFly");
-	HX_VISIT_MEMBER_NAME(healthdrainKill,"healthdrainKill");
 	HX_VISIT_MEMBER_NAME(disableAntiMash,"disableAntiMash");
 	HX_VISIT_MEMBER_NAME(disableDebugButtons,"disableDebugButtons");
 	HX_VISIT_MEMBER_NAME(swapStrumLines,"swapStrumLines");
@@ -250,7 +244,6 @@ void Song_obj::__Visit(HX_VISIT_PARAMS)
 	case 11:
 		if (HX_FIELD_EQ(inName,"needsVoices") ) { return ::hx::Val( needsVoices ); }
 		if (HX_FIELD_EQ(inName,"gameOverEnd") ) { return ::hx::Val( gameOverEnd ); }
-		if (HX_FIELD_EQ(inName,"healthdrain") ) { return ::hx::Val( healthdrain ); }
 		break;
 	case 12:
 		if (HX_FIELD_EQ(inName,"gameOverChar") ) { return ::hx::Val( gameOverChar ); }
@@ -265,7 +258,6 @@ void Song_obj::__Visit(HX_VISIT_PARAMS)
 		if (HX_FIELD_EQ(inName,"songInstVolume") ) { return ::hx::Val( songInstVolume ); }
 		break;
 	case 15:
-		if (HX_FIELD_EQ(inName,"healthdrainKill") ) { return ::hx::Val( healthdrainKill ); }
 		if (HX_FIELD_EQ(inName,"disableAntiMash") ) { return ::hx::Val( disableAntiMash ); }
 		break;
 	case 17:
@@ -325,7 +317,6 @@ bool Song_obj::__GetStatic(const ::String &inName, Dynamic &outValue, ::hx::Prop
 	case 11:
 		if (HX_FIELD_EQ(inName,"needsVoices") ) { needsVoices=inValue.Cast< bool >(); return inValue; }
 		if (HX_FIELD_EQ(inName,"gameOverEnd") ) { gameOverEnd=inValue.Cast< ::String >(); return inValue; }
-		if (HX_FIELD_EQ(inName,"healthdrain") ) { healthdrain=inValue.Cast< Float >(); return inValue; }
 		break;
 	case 12:
 		if (HX_FIELD_EQ(inName,"gameOverChar") ) { gameOverChar=inValue.Cast< ::String >(); return inValue; }
@@ -340,7 +331,6 @@ bool Song_obj::__GetStatic(const ::String &inName, Dynamic &outValue, ::hx::Prop
 		if (HX_FIELD_EQ(inName,"songInstVolume") ) { songInstVolume=inValue.Cast< Float >(); return inValue; }
 		break;
 	case 15:
-		if (HX_FIELD_EQ(inName,"healthdrainKill") ) { healthdrainKill=inValue.Cast< bool >(); return inValue; }
 		if (HX_FIELD_EQ(inName,"disableAntiMash") ) { disableAntiMash=inValue.Cast< bool >(); return inValue; }
 		break;
 	case 17:
@@ -365,10 +355,8 @@ void Song_obj::__GetFields(Array< ::String> &outFields)
 	outFields->push(HX_("gameOverSound",89,f8,70,3c));
 	outFields->push(HX_("gameOverLoop",ea,8f,ff,6a));
 	outFields->push(HX_("gameOverEnd",15,2d,a9,8d));
-	outFields->push(HX_("healthdrain",9c,6d,0b,93));
 	outFields->push(HX_("cameraMoveOnNotes",ec,6c,06,47));
 	outFields->push(HX_("canFly",43,f2,1d,b8));
-	outFields->push(HX_("healthdrainKill",5a,77,2b,26));
 	outFields->push(HX_("disableAntiMash",b3,c3,e0,65));
 	outFields->push(HX_("disableDebugButtons",36,5a,c6,6d));
 	outFields->push(HX_("swapStrumLines",69,6c,92,2f));
@@ -396,10 +384,8 @@ static ::hx::StorageInfo Song_obj_sMemberStorageInfo[] = {
 	{::hx::fsString,(int)offsetof(Song_obj,gameOverSound),HX_("gameOverSound",89,f8,70,3c)},
 	{::hx::fsString,(int)offsetof(Song_obj,gameOverLoop),HX_("gameOverLoop",ea,8f,ff,6a)},
 	{::hx::fsString,(int)offsetof(Song_obj,gameOverEnd),HX_("gameOverEnd",15,2d,a9,8d)},
-	{::hx::fsFloat,(int)offsetof(Song_obj,healthdrain),HX_("healthdrain",9c,6d,0b,93)},
 	{::hx::fsBool,(int)offsetof(Song_obj,cameraMoveOnNotes),HX_("cameraMoveOnNotes",ec,6c,06,47)},
 	{::hx::fsBool,(int)offsetof(Song_obj,canFly),HX_("canFly",43,f2,1d,b8)},
-	{::hx::fsBool,(int)offsetof(Song_obj,healthdrainKill),HX_("healthdrainKill",5a,77,2b,26)},
 	{::hx::fsBool,(int)offsetof(Song_obj,disableAntiMash),HX_("disableAntiMash",b3,c3,e0,65)},
 	{::hx::fsBool,(int)offsetof(Song_obj,disableDebugButtons),HX_("disableDebugButtons",36,5a,c6,6d)},
 	{::hx::fsBool,(int)offsetof(Song_obj,swapStrumLines),HX_("swapStrumLines",69,6c,92,2f)},
@@ -428,10 +414,8 @@ static ::String Song_obj_sMemberFields[] = {
 	HX_("gameOverSound",89,f8,70,3c),
 	HX_("gameOverLoop",ea,8f,ff,6a),
 	HX_("gameOverEnd",15,2d,a9,8d),
-	HX_("healthdrain",9c,6d,0b,93),
 	HX_("cameraMoveOnNotes",ec,6c,06,47),
 	HX_("canFly",43,f2,1d,b8),
-	HX_("healthdrainKill",5a,77,2b,26),
 	HX_("disableAntiMash",b3,c3,e0,65),
 	HX_("disableDebugButtons",36,5a,c6,6d),
 	HX_("swapStrumLines",69,6c,92,2f),

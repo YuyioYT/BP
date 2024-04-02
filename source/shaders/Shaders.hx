@@ -153,6 +153,137 @@ class ScanlineShader2 extends FlxShader
 	}
 }
 
+class ChromBlockedEffect extends Effect {
+    public var shader:ChromBlockedShader = new ChromBlockedShader();
+    public var GLITCH(default, set):Float = 0;
+
+    public function new():Void {
+        set_GLITCH(0);
+        shader.iTime.value = [0];
+    }
+
+    public override function update(elapsed:Float):Void {
+        shader.iTime.value[0] += elapsed;
+    }
+
+    public function set_GLITCH(v:Float):Float {
+        GLITCH = v;
+        shader.GLITCH.value = [v];
+        return this.GLITCH;
+    }
+}
+
+class ChromBlockedShader extends FlxShader {
+    @:glFragmentSource('
+    #pragma header
+    uniform float iTime;
+    uniform float GLITCH;
+    #define iChannel0 bitmap
+    #define texture flixel_texture2D
+    #define fragColor gl_FragColor
+    #define mainImage main
+    const int NUM_SAMPLES = 5;
+        
+        
+    float sat( float t ) {
+        return clamp( t, 0.0, 1.0 );
+    }
+    
+    vec2 sat( vec2 t ) {
+        return clamp( t, 0.0, 1.0 );
+    }
+    float remap  ( float t, float a, float b ) {
+        return sat( (t - a) / (b - a) );
+    }
+    float linterp( float t ) {
+        return sat( 1.0 - abs( 2.0*t - 1.0 ) );
+    }
+    
+    vec3 spectrum_offset( float t ) {
+        vec3 ret;
+        float lo = step(t,0.5);
+        float hi = 1.0-lo;
+        float w = linterp( remap( t, 1.0/6.0, 5.0/6.0 ) );
+        float neg_w = 1.0-w;
+        ret = vec3(lo,1.0,hi) * vec3(neg_w, w, neg_w);
+        return pow( ret, vec3(1.0/2.2) );
+    }
+    
+    //note: [0;1]
+    float rand( vec2 n ) {
+      return fract(sin(dot(n.xy, vec2(12.9898, 78.233)))* 43758.5453);
+    }
+    //note: [-1;1]
+    float srand( vec2 n ) {
+        return rand(n) * 2.0 - 1.0;
+    }
+    
+    float mytrunc( float x, float num_levels )
+    {
+        return floor(x*num_levels) / num_levels;
+    }
+    vec2 mytrunc( vec2 x, float num_levels )
+    {
+        return floor(x*num_levels) / num_levels;
+    }
+    
+    void mainImage()
+    {
+    //vec2 uv = openfl_TextureCoordv.xy;
+    vec2 fragCoord = openfl_TextureCoordv*openfl_TextureSize;
+    vec2 iResolution = openfl_TextureSize;
+    
+        vec2 uv = fragCoord.xy / iResolution.xy;
+        uv.y = uv.y;
+        
+        float time = mod(iTime*100.0, 32.0)/10.0; // + modelmat[0].x + modelmat[0].z;
+        
+        float gnm = sat( GLITCH );
+        float rnd0 = rand( mytrunc( vec2(time, time), 6.0 ) );
+        float r0 = sat((1.0-gnm)*0.7 + rnd0);
+        float rnd1 = rand( vec2(mytrunc( uv.x, 10.0*r0 ), time) ); //horz
+        //float r1 = 1.0f - sat( (1.0f-gnm)*0.5f + rnd1 );
+        float r1 = 0.5 - 0.5 * gnm + rnd1;
+        //r1 = 1.0 - max( 0.0, ((r1<1.0) ? r1 : 0.9999999) ); //note: weird ass bug on old drivers
+        float rnd2 = rand( vec2(mytrunc( uv.y, 40.0*r1 ), time) ); //vert
+        float r2 = sat( rnd2 );
+        float rnd3 = rand( vec2(mytrunc( uv.y, 10.0*r0 ), time) );
+        float r3 = (1.0-sat(rnd3+0.8)) - 0.1;
+    
+        float pxrnd = rand( uv + time );
+    
+        float ofs = 0.05 * r2 * GLITCH ;
+        ofs += 0.5 * pxrnd * ofs;
+    
+        uv.y += 0.2 * r3 * GLITCH;
+        
+        const float RCP_NUM_SAMPLES_F = 1.0/ float(NUM_SAMPLES);
+        
+        vec4 sum = vec4(0.0);
+        vec3 wsum = vec3(0.0);
+        for( int i=0; i<NUM_SAMPLES; ++i )
+        {
+            float t = float(i) * RCP_NUM_SAMPLES_F;
+            uv.x = sat( uv.x + ofs * t );
+            vec4 samplecol = texture( iChannel0, uv);
+            vec3 s = spectrum_offset( t );
+            samplecol.rgb = samplecol.rgb * s;
+            sum += samplecol;
+            wsum += s;
+        }
+        sum.rgb /= wsum;
+        sum.a *= RCP_NUM_SAMPLES_F;
+    
+        fragColor.a = sum.a;
+        fragColor.rgb = sum.rgb; // * outcol0.a;
+    }
+    ')
+
+    public function new() {
+        super();
+    }
+}
+
 
 class ScanlineEffect extends Effect
 {
@@ -449,18 +580,26 @@ class Tiltshift extends FlxShader
 class StaticEffect extends Effect{
 	
 	public var shader:StaticShader = new StaticShader();
-	
-	public function new(strength)
-    {
-		shader.strength.value = [strength];
-        shader.iTime.value = [FlxG.random.float(0,8)];
-		PlayState.instance.shaderUpdates.push(update);
+
+    public var strength(default, set):Float = 0;
+
+	public function new():Void
+	{
+        set_strength(0);
+        shader.iTime.value = [0];
 	}
-	
-	public override function update(elapsed:Float){
+
+	public override function update(elapsed:Float):Void
+	{
 		shader.iTime.value[0] += elapsed;
 	}
-	
+
+    function set_strength(value:Float):Float
+        {
+            strength = value;
+            shader.strength.value = [value];
+            return value;
+        }
 }
 class StaticShader extends FlxShader{
 	@:glFragmentSource('
@@ -554,11 +693,19 @@ class Grey2Effect extends Effect{
 	
 	public var shader:Grey2Shader = new Grey2Shader();
 	
-	public function new(iStrength)
-    {
-		shader.iStrength.value = [iStrength];
+    public var iStrength(default, set):Float = 0;
+
+	public function new():Void
+	{
+        set_iStrength(0);
 	}
-	
+
+    function set_iStrength(value:Float):Float
+        {
+            iStrength = value;
+            shader.iStrength.value = [value];
+            return value;
+        }
 	
 }
 class Grey2Shader extends FlxShader{
@@ -2815,117 +2962,60 @@ class ChromBordesEffectShader extends FlxShader
     }
 }
 
-class ChromBlockedEffect extends Effect
+class ChromBordes2Effect extends Effect
 {
-    public var shader:ChromBlockedShader;
+    public var shader:ChromBordes2EffectShader;
 
-    public var shake_power(default, set):Float = 0;
-    public var iTime:Float = 0.0;
-
+    public var distortion(default, set):Float = 0;
+  
     public function new()
     {
-        shader = new ChromBlockedShader();
-        set_shake_power(0);
-
-        shader.iTime.value = [iTime];
+        shader = new ChromBordes2EffectShader();
+        set_distortion(0);
     }
 
-    function set_shake_power(value:Float):Float {
-        this.shake_power = value;
-        shader.shake_power.value = [value];
-        return this.shake_power;
+    function set_distortion(value:Float):Float {
+        this.distortion = value;
+        shader.distortion.value = [value];
+        return this.distortion;
     }
-
-    function set_shake_rate(value:Float):Float {
-        this.shake_power = value;
-        shader.shake_power.value = [value];
-        return this.shake_power;
-    }
-
-    function set_shake_speed(value:Float):Float {
-        this.shake_power = value;
-        shader.shake_power.value = [value];
-        return this.shake_power;
-    }
-
-    function set_shake_block_size(value:Float):Float {
-        this.shake_power = value;
-        shader.shake_power.value = [value];
-        return this.shake_power;
-    }
-
-    function set_shake_power(value:Float):Float {
-        this.shake_power = value;
-        shader.shake_power.value = [value];
-        return this.shake_power;
-    }
-
-    function set_shake_color_rate(value:Float):Float {
-        this.shake_color_rate = value; 
-        shader.shake_color_rate.value = [value];
-        return this.shake_color_rate;
-    }
-
-    override public function update(elapsed:Float):Void
-        { 
-            iTime += elapsed;
-        }
 }
 
-class ChromBlockedShader extends FlxShader
+class ChromBordes2EffectShader extends FlxShader
 {
     @:glFragmentSource('
     #pragma header
-    /*
-    https://godotshaders.com/shader/glitch-effect-shader/
-    */
+
+    //     CHROMATIC ABBERATION https://www.shadertoy.com/view/wsdBWM
+    //     by Tech_ (ported by lunar) 
     
-    // 振動の強さ
-    uniform float shake_power; 
-    // 振動率
-    uniform float shake_rate;
-    // 振動速度
-    uniform float shake_speed;
-    // 振動ブロックサイズ 
-    uniform float shake_block_size;
-    // 色の分離率
-    uniform float shake_color_rate;
+    uniform float distortion;
     
-    float random( float seed )
+    vec2 PincushionDistortion(in vec2 uv, float strength) 
     {
-        return fract( 543.2543 * sin( dot( vec2( seed, seed ), vec2( 3525.46, -54.3415 ) ) ) );
+        vec2 st = uv - 0.5;
+        float uvA = atan(st.x, st.y);
+        float uvD = dot(st, st);
+        return 0.5 + vec2(sin(uvA), cos(uvA)) * sqrt(uvD) * (1.0 - strength * uvD);
     }
     
-    void fragment( out vec4 fragColor, in vec2 fragCoord )
+    vec4 ChromaticAbberation(sampler2D tex, in vec2 uv) 
     {
-        float enable_shift = float(
-            random( floor( iTime * shake_speed ) )
-        <	shake_rate
-        );
+        float rChannel = flixel_texture2D(tex, PincushionDistortion(uv, ((0.3 * distortion) * 0.9) + (distortion * 0.1))).r;
+        float gChannel = flixel_texture2D(tex, PincushionDistortion(uv, ((0.15 * distortion) * 0.9) + (distortion * 0.1))).g;
+        float bChannel = flixel_texture2D(tex, PincushionDistortion(uv, ((0.075 * distortion) * 0.9) + (distortion * 0.1))).b;
+        vec3 color = vec3(rChannel, gChannel, bChannel);
     
-        vec2 fixed_uv = fragCoord.xy / iResolution.xy;
-        fixed_uv.x += (
-            random(
-                ( floor( fixed_uv.y * shake_block_size ) / shake_block_size )
-            +	iTime
-            ) - 0.5
-        ) * shake_power * enable_shift;
-    
-        vec4 pixel_color = texture( iChannel0, fixed_uv );
-        pixel_color.r = mix(
-            pixel_color.r
-        ,	texture( iChannel0, fixed_uv + vec2( shake_color_rate, 0.0 ) ).r
-        ,	enable_shift
-        );
-        pixel_color.b = mix(
-            pixel_color.b
-        ,	texture( iChannel0, fixed_uv + vec2( -shake_color_rate, 0.0 ) ).b
-        ,	enable_shift
-        );
-        fragColor = pixel_color;
+        vec4 retColor = vec4(color, flixel_texture2D(tex, uv).a);
+        return retColor;
     }
-    ')
-    public function new() {
+    
+    void main()
+    {
+        gl_FragColor = ChromaticAbberation(bitmap, openfl_TextureCoordv);
+    }')
+    public function new()
+    {
         super();
     }
 }

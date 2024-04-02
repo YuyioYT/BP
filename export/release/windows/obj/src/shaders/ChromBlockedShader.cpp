@@ -9,9 +9,6 @@
 #ifndef INCLUDED_openfl_display_Shader
 #include <openfl/display/Shader.h>
 #endif
-#ifndef INCLUDED_openfl_display_ShaderInput_openfl_display_BitmapData
-#include <openfl/display/ShaderInput_openfl_display_BitmapData.h>
-#endif
 #ifndef INCLUDED_openfl_display_ShaderParameter_Float
 #include <openfl/display/ShaderParameter_Float.h>
 #endif
@@ -19,20 +16,20 @@
 #include <shaders/ChromBlockedShader.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_80d7f37fa062850c_2946_new,"shaders.ChromBlockedShader","new",0x7a2ae278,"shaders.ChromBlockedShader.new","shaders/Shaders.hx",2946,0x7800d7f1)
+HX_DEFINE_STACK_FRAME(_hx_pos_80d7f37fa062850c_282_new,"shaders.ChromBlockedShader","new",0x7a2ae278,"shaders.ChromBlockedShader.new","shaders/Shaders.hx",282,0x7800d7f1)
 namespace shaders{
 
 void ChromBlockedShader_obj::__construct(){
-            	HX_STACKFRAME(&_hx_pos_80d7f37fa062850c_2946_new)
+            	HX_STACKFRAME(&_hx_pos_80d7f37fa062850c_282_new)
 HXLINE( 182)		if (::hx::IsNull( this->_hx___glFragmentSource )) {
-HXLINE( 184)			this->_hx___glFragmentSource = HX_("\n    varying float openfl_Alphav;\n\t\tvarying vec4 openfl_ColorMultiplierv;\n\t\tvarying vec4 openfl_ColorOffsetv;\n\t\tvarying vec2 openfl_TextureCoordv;\n\n\t\tuniform bool openfl_HasColorTransform;\n\t\tuniform vec2 openfl_TextureSize;\n\t\tuniform sampler2D bitmap;\n\n\t\tuniform bool hasTransform;\n\t\tuniform bool hasColorTransform;\n\n\t\tvec4 flixel_texture2D(sampler2D bitmap, vec2 coord)\n\t\t{\n\t\t\tvec4 color = texture2D(bitmap, coord);\n\t\t\tif (!hasTransform)\n\t\t\t{\n\t\t\t\treturn color;\n\t\t\t}\n\n\t\t\tif (color.a == 0.0)\n\t\t\t{\n\t\t\t\treturn vec4(0.0, 0.0, 0.0, 0.0);\n\t\t\t}\n\n\t\t\tif (!hasColorTransform)\n\t\t\t{\n\t\t\t\treturn color * openfl_Alphav;\n\t\t\t}\n\n\t\t\tcolor = vec4(color.rgb / color.a, color.a);\n\n\t\t\tmat4 colorMultiplier = mat4(0);\n\t\t\tcolorMultiplier[0][0] = openfl_ColorMultiplierv.x;\n\t\t\tcolorMultiplier[1][1] = openfl_ColorMultiplierv.y;\n\t\t\tcolorMultiplier[2][2] = openfl_ColorMultiplierv.z;\n\t\t\tcolorMultiplier[3][3] = openfl_ColorMultiplierv.w;\n\n\t\t\tcolor = clamp(openfl_ColorOffsetv + (color * colorMultiplier), 0.0, 1.0);\n\n\t\t\tif (color.a > 0.0)\n\t\t\t{\n\t\t\t\treturn vec4(color.rgb * color.a * openfl_Alphav, color.a * openfl_Alphav);\n\t\t\t}\n\t\t\treturn vec4(0.0, 0.0, 0.0, 0.0);\n\t\t}\n\t\n\n    /*\n    https://www.shadertoy.com/view/4dXBW2\n    */\n    \n    uniform vec3 iResolution;\n    uniform float iTime;\n    uniform float floatGlitch;\n    uniform sampler2D iChannel0;\n    \n    float sat(float t) {\n        return clamp(t, 0.0, 1.0);\n    }\n    \n    vec2 sat(vec2 t) {\n        return clamp(t, 0.0, 1.0);\n    }\n    \n    float remap(float t, float a, float b) {\n        return sat((t - a) / (b - a));\n    }\n    \n    float linterp(float t) {\n        return sat(1.0 - abs(2.0 * t - 1.0));\n    }\n    \n    vec3 spectrum_offset(float t) {\n        vec3 ret;\n        float lo = step(t, 0.5);\n        float hi = 1.0 - lo;\n        float w = linterp(remap(t, 1.0 / 6.0, 5.0 / 6.0));\n        float neg_w = 1.0 - w;\n        ret = vec3(lo, 1.0, hi) * vec3(neg_w, w, neg_w);\n        return pow(ret, vec3(1.0 / 2.2));\n    }\n    \n    float rand(vec2 n) {\n        return fract(sin(dot(n.xy, vec2(12.9898, 78.233))) * 43758.5453);\n    }\n    \n    float srand(vec2 n) {\n        return rand(n) * 2.0 - 1.0;\n    }\n    \n    float mytrunc(float x, float num_levels) {\n        return floor(x * num_levels) / num_levels;\n    }\n    \n    vec2 mytrunc(vec2 x, float num_levels) {\n        return floor(x * num_levels) / num_levels;\n    }\n    \n    void main() {\n        vec2 uv = gl_FragCoord.xy / iResolution.xy;\n        uv.y = uv.y;\n    \n        float time = mod(iTime * 100.0, 32.0) / 110.0;\n    \n        float GLITCH = 0.1 + floatGlitch / iResolution.x;\n    \n        float gnm = sat(GLITCH);\n        float rnd0 = rand(mytrunc(vec2(time, time), 6.0));\n        float r0 = sat((1.0 - gnm) * 0.7 + rnd0);\n        float rnd1 = rand(vec2(mytrunc(uv.x, 10.0 * r0), time));\n        float r1 = 0.5 - 0.5 * gnm + rnd1;\n        r1 = 1.0 - max(0.0, ((r1 < 1.0) ? r1 : 0.9999999));\n        float rnd2 = rand(vec2(mytrunc(uv.y, 40.0 * r1), time));\n        float r2 = sat(rnd2);\n    \n        float rnd3 = rand(vec2(mytrunc(uv.y, 10.0 * r0), time));\n        float r3 = (1.0 - sat(rnd3 + 0.8)) - 0.1;\n    \n        float pxrnd = rand(uv + time);\n    \n        float ofs = 0.05 * r2 * GLITCH * (rnd0 > 0.5 ? 1.0 : -1.0);\n        ofs += 0.5 * pxrnd * ofs;\n    \n        uv.y += 0.1 * r3 * GLITCH;\n    \n        const int NUM_SAMPLES = 20;\n        const float RCP_NUM_SAMPLES_F = 1.0 / float(NUM_SAMPLES);\n    \n        vec4 sum = vec4(0.0);\n        vec3 wsum = vec3(0.0);\n        for (int i = 0; i < NUM_SAMPLES; ++i) {\n            float t = float(i) * RCP_NUM_SAMPLES_F;\n            uv.x = sat(uv.x + ofs * t);\n            vec4 samplecol = texture2D(iChannel0, uv, -10.0);\n            vec3 s = spectrum_offset(t);\n            samplecol.rgb = samplecol.rgb * s;\n            sum += samplecol;\n            wsum += s;\n        }\n        sum.rgb /= wsum;\n        sum.a *= RCP_NUM_SAMPLES_F;\n    \n        gl_FragColor = sum;\n    }",c4,80,12,b9);
+HXLINE( 184)			this->_hx___glFragmentSource = HX_("\n    varying float openfl_Alphav;\n\t\tvarying vec4 openfl_ColorMultiplierv;\n\t\tvarying vec4 openfl_ColorOffsetv;\n\t\tvarying vec2 openfl_TextureCoordv;\n\n\t\tuniform bool openfl_HasColorTransform;\n\t\tuniform vec2 openfl_TextureSize;\n\t\tuniform sampler2D bitmap;\n\n\t\tuniform bool hasTransform;\n\t\tuniform bool hasColorTransform;\n\n\t\tvec4 flixel_texture2D(sampler2D bitmap, vec2 coord)\n\t\t{\n\t\t\tvec4 color = texture2D(bitmap, coord);\n\t\t\tif (!hasTransform)\n\t\t\t{\n\t\t\t\treturn color;\n\t\t\t}\n\n\t\t\tif (color.a == 0.0)\n\t\t\t{\n\t\t\t\treturn vec4(0.0, 0.0, 0.0, 0.0);\n\t\t\t}\n\n\t\t\tif (!hasColorTransform)\n\t\t\t{\n\t\t\t\treturn color * openfl_Alphav;\n\t\t\t}\n\n\t\t\tcolor = vec4(color.rgb / color.a, color.a);\n\n\t\t\tmat4 colorMultiplier = mat4(0);\n\t\t\tcolorMultiplier[0][0] = openfl_ColorMultiplierv.x;\n\t\t\tcolorMultiplier[1][1] = openfl_ColorMultiplierv.y;\n\t\t\tcolorMultiplier[2][2] = openfl_ColorMultiplierv.z;\n\t\t\tcolorMultiplier[3][3] = openfl_ColorMultiplierv.w;\n\n\t\t\tcolor = clamp(openfl_ColorOffsetv + (color * colorMultiplier), 0.0, 1.0);\n\n\t\t\tif (color.a > 0.0)\n\t\t\t{\n\t\t\t\treturn vec4(color.rgb * color.a * openfl_Alphav, color.a * openfl_Alphav);\n\t\t\t}\n\t\t\treturn vec4(0.0, 0.0, 0.0, 0.0);\n\t\t}\n\t\n\n    uniform float iTime;\n    uniform float GLITCH;\n    #define iChannel0 bitmap\n    #define texture flixel_texture2D\n    #define fragColor gl_FragColor\n    #define mainImage main\n    const int NUM_SAMPLES = 5;\n        \n        \n    float sat( float t ) {\n        return clamp( t, 0.0, 1.0 );\n    }\n    \n    vec2 sat( vec2 t ) {\n        return clamp( t, 0.0, 1.0 );\n    }\n    float remap  ( float t, float a, float b ) {\n        return sat( (t - a) / (b - a) );\n    }\n    float linterp( float t ) {\n        return sat( 1.0 - abs( 2.0*t - 1.0 ) );\n    }\n    \n    vec3 spectrum_offset( float t ) {\n        vec3 ret;\n        float lo = step(t,0.5);\n        float hi = 1.0-lo;\n        float w = linterp( remap( t, 1.0/6.0, 5.0/6.0 ) );\n        float neg_w = 1.0-w;\n        ret = vec3(lo,1.0,hi) * vec3(neg_w, w, neg_w);\n        return pow( ret, vec3(1.0/2.2) );\n    }\n    \n    //note: [0;1]\n    float rand( vec2 n ) {\n      return fract(sin(dot(n.xy, vec2(12.9898, 78.233)))* 43758.5453);\n    }\n    //note: [-1;1]\n    float srand( vec2 n ) {\n        return rand(n) * 2.0 - 1.0;\n    }\n    \n    float mytrunc( float x, float num_levels )\n    {\n        return floor(x*num_levels) / num_levels;\n    }\n    vec2 mytrunc( vec2 x, float num_levels )\n    {\n        return floor(x*num_levels) / num_levels;\n    }\n    \n    void mainImage()\n    {\n    //vec2 uv = openfl_TextureCoordv.xy;\n    vec2 fragCoord = openfl_TextureCoordv*openfl_TextureSize;\n    vec2 iResolution = openfl_TextureSize;\n    \n        vec2 uv = fragCoord.xy / iResolution.xy;\n        uv.y = uv.y;\n        \n        float time = mod(iTime*100.0, 32.0)/10.0; // + modelmat[0].x + modelmat[0].z;\n        \n        float gnm = sat( GLITCH );\n        float rnd0 = rand( mytrunc( vec2(time, time), 6.0 ) );\n        float r0 = sat((1.0-gnm)*0.7 + rnd0);\n        float rnd1 = rand( vec2(mytrunc( uv.x, 10.0*r0 ), time) ); //horz\n        //float r1 = 1.0f - sat( (1.0f-gnm)*0.5f + rnd1 );\n        float r1 = 0.5 - 0.5 * gnm + rnd1;\n        //r1 = 1.0 - max( 0.0, ((r1<1.0) ? r1 : 0.9999999) ); //note: weird ass bug on old drivers\n        float rnd2 = rand( vec2(mytrunc( uv.y, 40.0*r1 ), time) ); //vert\n        float r2 = sat( rnd2 );\n        float rnd3 = rand( vec2(mytrunc( uv.y, 10.0*r0 ), time) );\n        float r3 = (1.0-sat(rnd3+0.8)) - 0.1;\n    \n        float pxrnd = rand( uv + time );\n    \n        float ofs = 0.05 * r2 * GLITCH ;\n        ofs += 0.5 * pxrnd * ofs;\n    \n        uv.y += 0.2 * r3 * GLITCH;\n        \n        const float RCP_NUM_SAMPLES_F = 1.0/ float(NUM_SAMPLES);\n        \n        vec4 sum = vec4(0.0);\n        vec3 wsum = vec3(0.0);\n        for( int i=0; i<NUM_SAMPLES; ++i )\n        {\n            float t = float(i) * RCP_NUM_SAMPLES_F;\n            uv.x = sat( uv.x + ofs * t );\n            vec4 samplecol = texture( iChannel0, uv);\n            vec3 s = spectrum_offset( t );\n            samplecol.rgb = samplecol.rgb * s;\n            sum += samplecol;\n            wsum += s;\n        }\n        sum.rgb /= wsum;\n        sum.a *= RCP_NUM_SAMPLES_F;\n    \n        fragColor.a = sum.a;\n        fragColor.rgb = sum.rgb; // * outcol0.a;\n    }\n    ",43,08,14,14);
             		}
 HXLINE( 174)		if (::hx::IsNull( this->_hx___glVertexSource )) {
 HXLINE( 176)			this->_hx___glVertexSource = HX_("\n\t\tattribute float openfl_Alpha;\n\t\tattribute vec4 openfl_ColorMultiplier;\n\t\tattribute vec4 openfl_ColorOffset;\n\t\tattribute vec4 openfl_Position;\n\t\tattribute vec2 openfl_TextureCoord;\n\n\t\tvarying float openfl_Alphav;\n\t\tvarying vec4 openfl_ColorMultiplierv;\n\t\tvarying vec4 openfl_ColorOffsetv;\n\t\tvarying vec2 openfl_TextureCoordv;\n\n\t\tuniform mat4 openfl_Matrix;\n\t\tuniform bool openfl_HasColorTransform;\n\t\tuniform vec2 openfl_TextureSize;\n\n\t\t\n\t\tattribute float alpha;\n\t\tattribute vec4 colorMultiplier;\n\t\tattribute vec4 colorOffset;\n\t\tuniform bool hasColorTransform;\n\t\t\n\t\tvoid main(void)\n\t\t{\n\t\t\topenfl_Alphav = openfl_Alpha;\n\t\topenfl_TextureCoordv = openfl_TextureCoord;\n\n\t\tif (openfl_HasColorTransform) {\n\n\t\t\topenfl_ColorMultiplierv = openfl_ColorMultiplier;\n\t\t\topenfl_ColorOffsetv = openfl_ColorOffset / 255.0;\n\n\t\t}\n\n\t\tgl_Position = openfl_Matrix * openfl_Position;\n\n\t\t\t\n\t\t\topenfl_Alphav = openfl_Alpha * alpha;\n\t\t\t\n\t\t\tif (hasColorTransform)\n\t\t\t{\n\t\t\t\topenfl_ColorOffsetv = colorOffset / 255.0;\n\t\t\t\topenfl_ColorMultiplierv = colorMultiplier;\n\t\t\t}\n\t\t}",f3,1e,fa,79);
             		}
-HXLINE(2947)		super::__construct();
-HXLINE(2845)		this->_hx___isGenerated = true;
-HXDLIN(2845)		this->_hx___initGL();
+HXLINE( 283)		super::__construct();
+HXLINE( 176)		this->_hx___isGenerated = true;
+HXDLIN( 176)		this->_hx___initGL();
             	}
 
 Dynamic ChromBlockedShader_obj::__CreateEmpty() { return new ChromBlockedShader_obj; }
@@ -79,20 +76,16 @@ ChromBlockedShader_obj::ChromBlockedShader_obj()
 void ChromBlockedShader_obj::__Mark(HX_MARK_PARAMS)
 {
 	HX_MARK_BEGIN_CLASS(ChromBlockedShader);
-	HX_MARK_MEMBER_NAME(iResolution,"iResolution");
 	HX_MARK_MEMBER_NAME(iTime,"iTime");
-	HX_MARK_MEMBER_NAME(floatGlitch,"floatGlitch");
-	HX_MARK_MEMBER_NAME(iChannel0,"iChannel0");
+	HX_MARK_MEMBER_NAME(GLITCH,"GLITCH");
 	 ::flixel::graphics::tile::FlxGraphicsShader_obj::__Mark(HX_MARK_ARG);
 	HX_MARK_END_CLASS();
 }
 
 void ChromBlockedShader_obj::__Visit(HX_VISIT_PARAMS)
 {
-	HX_VISIT_MEMBER_NAME(iResolution,"iResolution");
 	HX_VISIT_MEMBER_NAME(iTime,"iTime");
-	HX_VISIT_MEMBER_NAME(floatGlitch,"floatGlitch");
-	HX_VISIT_MEMBER_NAME(iChannel0,"iChannel0");
+	HX_VISIT_MEMBER_NAME(GLITCH,"GLITCH");
 	 ::flixel::graphics::tile::FlxGraphicsShader_obj::__Visit(HX_VISIT_ARG);
 }
 
@@ -102,12 +95,8 @@ void ChromBlockedShader_obj::__Visit(HX_VISIT_PARAMS)
 	case 5:
 		if (HX_FIELD_EQ(inName,"iTime") ) { return ::hx::Val( iTime ); }
 		break;
-	case 9:
-		if (HX_FIELD_EQ(inName,"iChannel0") ) { return ::hx::Val( iChannel0 ); }
-		break;
-	case 11:
-		if (HX_FIELD_EQ(inName,"iResolution") ) { return ::hx::Val( iResolution ); }
-		if (HX_FIELD_EQ(inName,"floatGlitch") ) { return ::hx::Val( floatGlitch ); }
+	case 6:
+		if (HX_FIELD_EQ(inName,"GLITCH") ) { return ::hx::Val( GLITCH ); }
 	}
 	return super::__Field(inName,inCallProp);
 }
@@ -118,41 +107,31 @@ void ChromBlockedShader_obj::__Visit(HX_VISIT_PARAMS)
 	case 5:
 		if (HX_FIELD_EQ(inName,"iTime") ) { iTime=inValue.Cast<  ::openfl::display::ShaderParameter_Float >(); return inValue; }
 		break;
-	case 9:
-		if (HX_FIELD_EQ(inName,"iChannel0") ) { iChannel0=inValue.Cast<  ::openfl::display::ShaderInput_openfl_display_BitmapData >(); return inValue; }
-		break;
-	case 11:
-		if (HX_FIELD_EQ(inName,"iResolution") ) { iResolution=inValue.Cast<  ::openfl::display::ShaderParameter_Float >(); return inValue; }
-		if (HX_FIELD_EQ(inName,"floatGlitch") ) { floatGlitch=inValue.Cast<  ::openfl::display::ShaderParameter_Float >(); return inValue; }
+	case 6:
+		if (HX_FIELD_EQ(inName,"GLITCH") ) { GLITCH=inValue.Cast<  ::openfl::display::ShaderParameter_Float >(); return inValue; }
 	}
 	return super::__SetField(inName,inValue,inCallProp);
 }
 
 void ChromBlockedShader_obj::__GetFields(Array< ::String> &outFields)
 {
-	outFields->push(HX_("iResolution",f5,36,34,3f));
 	outFields->push(HX_("iTime",16,e1,e8,ac));
-	outFields->push(HX_("floatGlitch",b1,ea,e9,4a));
-	outFields->push(HX_("iChannel0",96,77,a4,c9));
+	outFields->push(HX_("GLITCH",f5,3f,4b,56));
 	super::__GetFields(outFields);
 };
 
 #ifdef HXCPP_SCRIPTABLE
 static ::hx::StorageInfo ChromBlockedShader_obj_sMemberStorageInfo[] = {
-	{::hx::fsObject /*  ::openfl::display::ShaderParameter_Float */ ,(int)offsetof(ChromBlockedShader_obj,iResolution),HX_("iResolution",f5,36,34,3f)},
 	{::hx::fsObject /*  ::openfl::display::ShaderParameter_Float */ ,(int)offsetof(ChromBlockedShader_obj,iTime),HX_("iTime",16,e1,e8,ac)},
-	{::hx::fsObject /*  ::openfl::display::ShaderParameter_Float */ ,(int)offsetof(ChromBlockedShader_obj,floatGlitch),HX_("floatGlitch",b1,ea,e9,4a)},
-	{::hx::fsObject /*  ::openfl::display::ShaderInput_openfl_display_BitmapData */ ,(int)offsetof(ChromBlockedShader_obj,iChannel0),HX_("iChannel0",96,77,a4,c9)},
+	{::hx::fsObject /*  ::openfl::display::ShaderParameter_Float */ ,(int)offsetof(ChromBlockedShader_obj,GLITCH),HX_("GLITCH",f5,3f,4b,56)},
 	{ ::hx::fsUnknown, 0, null()}
 };
 static ::hx::StaticInfo *ChromBlockedShader_obj_sStaticStorageInfo = 0;
 #endif
 
 static ::String ChromBlockedShader_obj_sMemberFields[] = {
-	HX_("iResolution",f5,36,34,3f),
 	HX_("iTime",16,e1,e8,ac),
-	HX_("floatGlitch",b1,ea,e9,4a),
-	HX_("iChannel0",96,77,a4,c9),
+	HX_("GLITCH",f5,3f,4b,56),
 	::String(null()) };
 
 ::hx::Class ChromBlockedShader_obj::__mClass;

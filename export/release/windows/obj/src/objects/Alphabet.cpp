@@ -54,19 +54,19 @@
 #endif
 
 HX_DEFINE_STACK_FRAME(_hx_pos_25c23e7e07a93d18_12_new,"objects.Alphabet","new",0xe6fd6f1f,"objects.Alphabet.new","objects/Alphabet.hx",12,0x083c86d0)
-HX_LOCAL_STACK_FRAME(_hx_pos_25c23e7e07a93d18_57_setAlignmentFromString,"objects.Alphabet","setAlignmentFromString",0xf8f58cbd,"objects.Alphabet.setAlignmentFromString","objects/Alphabet.hx",57,0x083c86d0)
-HX_LOCAL_STACK_FRAME(_hx_pos_25c23e7e07a93d18_69_set_alignment,"objects.Alphabet","set_alignment",0x90b4bc45,"objects.Alphabet.set_alignment","objects/Alphabet.hx",69,0x083c86d0)
-HX_LOCAL_STACK_FRAME(_hx_pos_25c23e7e07a93d18_77_updateAlignment,"objects.Alphabet","updateAlignment",0xd204f4d9,"objects.Alphabet.updateAlignment","objects/Alphabet.hx",77,0x083c86d0)
-HX_LOCAL_STACK_FRAME(_hx_pos_25c23e7e07a93d18_97_set_text,"objects.Alphabet","set_text",0x90f56e8b,"objects.Alphabet.set_text","objects/Alphabet.hx",97,0x083c86d0)
-HX_LOCAL_STACK_FRAME(_hx_pos_25c23e7e07a93d18_107_clearLetters,"objects.Alphabet","clearLetters",0xc9cf6021,"objects.Alphabet.clearLetters","objects/Alphabet.hx",107,0x083c86d0)
-HX_LOCAL_STACK_FRAME(_hx_pos_25c23e7e07a93d18_125_setScale,"objects.Alphabet","setScale",0x9ce6c469,"objects.Alphabet.setScale","objects/Alphabet.hx",125,0x083c86d0)
-HX_LOCAL_STACK_FRAME(_hx_pos_25c23e7e07a93d18_140_set_scaleX,"objects.Alphabet","set_scaleX",0x2fb43fec,"objects.Alphabet.set_scaleX","objects/Alphabet.hx",140,0x083c86d0)
-HX_LOCAL_STACK_FRAME(_hx_pos_25c23e7e07a93d18_151_set_scaleY,"objects.Alphabet","set_scaleY",0x2fb43fed,"objects.Alphabet.set_scaleY","objects/Alphabet.hx",151,0x083c86d0)
-HX_LOCAL_STACK_FRAME(_hx_pos_25c23e7e07a93d18_162_softReloadLetters,"objects.Alphabet","softReloadLetters",0x324db629,"objects.Alphabet.softReloadLetters","objects/Alphabet.hx",162,0x083c86d0)
-HX_LOCAL_STACK_FRAME(_hx_pos_25c23e7e07a93d18_178_update,"objects.Alphabet","update",0x5df268aa,"objects.Alphabet.update","objects/Alphabet.hx",178,0x083c86d0)
-HX_LOCAL_STACK_FRAME(_hx_pos_25c23e7e07a93d18_272_snapToPosition,"objects.Alphabet","snapToPosition",0x56a3fbcf,"objects.Alphabet.snapToPosition","objects/Alphabet.hx",272,0x083c86d0)
-HX_LOCAL_STACK_FRAME(_hx_pos_25c23e7e07a93d18_284_createLetters,"objects.Alphabet","createLetters",0x8cde98b0,"objects.Alphabet.createLetters","objects/Alphabet.hx",284,0x083c86d0)
-HX_LOCAL_STACK_FRAME(_hx_pos_25c23e7e07a93d18_281_boot,"objects.Alphabet","boot",0x2edccc93,"objects.Alphabet.boot","objects/Alphabet.hx",281,0x083c86d0)
+HX_LOCAL_STACK_FRAME(_hx_pos_25c23e7e07a93d18_54_setAlignmentFromString,"objects.Alphabet","setAlignmentFromString",0xf8f58cbd,"objects.Alphabet.setAlignmentFromString","objects/Alphabet.hx",54,0x083c86d0)
+HX_LOCAL_STACK_FRAME(_hx_pos_25c23e7e07a93d18_66_set_alignment,"objects.Alphabet","set_alignment",0x90b4bc45,"objects.Alphabet.set_alignment","objects/Alphabet.hx",66,0x083c86d0)
+HX_LOCAL_STACK_FRAME(_hx_pos_25c23e7e07a93d18_74_updateAlignment,"objects.Alphabet","updateAlignment",0xd204f4d9,"objects.Alphabet.updateAlignment","objects/Alphabet.hx",74,0x083c86d0)
+HX_LOCAL_STACK_FRAME(_hx_pos_25c23e7e07a93d18_94_set_text,"objects.Alphabet","set_text",0x90f56e8b,"objects.Alphabet.set_text","objects/Alphabet.hx",94,0x083c86d0)
+HX_LOCAL_STACK_FRAME(_hx_pos_25c23e7e07a93d18_104_clearLetters,"objects.Alphabet","clearLetters",0xc9cf6021,"objects.Alphabet.clearLetters","objects/Alphabet.hx",104,0x083c86d0)
+HX_LOCAL_STACK_FRAME(_hx_pos_25c23e7e07a93d18_122_setScale,"objects.Alphabet","setScale",0x9ce6c469,"objects.Alphabet.setScale","objects/Alphabet.hx",122,0x083c86d0)
+HX_LOCAL_STACK_FRAME(_hx_pos_25c23e7e07a93d18_137_set_scaleX,"objects.Alphabet","set_scaleX",0x2fb43fec,"objects.Alphabet.set_scaleX","objects/Alphabet.hx",137,0x083c86d0)
+HX_LOCAL_STACK_FRAME(_hx_pos_25c23e7e07a93d18_148_set_scaleY,"objects.Alphabet","set_scaleY",0x2fb43fed,"objects.Alphabet.set_scaleY","objects/Alphabet.hx",148,0x083c86d0)
+HX_LOCAL_STACK_FRAME(_hx_pos_25c23e7e07a93d18_159_softReloadLetters,"objects.Alphabet","softReloadLetters",0x324db629,"objects.Alphabet.softReloadLetters","objects/Alphabet.hx",159,0x083c86d0)
+HX_LOCAL_STACK_FRAME(_hx_pos_25c23e7e07a93d18_175_update,"objects.Alphabet","update",0x5df268aa,"objects.Alphabet.update","objects/Alphabet.hx",175,0x083c86d0)
+HX_LOCAL_STACK_FRAME(_hx_pos_25c23e7e07a93d18_232_snapToPosition,"objects.Alphabet","snapToPosition",0x56a3fbcf,"objects.Alphabet.snapToPosition","objects/Alphabet.hx",232,0x083c86d0)
+HX_LOCAL_STACK_FRAME(_hx_pos_25c23e7e07a93d18_244_createLetters,"objects.Alphabet","createLetters",0x8cde98b0,"objects.Alphabet.createLetters","objects/Alphabet.hx",244,0x083c86d0)
+HX_LOCAL_STACK_FRAME(_hx_pos_25c23e7e07a93d18_241_boot,"objects.Alphabet","boot",0x2edccc93,"objects.Alphabet.boot","objects/Alphabet.hx",241,0x083c86d0)
 namespace objects{
 
 void Alphabet_obj::__construct(Float x,Float y,::String __o_text, ::Dynamic __o_bold){
@@ -75,36 +75,33 @@ void Alphabet_obj::__construct(Float x,Float y,::String __o_text, ::Dynamic __o_
             		 ::Dynamic bold = __o_bold;
             		if (::hx::IsNull(__o_bold)) bold = true;
             	HX_GC_STACKFRAME(&_hx_pos_25c23e7e07a93d18_12_new)
-HXLINE(  43)		 ::flixel::math::FlxBasePoint this1 =  ::flixel::math::FlxBasePoint_obj::__alloc( HX_CTX ,0,0);
-HXDLIN(  43)		this->startPosition = this1;
-HXLINE(  42)		 ::flixel::math::FlxBasePoint this11 =  ::flixel::math::FlxBasePoint_obj::__alloc( HX_CTX ,20,120);
-HXDLIN(  42)		this->distancePerItem = this11;
-HXLINE(  40)		this->rows = 0;
-HXLINE(  39)		this->scaleY = ((Float)1);
-HXLINE(  38)		this->scaleX = ((Float)1);
-HXLINE(  37)		this->alignment = ::objects::Alignment_obj::LEFT_dyn();
-HXLINE(  35)		this->isPauseItem = false;
-HXLINE(  33)		this->selected = false;
-HXLINE(  32)		this->wasChoosed = false;
-HXLINE(  31)		this->isFreeplay = false;
-HXLINE(  30)		this->isOptionItem = false;
-HXLINE(  28)		this->yAdd = ((Float)0);
-HXLINE(  27)		this->xAdd = ((Float)0);
-HXLINE(  26)		this->changeY = true;
-HXLINE(  25)		this->changeX = true;
-HXLINE(  24)		this->itemType = HX_("",00,00,00,00);
-HXLINE(  23)		this->targetX = ((Float)0);
-HXLINE(  22)		this->targetY = 0;
-HXLINE(  21)		this->isMenuItem = false;
-HXLINE(  20)		this->lerpOnForceX = true;
-HXLINE(  19)		this->forceX = ::Math_obj::NEGATIVE_INFINITY;
+HXLINE(  40)		 ::flixel::math::FlxBasePoint this1 =  ::flixel::math::FlxBasePoint_obj::__alloc( HX_CTX ,0,0);
+HXDLIN(  40)		this->startPosition = this1;
+HXLINE(  39)		 ::flixel::math::FlxBasePoint this11 =  ::flixel::math::FlxBasePoint_obj::__alloc( HX_CTX ,20,120);
+HXDLIN(  39)		this->distancePerItem = this11;
+HXLINE(  37)		this->rows = 0;
+HXLINE(  36)		this->scaleY = ((Float)1);
+HXLINE(  35)		this->scaleX = ((Float)1);
+HXLINE(  34)		this->alignment = ::objects::Alignment_obj::LEFT_dyn();
+HXLINE(  32)		this->isPauseItem = false;
+HXLINE(  30)		this->selected = false;
+HXLINE(  29)		this->wasChoosed = false;
+HXLINE(  28)		this->isOptionItem = false;
+HXLINE(  26)		this->yAdd = ((Float)0);
+HXLINE(  25)		this->xAdd = ((Float)0);
+HXLINE(  24)		this->changeY = true;
+HXLINE(  23)		this->changeX = true;
+HXLINE(  22)		this->itemType = HX_("",00,00,00,00);
+HXLINE(  21)		this->targetX = ((Float)0);
+HXLINE(  20)		this->targetY = 0;
+HXLINE(  19)		this->isMenuItem = false;
 HXLINE(  17)		this->letters = ::Array_obj< ::Dynamic>::__new(0);
 HXLINE(  16)		this->bold = false;
-HXLINE(  47)		super::__construct(x,y,null());
-HXLINE(  49)		this->startPosition->set_x(x);
-HXLINE(  50)		this->startPosition->set_y(y);
-HXLINE(  51)		this->bold = ( (bool)(bold) );
-HXLINE(  52)		this->set_text(text);
+HXLINE(  44)		super::__construct(x,y,null());
+HXLINE(  46)		this->startPosition->set_x(x);
+HXLINE(  47)		this->startPosition->set_y(y);
+HXLINE(  48)		this->bold = ( (bool)(bold) );
+HXLINE(  49)		this->set_text(text);
             	}
 
 Dynamic Alphabet_obj::__CreateEmpty() { return new Alphabet_obj; }
@@ -135,18 +132,18 @@ bool Alphabet_obj::_hx_isInstanceOf(int inClassId) {
 }
 
 void Alphabet_obj::setAlignmentFromString(::String align){
-            	HX_STACKFRAME(&_hx_pos_25c23e7e07a93d18_57_setAlignmentFromString)
-HXDLIN(  57)		::String _hx_switch_0 = ::StringTools_obj::trim(align.toLowerCase());
+            	HX_STACKFRAME(&_hx_pos_25c23e7e07a93d18_54_setAlignmentFromString)
+HXDLIN(  54)		::String _hx_switch_0 = ::StringTools_obj::trim(align.toLowerCase());
             		if (  (_hx_switch_0==HX_("center",d5,25,db,05)) ||  (_hx_switch_0==HX_("centered",74,5d,50,8f)) ){
-HXLINE(  62)			this->set_alignment(::objects::Alignment_obj::CENTERED_dyn());
-HXDLIN(  62)			goto _hx_goto_1;
+HXLINE(  59)			this->set_alignment(::objects::Alignment_obj::CENTERED_dyn());
+HXDLIN(  59)			goto _hx_goto_1;
             		}
             		if (  (_hx_switch_0==HX_("right",dc,0b,64,e9)) ){
-HXLINE(  60)			this->set_alignment(::objects::Alignment_obj::RIGHT_dyn());
-HXDLIN(  60)			goto _hx_goto_1;
+HXLINE(  57)			this->set_alignment(::objects::Alignment_obj::RIGHT_dyn());
+HXDLIN(  57)			goto _hx_goto_1;
             		}
             		/* default */{
-HXLINE(  64)			this->set_alignment(::objects::Alignment_obj::LEFT_dyn());
+HXLINE(  61)			this->set_alignment(::objects::Alignment_obj::LEFT_dyn());
             		}
             		_hx_goto_1:;
             	}
@@ -155,39 +152,39 @@ HXLINE(  64)			this->set_alignment(::objects::Alignment_obj::LEFT_dyn());
 HX_DEFINE_DYNAMIC_FUNC1(Alphabet_obj,setAlignmentFromString,(void))
 
  ::objects::Alignment Alphabet_obj::set_alignment( ::objects::Alignment align){
-            	HX_STACKFRAME(&_hx_pos_25c23e7e07a93d18_69_set_alignment)
-HXLINE(  70)		this->alignment = align;
-HXLINE(  71)		this->updateAlignment();
-HXLINE(  72)		return align;
+            	HX_STACKFRAME(&_hx_pos_25c23e7e07a93d18_66_set_alignment)
+HXLINE(  67)		this->alignment = align;
+HXLINE(  68)		this->updateAlignment();
+HXLINE(  69)		return align;
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC1(Alphabet_obj,set_alignment,return )
 
 void Alphabet_obj::updateAlignment(){
-            	HX_STACKFRAME(&_hx_pos_25c23e7e07a93d18_77_updateAlignment)
-HXDLIN(  77)		int _g = 0;
-HXDLIN(  77)		::Array< ::Dynamic> _g1 = this->letters;
-HXDLIN(  77)		while((_g < _g1->length)){
-HXDLIN(  77)			 ::objects::AlphaCharacter letter = _g1->__get(_g).StaticCast<  ::objects::AlphaCharacter >();
-HXDLIN(  77)			_g = (_g + 1);
-HXLINE(  79)			Float newOffset = ( (Float)(0) );
-HXLINE(  80)			switch((int)(this->alignment->_hx_getIndex())){
+            	HX_STACKFRAME(&_hx_pos_25c23e7e07a93d18_74_updateAlignment)
+HXDLIN(  74)		int _g = 0;
+HXDLIN(  74)		::Array< ::Dynamic> _g1 = this->letters;
+HXDLIN(  74)		while((_g < _g1->length)){
+HXDLIN(  74)			 ::objects::AlphaCharacter letter = _g1->__get(_g).StaticCast<  ::objects::AlphaCharacter >();
+HXDLIN(  74)			_g = (_g + 1);
+HXLINE(  76)			Float newOffset = ( (Float)(0) );
+HXLINE(  77)			switch((int)(this->alignment->_hx_getIndex())){
             				case (int)1: {
-HXLINE(  83)					newOffset = (letter->rowWidth / ( (Float)(2) ));
+HXLINE(  80)					newOffset = (letter->rowWidth / ( (Float)(2) ));
             				}
             				break;
             				case (int)2: {
-HXLINE(  85)					newOffset = letter->rowWidth;
+HXLINE(  82)					newOffset = letter->rowWidth;
             				}
             				break;
             				default:{
-HXLINE(  87)					newOffset = ( (Float)(0) );
+HXLINE(  84)					newOffset = ( (Float)(0) );
             				}
             			}
-HXLINE(  90)			letter->offset->set_x((letter->offset->x - letter->alignOffset));
-HXLINE(  91)			letter->alignOffset = (newOffset * this->scale->x);
-HXLINE(  92)			letter->offset->set_x((letter->offset->x + letter->alignOffset));
+HXLINE(  87)			letter->offset->set_x((letter->offset->x - letter->alignOffset));
+HXLINE(  88)			letter->alignOffset = (newOffset * this->scale->x);
+HXLINE(  89)			letter->offset->set_x((letter->offset->x + letter->alignOffset));
             		}
             	}
 
@@ -195,79 +192,79 @@ HXLINE(  92)			letter->offset->set_x((letter->offset->x + letter->alignOffset));
 HX_DEFINE_DYNAMIC_FUNC0(Alphabet_obj,updateAlignment,(void))
 
 ::String Alphabet_obj::set_text(::String newText){
-            	HX_STACKFRAME(&_hx_pos_25c23e7e07a93d18_97_set_text)
-HXLINE(  98)		newText = ::StringTools_obj::replace(newText,HX_("\\n",92,50,00,00),HX_("\n",0a,00,00,00));
-HXLINE(  99)		this->clearLetters();
-HXLINE( 100)		this->createLetters(newText);
-HXLINE( 101)		this->updateAlignment();
-HXLINE( 102)		this->text = newText;
-HXLINE( 103)		return newText;
+            	HX_STACKFRAME(&_hx_pos_25c23e7e07a93d18_94_set_text)
+HXLINE(  95)		newText = ::StringTools_obj::replace(newText,HX_("\\n",92,50,00,00),HX_("\n",0a,00,00,00));
+HXLINE(  96)		this->clearLetters();
+HXLINE(  97)		this->createLetters(newText);
+HXLINE(  98)		this->updateAlignment();
+HXLINE(  99)		this->text = newText;
+HXLINE( 100)		return newText;
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC1(Alphabet_obj,set_text,return )
 
 void Alphabet_obj::clearLetters(){
-            	HX_STACKFRAME(&_hx_pos_25c23e7e07a93d18_107_clearLetters)
-HXLINE( 108)		int i = this->letters->length;
-HXLINE( 109)		while((i > 0)){
-HXLINE( 111)			i = (i - 1);
-HXLINE( 112)			 ::objects::AlphaCharacter letter = this->letters->__get(i).StaticCast<  ::objects::AlphaCharacter >();
-HXLINE( 113)			if (::hx::IsNotNull( letter )) {
-HXLINE( 115)				letter->kill();
-HXLINE( 116)				this->letters->remove(letter);
-HXLINE( 117)				this->remove(letter,null());
+            	HX_STACKFRAME(&_hx_pos_25c23e7e07a93d18_104_clearLetters)
+HXLINE( 105)		int i = this->letters->length;
+HXLINE( 106)		while((i > 0)){
+HXLINE( 108)			i = (i - 1);
+HXLINE( 109)			 ::objects::AlphaCharacter letter = this->letters->__get(i).StaticCast<  ::objects::AlphaCharacter >();
+HXLINE( 110)			if (::hx::IsNotNull( letter )) {
+HXLINE( 112)				letter->kill();
+HXLINE( 113)				this->letters->remove(letter);
+HXLINE( 114)				this->remove(letter,null());
             			}
             		}
-HXLINE( 120)		this->letters = ::Array_obj< ::Dynamic>::__new(0);
-HXLINE( 121)		this->rows = 0;
+HXLINE( 117)		this->letters = ::Array_obj< ::Dynamic>::__new(0);
+HXLINE( 118)		this->rows = 0;
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC0(Alphabet_obj,clearLetters,(void))
 
 void Alphabet_obj::setScale(Float newX, ::Dynamic newY){
-            	HX_STACKFRAME(&_hx_pos_25c23e7e07a93d18_125_setScale)
-HXLINE( 126)		Float lastX = this->scale->x;
-HXLINE( 127)		Float lastY = this->scale->y;
-HXLINE( 128)		if (::hx::IsNull( newY )) {
-HXLINE( 128)			newY = newX;
+            	HX_STACKFRAME(&_hx_pos_25c23e7e07a93d18_122_setScale)
+HXLINE( 123)		Float lastX = this->scale->x;
+HXLINE( 124)		Float lastY = this->scale->y;
+HXLINE( 125)		if (::hx::IsNull( newY )) {
+HXLINE( 125)			newY = newX;
             		}
-HXLINE( 130)		this->scaleX = newX;
-HXLINE( 132)		this->scaleY = ( (Float)(newY) );
-HXLINE( 134)		this->scale->set_x(newX);
-HXLINE( 135)		this->scale->set_y(( (Float)(newY) ));
-HXLINE( 136)		this->softReloadLetters((newX / lastX),(( (Float)(newY) ) / lastY));
+HXLINE( 127)		this->scaleX = newX;
+HXLINE( 129)		this->scaleY = ( (Float)(newY) );
+HXLINE( 131)		this->scale->set_x(newX);
+HXLINE( 132)		this->scale->set_y(( (Float)(newY) ));
+HXLINE( 133)		this->softReloadLetters((newX / lastX),(( (Float)(newY) ) / lastY));
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC2(Alphabet_obj,setScale,(void))
 
 Float Alphabet_obj::set_scaleX(Float value){
-            	HX_STACKFRAME(&_hx_pos_25c23e7e07a93d18_140_set_scaleX)
-HXLINE( 141)		if ((value == this->scaleX)) {
-HXLINE( 141)			return value;
+            	HX_STACKFRAME(&_hx_pos_25c23e7e07a93d18_137_set_scaleX)
+HXLINE( 138)		if ((value == this->scaleX)) {
+HXLINE( 138)			return value;
             		}
-HXLINE( 143)		Float ratio = (value / this->scale->x);
-HXLINE( 144)		this->scale->set_x(value);
-HXLINE( 145)		this->scaleX = value;
-HXLINE( 146)		this->softReloadLetters(ratio,1);
-HXLINE( 147)		return value;
+HXLINE( 140)		Float ratio = (value / this->scale->x);
+HXLINE( 141)		this->scale->set_x(value);
+HXLINE( 142)		this->scaleX = value;
+HXLINE( 143)		this->softReloadLetters(ratio,1);
+HXLINE( 144)		return value;
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC1(Alphabet_obj,set_scaleX,return )
 
 Float Alphabet_obj::set_scaleY(Float value){
-            	HX_STACKFRAME(&_hx_pos_25c23e7e07a93d18_151_set_scaleY)
-HXLINE( 152)		if ((value == this->scaleY)) {
-HXLINE( 152)			return value;
+            	HX_STACKFRAME(&_hx_pos_25c23e7e07a93d18_148_set_scaleY)
+HXLINE( 149)		if ((value == this->scaleY)) {
+HXLINE( 149)			return value;
             		}
-HXLINE( 154)		Float ratio = (value / this->scale->y);
-HXLINE( 155)		this->scale->set_y(value);
-HXLINE( 156)		this->scaleY = value;
-HXLINE( 157)		this->softReloadLetters(1,ratio);
-HXLINE( 158)		return value;
+HXLINE( 151)		Float ratio = (value / this->scale->y);
+HXLINE( 152)		this->scale->set_y(value);
+HXLINE( 153)		this->scaleY = value;
+HXLINE( 154)		this->softReloadLetters(1,ratio);
+HXLINE( 155)		return value;
             	}
 
 
@@ -275,18 +272,18 @@ HX_DEFINE_DYNAMIC_FUNC1(Alphabet_obj,set_scaleY,return )
 
 void Alphabet_obj::softReloadLetters(::hx::Null< Float >  __o_ratioX, ::Dynamic ratioY){
             		Float ratioX = __o_ratioX.Default(1);
-            	HX_STACKFRAME(&_hx_pos_25c23e7e07a93d18_162_softReloadLetters)
-HXLINE( 163)		if (::hx::IsNull( ratioY )) {
-HXLINE( 163)			ratioY = ratioX;
+            	HX_STACKFRAME(&_hx_pos_25c23e7e07a93d18_159_softReloadLetters)
+HXLINE( 160)		if (::hx::IsNull( ratioY )) {
+HXLINE( 160)			ratioY = ratioX;
             		}
-HXLINE( 165)		{
-HXLINE( 165)			int _g = 0;
-HXDLIN( 165)			::Array< ::Dynamic> _g1 = this->letters;
-HXDLIN( 165)			while((_g < _g1->length)){
-HXLINE( 165)				 ::objects::AlphaCharacter letter = _g1->__get(_g).StaticCast<  ::objects::AlphaCharacter >();
-HXDLIN( 165)				_g = (_g + 1);
-HXLINE( 167)				if (::hx::IsNotNull( letter )) {
-HXLINE( 169)					letter->setupAlphaCharacter((((letter->x - this->x) * ratioX) + this->x),(((letter->y - this->y) * ( (Float)(ratioY) )) + this->y),null(),null());
+HXLINE( 162)		{
+HXLINE( 162)			int _g = 0;
+HXDLIN( 162)			::Array< ::Dynamic> _g1 = this->letters;
+HXDLIN( 162)			while((_g < _g1->length)){
+HXLINE( 162)				 ::objects::AlphaCharacter letter = _g1->__get(_g).StaticCast<  ::objects::AlphaCharacter >();
+HXDLIN( 162)				_g = (_g + 1);
+HXLINE( 164)				if (::hx::IsNotNull( letter )) {
+HXLINE( 166)					letter->setupAlphaCharacter((((letter->x - this->x) * ratioX) + this->x),(((letter->y - this->y) * ( (Float)(ratioY) )) + this->y),null(),null());
             				}
             			}
             		}
@@ -296,190 +293,120 @@ HXLINE( 169)					letter->setupAlphaCharacter((((letter->x - this->x) * ratioX) +
 HX_DEFINE_DYNAMIC_FUNC2(Alphabet_obj,softReloadLetters,(void))
 
 void Alphabet_obj::update(Float elapsed){
-            	HX_STACKFRAME(&_hx_pos_25c23e7e07a93d18_178_update)
-HXLINE( 179)		Float scaledY = ::flixel::math::FlxMath_obj::remapToRange(( (Float)(this->targetY) ),( (Float)(0) ),( (Float)(1) ),( (Float)(0) ),((Float)1.3));
-HXLINE( 181)		if (this->isMenuItem) {
-HXLINE( 183)			Float Value = (elapsed * ((Float)9.6));
-HXDLIN( 183)			Float lowerBound;
-HXDLIN( 183)			if ((Value < 0)) {
-HXLINE( 183)				lowerBound = ( (Float)(0) );
+            	HX_STACKFRAME(&_hx_pos_25c23e7e07a93d18_175_update)
+HXLINE( 176)		Float scaledY = ::flixel::math::FlxMath_obj::remapToRange(( (Float)(this->targetY) ),( (Float)(0) ),( (Float)(1) ),( (Float)(0) ),((Float)1.3));
+HXLINE( 178)		if (this->isMenuItem) {
+HXLINE( 180)			Float Value = (elapsed * ((Float)9.6));
+HXDLIN( 180)			Float lowerBound;
+HXDLIN( 180)			if ((Value < 0)) {
+HXLINE( 180)				lowerBound = ( (Float)(0) );
             			}
             			else {
-HXLINE( 183)				lowerBound = Value;
+HXLINE( 180)				lowerBound = Value;
             			}
-HXDLIN( 183)			Float lerpVal;
-HXDLIN( 183)			if ((lowerBound > 1)) {
-HXLINE( 183)				lerpVal = ( (Float)(1) );
-            			}
-            			else {
-HXLINE( 183)				lerpVal = lowerBound;
-            			}
-HXLINE( 184)			if (this->changeX) {
-HXLINE( 185)				Float a = this->x;
-HXDLIN( 185)				this->set_x((a + (lerpVal * (((( (Float)(this->targetY) ) * this->distancePerItem->x) + this->startPosition->x) - a))));
-            			}
-HXLINE( 186)			if (this->changeY) {
-HXLINE( 187)				Float a = this->y;
-HXDLIN( 187)				this->set_y((a + (lerpVal * ((((( (Float)(this->targetY) ) * ((Float)1.3)) * this->distancePerItem->y) + this->startPosition->y) - a))));
-            			}
-            		}
-HXLINE( 190)		if (this->isPauseItem) {
-HXLINE( 192)			Float scaledY = ::flixel::math::FlxMath_obj::remapToRange(( (Float)(this->targetY) ),( (Float)(0) ),( (Float)(1) ),( (Float)(0) ),((Float)1.3));
-HXLINE( 194)			{
-HXLINE( 194)				int axes = 1;
-HXDLIN( 194)				bool _hx_tmp;
-HXDLIN( 194)				if ((axes != 1)) {
-HXLINE( 194)					_hx_tmp = (axes == 17);
-            				}
-            				else {
-HXLINE( 194)					_hx_tmp = true;
-            				}
-HXDLIN( 194)				if (_hx_tmp) {
-HXLINE( 194)					int _hx_tmp = ::flixel::FlxG_obj::width;
-HXDLIN( 194)					this->set_x(((( (Float)(_hx_tmp) ) - this->get_width()) / ( (Float)(2) )));
-            				}
-HXDLIN( 194)				bool _hx_tmp1;
-HXDLIN( 194)				if ((axes != 16)) {
-HXLINE( 194)					_hx_tmp1 = (axes == 17);
-            				}
-            				else {
-HXLINE( 194)					_hx_tmp1 = true;
-            				}
-HXDLIN( 194)				if (_hx_tmp1) {
-HXLINE( 194)					int _hx_tmp = ::flixel::FlxG_obj::height;
-HXDLIN( 194)					this->set_y(((( (Float)(_hx_tmp) ) - this->get_height()) / ( (Float)(2) )));
-            				}
-            			}
-HXLINE( 196)			Float a = this->y;
-HXDLIN( 196)			this->set_y((a + (((Float)0.30) * (((scaledY * ( (Float)(120) )) + (( (Float)(::flixel::FlxG_obj::height) ) * ((Float)0.48))) - a))));
-            		}
-HXLINE( 200)		if ((this->forceX == ::Math_obj::NEGATIVE_INFINITY)) {
-HXLINE( 202)			if (!(this->isFreeplay)) {
-HXLINE( 204)				if (!(this->isOptionItem)) {
-HXLINE( 205)					Float a = this->y;
-HXDLIN( 205)					this->set_y((a + (::Math_obj::max(( (Float)(0) ),::Math_obj::min(( (Float)(1) ),(elapsed * ( (Float)(6) )))) * ((((scaledY * ( (Float)(120) )) + (( (Float)(::flixel::FlxG_obj::height) ) * ((Float)0.48))) + this->yAdd) - a))));
-            				}
-            				else {
-HXLINE( 207)					Float a = this->y;
-HXDLIN( 207)					this->set_y((a + (::Math_obj::max(( (Float)(0) ),::Math_obj::min(( (Float)(1) ),(elapsed * ( (Float)(6) )))) * ((((scaledY * ( (Float)(100) )) + (( (Float)(::flixel::FlxG_obj::height) ) * ((Float)0.48))) + this->yAdd) - a))));
-            				}
-HXLINE( 208)				if (!(this->isOptionItem)) {
-HXLINE( 209)					Float a = this->x;
-HXDLIN( 209)					this->set_x((a + (::Math_obj::max(( (Float)(0) ),::Math_obj::min(( (Float)(1) ),(elapsed * ( (Float)(6) )))) * ((((this->targetY * 20) + 120) + this->xAdd) - a))));
-            				}
-            				else {
-HXLINE( 211)					int axes = 1;
-HXDLIN( 211)					bool _hx_tmp;
-HXDLIN( 211)					if ((axes != 1)) {
-HXLINE( 211)						_hx_tmp = (axes == 17);
-            					}
-            					else {
-HXLINE( 211)						_hx_tmp = true;
-            					}
-HXDLIN( 211)					if (_hx_tmp) {
-HXLINE( 211)						int _hx_tmp = ::flixel::FlxG_obj::width;
-HXDLIN( 211)						this->set_x(((( (Float)(_hx_tmp) ) - this->get_width()) / ( (Float)(2) )));
-            					}
-HXDLIN( 211)					bool _hx_tmp1;
-HXDLIN( 211)					if ((axes != 16)) {
-HXLINE( 211)						_hx_tmp1 = (axes == 17);
-            					}
-            					else {
-HXLINE( 211)						_hx_tmp1 = true;
-            					}
-HXDLIN( 211)					if (_hx_tmp1) {
-HXLINE( 211)						int _hx_tmp = ::flixel::FlxG_obj::height;
-HXDLIN( 211)						this->set_y(((( (Float)(_hx_tmp) ) - this->get_height()) / ( (Float)(2) )));
-            					}
-            				}
+HXDLIN( 180)			Float lerpVal;
+HXDLIN( 180)			if ((lowerBound > 1)) {
+HXLINE( 180)				lerpVal = ( (Float)(1) );
             			}
             			else {
-HXLINE( 215)				Float a = this->y;
-HXDLIN( 215)				this->set_y((a + (::Math_obj::max(( (Float)(0) ),::Math_obj::min(( (Float)(1) ),(elapsed * ( (Float)(6) )))) * ((((scaledY * ( (Float)(120) )) + (( (Float)(::flixel::FlxG_obj::height) ) * ((Float)0.48))) + this->yAdd) - a))));
-HXLINE( 216)				if (!(this->wasChoosed)) {
-HXLINE( 218)					if (!(this->selected)) {
-HXLINE( 219)						Float a = this->x;
-HXDLIN( 219)						this->set_x((a + (::Math_obj::max(( (Float)(0) ),::Math_obj::min(( (Float)(1) ),(elapsed * ( (Float)(6) )))) * ((120 + this->xAdd) - a))));
-            					}
-            					else {
-HXLINE( 221)						Float a = this->x;
-HXDLIN( 221)						this->set_x((a + (::Math_obj::max(( (Float)(0) ),::Math_obj::min(( (Float)(1) ),(elapsed * ( (Float)(6) )))) * ((200 + this->xAdd) - a))));
-            					}
+HXLINE( 180)				lerpVal = lowerBound;
+            			}
+HXLINE( 181)			if (this->changeX) {
+HXLINE( 182)				Float a = this->x;
+HXDLIN( 182)				this->set_x((a + (lerpVal * (((( (Float)(this->targetY) ) * this->distancePerItem->x) + this->startPosition->x) - a))));
+            			}
+HXLINE( 183)			if (this->changeY) {
+HXLINE( 184)				Float a = this->y;
+HXDLIN( 184)				this->set_y((a + (lerpVal * ((((( (Float)(this->targetY) ) * ((Float)1.3)) * this->distancePerItem->y) + this->startPosition->y) - a))));
+            			}
+            		}
+HXLINE( 187)		if (this->isPauseItem) {
+HXLINE( 189)			Float scaledY = ::flixel::math::FlxMath_obj::remapToRange(( (Float)(this->targetY) ),( (Float)(0) ),( (Float)(1) ),( (Float)(0) ),((Float)1.3));
+HXLINE( 191)			{
+HXLINE( 191)				int axes = 1;
+HXDLIN( 191)				bool _hx_tmp;
+HXDLIN( 191)				if ((axes != 1)) {
+HXLINE( 191)					_hx_tmp = (axes == 17);
             				}
             				else {
-HXLINE( 225)					Float a = this->x;
-HXDLIN( 225)					Float b = (( (Float)(::flixel::FlxG_obj::width) ) / ( (Float)(2) ));
-HXDLIN( 225)					Float b1 = (b - (this->get_width() / ( (Float)(2) )));
-HXDLIN( 225)					this->set_x((a + (::Math_obj::max(( (Float)(0) ),::Math_obj::min(( (Float)(1) ),(elapsed * ( (Float)(6) )))) * ((b1 + this->xAdd) - a))));
+HXLINE( 191)					_hx_tmp = true;
+            				}
+HXDLIN( 191)				if (_hx_tmp) {
+HXLINE( 191)					int _hx_tmp = ::flixel::FlxG_obj::width;
+HXDLIN( 191)					this->set_x(((( (Float)(_hx_tmp) ) - this->get_width()) / ( (Float)(2) )));
+            				}
+HXDLIN( 191)				bool _hx_tmp1;
+HXDLIN( 191)				if ((axes != 16)) {
+HXLINE( 191)					_hx_tmp1 = (axes == 17);
+            				}
+            				else {
+HXLINE( 191)					_hx_tmp1 = true;
+            				}
+HXDLIN( 191)				if (_hx_tmp1) {
+HXLINE( 191)					int _hx_tmp = ::flixel::FlxG_obj::height;
+HXDLIN( 191)					this->set_y(((( (Float)(_hx_tmp) ) - this->get_height()) / ( (Float)(2) )));
             				}
             			}
+HXLINE( 193)			Float a = this->y;
+HXDLIN( 193)			this->set_y((a + (((Float)0.30) * (((scaledY * ( (Float)(120) )) + (( (Float)(::flixel::FlxG_obj::height) ) * ((Float)0.48))) - a))));
             		}
-            		else {
-HXLINE( 231)			if (this->lerpOnForceX) {
-HXLINE( 232)				Float a = this->x;
-HXDLIN( 232)				this->set_x((a + (::Math_obj::max(( (Float)(0) ),::Math_obj::min(( (Float)(1) ),(elapsed * ( (Float)(6) )))) * (this->forceX - a))));
-            			}
-            			else {
-HXLINE( 234)				this->set_x(this->forceX);
-            			}
-            		}
-HXLINE( 237)		::String _hx_switch_0 = this->itemType;
+HXLINE( 197)		::String _hx_switch_0 = this->itemType;
             		if (  (_hx_switch_0==HX_("C-Shape",37,a4,77,ef)) ){
-HXLINE( 249)			Float a = this->y;
-HXDLIN( 249)			this->set_y((a + (((Float)0.16) * (((scaledY * ( (Float)(65) )) + (( (Float)(::flixel::FlxG_obj::height) ) * ((Float)0.39))) - a))));
-HXLINE( 251)			Float a1 = this->x;
-HXDLIN( 251)			this->set_x((a1 + (((Float)0.16) * (((::Math_obj::exp((scaledY * ((Float)0.8))) * ( (Float)(70) )) + (( (Float)(::flixel::FlxG_obj::width) ) * ((Float)0.1))) - a1))));
-HXLINE( 252)			if ((scaledY < 0)) {
-HXLINE( 253)				Float a = this->x;
-HXDLIN( 253)				this->set_x((a + (((Float)0.16) * (((::Math_obj::exp((scaledY * ((Float)-0.8))) * ( (Float)(70) )) + (( (Float)(::flixel::FlxG_obj::width) ) * ((Float)0.1))) - a))));
+HXLINE( 209)			Float a = this->y;
+HXDLIN( 209)			this->set_y((a + (((Float)0.16) * (((scaledY * ( (Float)(65) )) + (( (Float)(::flixel::FlxG_obj::height) ) * ((Float)0.39))) - a))));
+HXLINE( 211)			Float a1 = this->x;
+HXDLIN( 211)			this->set_x((a1 + (((Float)0.16) * (((::Math_obj::exp((scaledY * ((Float)0.8))) * ( (Float)(70) )) + (( (Float)(::flixel::FlxG_obj::width) ) * ((Float)0.1))) - a1))));
+HXLINE( 212)			if ((scaledY < 0)) {
+HXLINE( 213)				Float a = this->x;
+HXDLIN( 213)				this->set_x((a + (((Float)0.16) * (((::Math_obj::exp((scaledY * ((Float)-0.8))) * ( (Float)(70) )) + (( (Float)(::flixel::FlxG_obj::width) ) * ((Float)0.1))) - a))));
             			}
-HXLINE( 255)			if ((this->x > (::flixel::FlxG_obj::width + 30))) {
-HXLINE( 256)				this->set_x(( (Float)((::flixel::FlxG_obj::width + 30)) ));
+HXLINE( 215)			if ((this->x > (::flixel::FlxG_obj::width + 30))) {
+HXLINE( 216)				this->set_x(( (Float)((::flixel::FlxG_obj::width + 30)) ));
             			}
-HXLINE( 248)			goto _hx_goto_14;
+HXLINE( 208)			goto _hx_goto_14;
             		}
             		if (  (_hx_switch_0==HX_("Classic",f2,79,e2,36)) ){
-HXLINE( 240)			Float a = this->y;
-HXDLIN( 240)			this->set_y((a + (((Float)0.16) * (((scaledY * ( (Float)(120) )) + (( (Float)(::flixel::FlxG_obj::height) ) * ((Float)0.48))) - a))));
-HXLINE( 241)			Float a1 = this->x;
-HXDLIN( 241)			this->set_x((a1 + (((Float)0.16) * (( (Float)(((this->targetY * 20) + 90)) ) - a1))));
-HXLINE( 239)			goto _hx_goto_14;
+HXLINE( 200)			Float a = this->y;
+HXDLIN( 200)			this->set_y((a + (((Float)0.16) * (((scaledY * ( (Float)(120) )) + (( (Float)(::flixel::FlxG_obj::height) ) * ((Float)0.48))) - a))));
+HXLINE( 201)			Float a1 = this->x;
+HXDLIN( 201)			this->set_x((a1 + (((Float)0.16) * (( (Float)(((this->targetY * 20) + 90)) ) - a1))));
+HXLINE( 199)			goto _hx_goto_14;
             		}
             		if (  (_hx_switch_0==HX_("D-Shape",f8,1a,0d,19)) ){
-HXLINE( 258)			Float a = this->y;
-HXDLIN( 258)			this->set_y((a + (((Float)0.16) * (((scaledY * ( (Float)(90) )) + (( (Float)(::flixel::FlxG_obj::height) ) * ((Float)0.45))) - a))));
-HXLINE( 260)			Float a1 = this->x;
-HXDLIN( 260)			this->set_x((a1 + (((Float)0.16) * (((::Math_obj::exp((scaledY * ((Float)0.8))) * ( (Float)(-70) )) + (( (Float)(::flixel::FlxG_obj::width) ) * ((Float)0.35))) - a1))));
-HXLINE( 261)			if ((scaledY < 0)) {
-HXLINE( 262)				Float a = this->x;
-HXDLIN( 262)				this->set_x((a + (((Float)0.16) * (((::Math_obj::exp((scaledY * ((Float)-0.8))) * ( (Float)(-70) )) + (( (Float)(::flixel::FlxG_obj::width) ) * ((Float)0.35))) - a))));
+HXLINE( 218)			Float a = this->y;
+HXDLIN( 218)			this->set_y((a + (((Float)0.16) * (((scaledY * ( (Float)(90) )) + (( (Float)(::flixel::FlxG_obj::height) ) * ((Float)0.45))) - a))));
+HXLINE( 220)			Float a1 = this->x;
+HXDLIN( 220)			this->set_x((a1 + (((Float)0.16) * (((::Math_obj::exp((scaledY * ((Float)0.8))) * ( (Float)(-70) )) + (( (Float)(::flixel::FlxG_obj::width) ) * ((Float)0.35))) - a1))));
+HXLINE( 221)			if ((scaledY < 0)) {
+HXLINE( 222)				Float a = this->x;
+HXDLIN( 222)				this->set_x((a + (((Float)0.16) * (((::Math_obj::exp((scaledY * ((Float)-0.8))) * ( (Float)(-70) )) + (( (Float)(::flixel::FlxG_obj::width) ) * ((Float)0.35))) - a))));
             			}
-HXLINE( 264)			if ((this->x < -900)) {
-HXLINE( 265)				this->set_x(( (Float)(-900) ));
+HXLINE( 224)			if ((this->x < -900)) {
+HXLINE( 225)				this->set_x(( (Float)(-900) ));
             			}
-HXLINE( 257)			goto _hx_goto_14;
+HXLINE( 217)			goto _hx_goto_14;
             		}
             		if (  (_hx_switch_0==HX_("Vertical",96,78,c7,43)) ){
-HXLINE( 244)			Float a = this->y;
-HXDLIN( 244)			this->set_y((a + (((Float)0.16) * (((scaledY * ( (Float)(120) )) + (( (Float)(::flixel::FlxG_obj::height) ) * ((Float)0.5))) - a))));
-HXLINE( 245)			Float a1 = this->x;
-HXDLIN( 245)			this->set_x((a1 + (((Float)0.16) * (( (Float)(((this->targetY * 0) + 308)) ) - a1))));
-HXLINE( 246)			this->set_x((this->x + this->targetX));
-HXLINE( 243)			goto _hx_goto_14;
+HXLINE( 204)			Float a = this->y;
+HXDLIN( 204)			this->set_y((a + (((Float)0.16) * (((scaledY * ( (Float)(120) )) + (( (Float)(::flixel::FlxG_obj::height) ) * ((Float)0.5))) - a))));
+HXLINE( 205)			Float a1 = this->x;
+HXDLIN( 205)			this->set_x((a1 + (((Float)0.16) * (( (Float)(((this->targetY * 0) + 308)) ) - a1))));
+HXLINE( 206)			this->set_x((this->x + this->targetX));
+HXLINE( 203)			goto _hx_goto_14;
             		}
             		_hx_goto_14:;
-HXLINE( 267)		this->super::update(elapsed);
+HXLINE( 227)		this->super::update(elapsed);
             	}
 
 
 void Alphabet_obj::snapToPosition(){
-            	HX_STACKFRAME(&_hx_pos_25c23e7e07a93d18_272_snapToPosition)
-HXDLIN( 272)		if (this->isMenuItem) {
-HXLINE( 274)			if (this->changeX) {
-HXLINE( 275)				this->set_x(((( (Float)(this->targetY) ) * this->distancePerItem->x) + this->startPosition->x));
+            	HX_STACKFRAME(&_hx_pos_25c23e7e07a93d18_232_snapToPosition)
+HXDLIN( 232)		if (this->isMenuItem) {
+HXLINE( 234)			if (this->changeX) {
+HXLINE( 235)				this->set_x(((( (Float)(this->targetY) ) * this->distancePerItem->x) + this->startPosition->x));
             			}
-HXLINE( 276)			if (this->changeY) {
-HXLINE( 277)				this->set_y((((( (Float)(this->targetY) ) * ((Float)1.3)) * this->distancePerItem->y) + this->startPosition->y));
+HXLINE( 236)			if (this->changeY) {
+HXLINE( 237)				this->set_y((((( (Float)(this->targetY) ) * ((Float)1.3)) * this->distancePerItem->y) + this->startPosition->y));
             			}
             		}
             	}
@@ -488,98 +415,98 @@ HXLINE( 277)				this->set_y((((( (Float)(this->targetY) ) * ((Float)1.3)) * this
 HX_DEFINE_DYNAMIC_FUNC0(Alphabet_obj,snapToPosition,(void))
 
 void Alphabet_obj::createLetters(::String newText){
-            	HX_STACKFRAME(&_hx_pos_25c23e7e07a93d18_284_createLetters)
-HXLINE( 285)		int consecutiveSpaces = 0;
-HXLINE( 287)		Float xPos = ( (Float)(0) );
-HXLINE( 288)		::Array< Float > rowData = ::Array_obj< Float >::__new(0);
-HXLINE( 289)		this->rows = 0;
-HXLINE( 290)		{
-HXLINE( 290)			int _g = 0;
-HXDLIN( 290)			::Array< ::String > _g1 = newText.split(HX_("",00,00,00,00));
-HXDLIN( 290)			while((_g < _g1->length)){
-HXLINE( 290)				::String character = _g1->__get(_g);
-HXDLIN( 290)				_g = (_g + 1);
-HXLINE( 293)				if ((character != HX_("\n",0a,00,00,00))) {
-HXLINE( 295)					bool spaceChar;
-HXDLIN( 295)					if ((character != HX_(" ",20,00,00,00))) {
-HXLINE( 295)						if (this->bold) {
-HXLINE( 295)							spaceChar = (character == HX_("_",5f,00,00,00));
+            	HX_STACKFRAME(&_hx_pos_25c23e7e07a93d18_244_createLetters)
+HXLINE( 245)		int consecutiveSpaces = 0;
+HXLINE( 247)		Float xPos = ( (Float)(0) );
+HXLINE( 248)		::Array< Float > rowData = ::Array_obj< Float >::__new(0);
+HXLINE( 249)		this->rows = 0;
+HXLINE( 250)		{
+HXLINE( 250)			int _g = 0;
+HXDLIN( 250)			::Array< ::String > _g1 = newText.split(HX_("",00,00,00,00));
+HXDLIN( 250)			while((_g < _g1->length)){
+HXLINE( 250)				::String character = _g1->__get(_g);
+HXDLIN( 250)				_g = (_g + 1);
+HXLINE( 253)				if ((character != HX_("\n",0a,00,00,00))) {
+HXLINE( 255)					bool spaceChar;
+HXDLIN( 255)					if ((character != HX_(" ",20,00,00,00))) {
+HXLINE( 255)						if (this->bold) {
+HXLINE( 255)							spaceChar = (character == HX_("_",5f,00,00,00));
             						}
             						else {
-HXLINE( 295)							spaceChar = false;
+HXLINE( 255)							spaceChar = false;
             						}
             					}
             					else {
-HXLINE( 295)						spaceChar = true;
+HXLINE( 255)						spaceChar = true;
             					}
-HXLINE( 296)					if (spaceChar) {
-HXLINE( 296)						consecutiveSpaces = (consecutiveSpaces + 1);
+HXLINE( 256)					if (spaceChar) {
+HXLINE( 256)						consecutiveSpaces = (consecutiveSpaces + 1);
             					}
-HXLINE( 298)					bool isAlphabet = ::objects::AlphaCharacter_obj::isTypeAlphabet(character.toLowerCase());
-HXLINE( 299)					bool _hx_tmp;
-HXDLIN( 299)					::Dynamic this1 = ::objects::AlphaCharacter_obj::allLetters;
-HXDLIN( 299)					if (( ( ::haxe::ds::StringMap)(this1) )->exists(character.toLowerCase())) {
-HXLINE( 299)						if (this->bold) {
-HXLINE( 299)							_hx_tmp = !(spaceChar);
+HXLINE( 258)					bool isAlphabet = ::objects::AlphaCharacter_obj::isTypeAlphabet(character.toLowerCase());
+HXLINE( 259)					bool _hx_tmp;
+HXDLIN( 259)					::Dynamic this1 = ::objects::AlphaCharacter_obj::allLetters;
+HXDLIN( 259)					if (( ( ::haxe::ds::StringMap)(this1) )->exists(character.toLowerCase())) {
+HXLINE( 259)						if (this->bold) {
+HXLINE( 259)							_hx_tmp = !(spaceChar);
             						}
             						else {
-HXLINE( 299)							_hx_tmp = true;
+HXLINE( 259)							_hx_tmp = true;
             						}
             					}
             					else {
-HXLINE( 299)						_hx_tmp = false;
+HXLINE( 259)						_hx_tmp = false;
             					}
-HXDLIN( 299)					if (_hx_tmp) {
-HXLINE( 301)						if ((consecutiveSpaces > 0)) {
-HXLINE( 303)							xPos = (xPos + (( (Float)((28 * consecutiveSpaces)) ) * this->scaleX));
-HXLINE( 304)							bool _hx_tmp;
-HXDLIN( 304)							if (!(this->bold)) {
-HXLINE( 304)								_hx_tmp = (xPos >= (( (Float)(::flixel::FlxG_obj::width) ) * ((Float)0.65)));
+HXDLIN( 259)					if (_hx_tmp) {
+HXLINE( 261)						if ((consecutiveSpaces > 0)) {
+HXLINE( 263)							xPos = (xPos + (( (Float)((28 * consecutiveSpaces)) ) * this->scaleX));
+HXLINE( 264)							bool _hx_tmp;
+HXDLIN( 264)							if (!(this->bold)) {
+HXLINE( 264)								_hx_tmp = (xPos >= (( (Float)(::flixel::FlxG_obj::width) ) * ((Float)0.65)));
             							}
             							else {
-HXLINE( 304)								_hx_tmp = false;
+HXLINE( 264)								_hx_tmp = false;
             							}
-HXDLIN( 304)							if (_hx_tmp) {
-HXLINE( 306)								xPos = ( (Float)(0) );
-HXLINE( 307)								this->rows++;
+HXDLIN( 264)							if (_hx_tmp) {
+HXLINE( 266)								xPos = ( (Float)(0) );
+HXLINE( 267)								this->rows++;
             							}
             						}
-HXLINE( 310)						consecutiveSpaces = 0;
-HXLINE( 312)						 ::Dynamic ObjectFactory = null();
-HXDLIN( 312)						 ::objects::AlphaCharacter letter = ( ( ::objects::AlphaCharacter)(this->group->recycle(::hx::ClassOf< ::objects::AlphaCharacter >(),ObjectFactory,true,true).StaticCast<  ::flixel::FlxSprite >()) );
-HXLINE( 313)						letter->scale->set_x(this->scaleX);
-HXLINE( 314)						letter->scale->set_y(this->scaleY);
-HXLINE( 316)						letter->setupAlphaCharacter(xPos,((( (Float)(this->rows) ) * ::objects::Alphabet_obj::Y_PER_ROW) * this->scale->y),character,this->bold);
-HXLINE( 317)						letter->parent = ::hx::ObjectPtr<OBJ_>(this);
-HXLINE( 319)						letter->row = this->rows;
-HXLINE( 320)						Float off = ( (Float)(0) );
-HXLINE( 321)						if (!(this->bold)) {
-HXLINE( 321)							off = ( (Float)(2) );
+HXLINE( 270)						consecutiveSpaces = 0;
+HXLINE( 272)						 ::Dynamic ObjectFactory = null();
+HXDLIN( 272)						 ::objects::AlphaCharacter letter = ( ( ::objects::AlphaCharacter)(this->group->recycle(::hx::ClassOf< ::objects::AlphaCharacter >(),ObjectFactory,true,true).StaticCast<  ::flixel::FlxSprite >()) );
+HXLINE( 273)						letter->scale->set_x(this->scaleX);
+HXLINE( 274)						letter->scale->set_y(this->scaleY);
+HXLINE( 276)						letter->setupAlphaCharacter(xPos,((( (Float)(this->rows) ) * ::objects::Alphabet_obj::Y_PER_ROW) * this->scale->y),character,this->bold);
+HXLINE( 277)						letter->parent = ::hx::ObjectPtr<OBJ_>(this);
+HXLINE( 279)						letter->row = this->rows;
+HXLINE( 280)						Float off = ( (Float)(0) );
+HXLINE( 281)						if (!(this->bold)) {
+HXLINE( 281)							off = ( (Float)(2) );
             						}
-HXLINE( 322)						Float xPos1 = letter->get_width();
-HXDLIN( 322)						xPos = (xPos + (xPos1 + ((letter->letterOffset->__get(0) + off) * this->scale->x)));
-HXLINE( 323)						rowData[this->rows] = xPos;
-HXLINE( 325)						this->add(letter);
-HXLINE( 326)						this->letters->push(letter);
+HXLINE( 282)						Float xPos1 = letter->get_width();
+HXDLIN( 282)						xPos = (xPos + (xPos1 + ((letter->letterOffset->__get(0) + off) * this->scale->x)));
+HXLINE( 283)						rowData[this->rows] = xPos;
+HXLINE( 285)						this->add(letter);
+HXLINE( 286)						this->letters->push(letter);
             					}
             				}
             				else {
-HXLINE( 331)					xPos = ( (Float)(0) );
-HXLINE( 332)					this->rows++;
+HXLINE( 291)					xPos = ( (Float)(0) );
+HXLINE( 292)					this->rows++;
             				}
             			}
             		}
-HXLINE( 336)		{
-HXLINE( 336)			int _g2 = 0;
-HXDLIN( 336)			::Array< ::Dynamic> _g3 = this->letters;
-HXDLIN( 336)			while((_g2 < _g3->length)){
-HXLINE( 336)				 ::objects::AlphaCharacter letter = _g3->__get(_g2).StaticCast<  ::objects::AlphaCharacter >();
-HXDLIN( 336)				_g2 = (_g2 + 1);
-HXLINE( 338)				letter->rowWidth = rowData->__get(letter->row);
+HXLINE( 296)		{
+HXLINE( 296)			int _g2 = 0;
+HXDLIN( 296)			::Array< ::Dynamic> _g3 = this->letters;
+HXDLIN( 296)			while((_g2 < _g3->length)){
+HXLINE( 296)				 ::objects::AlphaCharacter letter = _g3->__get(_g2).StaticCast<  ::objects::AlphaCharacter >();
+HXDLIN( 296)				_g2 = (_g2 + 1);
+HXLINE( 298)				letter->rowWidth = rowData->__get(letter->row);
             			}
             		}
-HXLINE( 341)		if ((this->letters->length > 0)) {
-HXLINE( 341)			this->rows++;
+HXLINE( 301)		if ((this->letters->length > 0)) {
+HXLINE( 301)			this->rows++;
             		}
             	}
 
@@ -612,8 +539,6 @@ void Alphabet_obj::__Mark(HX_MARK_PARAMS)
 	HX_MARK_MEMBER_NAME(text,"text");
 	HX_MARK_MEMBER_NAME(bold,"bold");
 	HX_MARK_MEMBER_NAME(letters,"letters");
-	HX_MARK_MEMBER_NAME(forceX,"forceX");
-	HX_MARK_MEMBER_NAME(lerpOnForceX,"lerpOnForceX");
 	HX_MARK_MEMBER_NAME(isMenuItem,"isMenuItem");
 	HX_MARK_MEMBER_NAME(targetY,"targetY");
 	HX_MARK_MEMBER_NAME(targetX,"targetX");
@@ -623,7 +548,6 @@ void Alphabet_obj::__Mark(HX_MARK_PARAMS)
 	HX_MARK_MEMBER_NAME(xAdd,"xAdd");
 	HX_MARK_MEMBER_NAME(yAdd,"yAdd");
 	HX_MARK_MEMBER_NAME(isOptionItem,"isOptionItem");
-	HX_MARK_MEMBER_NAME(isFreeplay,"isFreeplay");
 	HX_MARK_MEMBER_NAME(wasChoosed,"wasChoosed");
 	HX_MARK_MEMBER_NAME(selected,"selected");
 	HX_MARK_MEMBER_NAME(isPauseItem,"isPauseItem");
@@ -642,8 +566,6 @@ void Alphabet_obj::__Visit(HX_VISIT_PARAMS)
 	HX_VISIT_MEMBER_NAME(text,"text");
 	HX_VISIT_MEMBER_NAME(bold,"bold");
 	HX_VISIT_MEMBER_NAME(letters,"letters");
-	HX_VISIT_MEMBER_NAME(forceX,"forceX");
-	HX_VISIT_MEMBER_NAME(lerpOnForceX,"lerpOnForceX");
 	HX_VISIT_MEMBER_NAME(isMenuItem,"isMenuItem");
 	HX_VISIT_MEMBER_NAME(targetY,"targetY");
 	HX_VISIT_MEMBER_NAME(targetX,"targetX");
@@ -653,7 +575,6 @@ void Alphabet_obj::__Visit(HX_VISIT_PARAMS)
 	HX_VISIT_MEMBER_NAME(xAdd,"xAdd");
 	HX_VISIT_MEMBER_NAME(yAdd,"yAdd");
 	HX_VISIT_MEMBER_NAME(isOptionItem,"isOptionItem");
-	HX_VISIT_MEMBER_NAME(isFreeplay,"isFreeplay");
 	HX_VISIT_MEMBER_NAME(wasChoosed,"wasChoosed");
 	HX_VISIT_MEMBER_NAME(selected,"selected");
 	HX_VISIT_MEMBER_NAME(isPauseItem,"isPauseItem");
@@ -677,7 +598,6 @@ void Alphabet_obj::__Visit(HX_VISIT_PARAMS)
 		if (HX_FIELD_EQ(inName,"rows") ) { return ::hx::Val( rows ); }
 		break;
 	case 6:
-		if (HX_FIELD_EQ(inName,"forceX") ) { return ::hx::Val( forceX ); }
 		if (HX_FIELD_EQ(inName,"scaleX") ) { return ::hx::Val( scaleX ); }
 		if (HX_FIELD_EQ(inName,"scaleY") ) { return ::hx::Val( scaleY ); }
 		if (HX_FIELD_EQ(inName,"update") ) { return ::hx::Val( update_dyn() ); }
@@ -700,7 +620,6 @@ void Alphabet_obj::__Visit(HX_VISIT_PARAMS)
 		break;
 	case 10:
 		if (HX_FIELD_EQ(inName,"isMenuItem") ) { return ::hx::Val( isMenuItem ); }
-		if (HX_FIELD_EQ(inName,"isFreeplay") ) { return ::hx::Val( isFreeplay ); }
 		if (HX_FIELD_EQ(inName,"wasChoosed") ) { return ::hx::Val( wasChoosed ); }
 		if (HX_FIELD_EQ(inName,"set_scaleX") ) { return ::hx::Val( set_scaleX_dyn() ); }
 		if (HX_FIELD_EQ(inName,"set_scaleY") ) { return ::hx::Val( set_scaleY_dyn() ); }
@@ -709,7 +628,6 @@ void Alphabet_obj::__Visit(HX_VISIT_PARAMS)
 		if (HX_FIELD_EQ(inName,"isPauseItem") ) { return ::hx::Val( isPauseItem ); }
 		break;
 	case 12:
-		if (HX_FIELD_EQ(inName,"lerpOnForceX") ) { return ::hx::Val( lerpOnForceX ); }
 		if (HX_FIELD_EQ(inName,"isOptionItem") ) { return ::hx::Val( isOptionItem ); }
 		if (HX_FIELD_EQ(inName,"clearLetters") ) { return ::hx::Val( clearLetters_dyn() ); }
 		break;
@@ -754,7 +672,6 @@ bool Alphabet_obj::__GetStatic(const ::String &inName, Dynamic &outValue, ::hx::
 		if (HX_FIELD_EQ(inName,"rows") ) { rows=inValue.Cast< int >(); return inValue; }
 		break;
 	case 6:
-		if (HX_FIELD_EQ(inName,"forceX") ) { forceX=inValue.Cast< Float >(); return inValue; }
 		if (HX_FIELD_EQ(inName,"scaleX") ) { if (inCallProp == ::hx::paccAlways) return ::hx::Val( set_scaleX(inValue.Cast< Float >()) );scaleX=inValue.Cast< Float >(); return inValue; }
 		if (HX_FIELD_EQ(inName,"scaleY") ) { if (inCallProp == ::hx::paccAlways) return ::hx::Val( set_scaleY(inValue.Cast< Float >()) );scaleY=inValue.Cast< Float >(); return inValue; }
 		break;
@@ -774,14 +691,12 @@ bool Alphabet_obj::__GetStatic(const ::String &inName, Dynamic &outValue, ::hx::
 		break;
 	case 10:
 		if (HX_FIELD_EQ(inName,"isMenuItem") ) { isMenuItem=inValue.Cast< bool >(); return inValue; }
-		if (HX_FIELD_EQ(inName,"isFreeplay") ) { isFreeplay=inValue.Cast< bool >(); return inValue; }
 		if (HX_FIELD_EQ(inName,"wasChoosed") ) { wasChoosed=inValue.Cast< bool >(); return inValue; }
 		break;
 	case 11:
 		if (HX_FIELD_EQ(inName,"isPauseItem") ) { isPauseItem=inValue.Cast< bool >(); return inValue; }
 		break;
 	case 12:
-		if (HX_FIELD_EQ(inName,"lerpOnForceX") ) { lerpOnForceX=inValue.Cast< bool >(); return inValue; }
 		if (HX_FIELD_EQ(inName,"isOptionItem") ) { isOptionItem=inValue.Cast< bool >(); return inValue; }
 		break;
 	case 13:
@@ -807,8 +722,6 @@ void Alphabet_obj::__GetFields(Array< ::String> &outFields)
 	outFields->push(HX_("text",ad,cc,f9,4c));
 	outFields->push(HX_("bold",85,81,1b,41));
 	outFields->push(HX_("letters",cd,9c,8e,04));
-	outFields->push(HX_("forceX",0d,fc,86,fd));
-	outFields->push(HX_("lerpOnForceX",23,90,2f,36));
 	outFields->push(HX_("isMenuItem",5c,04,de,c6));
 	outFields->push(HX_("targetY",e8,f3,67,88));
 	outFields->push(HX_("targetX",e7,f3,67,88));
@@ -818,7 +731,6 @@ void Alphabet_obj::__GetFields(Array< ::String> &outFields)
 	outFields->push(HX_("xAdd",89,44,83,4f));
 	outFields->push(HX_("yAdd",28,7b,2c,50));
 	outFields->push(HX_("isOptionItem",b2,4b,7a,5d));
-	outFields->push(HX_("isFreeplay",aa,a2,35,9d));
 	outFields->push(HX_("wasChoosed",84,0f,2c,ac));
 	outFields->push(HX_("selected",5b,2a,6d,b1));
 	outFields->push(HX_("isPauseItem",df,31,a7,28));
@@ -836,8 +748,6 @@ static ::hx::StorageInfo Alphabet_obj_sMemberStorageInfo[] = {
 	{::hx::fsString,(int)offsetof(Alphabet_obj,text),HX_("text",ad,cc,f9,4c)},
 	{::hx::fsBool,(int)offsetof(Alphabet_obj,bold),HX_("bold",85,81,1b,41)},
 	{::hx::fsObject /* ::Array< ::Dynamic> */ ,(int)offsetof(Alphabet_obj,letters),HX_("letters",cd,9c,8e,04)},
-	{::hx::fsFloat,(int)offsetof(Alphabet_obj,forceX),HX_("forceX",0d,fc,86,fd)},
-	{::hx::fsBool,(int)offsetof(Alphabet_obj,lerpOnForceX),HX_("lerpOnForceX",23,90,2f,36)},
 	{::hx::fsBool,(int)offsetof(Alphabet_obj,isMenuItem),HX_("isMenuItem",5c,04,de,c6)},
 	{::hx::fsInt,(int)offsetof(Alphabet_obj,targetY),HX_("targetY",e8,f3,67,88)},
 	{::hx::fsFloat,(int)offsetof(Alphabet_obj,targetX),HX_("targetX",e7,f3,67,88)},
@@ -847,7 +757,6 @@ static ::hx::StorageInfo Alphabet_obj_sMemberStorageInfo[] = {
 	{::hx::fsFloat,(int)offsetof(Alphabet_obj,xAdd),HX_("xAdd",89,44,83,4f)},
 	{::hx::fsFloat,(int)offsetof(Alphabet_obj,yAdd),HX_("yAdd",28,7b,2c,50)},
 	{::hx::fsBool,(int)offsetof(Alphabet_obj,isOptionItem),HX_("isOptionItem",b2,4b,7a,5d)},
-	{::hx::fsBool,(int)offsetof(Alphabet_obj,isFreeplay),HX_("isFreeplay",aa,a2,35,9d)},
 	{::hx::fsBool,(int)offsetof(Alphabet_obj,wasChoosed),HX_("wasChoosed",84,0f,2c,ac)},
 	{::hx::fsBool,(int)offsetof(Alphabet_obj,selected),HX_("selected",5b,2a,6d,b1)},
 	{::hx::fsBool,(int)offsetof(Alphabet_obj,isPauseItem),HX_("isPauseItem",df,31,a7,28)},
@@ -869,8 +778,6 @@ static ::String Alphabet_obj_sMemberFields[] = {
 	HX_("text",ad,cc,f9,4c),
 	HX_("bold",85,81,1b,41),
 	HX_("letters",cd,9c,8e,04),
-	HX_("forceX",0d,fc,86,fd),
-	HX_("lerpOnForceX",23,90,2f,36),
 	HX_("isMenuItem",5c,04,de,c6),
 	HX_("targetY",e8,f3,67,88),
 	HX_("targetX",e7,f3,67,88),
@@ -880,7 +787,6 @@ static ::String Alphabet_obj_sMemberFields[] = {
 	HX_("xAdd",89,44,83,4f),
 	HX_("yAdd",28,7b,2c,50),
 	HX_("isOptionItem",b2,4b,7a,5d),
-	HX_("isFreeplay",aa,a2,35,9d),
 	HX_("wasChoosed",84,0f,2c,ac),
 	HX_("selected",5b,2a,6d,b1),
 	HX_("isPauseItem",df,31,a7,28),
@@ -952,8 +858,8 @@ void Alphabet_obj::__register()
 void Alphabet_obj::__boot()
 {
 {
-            	HX_STACKFRAME(&_hx_pos_25c23e7e07a93d18_281_boot)
-HXDLIN( 281)		Y_PER_ROW = ((Float)85);
+            	HX_STACKFRAME(&_hx_pos_25c23e7e07a93d18_241_boot)
+HXDLIN( 241)		Y_PER_ROW = ((Float)85);
             	}
 }
 

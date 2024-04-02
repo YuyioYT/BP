@@ -231,8 +231,6 @@ class ChartingState extends MusicBeatState
 				events: [],
 				bpm: 150.0,
 				cameraMoveOnNotes: false,
-				healthdrain: 0,
-				healthdrainKill: false,
 				disableAntiMash: false,
 				disableDebugButtons: false,
 				swapStrumLines: false,
@@ -598,18 +596,6 @@ class ChartingState extends MusicBeatState
 		var directories:Array<String> = [Paths.getPreloadPath('stages/')];
 		#end
 
-		var healthdrainOBJ:FlxUINumericStepper = new FlxUINumericStepper(player1DropDown.x + 140, gfVersionDropDown.y + 50, 1, 0, 0, 99, 0);
-		healthdrainOBJ.value = _song.healthdrain;
-		healthdrainOBJ.name = 'health_drain';
-		blockPressWhileTypingOnStepper.push(healthdrainOBJ);
-		
-		var healthdrainKill_check = new FlxUICheckBox(player1DropDown.x + 140, player2DropDown.y + 20, null, null, "Healthdrain can kill player", 100);
-		healthdrainKill_check.checked = _song.healthdrainKill;
-		healthdrainKill_check.callback = function()
-		{
-			_song.healthdrainKill = healthdrainKill_check.checked;
-		};
-
 		var songinstVolumeOBJ:FlxUINumericStepper = new FlxUINumericStepper(player1DropDown.x + 140, player1DropDown.y + 50, 0.1, 1.0, 0.1, 1, 1);
 		if (_song.songInstVolume > 0 ) songinstVolumeOBJ.value = _song.songInstVolume; else songinstVolumeOBJ.value = 1;
 		songinstVolumeOBJ.name = 'instplay_Volume';
@@ -675,14 +661,11 @@ class ChartingState extends MusicBeatState
 		tab_group_song.add(new FlxText(player1DropDown.x, player1DropDown.y - 15, 0, 'Boyfriend:'));
 		tab_group_song.add(new FlxText(player3DropDown.x, player3DropDown.y - 15, 0, 'Alt Opponent:'));
 		tab_group_song.add(new FlxText(stageDropDown.x, stageDropDown.y - 15, 0, 'Stage:'));
-		tab_group_song.add(new FlxText(healthdrainOBJ.x, healthdrainOBJ.y - 25, 0, 'Health Drain on \nOpponent Notehit'));
 		tab_group_song.add(player2DropDown);
 		tab_group_song.add(gfVersionDropDown);
 		tab_group_song.add(player1DropDown);
 		tab_group_song.add(player3DropDown);
 		tab_group_song.add(stageDropDown);
-		tab_group_song.add(healthdrainOBJ);
-		tab_group_song.add(healthdrainKill_check);
 
 		UI_box.addGroup(tab_group_song);
 

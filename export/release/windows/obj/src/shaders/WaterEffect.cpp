@@ -22,18 +22,18 @@
 #include <shaders/WaterShader.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_45773d1077fa6a4e_3188_new,"shaders.WaterEffect","new",0xd992801a,"shaders.WaterEffect.new","shaders/Shaders.hx",3188,0x7800d7f1)
-HX_LOCAL_STACK_FRAME(_hx_pos_45773d1077fa6a4e_3202_update,"shaders.WaterEffect","update",0xafcfe68f,"shaders.WaterEffect.update","shaders/Shaders.hx",3202,0x7800d7f1)
+HX_DEFINE_STACK_FRAME(_hx_pos_45773d1077fa6a4e_3259_new,"shaders.WaterEffect","new",0xd992801a,"shaders.WaterEffect.new","shaders/Shaders.hx",3259,0x7800d7f1)
+HX_LOCAL_STACK_FRAME(_hx_pos_45773d1077fa6a4e_3273_update,"shaders.WaterEffect","update",0xafcfe68f,"shaders.WaterEffect.update","shaders/Shaders.hx",3273,0x7800d7f1)
 namespace shaders{
 
 void WaterEffect_obj::__construct(){
-            	HX_GC_STACKFRAME(&_hx_pos_45773d1077fa6a4e_3188_new)
-HXLINE(3193)		this->speed = ((Float)1.0);
-HXLINE(3192)		this->iTime = ((Float)0.0);
-HXLINE(3191)		this->strength = ((Float)10.0);
-HXLINE(3190)		this->shader =  ::shaders::WaterShader_obj::__alloc( HX_CTX );
-HXLINE(3197)		this->shader->strength->value = ::Array_obj< Float >::__new(1)->init(0,this->strength);
-HXLINE(3198)		this->shader->iTime->value = ::Array_obj< Float >::__new(1)->init(0,this->iTime);
+            	HX_GC_STACKFRAME(&_hx_pos_45773d1077fa6a4e_3259_new)
+HXLINE(3264)		this->speed = ((Float)1.0);
+HXLINE(3263)		this->iTime = ((Float)0.0);
+HXLINE(3262)		this->strength = ((Float)10.0);
+HXLINE(3261)		this->shader =  ::shaders::WaterShader_obj::__alloc( HX_CTX );
+HXLINE(3268)		this->shader->strength->value = ::Array_obj< Float >::__new(1)->init(0,this->strength);
+HXLINE(3269)		this->shader->iTime->value = ::Array_obj< Float >::__new(1)->init(0,this->iTime);
             	}
 
 Dynamic WaterEffect_obj::__CreateEmpty() { return new WaterEffect_obj; }
@@ -56,11 +56,11 @@ bool WaterEffect_obj::_hx_isInstanceOf(int inClassId) {
 }
 
 void WaterEffect_obj::update(Float elapsed){
-            	HX_STACKFRAME(&_hx_pos_45773d1077fa6a4e_3202_update)
-HXLINE(3203)		this->shader->strength->value = ::Array_obj< Float >::__new(1)->init(0,this->strength);
-HXLINE(3204)		 ::shaders::WaterEffect _hx_tmp = ::hx::ObjectPtr<OBJ_>(this);
-HXDLIN(3204)		_hx_tmp->iTime = (_hx_tmp->iTime + (elapsed * this->speed));
-HXLINE(3205)		this->shader->iTime->value = ::Array_obj< Float >::__new(1)->init(0,this->iTime);
+            	HX_STACKFRAME(&_hx_pos_45773d1077fa6a4e_3273_update)
+HXLINE(3274)		this->shader->strength->value = ::Array_obj< Float >::__new(1)->init(0,this->strength);
+HXLINE(3275)		 ::shaders::WaterEffect _hx_tmp = ::hx::ObjectPtr<OBJ_>(this);
+HXDLIN(3275)		_hx_tmp->iTime = (_hx_tmp->iTime + (elapsed * this->speed));
+HXLINE(3276)		this->shader->iTime->value = ::Array_obj< Float >::__new(1)->init(0,this->iTime);
             	}
 
 
