@@ -19,12 +19,12 @@
 #include <shaders/InvertShader.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_e8dc09c8bbb2e20e_1839_new,"shaders.InvertColorsEffect","new",0xf87e67e9,"shaders.InvertColorsEffect.new","shaders/Shaders.hx",1839,0x7800d7f1)
+HX_DEFINE_STACK_FRAME(_hx_pos_e8dc09c8bbb2e20e_2037_new,"shaders.InvertColorsEffect","new",0xf87e67e9,"shaders.InvertColorsEffect.new","shaders/Shaders.hx",2037,0x7800d7f1)
 namespace shaders{
 
 void InvertColorsEffect_obj::__construct(bool lockAlpha){
-            	HX_GC_STACKFRAME(&_hx_pos_e8dc09c8bbb2e20e_1839_new)
-HXDLIN(1839)		this->shader =  ::shaders::InvertShader_obj::__alloc( HX_CTX );
+            	HX_GC_STACKFRAME(&_hx_pos_e8dc09c8bbb2e20e_2037_new)
+HXDLIN(2037)		this->shader =  ::shaders::InvertShader_obj::__alloc( HX_CTX );
             	}
 
 Dynamic InvertColorsEffect_obj::__CreateEmpty() { return new InvertColorsEffect_obj; }

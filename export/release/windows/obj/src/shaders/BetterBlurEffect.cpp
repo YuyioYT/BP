@@ -22,15 +22,15 @@
 #include <shaders/Effect.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_a03e37bcf91f6aea_2341_new,"shaders.BetterBlurEffect","new",0x986f71ba,"shaders.BetterBlurEffect.new","shaders/Shaders.hx",2341,0x7800d7f1)
+HX_DEFINE_STACK_FRAME(_hx_pos_a03e37bcf91f6aea_2539_new,"shaders.BetterBlurEffect","new",0x986f71ba,"shaders.BetterBlurEffect.new","shaders/Shaders.hx",2539,0x7800d7f1)
 namespace shaders{
 
 void BetterBlurEffect_obj::__construct(Float loops,Float quality,Float strength){
-            	HX_GC_STACKFRAME(&_hx_pos_a03e37bcf91f6aea_2341_new)
-HXLINE(2342)		this->shader =  ::shaders::BetterBlurShader_obj::__alloc( HX_CTX );
-HXLINE(2343)		this->shader->loops->value = ::Array_obj< Float >::__new(1)->init(0,loops);
-HXLINE(2344)		this->shader->quality->value = ::Array_obj< Float >::__new(1)->init(0,quality);
-HXLINE(2345)		this->shader->strength->value = ::Array_obj< Float >::__new(1)->init(0,strength);
+            	HX_GC_STACKFRAME(&_hx_pos_a03e37bcf91f6aea_2539_new)
+HXLINE(2540)		this->shader =  ::shaders::BetterBlurShader_obj::__alloc( HX_CTX );
+HXLINE(2541)		this->shader->loops->value = ::Array_obj< Float >::__new(1)->init(0,loops);
+HXLINE(2542)		this->shader->quality->value = ::Array_obj< Float >::__new(1)->init(0,quality);
+HXLINE(2543)		this->shader->strength->value = ::Array_obj< Float >::__new(1)->init(0,strength);
             	}
 
 Dynamic BetterBlurEffect_obj::__CreateEmpty() { return new BetterBlurEffect_obj; }

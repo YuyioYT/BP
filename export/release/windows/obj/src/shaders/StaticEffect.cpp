@@ -22,20 +22,20 @@
 #include <shaders/StaticShader.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_071ce3ef8ccd3a8e_580_new,"shaders.StaticEffect","new",0x00c23131,"shaders.StaticEffect.new","shaders/Shaders.hx",580,0x7800d7f1)
+HX_DEFINE_STACK_FRAME(_hx_pos_071ce3ef8ccd3a8e_678_new,"shaders.StaticEffect","new",0x00c23131,"shaders.StaticEffect.new","shaders/Shaders.hx",678,0x7800d7f1)
 static const Float _hx_array_data_5d4bc4bf_1[] = {
 	(Float)0,
 };
-HX_LOCAL_STACK_FRAME(_hx_pos_071ce3ef8ccd3a8e_593_update,"shaders.StaticEffect","update",0xfdf8bdd8,"shaders.StaticEffect.update","shaders/Shaders.hx",593,0x7800d7f1)
-HX_LOCAL_STACK_FRAME(_hx_pos_071ce3ef8ccd3a8e_598_set_strength,"shaders.StaticEffect","set_strength",0xc433270d,"shaders.StaticEffect.set_strength","shaders/Shaders.hx",598,0x7800d7f1)
+HX_LOCAL_STACK_FRAME(_hx_pos_071ce3ef8ccd3a8e_691_update,"shaders.StaticEffect","update",0xfdf8bdd8,"shaders.StaticEffect.update","shaders/Shaders.hx",691,0x7800d7f1)
+HX_LOCAL_STACK_FRAME(_hx_pos_071ce3ef8ccd3a8e_696_set_strength,"shaders.StaticEffect","set_strength",0xc433270d,"shaders.StaticEffect.set_strength","shaders/Shaders.hx",696,0x7800d7f1)
 namespace shaders{
 
 void StaticEffect_obj::__construct(){
-            	HX_GC_STACKFRAME(&_hx_pos_071ce3ef8ccd3a8e_580_new)
-HXLINE( 584)		this->strength = ((Float)0);
-HXLINE( 582)		this->shader =  ::shaders::StaticShader_obj::__alloc( HX_CTX );
-HXLINE( 588)		this->set_strength(( (Float)(0) ));
-HXLINE( 589)		this->shader->iTime->value = ::Array_obj< Float >::fromData( _hx_array_data_5d4bc4bf_1,1);
+            	HX_GC_STACKFRAME(&_hx_pos_071ce3ef8ccd3a8e_678_new)
+HXLINE( 682)		this->strength = ((Float)0);
+HXLINE( 680)		this->shader =  ::shaders::StaticShader_obj::__alloc( HX_CTX );
+HXLINE( 686)		this->set_strength(( (Float)(0) ));
+HXLINE( 687)		this->shader->iTime->value = ::Array_obj< Float >::fromData( _hx_array_data_5d4bc4bf_1,1);
             	}
 
 Dynamic StaticEffect_obj::__CreateEmpty() { return new StaticEffect_obj; }
@@ -58,18 +58,18 @@ bool StaticEffect_obj::_hx_isInstanceOf(int inClassId) {
 }
 
 void StaticEffect_obj::update(Float elapsed){
-            	HX_STACKFRAME(&_hx_pos_071ce3ef8ccd3a8e_593_update)
-HXLINE( 594)		::Array< Float > base = this->shader->iTime->value;
-HXDLIN( 594)		int _hx_tmp = 0;
-HXDLIN( 594)		base[_hx_tmp] = (base->__get(_hx_tmp) + elapsed);
+            	HX_STACKFRAME(&_hx_pos_071ce3ef8ccd3a8e_691_update)
+HXLINE( 692)		::Array< Float > base = this->shader->iTime->value;
+HXDLIN( 692)		int _hx_tmp = 0;
+HXDLIN( 692)		base[_hx_tmp] = (base->__get(_hx_tmp) + elapsed);
             	}
 
 
 Float StaticEffect_obj::set_strength(Float value){
-            	HX_STACKFRAME(&_hx_pos_071ce3ef8ccd3a8e_598_set_strength)
-HXLINE( 599)		this->strength = value;
-HXLINE( 600)		this->shader->strength->value = ::Array_obj< Float >::__new(1)->init(0,value);
-HXLINE( 601)		return value;
+            	HX_STACKFRAME(&_hx_pos_071ce3ef8ccd3a8e_696_set_strength)
+HXLINE( 697)		this->strength = value;
+HXLINE( 698)		this->shader->strength->value = ::Array_obj< Float >::__new(1)->init(0,value);
+HXLINE( 699)		return value;
             	}
 
 

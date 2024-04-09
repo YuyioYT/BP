@@ -171,9 +171,6 @@
 #ifndef INCLUDED_states_PlayState
 #include <states/PlayState.h>
 #endif
-#ifndef INCLUDED_states_Section2Substate
-#include <states/Section2Substate.h>
-#endif
 #ifndef INCLUDED_states_StoryMenuState
 #include <states/StoryMenuState.h>
 #endif
@@ -609,37 +606,6 @@ HXDLIN( 185)			this11->set_x(( (Float)(0) ));
 HXDLIN( 185)			this11->set_y(( (Float)(0) ));
             		}
 HXLINE( 186)		this->menuItems->add(leText2).StaticCast<  ::flixel::FlxSprite >();
-HXLINE( 188)		 ::flixel::FlxSprite arrowshitSub =  ::flixel::FlxSprite_obj::__alloc( HX_CTX ,-80,null(),null());
-HXDLIN( 188)		 ::flixel::FlxSprite arrowshitSub1 = arrowshitSub->loadGraphic(::backend::Paths_obj::image(HX_("menuimages/stupidarrowsright",a3,66,85,8a),null(),null()),null(),null(),null(),null(),null());
-HXLINE( 189)		arrowshitSub1->setGraphicSize(::Std_obj::_hx_int(arrowshitSub1->get_width()),null());
-HXLINE( 190)		arrowshitSub1->updateHitbox();
-HXLINE( 191)		{
-HXLINE( 191)			int axes7 = 17;
-HXDLIN( 191)			bool _hx_tmp26;
-HXDLIN( 191)			if ((axes7 != 1)) {
-HXLINE( 191)				_hx_tmp26 = (axes7 == 17);
-            			}
-            			else {
-HXLINE( 191)				_hx_tmp26 = true;
-            			}
-HXDLIN( 191)			if (_hx_tmp26) {
-HXLINE( 191)				int _hx_tmp = ::flixel::FlxG_obj::width;
-HXDLIN( 191)				arrowshitSub1->set_x(((( (Float)(_hx_tmp) ) - arrowshitSub1->get_width()) / ( (Float)(2) )));
-            			}
-HXDLIN( 191)			bool _hx_tmp27;
-HXDLIN( 191)			if ((axes7 != 16)) {
-HXLINE( 191)				_hx_tmp27 = (axes7 == 17);
-            			}
-            			else {
-HXLINE( 191)				_hx_tmp27 = true;
-            			}
-HXDLIN( 191)			if (_hx_tmp27) {
-HXLINE( 191)				int _hx_tmp = ::flixel::FlxG_obj::height;
-HXDLIN( 191)				arrowshitSub1->set_y(((( (Float)(_hx_tmp) ) - arrowshitSub1->get_height()) / ( (Float)(2) )));
-            			}
-            		}
-HXLINE( 192)		arrowshitSub1->set_antialiasing(::backend::ClientPrefs_obj::data->antialiasing);
-HXLINE( 193)		this->menuItems->add(arrowshitSub1).StaticCast<  ::flixel::FlxSprite >();
             	}
 
 
@@ -718,11 +684,6 @@ HXLINE( 234)		 ::flixel::input::keyboard::FlxKeyList _this = ( ( ::flixel::input
 HXDLIN( 234)		if (_this->keyManager->checkStatusUnsafe(17,_this->status)) {
 HXLINE( 236)			this->persistentUpdate = false;
 HXLINE( 237)			this->openSubState( ::substates::GameplayChangersSubstate_obj::__alloc( HX_CTX ));
-            		}
-HXLINE( 240)		if (this->get_controls()->get_UI_RIGHT_P()) {
-HXLINE( 242)			this->openSubState( ::states::Section2Substate_obj::__alloc( HX_CTX ));
-HXLINE( 243)			 ::flixel::_hx_system::frontEnds::SoundFrontEnd _hx_tmp = ::flixel::FlxG_obj::sound;
-HXDLIN( 243)			_hx_tmp->play(::backend::Paths_obj::sound(HX_("menu/scrollMenu",fc,75,a6,f1),null()),null(),null(),null(),null(),null());
             		}
 HXLINE( 247)		this->super::update(elapsed);
             	}

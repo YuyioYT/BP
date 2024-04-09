@@ -22,14 +22,14 @@
 #include <shaders/SobelShader.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_623e4febe088f67b_2747_new,"shaders.SobelEffect","new",0x3e5f39b0,"shaders.SobelEffect.new","shaders/Shaders.hx",2747,0x7800d7f1)
+HX_DEFINE_STACK_FRAME(_hx_pos_623e4febe088f67b_2945_new,"shaders.SobelEffect","new",0x3e5f39b0,"shaders.SobelEffect.new","shaders/Shaders.hx",2945,0x7800d7f1)
 namespace shaders{
 
 void SobelEffect_obj::__construct(Float strength,Float intensity){
-            	HX_GC_STACKFRAME(&_hx_pos_623e4febe088f67b_2747_new)
-HXLINE(2748)		this->shader =  ::shaders::SobelShader_obj::__alloc( HX_CTX );
-HXLINE(2749)		this->shader->strength->value = ::Array_obj< Float >::__new(1)->init(0,strength);
-HXLINE(2750)		this->shader->intensity->value = ::Array_obj< Float >::__new(1)->init(0,intensity);
+            	HX_GC_STACKFRAME(&_hx_pos_623e4febe088f67b_2945_new)
+HXLINE(2946)		this->shader =  ::shaders::SobelShader_obj::__alloc( HX_CTX );
+HXLINE(2947)		this->shader->strength->value = ::Array_obj< Float >::__new(1)->init(0,strength);
+HXLINE(2948)		this->shader->intensity->value = ::Array_obj< Float >::__new(1)->init(0,intensity);
             	}
 
 Dynamic SobelEffect_obj::__CreateEmpty() { return new SobelEffect_obj; }

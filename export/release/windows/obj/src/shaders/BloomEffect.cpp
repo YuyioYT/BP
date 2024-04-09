@@ -25,25 +25,25 @@
 #include <shaders/Effect.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_1bd5c785507dc90f_2389_new,"shaders.BloomEffect","new",0xaec0b6c6,"shaders.BloomEffect.new","shaders/Shaders.hx",2389,0x7800d7f1)
-HX_LOCAL_STACK_FRAME(_hx_pos_1bd5c785507dc90f_2407_set_effect,"shaders.BloomEffect","set_effect",0xa85dbb28,"shaders.BloomEffect.set_effect","shaders/Shaders.hx",2407,0x7800d7f1)
-HX_LOCAL_STACK_FRAME(_hx_pos_1bd5c785507dc90f_2413_set_strength,"shaders.BloomEffect","set_strength",0x0213c6d8,"shaders.BloomEffect.set_strength","shaders/Shaders.hx",2413,0x7800d7f1)
-HX_LOCAL_STACK_FRAME(_hx_pos_1bd5c785507dc90f_2419_set_contrast,"shaders.BloomEffect","set_contrast",0xab36e159,"shaders.BloomEffect.set_contrast","shaders/Shaders.hx",2419,0x7800d7f1)
-HX_LOCAL_STACK_FRAME(_hx_pos_1bd5c785507dc90f_2425_set_brightness,"shaders.BloomEffect","set_brightness",0x7b5d85e8,"shaders.BloomEffect.set_brightness","shaders/Shaders.hx",2425,0x7800d7f1)
+HX_DEFINE_STACK_FRAME(_hx_pos_1bd5c785507dc90f_2587_new,"shaders.BloomEffect","new",0xaec0b6c6,"shaders.BloomEffect.new","shaders/Shaders.hx",2587,0x7800d7f1)
+HX_LOCAL_STACK_FRAME(_hx_pos_1bd5c785507dc90f_2605_set_effect,"shaders.BloomEffect","set_effect",0xa85dbb28,"shaders.BloomEffect.set_effect","shaders/Shaders.hx",2605,0x7800d7f1)
+HX_LOCAL_STACK_FRAME(_hx_pos_1bd5c785507dc90f_2611_set_strength,"shaders.BloomEffect","set_strength",0x0213c6d8,"shaders.BloomEffect.set_strength","shaders/Shaders.hx",2611,0x7800d7f1)
+HX_LOCAL_STACK_FRAME(_hx_pos_1bd5c785507dc90f_2617_set_contrast,"shaders.BloomEffect","set_contrast",0xab36e159,"shaders.BloomEffect.set_contrast","shaders/Shaders.hx",2617,0x7800d7f1)
+HX_LOCAL_STACK_FRAME(_hx_pos_1bd5c785507dc90f_2623_set_brightness,"shaders.BloomEffect","set_brightness",0x7b5d85e8,"shaders.BloomEffect.set_brightness","shaders/Shaders.hx",2623,0x7800d7f1)
 namespace shaders{
 
 void BloomEffect_obj::__construct(){
-            	HX_GC_STACKFRAME(&_hx_pos_1bd5c785507dc90f_2389_new)
-HXLINE(2396)		this->brightness = ((Float)0);
-HXLINE(2395)		this->contrast = ((Float)0);
-HXLINE(2394)		this->strength = ((Float)0);
-HXLINE(2393)		this->effect = ((Float)0);
-HXLINE(2391)		this->shader =  ::shaders::BloomShader_obj::__alloc( HX_CTX );
-HXLINE(2400)		this->set_effect(( (Float)(0) ));
-HXLINE(2401)		this->set_strength(( (Float)(0) ));
-HXLINE(2402)		this->set_contrast(( (Float)(0) ));
-HXLINE(2403)		this->set_brightness(( (Float)(0) ));
-HXLINE(2404)		this->shader->iResolution->value = ::Array_obj< Float >::__new(2)->init(0,::flixel::FlxG_obj::width)->init(1,::flixel::FlxG_obj::height);
+            	HX_GC_STACKFRAME(&_hx_pos_1bd5c785507dc90f_2587_new)
+HXLINE(2594)		this->brightness = ((Float)0);
+HXLINE(2593)		this->contrast = ((Float)0);
+HXLINE(2592)		this->strength = ((Float)0);
+HXLINE(2591)		this->effect = ((Float)0);
+HXLINE(2589)		this->shader =  ::shaders::BloomShader_obj::__alloc( HX_CTX );
+HXLINE(2598)		this->set_effect(( (Float)(0) ));
+HXLINE(2599)		this->set_strength(( (Float)(0) ));
+HXLINE(2600)		this->set_contrast(( (Float)(0) ));
+HXLINE(2601)		this->set_brightness(( (Float)(0) ));
+HXLINE(2602)		this->shader->iResolution->value = ::Array_obj< Float >::__new(2)->init(0,::flixel::FlxG_obj::width)->init(1,::flixel::FlxG_obj::height);
             	}
 
 Dynamic BloomEffect_obj::__CreateEmpty() { return new BloomEffect_obj; }
@@ -66,40 +66,40 @@ bool BloomEffect_obj::_hx_isInstanceOf(int inClassId) {
 }
 
 Float BloomEffect_obj::set_effect(Float value){
-            	HX_STACKFRAME(&_hx_pos_1bd5c785507dc90f_2407_set_effect)
-HXLINE(2408)		this->effect = value;
-HXLINE(2409)		this->shader->effect->value = ::Array_obj< Float >::__new(1)->init(0,value);
-HXLINE(2410)		return this->effect;
+            	HX_STACKFRAME(&_hx_pos_1bd5c785507dc90f_2605_set_effect)
+HXLINE(2606)		this->effect = value;
+HXLINE(2607)		this->shader->effect->value = ::Array_obj< Float >::__new(1)->init(0,value);
+HXLINE(2608)		return this->effect;
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC1(BloomEffect_obj,set_effect,return )
 
 Float BloomEffect_obj::set_strength(Float value){
-            	HX_STACKFRAME(&_hx_pos_1bd5c785507dc90f_2413_set_strength)
-HXLINE(2414)		this->strength = value;
-HXLINE(2415)		this->shader->strength->value = ::Array_obj< Float >::__new(1)->init(0,value);
-HXLINE(2416)		return this->strength;
+            	HX_STACKFRAME(&_hx_pos_1bd5c785507dc90f_2611_set_strength)
+HXLINE(2612)		this->strength = value;
+HXLINE(2613)		this->shader->strength->value = ::Array_obj< Float >::__new(1)->init(0,value);
+HXLINE(2614)		return this->strength;
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC1(BloomEffect_obj,set_strength,return )
 
 Float BloomEffect_obj::set_contrast(Float value){
-            	HX_STACKFRAME(&_hx_pos_1bd5c785507dc90f_2419_set_contrast)
-HXLINE(2420)		this->contrast = value;
-HXLINE(2421)		this->shader->contrast->value = ::Array_obj< Float >::__new(1)->init(0,value);
-HXLINE(2422)		return this->contrast;
+            	HX_STACKFRAME(&_hx_pos_1bd5c785507dc90f_2617_set_contrast)
+HXLINE(2618)		this->contrast = value;
+HXLINE(2619)		this->shader->contrast->value = ::Array_obj< Float >::__new(1)->init(0,value);
+HXLINE(2620)		return this->contrast;
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC1(BloomEffect_obj,set_contrast,return )
 
 Float BloomEffect_obj::set_brightness(Float value){
-            	HX_STACKFRAME(&_hx_pos_1bd5c785507dc90f_2425_set_brightness)
-HXLINE(2426)		this->brightness = value;
-HXLINE(2427)		this->shader->brightness->value = ::Array_obj< Float >::__new(1)->init(0,value);
-HXLINE(2428)		return this->brightness;
+            	HX_STACKFRAME(&_hx_pos_1bd5c785507dc90f_2623_set_brightness)
+HXLINE(2624)		this->brightness = value;
+HXLINE(2625)		this->shader->brightness->value = ::Array_obj< Float >::__new(1)->init(0,value);
+HXLINE(2626)		return this->brightness;
             	}
 
 

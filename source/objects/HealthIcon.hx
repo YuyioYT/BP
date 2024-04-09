@@ -71,10 +71,6 @@ class HealthIcon extends FlxSprite
 		if(this.char == 'bambiGod2d') {
 			//scaryTrail.visible = true;
 			//fuckin offsets
-			var aberrationEffect = new DoChromaticAberrationEffect(); // Ajusta el valor de offset cromático según tus preferencias
-
-			this.shader = aberrationEffect.shader;
-			aberrationEffect.offset = FlxG.random.float(0.003, 0.0010);
 			switch(animation.curAnim.name) {
 				case 'neutral':
 					offset.y += 140;

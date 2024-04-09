@@ -25,15 +25,15 @@
 #include <shaders/ScanlineShader.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_ab5f48686d42641c_292_new,"shaders.ScanlineEffect","new",0xe1f1b634,"shaders.ScanlineEffect.new","shaders/Shaders.hx",292,0x7800d7f1)
+HX_DEFINE_STACK_FRAME(_hx_pos_ab5f48686d42641c_390_new,"shaders.ScanlineEffect","new",0xe1f1b634,"shaders.ScanlineEffect.new","shaders/Shaders.hx",390,0x7800d7f1)
 namespace shaders{
 
 void ScanlineEffect_obj::__construct(Float strength,Float pixelsBetweenEachLine,bool smooth){
-            	HX_GC_STACKFRAME(&_hx_pos_ab5f48686d42641c_292_new)
-HXLINE( 293)		this->shader =  ::shaders::ScanlineShader_obj::__alloc( HX_CTX );
-HXLINE( 294)		this->shader->strength->value = ::Array_obj< Float >::__new(1)->init(0,strength);
-HXLINE( 295)		this->shader->pixelsBetweenEachLine->value = ::Array_obj< Float >::__new(1)->init(0,pixelsBetweenEachLine);
-HXLINE( 296)		this->shader->smoothVar->value = ::Array_obj< bool >::__new(1)->init(0,smooth);
+            	HX_GC_STACKFRAME(&_hx_pos_ab5f48686d42641c_390_new)
+HXLINE( 391)		this->shader =  ::shaders::ScanlineShader_obj::__alloc( HX_CTX );
+HXLINE( 392)		this->shader->strength->value = ::Array_obj< Float >::__new(1)->init(0,strength);
+HXLINE( 393)		this->shader->pixelsBetweenEachLine->value = ::Array_obj< Float >::__new(1)->init(0,pixelsBetweenEachLine);
+HXLINE( 394)		this->shader->smoothVar->value = ::Array_obj< bool >::__new(1)->init(0,smooth);
             	}
 
 Dynamic ScanlineEffect_obj::__CreateEmpty() { return new ScanlineEffect_obj; }

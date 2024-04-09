@@ -284,6 +284,104 @@ class ChromBlockedShader extends FlxShader {
     }
 }
 
+class Chromaticbordes3Effect extends Effect {
+    public var shader:Chromaticbordes3Shader = new Chromaticbordes3Shader();
+    public var sampleCount(default, set):Int = 0;
+    public var blur(default, set):Float = 0;
+    public var falloff(default, set):Float = 0;
+
+    public function new():Void {
+        set_sampleCount(50);
+        set_blur(0.25);
+        set_falloff(3.0);
+        shader.iTime.value = [0];
+    }
+
+    public override function update(elapsed:Float):Void {
+        shader.iTime.value[0] += elapsed;
+    }
+
+    public function set_sampleCount(v:Int):Int {
+        sampleCount = v;
+        shader.sampleCount.value = [v];
+        return this.sampleCount;
+    }
+
+    public function set_blur(v:Float):Float {
+        blur = v;
+        shader.blur.value = [v];
+        return this.blur;
+    }
+
+    public function set_falloff(v:Float):Float {
+        falloff = v;
+        shader.falloff.value = [v];
+        return this.falloff;
+    }
+}
+
+class Chromaticbordes3Shader extends FlxShader {
+    @:glFragmentSource('
+    //SHADERTOY PORT FIX
+    #pragma header
+    vec2 uv = openfl_TextureCoordv.xy;
+    vec2 fragCoord = openfl_TextureCoordv*openfl_TextureSize;
+    vec2 iResolution = openfl_TextureSize;
+    uniform float iTime;
+    #define iChannel0 bitmap
+    #define texture flixel_texture2D
+    #define fragColor gl_FragColor
+    #define mainImage main
+    //****MAKE SURE TO remove the parameters from mainImage.
+    //SHADERTOY PORT FIX
+    
+    /*
+        Transverse Chromatic Aberration
+    
+        Based on https://github.com/FlexMonkey/Filterpedia/blob/7a0d4a7070894eb77b9d1831f689f9d8765c12ca/Filterpedia/customFilters/TransverseChromaticAberration.swift
+    
+        Simon Gladman | http://flexmonkey.blogspot.co.uk | September 2017
+    */
+    
+    uniform int sampleCount;
+    uniform float blur; 
+    uniform float falloff; 
+    
+    // use iChannel0 for video, iChannel1 for test grid
+    #define INPUT iChannel0
+    
+    void main()
+    {
+        vec2 destCoord = fragCoord.xy / iResolution.xy;
+    
+        vec2 direction = normalize(destCoord - 0.5); 
+        vec2 velocity = direction * blur * pow(length(destCoord - 0.5), falloff);
+        float inverseSampleCount = 1.0 / float(sampleCount); 
+        
+        mat3 increments = mat3(velocity * 1.0 * inverseSampleCount,
+                                   velocity * 2.0 * inverseSampleCount,
+                                   velocity * 4.0 * inverseSampleCount);
+    
+        vec3 accumulator = vec3(0);
+        mat3 offsets = mat3(0); 
+        
+        for (int i = 0; i < sampleCount; i++) {
+            accumulator.r += texture(INPUT, destCoord + offsets[0]).r; 
+            accumulator.g += texture(INPUT, destCoord + offsets[1]).g; 
+            accumulator.b += texture(INPUT, destCoord + offsets[2]).b; 
+            
+            offsets -= increments;
+        }
+    
+        fragColor = vec4(accumulator / float(sampleCount), 1.0);
+    }
+    ')
+
+    public function new() {
+        super();
+    }
+}
+
 
 class ScanlineEffect extends Effect
 {
@@ -736,6 +834,106 @@ class Grey2Shader extends FlxShader{
 		super();
 	}
 }
+
+/*class WhiteShadowsEffect extends Effect{
+	
+	public var shader:Grey2Shader = new Grey2Shader();
+	
+    public var iStrength(default, set):Float = 0;
+
+	public function new():Void
+	{
+        set_iStrength(0);
+	}
+
+    function set_iStrength(value:Float):Float
+        {
+            iStrength = value;
+            shader.iStrength.value = [value];
+            return value;
+        }
+    function set_iStrength(value:Float):Float
+        {
+            iStrength = value;
+            shader.iStrength.value = [value];
+            return value;
+        }
+    function set_iStrength(value:Float):Float
+        {
+          iStrength = value;
+          shader.iStrength.value = [value];
+          return value;
+        }    
+    function set_iStrength(value:Float):Float
+        {
+            iStrength = value;
+            shader.iStrength.value = [value];
+            return value;
+        }    
+    function set_iStrength(value:Float):Float
+        {
+            iStrength = value;
+            shader.iStrength.value = [value];
+            return value;
+        }    
+    function set_iStrength(value:Float):Float
+        {
+            iStrength = value;
+            shader.iStrength.value = [value];
+            return value;
+        }
+	
+}
+class WhiteShadowsShader extends FlxShader{
+	@:glFragmentSource('
+    #pragma header
+
+    uniform float _alpha; //transparancy of the drop shadow
+    uniform float _disx; // x distance
+    uniform float _disy; // y distance
+    uniform bool inner; // an inside shadow
+    uniform bool inverted; // inverted inner shadow
+    
+    vec2 uv = openfl_TextureCoordv.xy;
+    vec2 size = openfl_TextureSize.xy;
+    
+    void main(void){
+    
+    vec4 color = texture2D( bitmap, uv);
+    
+    vec2 distance = vec2(_disx,_disy)/size;
+    //distance vector 
+    
+    if(inner){
+        vec4 shadow = flixel_texture2D( bitmap, uv-distance);
+        shadow.rgb = vec3(0.0);
+        shadow.a = 1-shadow.a;
+        shadow.a *= color.a;
+        vec3 result;
+        if(inverted){
+            result = color.rgb * (shadow.a+color.a*_alpha); // for that cool lighting
+        }else{
+            result = color.rgb * ((1-shadow.a )+shadow.a*_alpha); 
+        }
+        gl_FragColor =  vec4(result,color.a);
+    }else{
+    
+        vec4 shadow = flixel_texture2D( bitmap, uv-distance);
+        shadow.rgb = vec3(0.0);
+        shadow.a *= _alpha;
+        gl_FragColor = shadow + color;
+    
+    }
+        //bitmap: the original graphic of the camera or sprite. usually replaces iChannel0 
+        //texture2D: a 4type Vector that returns the image. replaces texture
+        //gl_FragColor: the result. usually replaces fragColor
+    }
+	')
+	public function new(){
+		super();
+	}
+}
+*/
 
 class GreyscaleEffect extends Effect{
 	

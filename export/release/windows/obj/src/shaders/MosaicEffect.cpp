@@ -22,13 +22,13 @@
 #include <shaders/MosaicShader.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_a0dd7da34db916b6_2812_new,"shaders.MosaicEffect","new",0xef9da7cd,"shaders.MosaicEffect.new","shaders/Shaders.hx",2812,0x7800d7f1)
+HX_DEFINE_STACK_FRAME(_hx_pos_a0dd7da34db916b6_3010_new,"shaders.MosaicEffect","new",0xef9da7cd,"shaders.MosaicEffect.new","shaders/Shaders.hx",3010,0x7800d7f1)
 namespace shaders{
 
 void MosaicEffect_obj::__construct(Float strength){
-            	HX_GC_STACKFRAME(&_hx_pos_a0dd7da34db916b6_2812_new)
-HXLINE(2813)		this->shader =  ::shaders::MosaicShader_obj::__alloc( HX_CTX );
-HXLINE(2814)		this->shader->strength->value = ::Array_obj< Float >::__new(1)->init(0,strength);
+            	HX_GC_STACKFRAME(&_hx_pos_a0dd7da34db916b6_3010_new)
+HXLINE(3011)		this->shader =  ::shaders::MosaicShader_obj::__alloc( HX_CTX );
+HXLINE(3012)		this->shader->strength->value = ::Array_obj< Float >::__new(1)->init(0,strength);
             	}
 
 Dynamic MosaicEffect_obj::__CreateEmpty() { return new MosaicEffect_obj; }

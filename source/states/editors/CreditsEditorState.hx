@@ -530,7 +530,7 @@ class CreditsEditorState extends MusicBeatState
 				FlxG.sound.play(Paths.sound('cancelMenu'));
 				MusicBeatState.switchState(new states.editors.MasterEditorMenu());
 				openfl.Lib.application.window.title = "Friday Night Funkin': SB Engine v" + MainMenuState.cornEngineVersion + " - Mod Maker Menu";
-				FlxG.sound.playMusic(Paths.music('Gates of the hell'));
+				FlxG.sound.playMusic(Paths.music('menu/Gates of the hell'));
 				quitting = true;
 			}
 		}

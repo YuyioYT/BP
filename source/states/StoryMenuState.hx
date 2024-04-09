@@ -185,12 +185,12 @@ class StoryMenuState extends MusicBeatState
 		leText2.scrollFactor.set();
 		menuItems.add(leText2);
 		
-		var arrowshitSub = new FlxSprite(-80).loadGraphic(Paths.image('menuimages/stupidarrowsright'));
+		/*var arrowshitSub = new FlxSprite(-80).loadGraphic(Paths.image('menuimages/stupidarrowsright'));
 		arrowshitSub.setGraphicSize(Std.int(arrowshitSub.width * 1));
 		arrowshitSub.updateHitbox();
 		arrowshitSub.screenCenter();
 		arrowshitSub.antialiasing = ClientPrefs.data.antialiasing;
-		menuItems.add(arrowshitSub);
+		menuItems.add(arrowshitSub);*/
 	}
 
     override public function update(elapsed: Float) 
@@ -237,12 +237,12 @@ class StoryMenuState extends MusicBeatState
 			openSubState(new GameplayChangersSubstate());
 		}
 		
-		if (controls.UI_RIGHT_P)
+	/*	if (controls.UI_RIGHT_P)
 		{
 			openSubState(new Section2Substate());
 			FlxG.sound.play(Paths.sound('menu/scrollMenu'));
 		}
-			
+			*/
 		
 		super.update(elapsed);
     }
@@ -345,7 +345,7 @@ class StoryMenuState extends MusicBeatState
 	}
 }
 
-class Section2Substate extends MusicBeatSubstate
+/*class Section2Substate extends MusicBeatSubstate
 {
 	
 	var arrowshitSub:FlxSprite;
@@ -671,4 +671,4 @@ class Section2Substate extends MusicBeatSubstate
 		var leWeek:WeekData = WeekData.weeksLoaded.get(WeekData.weeksList[weekNum]);
 		return (!leWeek.startUnlocked && leWeek.weekBefore.length > 0 && (!weekCompleted.exists(leWeek.weekBefore) || !weekCompleted.get(leWeek.weekBefore)));
 	}
-}
+}*/

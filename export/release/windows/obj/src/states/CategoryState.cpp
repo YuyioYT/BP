@@ -123,7 +123,7 @@
 
 HX_DEFINE_STACK_FRAME(_hx_pos_ad189f15c61207ca_33_new,"states.CategoryState","new",0x72be5659,"states.CategoryState.new","states/CategoryState.hx",33,0x40e24938)
 static const ::String _hx_array_data_2bb435e7_1[] = {
-	HX_("story",f5,13,16,84),HX_("extras",e3,a3,24,c7),HX_("remixes",77,5c,0a,ef),HX_("joke",9f,35,65,46),HX_("old",a7,98,54,00),HX_("secret",70,0e,4a,64),
+	HX_("story",f5,13,16,84),HX_("extras",e3,a3,24,c7),
 };
 HX_LOCAL_STACK_FRAME(_hx_pos_ad189f15c61207ca_90_create,"states.CategoryState","create",0x75dc22a3,"states.CategoryState.create","states/CategoryState.hx",90,0x40e24938)
 HX_LOCAL_STACK_FRAME(_hx_pos_ad189f15c61207ca_142_LoadProperPack,"states.CategoryState","LoadProperPack",0x233f1256,"states.CategoryState.LoadProperPack","states/CategoryState.hx",142,0x40e24938)
@@ -145,7 +145,7 @@ HXLINE(  87)		this->categoryIcons = ::Array_obj< ::Dynamic>::__new(0);
 HXLINE(  50)		this->loadingPack = false;
 HXLINE(  48)		this->bg =  ::flixel::FlxSprite_obj::__alloc( HX_CTX ,null(),null(),null());
 HXLINE(  46)		this->CurrentPack = 0;
-HXLINE(  44)		this->AllPossibleSongs = ::Array_obj< ::String >::fromData( _hx_array_data_2bb435e7_1,6);
+HXLINE(  44)		this->AllPossibleSongs = ::Array_obj< ::String >::fromData( _hx_array_data_2bb435e7_1,2);
 HXLINE(  42)		this->titles = ::Array_obj< ::Dynamic>::__new(0);
 HXLINE(  41)		this->icons = ::Array_obj< ::Dynamic>::__new(0);
 HXLINE(  37)		this->InMainFreeplayState = false;

@@ -41,7 +41,7 @@ class CategoryState extends MusicBeatState
 	var icons:Array<FlxSprite> = [];
 	var titles:Array<FlxSprite> = [];
 
-	private var AllPossibleSongs:Array<String> = ["story", "extras", "remixes","joke", "old", "secret"];
+	private var AllPossibleSongs:Array<String> = ["story", "extras"/*, "remixes","joke", "old", "secret"*/];
 
 	private var CurrentPack:Int = 0;
 

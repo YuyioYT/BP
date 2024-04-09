@@ -31,27 +31,27 @@
 #include <shaders/GrainEffect.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_d5028b314026d282_765_new,"shaders.GrainEffect","new",0x4d95c63e,"shaders.GrainEffect.new","shaders/Shaders.hx",765,0x7800d7f1)
-HX_LOCAL_STACK_FRAME(_hx_pos_d5028b314026d282_782_set_grainsize,"shaders.GrainEffect","set_grainsize",0x238b50bd,"shaders.GrainEffect.set_grainsize","shaders/Shaders.hx",782,0x7800d7f1)
-HX_LOCAL_STACK_FRAME(_hx_pos_d5028b314026d282_788_set_lumamount,"shaders.GrainEffect","set_lumamount",0x17fe03dd,"shaders.GrainEffect.set_lumamount","shaders/Shaders.hx",788,0x7800d7f1)
-HX_LOCAL_STACK_FRAME(_hx_pos_d5028b314026d282_794_set_lockAlpha,"shaders.GrainEffect","set_lockAlpha",0xc8e954b4,"shaders.GrainEffect.set_lockAlpha","shaders/Shaders.hx",794,0x7800d7f1)
-HX_LOCAL_STACK_FRAME(_hx_pos_d5028b314026d282_800_set_coloramount,"shaders.GrainEffect","set_coloramount",0x770eaefc,"shaders.GrainEffect.set_coloramount","shaders/Shaders.hx",800,0x7800d7f1)
-HX_LOCAL_STACK_FRAME(_hx_pos_d5028b314026d282_806_update,"shaders.GrainEffect","update",0xbc680eeb,"shaders.GrainEffect.update","shaders/Shaders.hx",806,0x7800d7f1)
+HX_DEFINE_STACK_FRAME(_hx_pos_d5028b314026d282_963_new,"shaders.GrainEffect","new",0x4d95c63e,"shaders.GrainEffect.new","shaders/Shaders.hx",963,0x7800d7f1)
+HX_LOCAL_STACK_FRAME(_hx_pos_d5028b314026d282_980_set_grainsize,"shaders.GrainEffect","set_grainsize",0x238b50bd,"shaders.GrainEffect.set_grainsize","shaders/Shaders.hx",980,0x7800d7f1)
+HX_LOCAL_STACK_FRAME(_hx_pos_d5028b314026d282_986_set_lumamount,"shaders.GrainEffect","set_lumamount",0x17fe03dd,"shaders.GrainEffect.set_lumamount","shaders/Shaders.hx",986,0x7800d7f1)
+HX_LOCAL_STACK_FRAME(_hx_pos_d5028b314026d282_992_set_lockAlpha,"shaders.GrainEffect","set_lockAlpha",0xc8e954b4,"shaders.GrainEffect.set_lockAlpha","shaders/Shaders.hx",992,0x7800d7f1)
+HX_LOCAL_STACK_FRAME(_hx_pos_d5028b314026d282_998_set_coloramount,"shaders.GrainEffect","set_coloramount",0x770eaefc,"shaders.GrainEffect.set_coloramount","shaders/Shaders.hx",998,0x7800d7f1)
+HX_LOCAL_STACK_FRAME(_hx_pos_d5028b314026d282_1004_update,"shaders.GrainEffect","update",0xbc680eeb,"shaders.GrainEffect.update","shaders/Shaders.hx",1004,0x7800d7f1)
 namespace shaders{
 
 void GrainEffect_obj::__construct(){
-            	HX_GC_STACKFRAME(&_hx_pos_d5028b314026d282_765_new)
-HXLINE( 771)		this->coloramount = ((Float)0);
-HXLINE( 770)		this->lockAlpha = true;
-HXLINE( 769)		this->lumamount = ((Float)0);
-HXLINE( 768)		this->grainsize = ((Float)0);
-HXLINE( 767)		this->shader =  ::shaders::Grain_obj::__alloc( HX_CTX );
-HXLINE( 775)		this->set_grainsize(( (Float)(0) ));
-HXLINE( 776)		this->set_lumamount(( (Float)(0) ));
-HXLINE( 777)		this->set_lockAlpha(true);
-HXLINE( 778)		this->set_coloramount(( (Float)(0) ));
-HXLINE( 779)		Float _hx_tmp = ::flixel::FlxG_obj::random->_hx_float(0,8,null());
-HXDLIN( 779)		this->shader->uTime->value = ::Array_obj< Float >::__new(1)->init(0,_hx_tmp);
+            	HX_GC_STACKFRAME(&_hx_pos_d5028b314026d282_963_new)
+HXLINE( 969)		this->coloramount = ((Float)0);
+HXLINE( 968)		this->lockAlpha = true;
+HXLINE( 967)		this->lumamount = ((Float)0);
+HXLINE( 966)		this->grainsize = ((Float)0);
+HXLINE( 965)		this->shader =  ::shaders::Grain_obj::__alloc( HX_CTX );
+HXLINE( 973)		this->set_grainsize(( (Float)(0) ));
+HXLINE( 974)		this->set_lumamount(( (Float)(0) ));
+HXLINE( 975)		this->set_lockAlpha(true);
+HXLINE( 976)		this->set_coloramount(( (Float)(0) ));
+HXLINE( 977)		Float _hx_tmp = ::flixel::FlxG_obj::random->_hx_float(0,8,null());
+HXDLIN( 977)		this->shader->uTime->value = ::Array_obj< Float >::__new(1)->init(0,_hx_tmp);
             	}
 
 Dynamic GrainEffect_obj::__CreateEmpty() { return new GrainEffect_obj; }
@@ -74,50 +74,50 @@ bool GrainEffect_obj::_hx_isInstanceOf(int inClassId) {
 }
 
 Float GrainEffect_obj::set_grainsize(Float value){
-            	HX_STACKFRAME(&_hx_pos_d5028b314026d282_782_set_grainsize)
-HXLINE( 783)		this->grainsize = value;
-HXLINE( 784)		this->shader->grainsize->value = ::Array_obj< Float >::__new(1)->init(0,value);
-HXLINE( 785)		return this->grainsize;
+            	HX_STACKFRAME(&_hx_pos_d5028b314026d282_980_set_grainsize)
+HXLINE( 981)		this->grainsize = value;
+HXLINE( 982)		this->shader->grainsize->value = ::Array_obj< Float >::__new(1)->init(0,value);
+HXLINE( 983)		return this->grainsize;
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC1(GrainEffect_obj,set_grainsize,return )
 
 Float GrainEffect_obj::set_lumamount(Float value){
-            	HX_STACKFRAME(&_hx_pos_d5028b314026d282_788_set_lumamount)
-HXLINE( 789)		this->lumamount = value;
-HXLINE( 790)		this->shader->lumamount->value = ::Array_obj< Float >::__new(1)->init(0,value);
-HXLINE( 791)		return this->lumamount;
+            	HX_STACKFRAME(&_hx_pos_d5028b314026d282_986_set_lumamount)
+HXLINE( 987)		this->lumamount = value;
+HXLINE( 988)		this->shader->lumamount->value = ::Array_obj< Float >::__new(1)->init(0,value);
+HXLINE( 989)		return this->lumamount;
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC1(GrainEffect_obj,set_lumamount,return )
 
 bool GrainEffect_obj::set_lockAlpha(bool value){
-            	HX_STACKFRAME(&_hx_pos_d5028b314026d282_794_set_lockAlpha)
-HXLINE( 795)		this->lockAlpha = value;
-HXLINE( 796)		this->shader->lockAlpha->value = ::Array_obj< bool >::__new(1)->init(0,value);
-HXLINE( 797)		return this->lockAlpha;
+            	HX_STACKFRAME(&_hx_pos_d5028b314026d282_992_set_lockAlpha)
+HXLINE( 993)		this->lockAlpha = value;
+HXLINE( 994)		this->shader->lockAlpha->value = ::Array_obj< bool >::__new(1)->init(0,value);
+HXLINE( 995)		return this->lockAlpha;
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC1(GrainEffect_obj,set_lockAlpha,return )
 
 Float GrainEffect_obj::set_coloramount(Float value){
-            	HX_STACKFRAME(&_hx_pos_d5028b314026d282_800_set_coloramount)
-HXLINE( 801)		this->coloramount = value;
-HXLINE( 802)		this->shader->coloramount->value = ::Array_obj< Float >::__new(1)->init(0,value);
-HXLINE( 803)		return this->coloramount;
+            	HX_STACKFRAME(&_hx_pos_d5028b314026d282_998_set_coloramount)
+HXLINE( 999)		this->coloramount = value;
+HXLINE(1000)		this->shader->coloramount->value = ::Array_obj< Float >::__new(1)->init(0,value);
+HXLINE(1001)		return this->coloramount;
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC1(GrainEffect_obj,set_coloramount,return )
 
 void GrainEffect_obj::update(Float elapsed){
-            	HX_STACKFRAME(&_hx_pos_d5028b314026d282_806_update)
-HXLINE( 807)		::Array< Float > base = this->shader->uTime->value;
-HXDLIN( 807)		int _hx_tmp = 0;
-HXDLIN( 807)		base[_hx_tmp] = (base->__get(_hx_tmp) + elapsed);
+            	HX_STACKFRAME(&_hx_pos_d5028b314026d282_1004_update)
+HXLINE(1005)		::Array< Float > base = this->shader->uTime->value;
+HXDLIN(1005)		int _hx_tmp = 0;
+HXDLIN(1005)		base[_hx_tmp] = (base->__get(_hx_tmp) + elapsed);
             	}
 
 

@@ -246,9 +246,6 @@
 #ifndef INCLUDED_states_TitleState
 #include <states/TitleState.h>
 #endif
-#ifndef INCLUDED_states_Section2Substate
-#include <states/Section2Substate.h>
-#endif
 #ifndef INCLUDED_states_StoryMenuState
 #include <states/StoryMenuState.h>
 #endif
@@ -1967,6 +1964,12 @@
 #endif
 #ifndef INCLUDED_shaders_ScanlineEffect
 #include <shaders/ScanlineEffect.h>
+#endif
+#ifndef INCLUDED_shaders_Chromaticbordes3Shader
+#include <shaders/Chromaticbordes3Shader.h>
+#endif
+#ifndef INCLUDED_shaders_Chromaticbordes3Effect
+#include <shaders/Chromaticbordes3Effect.h>
 #endif
 #ifndef INCLUDED_shaders_ChromBlockedShader
 #include <shaders/ChromBlockedShader.h>
@@ -4367,7 +4370,6 @@ __files__boot();
 ::states::editors::DialogueCharacterEditorState_obj::__register();
 ::states::editors::ChartingState_obj::__register();
 ::states::TitleState_obj::__register();
-::states::Section2Substate_obj::__register();
 ::states::StoryMenuState_obj::__register();
 ::states::PlayState_obj::__register();
 ::states::OutdatedState_obj::__register();
@@ -4941,6 +4943,8 @@ __files__boot();
 ::shaders::TiltshiftEffect_obj::__register();
 ::shaders::ScanlineShader_obj::__register();
 ::shaders::ScanlineEffect_obj::__register();
+::shaders::Chromaticbordes3Shader_obj::__register();
+::shaders::Chromaticbordes3Effect_obj::__register();
 ::shaders::ChromBlockedShader_obj::__register();
 ::shaders::ChromBlockedEffect_obj::__register();
 ::shaders::ScanlineShader2_obj::__register();
@@ -6253,7 +6257,6 @@ __files__boot();
 ::states::OutdatedState_obj::__boot();
 ::states::PlayState_obj::__boot();
 ::states::StoryMenuState_obj::__boot();
-::states::Section2Substate_obj::__boot();
 ::states::TitleState_obj::__boot();
 ::states::editors::ChartingState_obj::__boot();
 ::states::editors::DialogueCharacterEditorState_obj::__boot();

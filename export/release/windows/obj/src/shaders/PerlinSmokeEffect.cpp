@@ -22,17 +22,17 @@
 #include <shaders/PerlinSmokeShader.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_7f0be9248f1d034f_3062_new,"shaders.PerlinSmokeEffect","new",0x4132993e,"shaders.PerlinSmokeEffect.new","shaders/Shaders.hx",3062,0x7800d7f1)
-HX_LOCAL_STACK_FRAME(_hx_pos_7f0be9248f1d034f_3077_update,"shaders.PerlinSmokeEffect","update",0x6a511beb,"shaders.PerlinSmokeEffect.update","shaders/Shaders.hx",3077,0x7800d7f1)
+HX_DEFINE_STACK_FRAME(_hx_pos_7f0be9248f1d034f_3260_new,"shaders.PerlinSmokeEffect","new",0x4132993e,"shaders.PerlinSmokeEffect.new","shaders/Shaders.hx",3260,0x7800d7f1)
+HX_LOCAL_STACK_FRAME(_hx_pos_7f0be9248f1d034f_3275_update,"shaders.PerlinSmokeEffect","update",0x6a511beb,"shaders.PerlinSmokeEffect.update","shaders/Shaders.hx",3275,0x7800d7f1)
 namespace shaders{
 
 void PerlinSmokeEffect_obj::__construct(Float waveStrength,Float smokeStrength){
-            	HX_GC_STACKFRAME(&_hx_pos_7f0be9248f1d034f_3062_new)
-HXLINE(3068)		this->iTime = ((Float)0.0);
-HXLINE(3067)		this->speed = ((Float)1);
-HXLINE(3064)		this->shader =  ::shaders::PerlinSmokeShader_obj::__alloc( HX_CTX );
-HXLINE(3071)		this->shader->waveStrength->value = ::Array_obj< Float >::__new(1)->init(0,waveStrength);
-HXLINE(3072)		this->shader->smokeStrength->value = ::Array_obj< Float >::__new(1)->init(0,smokeStrength);
+            	HX_GC_STACKFRAME(&_hx_pos_7f0be9248f1d034f_3260_new)
+HXLINE(3266)		this->iTime = ((Float)0.0);
+HXLINE(3265)		this->speed = ((Float)1);
+HXLINE(3262)		this->shader =  ::shaders::PerlinSmokeShader_obj::__alloc( HX_CTX );
+HXLINE(3269)		this->shader->waveStrength->value = ::Array_obj< Float >::__new(1)->init(0,waveStrength);
+HXLINE(3270)		this->shader->smokeStrength->value = ::Array_obj< Float >::__new(1)->init(0,smokeStrength);
             	}
 
 Dynamic PerlinSmokeEffect_obj::__CreateEmpty() { return new PerlinSmokeEffect_obj; }
@@ -55,10 +55,10 @@ bool PerlinSmokeEffect_obj::_hx_isInstanceOf(int inClassId) {
 }
 
 void PerlinSmokeEffect_obj::update(Float elapsed){
-            	HX_STACKFRAME(&_hx_pos_7f0be9248f1d034f_3077_update)
-HXLINE(3080)		 ::shaders::PerlinSmokeEffect _hx_tmp = ::hx::ObjectPtr<OBJ_>(this);
-HXDLIN(3080)		_hx_tmp->iTime = (_hx_tmp->iTime + (elapsed * this->speed));
-HXLINE(3081)		this->shader->iTime->value = ::Array_obj< Float >::__new(1)->init(0,this->iTime);
+            	HX_STACKFRAME(&_hx_pos_7f0be9248f1d034f_3275_update)
+HXLINE(3278)		 ::shaders::PerlinSmokeEffect _hx_tmp = ::hx::ObjectPtr<OBJ_>(this);
+HXDLIN(3278)		_hx_tmp->iTime = (_hx_tmp->iTime + (elapsed * this->speed));
+HXLINE(3279)		this->shader->iTime->value = ::Array_obj< Float >::__new(1)->init(0,this->iTime);
             	}
 
 

@@ -19,20 +19,20 @@
 #include <shaders/EyesoresShader.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_201cb479fb8c2686_1594_new,"shaders.EyesoresShader","new",0x27a21a8a,"shaders.EyesoresShader.new","shaders/Shaders.hx",1594,0x7800d7f1)
+HX_DEFINE_STACK_FRAME(_hx_pos_201cb479fb8c2686_1792_new,"shaders.EyesoresShader","new",0x27a21a8a,"shaders.EyesoresShader.new","shaders/Shaders.hx",1792,0x7800d7f1)
 namespace shaders{
 
 void EyesoresShader_obj::__construct(){
-            	HX_STACKFRAME(&_hx_pos_201cb479fb8c2686_1594_new)
+            	HX_STACKFRAME(&_hx_pos_201cb479fb8c2686_1792_new)
 HXLINE( 182)		if (::hx::IsNull( this->_hx___glFragmentSource )) {
 HXLINE( 184)			this->_hx___glFragmentSource = HX_("\n    varying float openfl_Alphav;\n\t\tvarying vec4 openfl_ColorMultiplierv;\n\t\tvarying vec4 openfl_ColorOffsetv;\n\t\tvarying vec2 openfl_TextureCoordv;\n\n\t\tuniform bool openfl_HasColorTransform;\n\t\tuniform vec2 openfl_TextureSize;\n\t\tuniform sampler2D bitmap;\n\n\t\tuniform bool hasTransform;\n\t\tuniform bool hasColorTransform;\n\n\t\tvec4 flixel_texture2D(sampler2D bitmap, vec2 coord)\n\t\t{\n\t\t\tvec4 color = texture2D(bitmap, coord);\n\t\t\tif (!hasTransform)\n\t\t\t{\n\t\t\t\treturn color;\n\t\t\t}\n\n\t\t\tif (color.a == 0.0)\n\t\t\t{\n\t\t\t\treturn vec4(0.0, 0.0, 0.0, 0.0);\n\t\t\t}\n\n\t\t\tif (!hasColorTransform)\n\t\t\t{\n\t\t\t\treturn color * openfl_Alphav;\n\t\t\t}\n\n\t\t\tcolor = vec4(color.rgb / color.a, color.a);\n\n\t\t\tmat4 colorMultiplier = mat4(0);\n\t\t\tcolorMultiplier[0][0] = openfl_ColorMultiplierv.x;\n\t\t\tcolorMultiplier[1][1] = openfl_ColorMultiplierv.y;\n\t\t\tcolorMultiplier[2][2] = openfl_ColorMultiplierv.z;\n\t\t\tcolorMultiplier[3][3] = openfl_ColorMultiplierv.w;\n\n\t\t\tcolor = clamp(openfl_ColorOffsetv + (color * colorMultiplier), 0.0, 1.0);\n\n\t\t\tif (color.a > 0.0)\n\t\t\t{\n\t\t\t\treturn vec4(color.rgb * color.a * openfl_Alphav, color.a * openfl_Alphav);\n\t\t\t}\n\t\t\treturn vec4(0.0, 0.0, 0.0, 0.0);\n\t\t}\n\t\n\n    uniform float uampmul;\n\n    //modified version of the wave shader to create weird garbled corruption like messes\n    uniform float uTime;\n    \n    /**\n     * How fast the waves move over time\n     */\n    uniform float uSpeed;\n    \n    /**\n     * Number of waves over time\n     */\n    uniform float uFrequency;\n\n    uniform bool uEnabled;\n    \n    /**\n     * How much the pixels are going to stretch over the waves\n     */\n    uniform float uWaveAmplitude;\n\n    vec4 sineWave(vec4 pt, vec2 pos)\n    {\n        if (uampmul > 0.0)\n        {\n            float offsetX = sin(pt.y * uFrequency + uTime * uSpeed);\n            float offsetY = sin(pt.x * (uFrequency * 2.0) - (uTime / 2.0) * uSpeed);\n            float offsetZ = sin(pt.z * (uFrequency / 2.0) + (uTime / 3.0) * uSpeed);\n            pt.x = mix(pt.x,sin(pt.x / 2.0 * pt.y + (5.0 * offsetX) * pt.z),uWaveAmplitude * uampmul);\n            pt.y = mix(pt.y,sin(pt.y / 3.0 * pt.z + (2.0 * offsetZ) - pt.x),uWaveAmplitude * uampmul);\n            pt.z = mix(pt.z,sin(pt.z / 6.0 * (pt.x * offsetY) - (50.0 * offsetZ) * (pt.z * offsetX)),uWaveAmplitude * uampmul);\n        }\n        return vec4(pt.x, pt.y, pt.z, pt.w);\n    }\n\n    void main()\n    {\n        vec2 uv = openfl_TextureCoordv;\n        gl_FragColor = sineWave(texture2D(bitmap, uv),uv);\n    }",67,99,52,d8);
             		}
 HXLINE( 174)		if (::hx::IsNull( this->_hx___glVertexSource )) {
 HXLINE( 176)			this->_hx___glVertexSource = HX_("\n\t\tattribute float openfl_Alpha;\n\t\tattribute vec4 openfl_ColorMultiplier;\n\t\tattribute vec4 openfl_ColorOffset;\n\t\tattribute vec4 openfl_Position;\n\t\tattribute vec2 openfl_TextureCoord;\n\n\t\tvarying float openfl_Alphav;\n\t\tvarying vec4 openfl_ColorMultiplierv;\n\t\tvarying vec4 openfl_ColorOffsetv;\n\t\tvarying vec2 openfl_TextureCoordv;\n\n\t\tuniform mat4 openfl_Matrix;\n\t\tuniform bool openfl_HasColorTransform;\n\t\tuniform vec2 openfl_TextureSize;\n\n\t\t\n\t\tattribute float alpha;\n\t\tattribute vec4 colorMultiplier;\n\t\tattribute vec4 colorOffset;\n\t\tuniform bool hasColorTransform;\n\t\t\n\t\tvoid main(void)\n\t\t{\n\t\t\topenfl_Alphav = openfl_Alpha;\n\t\topenfl_TextureCoordv = openfl_TextureCoord;\n\n\t\tif (openfl_HasColorTransform) {\n\n\t\t\topenfl_ColorMultiplierv = openfl_ColorMultiplier;\n\t\t\topenfl_ColorOffsetv = openfl_ColorOffset / 255.0;\n\n\t\t}\n\n\t\tgl_Position = openfl_Matrix * openfl_Position;\n\n\t\t\t\n\t\t\topenfl_Alphav = openfl_Alpha * alpha;\n\t\t\t\n\t\t\tif (hasColorTransform)\n\t\t\t{\n\t\t\t\topenfl_ColorOffsetv = colorOffset / 255.0;\n\t\t\t\topenfl_ColorMultiplierv = colorMultiplier;\n\t\t\t}\n\t\t}",f3,1e,fa,79);
             		}
-HXLINE(1595)		super::__construct();
-HXLINE(1547)		this->_hx___isGenerated = true;
-HXDLIN(1547)		this->_hx___initGL();
+HXLINE(1793)		super::__construct();
+HXLINE(1745)		this->_hx___isGenerated = true;
+HXDLIN(1745)		this->_hx___initGL();
             	}
 
 Dynamic EyesoresShader_obj::__CreateEmpty() { return new EyesoresShader_obj; }

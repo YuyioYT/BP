@@ -22,18 +22,18 @@
 #include <shaders/Effect.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_4b71968c71e09700_2877_new,"shaders.ChromBordesEffect","new",0x90b0571b,"shaders.ChromBordesEffect.new","shaders/Shaders.hx",2877,0x7800d7f1)
-HX_LOCAL_STACK_FRAME(_hx_pos_4b71968c71e09700_2891_set_aberration,"shaders.ChromBordesEffect","set_aberration",0x131178f3,"shaders.ChromBordesEffect.set_aberration","shaders/Shaders.hx",2891,0x7800d7f1)
-HX_LOCAL_STACK_FRAME(_hx_pos_4b71968c71e09700_2897_set_effectTime,"shaders.ChromBordesEffect","set_effectTime",0x58b82d20,"shaders.ChromBordesEffect.set_effectTime","shaders/Shaders.hx",2897,0x7800d7f1)
+HX_DEFINE_STACK_FRAME(_hx_pos_4b71968c71e09700_3075_new,"shaders.ChromBordesEffect","new",0x90b0571b,"shaders.ChromBordesEffect.new","shaders/Shaders.hx",3075,0x7800d7f1)
+HX_LOCAL_STACK_FRAME(_hx_pos_4b71968c71e09700_3089_set_aberration,"shaders.ChromBordesEffect","set_aberration",0x131178f3,"shaders.ChromBordesEffect.set_aberration","shaders/Shaders.hx",3089,0x7800d7f1)
+HX_LOCAL_STACK_FRAME(_hx_pos_4b71968c71e09700_3095_set_effectTime,"shaders.ChromBordesEffect","set_effectTime",0x58b82d20,"shaders.ChromBordesEffect.set_effectTime","shaders/Shaders.hx",3095,0x7800d7f1)
 namespace shaders{
 
 void ChromBordesEffect_obj::__construct(){
-            	HX_GC_STACKFRAME(&_hx_pos_4b71968c71e09700_2877_new)
-HXLINE(2882)		this->effectTime = ((Float)0);
-HXLINE(2881)		this->aberration = ((Float)0);
-HXLINE(2886)		this->shader =  ::shaders::ChromBordesEffectShader_obj::__alloc( HX_CTX );
-HXLINE(2887)		this->set_aberration(( (Float)(0) ));
-HXLINE(2888)		this->set_effectTime(( (Float)(0) ));
+            	HX_GC_STACKFRAME(&_hx_pos_4b71968c71e09700_3075_new)
+HXLINE(3080)		this->effectTime = ((Float)0);
+HXLINE(3079)		this->aberration = ((Float)0);
+HXLINE(3084)		this->shader =  ::shaders::ChromBordesEffectShader_obj::__alloc( HX_CTX );
+HXLINE(3085)		this->set_aberration(( (Float)(0) ));
+HXLINE(3086)		this->set_effectTime(( (Float)(0) ));
             	}
 
 Dynamic ChromBordesEffect_obj::__CreateEmpty() { return new ChromBordesEffect_obj; }
@@ -56,20 +56,20 @@ bool ChromBordesEffect_obj::_hx_isInstanceOf(int inClassId) {
 }
 
 Float ChromBordesEffect_obj::set_aberration(Float value){
-            	HX_STACKFRAME(&_hx_pos_4b71968c71e09700_2891_set_aberration)
-HXLINE(2892)		this->aberration = value;
-HXLINE(2893)		this->shader->aberration->value = ::Array_obj< Float >::__new(1)->init(0,value);
-HXLINE(2894)		return this->aberration;
+            	HX_STACKFRAME(&_hx_pos_4b71968c71e09700_3089_set_aberration)
+HXLINE(3090)		this->aberration = value;
+HXLINE(3091)		this->shader->aberration->value = ::Array_obj< Float >::__new(1)->init(0,value);
+HXLINE(3092)		return this->aberration;
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC1(ChromBordesEffect_obj,set_aberration,return )
 
 Float ChromBordesEffect_obj::set_effectTime(Float value){
-            	HX_STACKFRAME(&_hx_pos_4b71968c71e09700_2897_set_effectTime)
-HXLINE(2898)		this->effectTime = value;
-HXLINE(2899)		this->shader->effectTime->value = ::Array_obj< Float >::__new(1)->init(0,value);
-HXLINE(2900)		return this->effectTime;
+            	HX_STACKFRAME(&_hx_pos_4b71968c71e09700_3095_set_effectTime)
+HXLINE(3096)		this->effectTime = value;
+HXLINE(3097)		this->shader->effectTime->value = ::Array_obj< Float >::__new(1)->init(0,value);
+HXLINE(3098)		return this->effectTime;
             	}
 
 

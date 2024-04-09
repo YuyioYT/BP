@@ -22,14 +22,14 @@
 #include <shaders/Effect.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_1e62d6610d31b45b_2295_new,"shaders.BlurEffect","new",0x1231b06a,"shaders.BlurEffect.new","shaders/Shaders.hx",2295,0x7800d7f1)
+HX_DEFINE_STACK_FRAME(_hx_pos_1e62d6610d31b45b_2493_new,"shaders.BlurEffect","new",0x1231b06a,"shaders.BlurEffect.new","shaders/Shaders.hx",2493,0x7800d7f1)
 namespace shaders{
 
 void BlurEffect_obj::__construct(Float strength,Float strengthY){
-            	HX_GC_STACKFRAME(&_hx_pos_1e62d6610d31b45b_2295_new)
-HXLINE(2296)		this->shader =  ::shaders::BlurShader_obj::__alloc( HX_CTX );
-HXLINE(2297)		this->shader->strength->value = ::Array_obj< Float >::__new(1)->init(0,strength);
-HXLINE(2298)		this->shader->strengthY->value = ::Array_obj< Float >::__new(1)->init(0,strengthY);
+            	HX_GC_STACKFRAME(&_hx_pos_1e62d6610d31b45b_2493_new)
+HXLINE(2494)		this->shader =  ::shaders::BlurShader_obj::__alloc( HX_CTX );
+HXLINE(2495)		this->shader->strength->value = ::Array_obj< Float >::__new(1)->init(0,strength);
+HXLINE(2496)		this->shader->strengthY->value = ::Array_obj< Float >::__new(1)->init(0,strengthY);
             	}
 
 Dynamic BlurEffect_obj::__CreateEmpty() { return new BlurEffect_obj; }

@@ -1177,7 +1177,7 @@ HXLINE( 532)				 ::lime::ui::Window _hx_tmp1 = ::openfl::Lib_obj::get_applicatio
 HXDLIN( 532)				_hx_tmp1->set_title(((HX_("Friday Night Funkin': SB Engine v",f6,d1,31,c8) + ::states::MainMenuState_obj::cornEngineVersion) + HX_(" - Mod Maker Menu",2c,b4,32,e1)));
 HXLINE( 533)				 ::flixel::_hx_system::frontEnds::SoundFrontEnd _hx_tmp2 = ::flixel::FlxG_obj::sound;
 HXDLIN( 533)				::String library = null();
-HXDLIN( 533)				 ::openfl::media::Sound file = ::backend::Paths_obj::returnSound(HX_("music",a5,d0,5a,10),HX_("Gates of the hell",bd,bc,71,68),library);
+HXDLIN( 533)				 ::openfl::media::Sound file = ::backend::Paths_obj::returnSound(HX_("music",a5,d0,5a,10),HX_("menu/Gates of the hell",0d,b1,f8,c4),library);
 HXDLIN( 533)				_hx_tmp2->playMusic(file,null(),null(),null());
 HXLINE( 534)				this->quitting = true;
             			}

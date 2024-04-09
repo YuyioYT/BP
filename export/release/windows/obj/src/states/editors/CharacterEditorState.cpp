@@ -2085,7 +2085,7 @@ HXLINE(1036)					::backend::MusicBeatState_obj::switchState( ::states::PlayState
 HXLINE(1038)					::backend::MusicBeatState_obj::switchState( ::states::editors::MasterEditorMenu_obj::__alloc( HX_CTX ,null(),null()));
 HXLINE(1039)					 ::flixel::_hx_system::frontEnds::SoundFrontEnd _hx_tmp = ::flixel::FlxG_obj::sound;
 HXDLIN(1039)					::String library = null();
-HXDLIN(1039)					 ::openfl::media::Sound file = ::backend::Paths_obj::returnSound(HX_("music",a5,d0,5a,10),HX_("menu/menu/Gates of the hell",bd,1a,4a,53),library);
+HXDLIN(1039)					 ::openfl::media::Sound file = ::backend::Paths_obj::returnSound(HX_("music",a5,d0,5a,10),HX_("menu/Gates of the hell",0d,b1,f8,c4),library);
 HXDLIN(1039)					_hx_tmp->playMusic(file,null(),null(),null());
             				}
 HXLINE(1041)				::flixel::FlxG_obj::mouse->set_visible(false);

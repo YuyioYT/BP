@@ -26,30 +26,30 @@
 #include <shaders/RayMarchShader.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_10a2983fb7094d10_3320_new,"shaders.RayMarchEffect","new",0x076dc6bc,"shaders.RayMarchEffect.new","shaders/Shaders.hx",3320,0x7800d7f1)
+HX_DEFINE_STACK_FRAME(_hx_pos_10a2983fb7094d10_3518_new,"shaders.RayMarchEffect","new",0x076dc6bc,"shaders.RayMarchEffect.new","shaders/Shaders.hx",3518,0x7800d7f1)
 static const Float _hx_array_data_77e4f8ca_1[] = {
 	(Float)1280,(Float)720,
 };
 static const Float _hx_array_data_77e4f8ca_2[] = {
 	(Float)0,(Float)0,(Float)0,
 };
-HX_LOCAL_STACK_FRAME(_hx_pos_10a2983fb7094d10_3333_update,"shaders.RayMarchEffect","update",0x0cd8f12d,"shaders.RayMarchEffect.update","shaders/Shaders.hx",3333,0x7800d7f1)
+HX_LOCAL_STACK_FRAME(_hx_pos_10a2983fb7094d10_3531_update,"shaders.RayMarchEffect","update",0x0cd8f12d,"shaders.RayMarchEffect.update","shaders/Shaders.hx",3531,0x7800d7f1)
 static const Float _hx_array_data_77e4f8ca_4[] = {
 	(Float)1280,(Float)720,
 };
-HX_LOCAL_STACK_FRAME(_hx_pos_10a2983fb7094d10_3340_setPoint,"shaders.RayMarchEffect","setPoint",0x06a39972,"shaders.RayMarchEffect.setPoint","shaders/Shaders.hx",3340,0x7800d7f1)
+HX_LOCAL_STACK_FRAME(_hx_pos_10a2983fb7094d10_3538_setPoint,"shaders.RayMarchEffect","setPoint",0x06a39972,"shaders.RayMarchEffect.setPoint","shaders/Shaders.hx",3538,0x7800d7f1)
 namespace shaders{
 
 void RayMarchEffect_obj::__construct(){
-            	HX_GC_STACKFRAME(&_hx_pos_10a2983fb7094d10_3320_new)
-HXLINE(3326)		this->zoom = ((Float)-2);
-HXLINE(3325)		this->z = ((Float)0);
-HXLINE(3324)		this->y = ((Float)0);
-HXLINE(3323)		this->x = ((Float)0);
-HXLINE(3322)		this->shader =  ::shaders::RayMarchShader_obj::__alloc( HX_CTX );
-HXLINE(3328)		this->shader->iResolution->value = ::Array_obj< Float >::fromData( _hx_array_data_77e4f8ca_1,2);
-HXLINE(3329)		this->shader->rotation->value = ::Array_obj< Float >::fromData( _hx_array_data_77e4f8ca_2,3);
-HXLINE(3330)		this->shader->zoom->value = ::Array_obj< Float >::__new(1)->init(0,this->zoom);
+            	HX_GC_STACKFRAME(&_hx_pos_10a2983fb7094d10_3518_new)
+HXLINE(3524)		this->zoom = ((Float)-2);
+HXLINE(3523)		this->z = ((Float)0);
+HXLINE(3522)		this->y = ((Float)0);
+HXLINE(3521)		this->x = ((Float)0);
+HXLINE(3520)		this->shader =  ::shaders::RayMarchShader_obj::__alloc( HX_CTX );
+HXLINE(3526)		this->shader->iResolution->value = ::Array_obj< Float >::fromData( _hx_array_data_77e4f8ca_1,2);
+HXLINE(3527)		this->shader->rotation->value = ::Array_obj< Float >::fromData( _hx_array_data_77e4f8ca_2,3);
+HXLINE(3528)		this->shader->zoom->value = ::Array_obj< Float >::__new(1)->init(0,this->zoom);
             	}
 
 Dynamic RayMarchEffect_obj::__CreateEmpty() { return new RayMarchEffect_obj; }
@@ -72,15 +72,15 @@ bool RayMarchEffect_obj::_hx_isInstanceOf(int inClassId) {
 }
 
 void RayMarchEffect_obj::update(Float elapsed){
-            	HX_STACKFRAME(&_hx_pos_10a2983fb7094d10_3333_update)
-HXLINE(3334)		this->shader->iResolution->value = ::Array_obj< Float >::fromData( _hx_array_data_77e4f8ca_4,2);
-HXLINE(3336)		this->shader->rotation->value = ::Array_obj< Float >::__new(3)->init(0,(this->x * (::Math_obj::PI / ( (Float)(180) ))))->init(1,(this->y * (::Math_obj::PI / ( (Float)(180) ))))->init(2,(this->z * (::Math_obj::PI / ( (Float)(180) ))));
-HXLINE(3337)		this->shader->zoom->value = ::Array_obj< Float >::__new(1)->init(0,this->zoom);
+            	HX_STACKFRAME(&_hx_pos_10a2983fb7094d10_3531_update)
+HXLINE(3532)		this->shader->iResolution->value = ::Array_obj< Float >::fromData( _hx_array_data_77e4f8ca_4,2);
+HXLINE(3534)		this->shader->rotation->value = ::Array_obj< Float >::__new(3)->init(0,(this->x * (::Math_obj::PI / ( (Float)(180) ))))->init(1,(this->y * (::Math_obj::PI / ( (Float)(180) ))))->init(2,(this->z * (::Math_obj::PI / ( (Float)(180) ))));
+HXLINE(3535)		this->shader->zoom->value = ::Array_obj< Float >::__new(1)->init(0,this->zoom);
             	}
 
 
 void RayMarchEffect_obj::setPoint(){
-            	HX_STACKFRAME(&_hx_pos_10a2983fb7094d10_3340_setPoint)
+            	HX_STACKFRAME(&_hx_pos_10a2983fb7094d10_3538_setPoint)
             	}
 
 

@@ -72,6 +72,7 @@ HX_DECLARE_CLASS1(shaders,ChromBlockedEffect)
 HX_DECLARE_CLASS1(shaders,ChromBordes2Effect)
 HX_DECLARE_CLASS1(shaders,ChromBordesEffect)
 HX_DECLARE_CLASS1(shaders,ChromaticAberrationEffect)
+HX_DECLARE_CLASS1(shaders,Chromaticbordes3Effect)
 HX_DECLARE_CLASS1(shaders,DoChromaticAberrationEffect)
 HX_DECLARE_CLASS1(shaders,Effect)
 HX_DECLARE_CLASS1(shaders,GrainEffect)
@@ -331,6 +332,7 @@ class HXCPP_CLASS_ATTRIBUTES PlayState_obj : public  ::backend::MusicBeatState_o
 		 ::objects::DepthSprite farm;
 		 ::flixel::FlxSprite pcworld;
 		 ::flixel::FlxSprite burger;
+		 ::objects::BGSprite filter;
 		 ::objects::DepthSprite ourple;
 		 ::objects::DepthSprite phones;
 		 ::flixel::FlxSprite gridBG;
@@ -418,12 +420,14 @@ class HXCPP_CLASS_ATTRIBUTES PlayState_obj : public  ::backend::MusicBeatState_o
 		 ::flixel::FlxCamera camNOTES;
 		 ::flixel::FlxCamera camSus;
 		Float cameraSpeed;
+		bool followarrow;
 		 ::openfl::filters::BlurFilter blurNotes;
 		 ::flixel::addons::effects::chainable::FlxGlitchEffect glitcheffect;
 		 ::shaders::WiggleEffect wiggleShit;
 		 ::shaders::StaticEffect staticshader;
 		 ::shaders::Grey2Effect greyeffect;
 		 ::openfl::filters::ShaderFilter susWiggle;
+		 ::shaders::Chromaticbordes3Effect chromaticbordes3;
 		 ::shaders::ChromBlockedEffect chromglitch;
 		 ::shaders::ChromBordesEffect googlechrombordes;
 		 ::shaders::ChromBordes2Effect googlechrombordes2;

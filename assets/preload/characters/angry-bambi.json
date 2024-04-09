@@ -14,8 +14,8 @@
 		{
 			"loop": false,
 			"offsets": [
-				46,
-				-304
+				56,
+				-308
 			],
 			"anim": "singUP",
 			"fps": 24,
@@ -26,7 +26,7 @@
 			"loop": false,
 			"offsets": [
 				44,
-				-345
+				-348
 			],
 			"anim": "singRIGHT",
 			"fps": 24,
@@ -36,8 +36,8 @@
 		{
 			"loop": false,
 			"offsets": [
-				133,
-				-361
+				137,
+				-357
 			],
 			"anim": "singLEFT",
 			"fps": 24,
@@ -47,7 +47,7 @@
 		{
 			"loop": false,
 			"offsets": [
-				49,
+				46,
 				-376
 			],
 			"anim": "singDOWN",
@@ -89,6 +89,17 @@
 			"indices": []
 		},
 		{
+			"offsets": [
+				30,
+				-350
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "Idiot",
+			"loop": false,
+			"name": "bambi idiot"
+		},
+		{
 			"loop": false,
 			"offsets": [
 				24,
@@ -112,8 +123,8 @@
 		},
 		{
 			"offsets": [
-				54,
-				-343
+				60,
+				-344
 			],
 			"loop": false,
 			"fps": 24,
@@ -123,8 +134,8 @@
 		},
 		{
 			"offsets": [
-				34,
-				-337
+				38,
+				-338
 			],
 			"loop": false,
 			"fps": 24,

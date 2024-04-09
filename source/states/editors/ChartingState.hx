@@ -105,6 +105,8 @@ class ChartingState extends MusicBeatState
 		['Thunderstorm type black screen', "adds a thunderstom from the shaggy mod type black screen\nValue 1: (0: Turn off, 1: turn on)"],
 		['Smooth Camera Zoom', "Only smooth for camgame not the hud! \nValue 1: Camera zoom add (Default: 0.015) \nValue 2: UI zoom add (Default: 0.05) Leave the values blank if you want to use Default."],
 		['Set Camera Zoom speed', "(In value 1)\n Change the camera zoom speed\n leave it blank for default values\n (0.95 w fast camera zooming, 1 without it)"],
+		['Dramatic Black and White effect', "Value 1: Disable/Enable (0/1)"],
+		['Dramatic White and Black effect', "Value 1: Disable/Enable (0/1)"],
 		['Flash Screen VII', "Flashes the screen (Default values are camGame [1] and WHITE flash)\n[ON VALUE 1:\n select the camera that you want to do the flash effect.\n (0 is camGame, 1 is camHUD, 2 is camOther)\n ][ON VALUE 2:\ntype the color for the screen flash(0: WHITE. 1: BLACK 2: RED. 3: ORANGE. 4: YELLOW.\n 5: LIME.6: GREEN. 7: CYAN. 8: BLUE. 9: PINK. 10: PURPLE)]"]
 	];
 

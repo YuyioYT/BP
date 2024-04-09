@@ -52,27 +52,27 @@
 #include <states/PlayState.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_fcf60bc2f02d5147_1738_new,"shaders.DistortBGEffect","new",0x2cfdf613,"shaders.DistortBGEffect.new","shaders/Shaders.hx",1738,0x7800d7f1)
+HX_DEFINE_STACK_FRAME(_hx_pos_fcf60bc2f02d5147_1936_new,"shaders.DistortBGEffect","new",0x2cfdf613,"shaders.DistortBGEffect.new","shaders/Shaders.hx",1936,0x7800d7f1)
 static const Float _hx_array_data_7486f0a1_1[] = {
 	(Float)0,
 };
-HX_LOCAL_STACK_FRAME(_hx_pos_fcf60bc2f02d5147_1756_update,"shaders.DistortBGEffect","update",0x0bd1b236,"shaders.DistortBGEffect.update","shaders/Shaders.hx",1756,0x7800d7f1)
-HX_LOCAL_STACK_FRAME(_hx_pos_fcf60bc2f02d5147_1762_set_waveSpeed,"shaders.DistortBGEffect","set_waveSpeed",0x08755c64,"shaders.DistortBGEffect.set_waveSpeed","shaders/Shaders.hx",1762,0x7800d7f1)
-HX_LOCAL_STACK_FRAME(_hx_pos_fcf60bc2f02d5147_1769_set_waveFrequency,"shaders.DistortBGEffect","set_waveFrequency",0xedb679f9,"shaders.DistortBGEffect.set_waveFrequency","shaders/Shaders.hx",1769,0x7800d7f1)
-HX_LOCAL_STACK_FRAME(_hx_pos_fcf60bc2f02d5147_1776_set_waveAmplitude,"shaders.DistortBGEffect","set_waveAmplitude",0x9bc70ca0,"shaders.DistortBGEffect.set_waveAmplitude","shaders/Shaders.hx",1776,0x7800d7f1)
+HX_LOCAL_STACK_FRAME(_hx_pos_fcf60bc2f02d5147_1954_update,"shaders.DistortBGEffect","update",0x0bd1b236,"shaders.DistortBGEffect.update","shaders/Shaders.hx",1954,0x7800d7f1)
+HX_LOCAL_STACK_FRAME(_hx_pos_fcf60bc2f02d5147_1960_set_waveSpeed,"shaders.DistortBGEffect","set_waveSpeed",0x08755c64,"shaders.DistortBGEffect.set_waveSpeed","shaders/Shaders.hx",1960,0x7800d7f1)
+HX_LOCAL_STACK_FRAME(_hx_pos_fcf60bc2f02d5147_1967_set_waveFrequency,"shaders.DistortBGEffect","set_waveFrequency",0xedb679f9,"shaders.DistortBGEffect.set_waveFrequency","shaders/Shaders.hx",1967,0x7800d7f1)
+HX_LOCAL_STACK_FRAME(_hx_pos_fcf60bc2f02d5147_1974_set_waveAmplitude,"shaders.DistortBGEffect","set_waveAmplitude",0x9bc70ca0,"shaders.DistortBGEffect.set_waveAmplitude","shaders/Shaders.hx",1974,0x7800d7f1)
 namespace shaders{
 
 void DistortBGEffect_obj::__construct(Float waveSpeed,Float waveFrequency,Float waveAmplitude){
-            	HX_GC_STACKFRAME(&_hx_pos_fcf60bc2f02d5147_1738_new)
-HXLINE(1744)		this->waveAmplitude = ((Float)0);
-HXLINE(1743)		this->waveFrequency = ((Float)0);
-HXLINE(1742)		this->waveSpeed = ((Float)0);
-HXLINE(1740)		this->shader =  ::shaders::DistortBGShader_obj::__alloc( HX_CTX );
-HXLINE(1748)		this->set_waveSpeed(waveSpeed);
-HXLINE(1749)		this->set_waveFrequency(waveFrequency);
-HXLINE(1750)		this->set_waveAmplitude(waveAmplitude);
-HXLINE(1751)		this->shader->uTime->value = ::Array_obj< Float >::fromData( _hx_array_data_7486f0a1_1,1);
-HXLINE(1752)		::states::PlayState_obj::instance->shaderUpdates->push(this->update_dyn());
+            	HX_GC_STACKFRAME(&_hx_pos_fcf60bc2f02d5147_1936_new)
+HXLINE(1942)		this->waveAmplitude = ((Float)0);
+HXLINE(1941)		this->waveFrequency = ((Float)0);
+HXLINE(1940)		this->waveSpeed = ((Float)0);
+HXLINE(1938)		this->shader =  ::shaders::DistortBGShader_obj::__alloc( HX_CTX );
+HXLINE(1946)		this->set_waveSpeed(waveSpeed);
+HXLINE(1947)		this->set_waveFrequency(waveFrequency);
+HXLINE(1948)		this->set_waveAmplitude(waveAmplitude);
+HXLINE(1949)		this->shader->uTime->value = ::Array_obj< Float >::fromData( _hx_array_data_7486f0a1_1,1);
+HXLINE(1950)		::states::PlayState_obj::instance->shaderUpdates->push(this->update_dyn());
             	}
 
 Dynamic DistortBGEffect_obj::__CreateEmpty() { return new DistortBGEffect_obj; }
@@ -95,38 +95,38 @@ bool DistortBGEffect_obj::_hx_isInstanceOf(int inClassId) {
 }
 
 void DistortBGEffect_obj::update(Float elapsed){
-            	HX_STACKFRAME(&_hx_pos_fcf60bc2f02d5147_1756_update)
-HXLINE(1757)		::Array< Float > base = this->shader->uTime->value;
-HXDLIN(1757)		int _hx_tmp = 0;
-HXDLIN(1757)		base[_hx_tmp] = (base->__get(_hx_tmp) + elapsed);
+            	HX_STACKFRAME(&_hx_pos_fcf60bc2f02d5147_1954_update)
+HXLINE(1955)		::Array< Float > base = this->shader->uTime->value;
+HXDLIN(1955)		int _hx_tmp = 0;
+HXDLIN(1955)		base[_hx_tmp] = (base->__get(_hx_tmp) + elapsed);
             	}
 
 
 Float DistortBGEffect_obj::set_waveSpeed(Float v){
-            	HX_STACKFRAME(&_hx_pos_fcf60bc2f02d5147_1762_set_waveSpeed)
-HXLINE(1763)		this->waveSpeed = v;
-HXLINE(1764)		this->shader->uSpeed->value = ::Array_obj< Float >::__new(1)->init(0,this->waveSpeed);
-HXLINE(1765)		return v;
+            	HX_STACKFRAME(&_hx_pos_fcf60bc2f02d5147_1960_set_waveSpeed)
+HXLINE(1961)		this->waveSpeed = v;
+HXLINE(1962)		this->shader->uSpeed->value = ::Array_obj< Float >::__new(1)->init(0,this->waveSpeed);
+HXLINE(1963)		return v;
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC1(DistortBGEffect_obj,set_waveSpeed,return )
 
 Float DistortBGEffect_obj::set_waveFrequency(Float v){
-            	HX_STACKFRAME(&_hx_pos_fcf60bc2f02d5147_1769_set_waveFrequency)
-HXLINE(1770)		this->waveFrequency = v;
-HXLINE(1771)		this->shader->uFrequency->value = ::Array_obj< Float >::__new(1)->init(0,this->waveFrequency);
-HXLINE(1772)		return v;
+            	HX_STACKFRAME(&_hx_pos_fcf60bc2f02d5147_1967_set_waveFrequency)
+HXLINE(1968)		this->waveFrequency = v;
+HXLINE(1969)		this->shader->uFrequency->value = ::Array_obj< Float >::__new(1)->init(0,this->waveFrequency);
+HXLINE(1970)		return v;
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC1(DistortBGEffect_obj,set_waveFrequency,return )
 
 Float DistortBGEffect_obj::set_waveAmplitude(Float v){
-            	HX_STACKFRAME(&_hx_pos_fcf60bc2f02d5147_1776_set_waveAmplitude)
-HXLINE(1777)		this->waveAmplitude = v;
-HXLINE(1778)		this->shader->uWaveAmplitude->value = ::Array_obj< Float >::__new(1)->init(0,this->waveAmplitude);
-HXLINE(1779)		return v;
+            	HX_STACKFRAME(&_hx_pos_fcf60bc2f02d5147_1974_set_waveAmplitude)
+HXLINE(1975)		this->waveAmplitude = v;
+HXLINE(1976)		this->shader->uWaveAmplitude->value = ::Array_obj< Float >::__new(1)->init(0,this->waveAmplitude);
+HXLINE(1977)		return v;
             	}
 
 

@@ -1036,7 +1036,7 @@ class CharacterEditorState extends MusicBeatState
 					MusicBeatState.switchState(new PlayState());
 				} else {
 					MusicBeatState.switchState(new states.editors.MasterEditorMenu());
-					FlxG.sound.playMusic(Paths.music('menu/menu/Gates of the hell'));
+					FlxG.sound.playMusic(Paths.music('menu/Gates of the hell'));
 				}
 				FlxG.mouse.visible = false;
 				return;
