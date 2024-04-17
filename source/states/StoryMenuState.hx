@@ -204,7 +204,7 @@ class StoryMenuState extends MusicBeatState
 			lol = true;
 			FlxG.mouse.visible = false;
 			FlxG.sound.play(Paths.sound('menu/confirmMenu'));
-			startSong('shattered/shattered-hard', 'fallowed', 'reality breaking');	
+			startSong('shattered/shattered-hard', 'fallowed/fallowed-hard', 'reality breaking/reality breaking-hard');	
 		}
 
 		if (clicked2)
@@ -212,7 +212,7 @@ class StoryMenuState extends MusicBeatState
 			lol2 = true;
 			FlxG.mouse.visible = false;
 			FlxG.sound.play(Paths.sound('menu/confirmMenu'));
-			startSong2('rebound/rebound-hard', 'disposition', 'upheaval');	
+			startSong2('rebound/rebound-hard', 'disposition/disposition-hard','diffraction/diffraction/hard', 'upheaval/upheaval-hard');	
 		}
 
 		
@@ -221,7 +221,7 @@ class StoryMenuState extends MusicBeatState
 			lol3 = true;
 			FlxG.sound.play(Paths.sound('menu/confirmMenu'));
 			FlxG.mouse.visible = false;
-			startSong3('roundabout/roundabout-hard', 'rascal', 'triple threat');	
+			startSong3('roundabout/roundabout-hard', 'rascal/rascal-hard', 'triple threat/triple threat-hard');	
 		}
 		  
 		if(controls.BACK)
@@ -278,11 +278,11 @@ class StoryMenuState extends MusicBeatState
 	   });
 	}
 
-	function startSong2(songName1:String, songName2:String, songName3:String)
+	function startSong2(songName1:String, songName2:String, songName3:String, songName4:String)
 		{
 		   FlxFlicker.flicker(week2, 1, 0.06, false, false, function(flick:FlxFlicker)
 		   {
-			PlayState.storyPlaylist = [songName1, songName2, songName3];
+			PlayState.storyPlaylist = [songName1, songName2, songName3, songName4];
 			PlayState.isStoryMode = true;
 			PlayState.storyWeek = 2;
 			PlayState.storyDifficulty = 2;

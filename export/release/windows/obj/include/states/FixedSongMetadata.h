@@ -47,6 +47,7 @@ class HXCPP_CLASS_ATTRIBUTES FixedSongMetadata_obj : public ::hx::Object
 		::String songCharacter;
 		int color;
 		::String folder;
+		::String lastDifficulty;
 };
 
 } // end namespace states

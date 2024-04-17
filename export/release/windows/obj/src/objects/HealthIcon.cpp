@@ -81,7 +81,7 @@ static const ::String _hx_array_data_ea1163af_2[] = {
 HX_LOCAL_STACK_FRAME(_hx_pos_ac81527997e0445c_64_update,"objects.HealthIcon","update",0x858ddce8,"objects.HealthIcon.update","objects/HealthIcon.hx",64,0x9d2b69ce)
 HX_LOCAL_STACK_FRAME(_hx_pos_ac81527997e0445c_156_swapOldIcon,"objects.HealthIcon","swapOldIcon",0x3170b22e,"objects.HealthIcon.swapOldIcon","objects/HealthIcon.hx",156,0x9d2b69ce)
 HX_LOCAL_STACK_FRAME(_hx_pos_ac81527997e0445c_162_changeIcon,"objects.HealthIcon","changeIcon",0xdec2cf68,"objects.HealthIcon.changeIcon","objects/HealthIcon.hx",162,0x9d2b69ce)
-static const int _hx_array_data_ea1163af_11[] = {
+static const int _hx_array_data_ea1163af_9[] = {
 	(int)0,(int)1,(int)2,
 };
 HX_LOCAL_STACK_FRAME(_hx_pos_ac81527997e0445c_260_changeIconStatus,"objects.HealthIcon","changeIconStatus",0x5690a8ba,"objects.HealthIcon.changeIconStatus","objects/HealthIcon.hx",260,0x9d2b69ce)
@@ -243,62 +243,24 @@ HXLINE(  86)				goto _hx_goto_3;
             			}
             			_hx_goto_3:;
             		}
-HXLINE(  94)		if ((this->_hx_char == HX_("bf",c4,55,00,00))) {
-HXLINE(  96)			::String _hx_switch_1 = this->animation->_curAnim->name;
-            			if (  (_hx_switch_1==HX_("defeat",f3,67,e1,66)) ){
-HXLINE( 101)				this->offset->set_y((this->offset->y + 240));
-HXLINE( 102)				this->offset->set_x((this->offset->x + 230));
-HXLINE( 100)				goto _hx_goto_4;
-            			}
-            			if (  (_hx_switch_1==HX_("neutral",47,ed,29,eb)) ){
-HXLINE(  98)				this->offset->set_y((this->offset->y + 240));
-HXLINE(  99)				this->offset->set_x((this->offset->x + 230));
-HXLINE(  97)				goto _hx_goto_4;
-            			}
-            			if (  (_hx_switch_1==HX_("winning",50,6b,0c,ef)) ){
-HXLINE( 104)				this->offset->set_y((this->offset->y + 230));
-HXLINE( 105)				this->offset->set_x((this->offset->x + 210));
-HXLINE( 103)				goto _hx_goto_4;
-            			}
-            			_hx_goto_4:;
-            		}
-HXLINE( 108)		if ((this->_hx_char == HX_("pissed",78,77,66,89))) {
-HXLINE( 110)			::String _hx_switch_2 = this->animation->_curAnim->name;
-            			if (  (_hx_switch_2==HX_("defeat",f3,67,e1,66)) ){
-HXLINE( 115)				this->offset->set_y((this->offset->y + 240));
-HXLINE( 116)				this->offset->set_x((this->offset->x + 230));
-HXLINE( 114)				goto _hx_goto_5;
-            			}
-            			if (  (_hx_switch_2==HX_("neutral",47,ed,29,eb)) ){
-HXLINE( 112)				this->offset->set_y((this->offset->y + 240));
-HXLINE( 113)				this->offset->set_x((this->offset->x + 230));
-HXLINE( 111)				goto _hx_goto_5;
-            			}
-            			if (  (_hx_switch_2==HX_("winning",50,6b,0c,ef)) ){
-HXLINE( 118)				this->offset->set_y((this->offset->y + 240));
-HXLINE( 119)				this->offset->set_x((this->offset->x + 230));
-HXLINE( 117)				goto _hx_goto_5;
-            			}
-            			_hx_goto_5:;
-            		}
 HXLINE( 122)		if ((this->_hx_char == HX_("chaos",40,9a,b3,45))) {
-HXLINE( 123)			::String _hx_switch_3 = this->animation->_curAnim->name;
-            			if (  (_hx_switch_3==HX_("defeat",f3,67,e1,66)) ){
+HXLINE( 123)			::String _hx_switch_1 = this->animation->_curAnim->name;
+            			if (  (_hx_switch_1==HX_("defeat",f3,67,e1,66)) ){
 HXLINE( 128)				this->offset->set_y((this->offset->y + 520));
 HXLINE( 129)				this->offset->set_x((this->offset->x + 410));
-HXLINE( 127)				goto _hx_goto_6;
+HXLINE( 127)				goto _hx_goto_4;
             			}
-            			if (  (_hx_switch_3==HX_("neutral",47,ed,29,eb)) ){
+            			if (  (_hx_switch_1==HX_("neutral",47,ed,29,eb)) ){
 HXLINE( 125)				this->offset->set_y((this->offset->y + 520));
 HXLINE( 126)				this->offset->set_x((this->offset->x + 410));
-HXLINE( 124)				goto _hx_goto_6;
+HXLINE( 124)				goto _hx_goto_4;
             			}
-            			if (  (_hx_switch_3==HX_("winning",50,6b,0c,ef)) ){
+            			if (  (_hx_switch_1==HX_("winning",50,6b,0c,ef)) ){
 HXLINE( 131)				this->offset->set_y((this->offset->y + 520));
 HXLINE( 132)				this->offset->set_x((this->offset->x + 410));
-HXLINE( 130)				goto _hx_goto_6;
+HXLINE( 130)				goto _hx_goto_4;
             			}
-            			_hx_goto_6:;
+            			_hx_goto_4:;
 HXLINE( 134)			this->offset->set_x((this->offset->x - ( (Float)(20) )));
 HXLINE( 136)			{
 HXLINE( 136)				 ::flixel::math::FlxBasePoint this1 = this->offset;
@@ -417,73 +379,7 @@ HXDLIN( 176)					this2->set_x(( (Float)(::Std_obj::_hx_int(x)) ));
 HXDLIN( 176)					this2->set_y(( (Float)(175) ));
             				}
 HXLINE( 177)				this->isAnim = true;
-HXLINE( 164)				goto _hx_goto_9;
-            			}
-            			if (  (_hx_switch_0==HX_("bf",c4,55,00,00)) ||  (_hx_switch_0==HX_("icon-bf",58,c5,f4,d5)) ){
-HXLINE( 179)				::String name = HX_("icons/icon-bf",e3,c5,14,a2);
-HXLINE( 180)				::String library = null();
-HXDLIN( 180)				 ::flixel::graphics::FlxGraphic imageLoaded = ::backend::Paths_obj::image(name,null(),true);
-HXDLIN( 180)				bool xmlExists = false;
-HXDLIN( 180)				::String xml = ::backend::Paths_obj::modFolders(((HX_("images/",77,50,74,c1) + name) + HX_(".xml",69,3e,c3,1e)));
-HXDLIN( 180)				if (::sys::FileSystem_obj::exists(xml)) {
-HXLINE( 180)					xmlExists = true;
-            				}
-HXDLIN( 180)				 ::Dynamic _hx_tmp;
-HXDLIN( 180)				if (::hx::IsNotNull( imageLoaded )) {
-HXLINE( 180)					_hx_tmp = imageLoaded;
-            				}
-            				else {
-HXLINE( 180)					_hx_tmp = ::backend::Paths_obj::image(name,library,true);
-            				}
-HXDLIN( 180)				::String _hx_tmp1;
-HXDLIN( 180)				if (xmlExists) {
-HXLINE( 180)					_hx_tmp1 = ::sys::io::File_obj::getContent(xml);
-            				}
-            				else {
-HXLINE( 180)					_hx_tmp1 = ::backend::Paths_obj::getPath(((HX_("images/",77,50,74,c1) + name) + HX_(".xml",69,3e,c3,1e)),null(),library,null());
-            				}
-HXDLIN( 180)				this->set_frames(::flixel::graphics::frames::FlxAtlasFrames_obj::fromSparrow(_hx_tmp,_hx_tmp1));
-HXLINE( 181)				{
-HXLINE( 181)					 ::flixel::math::FlxBasePoint this1 = this->scale;
-HXDLIN( 181)					this1->set_x(((Float)0.25));
-HXDLIN( 181)					this1->set_y(((Float)0.25));
-            				}
-HXLINE( 183)				this->animation->addByPrefix(HX_("neutral",47,ed,29,eb),HX_("Neutral",27,15,7b,b8),20,true,this->isPlayer,null());
-HXLINE( 184)				this->animation->addByPrefix(HX_("defeat",f3,67,e1,66),HX_("Defeat",13,dc,75,9b),20,true,this->isPlayer,null());
-HXLINE( 185)				this->animation->addByPrefix(HX_("winning",50,6b,0c,ef),HX_("Winning",30,93,5d,bc),20,true,this->isPlayer,null());
-HXLINE( 186)				this->animation->play(HX_("neutral",47,ed,29,eb),null(),null(),null());
-HXLINE( 188)				this->updateHitbox();
-HXLINE( 189)				this->set_antialiasing(::backend::ClientPrefs_obj::data->antialiasing);
-HXLINE( 190)				{
-HXLINE( 190)					 ::flixel::math::FlxBasePoint this2 = this->offset;
-HXDLIN( 190)					Float Value = (this->get_width() - ( (Float)(150) ));
-HXDLIN( 190)					 ::Dynamic Max = null();
-HXDLIN( 190)					Float lowerBound;
-HXDLIN( 190)					if ((Value < 0)) {
-HXLINE( 190)						lowerBound = ( (Float)(0) );
-            					}
-            					else {
-HXLINE( 190)						lowerBound = Value;
-            					}
-HXDLIN( 190)					Float x;
-HXDLIN( 190)					bool x1;
-HXDLIN( 190)					if (::hx::IsNotNull( Max )) {
-HXLINE( 190)						x1 = ::hx::IsGreater( lowerBound,Max );
-            					}
-            					else {
-HXLINE( 190)						x1 = false;
-            					}
-HXDLIN( 190)					if (x1) {
-HXLINE( 190)						x = ( (Float)(Max) );
-            					}
-            					else {
-HXLINE( 190)						x = lowerBound;
-            					}
-HXDLIN( 190)					this2->set_x(( (Float)(::Std_obj::_hx_int(x)) ));
-HXDLIN( 190)					this2->set_y(( (Float)(175) ));
-            				}
-HXLINE( 191)				this->isAnim = true;
-HXLINE( 178)				goto _hx_goto_9;
+HXLINE( 164)				goto _hx_goto_7;
             			}
             			if (  (_hx_switch_0==HX_("chaos",40,9a,b3,45)) ){
 HXLINE( 207)				::String name = HX_("icons/icon-chaos",81,c7,82,44);
@@ -549,7 +445,7 @@ HXDLIN( 218)					this2->set_x(( (Float)(::Std_obj::_hx_int(x)) ));
 HXDLIN( 218)					this2->set_y(( (Float)(175) ));
             				}
 HXLINE( 219)				this->isAnim = true;
-HXLINE( 206)				goto _hx_goto_9;
+HXLINE( 206)				goto _hx_goto_7;
             			}
             			if (  (_hx_switch_0==HX_("god-expunged-1",25,60,94,3a)) ){
 HXLINE( 221)				::String name = HX_("icons/icon-god-expunged-1",c4,02,e0,53);
@@ -581,73 +477,7 @@ HXLINE( 226)				this->animation->addByPrefix(HX_("winning",50,6b,0c,ef),HX_("Win
 HXLINE( 227)				this->animation->play(HX_("neutral",47,ed,29,eb),null(),null(),null());
 HXLINE( 228)				this->updateHitbox();
 HXLINE( 230)				this->isAnim = true;
-HXLINE( 220)				goto _hx_goto_9;
-            			}
-            			if (  (_hx_switch_0==HX_("icon-pissed",0c,41,0c,1b)) ||  (_hx_switch_0==HX_("pissed",78,77,66,89)) ){
-HXLINE( 193)				::String name = HX_("icons/icon-pissed",17,e3,de,7f);
-HXLINE( 194)				::String library = null();
-HXDLIN( 194)				 ::flixel::graphics::FlxGraphic imageLoaded = ::backend::Paths_obj::image(name,null(),true);
-HXDLIN( 194)				bool xmlExists = false;
-HXDLIN( 194)				::String xml = ::backend::Paths_obj::modFolders(((HX_("images/",77,50,74,c1) + name) + HX_(".xml",69,3e,c3,1e)));
-HXDLIN( 194)				if (::sys::FileSystem_obj::exists(xml)) {
-HXLINE( 194)					xmlExists = true;
-            				}
-HXDLIN( 194)				 ::Dynamic _hx_tmp;
-HXDLIN( 194)				if (::hx::IsNotNull( imageLoaded )) {
-HXLINE( 194)					_hx_tmp = imageLoaded;
-            				}
-            				else {
-HXLINE( 194)					_hx_tmp = ::backend::Paths_obj::image(name,library,true);
-            				}
-HXDLIN( 194)				::String _hx_tmp1;
-HXDLIN( 194)				if (xmlExists) {
-HXLINE( 194)					_hx_tmp1 = ::sys::io::File_obj::getContent(xml);
-            				}
-            				else {
-HXLINE( 194)					_hx_tmp1 = ::backend::Paths_obj::getPath(((HX_("images/",77,50,74,c1) + name) + HX_(".xml",69,3e,c3,1e)),null(),library,null());
-            				}
-HXDLIN( 194)				this->set_frames(::flixel::graphics::frames::FlxAtlasFrames_obj::fromSparrow(_hx_tmp,_hx_tmp1));
-HXLINE( 195)				{
-HXLINE( 195)					 ::flixel::math::FlxBasePoint this1 = this->scale;
-HXDLIN( 195)					this1->set_x(((Float)0.25));
-HXDLIN( 195)					this1->set_y(((Float)0.25));
-            				}
-HXLINE( 197)				this->animation->addByPrefix(HX_("neutral",47,ed,29,eb),HX_("Neutral",27,15,7b,b8),20,true,this->isPlayer,null());
-HXLINE( 198)				this->animation->addByPrefix(HX_("defeat",f3,67,e1,66),HX_("Defeat",13,dc,75,9b),20,true,this->isPlayer,null());
-HXLINE( 199)				this->animation->addByPrefix(HX_("winning",50,6b,0c,ef),HX_("Winning",30,93,5d,bc),20,true,this->isPlayer,null());
-HXLINE( 200)				this->animation->play(HX_("neutral",47,ed,29,eb),null(),null(),null());
-HXLINE( 202)				this->updateHitbox();
-HXLINE( 203)				this->set_antialiasing(::backend::ClientPrefs_obj::data->antialiasing);
-HXLINE( 204)				{
-HXLINE( 204)					 ::flixel::math::FlxBasePoint this2 = this->offset;
-HXDLIN( 204)					Float Value = (this->get_width() - ( (Float)(150) ));
-HXDLIN( 204)					 ::Dynamic Max = null();
-HXDLIN( 204)					Float lowerBound;
-HXDLIN( 204)					if ((Value < 0)) {
-HXLINE( 204)						lowerBound = ( (Float)(0) );
-            					}
-            					else {
-HXLINE( 204)						lowerBound = Value;
-            					}
-HXDLIN( 204)					Float x;
-HXDLIN( 204)					bool x1;
-HXDLIN( 204)					if (::hx::IsNotNull( Max )) {
-HXLINE( 204)						x1 = ::hx::IsGreater( lowerBound,Max );
-            					}
-            					else {
-HXLINE( 204)						x1 = false;
-            					}
-HXDLIN( 204)					if (x1) {
-HXLINE( 204)						x = ( (Float)(Max) );
-            					}
-            					else {
-HXLINE( 204)						x = lowerBound;
-            					}
-HXDLIN( 204)					this2->set_x(( (Float)(::Std_obj::_hx_int(x)) ));
-HXDLIN( 204)					this2->set_y(( (Float)(175) ));
-            				}
-HXLINE( 205)				this->isAnim = true;
-HXLINE( 192)				goto _hx_goto_9;
+HXLINE( 220)				goto _hx_goto_7;
             			}
             			/* default */{
 HXLINE( 232)				::String name = (HX_("icons/",15,dc,d6,45) + _hx_char);
@@ -670,11 +500,11 @@ HXLINE( 241)				this->iconOffsets[0] = ((this->get_width() - ( (Float)(150) )) /
 HXLINE( 242)				this->iconOffsets[1] = ((this->get_width() - ( (Float)(150) )) / ( (Float)(2) ));
 HXLINE( 243)				this->iconOffsets[2] = ((this->get_width() - ( (Float)(150) )) / ( (Float)(2) ));
 HXLINE( 244)				this->updateHitbox();
-HXLINE( 246)				this->animation->add(_hx_char,::Array_obj< int >::fromData( _hx_array_data_ea1163af_11,3),0,false,this->isPlayer,null());
+HXLINE( 246)				this->animation->add(_hx_char,::Array_obj< int >::fromData( _hx_array_data_ea1163af_9,3),0,false,this->isPlayer,null());
 HXLINE( 247)				this->animation->play(_hx_char,null(),null(),null());
 HXLINE( 248)				this->isAnim = false;
             			}
-            			_hx_goto_9:;
+            			_hx_goto_7:;
 HXLINE( 250)			this->_hx_char = _hx_char;
 HXLINE( 252)			this->set_antialiasing(::backend::ClientPrefs_obj::data->antialiasing);
 HXLINE( 253)			bool _hx_tmp;

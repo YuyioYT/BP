@@ -55,32 +55,32 @@
 #include <states/PlayState.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_d09065d5d6f86d63_1676_new,"shaders.EyesoresEffect","new",0x9f54dbf6,"shaders.EyesoresEffect.new","shaders/Shaders.hx",1676,0x7800d7f1)
-HX_LOCAL_STACK_FRAME(_hx_pos_d09065d5d6f86d63_1699_update,"shaders.EyesoresEffect","update",0x27235c33,"shaders.EyesoresEffect.update","shaders/Shaders.hx",1699,0x7800d7f1)
-HX_LOCAL_STACK_FRAME(_hx_pos_d09065d5d6f86d63_1704_set_ampmul,"shaders.EyesoresEffect","set_ampmul",0x2b407de7,"shaders.EyesoresEffect.set_ampmul","shaders/Shaders.hx",1704,0x7800d7f1)
-HX_LOCAL_STACK_FRAME(_hx_pos_d09065d5d6f86d63_1711_set_waveSpeed,"shaders.EyesoresEffect","set_waveSpeed",0x3d759c07,"shaders.EyesoresEffect.set_waveSpeed","shaders/Shaders.hx",1711,0x7800d7f1)
-HX_LOCAL_STACK_FRAME(_hx_pos_d09065d5d6f86d63_1717_set_time,"shaders.EyesoresEffect","set_time",0xbef415b4,"shaders.EyesoresEffect.set_time","shaders/Shaders.hx",1717,0x7800d7f1)
-HX_LOCAL_STACK_FRAME(_hx_pos_d09065d5d6f86d63_1724_set_enabled,"shaders.EyesoresEffect","set_enabled",0x0f8ffd3a,"shaders.EyesoresEffect.set_enabled","shaders/Shaders.hx",1724,0x7800d7f1)
-HX_LOCAL_STACK_FRAME(_hx_pos_d09065d5d6f86d63_1731_set_waveFrequency,"shaders.EyesoresEffect","set_waveFrequency",0xbb92c71c,"shaders.EyesoresEffect.set_waveFrequency","shaders/Shaders.hx",1731,0x7800d7f1)
-HX_LOCAL_STACK_FRAME(_hx_pos_d09065d5d6f86d63_1738_set_waveAmplitude,"shaders.EyesoresEffect","set_waveAmplitude",0x69a359c3,"shaders.EyesoresEffect.set_waveAmplitude","shaders/Shaders.hx",1738,0x7800d7f1)
+HX_DEFINE_STACK_FRAME(_hx_pos_d09065d5d6f86d63_1618_new,"shaders.EyesoresEffect","new",0x9f54dbf6,"shaders.EyesoresEffect.new","shaders/Shaders.hx",1618,0x7800d7f1)
+HX_LOCAL_STACK_FRAME(_hx_pos_d09065d5d6f86d63_1641_update,"shaders.EyesoresEffect","update",0x27235c33,"shaders.EyesoresEffect.update","shaders/Shaders.hx",1641,0x7800d7f1)
+HX_LOCAL_STACK_FRAME(_hx_pos_d09065d5d6f86d63_1646_set_ampmul,"shaders.EyesoresEffect","set_ampmul",0x2b407de7,"shaders.EyesoresEffect.set_ampmul","shaders/Shaders.hx",1646,0x7800d7f1)
+HX_LOCAL_STACK_FRAME(_hx_pos_d09065d5d6f86d63_1653_set_waveSpeed,"shaders.EyesoresEffect","set_waveSpeed",0x3d759c07,"shaders.EyesoresEffect.set_waveSpeed","shaders/Shaders.hx",1653,0x7800d7f1)
+HX_LOCAL_STACK_FRAME(_hx_pos_d09065d5d6f86d63_1659_set_time,"shaders.EyesoresEffect","set_time",0xbef415b4,"shaders.EyesoresEffect.set_time","shaders/Shaders.hx",1659,0x7800d7f1)
+HX_LOCAL_STACK_FRAME(_hx_pos_d09065d5d6f86d63_1666_set_enabled,"shaders.EyesoresEffect","set_enabled",0x0f8ffd3a,"shaders.EyesoresEffect.set_enabled","shaders/Shaders.hx",1666,0x7800d7f1)
+HX_LOCAL_STACK_FRAME(_hx_pos_d09065d5d6f86d63_1673_set_waveFrequency,"shaders.EyesoresEffect","set_waveFrequency",0xbb92c71c,"shaders.EyesoresEffect.set_waveFrequency","shaders/Shaders.hx",1673,0x7800d7f1)
+HX_LOCAL_STACK_FRAME(_hx_pos_d09065d5d6f86d63_1680_set_waveAmplitude,"shaders.EyesoresEffect","set_waveAmplitude",0x69a359c3,"shaders.EyesoresEffect.set_waveAmplitude","shaders/Shaders.hx",1680,0x7800d7f1)
 namespace shaders{
 
 void EyesoresEffect_obj::__construct(Float waveSpeed,Float waveFrequency,Float waveAmplitude,Float time,Float ampmul,bool enabled){
-            	HX_GC_STACKFRAME(&_hx_pos_d09065d5d6f86d63_1676_new)
-HXLINE(1685)		this->enabled = false;
-HXLINE(1684)		this->ampmul = ((Float)0);
-HXLINE(1683)		this->time = ((Float)0);
-HXLINE(1682)		this->waveAmplitude = ((Float)0);
-HXLINE(1681)		this->waveFrequency = ((Float)0);
-HXLINE(1680)		this->waveSpeed = ((Float)0);
-HXLINE(1678)		this->shader =  ::shaders::EyesoresShader_obj::__alloc( HX_CTX );
-HXLINE(1689)		::states::PlayState_obj::instance->shaderUpdates->push(this->update_dyn());
-HXLINE(1690)		this->set_waveSpeed(waveSpeed);
-HXLINE(1691)		this->set_waveFrequency(waveFrequency);
-HXLINE(1692)		this->set_waveAmplitude(waveAmplitude);
-HXLINE(1693)		this->set_time(time);
-HXLINE(1694)		this->set_ampmul(ampmul);
-HXLINE(1695)		this->set_enabled(enabled);
+            	HX_GC_STACKFRAME(&_hx_pos_d09065d5d6f86d63_1618_new)
+HXLINE(1627)		this->enabled = false;
+HXLINE(1626)		this->ampmul = ((Float)0);
+HXLINE(1625)		this->time = ((Float)0);
+HXLINE(1624)		this->waveAmplitude = ((Float)0);
+HXLINE(1623)		this->waveFrequency = ((Float)0);
+HXLINE(1622)		this->waveSpeed = ((Float)0);
+HXLINE(1620)		this->shader =  ::shaders::EyesoresShader_obj::__alloc( HX_CTX );
+HXLINE(1631)		::states::PlayState_obj::instance->shaderUpdates->push(this->update_dyn());
+HXLINE(1632)		this->set_waveSpeed(waveSpeed);
+HXLINE(1633)		this->set_waveFrequency(waveFrequency);
+HXLINE(1634)		this->set_waveAmplitude(waveAmplitude);
+HXLINE(1635)		this->set_time(time);
+HXLINE(1636)		this->set_ampmul(ampmul);
+HXLINE(1637)		this->set_enabled(enabled);
             	}
 
 Dynamic EyesoresEffect_obj::__CreateEmpty() { return new EyesoresEffect_obj; }
@@ -103,68 +103,68 @@ bool EyesoresEffect_obj::_hx_isInstanceOf(int inClassId) {
 }
 
 void EyesoresEffect_obj::update(Float elapsed){
-            	HX_STACKFRAME(&_hx_pos_d09065d5d6f86d63_1699_update)
-HXLINE(1700)		::Array< Float > base = this->shader->uTime->value;
-HXDLIN(1700)		int _hx_tmp = 0;
-HXDLIN(1700)		base[_hx_tmp] = (base->__get(_hx_tmp) + elapsed);
+            	HX_STACKFRAME(&_hx_pos_d09065d5d6f86d63_1641_update)
+HXLINE(1642)		::Array< Float > base = this->shader->uTime->value;
+HXDLIN(1642)		int _hx_tmp = 0;
+HXDLIN(1642)		base[_hx_tmp] = (base->__get(_hx_tmp) + elapsed);
             	}
 
 
 Float EyesoresEffect_obj::set_ampmul(Float v){
-            	HX_STACKFRAME(&_hx_pos_d09065d5d6f86d63_1704_set_ampmul)
-HXLINE(1705)		this->ampmul = v;
-HXLINE(1706)		this->shader->uampmul->value = ::Array_obj< Float >::__new(1)->init(0,this->ampmul);
-HXLINE(1707)		return this->ampmul;
+            	HX_STACKFRAME(&_hx_pos_d09065d5d6f86d63_1646_set_ampmul)
+HXLINE(1647)		this->ampmul = v;
+HXLINE(1648)		this->shader->uampmul->value = ::Array_obj< Float >::__new(1)->init(0,this->ampmul);
+HXLINE(1649)		return this->ampmul;
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC1(EyesoresEffect_obj,set_ampmul,return )
 
 Float EyesoresEffect_obj::set_waveSpeed(Float v){
-            	HX_STACKFRAME(&_hx_pos_d09065d5d6f86d63_1711_set_waveSpeed)
-HXLINE(1712)		this->waveSpeed = v;
-HXLINE(1713)		this->shader->uSpeed->value = ::Array_obj< Float >::__new(1)->init(0,this->waveSpeed);
-HXLINE(1714)		return this->waveSpeed;
+            	HX_STACKFRAME(&_hx_pos_d09065d5d6f86d63_1653_set_waveSpeed)
+HXLINE(1654)		this->waveSpeed = v;
+HXLINE(1655)		this->shader->uSpeed->value = ::Array_obj< Float >::__new(1)->init(0,this->waveSpeed);
+HXLINE(1656)		return this->waveSpeed;
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC1(EyesoresEffect_obj,set_waveSpeed,return )
 
 Float EyesoresEffect_obj::set_time(Float v){
-            	HX_STACKFRAME(&_hx_pos_d09065d5d6f86d63_1717_set_time)
-HXLINE(1718)		this->time = v;
-HXLINE(1719)		this->shader->uTime->value = ::Array_obj< Float >::__new(1)->init(0,v);
-HXLINE(1720)		return this->time;
+            	HX_STACKFRAME(&_hx_pos_d09065d5d6f86d63_1659_set_time)
+HXLINE(1660)		this->time = v;
+HXLINE(1661)		this->shader->uTime->value = ::Array_obj< Float >::__new(1)->init(0,v);
+HXLINE(1662)		return this->time;
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC1(EyesoresEffect_obj,set_time,return )
 
 bool EyesoresEffect_obj::set_enabled(bool v){
-            	HX_STACKFRAME(&_hx_pos_d09065d5d6f86d63_1724_set_enabled)
-HXLINE(1725)		this->enabled = v;
-HXLINE(1726)		this->shader->uEnabled->value = ::Array_obj< bool >::__new(1)->init(0,this->enabled);
-HXLINE(1727)		return this->enabled;
+            	HX_STACKFRAME(&_hx_pos_d09065d5d6f86d63_1666_set_enabled)
+HXLINE(1667)		this->enabled = v;
+HXLINE(1668)		this->shader->uEnabled->value = ::Array_obj< bool >::__new(1)->init(0,this->enabled);
+HXLINE(1669)		return this->enabled;
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC1(EyesoresEffect_obj,set_enabled,return )
 
 Float EyesoresEffect_obj::set_waveFrequency(Float v){
-            	HX_STACKFRAME(&_hx_pos_d09065d5d6f86d63_1731_set_waveFrequency)
-HXLINE(1732)		this->waveFrequency = v;
-HXLINE(1733)		this->shader->uFrequency->value = ::Array_obj< Float >::__new(1)->init(0,this->waveFrequency);
-HXLINE(1734)		return this->waveFrequency;
+            	HX_STACKFRAME(&_hx_pos_d09065d5d6f86d63_1673_set_waveFrequency)
+HXLINE(1674)		this->waveFrequency = v;
+HXLINE(1675)		this->shader->uFrequency->value = ::Array_obj< Float >::__new(1)->init(0,this->waveFrequency);
+HXLINE(1676)		return this->waveFrequency;
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC1(EyesoresEffect_obj,set_waveFrequency,return )
 
 Float EyesoresEffect_obj::set_waveAmplitude(Float v){
-            	HX_STACKFRAME(&_hx_pos_d09065d5d6f86d63_1738_set_waveAmplitude)
-HXLINE(1739)		this->waveAmplitude = v;
-HXLINE(1740)		this->shader->uWaveAmplitude->value = ::Array_obj< Float >::__new(1)->init(0,this->waveAmplitude);
-HXLINE(1741)		return this->waveAmplitude;
+            	HX_STACKFRAME(&_hx_pos_d09065d5d6f86d63_1680_set_waveAmplitude)
+HXLINE(1681)		this->waveAmplitude = v;
+HXLINE(1682)		this->shader->uWaveAmplitude->value = ::Array_obj< Float >::__new(1)->init(0,this->waveAmplitude);
+HXLINE(1683)		return this->waveAmplitude;
             	}
 
 

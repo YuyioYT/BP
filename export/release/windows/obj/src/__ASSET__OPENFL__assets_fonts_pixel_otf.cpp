@@ -13,13 +13,13 @@
 #include <openfl/text/Font.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_f9bd248e8c37eaa1_1495_new,"__ASSET__OPENFL__assets_fonts_pixel_otf","new",0xd7ddf5a3,"__ASSET__OPENFL__assets_fonts_pixel_otf.new","ManifestResources.hx",1495,0xf77aa668)
+HX_DEFINE_STACK_FRAME(_hx_pos_f9bd248e8c37eaa1_1463_new,"__ASSET__OPENFL__assets_fonts_pixel_otf","new",0xd7ddf5a3,"__ASSET__OPENFL__assets_fonts_pixel_otf.new","ManifestResources.hx",1463,0xf77aa668)
 
 void __ASSET__OPENFL__assets_fonts_pixel_otf_obj::__construct(){
-            	HX_STACKFRAME(&_hx_pos_f9bd248e8c37eaa1_1495_new)
-HXDLIN(1495)		this->_hx___fontPath = (::ManifestResources_obj::rootPath + HX_("assets/fonts/pixel.otf",a2,d3,8e,91));
-HXDLIN(1495)		this->name = HX_("Pixel Arial 11 Bold",ae,17,c6,45);
-HXDLIN(1495)		super::__construct(null());
+            	HX_STACKFRAME(&_hx_pos_f9bd248e8c37eaa1_1463_new)
+HXDLIN(1463)		this->_hx___fontPath = (::ManifestResources_obj::rootPath + HX_("assets/fonts/pixel.otf",a2,d3,8e,91));
+HXDLIN(1463)		this->name = HX_("Pixel Arial 11 Bold",ae,17,c6,45);
+HXDLIN(1463)		super::__construct(null());
             	}
 
 Dynamic __ASSET__OPENFL__assets_fonts_pixel_otf_obj::__CreateEmpty() { return new __ASSET__OPENFL__assets_fonts_pixel_otf_obj; }

@@ -2060,7 +2060,7 @@
    <depend name="include/backend/ClientPrefs.h"/>
    <depend name="include/backend/Conductor.h"/>
    <depend name="include/backend/Controls.h"/>
-   <depend name="include/backend/CoolUtil.h"/>
+   <depend name="include/backend/Difficulty.h"/>
    <depend name="include/backend/DiscordClient.h"/>
    <depend name="include/backend/Highscore.h"/>
    <depend name="include/backend/Mods.h"/>
@@ -2088,12 +2088,15 @@
    <depend name="include/flixel/group/FlxTypedGroup.h"/>
    <depend name="include/flixel/group/FlxTypedSpriteGroup.h"/>
    <depend name="include/flixel/input/FlxBaseKeyList.h"/>
+   <depend name="include/flixel/input/FlxInput.h"/>
    <depend name="include/flixel/input/FlxKeyManager.h"/>
    <depend name="include/flixel/input/FlxPointer.h"/>
+   <depend name="include/flixel/input/IFlxInput.h"/>
    <depend name="include/flixel/input/IFlxInputManager.h"/>
    <depend name="include/flixel/input/keyboard/FlxKeyList.h"/>
    <depend name="include/flixel/input/keyboard/FlxKeyboard.h"/>
    <depend name="include/flixel/input/mouse/FlxMouse.h"/>
+   <depend name="include/flixel/input/mouse/FlxMouseButton.h"/>
    <depend name="include/flixel/math/FlxBasePoint.h"/>
    <depend name="include/flixel/math/FlxRandom.h"/>
    <depend name="include/flixel/sound/FlxSound.h"/>
@@ -2109,6 +2112,7 @@
    <depend name="include/flixel/util/IFlxDestroyable.h"/>
    <depend name="include/flixel/util/IFlxPooled.h"/>
    <depend name="include/flixel/util/_FlxColor/FlxColor_Impl_.h"/>
+   <depend name="include/haxe/Exception.h"/>
    <depend name="include/haxe/IMap.h"/>
    <depend name="include/haxe/Log.h"/>
    <depend name="include/haxe/ds/StringMap.h"/>
@@ -2131,7 +2135,6 @@
    <depend name="include/states/LoadingState.h"/>
    <depend name="include/states/PlayState.h"/>
    <depend name="include/states/StoryMenuState.h"/>
-   <depend name="include/states/editors/ChartingState.h"/>
    <depend name="include/substates/GameplayChangersSubstate.h"/>
    <depend name="include/substates/ResetScoreSubState.h"/>
    <depend name="include/sys/FileSystem.h"/>
@@ -3006,6 +3009,15 @@
    <depend name="include/openfl/display/ShaderParameter_Float.h"/>
    <depend name="include/shaders/Tiltshift.h"/>
   </file>
+  <file name="src/shaders/TiltshiftEffect.cpp" >
+   <depend name="include/flixel/graphics/tile/FlxGraphicsShader.h"/>
+   <depend name="include/openfl/display/GraphicsShader.h"/>
+   <depend name="include/openfl/display/Shader.h"/>
+   <depend name="include/openfl/display/ShaderParameter_Float.h"/>
+   <depend name="include/shaders/Effect.h"/>
+   <depend name="include/shaders/Tiltshift.h"/>
+   <depend name="include/shaders/TiltshiftEffect.h"/>
+  </file>
   <file name="src/shaders/WiggleShader.cpp" >
    <depend name="include/flixel/graphics/tile/FlxGraphicsShader.h"/>
    <depend name="include/openfl/display/GraphicsShader.h"/>
@@ -3028,15 +3040,6 @@
   </file>
   <file name="src/shaders/WiggleEffectType.cpp" >
    <depend name="include/shaders/WiggleEffectType.h"/>
-  </file>
-  <file name="src/shaders/TiltshiftEffect.cpp" >
-   <depend name="include/flixel/graphics/tile/FlxGraphicsShader.h"/>
-   <depend name="include/openfl/display/GraphicsShader.h"/>
-   <depend name="include/openfl/display/Shader.h"/>
-   <depend name="include/openfl/display/ShaderParameter_Float.h"/>
-   <depend name="include/shaders/Effect.h"/>
-   <depend name="include/shaders/Tiltshift.h"/>
-   <depend name="include/shaders/TiltshiftEffect.h"/>
   </file>
   <file name="src/shaders/ScanlineShader.cpp" >
    <depend name="include/flixel/graphics/tile/FlxGraphicsShader.h"/>
@@ -3061,7 +3064,6 @@
    <depend name="include/openfl/display/GraphicsShader.h"/>
    <depend name="include/openfl/display/Shader.h"/>
    <depend name="include/openfl/display/ShaderParameter_Float.h"/>
-   <depend name="include/openfl/display/ShaderParameter_Int.h"/>
    <depend name="include/shaders/Chromaticbordes3Shader.h"/>
   </file>
   <file name="src/shaders/Chromaticbordes3Effect.cpp" >
@@ -3069,7 +3071,6 @@
    <depend name="include/openfl/display/GraphicsShader.h"/>
    <depend name="include/openfl/display/Shader.h"/>
    <depend name="include/openfl/display/ShaderParameter_Float.h"/>
-   <depend name="include/openfl/display/ShaderParameter_Int.h"/>
    <depend name="include/shaders/Chromaticbordes3Effect.h"/>
    <depend name="include/shaders/Chromaticbordes3Shader.h"/>
    <depend name="include/shaders/Effect.h"/>
@@ -3521,7 +3522,6 @@
    <depend name="include/shaders/GreyscaleEffect.h"/>
    <depend name="include/shaders/InvertColorsEffect.h"/>
    <depend name="include/shaders/MirrorRepeatEffect.h"/>
-   <depend name="include/shaders/MosaicEffect.h"/>
    <depend name="include/shaders/PerlinSmokeEffect.h"/>
    <depend name="include/shaders/RainEffect.h"/>
    <depend name="include/shaders/ScanlineEffect.h"/>
@@ -16446,16 +16446,9 @@
    <depend name="include/Std.h"/>
    <depend name="include/StringTools.h"/>
    <depend name="include/backend/CoolUtil.h"/>
-   <depend name="include/backend/MusicBeatState.h"/>
    <depend name="include/flixel/FlxBasic.h"/>
    <depend name="include/flixel/FlxObject.h"/>
    <depend name="include/flixel/FlxSprite.h"/>
-   <depend name="include/flixel/FlxState.h"/>
-   <depend name="include/flixel/addons/transition/FlxTransitionableState.h"/>
-   <depend name="include/flixel/addons/ui/FlxUIState.h"/>
-   <depend name="include/flixel/addons/ui/interfaces/IEventGetter.h"/>
-   <depend name="include/flixel/addons/ui/interfaces/IFlxUIState.h"/>
-   <depend name="include/flixel/group/FlxTypedGroup.h"/>
    <depend name="include/flixel/util/FlxSave.h"/>
    <depend name="include/flixel/util/IFlxDestroyable.h"/>
    <depend name="include/flixel/util/_FlxColor/FlxColor_Impl_.h"/>
@@ -16478,7 +16471,6 @@
    <depend name="include/openfl/events/EventDispatcher.h"/>
    <depend name="include/openfl/events/IEventDispatcher.h"/>
    <depend name="include/openfl/net/URLRequest.h"/>
-   <depend name="include/states/PlayState.h"/>
    <depend name="include/sys/FileSystem.h"/>
    <depend name="include/sys/io/File.h"/>
   </file>
@@ -18163,7 +18155,6 @@
    <depend name="include/backend/Highscore.h"/>
    <depend name="include/backend/DiscordClient.h"/>
    <depend name="include/backend/Difficulty.h"/>
-   <depend name="include/backend/CoolUtil.h"/>
    <depend name="include/backend/Conductor.h"/>
    <depend name="include/backend/ClientPrefs.h"/>
    <depend name="include/flixel/FlxBasic.h"/>

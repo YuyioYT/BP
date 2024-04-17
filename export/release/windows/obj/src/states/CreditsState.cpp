@@ -344,14 +344,14 @@ HXLINE(  43)				int _g = 0;
 HXDLIN(  43)				::String path = HX_("modsList.txt",f1,ca,08,ac);
 HXDLIN(  43)				::String daList = null();
 HXDLIN(  43)				::Array< ::String > formatted = path.split(HX_(":",3a,00,00,00));
-HXLINE(  88)				path = formatted->__get((formatted->length - 1));
+HXLINE(  57)				path = formatted->__get((formatted->length - 1));
 HXLINE(  43)				if (::sys::FileSystem_obj::exists(path)) {
-HXLINE(  89)					daList = ::sys::io::File_obj::getContent(path);
+HXLINE(  58)					daList = ::sys::io::File_obj::getContent(path);
             				}
 HXLINE(  43)				::Array< ::String > _g1;
 HXDLIN(  43)				if (::hx::IsNotNull( daList )) {
 HXLINE(  43)					::Array< ::String > daList1 = ::Array_obj< ::String >::__new(0);
-HXLINE( 160)					daList1 = ::StringTools_obj::trim(daList).split(HX_("\n",0a,00,00,00));
+HXLINE( 129)					daList1 = ::StringTools_obj::trim(daList).split(HX_("\n",0a,00,00,00));
 HXLINE(  43)					{
 HXLINE(  43)						int _g = 0;
 HXDLIN(  43)						int _g2 = daList1->length;
@@ -474,11 +474,11 @@ HXDLIN( 123)		::String color = this->creditsStuff->__get(this->curSelected).Stat
 HXDLIN( 123)		 ::EReg hideChars =  ::EReg_obj::__alloc( HX_CTX ,HX_("[\t\n\r]",ac,57,71,6b),HX_("",00,00,00,00));
 HXDLIN( 123)		::String color1 = ::StringTools_obj::trim(hideChars->split(color)->join(HX_("",00,00,00,00)));
 HXDLIN( 123)		if (::StringTools_obj::startsWith(color1,HX_("0x",48,2a,00,00))) {
-HXLINE( 150)			color1 = color1.substring((color1.length - 6),null());
+HXLINE( 119)			color1 = color1.substring((color1.length - 6),null());
             		}
 HXLINE( 123)		 ::Dynamic colorNum = ::flixel::util::_FlxColor::FlxColor_Impl__obj::fromString(color1);
 HXDLIN( 123)		if (::hx::IsNull( colorNum )) {
-HXLINE( 153)			colorNum = ::flixel::util::_FlxColor::FlxColor_Impl__obj::fromString((HX_("#",23,00,00,00) + color1));
+HXLINE( 122)			colorNum = ::flixel::util::_FlxColor::FlxColor_Impl__obj::fromString((HX_("#",23,00,00,00) + color1));
             		}
 HXLINE( 123)		int _hx_tmp6;
 HXDLIN( 123)		if (::hx::IsNotNull( colorNum )) {

@@ -658,21 +658,21 @@ HXLINE( 204)			this->lol = true;
 HXLINE( 205)			::flixel::FlxG_obj::mouse->set_visible(false);
 HXLINE( 206)			 ::flixel::_hx_system::frontEnds::SoundFrontEnd _hx_tmp = ::flixel::FlxG_obj::sound;
 HXDLIN( 206)			_hx_tmp->play(::backend::Paths_obj::sound(HX_("menu/confirmMenu",0f,67,5e,6d),null()),null(),null(),null(),null(),null());
-HXLINE( 207)			this->startSong(HX_("shattered/shattered-hard",97,6c,53,bc),HX_("fallowed",82,69,46,33),HX_("reality breaking",13,62,18,36));
+HXLINE( 207)			this->startSong(HX_("shattered/shattered-hard",97,6c,53,bc),HX_("fallowed/fallowed-hard",49,c0,37,8c),HX_("reality breaking/reality breaking-hard",69,f2,32,7a));
             		}
 HXLINE( 210)		if (clicked2) {
 HXLINE( 212)			this->lol2 = true;
 HXLINE( 213)			::flixel::FlxG_obj::mouse->set_visible(false);
 HXLINE( 214)			 ::flixel::_hx_system::frontEnds::SoundFrontEnd _hx_tmp = ::flixel::FlxG_obj::sound;
 HXDLIN( 214)			_hx_tmp->play(::backend::Paths_obj::sound(HX_("menu/confirmMenu",0f,67,5e,6d),null()),null(),null(),null(),null(),null());
-HXLINE( 215)			this->startSong2(HX_("rebound/rebound-hard",31,f2,55,ae),HX_("disposition",f7,db,d9,c2),HX_("upheaval",38,cb,7f,52));
+HXLINE( 215)			this->startSong2(HX_("rebound/rebound-hard",31,f2,55,ae),HX_("disposition/disposition-hard",99,7a,51,22),HX_("diffraction/diffraction/hard",03,ba,cd,b0),HX_("upheaval/upheaval-hard",09,1f,b7,34));
             		}
 HXLINE( 219)		if (clicked3) {
 HXLINE( 221)			this->lol3 = true;
 HXLINE( 222)			 ::flixel::_hx_system::frontEnds::SoundFrontEnd _hx_tmp = ::flixel::FlxG_obj::sound;
 HXDLIN( 222)			_hx_tmp->play(::backend::Paths_obj::sound(HX_("menu/confirmMenu",0f,67,5e,6d),null()),null(),null(),null(),null(),null());
 HXLINE( 223)			::flixel::FlxG_obj::mouse->set_visible(false);
-HXLINE( 224)			this->startSong3(HX_("roundabout/roundabout-hard",e9,5f,1c,ab),HX_("rascal",aa,64,dc,ba),HX_("triple threat",1c,c4,6d,2e));
+HXLINE( 224)			this->startSong3(HX_("roundabout/roundabout-hard",e9,5f,1c,ab),HX_("rascal/rascal-hard",89,98,4f,68),HX_("triple threat/triple threat-hard",4f,95,5f,91));
             		}
 HXLINE( 227)		if (this->get_controls()->get_BACK()) {
 HXLINE( 229)			::flixel::FlxG_obj::mouse->set_visible(false);
@@ -750,8 +750,8 @@ HXLINE( 252)		::flixel::effects::FlxFlicker_obj::flicker(this->week1,1,((Float)0
 
 HX_DEFINE_DYNAMIC_FUNC3(StoryMenuState_obj,startSong,(void))
 
-void StoryMenuState_obj::startSong2(::String songName1,::String songName2,::String songName3){
-            		HX_BEGIN_LOCAL_FUNC_S4(::hx::LocalFunc,_hx_Closure_3, ::states::StoryMenuState,_gthis,::String,songName2,::String,songName1,::String,songName3) HXARGC(1)
+void StoryMenuState_obj::startSong2(::String songName1,::String songName2,::String songName3,::String songName4){
+            		HX_BEGIN_LOCAL_FUNC_S5(::hx::LocalFunc,_hx_Closure_3, ::states::StoryMenuState,_gthis,::String,songName4,::String,songName2,::String,songName1,::String,songName3) HXARGC(1)
             		void _hx_run( ::flixel::effects::FlxFlicker flick){
             			HX_BEGIN_LOCAL_FUNC_S1(::hx::LocalFunc,_hx_Closure_1, ::states::StoryMenuState,_gthis) HXARGC(1)
             			void _hx_run( ::flixel::FlxSprite spr){
@@ -782,7 +782,7 @@ HXLINE( 307)				::backend::MusicBeatState_obj::switchState(::states::LoadingStat
             			HX_END_LOCAL_FUNC1((void))
 
             			HX_GC_STACKFRAME(&_hx_pos_bb97520c7169a052_284_startSong2)
-HXLINE( 285)			::states::PlayState_obj::storyPlaylist = ::Array_obj< ::String >::__new(3)->init(0,songName1)->init(1,songName2)->init(2,songName3);
+HXLINE( 285)			::states::PlayState_obj::storyPlaylist = ::Array_obj< ::String >::__new(4)->init(0,songName1)->init(1,songName2)->init(2,songName3)->init(3,songName4);
 HXLINE( 286)			::states::PlayState_obj::isStoryMode = true;
 HXLINE( 287)			::states::PlayState_obj::storyWeek = 2;
 HXLINE( 288)			::states::PlayState_obj::storyDifficulty = 2;
@@ -805,11 +805,11 @@ HXLINE( 305)			 ::flixel::util::FlxTimer_obj::__alloc( HX_CTX ,null())->start(1,
 
             	HX_STACKFRAME(&_hx_pos_bb97520c7169a052_282_startSong2)
 HXDLIN( 282)		 ::states::StoryMenuState _gthis = ::hx::ObjectPtr<OBJ_>(this);
-HXLINE( 283)		::flixel::effects::FlxFlicker_obj::flicker(this->week2,1,((Float)0.06),false,false, ::Dynamic(new _hx_Closure_3(_gthis,songName2,songName1,songName3)),null());
+HXLINE( 283)		::flixel::effects::FlxFlicker_obj::flicker(this->week2,1,((Float)0.06),false,false, ::Dynamic(new _hx_Closure_3(_gthis,songName4,songName2,songName1,songName3)),null());
             	}
 
 
-HX_DEFINE_DYNAMIC_FUNC3(StoryMenuState_obj,startSong2,(void))
+HX_DEFINE_DYNAMIC_FUNC4(StoryMenuState_obj,startSong2,(void))
 
 void StoryMenuState_obj::startSong3(::String songName1,::String songName2,::String songName3){
             		HX_BEGIN_LOCAL_FUNC_S4(::hx::LocalFunc,_hx_Closure_3, ::states::StoryMenuState,_gthis,::String,songName2,::String,songName1,::String,songName3) HXARGC(1)

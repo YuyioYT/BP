@@ -91,7 +91,7 @@ class HealthIcon extends FlxSprite
 					angle = FlxG.random.int(-1, 1);
 			}
 		}
-		if(this.char == 'bf') {
+	/*	if(this.char == 'bf') {
 			//fuckin offsets
 			switch(animation.curAnim.name) {
 				case 'neutral':
@@ -105,7 +105,7 @@ class HealthIcon extends FlxSprite
 					offset.x += 210;
 			}
 		}
-		if(this.char == 'pissed') {
+	/*	if(this.char == 'pissed') {
 			//fuckin offsets
 			switch(animation.curAnim.name) {
 				case 'neutral':
@@ -118,7 +118,7 @@ class HealthIcon extends FlxSprite
 					offset.y += 240;
 					offset.x += 230;
 			}
-		}
+		}*/
 		if(this.char == 'chaos') {
 			switch(animation.curAnim.name) {
 				case 'neutral':
@@ -175,7 +175,7 @@ class HealthIcon extends FlxSprite
 					antialiasing = ClientPrefs.data.antialiasing;
 					offset.set(Std.int(FlxMath.bound(width - 150,0)),175);
 					this.isAnim = true;
-				case 'bf'|'icon-bf':
+		/*		case 'bf'|'icon-bf':
 					var name:String = 'icons/icon-bf';
 					frames = Paths.getSparrowAtlas(name);
 					scale.set(0.25, 0.25);
@@ -189,7 +189,7 @@ class HealthIcon extends FlxSprite
 					antialiasing = ClientPrefs.data.antialiasing;
 					offset.set(Std.int(FlxMath.bound(width - 150,0)),175);
 					this.isAnim = true;
-				case 'pissed'|'icon-pissed':
+		/*		case 'pissed'|'icon-pissed':
 					var name:String = 'icons/icon-pissed';
 					frames = Paths.getSparrowAtlas(name);
 					scale.set(0.25, 0.25);
@@ -202,7 +202,7 @@ class HealthIcon extends FlxSprite
 					updateHitbox();
 					antialiasing = ClientPrefs.data.antialiasing;
 					offset.set(Std.int(FlxMath.bound(width - 150,0)),175);
-					this.isAnim = true;
+					this.isAnim = true;*/
 				case 'chaos':
 					var name:String = 'icons/icon-chaos';
 					frames = Paths.getSparrowAtlas(name);

@@ -286,70 +286,35 @@ class ChromBlockedShader extends FlxShader {
 
 class Chromaticbordes3Effect extends Effect {
     public var shader:Chromaticbordes3Shader = new Chromaticbordes3Shader();
-    public var sampleCount(default, set):Int = 0;
-    public var blur(default, set):Float = 0;
-    public var falloff(default, set):Float = 0;
 
     public function new():Void {
-        set_sampleCount(50);
-        set_blur(0.25);
-        set_falloff(3.0);
         shader.iTime.value = [0];
     }
 
     public override function update(elapsed:Float):Void {
         shader.iTime.value[0] += elapsed;
     }
-
-    public function set_sampleCount(v:Int):Int {
-        sampleCount = v;
-        shader.sampleCount.value = [v];
-        return this.sampleCount;
-    }
-
-    public function set_blur(v:Float):Float {
-        blur = v;
-        shader.blur.value = [v];
-        return this.blur;
-    }
-
-    public function set_falloff(v:Float):Float {
-        falloff = v;
-        shader.falloff.value = [v];
-        return this.falloff;
-    }
 }
 
 class Chromaticbordes3Shader extends FlxShader {
     @:glFragmentSource('
-    //SHADERTOY PORT FIX
     #pragma header
     vec2 uv = openfl_TextureCoordv.xy;
-    vec2 fragCoord = openfl_TextureCoordv*openfl_TextureSize;
+    vec2 fragCoord = openfl_TextureCoordv * openfl_TextureSize;
     vec2 iResolution = openfl_TextureSize;
     uniform float iTime;
     #define iChannel0 bitmap
     #define texture flixel_texture2D
     #define fragColor gl_FragColor
     #define mainImage main
-    //****MAKE SURE TO remove the parameters from mainImage.
-    //SHADERTOY PORT FIX
-    
-    /*
-        Transverse Chromatic Aberration
-    
-        Based on https://github.com/FlexMonkey/Filterpedia/blob/7a0d4a7070894eb77b9d1831f689f9d8765c12ca/Filterpedia/customFilters/TransverseChromaticAberration.swift
-    
-        Simon Gladman | http://flexmonkey.blogspot.co.uk | September 2017
-    */
-    
-    uniform int sampleCount;
-    uniform float blur; 
-    uniform float falloff; 
-    
+
+    int sampleCount = 50;
+    float blur = 0.25; 
+    float falloff = 3.0; 
+
     // use iChannel0 for video, iChannel1 for test grid
     #define INPUT iChannel0
-    
+
     void main()
     {
         vec2 destCoord = fragCoord.xy / iResolution.xy;
@@ -358,19 +323,16 @@ class Chromaticbordes3Shader extends FlxShader {
         vec2 velocity = direction * blur * pow(length(destCoord - 0.5), falloff);
         float inverseSampleCount = 1.0 / float(sampleCount); 
         
-        mat3 increments = mat3(velocity * 1.0 * inverseSampleCount,
-                                   velocity * 2.0 * inverseSampleCount,
-                                   velocity * 4.0 * inverseSampleCount);
-    
+        float rOffset = velocity.x * 1.0 * inverseSampleCount;
+        float gOffset = velocity.x * 2.0 * inverseSampleCount;
+        float bOffset = velocity.x * 4.0 * inverseSampleCount;
+        
         vec3 accumulator = vec3(0);
-        mat3 offsets = mat3(0); 
         
         for (int i = 0; i < sampleCount; i++) {
-            accumulator.r += texture(INPUT, destCoord + offsets[0]).r; 
-            accumulator.g += texture(INPUT, destCoord + offsets[1]).g; 
-            accumulator.b += texture(INPUT, destCoord + offsets[2]).b; 
-            
-            offsets -= increments;
+            accumulator.r += texture(INPUT, destCoord - vec2(rOffset * float(i), 0.0)).r; 
+            accumulator.g += texture(INPUT, destCoord - vec2(gOffset * float(i), 0.0)).g; 
+            accumulator.b += texture(INPUT, destCoord - vec2(bOffset * float(i), 0.0)).b; 
         }
     
         fragColor = vec4(accumulator / float(sampleCount), 1.0);
@@ -440,18 +402,6 @@ class ScanlineShader extends FlxShader
 	{
 		super();
 	}
-}
-
-class TiltshiftEffect extends Effect{
-	
-	public var shader:Tiltshift;
-	public function new (blurAmount:Float, center:Float){
-		shader = new Tiltshift();
-		shader.bluramount.value = [blurAmount];
-		shader.center.value = [center];
-	}
-	
-	
 }
 
 enum WiggleEffectType
@@ -588,46 +538,38 @@ class WiggleShader extends FlxShader
 	}
 }
 
+class TiltshiftEffect extends Effect{
+	
+	public var shader:Tiltshift = new Tiltshift();
+
+    public var bluramount(default, set):Float = 0;   
+    public var center(default, set):Float = 0;
+
+	public function new():Void
+	{
+        set_bluramount(0);
+        set_center(0);
+	}
+
+    function set_bluramount(value:Float):Float
+        {
+            bluramount = value;
+            shader.bluramount.value = [value];
+            return bluramount;
+        }
+
+    function set_center(value:Float):Float
+        {
+            center = value;
+            shader.center.value = [value];
+            return center;
+        }
+}
+
 class Tiltshift extends FlxShader
 {
 	@:glFragmentSource('
 		#pragma header
-
-		// Modified version of a tilt shift shader from Martin Jonasson (http://grapefrukt.com/)
-		// Read http://notes.underscorediscovery.com/ for context on shaders and this file
-		// License : MIT
-		 
-			/*
-				Take note that blurring in a single pass (the two for loops below) is more expensive than separating
-				the x and the y blur into different passes. This was used where bleeding edge performance
-				was not crucial and is to illustrate a point. 
-		 
-				The reason two passes is cheaper? 
-				   texture2D is a fairly high cost call, sampling a texture.
-		 
-				   So, in a single pass, like below, there are 3 steps, per x and y. 
-		 
-				   That means a total of 9 "taps", it touches the texture to sample 9 times.
-		 
-				   Now imagine we apply this to some geometry, that is equal to 16 pixels on screen (tiny)
-				   (16 * 16) * 9 = 2304 samples taken, for width * height number of pixels, * 9 taps
-				   Now, if you split them up, it becomes 3 for x, and 3 for y, a total of 6 taps
-				   (16 * 16) * 6 = 1536 samples
-			
-				   That\'s on a *tiny* sprite, let\'s scale that up to 128x128 sprite...
-				   (128 * 128) * 9 = 147,456
-				   (128 * 128) * 6 =  98,304
-		 
-				   That\'s 33.33..% cheaper for splitting them up.
-				   That\'s with 3 steps, with higher steps (more taps per pass...)
-		 
-				   A really smooth, 6 steps, 6*6 = 36 taps for one pass, 12 taps for two pass
-				   You will notice, the curve is not linear, at 12 steps it\'s 144 vs 24 taps
-				   It becomes orders of magnitude slower to do single pass!
-				   Therefore, you split them up into two passes, one for x, one for y.
-			*/
-		 
-		// I am hardcoding the constants like a jerk
 			
 		uniform float bluramount  = 1.0;
 		uniform float center      = 1.0;
@@ -3006,11 +2948,18 @@ class MosaicEffect extends Effect
 {
 	public var shader:MosaicShader;
 
-	public function new(strength)
-	{
-        shader = new MosaicShader();
-		shader.strength.value = [strength];
-	}
+    public var strength(default, set):Float = 0;
+
+    public function new()
+    {
+        set_strength(0);
+    }
+
+    function set_strength(value:Float):Float {
+        this.strength = value;
+        shader.strength.value = [value];
+        return this.strength;
+    }
 }
 
 class MosaicShader extends FlxShader

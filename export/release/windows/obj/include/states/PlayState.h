@@ -348,6 +348,7 @@ class HXCPP_CLASS_ATTRIBUTES PlayState_obj : public  ::backend::MusicBeatState_o
 		 ::flixel::FlxSprite olddaveHills;
 		 ::objects::BGSprite expungedBG;
 		 ::objects::BGSprite glow;
+		 ::flixel::FlxSprite tunnel;
 		 ::flixel::FlxSprite whiteflash;
 		 ::flixel::FlxSprite redGlow;
 		 ::openfl::display::Sprite expungedScroll;

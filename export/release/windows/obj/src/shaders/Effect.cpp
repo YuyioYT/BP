@@ -16,8 +16,8 @@
 #include <shaders/Effect.h>
 #endif
 
-HX_LOCAL_STACK_FRAME(_hx_pos_1f4c61aac642aad7_3756_update,"shaders.Effect","update",0xfaf18766,"shaders.Effect.update","shaders/Shaders.hx",3756,0x7800d7f1)
-HX_LOCAL_STACK_FRAME(_hx_pos_1f4c61aac642aad7_3760_setValue,"shaders.Effect","setValue",0x87e1bb0c,"shaders.Effect.setValue","shaders/Shaders.hx",3760,0x7800d7f1)
+HX_LOCAL_STACK_FRAME(_hx_pos_1f4c61aac642aad7_3705_update,"shaders.Effect","update",0xfaf18766,"shaders.Effect.update","shaders/Shaders.hx",3705,0x7800d7f1)
+HX_LOCAL_STACK_FRAME(_hx_pos_1f4c61aac642aad7_3709_setValue,"shaders.Effect","setValue",0x87e1bb0c,"shaders.Effect.setValue","shaders/Shaders.hx",3709,0x7800d7f1)
 namespace shaders{
 
 void Effect_obj::__construct() { }
@@ -38,15 +38,15 @@ bool Effect_obj::_hx_isInstanceOf(int inClassId) {
 }
 
 void Effect_obj::update(Float elapsed){
-            	HX_STACKFRAME(&_hx_pos_1f4c61aac642aad7_3756_update)
+            	HX_STACKFRAME(&_hx_pos_1f4c61aac642aad7_3705_update)
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC1(Effect_obj,update,(void))
 
 void Effect_obj::setValue( ::flixel::graphics::tile::FlxGraphicsShader shader,::String variable,Float value){
-            	HX_STACKFRAME(&_hx_pos_1f4c61aac642aad7_3760_setValue)
-HXDLIN(3760)		::Reflect_obj::setProperty(::Reflect_obj::getProperty(shader,HX_("variable",3c,12,0d,69)),HX_("value",71,7f,b8,31),::cpp::VirtualArray_obj::__new(1)->init(0,value));
+            	HX_STACKFRAME(&_hx_pos_1f4c61aac642aad7_3709_setValue)
+HXDLIN(3709)		::Reflect_obj::setProperty(::Reflect_obj::getProperty(shader,HX_("variable",3c,12,0d,69)),HX_("value",71,7f,b8,31),::cpp::VirtualArray_obj::__new(1)->init(0,value));
             	}
 
 

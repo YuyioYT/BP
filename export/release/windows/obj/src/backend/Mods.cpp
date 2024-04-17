@@ -94,14 +94,14 @@ HXLINE(  46)				int _g = 0;
 HXDLIN(  46)				::String path = HX_("modsList.txt",f1,ca,08,ac);
 HXDLIN(  46)				::String daList = null();
 HXDLIN(  46)				::Array< ::String > formatted = path.split(HX_(":",3a,00,00,00));
-HXLINE(  88)				path = formatted->__get((formatted->length - 1));
+HXLINE(  57)				path = formatted->__get((formatted->length - 1));
 HXLINE(  46)				if (::sys::FileSystem_obj::exists(path)) {
-HXLINE(  89)					daList = ::sys::io::File_obj::getContent(path);
+HXLINE(  58)					daList = ::sys::io::File_obj::getContent(path);
             				}
 HXLINE(  46)				::Array< ::String > _g1;
 HXDLIN(  46)				if (::hx::IsNotNull( daList )) {
 HXLINE(  46)					::Array< ::String > daList1 = ::Array_obj< ::String >::__new(0);
-HXLINE( 160)					daList1 = ::StringTools_obj::trim(daList).split(HX_("\n",0a,00,00,00));
+HXLINE( 129)					daList1 = ::StringTools_obj::trim(daList).split(HX_("\n",0a,00,00,00));
 HXLINE(  46)					{
 HXLINE(  46)						int _g = 0;
 HXDLIN(  46)						int _g2 = daList1->length;
@@ -713,14 +713,14 @@ HXLINE( 231)			int _g = 0;
 HXDLIN( 231)			::String path = HX_("modsList.txt",f1,ca,08,ac);
 HXDLIN( 231)			::String daList = null();
 HXDLIN( 231)			::Array< ::String > formatted = path.split(HX_(":",3a,00,00,00));
-HXLINE(  88)			path = formatted->__get((formatted->length - 1));
+HXLINE(  57)			path = formatted->__get((formatted->length - 1));
 HXLINE( 231)			if (::sys::FileSystem_obj::exists(path)) {
-HXLINE(  89)				daList = ::sys::io::File_obj::getContent(path);
+HXLINE(  58)				daList = ::sys::io::File_obj::getContent(path);
             			}
 HXLINE( 231)			::Array< ::String > _g1;
 HXDLIN( 231)			if (::hx::IsNotNull( daList )) {
 HXLINE( 231)				::Array< ::String > daList1 = ::Array_obj< ::String >::__new(0);
-HXLINE( 160)				daList1 = ::StringTools_obj::trim(daList).split(HX_("\n",0a,00,00,00));
+HXLINE( 129)				daList1 = ::StringTools_obj::trim(daList).split(HX_("\n",0a,00,00,00));
 HXLINE( 231)				{
 HXLINE( 231)					int _g = 0;
 HXDLIN( 231)					int _g2 = daList1->length;

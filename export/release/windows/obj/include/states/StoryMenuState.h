@@ -90,7 +90,7 @@ class HXCPP_CLASS_ATTRIBUTES StoryMenuState_obj : public  ::backend::MusicBeatSt
 		void startSong(::String songName1,::String songName2,::String songName3);
 		::Dynamic startSong_dyn();
 
-		void startSong2(::String songName1,::String songName2,::String songName3);
+		void startSong2(::String songName1,::String songName2,::String songName3,::String songName4);
 		::Dynamic startSong2_dyn();
 
 		void startSong3(::String songName1,::String songName2,::String songName3);

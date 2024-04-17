@@ -16,9 +16,6 @@
 #ifndef INCLUDED_backend_CoolUtil
 #include <backend/CoolUtil.h>
 #endif
-#ifndef INCLUDED_backend_MusicBeatState
-#include <backend/MusicBeatState.h>
-#endif
 #ifndef INCLUDED_flixel_FlxBasic
 #include <flixel/FlxBasic.h>
 #endif
@@ -27,24 +24,6 @@
 #endif
 #ifndef INCLUDED_flixel_FlxSprite
 #include <flixel/FlxSprite.h>
-#endif
-#ifndef INCLUDED_flixel_FlxState
-#include <flixel/FlxState.h>
-#endif
-#ifndef INCLUDED_flixel_addons_transition_FlxTransitionableState
-#include <flixel/addons/transition/FlxTransitionableState.h>
-#endif
-#ifndef INCLUDED_flixel_addons_ui_FlxUIState
-#include <flixel/addons/ui/FlxUIState.h>
-#endif
-#ifndef INCLUDED_flixel_addons_ui_interfaces_IEventGetter
-#include <flixel/addons/ui/interfaces/IEventGetter.h>
-#endif
-#ifndef INCLUDED_flixel_addons_ui_interfaces_IFlxUIState
-#include <flixel/addons/ui/interfaces/IFlxUIState.h>
-#endif
-#ifndef INCLUDED_flixel_group_FlxTypedGroup
-#include <flixel/group/FlxTypedGroup.h>
 #endif
 #ifndef INCLUDED_flixel_util_FlxSave
 #include <flixel/util/FlxSave.h>
@@ -112,9 +91,6 @@
 #ifndef INCLUDED_openfl_net_URLRequest
 #include <openfl/net/URLRequest.h>
 #endif
-#ifndef INCLUDED_states_PlayState
-#include <states/PlayState.h>
-#endif
 #ifndef INCLUDED_sys_FileSystem
 #include <sys/FileSystem.h>
 #endif
@@ -122,35 +98,27 @@
 #include <sys/io/File.h>
 #endif
 
-HX_LOCAL_STACK_FRAME(_hx_pos_2eed4b4541010048_25_getDifficultyFilePath,"backend.CoolUtil","getDifficultyFilePath",0x3680c1c9,"backend.CoolUtil.getDifficultyFilePath","backend/CoolUtil.hx",25,0x2a74e258)
-HX_LOCAL_STACK_FRAME(_hx_pos_2eed4b4541010048_42_difficultyString,"backend.CoolUtil","difficultyString",0x939f18d5,"backend.CoolUtil.difficultyString","backend/CoolUtil.hx",42,0x2a74e258)
-HX_LOCAL_STACK_FRAME(_hx_pos_2eed4b4541010048_46_getSizeLabel,"backend.CoolUtil","getSizeLabel",0x05df44e6,"backend.CoolUtil.getSizeLabel","backend/CoolUtil.hx",46,0x2a74e258)
-static const ::String _hx_array_data_42409325_4[] = {
+HX_LOCAL_STACK_FRAME(_hx_pos_2eed4b4541010048_15_getSizeLabel,"backend.CoolUtil","getSizeLabel",0x05df44e6,"backend.CoolUtil.getSizeLabel","backend/CoolUtil.hx",15,0x2a74e258)
+static const ::String _hx_array_data_42409325_2[] = {
 	HX_("B",42,00,00,00),HX_("KB",97,41,00,00),HX_("MB",55,43,00,00),HX_("GB",1b,3e,00,00),HX_("TB",6e,49,00,00),HX_("PB",f2,45,00,00),
 };
-HX_LOCAL_STACK_FRAME(_hx_pos_2eed4b4541010048_61_getMinAndMax,"backend.CoolUtil","getMinAndMax",0x51e7aab2,"backend.CoolUtil.getMinAndMax","backend/CoolUtil.hx",61,0x2a74e258)
-HX_LOCAL_STACK_FRAME(_hx_pos_2eed4b4541010048_73_quantize,"backend.CoolUtil","quantize",0x96fb8b1a,"backend.CoolUtil.quantize","backend/CoolUtil.hx",73,0x2a74e258)
-HX_LOCAL_STACK_FRAME(_hx_pos_2eed4b4541010048_81_capitalize,"backend.CoolUtil","capitalize",0xdbf07455,"backend.CoolUtil.capitalize","backend/CoolUtil.hx",81,0x2a74e258)
-HX_LOCAL_STACK_FRAME(_hx_pos_2eed4b4541010048_84_coolTextFile,"backend.CoolUtil","coolTextFile",0x5446309b,"backend.CoolUtil.coolTextFile","backend/CoolUtil.hx",84,0x2a74e258)
-HX_LOCAL_STACK_FRAME(_hx_pos_2eed4b4541010048_96_formatMemory,"backend.CoolUtil","formatMemory",0xca17b881,"backend.CoolUtil.formatMemory","backend/CoolUtil.hx",96,0x2a74e258)
-static const ::String _hx_array_data_42409325_12[] = {
+HX_LOCAL_STACK_FRAME(_hx_pos_2eed4b4541010048_30_getMinAndMax,"backend.CoolUtil","getMinAndMax",0x51e7aab2,"backend.CoolUtil.getMinAndMax","backend/CoolUtil.hx",30,0x2a74e258)
+HX_LOCAL_STACK_FRAME(_hx_pos_2eed4b4541010048_42_quantize,"backend.CoolUtil","quantize",0x96fb8b1a,"backend.CoolUtil.quantize","backend/CoolUtil.hx",42,0x2a74e258)
+HX_LOCAL_STACK_FRAME(_hx_pos_2eed4b4541010048_50_capitalize,"backend.CoolUtil","capitalize",0xdbf07455,"backend.CoolUtil.capitalize","backend/CoolUtil.hx",50,0x2a74e258)
+HX_LOCAL_STACK_FRAME(_hx_pos_2eed4b4541010048_53_coolTextFile,"backend.CoolUtil","coolTextFile",0x5446309b,"backend.CoolUtil.coolTextFile","backend/CoolUtil.hx",53,0x2a74e258)
+HX_LOCAL_STACK_FRAME(_hx_pos_2eed4b4541010048_65_formatMemory,"backend.CoolUtil","formatMemory",0xca17b881,"backend.CoolUtil.formatMemory","backend/CoolUtil.hx",65,0x2a74e258)
+static const ::String _hx_array_data_42409325_10[] = {
 	HX_("B",42,00,00,00),HX_("KB",97,41,00,00),HX_("MB",55,43,00,00),HX_("GB",1b,3e,00,00),
 };
-HX_LOCAL_STACK_FRAME(_hx_pos_2eed4b4541010048_110_formatAccuracy,"backend.CoolUtil","formatAccuracy",0xbd1353b9,"backend.CoolUtil.formatAccuracy","backend/CoolUtil.hx",110,0x2a74e258)
-HX_LOCAL_STACK_FRAME(_hx_pos_2eed4b4541010048_147_colorFromString,"backend.CoolUtil","colorFromString",0x1f97add5,"backend.CoolUtil.colorFromString","backend/CoolUtil.hx",147,0x2a74e258)
-HX_LOCAL_STACK_FRAME(_hx_pos_2eed4b4541010048_158_listFromString,"backend.CoolUtil","listFromString",0x72882302,"backend.CoolUtil.listFromString","backend/CoolUtil.hx",158,0x2a74e258)
-HX_LOCAL_STACK_FRAME(_hx_pos_2eed4b4541010048_169_floorDecimal,"backend.CoolUtil","floorDecimal",0x1bf0430e,"backend.CoolUtil.floorDecimal","backend/CoolUtil.hx",169,0x2a74e258)
-HX_LOCAL_STACK_FRAME(_hx_pos_2eed4b4541010048_182_dominantColor,"backend.CoolUtil","dominantColor",0x9df067da,"backend.CoolUtil.dominantColor","backend/CoolUtil.hx",182,0x2a74e258)
-HX_LOCAL_STACK_FRAME(_hx_pos_2eed4b4541010048_210_numberArray,"backend.CoolUtil","numberArray",0xbca10747,"backend.CoolUtil.numberArray","backend/CoolUtil.hx",210,0x2a74e258)
-HX_LOCAL_STACK_FRAME(_hx_pos_2eed4b4541010048_221_browserLoad,"backend.CoolUtil","browserLoad",0xf9659f25,"backend.CoolUtil.browserLoad","backend/CoolUtil.hx",221,0x2a74e258)
-HX_LOCAL_STACK_FRAME(_hx_pos_2eed4b4541010048_232_getSavePath,"backend.CoolUtil","getSavePath",0x33882b6f,"backend.CoolUtil.getSavePath","backend/CoolUtil.hx",232,0x2a74e258)
-HX_LOCAL_STACK_FRAME(_hx_pos_2eed4b4541010048_238_boundTo,"backend.CoolUtil","boundTo",0xd9384710,"backend.CoolUtil.boundTo","backend/CoolUtil.hx",238,0x2a74e258)
-HX_LOCAL_STACK_FRAME(_hx_pos_2eed4b4541010048_15_boot,"backend.CoolUtil","boot",0x94891a1b,"backend.CoolUtil.boot","backend/CoolUtil.hx",15,0x2a74e258)
-static const ::String _hx_array_data_42409325_31[] = {
-	HX_("Hard",0b,5b,e1,2f),HX_("Insane",ca,aa,6e,d2),
-};
-HX_LOCAL_STACK_FRAME(_hx_pos_2eed4b4541010048_20_boot,"backend.CoolUtil","boot",0x94891a1b,"backend.CoolUtil.boot","backend/CoolUtil.hx",20,0x2a74e258)
-HX_LOCAL_STACK_FRAME(_hx_pos_2eed4b4541010048_22_boot,"backend.CoolUtil","boot",0x94891a1b,"backend.CoolUtil.boot","backend/CoolUtil.hx",22,0x2a74e258)
+HX_LOCAL_STACK_FRAME(_hx_pos_2eed4b4541010048_79_formatAccuracy,"backend.CoolUtil","formatAccuracy",0xbd1353b9,"backend.CoolUtil.formatAccuracy","backend/CoolUtil.hx",79,0x2a74e258)
+HX_LOCAL_STACK_FRAME(_hx_pos_2eed4b4541010048_116_colorFromString,"backend.CoolUtil","colorFromString",0x1f97add5,"backend.CoolUtil.colorFromString","backend/CoolUtil.hx",116,0x2a74e258)
+HX_LOCAL_STACK_FRAME(_hx_pos_2eed4b4541010048_127_listFromString,"backend.CoolUtil","listFromString",0x72882302,"backend.CoolUtil.listFromString","backend/CoolUtil.hx",127,0x2a74e258)
+HX_LOCAL_STACK_FRAME(_hx_pos_2eed4b4541010048_138_floorDecimal,"backend.CoolUtil","floorDecimal",0x1bf0430e,"backend.CoolUtil.floorDecimal","backend/CoolUtil.hx",138,0x2a74e258)
+HX_LOCAL_STACK_FRAME(_hx_pos_2eed4b4541010048_151_dominantColor,"backend.CoolUtil","dominantColor",0x9df067da,"backend.CoolUtil.dominantColor","backend/CoolUtil.hx",151,0x2a74e258)
+HX_LOCAL_STACK_FRAME(_hx_pos_2eed4b4541010048_179_numberArray,"backend.CoolUtil","numberArray",0xbca10747,"backend.CoolUtil.numberArray","backend/CoolUtil.hx",179,0x2a74e258)
+HX_LOCAL_STACK_FRAME(_hx_pos_2eed4b4541010048_190_browserLoad,"backend.CoolUtil","browserLoad",0xf9659f25,"backend.CoolUtil.browserLoad","backend/CoolUtil.hx",190,0x2a74e258)
+HX_LOCAL_STACK_FRAME(_hx_pos_2eed4b4541010048_201_getSavePath,"backend.CoolUtil","getSavePath",0x33882b6f,"backend.CoolUtil.getSavePath","backend/CoolUtil.hx",201,0x2a74e258)
+HX_LOCAL_STACK_FRAME(_hx_pos_2eed4b4541010048_207_boundTo,"backend.CoolUtil","boundTo",0xd9384710,"backend.CoolUtil.boundTo","backend/CoolUtil.hx",207,0x2a74e258)
 namespace backend{
 
 void CoolUtil_obj::__construct() { }
@@ -170,320 +138,278 @@ bool CoolUtil_obj::_hx_isInstanceOf(int inClassId) {
 	return inClassId==(int)0x00000001 || inClassId==(int)0x2704589f;
 }
 
-::Array< ::String > CoolUtil_obj::defaultDifficulties;
-
-::Array< ::String > CoolUtil_obj::difficulties;
-
-::String CoolUtil_obj::defaultDifficulty;
-
-::String CoolUtil_obj::getDifficultyFilePath( ::Dynamic num){
-            	HX_GC_STACKFRAME(&_hx_pos_2eed4b4541010048_25_getDifficultyFilePath)
-HXLINE(  26)		if (::hx::IsNull( num )) {
-HXLINE(  26)			num = ::states::PlayState_obj::storyDifficulty;
-            		}
-HXLINE(  28)		::String fileSuffix = ::backend::CoolUtil_obj::difficulties->__get(( (int)(num) ));
-HXLINE(  29)		bool _hx_tmp;
-HXDLIN(  29)		if ((fileSuffix != ::backend::CoolUtil_obj::defaultDifficulty)) {
-HXLINE(  29)			_hx_tmp = ::hx::IsNotNull( fileSuffix );
-            		}
-            		else {
-HXLINE(  29)			_hx_tmp = false;
-            		}
-HXDLIN(  29)		if (_hx_tmp) {
-HXLINE(  31)			fileSuffix = (HX_("-",2d,00,00,00) + fileSuffix);
-            		}
-            		else {
-HXLINE(  35)			fileSuffix = HX_("-hard",98,49,10,2e);
-            		}
-HXLINE(  37)		 ::EReg invalidChars =  ::EReg_obj::__alloc( HX_CTX ,HX_("[~&\\\\;:<>#]",7e,4d,88,67),HX_("",00,00,00,00));
-HXDLIN(  37)		 ::EReg hideChars =  ::EReg_obj::__alloc( HX_CTX ,HX_("[.,'\"%?!]",ca,d9,c0,ac),HX_("",00,00,00,00));
-HXDLIN(  37)		::String path = invalidChars->split(::StringTools_obj::replace(fileSuffix,HX_(" ",20,00,00,00),HX_("-",2d,00,00,00)))->join(HX_("-",2d,00,00,00));
-HXDLIN(  37)		return hideChars->split(path)->join(HX_("",00,00,00,00)).toLowerCase();
-            	}
-
-
-STATIC_HX_DEFINE_DYNAMIC_FUNC1(CoolUtil_obj,getDifficultyFilePath,return )
-
-::String CoolUtil_obj::difficultyString(){
-            	HX_STACKFRAME(&_hx_pos_2eed4b4541010048_42_difficultyString)
-HXDLIN(  42)		return ::backend::CoolUtil_obj::difficulties->__get(::states::PlayState_obj::storyDifficulty).toUpperCase();
-            	}
-
-
-STATIC_HX_DEFINE_DYNAMIC_FUNC0(CoolUtil_obj,difficultyString,return )
-
 ::String CoolUtil_obj::getSizeLabel(int num){
-            	HX_STACKFRAME(&_hx_pos_2eed4b4541010048_46_getSizeLabel)
-HXLINE(  47)		Float size;
-HXDLIN(  47)		int _hx_int = num;
-HXDLIN(  47)		if ((_hx_int < 0)) {
-HXLINE(  47)			size = (((Float)4294967296.0) + _hx_int);
+            	HX_STACKFRAME(&_hx_pos_2eed4b4541010048_15_getSizeLabel)
+HXLINE(  16)		Float size;
+HXDLIN(  16)		int _hx_int = num;
+HXDLIN(  16)		if ((_hx_int < 0)) {
+HXLINE(  16)			size = (((Float)4294967296.0) + _hx_int);
             		}
             		else {
-HXLINE(  47)			size = (_hx_int + ((Float)0.0));
+HXLINE(  16)			size = (_hx_int + ((Float)0.0));
             		}
-HXLINE(  48)		int data = 0;
-HXLINE(  49)		::Array< ::String > dataTexts = ::Array_obj< ::String >::fromData( _hx_array_data_42409325_4,6);
-HXLINE(  50)		while(true){
-HXLINE(  50)			bool _hx_tmp;
-HXDLIN(  50)			if ((size > 1024)) {
-HXLINE(  50)				_hx_tmp = (data < (dataTexts->length - 1));
+HXLINE(  17)		int data = 0;
+HXLINE(  18)		::Array< ::String > dataTexts = ::Array_obj< ::String >::fromData( _hx_array_data_42409325_2,6);
+HXLINE(  19)		while(true){
+HXLINE(  19)			bool _hx_tmp;
+HXDLIN(  19)			if ((size > 1024)) {
+HXLINE(  19)				_hx_tmp = (data < (dataTexts->length - 1));
             			}
             			else {
-HXLINE(  50)				_hx_tmp = false;
+HXLINE(  19)				_hx_tmp = false;
             			}
-HXDLIN(  50)			if (!(_hx_tmp)) {
-HXLINE(  50)				goto _hx_goto_2;
+HXDLIN(  19)			if (!(_hx_tmp)) {
+HXLINE(  19)				goto _hx_goto_0;
             			}
-HXLINE(  51)			data = (data + 1);
-HXLINE(  52)			size = (size / ( (Float)(1024) ));
+HXLINE(  20)			data = (data + 1);
+HXLINE(  21)			size = (size / ( (Float)(1024) ));
             		}
-            		_hx_goto_2:;
-HXLINE(  55)		size = (( (Float)(::Math_obj::round((size * ( (Float)(100) )))) ) / ( (Float)(100) ));
-HXLINE(  56)		return ((size + HX_(" ",20,00,00,00)) + dataTexts->__get(data));
+            		_hx_goto_0:;
+HXLINE(  24)		size = (( (Float)(::Math_obj::round((size * ( (Float)(100) )))) ) / ( (Float)(100) ));
+HXLINE(  25)		return ((size + HX_(" ",20,00,00,00)) + dataTexts->__get(data));
             	}
 
 
 STATIC_HX_DEFINE_DYNAMIC_FUNC1(CoolUtil_obj,getSizeLabel,return )
 
 ::Array< Float > CoolUtil_obj::getMinAndMax(Float value1,Float value2){
-            	HX_STACKFRAME(&_hx_pos_2eed4b4541010048_61_getMinAndMax)
-HXLINE(  62)		::Array< Float > minAndMaxs = ::Array_obj< Float >::__new();
-HXLINE(  64)		Float min = ::Math_obj::min(value1,value2);
-HXLINE(  65)		Float max = ::Math_obj::max(value1,value2);
-HXLINE(  67)		minAndMaxs->push(min);
-HXLINE(  68)		minAndMaxs->push(max);
-HXLINE(  70)		return minAndMaxs;
+            	HX_STACKFRAME(&_hx_pos_2eed4b4541010048_30_getMinAndMax)
+HXLINE(  31)		::Array< Float > minAndMaxs = ::Array_obj< Float >::__new();
+HXLINE(  33)		Float min = ::Math_obj::min(value1,value2);
+HXLINE(  34)		Float max = ::Math_obj::max(value1,value2);
+HXLINE(  36)		minAndMaxs->push(min);
+HXLINE(  37)		minAndMaxs->push(max);
+HXLINE(  39)		return minAndMaxs;
             	}
 
 
 STATIC_HX_DEFINE_DYNAMIC_FUNC2(CoolUtil_obj,getMinAndMax,return )
 
 Float CoolUtil_obj::quantize(Float f,Float snap){
-            	HX_STACKFRAME(&_hx_pos_2eed4b4541010048_73_quantize)
-HXLINE(  75)		Float m = ::Math_obj::fround((f * snap));
-HXLINE(  76)		::haxe::Log_obj::trace(snap,::hx::SourceInfo(HX_("source/backend/CoolUtil.hx",e4,7b,b9,1b),76,HX_("backend.CoolUtil",25,93,40,42),HX_("quantize",b1,4c,42,ac)));
-HXLINE(  77)		return (m / snap);
+            	HX_STACKFRAME(&_hx_pos_2eed4b4541010048_42_quantize)
+HXLINE(  44)		Float m = ::Math_obj::fround((f * snap));
+HXLINE(  45)		::haxe::Log_obj::trace(snap,::hx::SourceInfo(HX_("source/backend/CoolUtil.hx",e4,7b,b9,1b),45,HX_("backend.CoolUtil",25,93,40,42),HX_("quantize",b1,4c,42,ac)));
+HXLINE(  46)		return (m / snap);
             	}
 
 
 STATIC_HX_DEFINE_DYNAMIC_FUNC2(CoolUtil_obj,quantize,return )
 
 ::String CoolUtil_obj::capitalize(::String text){
-            	HX_STACKFRAME(&_hx_pos_2eed4b4541010048_81_capitalize)
-HXDLIN(  81)		::String _hx_tmp = text.charAt(0).toUpperCase();
-HXDLIN(  81)		return (_hx_tmp + text.substr(1,null()).toLowerCase());
+            	HX_STACKFRAME(&_hx_pos_2eed4b4541010048_50_capitalize)
+HXDLIN(  50)		::String _hx_tmp = text.charAt(0).toUpperCase();
+HXDLIN(  50)		return (_hx_tmp + text.substr(1,null()).toLowerCase());
             	}
 
 
 STATIC_HX_DEFINE_DYNAMIC_FUNC1(CoolUtil_obj,capitalize,return )
 
 ::Array< ::String > CoolUtil_obj::coolTextFile(::String path){
-            	HX_STACKFRAME(&_hx_pos_2eed4b4541010048_84_coolTextFile)
-HXLINE(  85)		::String daList = null();
-HXLINE(  87)		::Array< ::String > formatted = path.split(HX_(":",3a,00,00,00));
-HXLINE(  88)		path = formatted->__get((formatted->length - 1));
-HXLINE(  89)		if (::sys::FileSystem_obj::exists(path)) {
-HXLINE(  89)			daList = ::sys::io::File_obj::getContent(path);
+            	HX_STACKFRAME(&_hx_pos_2eed4b4541010048_53_coolTextFile)
+HXLINE(  54)		::String daList = null();
+HXLINE(  56)		::Array< ::String > formatted = path.split(HX_(":",3a,00,00,00));
+HXLINE(  57)		path = formatted->__get((formatted->length - 1));
+HXLINE(  58)		if (::sys::FileSystem_obj::exists(path)) {
+HXLINE(  58)			daList = ::sys::io::File_obj::getContent(path);
             		}
-HXLINE(  93)		if (::hx::IsNotNull( daList )) {
-HXLINE(  93)			::Array< ::String > daList1 = ::Array_obj< ::String >::__new(0);
-HXDLIN(  93)			daList1 = ::StringTools_obj::trim(daList).split(HX_("\n",0a,00,00,00));
-HXDLIN(  93)			{
-HXLINE(  93)				int _g = 0;
-HXDLIN(  93)				int _g1 = daList1->length;
-HXDLIN(  93)				while((_g < _g1)){
-HXLINE(  93)					_g = (_g + 1);
-HXDLIN(  93)					int i = (_g - 1);
-HXDLIN(  93)					daList1[i] = ::StringTools_obj::trim(daList1->__get(i));
+HXLINE(  62)		if (::hx::IsNotNull( daList )) {
+HXLINE(  62)			::Array< ::String > daList1 = ::Array_obj< ::String >::__new(0);
+HXDLIN(  62)			daList1 = ::StringTools_obj::trim(daList).split(HX_("\n",0a,00,00,00));
+HXDLIN(  62)			{
+HXLINE(  62)				int _g = 0;
+HXDLIN(  62)				int _g1 = daList1->length;
+HXDLIN(  62)				while((_g < _g1)){
+HXLINE(  62)					_g = (_g + 1);
+HXDLIN(  62)					int i = (_g - 1);
+HXDLIN(  62)					daList1[i] = ::StringTools_obj::trim(daList1->__get(i));
             				}
             			}
-HXDLIN(  93)			return daList1;
+HXDLIN(  62)			return daList1;
             		}
             		else {
-HXLINE(  93)			return ::Array_obj< ::String >::__new(0);
+HXLINE(  62)			return ::Array_obj< ::String >::__new(0);
             		}
-HXDLIN(  93)		return null();
+HXDLIN(  62)		return null();
             	}
 
 
 STATIC_HX_DEFINE_DYNAMIC_FUNC1(CoolUtil_obj,coolTextFile,return )
 
 ::String CoolUtil_obj::formatMemory(int num){
-            	HX_STACKFRAME(&_hx_pos_2eed4b4541010048_96_formatMemory)
-HXLINE(  97)		Float size;
-HXDLIN(  97)		int _hx_int = num;
-HXDLIN(  97)		if ((_hx_int < 0)) {
-HXLINE(  97)			size = (((Float)4294967296.0) + _hx_int);
+            	HX_STACKFRAME(&_hx_pos_2eed4b4541010048_65_formatMemory)
+HXLINE(  66)		Float size;
+HXDLIN(  66)		int _hx_int = num;
+HXDLIN(  66)		if ((_hx_int < 0)) {
+HXLINE(  66)			size = (((Float)4294967296.0) + _hx_int);
             		}
             		else {
-HXLINE(  97)			size = (_hx_int + ((Float)0.0));
+HXLINE(  66)			size = (_hx_int + ((Float)0.0));
             		}
-HXLINE(  98)		int data = 0;
-HXLINE(  99)		::Array< ::String > dataTexts = ::Array_obj< ::String >::fromData( _hx_array_data_42409325_12,4);
-HXLINE( 100)		while(true){
-HXLINE( 100)			bool _hx_tmp;
-HXDLIN( 100)			if ((size > 1024)) {
-HXLINE( 100)				_hx_tmp = (data < (dataTexts->length - 1));
+HXLINE(  67)		int data = 0;
+HXLINE(  68)		::Array< ::String > dataTexts = ::Array_obj< ::String >::fromData( _hx_array_data_42409325_10,4);
+HXLINE(  69)		while(true){
+HXLINE(  69)			bool _hx_tmp;
+HXDLIN(  69)			if ((size > 1024)) {
+HXLINE(  69)				_hx_tmp = (data < (dataTexts->length - 1));
             			}
             			else {
-HXLINE( 100)				_hx_tmp = false;
+HXLINE(  69)				_hx_tmp = false;
             			}
-HXDLIN( 100)			if (!(_hx_tmp)) {
-HXLINE( 100)				goto _hx_goto_10;
+HXDLIN(  69)			if (!(_hx_tmp)) {
+HXLINE(  69)				goto _hx_goto_8;
             			}
-HXLINE( 101)			data = (data + 1);
-HXLINE( 102)			size = (size / ( (Float)(1024) ));
+HXLINE(  70)			data = (data + 1);
+HXLINE(  71)			size = (size / ( (Float)(1024) ));
             		}
-            		_hx_goto_10:;
-HXLINE( 105)		size = (( (Float)(::Math_obj::round((size * ( (Float)(100) )))) ) / ( (Float)(100) ));
-HXLINE( 106)		::String formatSize = ::backend::CoolUtil_obj::formatAccuracy(size);
-HXLINE( 107)		return ((formatSize + HX_(" ",20,00,00,00)) + dataTexts->__get(data));
+            		_hx_goto_8:;
+HXLINE(  74)		size = (( (Float)(::Math_obj::round((size * ( (Float)(100) )))) ) / ( (Float)(100) ));
+HXLINE(  75)		::String formatSize = ::backend::CoolUtil_obj::formatAccuracy(size);
+HXLINE(  76)		return ((formatSize + HX_(" ",20,00,00,00)) + dataTexts->__get(data));
             	}
 
 
 STATIC_HX_DEFINE_DYNAMIC_FUNC1(CoolUtil_obj,formatMemory,return )
 
 ::String CoolUtil_obj::formatAccuracy(Float value){
-            	HX_GC_STACKFRAME(&_hx_pos_2eed4b4541010048_110_formatAccuracy)
-HXLINE( 111)		 ::haxe::ds::StringMap _g =  ::haxe::ds::StringMap_obj::__alloc( HX_CTX );
-HXDLIN( 111)		_g->set(HX_("0",30,00,00,00),HX_("0.00",7e,4f,dd,1f));
-HXDLIN( 111)		_g->set(HX_("0.0",72,94,24,00),HX_("0.00",7e,4f,dd,1f));
-HXDLIN( 111)		_g->set(HX_("0.00",7e,4f,dd,1f),HX_("0.00",7e,4f,dd,1f));
-HXDLIN( 111)		_g->set(HX_("00",00,2a,00,00),HX_("00.00",ae,27,19,c3));
-HXDLIN( 111)		_g->set(HX_("00.0",42,d2,de,1f),HX_("00.00",ae,27,19,c3));
-HXDLIN( 111)		_g->set(HX_("00.00",ae,27,19,c3),HX_("00.00",ae,27,19,c3));
-HXDLIN( 111)		_g->set(HX_("000",30,96,24,00),HX_("000.00",7e,79,3a,f4));
-HXDLIN( 111)		 ::haxe::ds::StringMap conversion = _g;
-HXLINE( 121)		::String stringVal = ::Std_obj::string(value);
-HXLINE( 122)		::String converVal = HX_("",00,00,00,00);
-HXLINE( 123)		{
-HXLINE( 123)			int _g1 = 0;
-HXDLIN( 123)			int _g2 = stringVal.length;
-HXDLIN( 123)			while((_g1 < _g2)){
-HXLINE( 123)				_g1 = (_g1 + 1);
-HXDLIN( 123)				int i = (_g1 - 1);
-HXLINE( 124)				if ((stringVal.charAt(i) == HX_(".",2e,00,00,00))) {
-HXLINE( 125)					converVal = (converVal + HX_(".",2e,00,00,00));
+            	HX_GC_STACKFRAME(&_hx_pos_2eed4b4541010048_79_formatAccuracy)
+HXLINE(  80)		 ::haxe::ds::StringMap _g =  ::haxe::ds::StringMap_obj::__alloc( HX_CTX );
+HXDLIN(  80)		_g->set(HX_("0",30,00,00,00),HX_("0.00",7e,4f,dd,1f));
+HXDLIN(  80)		_g->set(HX_("0.0",72,94,24,00),HX_("0.00",7e,4f,dd,1f));
+HXDLIN(  80)		_g->set(HX_("0.00",7e,4f,dd,1f),HX_("0.00",7e,4f,dd,1f));
+HXDLIN(  80)		_g->set(HX_("00",00,2a,00,00),HX_("00.00",ae,27,19,c3));
+HXDLIN(  80)		_g->set(HX_("00.0",42,d2,de,1f),HX_("00.00",ae,27,19,c3));
+HXDLIN(  80)		_g->set(HX_("00.00",ae,27,19,c3),HX_("00.00",ae,27,19,c3));
+HXDLIN(  80)		_g->set(HX_("000",30,96,24,00),HX_("000.00",7e,79,3a,f4));
+HXDLIN(  80)		 ::haxe::ds::StringMap conversion = _g;
+HXLINE(  90)		::String stringVal = ::Std_obj::string(value);
+HXLINE(  91)		::String converVal = HX_("",00,00,00,00);
+HXLINE(  92)		{
+HXLINE(  92)			int _g1 = 0;
+HXDLIN(  92)			int _g2 = stringVal.length;
+HXDLIN(  92)			while((_g1 < _g2)){
+HXLINE(  92)				_g1 = (_g1 + 1);
+HXDLIN(  92)				int i = (_g1 - 1);
+HXLINE(  93)				if ((stringVal.charAt(i) == HX_(".",2e,00,00,00))) {
+HXLINE(  94)					converVal = (converVal + HX_(".",2e,00,00,00));
             				}
             				else {
-HXLINE( 127)					converVal = (converVal + HX_("0",30,00,00,00));
+HXLINE(  96)					converVal = (converVal + HX_("0",30,00,00,00));
             				}
             			}
             		}
-HXLINE( 130)		::String wantedConversion = conversion->get_string(converVal);
-HXLINE( 131)		::String convertedValue = HX_("",00,00,00,00);
-HXLINE( 133)		{
-HXLINE( 133)			int _g3 = 0;
-HXDLIN( 133)			int _g4 = wantedConversion.length;
-HXDLIN( 133)			while((_g3 < _g4)){
-HXLINE( 133)				_g3 = (_g3 + 1);
-HXDLIN( 133)				int i = (_g3 - 1);
-HXLINE( 134)				if ((stringVal.charAt(i) == HX_("",00,00,00,00))) {
-HXLINE( 135)					convertedValue = (convertedValue + wantedConversion.charAt(i));
+HXLINE(  99)		::String wantedConversion = conversion->get_string(converVal);
+HXLINE( 100)		::String convertedValue = HX_("",00,00,00,00);
+HXLINE( 102)		{
+HXLINE( 102)			int _g3 = 0;
+HXDLIN( 102)			int _g4 = wantedConversion.length;
+HXDLIN( 102)			while((_g3 < _g4)){
+HXLINE( 102)				_g3 = (_g3 + 1);
+HXDLIN( 102)				int i = (_g3 - 1);
+HXLINE( 103)				if ((stringVal.charAt(i) == HX_("",00,00,00,00))) {
+HXLINE( 104)					convertedValue = (convertedValue + wantedConversion.charAt(i));
             				}
             				else {
-HXLINE( 137)					convertedValue = (convertedValue + stringVal.charAt(i));
+HXLINE( 106)					convertedValue = (convertedValue + stringVal.charAt(i));
             				}
             			}
             		}
-HXLINE( 140)		if ((convertedValue.length == 0)) {
-HXLINE( 141)			return (HX_("",00,00,00,00) + value);
+HXLINE( 109)		if ((convertedValue.length == 0)) {
+HXLINE( 110)			return (HX_("",00,00,00,00) + value);
             		}
-HXLINE( 143)		return convertedValue;
+HXLINE( 112)		return convertedValue;
             	}
 
 
 STATIC_HX_DEFINE_DYNAMIC_FUNC1(CoolUtil_obj,formatAccuracy,return )
 
 int CoolUtil_obj::colorFromString(::String color){
-            	HX_GC_STACKFRAME(&_hx_pos_2eed4b4541010048_147_colorFromString)
-HXLINE( 148)		 ::EReg hideChars =  ::EReg_obj::__alloc( HX_CTX ,HX_("[\t\n\r]",ac,57,71,6b),HX_("",00,00,00,00));
-HXLINE( 149)		::String color1 = ::StringTools_obj::trim(hideChars->split(color)->join(HX_("",00,00,00,00)));
-HXLINE( 150)		if (::StringTools_obj::startsWith(color1,HX_("0x",48,2a,00,00))) {
-HXLINE( 150)			color1 = color1.substring((color1.length - 6),null());
+            	HX_GC_STACKFRAME(&_hx_pos_2eed4b4541010048_116_colorFromString)
+HXLINE( 117)		 ::EReg hideChars =  ::EReg_obj::__alloc( HX_CTX ,HX_("[\t\n\r]",ac,57,71,6b),HX_("",00,00,00,00));
+HXLINE( 118)		::String color1 = ::StringTools_obj::trim(hideChars->split(color)->join(HX_("",00,00,00,00)));
+HXLINE( 119)		if (::StringTools_obj::startsWith(color1,HX_("0x",48,2a,00,00))) {
+HXLINE( 119)			color1 = color1.substring((color1.length - 6),null());
             		}
-HXLINE( 152)		 ::Dynamic colorNum = ::flixel::util::_FlxColor::FlxColor_Impl__obj::fromString(color1);
-HXLINE( 153)		if (::hx::IsNull( colorNum )) {
-HXLINE( 153)			colorNum = ::flixel::util::_FlxColor::FlxColor_Impl__obj::fromString((HX_("#",23,00,00,00) + color1));
+HXLINE( 121)		 ::Dynamic colorNum = ::flixel::util::_FlxColor::FlxColor_Impl__obj::fromString(color1);
+HXLINE( 122)		if (::hx::IsNull( colorNum )) {
+HXLINE( 122)			colorNum = ::flixel::util::_FlxColor::FlxColor_Impl__obj::fromString((HX_("#",23,00,00,00) + color1));
             		}
-HXLINE( 154)		if (::hx::IsNotNull( colorNum )) {
-HXLINE( 154)			return ( (int)(colorNum) );
+HXLINE( 123)		if (::hx::IsNotNull( colorNum )) {
+HXLINE( 123)			return ( (int)(colorNum) );
             		}
             		else {
-HXLINE( 154)			return -1;
+HXLINE( 123)			return -1;
             		}
-HXDLIN( 154)		return null();
+HXDLIN( 123)		return null();
             	}
 
 
 STATIC_HX_DEFINE_DYNAMIC_FUNC1(CoolUtil_obj,colorFromString,return )
 
 ::Array< ::String > CoolUtil_obj::listFromString(::String string){
-            	HX_STACKFRAME(&_hx_pos_2eed4b4541010048_158_listFromString)
-HXLINE( 159)		::Array< ::String > daList = ::Array_obj< ::String >::__new(0);
-HXLINE( 160)		daList = ::StringTools_obj::trim(string).split(HX_("\n",0a,00,00,00));
-HXLINE( 162)		{
-HXLINE( 162)			int _g = 0;
-HXDLIN( 162)			int _g1 = daList->length;
-HXDLIN( 162)			while((_g < _g1)){
-HXLINE( 162)				_g = (_g + 1);
-HXDLIN( 162)				int i = (_g - 1);
-HXLINE( 163)				daList[i] = ::StringTools_obj::trim(daList->__get(i));
+            	HX_STACKFRAME(&_hx_pos_2eed4b4541010048_127_listFromString)
+HXLINE( 128)		::Array< ::String > daList = ::Array_obj< ::String >::__new(0);
+HXLINE( 129)		daList = ::StringTools_obj::trim(string).split(HX_("\n",0a,00,00,00));
+HXLINE( 131)		{
+HXLINE( 131)			int _g = 0;
+HXDLIN( 131)			int _g1 = daList->length;
+HXDLIN( 131)			while((_g < _g1)){
+HXLINE( 131)				_g = (_g + 1);
+HXDLIN( 131)				int i = (_g - 1);
+HXLINE( 132)				daList[i] = ::StringTools_obj::trim(daList->__get(i));
             			}
             		}
-HXLINE( 165)		return daList;
+HXLINE( 134)		return daList;
             	}
 
 
 STATIC_HX_DEFINE_DYNAMIC_FUNC1(CoolUtil_obj,listFromString,return )
 
 Float CoolUtil_obj::floorDecimal(Float value,int decimals){
-            	HX_STACKFRAME(&_hx_pos_2eed4b4541010048_169_floorDecimal)
-HXLINE( 170)		if ((decimals < 1)) {
-HXLINE( 171)			return ( (Float)(::Math_obj::floor(value)) );
+            	HX_STACKFRAME(&_hx_pos_2eed4b4541010048_138_floorDecimal)
+HXLINE( 139)		if ((decimals < 1)) {
+HXLINE( 140)			return ( (Float)(::Math_obj::floor(value)) );
             		}
-HXLINE( 173)		Float tempMult = ( (Float)(1) );
-HXLINE( 174)		{
-HXLINE( 174)			int _g = 0;
-HXDLIN( 174)			int _g1 = decimals;
-HXDLIN( 174)			while((_g < _g1)){
-HXLINE( 174)				_g = (_g + 1);
-HXDLIN( 174)				int i = (_g - 1);
-HXLINE( 175)				tempMult = (tempMult * ( (Float)(10) ));
+HXLINE( 142)		Float tempMult = ( (Float)(1) );
+HXLINE( 143)		{
+HXLINE( 143)			int _g = 0;
+HXDLIN( 143)			int _g1 = decimals;
+HXDLIN( 143)			while((_g < _g1)){
+HXLINE( 143)				_g = (_g + 1);
+HXDLIN( 143)				int i = (_g - 1);
+HXLINE( 144)				tempMult = (tempMult * ( (Float)(10) ));
             			}
             		}
-HXLINE( 177)		Float newValue = ( (Float)(::Math_obj::floor((value * tempMult))) );
-HXLINE( 178)		return (newValue / tempMult);
+HXLINE( 146)		Float newValue = ( (Float)(::Math_obj::floor((value * tempMult))) );
+HXLINE( 147)		return (newValue / tempMult);
             	}
 
 
 STATIC_HX_DEFINE_DYNAMIC_FUNC2(CoolUtil_obj,floorDecimal,return )
 
 int CoolUtil_obj::dominantColor( ::flixel::FlxSprite sprite){
-            	HX_GC_STACKFRAME(&_hx_pos_2eed4b4541010048_182_dominantColor)
-HXLINE( 183)		 ::haxe::ds::IntMap countByColor =  ::haxe::ds::IntMap_obj::__alloc( HX_CTX );
-HXLINE( 184)		{
-HXLINE( 184)			int _g = 0;
-HXDLIN( 184)			int _g1 = sprite->frameWidth;
-HXDLIN( 184)			while((_g < _g1)){
-HXLINE( 184)				_g = (_g + 1);
-HXDLIN( 184)				int col = (_g - 1);
-HXLINE( 185)				{
-HXLINE( 185)					int _g1 = 0;
-HXDLIN( 185)					int _g2 = sprite->frameHeight;
-HXDLIN( 185)					while((_g1 < _g2)){
-HXLINE( 185)						_g1 = (_g1 + 1);
-HXDLIN( 185)						int row = (_g1 - 1);
-HXLINE( 186)						int colorOfThisPixel = sprite->get_pixels()->getPixel32(col,row);
-HXLINE( 187)						if ((colorOfThisPixel != 0)) {
-HXLINE( 188)							if (countByColor->exists(colorOfThisPixel)) {
-HXLINE( 189)								int v = (countByColor->get(colorOfThisPixel) + 1);
-HXDLIN( 189)								countByColor->set(colorOfThisPixel,v);
+            	HX_GC_STACKFRAME(&_hx_pos_2eed4b4541010048_151_dominantColor)
+HXLINE( 152)		 ::haxe::ds::IntMap countByColor =  ::haxe::ds::IntMap_obj::__alloc( HX_CTX );
+HXLINE( 153)		{
+HXLINE( 153)			int _g = 0;
+HXDLIN( 153)			int _g1 = sprite->frameWidth;
+HXDLIN( 153)			while((_g < _g1)){
+HXLINE( 153)				_g = (_g + 1);
+HXDLIN( 153)				int col = (_g - 1);
+HXLINE( 154)				{
+HXLINE( 154)					int _g1 = 0;
+HXDLIN( 154)					int _g2 = sprite->frameHeight;
+HXDLIN( 154)					while((_g1 < _g2)){
+HXLINE( 154)						_g1 = (_g1 + 1);
+HXDLIN( 154)						int row = (_g1 - 1);
+HXLINE( 155)						int colorOfThisPixel = sprite->get_pixels()->getPixel32(col,row);
+HXLINE( 156)						if ((colorOfThisPixel != 0)) {
+HXLINE( 157)							if (countByColor->exists(colorOfThisPixel)) {
+HXLINE( 158)								int v = (countByColor->get(colorOfThisPixel) + 1);
+HXDLIN( 158)								countByColor->set(colorOfThisPixel,v);
             							}
             							else {
-HXLINE( 190)								if (::hx::IsNotEq( countByColor->get(colorOfThisPixel),-13520687 )) {
-HXLINE( 191)									countByColor->set(colorOfThisPixel,1);
+HXLINE( 159)								if (::hx::IsNotEq( countByColor->get(colorOfThisPixel),-13520687 )) {
+HXLINE( 160)									countByColor->set(colorOfThisPixel,1);
             								}
             							}
             						}
@@ -491,21 +417,21 @@ HXLINE( 191)									countByColor->set(colorOfThisPixel,1);
             				}
             			}
             		}
-HXLINE( 196)		int maxCount = 0;
-HXLINE( 197)		int maxKey = 0;
-HXLINE( 198)		countByColor->set(-16777216,0);
-HXLINE( 199)		{
-HXLINE( 199)			 ::Dynamic key = countByColor->keys();
-HXDLIN( 199)			while(( (bool)(key->__Field(HX_("hasNext",6d,a5,46,18),::hx::paccDynamic)()) )){
-HXLINE( 199)				int key1 = ( (int)(key->__Field(HX_("next",f3,84,02,49),::hx::paccDynamic)()) );
-HXLINE( 200)				if (::hx::IsGreaterEq( countByColor->get(key1),maxCount )) {
-HXLINE( 201)					maxCount = ( (int)(countByColor->get(key1)) );
-HXLINE( 202)					maxKey = key1;
+HXLINE( 165)		int maxCount = 0;
+HXLINE( 166)		int maxKey = 0;
+HXLINE( 167)		countByColor->set(-16777216,0);
+HXLINE( 168)		{
+HXLINE( 168)			 ::Dynamic key = countByColor->keys();
+HXDLIN( 168)			while(( (bool)(key->__Field(HX_("hasNext",6d,a5,46,18),::hx::paccDynamic)()) )){
+HXLINE( 168)				int key1 = ( (int)(key->__Field(HX_("next",f3,84,02,49),::hx::paccDynamic)()) );
+HXLINE( 169)				if (::hx::IsGreaterEq( countByColor->get(key1),maxCount )) {
+HXLINE( 170)					maxCount = ( (int)(countByColor->get(key1)) );
+HXLINE( 171)					maxKey = key1;
             				}
             			}
             		}
-HXLINE( 205)		countByColor =  ::haxe::ds::IntMap_obj::__alloc( HX_CTX );
-HXLINE( 206)		return maxKey;
+HXLINE( 174)		countByColor =  ::haxe::ds::IntMap_obj::__alloc( HX_CTX );
+HXLINE( 175)		return maxKey;
             	}
 
 
@@ -514,30 +440,30 @@ STATIC_HX_DEFINE_DYNAMIC_FUNC1(CoolUtil_obj,dominantColor,return )
 ::Array< int > CoolUtil_obj::numberArray(int max, ::Dynamic __o_min){
             		 ::Dynamic min = __o_min;
             		if (::hx::IsNull(__o_min)) min = 0;
-            	HX_STACKFRAME(&_hx_pos_2eed4b4541010048_210_numberArray)
-HXLINE( 211)		::Array< int > dumbArray = ::Array_obj< int >::__new(0);
-HXLINE( 212)		{
-HXLINE( 212)			int _g = ( (int)(min) );
-HXDLIN( 212)			int _g1 = max;
-HXDLIN( 212)			while((_g < _g1)){
-HXLINE( 212)				_g = (_g + 1);
-HXDLIN( 212)				int i = (_g - 1);
-HXDLIN( 212)				dumbArray->push(i);
+            	HX_STACKFRAME(&_hx_pos_2eed4b4541010048_179_numberArray)
+HXLINE( 180)		::Array< int > dumbArray = ::Array_obj< int >::__new(0);
+HXLINE( 181)		{
+HXLINE( 181)			int _g = ( (int)(min) );
+HXDLIN( 181)			int _g1 = max;
+HXDLIN( 181)			while((_g < _g1)){
+HXLINE( 181)				_g = (_g + 1);
+HXDLIN( 181)				int i = (_g - 1);
+HXDLIN( 181)				dumbArray->push(i);
             			}
             		}
-HXLINE( 214)		return dumbArray;
+HXLINE( 183)		return dumbArray;
             	}
 
 
 STATIC_HX_DEFINE_DYNAMIC_FUNC2(CoolUtil_obj,numberArray,return )
 
 void CoolUtil_obj::browserLoad(::String site){
-            	HX_GC_STACKFRAME(&_hx_pos_2eed4b4541010048_221_browserLoad)
-HXDLIN( 221)		::String prefix = HX_("",00,00,00,00);
-HXDLIN( 221)		if (!( ::EReg_obj::__alloc( HX_CTX ,HX_("^https?://",48,ee,dd,38),HX_("",00,00,00,00))->match(site))) {
-HXDLIN( 221)			prefix = HX_("http://",52,75,cd,5a);
+            	HX_GC_STACKFRAME(&_hx_pos_2eed4b4541010048_190_browserLoad)
+HXDLIN( 190)		::String prefix = HX_("",00,00,00,00);
+HXDLIN( 190)		if (!( ::EReg_obj::__alloc( HX_CTX ,HX_("^https?://",48,ee,dd,38),HX_("",00,00,00,00))->match(site))) {
+HXDLIN( 190)			prefix = HX_("http://",52,75,cd,5a);
             		}
-HXDLIN( 221)		::openfl::Lib_obj::getURL( ::openfl::net::URLRequest_obj::__alloc( HX_CTX ,(prefix + site)),HX_("_blank",95,26,d9,b0));
+HXDLIN( 190)		::openfl::Lib_obj::getURL( ::openfl::net::URLRequest_obj::__alloc( HX_CTX ,(prefix + site)),HX_("_blank",95,26,d9,b0));
             	}
 
 
@@ -546,17 +472,17 @@ STATIC_HX_DEFINE_DYNAMIC_FUNC1(CoolUtil_obj,browserLoad,(void))
 ::String CoolUtil_obj::getSavePath(::String __o_folder){
             		::String folder = __o_folder;
             		if (::hx::IsNull(__o_folder)) folder = HX_("ShadowMario",e4,7d,20,5e);
-            	HX_STACKFRAME(&_hx_pos_2eed4b4541010048_232_getSavePath)
-HXDLIN( 232)		::String _hx_tmp = (::openfl::Lib_obj::get_current()->stage->application->meta->get(HX_("company",3d,15,69,83)) + HX_("/",2f,00,00,00));
-HXDLIN( 232)		return (_hx_tmp + ::flixel::util::FlxSave_obj::validate(::openfl::Lib_obj::get_current()->stage->application->meta->get_string(HX_("file",7c,ce,bb,43))));
+            	HX_STACKFRAME(&_hx_pos_2eed4b4541010048_201_getSavePath)
+HXDLIN( 201)		::String _hx_tmp = (::openfl::Lib_obj::get_current()->stage->application->meta->get(HX_("company",3d,15,69,83)) + HX_("/",2f,00,00,00));
+HXDLIN( 201)		return (_hx_tmp + ::flixel::util::FlxSave_obj::validate(::openfl::Lib_obj::get_current()->stage->application->meta->get_string(HX_("file",7c,ce,bb,43))));
             	}
 
 
 STATIC_HX_DEFINE_DYNAMIC_FUNC1(CoolUtil_obj,getSavePath,return )
 
 Float CoolUtil_obj::boundTo(Float value,Float min,Float max){
-            	HX_STACKFRAME(&_hx_pos_2eed4b4541010048_238_boundTo)
-HXDLIN( 238)		return ::Math_obj::max(min,::Math_obj::min(max,value));
+            	HX_STACKFRAME(&_hx_pos_2eed4b4541010048_207_boundTo)
+HXDLIN( 207)		return ::Math_obj::max(min,::Math_obj::min(max,value));
             	}
 
 
@@ -585,7 +511,6 @@ bool CoolUtil_obj::__GetStatic(const ::String &inName, Dynamic &outValue, ::hx::
 		if (HX_FIELD_EQ(inName,"getSavePath") ) { outValue = getSavePath_dyn(); return true; }
 		break;
 	case 12:
-		if (HX_FIELD_EQ(inName,"difficulties") ) { outValue = ( difficulties ); return true; }
 		if (HX_FIELD_EQ(inName,"getSizeLabel") ) { outValue = getSizeLabel_dyn(); return true; }
 		if (HX_FIELD_EQ(inName,"getMinAndMax") ) { outValue = getMinAndMax_dyn(); return true; }
 		if (HX_FIELD_EQ(inName,"coolTextFile") ) { outValue = coolTextFile_dyn(); return true; }
@@ -601,70 +526,18 @@ bool CoolUtil_obj::__GetStatic(const ::String &inName, Dynamic &outValue, ::hx::
 		break;
 	case 15:
 		if (HX_FIELD_EQ(inName,"colorFromString") ) { outValue = colorFromString_dyn(); return true; }
-		break;
-	case 16:
-		if (HX_FIELD_EQ(inName,"difficultyString") ) { outValue = difficultyString_dyn(); return true; }
-		break;
-	case 17:
-		if (HX_FIELD_EQ(inName,"defaultDifficulty") ) { outValue = ( defaultDifficulty ); return true; }
-		break;
-	case 19:
-		if (HX_FIELD_EQ(inName,"defaultDifficulties") ) { outValue = ( defaultDifficulties ); return true; }
-		break;
-	case 21:
-		if (HX_FIELD_EQ(inName,"getDifficultyFilePath") ) { outValue = getDifficultyFilePath_dyn(); return true; }
-	}
-	return false;
-}
-
-bool CoolUtil_obj::__SetStatic(const ::String &inName,Dynamic &ioValue,::hx::PropertyAccess inCallProp)
-{
-	switch(inName.length) {
-	case 12:
-		if (HX_FIELD_EQ(inName,"difficulties") ) { difficulties=ioValue.Cast< ::Array< ::String > >(); return true; }
-		break;
-	case 17:
-		if (HX_FIELD_EQ(inName,"defaultDifficulty") ) { defaultDifficulty=ioValue.Cast< ::String >(); return true; }
-		break;
-	case 19:
-		if (HX_FIELD_EQ(inName,"defaultDifficulties") ) { defaultDifficulties=ioValue.Cast< ::Array< ::String > >(); return true; }
 	}
 	return false;
 }
 
 #ifdef HXCPP_SCRIPTABLE
 static ::hx::StorageInfo *CoolUtil_obj_sMemberStorageInfo = 0;
-static ::hx::StaticInfo CoolUtil_obj_sStaticStorageInfo[] = {
-	{::hx::fsObject /* ::Array< ::String > */ ,(void *) &CoolUtil_obj::defaultDifficulties,HX_("defaultDifficulties",ba,89,b7,7e)},
-	{::hx::fsObject /* ::Array< ::String > */ ,(void *) &CoolUtil_obj::difficulties,HX_("difficulties",59,c7,5e,02)},
-	{::hx::fsString,(void *) &CoolUtil_obj::defaultDifficulty,HX_("defaultDifficulty",5c,06,f0,1d)},
-	{ ::hx::fsUnknown, 0, null()}
-};
-#endif
-
-static void CoolUtil_obj_sMarkStatics(HX_MARK_PARAMS) {
-	HX_MARK_MEMBER_NAME(CoolUtil_obj::defaultDifficulties,"defaultDifficulties");
-	HX_MARK_MEMBER_NAME(CoolUtil_obj::difficulties,"difficulties");
-	HX_MARK_MEMBER_NAME(CoolUtil_obj::defaultDifficulty,"defaultDifficulty");
-};
-
-#ifdef HXCPP_VISIT_ALLOCS
-static void CoolUtil_obj_sVisitStatics(HX_VISIT_PARAMS) {
-	HX_VISIT_MEMBER_NAME(CoolUtil_obj::defaultDifficulties,"defaultDifficulties");
-	HX_VISIT_MEMBER_NAME(CoolUtil_obj::difficulties,"difficulties");
-	HX_VISIT_MEMBER_NAME(CoolUtil_obj::defaultDifficulty,"defaultDifficulty");
-};
-
+static ::hx::StaticInfo *CoolUtil_obj_sStaticStorageInfo = 0;
 #endif
 
 ::hx::Class CoolUtil_obj::__mClass;
 
 static ::String CoolUtil_obj_sStaticFields[] = {
-	HX_("defaultDifficulties",ba,89,b7,7e),
-	HX_("difficulties",59,c7,5e,02),
-	HX_("defaultDifficulty",5c,06,f0,1d),
-	HX_("getDifficultyFilePath",d2,8d,91,4d),
-	HX_("difficultyString",6c,c9,73,cb),
 	HX_("getSizeLabel",fd,1d,9c,7d),
 	HX_("getMinAndMax",c9,83,a4,c9),
 	HX_("quantize",b1,4c,42,ac),
@@ -693,14 +566,10 @@ void CoolUtil_obj::__register()
 	__mClass->mConstructEmpty = &__CreateEmpty;
 	__mClass->mConstructArgs = &__Create;
 	__mClass->mGetStaticField = &CoolUtil_obj::__GetStatic;
-	__mClass->mSetStaticField = &CoolUtil_obj::__SetStatic;
-	__mClass->mMarkFunc = CoolUtil_obj_sMarkStatics;
+	__mClass->mSetStaticField = &::hx::Class_obj::SetNoStaticField;
 	__mClass->mStatics = ::hx::Class_obj::dupFunctions(CoolUtil_obj_sStaticFields);
 	__mClass->mMembers = ::hx::Class_obj::dupFunctions(0 /* sMemberFields */);
 	__mClass->mCanCast = ::hx::TCanCast< CoolUtil_obj >;
-#ifdef HXCPP_VISIT_ALLOCS
-	__mClass->mVisitFunc = CoolUtil_obj_sVisitStatics;
-#endif
 #ifdef HXCPP_SCRIPTABLE
 	__mClass->mMemberStorageInfo = CoolUtil_obj_sMemberStorageInfo;
 #endif
@@ -708,22 +577,6 @@ void CoolUtil_obj::__register()
 	__mClass->mStaticStorageInfo = CoolUtil_obj_sStaticStorageInfo;
 #endif
 	::hx::_hx_RegisterClass(__mClass->mName, __mClass);
-}
-
-void CoolUtil_obj::__boot()
-{
-{
-            	HX_STACKFRAME(&_hx_pos_2eed4b4541010048_15_boot)
-HXDLIN(  15)		defaultDifficulties = ::Array_obj< ::String >::fromData( _hx_array_data_42409325_31,2);
-            	}
-{
-            	HX_STACKFRAME(&_hx_pos_2eed4b4541010048_20_boot)
-HXDLIN(  20)		difficulties = ::Array_obj< ::String >::__new(0);
-            	}
-{
-            	HX_STACKFRAME(&_hx_pos_2eed4b4541010048_22_boot)
-HXDLIN(  22)		defaultDifficulty = HX_("Normal",47,e6,fd,64);
-            	}
 }
 
 } // end namespace backend

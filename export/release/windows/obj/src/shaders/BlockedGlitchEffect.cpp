@@ -22,27 +22,27 @@
 #include <shaders/BlockedGlitchShader.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_38a5679fe7ab0425_1797_new,"shaders.BlockedGlitchEffect","new",0x66afcc84,"shaders.BlockedGlitchEffect.new","shaders/Shaders.hx",1797,0x7800d7f1)
-HX_LOCAL_STACK_FRAME(_hx_pos_38a5679fe7ab0425_1816_update,"shaders.BlockedGlitchEffect","update",0xf51ab865,"shaders.BlockedGlitchEffect.update","shaders/Shaders.hx",1816,0x7800d7f1)
-HX_LOCAL_STACK_FRAME(_hx_pos_38a5679fe7ab0425_1820_set_resolution,"shaders.BlockedGlitchEffect","set_resolution",0x03b79445,"shaders.BlockedGlitchEffect.set_resolution","shaders/Shaders.hx",1820,0x7800d7f1)
-HX_LOCAL_STACK_FRAME(_hx_pos_38a5679fe7ab0425_1825_set_hasColorTransform,"shaders.BlockedGlitchEffect","set_hasColorTransform",0x7283ba8a,"shaders.BlockedGlitchEffect.set_hasColorTransform","shaders/Shaders.hx",1825,0x7800d7f1)
-HX_LOCAL_STACK_FRAME(_hx_pos_38a5679fe7ab0425_1831_set_colorMultiplier,"shaders.BlockedGlitchEffect","set_colorMultiplier",0x91865d0b,"shaders.BlockedGlitchEffect.set_colorMultiplier","shaders/Shaders.hx",1831,0x7800d7f1)
-HX_LOCAL_STACK_FRAME(_hx_pos_38a5679fe7ab0425_1837_set_time,"shaders.BlockedGlitchEffect","set_time",0x7ea06266,"shaders.BlockedGlitchEffect.set_time","shaders/Shaders.hx",1837,0x7800d7f1)
-HX_LOCAL_STACK_FRAME(_hx_pos_38a5679fe7ab0425_1844_set_Enabled,"shaders.BlockedGlitchEffect","set_Enabled",0xe29453a8,"shaders.BlockedGlitchEffect.set_Enabled","shaders/Shaders.hx",1844,0x7800d7f1)
+HX_DEFINE_STACK_FRAME(_hx_pos_38a5679fe7ab0425_1739_new,"shaders.BlockedGlitchEffect","new",0x66afcc84,"shaders.BlockedGlitchEffect.new","shaders/Shaders.hx",1739,0x7800d7f1)
+HX_LOCAL_STACK_FRAME(_hx_pos_38a5679fe7ab0425_1758_update,"shaders.BlockedGlitchEffect","update",0xf51ab865,"shaders.BlockedGlitchEffect.update","shaders/Shaders.hx",1758,0x7800d7f1)
+HX_LOCAL_STACK_FRAME(_hx_pos_38a5679fe7ab0425_1762_set_resolution,"shaders.BlockedGlitchEffect","set_resolution",0x03b79445,"shaders.BlockedGlitchEffect.set_resolution","shaders/Shaders.hx",1762,0x7800d7f1)
+HX_LOCAL_STACK_FRAME(_hx_pos_38a5679fe7ab0425_1767_set_hasColorTransform,"shaders.BlockedGlitchEffect","set_hasColorTransform",0x7283ba8a,"shaders.BlockedGlitchEffect.set_hasColorTransform","shaders/Shaders.hx",1767,0x7800d7f1)
+HX_LOCAL_STACK_FRAME(_hx_pos_38a5679fe7ab0425_1773_set_colorMultiplier,"shaders.BlockedGlitchEffect","set_colorMultiplier",0x91865d0b,"shaders.BlockedGlitchEffect.set_colorMultiplier","shaders/Shaders.hx",1773,0x7800d7f1)
+HX_LOCAL_STACK_FRAME(_hx_pos_38a5679fe7ab0425_1779_set_time,"shaders.BlockedGlitchEffect","set_time",0x7ea06266,"shaders.BlockedGlitchEffect.set_time","shaders/Shaders.hx",1779,0x7800d7f1)
+HX_LOCAL_STACK_FRAME(_hx_pos_38a5679fe7ab0425_1786_set_Enabled,"shaders.BlockedGlitchEffect","set_Enabled",0xe29453a8,"shaders.BlockedGlitchEffect.set_Enabled","shaders/Shaders.hx",1786,0x7800d7f1)
 namespace shaders{
 
 void BlockedGlitchEffect_obj::__construct(){
-            	HX_GC_STACKFRAME(&_hx_pos_38a5679fe7ab0425_1797_new)
-HXLINE(1806)		this->Enabled = false;
-HXLINE(1804)		this->hasColorTransform = false;
-HXLINE(1803)		this->colorMultiplier = ((Float)0);
-HXLINE(1802)		this->resolution = ((Float)0);
-HXLINE(1801)		this->time = ((Float)0);
-HXLINE(1799)		this->shader =  ::shaders::BlockedGlitchShader_obj::__alloc( HX_CTX );
-HXLINE(1810)		this->set_time(( (Float)(0) ));
-HXLINE(1811)		this->set_resolution(( (Float)(0) ));
-HXLINE(1812)		this->set_colorMultiplier(( (Float)(0) ));
-HXLINE(1813)		this->set_hasColorTransform(false);
+            	HX_GC_STACKFRAME(&_hx_pos_38a5679fe7ab0425_1739_new)
+HXLINE(1748)		this->Enabled = false;
+HXLINE(1746)		this->hasColorTransform = false;
+HXLINE(1745)		this->colorMultiplier = ((Float)0);
+HXLINE(1744)		this->resolution = ((Float)0);
+HXLINE(1743)		this->time = ((Float)0);
+HXLINE(1741)		this->shader =  ::shaders::BlockedGlitchShader_obj::__alloc( HX_CTX );
+HXLINE(1752)		this->set_time(( (Float)(0) ));
+HXLINE(1753)		this->set_resolution(( (Float)(0) ));
+HXLINE(1754)		this->set_colorMultiplier(( (Float)(0) ));
+HXLINE(1755)		this->set_hasColorTransform(false);
             	}
 
 Dynamic BlockedGlitchEffect_obj::__CreateEmpty() { return new BlockedGlitchEffect_obj; }
@@ -61,60 +61,60 @@ bool BlockedGlitchEffect_obj::_hx_isInstanceOf(int inClassId) {
 }
 
 void BlockedGlitchEffect_obj::update(Float elapsed){
-            	HX_STACKFRAME(&_hx_pos_38a5679fe7ab0425_1816_update)
-HXLINE(1817)		::Array< Float > base = this->shader->time->value;
-HXDLIN(1817)		int _hx_tmp = 0;
-HXDLIN(1817)		base[_hx_tmp] = (base->__get(_hx_tmp) + elapsed);
+            	HX_STACKFRAME(&_hx_pos_38a5679fe7ab0425_1758_update)
+HXLINE(1759)		::Array< Float > base = this->shader->time->value;
+HXDLIN(1759)		int _hx_tmp = 0;
+HXDLIN(1759)		base[_hx_tmp] = (base->__get(_hx_tmp) + elapsed);
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC1(BlockedGlitchEffect_obj,update,(void))
 
 Float BlockedGlitchEffect_obj::set_resolution(Float v){
-            	HX_STACKFRAME(&_hx_pos_38a5679fe7ab0425_1820_set_resolution)
-HXLINE(1821)		this->resolution = v;
-HXLINE(1822)		this->shader->screenSize->value = ::Array_obj< Float >::__new(1)->init(0,this->resolution);
-HXLINE(1823)		return this->resolution;
+            	HX_STACKFRAME(&_hx_pos_38a5679fe7ab0425_1762_set_resolution)
+HXLINE(1763)		this->resolution = v;
+HXLINE(1764)		this->shader->screenSize->value = ::Array_obj< Float >::__new(1)->init(0,this->resolution);
+HXLINE(1765)		return this->resolution;
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC1(BlockedGlitchEffect_obj,set_resolution,return )
 
 bool BlockedGlitchEffect_obj::set_hasColorTransform(bool value){
-            	HX_STACKFRAME(&_hx_pos_38a5679fe7ab0425_1825_set_hasColorTransform)
-HXLINE(1826)		this->hasColorTransform = value;
-HXLINE(1827)		this->shader->hasColorTransform->value = ::Array_obj< bool >::__new(1)->init(0,this->hasColorTransform);
-HXLINE(1828)		return this->hasColorTransform;
+            	HX_STACKFRAME(&_hx_pos_38a5679fe7ab0425_1767_set_hasColorTransform)
+HXLINE(1768)		this->hasColorTransform = value;
+HXLINE(1769)		this->shader->hasColorTransform->value = ::Array_obj< bool >::__new(1)->init(0,this->hasColorTransform);
+HXLINE(1770)		return this->hasColorTransform;
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC1(BlockedGlitchEffect_obj,set_hasColorTransform,return )
 
 Float BlockedGlitchEffect_obj::set_colorMultiplier(Float value){
-            	HX_STACKFRAME(&_hx_pos_38a5679fe7ab0425_1831_set_colorMultiplier)
-HXLINE(1832)		this->colorMultiplier = value;
-HXLINE(1833)		this->shader->colorMultiplier->value = ::Array_obj< Float >::__new(1)->init(0,value);
-HXLINE(1834)		return this->colorMultiplier;
+            	HX_STACKFRAME(&_hx_pos_38a5679fe7ab0425_1773_set_colorMultiplier)
+HXLINE(1774)		this->colorMultiplier = value;
+HXLINE(1775)		this->shader->colorMultiplier->value = ::Array_obj< Float >::__new(1)->init(0,value);
+HXLINE(1776)		return this->colorMultiplier;
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC1(BlockedGlitchEffect_obj,set_colorMultiplier,return )
 
 Float BlockedGlitchEffect_obj::set_time(Float value){
-            	HX_STACKFRAME(&_hx_pos_38a5679fe7ab0425_1837_set_time)
-HXLINE(1838)		this->time = value;
-HXLINE(1839)		this->shader->time->value = ::Array_obj< Float >::__new(1)->init(0,value);
-HXLINE(1840)		return this->time;
+            	HX_STACKFRAME(&_hx_pos_38a5679fe7ab0425_1779_set_time)
+HXLINE(1780)		this->time = value;
+HXLINE(1781)		this->shader->time->value = ::Array_obj< Float >::__new(1)->init(0,value);
+HXLINE(1782)		return this->time;
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC1(BlockedGlitchEffect_obj,set_time,return )
 
 bool BlockedGlitchEffect_obj::set_Enabled(bool v){
-            	HX_STACKFRAME(&_hx_pos_38a5679fe7ab0425_1844_set_Enabled)
-HXLINE(1845)		this->Enabled = v;
-HXLINE(1846)		this->shader->enabled->value = ::Array_obj< bool >::__new(1)->init(0,this->Enabled);
-HXLINE(1847)		return v;
+            	HX_STACKFRAME(&_hx_pos_38a5679fe7ab0425_1786_set_Enabled)
+HXLINE(1787)		this->Enabled = v;
+HXLINE(1788)		this->shader->enabled->value = ::Array_obj< bool >::__new(1)->init(0,this->Enabled);
+HXLINE(1789)		return v;
             	}
 
 

@@ -28,13 +28,13 @@ class HXCPP_CLASS_ATTRIBUTES MosaicEffect_obj : public  ::shaders::Effect_obj
 	public:
 		enum { _hx_ClassId = 0x181ab0e5 };
 
-		void __construct(Float strength);
+		void __construct();
 		inline void *operator new(size_t inSize, bool inContainer=true,const char *inName="shaders.MosaicEffect")
 			{ return ::hx::Object::operator new(inSize,inContainer,inName); }
 		inline void *operator new(size_t inSize, int extra)
 			{ return ::hx::Object::operator new(inSize+extra,true,"shaders.MosaicEffect"); }
-		static ::hx::ObjectPtr< MosaicEffect_obj > __new(Float strength);
-		static ::hx::ObjectPtr< MosaicEffect_obj > __alloc(::hx::Ctx *_hx_ctx,Float strength);
+		static ::hx::ObjectPtr< MosaicEffect_obj > __new();
+		static ::hx::ObjectPtr< MosaicEffect_obj > __alloc(::hx::Ctx *_hx_ctx);
 		static void * _hx_vtable;
 		static Dynamic __CreateEmpty();
 		static Dynamic __Create(::hx::DynamicArray inArgs);
@@ -51,6 +51,10 @@ class HXCPP_CLASS_ATTRIBUTES MosaicEffect_obj : public  ::shaders::Effect_obj
 		::String __ToString() const { return HX_("MosaicEffect",9b,a6,a6,15); }
 
 		 ::shaders::MosaicShader shader;
+		Float strength;
+		Float set_strength(Float value);
+		::Dynamic set_strength_dyn();
+
 };
 
 } // end namespace shaders

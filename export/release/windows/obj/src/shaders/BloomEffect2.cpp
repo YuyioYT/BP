@@ -22,15 +22,15 @@
 #include <shaders/Effect.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_deb94c2145e17922_1438_new,"shaders.BloomEffect2","new",0x5d32a5d0,"shaders.BloomEffect2.new","shaders/Shaders.hx",1438,0x7800d7f1)
-HX_LOCAL_STACK_FRAME(_hx_pos_deb94c2145e17922_1444_set_intensity,"shaders.BloomEffect2","set_intensity",0xca317e06,"shaders.BloomEffect2.set_intensity","shaders/Shaders.hx",1444,0x7800d7f1)
+HX_DEFINE_STACK_FRAME(_hx_pos_deb94c2145e17922_1380_new,"shaders.BloomEffect2","new",0x5d32a5d0,"shaders.BloomEffect2.new","shaders/Shaders.hx",1380,0x7800d7f1)
+HX_LOCAL_STACK_FRAME(_hx_pos_deb94c2145e17922_1386_set_intensity,"shaders.BloomEffect2","set_intensity",0xca317e06,"shaders.BloomEffect2.set_intensity","shaders/Shaders.hx",1386,0x7800d7f1)
 namespace shaders{
 
 void BloomEffect2_obj::__construct(Float blurSize,Float intensity){
-            	HX_GC_STACKFRAME(&_hx_pos_deb94c2145e17922_1438_new)
-HXLINE(1440)		this->shader =  ::shaders::BloomShader2_obj::__alloc( HX_CTX );
-HXLINE(1452)		this->shader->blurSize->value = ::Array_obj< Float >::__new(1)->init(0,blurSize);
-HXLINE(1453)		this->set_intensity(intensity);
+            	HX_GC_STACKFRAME(&_hx_pos_deb94c2145e17922_1380_new)
+HXLINE(1382)		this->shader =  ::shaders::BloomShader2_obj::__alloc( HX_CTX );
+HXLINE(1394)		this->shader->blurSize->value = ::Array_obj< Float >::__new(1)->init(0,blurSize);
+HXLINE(1395)		this->set_intensity(intensity);
             	}
 
 Dynamic BloomEffect2_obj::__CreateEmpty() { return new BloomEffect2_obj; }
@@ -53,10 +53,10 @@ bool BloomEffect2_obj::_hx_isInstanceOf(int inClassId) {
 }
 
 Float BloomEffect2_obj::set_intensity(Float v){
-            	HX_STACKFRAME(&_hx_pos_deb94c2145e17922_1444_set_intensity)
-HXLINE(1445)		this->shader->intensity->value = ::Array_obj< Float >::__new(1)->init(0,v);
-HXLINE(1446)		this->intensity = v;
-HXLINE(1447)		return v;
+            	HX_STACKFRAME(&_hx_pos_deb94c2145e17922_1386_set_intensity)
+HXLINE(1387)		this->shader->intensity->value = ::Array_obj< Float >::__new(1)->init(0,v);
+HXLINE(1388)		this->intensity = v;
+HXLINE(1389)		return v;
             	}
 
 

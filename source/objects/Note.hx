@@ -209,7 +209,7 @@ class Note extends FlxSprite
 				case 'Alt Strum':
 					altStrum = true;
 				case 'guitarHero':
-					frames = Paths.getSparrowAtlas('notes/NOTEGH_assets', 'shared');
+					frames = Paths.getSparrowAtlas('notes/shredNotes');
 
 					animation.addByPrefix('greenScroll', 'A Note');
 					animation.addByPrefix('greenhold', 'A Hold Piece');

@@ -164,7 +164,7 @@ HXLINE(  25)				note->playAnim(HX_("static",ae,dc,fb,05),null());
 HXLINE(  26)				this->notes->add(note).StaticCast<  ::objects::StrumNote >();
             			}
             		}
-HXLINE(  31)		::String defaultDirectory = HX_("shared",a5,5e,2b,1d);
+HXLINE(  31)		::String defaultDirectory = null();
 HXDLIN(  31)		bool allowDuplicates = false;
 HXDLIN(  31)		if (::hx::IsNull( defaultDirectory )) {
 HXLINE(  31)			defaultDirectory = HX_("assets/",4c,2a,dc,36);
@@ -301,7 +301,7 @@ HXLINE(  43)			this->addOption(option);
 HXLINE(  44)			option->onChange = this->onChangeNoteSkin_dyn();
 HXLINE(  45)			this->noteOptionID = (this->optionsArray->length - 1);
             		}
-HXLINE(  48)		::String defaultDirectory1 = HX_("shared",a5,5e,2b,1d);
+HXLINE(  48)		::String defaultDirectory1 = null();
 HXDLIN(  48)		bool allowDuplicates1 = false;
 HXDLIN(  48)		if (::hx::IsNull( defaultDirectory1 )) {
 HXLINE(  48)			defaultDirectory1 = HX_("assets/",4c,2a,dc,36);

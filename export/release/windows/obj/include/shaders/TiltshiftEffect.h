@@ -28,13 +28,13 @@ class HXCPP_CLASS_ATTRIBUTES TiltshiftEffect_obj : public  ::shaders::Effect_obj
 	public:
 		enum { _hx_ClassId = 0x51f25708 };
 
-		void __construct(Float blurAmount,Float center);
+		void __construct();
 		inline void *operator new(size_t inSize, bool inContainer=true,const char *inName="shaders.TiltshiftEffect")
 			{ return ::hx::Object::operator new(inSize,inContainer,inName); }
 		inline void *operator new(size_t inSize, int extra)
 			{ return ::hx::Object::operator new(inSize+extra,true,"shaders.TiltshiftEffect"); }
-		static ::hx::ObjectPtr< TiltshiftEffect_obj > __new(Float blurAmount,Float center);
-		static ::hx::ObjectPtr< TiltshiftEffect_obj > __alloc(::hx::Ctx *_hx_ctx,Float blurAmount,Float center);
+		static ::hx::ObjectPtr< TiltshiftEffect_obj > __new();
+		static ::hx::ObjectPtr< TiltshiftEffect_obj > __alloc(::hx::Ctx *_hx_ctx);
 		static void * _hx_vtable;
 		static Dynamic __CreateEmpty();
 		static Dynamic __Create(::hx::DynamicArray inArgs);
@@ -51,6 +51,14 @@ class HXCPP_CLASS_ATTRIBUTES TiltshiftEffect_obj : public  ::shaders::Effect_obj
 		::String __ToString() const { return HX_("TiltshiftEffect",76,44,d4,b1); }
 
 		 ::shaders::Tiltshift shader;
+		Float bluramount;
+		Float center;
+		Float set_bluramount(Float value);
+		::Dynamic set_bluramount_dyn();
+
+		Float set_center(Float value);
+		::Dynamic set_center_dyn();
+
 };
 
 } // end namespace shaders

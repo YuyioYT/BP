@@ -81,6 +81,7 @@ class HXCPP_CLASS_ATTRIBUTES FreeplayState_obj : public  ::backend::MusicBeatSta
 
 		::Array< ::Dynamic> songs;
 		 ::flixel::text::FlxText selector;
+		Float lerpSelected;
 		int curDifficulty;
 		 ::flixel::FlxSprite scoreBG;
 		 ::flixel::text::FlxText scoreText;
@@ -97,6 +98,8 @@ class HXCPP_CLASS_ATTRIBUTES FreeplayState_obj : public  ::backend::MusicBeatSta
 		 ::flixel::tweens::FlxTween colorTween;
 		 ::flixel::FlxSprite songBG;
 		 ::flixel::ui::FlxBar songBar;
+		 ::flixel::FlxSprite missingTextBG;
+		 ::flixel::text::FlxText missingText;
 		bool yeahNormal;
 		bool selectedThing;
 		 ::shaders::DoChromaticAberrationEffect googlechrom;
@@ -119,14 +122,19 @@ class HXCPP_CLASS_ATTRIBUTES FreeplayState_obj : public  ::backend::MusicBeatSta
 		Float holdTime;
 		void update(Float elapsed);
 
-		void playSong();
-		::Dynamic playSong_dyn();
-
 		void changeDiff(::hx::Null< int >  change);
 		::Dynamic changeDiff_dyn();
 
 		void changeSelection(::hx::Null< int >  change,::hx::Null< bool >  playSound);
 		::Dynamic changeSelection_dyn();
+
+		void _updateSongLastDifficulty();
+		::Dynamic _updateSongLastDifficulty_dyn();
+
+		int _drawDistance;
+		::Array< int > _lastVisibles;
+		void updateTexts(::hx::Null< Float >  elapsed);
+		::Dynamic updateTexts_dyn();
 
 };
 

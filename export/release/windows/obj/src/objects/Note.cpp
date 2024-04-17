@@ -541,9 +541,10 @@ HXLINE( 201)				this->noteSplashData->__SetField(HX_("g",67,00,00,00),-16777216,
 HXLINE( 193)				goto _hx_goto_5;
             			}
             			if (  (_hx_switch_0==HX_("guitarHero",e4,5b,e6,af)) ){
-HXLINE( 212)				 ::flixel::graphics::FlxGraphic imageLoaded = ::backend::Paths_obj::image(HX_("notes/NOTEGH_assets",61,de,ae,b5),null(),true);
+HXLINE( 212)				::String library = null();
+HXDLIN( 212)				 ::flixel::graphics::FlxGraphic imageLoaded = ::backend::Paths_obj::image(HX_("notes/shredNotes",13,b9,b8,3f),null(),true);
 HXDLIN( 212)				bool xmlExists = false;
-HXDLIN( 212)				::String xml = ::backend::Paths_obj::modFolders(((HX_("images/",77,50,74,c1) + HX_("notes/NOTEGH_assets",61,de,ae,b5)) + HX_(".xml",69,3e,c3,1e)));
+HXDLIN( 212)				::String xml = ::backend::Paths_obj::modFolders(((HX_("images/",77,50,74,c1) + HX_("notes/shredNotes",13,b9,b8,3f)) + HX_(".xml",69,3e,c3,1e)));
 HXDLIN( 212)				if (::sys::FileSystem_obj::exists(xml)) {
 HXLINE( 212)					xmlExists = true;
             				}
@@ -552,14 +553,14 @@ HXDLIN( 212)				if (::hx::IsNotNull( imageLoaded )) {
 HXLINE( 212)					_hx_tmp = imageLoaded;
             				}
             				else {
-HXLINE( 212)					_hx_tmp = ::backend::Paths_obj::image(HX_("notes/NOTEGH_assets",61,de,ae,b5),HX_("shared",a5,5e,2b,1d),true);
+HXLINE( 212)					_hx_tmp = ::backend::Paths_obj::image(HX_("notes/shredNotes",13,b9,b8,3f),library,true);
             				}
 HXDLIN( 212)				::String _hx_tmp1;
 HXDLIN( 212)				if (xmlExists) {
 HXLINE( 212)					_hx_tmp1 = ::sys::io::File_obj::getContent(xml);
             				}
             				else {
-HXLINE( 212)					_hx_tmp1 = ::backend::Paths_obj::getPath(((HX_("images/",77,50,74,c1) + HX_("notes/NOTEGH_assets",61,de,ae,b5)) + HX_(".xml",69,3e,c3,1e)),null(),HX_("shared",a5,5e,2b,1d),null());
+HXLINE( 212)					_hx_tmp1 = ::backend::Paths_obj::getPath(((HX_("images/",77,50,74,c1) + HX_("notes/shredNotes",13,b9,b8,3f)) + HX_(".xml",69,3e,c3,1e)),null(),library,null());
             				}
 HXDLIN( 212)				this->set_frames(::flixel::graphics::frames::FlxAtlasFrames_obj::fromSparrow(_hx_tmp,_hx_tmp1));
 HXLINE( 214)				this->animation->addByPrefix(HX_("greenScroll",30,4f,fe,9e),HX_("A Note",51,48,e8,9d),null(),null(),null(),null());

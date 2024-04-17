@@ -1350,11 +1350,6 @@ class FunkinLua {
 					PlayState.instance.addShaderToCamera(camera, new ChromAberrationBlueSwapEffect(strength));
 					
 				});
-				Lua_helper.add_callback(lua, "addPixelMosaicEffect", function(camera:String,strength:Float = 0.5) {
-					
-					PlayState.instance.addShaderToCamera(camera, new MosaicEffect(strength));
-					
-				});
 				Lua_helper.add_callback(lua, "addMovementBlurEffect", function(camera:String,strength:Float = 0.1,strengthY:Float = 0.1) {
 					
 					PlayState.instance.addShaderToCamera(camera, new BlurEffect(strength,strengthY));

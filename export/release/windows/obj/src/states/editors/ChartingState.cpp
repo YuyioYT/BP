@@ -3654,14 +3654,14 @@ HXLINE(1957)					Float snap = (( (Float)(::states::editors::ChartingState_obj::q
 HXLINE(1958)					Float increase = (( (Float)(1) ) / snap);
 HXLINE(1959)					if ((::flixel::FlxG_obj::mouse->wheel > 0)) {
 HXLINE(1961)						Float m = ::Math_obj::fround((beat * snap));
-HXDLIN(1961)						::haxe::Log_obj::trace(snap,::hx::SourceInfo(HX_("source/backend/CoolUtil.hx",e4,7b,b9,1b),76,HX_("backend.CoolUtil",25,93,40,42),HX_("quantize",b1,4c,42,ac)));
+HXDLIN(1961)						::haxe::Log_obj::trace(snap,::hx::SourceInfo(HX_("source/backend/CoolUtil.hx",e4,7b,b9,1b),45,HX_("backend.CoolUtil",25,93,40,42),HX_("quantize",b1,4c,42,ac)));
 HXDLIN(1961)						Float fuck = ((m / snap) - increase);
 HXLINE(1962)						 ::flixel::sound::FlxSound _hx_tmp = ::flixel::FlxG_obj::sound->music;
 HXDLIN(1962)						_hx_tmp->set_time(::backend::Conductor_obj::beatToSeconds(fuck));
             					}
             					else {
 HXLINE(1964)						Float m = ::Math_obj::fround((beat * snap));
-HXDLIN(1964)						::haxe::Log_obj::trace(snap,::hx::SourceInfo(HX_("source/backend/CoolUtil.hx",e4,7b,b9,1b),76,HX_("backend.CoolUtil",25,93,40,42),HX_("quantize",b1,4c,42,ac)));
+HXDLIN(1964)						::haxe::Log_obj::trace(snap,::hx::SourceInfo(HX_("source/backend/CoolUtil.hx",e4,7b,b9,1b),45,HX_("backend.CoolUtil",25,93,40,42),HX_("quantize",b1,4c,42,ac)));
 HXDLIN(1964)						Float fuck = ((m / snap) + increase);
 HXLINE(1965)						 ::flixel::sound::FlxSound _hx_tmp = ::flixel::FlxG_obj::sound->music;
 HXDLIN(1965)						_hx_tmp->set_time(::backend::Conductor_obj::beatToSeconds(fuck));
@@ -3729,14 +3729,14 @@ HXLINE(2009)					Float increase = (( (Float)(1) ) / snap);
 HXLINE(2010)					 ::flixel::input::keyboard::FlxKeyList _this = ( ( ::flixel::input::keyboard::FlxKeyList)(::flixel::FlxG_obj::keys->pressed) );
 HXDLIN(2010)					if (_this->keyManager->checkStatusUnsafe(38,_this->status)) {
 HXLINE(2012)						Float m = ::Math_obj::fround((beat * snap));
-HXDLIN(2012)						::haxe::Log_obj::trace(snap,::hx::SourceInfo(HX_("source/backend/CoolUtil.hx",e4,7b,b9,1b),76,HX_("backend.CoolUtil",25,93,40,42),HX_("quantize",b1,4c,42,ac)));
+HXDLIN(2012)						::haxe::Log_obj::trace(snap,::hx::SourceInfo(HX_("source/backend/CoolUtil.hx",e4,7b,b9,1b),45,HX_("backend.CoolUtil",25,93,40,42),HX_("quantize",b1,4c,42,ac)));
 HXDLIN(2012)						Float fuck = ((m / snap) - increase);
 HXLINE(2013)						 ::flixel::sound::FlxSound _hx_tmp = ::flixel::FlxG_obj::sound->music;
 HXDLIN(2013)						_hx_tmp->set_time(::backend::Conductor_obj::beatToSeconds(fuck));
             					}
             					else {
 HXLINE(2015)						Float m = ::Math_obj::fround((beat * snap));
-HXDLIN(2015)						::haxe::Log_obj::trace(snap,::hx::SourceInfo(HX_("source/backend/CoolUtil.hx",e4,7b,b9,1b),76,HX_("backend.CoolUtil",25,93,40,42),HX_("quantize",b1,4c,42,ac)));
+HXDLIN(2015)						::haxe::Log_obj::trace(snap,::hx::SourceInfo(HX_("source/backend/CoolUtil.hx",e4,7b,b9,1b),45,HX_("backend.CoolUtil",25,93,40,42),HX_("quantize",b1,4c,42,ac)));
 HXDLIN(2015)						Float fuck = ((m / snap) + increase);
 HXLINE(2016)						 ::flixel::sound::FlxSound _hx_tmp = ::flixel::FlxG_obj::sound->music;
 HXDLIN(2016)						_hx_tmp->set_time(::backend::Conductor_obj::beatToSeconds(fuck));
@@ -3823,13 +3823,13 @@ HXLINE(2075)					Float increase = (( (Float)(1) ) / snap);
 HXLINE(2076)					 ::flixel::input::keyboard::FlxKeyList _this = ( ( ::flixel::input::keyboard::FlxKeyList)(::flixel::FlxG_obj::keys->pressed) );
 HXDLIN(2076)					if (_this->keyManager->checkStatusUnsafe(38,_this->status)) {
 HXLINE(2078)						Float m = ::Math_obj::fround((beat * snap));
-HXDLIN(2078)						::haxe::Log_obj::trace(snap,::hx::SourceInfo(HX_("source/backend/CoolUtil.hx",e4,7b,b9,1b),76,HX_("backend.CoolUtil",25,93,40,42),HX_("quantize",b1,4c,42,ac)));
+HXDLIN(2078)						::haxe::Log_obj::trace(snap,::hx::SourceInfo(HX_("source/backend/CoolUtil.hx",e4,7b,b9,1b),45,HX_("backend.CoolUtil",25,93,40,42),HX_("quantize",b1,4c,42,ac)));
 HXDLIN(2078)						Float fuck = ((m / snap) - increase);
 HXLINE(2079)						feces = ::backend::Conductor_obj::beatToSeconds(fuck);
             					}
             					else {
 HXLINE(2081)						Float m = ::Math_obj::fround((beat * snap));
-HXDLIN(2081)						::haxe::Log_obj::trace(snap,::hx::SourceInfo(HX_("source/backend/CoolUtil.hx",e4,7b,b9,1b),76,HX_("backend.CoolUtil",25,93,40,42),HX_("quantize",b1,4c,42,ac)));
+HXDLIN(2081)						::haxe::Log_obj::trace(snap,::hx::SourceInfo(HX_("source/backend/CoolUtil.hx",e4,7b,b9,1b),45,HX_("backend.CoolUtil",25,93,40,42),HX_("quantize",b1,4c,42,ac)));
 HXDLIN(2081)						Float fuck = ((m / snap) + increase);
 HXLINE(2082)						feces = ::backend::Conductor_obj::beatToSeconds(fuck);
             					}

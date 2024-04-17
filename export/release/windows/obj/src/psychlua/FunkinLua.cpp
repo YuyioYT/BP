@@ -311,9 +311,6 @@
 #ifndef INCLUDED_shaders_MirrorRepeatEffect
 #include <shaders/MirrorRepeatEffect.h>
 #endif
-#ifndef INCLUDED_shaders_MosaicEffect
-#include <shaders/MosaicEffect.h>
-#endif
 #ifndef INCLUDED_shaders_PerlinSmokeEffect
 #include <shaders/PerlinSmokeEffect.h>
 #endif
@@ -375,7 +372,7 @@ HX_DEFINE_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_226_new,"psychlua.FunkinLua","new
 HX_DEFINE_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_232_new,"psychlua.FunkinLua","new",0xca123f88,"psychlua.FunkinLua.new","psychlua/FunkinLua.hx",232,0x1e7a8669)
 HX_DEFINE_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_238_new,"psychlua.FunkinLua","new",0xca123f88,"psychlua.FunkinLua.new","psychlua/FunkinLua.hx",238,0x1e7a8669)
 HX_DEFINE_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_244_new,"psychlua.FunkinLua","new",0xca123f88,"psychlua.FunkinLua.new","psychlua/FunkinLua.hx",244,0x1e7a8669)
-HX_DEFINE_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_1714_new,"psychlua.FunkinLua","new",0xca123f88,"psychlua.FunkinLua.new","psychlua/FunkinLua.hx",1714,0x1e7a8669)
+HX_DEFINE_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_1709_new,"psychlua.FunkinLua","new",0xca123f88,"psychlua.FunkinLua.new","psychlua/FunkinLua.hx",1709,0x1e7a8669)
 HX_DEFINE_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_49_new,"psychlua.FunkinLua","new",0xca123f88,"psychlua.FunkinLua.new","psychlua/FunkinLua.hx",49,0x1e7a8669)
 HX_DEFINE_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_208_new,"psychlua.FunkinLua","new",0xca123f88,"psychlua.FunkinLua.new","psychlua/FunkinLua.hx",208,0x1e7a8669)
 HX_DEFINE_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_251_new,"psychlua.FunkinLua","new",0xca123f88,"psychlua.FunkinLua.new","psychlua/FunkinLua.hx",251,0x1e7a8669)
@@ -495,7 +492,7 @@ HX_DEFINE_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_1345_new,"psychlua.FunkinLua","ne
 HX_DEFINE_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_1350_new,"psychlua.FunkinLua","new",0xca123f88,"psychlua.FunkinLua.new","psychlua/FunkinLua.hx",1350,0x1e7a8669)
 HX_DEFINE_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_1355_new,"psychlua.FunkinLua","new",0xca123f88,"psychlua.FunkinLua.new","psychlua/FunkinLua.hx",1355,0x1e7a8669)
 HX_DEFINE_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_1360_new,"psychlua.FunkinLua","new",0xca123f88,"psychlua.FunkinLua.new","psychlua/FunkinLua.hx",1360,0x1e7a8669)
-HX_DEFINE_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_1365_new,"psychlua.FunkinLua","new",0xca123f88,"psychlua.FunkinLua.new","psychlua/FunkinLua.hx",1365,0x1e7a8669)
+HX_DEFINE_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_1364_new,"psychlua.FunkinLua","new",0xca123f88,"psychlua.FunkinLua.new","psychlua/FunkinLua.hx",1364,0x1e7a8669)
 HX_DEFINE_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_1369_new,"psychlua.FunkinLua","new",0xca123f88,"psychlua.FunkinLua.new","psychlua/FunkinLua.hx",1369,0x1e7a8669)
 HX_DEFINE_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_1374_new,"psychlua.FunkinLua","new",0xca123f88,"psychlua.FunkinLua.new","psychlua/FunkinLua.hx",1374,0x1e7a8669)
 HX_DEFINE_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_1379_new,"psychlua.FunkinLua","new",0xca123f88,"psychlua.FunkinLua.new","psychlua/FunkinLua.hx",1379,0x1e7a8669)
@@ -509,54 +506,53 @@ HX_DEFINE_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_1414_new,"psychlua.FunkinLua","ne
 HX_DEFINE_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_1419_new,"psychlua.FunkinLua","new",0xca123f88,"psychlua.FunkinLua.new","psychlua/FunkinLua.hx",1419,0x1e7a8669)
 HX_DEFINE_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_1424_new,"psychlua.FunkinLua","new",0xca123f88,"psychlua.FunkinLua.new","psychlua/FunkinLua.hx",1424,0x1e7a8669)
 HX_DEFINE_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_1429_new,"psychlua.FunkinLua","new",0xca123f88,"psychlua.FunkinLua.new","psychlua/FunkinLua.hx",1429,0x1e7a8669)
-HX_DEFINE_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_1434_new,"psychlua.FunkinLua","new",0xca123f88,"psychlua.FunkinLua.new","psychlua/FunkinLua.hx",1434,0x1e7a8669)
-HX_DEFINE_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_1438_new,"psychlua.FunkinLua","new",0xca123f88,"psychlua.FunkinLua.new","psychlua/FunkinLua.hx",1438,0x1e7a8669)
+HX_DEFINE_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_1433_new,"psychlua.FunkinLua","new",0xca123f88,"psychlua.FunkinLua.new","psychlua/FunkinLua.hx",1433,0x1e7a8669)
+HX_DEFINE_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_1437_new,"psychlua.FunkinLua","new",0xca123f88,"psychlua.FunkinLua.new","psychlua/FunkinLua.hx",1437,0x1e7a8669)
 HX_DEFINE_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_1442_new,"psychlua.FunkinLua","new",0xca123f88,"psychlua.FunkinLua.new","psychlua/FunkinLua.hx",1442,0x1e7a8669)
-HX_DEFINE_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_1447_new,"psychlua.FunkinLua","new",0xca123f88,"psychlua.FunkinLua.new","psychlua/FunkinLua.hx",1447,0x1e7a8669)
-HX_DEFINE_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_1450_new,"psychlua.FunkinLua","new",0xca123f88,"psychlua.FunkinLua.new","psychlua/FunkinLua.hx",1450,0x1e7a8669)
-HX_DEFINE_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_1453_new,"psychlua.FunkinLua","new",0xca123f88,"psychlua.FunkinLua.new","psychlua/FunkinLua.hx",1453,0x1e7a8669)
-HX_DEFINE_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_1457_new,"psychlua.FunkinLua","new",0xca123f88,"psychlua.FunkinLua.new","psychlua/FunkinLua.hx",1457,0x1e7a8669)
-HX_DEFINE_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_1460_new,"psychlua.FunkinLua","new",0xca123f88,"psychlua.FunkinLua.new","psychlua/FunkinLua.hx",1460,0x1e7a8669)
-HX_DEFINE_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_1463_new,"psychlua.FunkinLua","new",0xca123f88,"psychlua.FunkinLua.new","psychlua/FunkinLua.hx",1463,0x1e7a8669)
-HX_DEFINE_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_1483_new,"psychlua.FunkinLua","new",0xca123f88,"psychlua.FunkinLua.new","psychlua/FunkinLua.hx",1483,0x1e7a8669)
-HX_DEFINE_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_1503_new,"psychlua.FunkinLua","new",0xca123f88,"psychlua.FunkinLua.new","psychlua/FunkinLua.hx",1503,0x1e7a8669)
-HX_DEFINE_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_1531_new,"psychlua.FunkinLua","new",0xca123f88,"psychlua.FunkinLua.new","psychlua/FunkinLua.hx",1531,0x1e7a8669)
-HX_DEFINE_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_1550_new,"psychlua.FunkinLua","new",0xca123f88,"psychlua.FunkinLua.new","psychlua/FunkinLua.hx",1550,0x1e7a8669)
-HX_DEFINE_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_1560_new,"psychlua.FunkinLua","new",0xca123f88,"psychlua.FunkinLua.new","psychlua/FunkinLua.hx",1560,0x1e7a8669)
-HX_DEFINE_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_1594_new,"psychlua.FunkinLua","new",0xca123f88,"psychlua.FunkinLua.new","psychlua/FunkinLua.hx",1594,0x1e7a8669)
-HX_DEFINE_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_1615_new,"psychlua.FunkinLua","new",0xca123f88,"psychlua.FunkinLua.new","psychlua/FunkinLua.hx",1615,0x1e7a8669)
-HX_DEFINE_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_1617_new,"psychlua.FunkinLua","new",0xca123f88,"psychlua.FunkinLua.new","psychlua/FunkinLua.hx",1617,0x1e7a8669)
-HX_DEFINE_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_1623_new,"psychlua.FunkinLua","new",0xca123f88,"psychlua.FunkinLua.new","psychlua/FunkinLua.hx",1623,0x1e7a8669)
-HX_DEFINE_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_1632_new,"psychlua.FunkinLua","new",0xca123f88,"psychlua.FunkinLua.new","psychlua/FunkinLua.hx",1632,0x1e7a8669)
+HX_DEFINE_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_1445_new,"psychlua.FunkinLua","new",0xca123f88,"psychlua.FunkinLua.new","psychlua/FunkinLua.hx",1445,0x1e7a8669)
+HX_DEFINE_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_1448_new,"psychlua.FunkinLua","new",0xca123f88,"psychlua.FunkinLua.new","psychlua/FunkinLua.hx",1448,0x1e7a8669)
+HX_DEFINE_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_1452_new,"psychlua.FunkinLua","new",0xca123f88,"psychlua.FunkinLua.new","psychlua/FunkinLua.hx",1452,0x1e7a8669)
+HX_DEFINE_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_1455_new,"psychlua.FunkinLua","new",0xca123f88,"psychlua.FunkinLua.new","psychlua/FunkinLua.hx",1455,0x1e7a8669)
+HX_DEFINE_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_1458_new,"psychlua.FunkinLua","new",0xca123f88,"psychlua.FunkinLua.new","psychlua/FunkinLua.hx",1458,0x1e7a8669)
+HX_DEFINE_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_1478_new,"psychlua.FunkinLua","new",0xca123f88,"psychlua.FunkinLua.new","psychlua/FunkinLua.hx",1478,0x1e7a8669)
+HX_DEFINE_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_1498_new,"psychlua.FunkinLua","new",0xca123f88,"psychlua.FunkinLua.new","psychlua/FunkinLua.hx",1498,0x1e7a8669)
+HX_DEFINE_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_1526_new,"psychlua.FunkinLua","new",0xca123f88,"psychlua.FunkinLua.new","psychlua/FunkinLua.hx",1526,0x1e7a8669)
+HX_DEFINE_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_1545_new,"psychlua.FunkinLua","new",0xca123f88,"psychlua.FunkinLua.new","psychlua/FunkinLua.hx",1545,0x1e7a8669)
+HX_DEFINE_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_1555_new,"psychlua.FunkinLua","new",0xca123f88,"psychlua.FunkinLua.new","psychlua/FunkinLua.hx",1555,0x1e7a8669)
+HX_DEFINE_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_1589_new,"psychlua.FunkinLua","new",0xca123f88,"psychlua.FunkinLua.new","psychlua/FunkinLua.hx",1589,0x1e7a8669)
+HX_DEFINE_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_1610_new,"psychlua.FunkinLua","new",0xca123f88,"psychlua.FunkinLua.new","psychlua/FunkinLua.hx",1610,0x1e7a8669)
+HX_DEFINE_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_1612_new,"psychlua.FunkinLua","new",0xca123f88,"psychlua.FunkinLua.new","psychlua/FunkinLua.hx",1612,0x1e7a8669)
+HX_DEFINE_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_1618_new,"psychlua.FunkinLua","new",0xca123f88,"psychlua.FunkinLua.new","psychlua/FunkinLua.hx",1618,0x1e7a8669)
+HX_DEFINE_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_1627_new,"psychlua.FunkinLua","new",0xca123f88,"psychlua.FunkinLua.new","psychlua/FunkinLua.hx",1627,0x1e7a8669)
+HX_DEFINE_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_1633_new,"psychlua.FunkinLua","new",0xca123f88,"psychlua.FunkinLua.new","psychlua/FunkinLua.hx",1633,0x1e7a8669)
 HX_DEFINE_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_1638_new,"psychlua.FunkinLua","new",0xca123f88,"psychlua.FunkinLua.new","psychlua/FunkinLua.hx",1638,0x1e7a8669)
 HX_DEFINE_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_1643_new,"psychlua.FunkinLua","new",0xca123f88,"psychlua.FunkinLua.new","psychlua/FunkinLua.hx",1643,0x1e7a8669)
-HX_DEFINE_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_1648_new,"psychlua.FunkinLua","new",0xca123f88,"psychlua.FunkinLua.new","psychlua/FunkinLua.hx",1648,0x1e7a8669)
-HX_DEFINE_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_1656_new,"psychlua.FunkinLua","new",0xca123f88,"psychlua.FunkinLua.new","psychlua/FunkinLua.hx",1656,0x1e7a8669)
-HX_DEFINE_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_1663_new,"psychlua.FunkinLua","new",0xca123f88,"psychlua.FunkinLua.new","psychlua/FunkinLua.hx",1663,0x1e7a8669)
-HX_DEFINE_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_1675_new,"psychlua.FunkinLua","new",0xca123f88,"psychlua.FunkinLua.new","psychlua/FunkinLua.hx",1675,0x1e7a8669)
-HX_DEFINE_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_1686_new,"psychlua.FunkinLua","new",0xca123f88,"psychlua.FunkinLua.new","psychlua/FunkinLua.hx",1686,0x1e7a8669)
-HX_DEFINE_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_1694_new,"psychlua.FunkinLua","new",0xca123f88,"psychlua.FunkinLua.new","psychlua/FunkinLua.hx",1694,0x1e7a8669)
-HX_DEFINE_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_1701_new,"psychlua.FunkinLua","new",0xca123f88,"psychlua.FunkinLua.new","psychlua/FunkinLua.hx",1701,0x1e7a8669)
-HX_DEFINE_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_1712_new,"psychlua.FunkinLua","new",0xca123f88,"psychlua.FunkinLua.new","psychlua/FunkinLua.hx",1712,0x1e7a8669)
-HX_LOCAL_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_1755_call,"psychlua.FunkinLua","call",0xfe9cec76,"psychlua.FunkinLua.call","psychlua/FunkinLua.hx",1755,0x1e7a8669)
-HX_LOCAL_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_1800_set,"psychlua.FunkinLua","set",0xca160aca,"psychlua.FunkinLua.set","psychlua/FunkinLua.hx",1800,0x1e7a8669)
-HX_LOCAL_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_1811_stop,"psychlua.FunkinLua","stop",0x093ec3da,"psychlua.FunkinLua.stop","psychlua/FunkinLua.hx",1811,0x1e7a8669)
+HX_DEFINE_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_1651_new,"psychlua.FunkinLua","new",0xca123f88,"psychlua.FunkinLua.new","psychlua/FunkinLua.hx",1651,0x1e7a8669)
+HX_DEFINE_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_1658_new,"psychlua.FunkinLua","new",0xca123f88,"psychlua.FunkinLua.new","psychlua/FunkinLua.hx",1658,0x1e7a8669)
+HX_DEFINE_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_1670_new,"psychlua.FunkinLua","new",0xca123f88,"psychlua.FunkinLua.new","psychlua/FunkinLua.hx",1670,0x1e7a8669)
+HX_DEFINE_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_1681_new,"psychlua.FunkinLua","new",0xca123f88,"psychlua.FunkinLua.new","psychlua/FunkinLua.hx",1681,0x1e7a8669)
+HX_DEFINE_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_1689_new,"psychlua.FunkinLua","new",0xca123f88,"psychlua.FunkinLua.new","psychlua/FunkinLua.hx",1689,0x1e7a8669)
+HX_DEFINE_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_1696_new,"psychlua.FunkinLua","new",0xca123f88,"psychlua.FunkinLua.new","psychlua/FunkinLua.hx",1696,0x1e7a8669)
+HX_DEFINE_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_1707_new,"psychlua.FunkinLua","new",0xca123f88,"psychlua.FunkinLua.new","psychlua/FunkinLua.hx",1707,0x1e7a8669)
+HX_LOCAL_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_1750_call,"psychlua.FunkinLua","call",0xfe9cec76,"psychlua.FunkinLua.call","psychlua/FunkinLua.hx",1750,0x1e7a8669)
+HX_LOCAL_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_1795_set,"psychlua.FunkinLua","set",0xca160aca,"psychlua.FunkinLua.set","psychlua/FunkinLua.hx",1795,0x1e7a8669)
+HX_LOCAL_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_1806_stop,"psychlua.FunkinLua","stop",0x093ec3da,"psychlua.FunkinLua.stop","psychlua/FunkinLua.hx",1806,0x1e7a8669)
+HX_LOCAL_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_1850_oldTweenFunction,"psychlua.FunkinLua","oldTweenFunction",0x07814754,"psychlua.FunkinLua.oldTweenFunction","psychlua/FunkinLua.hx",1850,0x1e7a8669)
 HX_LOCAL_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_1855_oldTweenFunction,"psychlua.FunkinLua","oldTweenFunction",0x07814754,"psychlua.FunkinLua.oldTweenFunction","psychlua/FunkinLua.hx",1855,0x1e7a8669)
-HX_LOCAL_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_1860_oldTweenFunction,"psychlua.FunkinLua","oldTweenFunction",0x07814754,"psychlua.FunkinLua.oldTweenFunction","psychlua/FunkinLua.hx",1860,0x1e7a8669)
-HX_LOCAL_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_1903_findScript,"psychlua.FunkinLua","findScript",0x4a1348fc,"psychlua.FunkinLua.findScript","psychlua/FunkinLua.hx",1903,0x1e7a8669)
-HX_LOCAL_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_1923_getErrorMessage,"psychlua.FunkinLua","getErrorMessage",0x3967fbbd,"psychlua.FunkinLua.getErrorMessage","psychlua/FunkinLua.hx",1923,0x1e7a8669)
-HX_LOCAL_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_1944_addLocalCallback,"psychlua.FunkinLua","addLocalCallback",0x00ed1747,"psychlua.FunkinLua.addLocalCallback","psychlua/FunkinLua.hx",1944,0x1e7a8669)
-HX_LOCAL_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_1955_initLuaShader,"psychlua.FunkinLua","initLuaShader",0xe6bd5af5,"psychlua.FunkinLua.initLuaShader","psychlua/FunkinLua.hx",1955,0x1e7a8669)
-HX_LOCAL_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_1838_getBuildTarget,"psychlua.FunkinLua","getBuildTarget",0xd86f3e01,"psychlua.FunkinLua.getBuildTarget","psychlua/FunkinLua.hx",1838,0x1e7a8669)
-HX_LOCAL_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_1873_luaTrace,"psychlua.FunkinLua","luaTrace",0x55580985,"psychlua.FunkinLua.luaTrace","psychlua/FunkinLua.hx",1873,0x1e7a8669)
-HX_LOCAL_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_1884_getBool,"psychlua.FunkinLua","getBool",0x16c75708,"psychlua.FunkinLua.getBool","psychlua/FunkinLua.hx",1884,0x1e7a8669)
+HX_LOCAL_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_1898_findScript,"psychlua.FunkinLua","findScript",0x4a1348fc,"psychlua.FunkinLua.findScript","psychlua/FunkinLua.hx",1898,0x1e7a8669)
+HX_LOCAL_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_1918_getErrorMessage,"psychlua.FunkinLua","getErrorMessage",0x3967fbbd,"psychlua.FunkinLua.getErrorMessage","psychlua/FunkinLua.hx",1918,0x1e7a8669)
+HX_LOCAL_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_1939_addLocalCallback,"psychlua.FunkinLua","addLocalCallback",0x00ed1747,"psychlua.FunkinLua.addLocalCallback","psychlua/FunkinLua.hx",1939,0x1e7a8669)
+HX_LOCAL_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_1950_initLuaShader,"psychlua.FunkinLua","initLuaShader",0xe6bd5af5,"psychlua.FunkinLua.initLuaShader","psychlua/FunkinLua.hx",1950,0x1e7a8669)
+HX_LOCAL_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_1833_getBuildTarget,"psychlua.FunkinLua","getBuildTarget",0xd86f3e01,"psychlua.FunkinLua.getBuildTarget","psychlua/FunkinLua.hx",1833,0x1e7a8669)
+HX_LOCAL_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_1868_luaTrace,"psychlua.FunkinLua","luaTrace",0x55580985,"psychlua.FunkinLua.luaTrace","psychlua/FunkinLua.hx",1868,0x1e7a8669)
+HX_LOCAL_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_1879_getBool,"psychlua.FunkinLua","getBool",0x16c75708,"psychlua.FunkinLua.getBool","psychlua/FunkinLua.hx",1879,0x1e7a8669)
 HX_LOCAL_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_50_boot,"psychlua.FunkinLua","boot",0xfdfe580a,"psychlua.FunkinLua.boot","psychlua/FunkinLua.hx",50,0x1e7a8669)
 HX_LOCAL_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_51_boot,"psychlua.FunkinLua","boot",0xfdfe580a,"psychlua.FunkinLua.boot","psychlua/FunkinLua.hx",51,0x1e7a8669)
 HX_LOCAL_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_52_boot,"psychlua.FunkinLua","boot",0xfdfe580a,"psychlua.FunkinLua.boot","psychlua/FunkinLua.hx",52,0x1e7a8669)
 HX_LOCAL_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_53_boot,"psychlua.FunkinLua","boot",0xfdfe580a,"psychlua.FunkinLua.boot","psychlua/FunkinLua.hx",53,0x1e7a8669)
 HX_LOCAL_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_54_boot,"psychlua.FunkinLua","boot",0xfdfe580a,"psychlua.FunkinLua.boot","psychlua/FunkinLua.hx",54,0x1e7a8669)
 HX_LOCAL_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_68_boot,"psychlua.FunkinLua","boot",0xfdfe580a,"psychlua.FunkinLua.boot","psychlua/FunkinLua.hx",68,0x1e7a8669)
-HX_LOCAL_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_1754_boot,"psychlua.FunkinLua","boot",0xfdfe580a,"psychlua.FunkinLua.boot","psychlua/FunkinLua.hx",1754,0x1e7a8669)
+HX_LOCAL_STACK_FRAME(_hx_pos_cee4ff64a0b4a703_1749_boot,"psychlua.FunkinLua","boot",0xfdfe580a,"psychlua.FunkinLua.boot","psychlua/FunkinLua.hx",1749,0x1e7a8669)
 namespace psychlua{
 
 void FunkinLua_obj::__construct(::String scriptName){
@@ -701,18 +697,18 @@ HXLINE( 248)			return true;
             		}
             		HX_END_LOCAL_FUNC6(return)
 
-            		HX_BEGIN_LOCAL_FUNC_S2(::hx::LocalFunc,_hx_Closure_167, ::psychlua::FunkinLua,_gthis,::String,scriptName) HXARGC(0)
+            		HX_BEGIN_LOCAL_FUNC_S2(::hx::LocalFunc,_hx_Closure_166, ::psychlua::FunkinLua,_gthis,::String,scriptName) HXARGC(0)
             		bool _hx_run(){
-            			HX_GC_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1714_new)
-HXLINE(1715)			_gthis->closed = true;
-HXLINE(1716)			::haxe::Log_obj::trace((HX_("Closing script ",6a,a3,fb,93) + scriptName),::hx::SourceInfo(HX_("source/psychlua/FunkinLua.hx",f5,9a,41,5d),1716,HX_("psychlua.FunkinLua",96,1b,92,ca),HX_("new",60,d0,53,00)));
-HXLINE(1717)			return _gthis->closed;
+            			HX_GC_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1709_new)
+HXLINE(1710)			_gthis->closed = true;
+HXLINE(1711)			::haxe::Log_obj::trace((HX_("Closing script ",6a,a3,fb,93) + scriptName),::hx::SourceInfo(HX_("source/psychlua/FunkinLua.hx",f5,9a,41,5d),1711,HX_("psychlua.FunkinLua",96,1b,92,ca),HX_("new",60,d0,53,00)));
+HXLINE(1712)			return _gthis->closed;
             		}
             		HX_END_LOCAL_FUNC0(return)
 
             	HX_GC_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_49_new)
-HXLINE(1952)		this->runtimeShaders =  ::haxe::ds::StringMap_obj::__alloc( HX_CTX );
-HXLINE(1753)		this->lastCalledFunction = HX_("",00,00,00,00);
+HXLINE(1947)		this->runtimeShaders =  ::haxe::ds::StringMap_obj::__alloc( HX_CTX );
+HXLINE(1748)		this->lastCalledFunction = HX_("",00,00,00,00);
 HXLINE(  67)		this->callbacks =  ::haxe::ds::StringMap_obj::__alloc( HX_CTX );
 HXLINE(  64)		this->hscript = null();
 HXLINE(  61)		this->closed = false;
@@ -1536,11 +1532,11 @@ HXLINE( 564)						::Dynamic this1 = game->modchartTweens;
 HXDLIN( 564)						 ::EReg hideChars =  ::EReg_obj::__alloc( HX_CTX ,HX_("[\t\n\r]",ac,57,71,6b),HX_("",00,00,00,00));
 HXDLIN( 564)						::String color = ::StringTools_obj::trim(hideChars->split(targetColor)->join(HX_("",00,00,00,00)));
 HXDLIN( 564)						if (::StringTools_obj::startsWith(color,HX_("0x",48,2a,00,00))) {
-HXLINE( 150)							color = color.substring((color.length - 6),null());
+HXLINE( 119)							color = color.substring((color.length - 6),null());
             						}
 HXLINE( 564)						 ::Dynamic colorNum = ::flixel::util::_FlxColor::FlxColor_Impl__obj::fromString(color);
 HXDLIN( 564)						if (::hx::IsNull( colorNum )) {
-HXLINE( 153)							colorNum = ::flixel::util::_FlxColor::FlxColor_Impl__obj::fromString((HX_("#",23,00,00,00) + color));
+HXLINE( 122)							colorNum = ::flixel::util::_FlxColor::FlxColor_Impl__obj::fromString((HX_("#",23,00,00,00) + color));
             						}
 HXLINE( 564)						int value;
 HXDLIN( 564)						if (::hx::IsNotNull( colorNum )) {
@@ -2413,11 +2409,11 @@ HXLINE( 887)				 ::flixel::FlxCamera _hx_tmp = ::psychlua::LuaUtils_obj::cameraF
 HXDLIN( 887)				 ::EReg hideChars =  ::EReg_obj::__alloc( HX_CTX ,HX_("[\t\n\r]",ac,57,71,6b),HX_("",00,00,00,00));
 HXDLIN( 887)				::String color1 = ::StringTools_obj::trim(hideChars->split(color)->join(HX_("",00,00,00,00)));
 HXDLIN( 887)				if (::StringTools_obj::startsWith(color1,HX_("0x",48,2a,00,00))) {
-HXLINE( 150)					color1 = color1.substring((color1.length - 6),null());
+HXLINE( 119)					color1 = color1.substring((color1.length - 6),null());
             				}
 HXLINE( 887)				 ::Dynamic colorNum = ::flixel::util::_FlxColor::FlxColor_Impl__obj::fromString(color1);
 HXDLIN( 887)				if (::hx::IsNull( colorNum )) {
-HXLINE( 153)					colorNum = ::flixel::util::_FlxColor::FlxColor_Impl__obj::fromString((HX_("#",23,00,00,00) + color1));
+HXLINE( 122)					colorNum = ::flixel::util::_FlxColor::FlxColor_Impl__obj::fromString((HX_("#",23,00,00,00) + color1));
             				}
 HXLINE( 887)				int _hx_tmp1;
 HXDLIN( 887)				if (::hx::IsNotNull( colorNum )) {
@@ -2442,11 +2438,11 @@ HXLINE( 890)				 ::flixel::FlxCamera _hx_tmp = ::psychlua::LuaUtils_obj::cameraF
 HXDLIN( 890)				 ::EReg hideChars =  ::EReg_obj::__alloc( HX_CTX ,HX_("[\t\n\r]",ac,57,71,6b),HX_("",00,00,00,00));
 HXDLIN( 890)				::String color1 = ::StringTools_obj::trim(hideChars->split(color)->join(HX_("",00,00,00,00)));
 HXDLIN( 890)				if (::StringTools_obj::startsWith(color1,HX_("0x",48,2a,00,00))) {
-HXLINE( 150)					color1 = color1.substring((color1.length - 6),null());
+HXLINE( 119)					color1 = color1.substring((color1.length - 6),null());
             				}
 HXLINE( 890)				 ::Dynamic colorNum = ::flixel::util::_FlxColor::FlxColor_Impl__obj::fromString(color1);
 HXDLIN( 890)				if (::hx::IsNull( colorNum )) {
-HXLINE( 153)					colorNum = ::flixel::util::_FlxColor::FlxColor_Impl__obj::fromString((HX_("#",23,00,00,00) + color1));
+HXLINE( 122)					colorNum = ::flixel::util::_FlxColor::FlxColor_Impl__obj::fromString((HX_("#",23,00,00,00) + color1));
             				}
 HXLINE( 890)				int _hx_tmp1;
 HXDLIN( 890)				if (::hx::IsNotNull( colorNum )) {
@@ -2766,11 +2762,11 @@ HXLINE(1006)				if (::hx::IsNotNull( spr )) {
 HXLINE(1006)					 ::EReg hideChars =  ::EReg_obj::__alloc( HX_CTX ,HX_("[\t\n\r]",ac,57,71,6b),HX_("",00,00,00,00));
 HXDLIN(1006)					::String color1 = ::StringTools_obj::trim(hideChars->split(color)->join(HX_("",00,00,00,00)));
 HXDLIN(1006)					if (::StringTools_obj::startsWith(color1,HX_("0x",48,2a,00,00))) {
-HXLINE( 150)						color1 = color1.substring((color1.length - 6),null());
+HXLINE( 119)						color1 = color1.substring((color1.length - 6),null());
             					}
 HXLINE(1006)					 ::Dynamic colorNum = ::flixel::util::_FlxColor::FlxColor_Impl__obj::fromString(color1);
 HXDLIN(1006)					if (::hx::IsNull( colorNum )) {
-HXLINE( 153)						colorNum = ::flixel::util::_FlxColor::FlxColor_Impl__obj::fromString((HX_("#",23,00,00,00) + color1));
+HXLINE( 122)						colorNum = ::flixel::util::_FlxColor::FlxColor_Impl__obj::fromString((HX_("#",23,00,00,00) + color1));
             					}
 HXLINE(1006)					int _hx_tmp;
 HXDLIN(1006)					if (::hx::IsNotNull( colorNum )) {
@@ -3452,811 +3448,825 @@ HXDLIN(1348)				::llua::Lua_helper_obj::callbacks->set(HX_("addBlueChromaticAbbe
 HXDLIN(1348)				linc::callbacks::add_callback_function(l4,HX_("addBlueChromaticAbberationEffect",b5,c5,f0,95));
             			}
 HXLINE(1353)			{
-            				HX_BEGIN_LOCAL_FUNC_S0(::hx::LocalFunc,_hx_Closure_122) HXARGC(2)
-            				void _hx_run(::String camera, ::Dynamic __o_strength){
-            		Float strength = __o_strength.Default(((Float)0.5));
-            					HX_GC_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1355_new)
-HXLINE(1355)					 ::states::PlayState _hx_tmp = ::states::PlayState_obj::instance;
-HXDLIN(1355)					_hx_tmp->addShaderToCamera(camera, ::shaders::MosaicEffect_obj::__alloc( HX_CTX ,strength));
-            				}
-            				HX_END_LOCAL_FUNC2((void))
-
-HXLINE(1353)				 cpp::Reference<lua_State> l5 = this->lua;
-HXDLIN(1353)				::llua::Lua_helper_obj::callbacks->set(HX_("addPixelMosaicEffect",c0,76,6a,ba), ::Dynamic(new _hx_Closure_122()));
-HXDLIN(1353)				linc::callbacks::add_callback_function(l5,HX_("addPixelMosaicEffect",c0,76,6a,ba));
-            			}
-HXLINE(1358)			{
-            				HX_BEGIN_LOCAL_FUNC_S0(::hx::LocalFunc,_hx_Closure_123) HXARGC(3)
+            				HX_BEGIN_LOCAL_FUNC_S0(::hx::LocalFunc,_hx_Closure_122) HXARGC(3)
             				void _hx_run(::String camera, ::Dynamic __o_strength, ::Dynamic __o_strengthY){
             		Float strength = __o_strength.Default(((Float)0.1));
             		Float strengthY = __o_strengthY.Default(((Float)0.1));
-            					HX_GC_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1360_new)
-HXLINE(1360)					 ::states::PlayState _hx_tmp = ::states::PlayState_obj::instance;
-HXDLIN(1360)					_hx_tmp->addShaderToCamera(camera, ::shaders::BlurEffect_obj::__alloc( HX_CTX ,strength,strengthY));
+            					HX_GC_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1355_new)
+HXLINE(1355)					 ::states::PlayState _hx_tmp = ::states::PlayState_obj::instance;
+HXDLIN(1355)					_hx_tmp->addShaderToCamera(camera, ::shaders::BlurEffect_obj::__alloc( HX_CTX ,strength,strengthY));
             				}
             				HX_END_LOCAL_FUNC3((void))
 
-HXLINE(1358)				 cpp::Reference<lua_State> l6 = this->lua;
-HXDLIN(1358)				::llua::Lua_helper_obj::callbacks->set(HX_("addMovementBlurEffect",28,b5,45,8e), ::Dynamic(new _hx_Closure_123()));
-HXDLIN(1358)				linc::callbacks::add_callback_function(l6,HX_("addMovementBlurEffect",28,b5,45,8e));
+HXLINE(1353)				 cpp::Reference<lua_State> l5 = this->lua;
+HXDLIN(1353)				::llua::Lua_helper_obj::callbacks->set(HX_("addMovementBlurEffect",28,b5,45,8e), ::Dynamic(new _hx_Closure_122()));
+HXDLIN(1353)				linc::callbacks::add_callback_function(l5,HX_("addMovementBlurEffect",28,b5,45,8e));
             			}
-HXLINE(1363)			{
-            				HX_BEGIN_LOCAL_FUNC_S0(::hx::LocalFunc,_hx_Closure_124) HXARGC(7)
+HXLINE(1358)			{
+            				HX_BEGIN_LOCAL_FUNC_S0(::hx::LocalFunc,_hx_Closure_123) HXARGC(7)
             				void _hx_run(::String camera,Float waveSpeed,Float waveFrequency,Float waveAmplitude,Float time,Float ampmul, ::Dynamic __o_enabled){
             		bool enabled = __o_enabled.Default(true);
-            					HX_GC_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1365_new)
-HXLINE(1365)					 ::states::PlayState _hx_tmp = ::states::PlayState_obj::instance;
-HXDLIN(1365)					_hx_tmp->addShaderToCamera(camera, ::shaders::EyesoresEffect_obj::__alloc( HX_CTX ,waveSpeed,waveFrequency,waveAmplitude,time,ampmul,enabled));
+            					HX_GC_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1360_new)
+HXLINE(1360)					 ::states::PlayState _hx_tmp = ::states::PlayState_obj::instance;
+HXDLIN(1360)					_hx_tmp->addShaderToCamera(camera, ::shaders::EyesoresEffect_obj::__alloc( HX_CTX ,waveSpeed,waveFrequency,waveAmplitude,time,ampmul,enabled));
             				}
             				HX_END_LOCAL_FUNC7((void))
 
-HXLINE(1363)				 cpp::Reference<lua_State> l7 = this->lua;
-HXDLIN(1363)				::llua::Lua_helper_obj::callbacks->set(HX_("addEyesoresEffect",25,2c,ae,08), ::Dynamic(new _hx_Closure_124()));
-HXDLIN(1363)				linc::callbacks::add_callback_function(l7,HX_("addEyesoresEffect",25,2c,ae,08));
+HXLINE(1358)				 cpp::Reference<lua_State> l6 = this->lua;
+HXDLIN(1358)				::llua::Lua_helper_obj::callbacks->set(HX_("addEyesoresEffect",25,2c,ae,08), ::Dynamic(new _hx_Closure_123()));
+HXDLIN(1358)				linc::callbacks::add_callback_function(l6,HX_("addEyesoresEffect",25,2c,ae,08));
             			}
-HXLINE(1367)			{
-            				HX_BEGIN_LOCAL_FUNC_S0(::hx::LocalFunc,_hx_Closure_125) HXARGC(3)
+HXLINE(1362)			{
+            				HX_BEGIN_LOCAL_FUNC_S0(::hx::LocalFunc,_hx_Closure_124) HXARGC(3)
             				void _hx_run(::String camera, ::Dynamic __o_strength, ::Dynamic __o_intensity){
             		Float strength = __o_strength.Default(((Float)0.1));
             		Float intensity = __o_intensity.Default(((Float)0.1));
-            					HX_GC_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1369_new)
-HXLINE(1369)					 ::states::PlayState _hx_tmp = ::states::PlayState_obj::instance;
-HXDLIN(1369)					_hx_tmp->addShaderToCamera(camera, ::shaders::SobelEffect_obj::__alloc( HX_CTX ,strength,intensity));
+            					HX_GC_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1364_new)
+HXLINE(1364)					 ::states::PlayState _hx_tmp = ::states::PlayState_obj::instance;
+HXDLIN(1364)					_hx_tmp->addShaderToCamera(camera, ::shaders::SobelEffect_obj::__alloc( HX_CTX ,strength,intensity));
             				}
             				HX_END_LOCAL_FUNC3((void))
 
-HXLINE(1367)				 cpp::Reference<lua_State> l8 = this->lua;
-HXDLIN(1367)				::llua::Lua_helper_obj::callbacks->set(HX_("addSobelEffect",fd,4f,a2,4b), ::Dynamic(new _hx_Closure_125()));
-HXDLIN(1367)				linc::callbacks::add_callback_function(l8,HX_("addSobelEffect",fd,4f,a2,4b));
+HXLINE(1362)				 cpp::Reference<lua_State> l7 = this->lua;
+HXDLIN(1362)				::llua::Lua_helper_obj::callbacks->set(HX_("addSobelEffect",fd,4f,a2,4b), ::Dynamic(new _hx_Closure_124()));
+HXDLIN(1362)				linc::callbacks::add_callback_function(l7,HX_("addSobelEffect",fd,4f,a2,4b));
             			}
-HXLINE(1372)			{
-            				HX_BEGIN_LOCAL_FUNC_S0(::hx::LocalFunc,_hx_Closure_126) HXARGC(2)
+HXLINE(1367)			{
+            				HX_BEGIN_LOCAL_FUNC_S0(::hx::LocalFunc,_hx_Closure_125) HXARGC(2)
             				void _hx_run(::String camera, ::Dynamic __o_iTime){
             		Float iTime = __o_iTime.Default(20);
-            					HX_GC_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1374_new)
-HXLINE(1374)					 ::states::PlayState _hx_tmp = ::states::PlayState_obj::instance;
-HXDLIN(1374)					_hx_tmp->addShaderToCamera(camera, ::shaders::RainEffect_obj::__alloc( HX_CTX ,iTime));
+            					HX_GC_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1369_new)
+HXLINE(1369)					 ::states::PlayState _hx_tmp = ::states::PlayState_obj::instance;
+HXDLIN(1369)					_hx_tmp->addShaderToCamera(camera, ::shaders::RainEffect_obj::__alloc( HX_CTX ,iTime));
             				}
             				HX_END_LOCAL_FUNC2((void))
 
-HXLINE(1372)				 cpp::Reference<lua_State> l9 = this->lua;
-HXDLIN(1372)				::llua::Lua_helper_obj::callbacks->set(HX_("addRainEffect",86,18,0d,e2), ::Dynamic(new _hx_Closure_126()));
-HXDLIN(1372)				linc::callbacks::add_callback_function(l9,HX_("addRainEffect",86,18,0d,e2));
+HXLINE(1367)				 cpp::Reference<lua_State> l8 = this->lua;
+HXDLIN(1367)				::llua::Lua_helper_obj::callbacks->set(HX_("addRainEffect",86,18,0d,e2), ::Dynamic(new _hx_Closure_125()));
+HXDLIN(1367)				linc::callbacks::add_callback_function(l8,HX_("addRainEffect",86,18,0d,e2));
             			}
-HXLINE(1377)			{
-            				HX_BEGIN_LOCAL_FUNC_S0(::hx::LocalFunc,_hx_Closure_127) HXARGC(6)
+HXLINE(1372)			{
+            				HX_BEGIN_LOCAL_FUNC_S0(::hx::LocalFunc,_hx_Closure_126) HXARGC(6)
             				void _hx_run(::String camera, ::Dynamic __o_zoom, ::Dynamic __o_angle, ::Dynamic __o_iTime, ::Dynamic __o_x, ::Dynamic __o_y){
             		Float zoom = __o_zoom.Default(1);
             		Float angle = __o_angle.Default(1);
             		Float iTime = __o_iTime.Default(1);
             		Float x = __o_x.Default(1);
             		Float y = __o_y.Default(1);
-            					HX_GC_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1379_new)
-HXLINE(1379)					 ::states::PlayState _hx_tmp = ::states::PlayState_obj::instance;
-HXDLIN(1379)					_hx_tmp->addShaderToCamera(camera, ::shaders::MirrorRepeatEffect_obj::__alloc( HX_CTX ,zoom,angle,iTime,x,y));
+            					HX_GC_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1374_new)
+HXLINE(1374)					 ::states::PlayState _hx_tmp = ::states::PlayState_obj::instance;
+HXDLIN(1374)					_hx_tmp->addShaderToCamera(camera, ::shaders::MirrorRepeatEffect_obj::__alloc( HX_CTX ,zoom,angle,iTime,x,y));
             				}
             				HX_END_LOCAL_FUNC6((void))
 
-HXLINE(1377)				 cpp::Reference<lua_State> l10 = this->lua;
-HXDLIN(1377)				::llua::Lua_helper_obj::callbacks->set(HX_("addMirrorRepeatEffect",ac,af,bf,e6), ::Dynamic(new _hx_Closure_127()));
-HXDLIN(1377)				linc::callbacks::add_callback_function(l10,HX_("addMirrorRepeatEffect",ac,af,bf,e6));
+HXLINE(1372)				 cpp::Reference<lua_State> l9 = this->lua;
+HXDLIN(1372)				::llua::Lua_helper_obj::callbacks->set(HX_("addMirrorRepeatEffect",ac,af,bf,e6), ::Dynamic(new _hx_Closure_126()));
+HXDLIN(1372)				linc::callbacks::add_callback_function(l9,HX_("addMirrorRepeatEffect",ac,af,bf,e6));
             			}
-HXLINE(1382)			{
-            				HX_BEGIN_LOCAL_FUNC_S0(::hx::LocalFunc,_hx_Closure_128) HXARGC(4)
+HXLINE(1377)			{
+            				HX_BEGIN_LOCAL_FUNC_S0(::hx::LocalFunc,_hx_Closure_127) HXARGC(4)
             				void _hx_run(::String camera, ::Dynamic __o_loops, ::Dynamic __o_quality, ::Dynamic __o_strength){
             		Float loops = __o_loops.Default(((Float)16.0));
             		Float quality = __o_quality.Default(((Float)5.0));
             		Float strength = __o_strength.Default(((Float)20.0));
-            					HX_GC_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1384_new)
-HXLINE(1384)					 ::states::PlayState _hx_tmp = ::states::PlayState_obj::instance;
-HXDLIN(1384)					_hx_tmp->addShaderToCamera(camera, ::shaders::BetterBlurEffect_obj::__alloc( HX_CTX ,loops,quality,strength));
+            					HX_GC_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1379_new)
+HXLINE(1379)					 ::states::PlayState _hx_tmp = ::states::PlayState_obj::instance;
+HXDLIN(1379)					_hx_tmp->addShaderToCamera(camera, ::shaders::BetterBlurEffect_obj::__alloc( HX_CTX ,loops,quality,strength));
             				}
             				HX_END_LOCAL_FUNC4((void))
 
-HXLINE(1382)				 cpp::Reference<lua_State> l11 = this->lua;
-HXDLIN(1382)				::llua::Lua_helper_obj::callbacks->set(HX_("addGaussianBlurEffect",f4,08,4e,a0), ::Dynamic(new _hx_Closure_128()));
-HXDLIN(1382)				linc::callbacks::add_callback_function(l11,HX_("addGaussianBlurEffect",f4,08,4e,a0));
+HXLINE(1377)				 cpp::Reference<lua_State> l10 = this->lua;
+HXDLIN(1377)				::llua::Lua_helper_obj::callbacks->set(HX_("addGaussianBlurEffect",f4,08,4e,a0), ::Dynamic(new _hx_Closure_127()));
+HXDLIN(1377)				linc::callbacks::add_callback_function(l10,HX_("addGaussianBlurEffect",f4,08,4e,a0));
             			}
-HXLINE(1387)			{
-            				HX_BEGIN_LOCAL_FUNC_S0(::hx::LocalFunc,_hx_Closure_129) HXARGC(4)
+HXLINE(1382)			{
+            				HX_BEGIN_LOCAL_FUNC_S0(::hx::LocalFunc,_hx_Closure_128) HXARGC(4)
             				void _hx_run(::String camera, ::Dynamic __o_strength, ::Dynamic __o_pixelsBetweenEachLine, ::Dynamic __o_smooth){
             		Float strength = __o_strength.Default(((Float)0.0));
             		Float pixelsBetweenEachLine = __o_pixelsBetweenEachLine.Default(((Float)15.0));
             		bool smooth = __o_smooth.Default(false);
-            					HX_GC_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1389_new)
-HXLINE(1389)					 ::states::PlayState _hx_tmp = ::states::PlayState_obj::instance;
-HXDLIN(1389)					_hx_tmp->addShaderToCamera(camera, ::shaders::ScanlineEffect_obj::__alloc( HX_CTX ,strength,pixelsBetweenEachLine,smooth));
+            					HX_GC_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1384_new)
+HXLINE(1384)					 ::states::PlayState _hx_tmp = ::states::PlayState_obj::instance;
+HXDLIN(1384)					_hx_tmp->addShaderToCamera(camera, ::shaders::ScanlineEffect_obj::__alloc( HX_CTX ,strength,pixelsBetweenEachLine,smooth));
             				}
             				HX_END_LOCAL_FUNC4((void))
 
-HXLINE(1387)				 cpp::Reference<lua_State> l12 = this->lua;
-HXDLIN(1387)				::llua::Lua_helper_obj::callbacks->set(HX_("addScanlineEffect",63,8f,85,35), ::Dynamic(new _hx_Closure_129()));
-HXDLIN(1387)				linc::callbacks::add_callback_function(l12,HX_("addScanlineEffect",63,8f,85,35));
+HXLINE(1382)				 cpp::Reference<lua_State> l11 = this->lua;
+HXDLIN(1382)				::llua::Lua_helper_obj::callbacks->set(HX_("addScanlineEffect",63,8f,85,35), ::Dynamic(new _hx_Closure_128()));
+HXDLIN(1382)				linc::callbacks::add_callback_function(l11,HX_("addScanlineEffect",63,8f,85,35));
             			}
-HXLINE(1392)			{
-            				HX_BEGIN_LOCAL_FUNC_S0(::hx::LocalFunc,_hx_Closure_130) HXARGC(2)
+HXLINE(1387)			{
+            				HX_BEGIN_LOCAL_FUNC_S0(::hx::LocalFunc,_hx_Closure_129) HXARGC(2)
             				void _hx_run(::String camera, ::Dynamic __o_lockAlpha){
             		bool lockAlpha = __o_lockAlpha.Default(false);
-            					HX_GC_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1394_new)
-HXLINE(1394)					 ::states::PlayState _hx_tmp = ::states::PlayState_obj::instance;
-HXDLIN(1394)					_hx_tmp->addShaderToCamera(camera, ::shaders::ScanlineEffect2_obj::__alloc( HX_CTX ,lockAlpha));
+            					HX_GC_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1389_new)
+HXLINE(1389)					 ::states::PlayState _hx_tmp = ::states::PlayState_obj::instance;
+HXDLIN(1389)					_hx_tmp->addShaderToCamera(camera, ::shaders::ScanlineEffect2_obj::__alloc( HX_CTX ,lockAlpha));
             				}
             				HX_END_LOCAL_FUNC2((void))
 
-HXLINE(1392)				 cpp::Reference<lua_State> l13 = this->lua;
-HXDLIN(1392)				::llua::Lua_helper_obj::callbacks->set(HX_("addScanlineEffect2",6f,e7,57,9f), ::Dynamic(new _hx_Closure_130()));
-HXDLIN(1392)				linc::callbacks::add_callback_function(l13,HX_("addScanlineEffect2",6f,e7,57,9f));
+HXLINE(1387)				 cpp::Reference<lua_State> l12 = this->lua;
+HXDLIN(1387)				::llua::Lua_helper_obj::callbacks->set(HX_("addScanlineEffect2",6f,e7,57,9f), ::Dynamic(new _hx_Closure_129()));
+HXDLIN(1387)				linc::callbacks::add_callback_function(l12,HX_("addScanlineEffect2",6f,e7,57,9f));
             			}
-HXLINE(1397)			{
-            				HX_BEGIN_LOCAL_FUNC_S0(::hx::LocalFunc,_hx_Closure_131) HXARGC(6)
+HXLINE(1392)			{
+            				HX_BEGIN_LOCAL_FUNC_S0(::hx::LocalFunc,_hx_Closure_130) HXARGC(6)
             				void _hx_run(::String camera, ::Dynamic __o_strength, ::Dynamic __o_size, ::Dynamic __o_red, ::Dynamic __o_green, ::Dynamic __o_blue){
             		Float strength = __o_strength.Default(((Float)1.0));
             		Float size = __o_size.Default(((Float)0.0));
             		Float red = __o_red.Default(((Float)0.0));
             		Float green = __o_green.Default(((Float)0.0));
             		Float blue = __o_blue.Default(((Float)0.0));
-            					HX_GC_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1399_new)
-HXLINE(1399)					 ::states::PlayState _hx_tmp = ::states::PlayState_obj::instance;
-HXDLIN(1399)					_hx_tmp->addShaderToCamera(camera, ::shaders::VignetteEffect_obj::__alloc( HX_CTX ,strength,size,red,green,blue));
+            					HX_GC_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1394_new)
+HXLINE(1394)					 ::states::PlayState _hx_tmp = ::states::PlayState_obj::instance;
+HXDLIN(1394)					_hx_tmp->addShaderToCamera(camera, ::shaders::VignetteEffect_obj::__alloc( HX_CTX ,strength,size,red,green,blue));
             				}
             				HX_END_LOCAL_FUNC6((void))
 
-HXLINE(1397)				 cpp::Reference<lua_State> l14 = this->lua;
-HXDLIN(1397)				::llua::Lua_helper_obj::callbacks->set(HX_("addVignetteEffect",ec,f4,11,d0), ::Dynamic(new _hx_Closure_131()));
-HXDLIN(1397)				linc::callbacks::add_callback_function(l14,HX_("addVignetteEffect",ec,f4,11,d0));
+HXLINE(1392)				 cpp::Reference<lua_State> l13 = this->lua;
+HXDLIN(1392)				::llua::Lua_helper_obj::callbacks->set(HX_("addVignetteEffect",ec,f4,11,d0), ::Dynamic(new _hx_Closure_130()));
+HXDLIN(1392)				linc::callbacks::add_callback_function(l13,HX_("addVignetteEffect",ec,f4,11,d0));
             			}
-HXLINE(1402)			{
-            				HX_BEGIN_LOCAL_FUNC_S0(::hx::LocalFunc,_hx_Closure_132) HXARGC(2)
+HXLINE(1397)			{
+            				HX_BEGIN_LOCAL_FUNC_S0(::hx::LocalFunc,_hx_Closure_131) HXARGC(2)
             				void _hx_run(::String camera, ::Dynamic __o_strength){
             		Float strength = __o_strength.Default(1);
-            					HX_GC_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1404_new)
-HXLINE(1404)					 ::states::PlayState _hx_tmp = ::states::PlayState_obj::instance;
-HXDLIN(1404)					_hx_tmp->addShaderToCamera(camera, ::shaders::WaveBurstEffect_obj::__alloc( HX_CTX ,strength));
+            					HX_GC_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1399_new)
+HXLINE(1399)					 ::states::PlayState _hx_tmp = ::states::PlayState_obj::instance;
+HXDLIN(1399)					_hx_tmp->addShaderToCamera(camera, ::shaders::WaveBurstEffect_obj::__alloc( HX_CTX ,strength));
             				}
             				HX_END_LOCAL_FUNC2((void))
 
-HXLINE(1402)				 cpp::Reference<lua_State> l15 = this->lua;
-HXDLIN(1402)				::llua::Lua_helper_obj::callbacks->set(HX_("addDistortedNoiseEffect",42,63,5c,7f), ::Dynamic(new _hx_Closure_132()));
-HXDLIN(1402)				linc::callbacks::add_callback_function(l15,HX_("addDistortedNoiseEffect",42,63,5c,7f));
+HXLINE(1397)				 cpp::Reference<lua_State> l14 = this->lua;
+HXDLIN(1397)				::llua::Lua_helper_obj::callbacks->set(HX_("addDistortedNoiseEffect",42,63,5c,7f), ::Dynamic(new _hx_Closure_131()));
+HXDLIN(1397)				linc::callbacks::add_callback_function(l14,HX_("addDistortedNoiseEffect",42,63,5c,7f));
             			}
-HXLINE(1407)			{
-            				HX_BEGIN_LOCAL_FUNC_S0(::hx::LocalFunc,_hx_Closure_133) HXARGC(3)
+HXLINE(1402)			{
+            				HX_BEGIN_LOCAL_FUNC_S0(::hx::LocalFunc,_hx_Closure_132) HXARGC(3)
             				void _hx_run(::String camera, ::Dynamic __o_waveStrength, ::Dynamic __o_smokeStrength){
             		Float waveStrength = __o_waveStrength.Default(1);
             		Float smokeStrength = __o_smokeStrength.Default(1);
-            					HX_GC_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1409_new)
-HXLINE(1409)					 ::states::PlayState _hx_tmp = ::states::PlayState_obj::instance;
-HXDLIN(1409)					_hx_tmp->addShaderToCamera(camera, ::shaders::PerlinSmokeEffect_obj::__alloc( HX_CTX ,waveStrength,smokeStrength));
+            					HX_GC_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1404_new)
+HXLINE(1404)					 ::states::PlayState _hx_tmp = ::states::PlayState_obj::instance;
+HXDLIN(1404)					_hx_tmp->addShaderToCamera(camera, ::shaders::PerlinSmokeEffect_obj::__alloc( HX_CTX ,waveStrength,smokeStrength));
             				}
             				HX_END_LOCAL_FUNC3((void))
 
-HXLINE(1407)				 cpp::Reference<lua_State> l16 = this->lua;
-HXDLIN(1407)				::llua::Lua_helper_obj::callbacks->set(HX_("addPerlinSmokeEffect",cb,09,9e,cf), ::Dynamic(new _hx_Closure_133()));
-HXDLIN(1407)				linc::callbacks::add_callback_function(l16,HX_("addPerlinSmokeEffect",cb,09,9e,cf));
+HXLINE(1402)				 cpp::Reference<lua_State> l15 = this->lua;
+HXDLIN(1402)				::llua::Lua_helper_obj::callbacks->set(HX_("addPerlinSmokeEffect",cb,09,9e,cf), ::Dynamic(new _hx_Closure_132()));
+HXDLIN(1402)				linc::callbacks::add_callback_function(l15,HX_("addPerlinSmokeEffect",cb,09,9e,cf));
             			}
-HXLINE(1412)			{
-            				HX_BEGIN_LOCAL_FUNC_S0(::hx::LocalFunc,_hx_Closure_134) HXARGC(5)
+HXLINE(1407)			{
+            				HX_BEGIN_LOCAL_FUNC_S0(::hx::LocalFunc,_hx_Closure_133) HXARGC(5)
             				void _hx_run(::String camera, ::Dynamic __o_glitchFactor, ::Dynamic __o_distortion, ::Dynamic __o_perspectiveOn, ::Dynamic __o_vignetteMoving){
             		Float glitchFactor = __o_glitchFactor.Default(((Float)0.0));
             		bool distortion = __o_distortion.Default(true);
             		bool perspectiveOn = __o_perspectiveOn.Default(true);
             		bool vignetteMoving = __o_vignetteMoving.Default(true);
-            					HX_GC_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1414_new)
-HXLINE(1414)					 ::states::PlayState _hx_tmp = ::states::PlayState_obj::instance;
-HXDLIN(1414)					_hx_tmp->addShaderToCamera(camera, ::shaders::VCRDistortionEffect_obj::__alloc( HX_CTX ,glitchFactor,distortion,perspectiveOn,vignetteMoving));
+            					HX_GC_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1409_new)
+HXLINE(1409)					 ::states::PlayState _hx_tmp = ::states::PlayState_obj::instance;
+HXDLIN(1409)					_hx_tmp->addShaderToCamera(camera, ::shaders::VCRDistortionEffect_obj::__alloc( HX_CTX ,glitchFactor,distortion,perspectiveOn,vignetteMoving));
             				}
             				HX_END_LOCAL_FUNC5((void))
 
-HXLINE(1412)				 cpp::Reference<lua_State> l17 = this->lua;
-HXDLIN(1412)				::llua::Lua_helper_obj::callbacks->set(HX_("addVCREffect",b5,3e,e6,19), ::Dynamic(new _hx_Closure_134()));
-HXDLIN(1412)				linc::callbacks::add_callback_function(l17,HX_("addVCREffect",b5,3e,e6,19));
+HXLINE(1407)				 cpp::Reference<lua_State> l16 = this->lua;
+HXDLIN(1407)				::llua::Lua_helper_obj::callbacks->set(HX_("addVCREffect",b5,3e,e6,19), ::Dynamic(new _hx_Closure_133()));
+HXDLIN(1407)				linc::callbacks::add_callback_function(l16,HX_("addVCREffect",b5,3e,e6,19));
             			}
-HXLINE(1417)			{
-            				HX_BEGIN_LOCAL_FUNC_S0(::hx::LocalFunc,_hx_Closure_135) HXARGC(4)
+HXLINE(1412)			{
+            				HX_BEGIN_LOCAL_FUNC_S0(::hx::LocalFunc,_hx_Closure_134) HXARGC(4)
             				void _hx_run(::String camera, ::Dynamic __o_waveSpeed, ::Dynamic __o_waveFrq, ::Dynamic __o_waveAmp){
             		Float waveSpeed = __o_waveSpeed.Default(((Float)0.1));
             		Float waveFrq = __o_waveFrq.Default(((Float)0.1));
             		Float waveAmp = __o_waveAmp.Default(((Float)0.1));
-            					HX_GC_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1419_new)
-HXLINE(1419)					 ::states::PlayState _hx_tmp = ::states::PlayState_obj::instance;
-HXDLIN(1419)					_hx_tmp->addShaderToCamera(camera, ::shaders::DistortBGEffect_obj::__alloc( HX_CTX ,waveSpeed,waveFrq,waveAmp));
+            					HX_GC_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1414_new)
+HXLINE(1414)					 ::states::PlayState _hx_tmp = ::states::PlayState_obj::instance;
+HXDLIN(1414)					_hx_tmp->addShaderToCamera(camera, ::shaders::DistortBGEffect_obj::__alloc( HX_CTX ,waveSpeed,waveFrq,waveAmp));
             				}
             				HX_END_LOCAL_FUNC4((void))
 
-HXLINE(1417)				 cpp::Reference<lua_State> l18 = this->lua;
-HXDLIN(1417)				::llua::Lua_helper_obj::callbacks->set(HX_("addDistortionEffect",0f,c7,6f,1f), ::Dynamic(new _hx_Closure_135()));
-HXDLIN(1417)				linc::callbacks::add_callback_function(l18,HX_("addDistortionEffect",0f,c7,6f,1f));
+HXLINE(1412)				 cpp::Reference<lua_State> l17 = this->lua;
+HXDLIN(1412)				::llua::Lua_helper_obj::callbacks->set(HX_("addDistortionEffect",0f,c7,6f,1f), ::Dynamic(new _hx_Closure_134()));
+HXDLIN(1412)				linc::callbacks::add_callback_function(l17,HX_("addDistortionEffect",0f,c7,6f,1f));
             			}
-HXLINE(1422)			{
-            				HX_BEGIN_LOCAL_FUNC_S0(::hx::LocalFunc,_hx_Closure_136) HXARGC(2)
+HXLINE(1417)			{
+            				HX_BEGIN_LOCAL_FUNC_S0(::hx::LocalFunc,_hx_Closure_135) HXARGC(2)
             				void _hx_run(::String camera, ::Dynamic __o_lockAlpha){
             		bool lockAlpha = __o_lockAlpha.Default(false);
-            					HX_GC_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1424_new)
-HXLINE(1424)					 ::states::PlayState _hx_tmp = ::states::PlayState_obj::instance;
-HXDLIN(1424)					_hx_tmp->addShaderToCamera(camera, ::shaders::InvertColorsEffect_obj::__alloc( HX_CTX ,lockAlpha));
+            					HX_GC_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1419_new)
+HXLINE(1419)					 ::states::PlayState _hx_tmp = ::states::PlayState_obj::instance;
+HXDLIN(1419)					_hx_tmp->addShaderToCamera(camera, ::shaders::InvertColorsEffect_obj::__alloc( HX_CTX ,lockAlpha));
             				}
             				HX_END_LOCAL_FUNC2((void))
 
-HXLINE(1422)				 cpp::Reference<lua_State> l19 = this->lua;
-HXDLIN(1422)				::llua::Lua_helper_obj::callbacks->set(HX_("addInvertEffect",08,96,5f,9e), ::Dynamic(new _hx_Closure_136()));
-HXDLIN(1422)				linc::callbacks::add_callback_function(l19,HX_("addInvertEffect",08,96,5f,9e));
+HXLINE(1417)				 cpp::Reference<lua_State> l18 = this->lua;
+HXDLIN(1417)				::llua::Lua_helper_obj::callbacks->set(HX_("addInvertEffect",08,96,5f,9e), ::Dynamic(new _hx_Closure_135()));
+HXDLIN(1417)				linc::callbacks::add_callback_function(l18,HX_("addInvertEffect",08,96,5f,9e));
             			}
-HXLINE(1427)			{
-            				HX_BEGIN_LOCAL_FUNC_S0(::hx::LocalFunc,_hx_Closure_137) HXARGC(1)
+HXLINE(1422)			{
+            				HX_BEGIN_LOCAL_FUNC_S0(::hx::LocalFunc,_hx_Closure_136) HXARGC(1)
             				void _hx_run(::String camera){
-            					HX_GC_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1429_new)
-HXLINE(1429)					 ::states::PlayState _hx_tmp = ::states::PlayState_obj::instance;
-HXDLIN(1429)					_hx_tmp->addShaderToCamera(camera, ::shaders::GreyscaleEffect_obj::__alloc( HX_CTX ));
+            					HX_GC_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1424_new)
+HXLINE(1424)					 ::states::PlayState _hx_tmp = ::states::PlayState_obj::instance;
+HXDLIN(1424)					_hx_tmp->addShaderToCamera(camera, ::shaders::GreyscaleEffect_obj::__alloc( HX_CTX ));
             				}
             				HX_END_LOCAL_FUNC1((void))
 
-HXLINE(1427)				 cpp::Reference<lua_State> l20 = this->lua;
-HXDLIN(1427)				::llua::Lua_helper_obj::callbacks->set(HX_("addGrayscaleEffect",97,88,f5,be), ::Dynamic(new _hx_Closure_137()));
-HXDLIN(1427)				linc::callbacks::add_callback_function(l20,HX_("addGrayscaleEffect",97,88,f5,be));
+HXLINE(1422)				 cpp::Reference<lua_State> l19 = this->lua;
+HXDLIN(1422)				::llua::Lua_helper_obj::callbacks->set(HX_("addGrayscaleEffect",97,88,f5,be), ::Dynamic(new _hx_Closure_136()));
+HXDLIN(1422)				linc::callbacks::add_callback_function(l19,HX_("addGrayscaleEffect",97,88,f5,be));
             			}
-HXLINE(1432)			{
-            				HX_BEGIN_LOCAL_FUNC_S0(::hx::LocalFunc,_hx_Closure_138) HXARGC(3)
+HXLINE(1427)			{
+            				HX_BEGIN_LOCAL_FUNC_S0(::hx::LocalFunc,_hx_Closure_137) HXARGC(3)
             				void _hx_run(::String camera, ::Dynamic __o_intensity, ::Dynamic __o_blurSize){
             		Float intensity = __o_intensity.Default(((Float)0.35));
             		Float blurSize = __o_blurSize.Default(((Float)1.0));
-            					HX_GC_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1434_new)
-HXLINE(1434)					 ::states::PlayState _hx_tmp = ::states::PlayState_obj::instance;
-HXDLIN(1434)					_hx_tmp->addShaderToCamera(camera, ::shaders::BloomEffect2_obj::__alloc( HX_CTX ,(blurSize / ((Float)512.0)),intensity));
+            					HX_GC_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1429_new)
+HXLINE(1429)					 ::states::PlayState _hx_tmp = ::states::PlayState_obj::instance;
+HXDLIN(1429)					_hx_tmp->addShaderToCamera(camera, ::shaders::BloomEffect2_obj::__alloc( HX_CTX ,(blurSize / ((Float)512.0)),intensity));
             				}
             				HX_END_LOCAL_FUNC3((void))
 
-HXLINE(1432)				 cpp::Reference<lua_State> l21 = this->lua;
-HXDLIN(1432)				::llua::Lua_helper_obj::callbacks->set(HX_("addBloomEffect2",bf,c6,7a,3c), ::Dynamic(new _hx_Closure_138()));
-HXDLIN(1432)				linc::callbacks::add_callback_function(l21,HX_("addBloomEffect2",bf,c6,7a,3c));
+HXLINE(1427)				 cpp::Reference<lua_State> l20 = this->lua;
+HXDLIN(1427)				::llua::Lua_helper_obj::callbacks->set(HX_("addBloomEffect2",bf,c6,7a,3c), ::Dynamic(new _hx_Closure_137()));
+HXDLIN(1427)				linc::callbacks::add_callback_function(l20,HX_("addBloomEffect2",bf,c6,7a,3c));
             			}
-HXLINE(1437)			{
-            				HX_BEGIN_LOCAL_FUNC_S0(::hx::LocalFunc,_hx_Closure_139) HXARGC(1)
+HXLINE(1432)			{
+            				HX_BEGIN_LOCAL_FUNC_S0(::hx::LocalFunc,_hx_Closure_138) HXARGC(1)
             				void _hx_run(::String camera){
-            					HX_GC_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1438_new)
-HXLINE(1438)					::states::PlayState_obj::instance->clearShaderFromCamera(camera);
+            					HX_GC_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1433_new)
+HXLINE(1433)					::states::PlayState_obj::instance->clearShaderFromCamera(camera);
             				}
             				HX_END_LOCAL_FUNC1((void))
 
-HXLINE(1437)				 cpp::Reference<lua_State> l22 = this->lua;
-HXDLIN(1437)				::llua::Lua_helper_obj::callbacks->set(HX_("clearEffects",b5,96,ca,09), ::Dynamic(new _hx_Closure_139()));
-HXDLIN(1437)				linc::callbacks::add_callback_function(l22,HX_("clearEffects",b5,96,ca,09));
+HXLINE(1432)				 cpp::Reference<lua_State> l21 = this->lua;
+HXDLIN(1432)				::llua::Lua_helper_obj::callbacks->set(HX_("clearEffects",b5,96,ca,09), ::Dynamic(new _hx_Closure_138()));
+HXDLIN(1432)				linc::callbacks::add_callback_function(l21,HX_("clearEffects",b5,96,ca,09));
             			}
-HXLINE(1440)			{
-            				HX_BEGIN_LOCAL_FUNC_S0(::hx::LocalFunc,_hx_Closure_140) HXARGC(2)
+HXLINE(1435)			{
+            				HX_BEGIN_LOCAL_FUNC_S0(::hx::LocalFunc,_hx_Closure_139) HXARGC(2)
             				void _hx_run(::String camera, ::Dynamic effect){
-            					HX_GC_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1442_new)
-HXLINE(1442)					::states::PlayState_obj::instance->removeShaderFromCamera(camera,effect);
+            					HX_GC_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1437_new)
+HXLINE(1437)					::states::PlayState_obj::instance->removeShaderFromCamera(camera,effect);
             				}
             				HX_END_LOCAL_FUNC2((void))
 
-HXLINE(1440)				 cpp::Reference<lua_State> l23 = this->lua;
-HXDLIN(1440)				::llua::Lua_helper_obj::callbacks->set(HX_("removeEffect",f5,f5,d0,cf), ::Dynamic(new _hx_Closure_140()));
-HXDLIN(1440)				linc::callbacks::add_callback_function(l23,HX_("removeEffect",f5,f5,d0,cf));
+HXLINE(1435)				 cpp::Reference<lua_State> l22 = this->lua;
+HXDLIN(1435)				::llua::Lua_helper_obj::callbacks->set(HX_("removeEffect",f5,f5,d0,cf), ::Dynamic(new _hx_Closure_139()));
+HXDLIN(1435)				linc::callbacks::add_callback_function(l22,HX_("removeEffect",f5,f5,d0,cf));
             			}
             		}
-HXLINE(1446)		{
+HXLINE(1441)		{
+            			HX_BEGIN_LOCAL_FUNC_S1(::hx::LocalFunc,_hx_Closure_140, ::states::PlayState,game) HXARGC(1)
+            			bool _hx_run(::String tag){
+            				HX_GC_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1442_new)
+HXLINE(1442)				return game->modchartSprites->exists(tag);
+            			}
+            			HX_END_LOCAL_FUNC1(return)
+
+HXLINE(1441)			 cpp::Reference<lua_State> l100 = this->lua;
+HXDLIN(1441)			::llua::Lua_helper_obj::callbacks->set(HX_("luaSpriteExists",99,19,23,61), ::Dynamic(new _hx_Closure_140(game)));
+HXDLIN(1441)			linc::callbacks::add_callback_function(l100,HX_("luaSpriteExists",99,19,23,61));
+            		}
+HXLINE(1444)		{
             			HX_BEGIN_LOCAL_FUNC_S1(::hx::LocalFunc,_hx_Closure_141, ::states::PlayState,game) HXARGC(1)
             			bool _hx_run(::String tag){
-            				HX_GC_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1447_new)
-HXLINE(1447)				return game->modchartSprites->exists(tag);
+            				HX_GC_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1445_new)
+HXLINE(1445)				return game->modchartTexts->exists(tag);
             			}
             			HX_END_LOCAL_FUNC1(return)
 
-HXLINE(1446)			 cpp::Reference<lua_State> l100 = this->lua;
-HXDLIN(1446)			::llua::Lua_helper_obj::callbacks->set(HX_("luaSpriteExists",99,19,23,61), ::Dynamic(new _hx_Closure_141(game)));
-HXDLIN(1446)			linc::callbacks::add_callback_function(l100,HX_("luaSpriteExists",99,19,23,61));
+HXLINE(1444)			 cpp::Reference<lua_State> l101 = this->lua;
+HXDLIN(1444)			::llua::Lua_helper_obj::callbacks->set(HX_("luaTextExists",41,52,7a,3b), ::Dynamic(new _hx_Closure_141(game)));
+HXDLIN(1444)			linc::callbacks::add_callback_function(l101,HX_("luaTextExists",41,52,7a,3b));
             		}
-HXLINE(1449)		{
+HXLINE(1447)		{
             			HX_BEGIN_LOCAL_FUNC_S1(::hx::LocalFunc,_hx_Closure_142, ::states::PlayState,game) HXARGC(1)
             			bool _hx_run(::String tag){
-            				HX_GC_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1450_new)
-HXLINE(1450)				return game->modchartTexts->exists(tag);
+            				HX_GC_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1448_new)
+HXLINE(1448)				return game->modchartSounds->exists(tag);
             			}
             			HX_END_LOCAL_FUNC1(return)
 
-HXLINE(1449)			 cpp::Reference<lua_State> l101 = this->lua;
-HXDLIN(1449)			::llua::Lua_helper_obj::callbacks->set(HX_("luaTextExists",41,52,7a,3b), ::Dynamic(new _hx_Closure_142(game)));
-HXDLIN(1449)			linc::callbacks::add_callback_function(l101,HX_("luaTextExists",41,52,7a,3b));
+HXLINE(1447)			 cpp::Reference<lua_State> l102 = this->lua;
+HXDLIN(1447)			::llua::Lua_helper_obj::callbacks->set(HX_("luaSoundExists",33,cd,e0,42), ::Dynamic(new _hx_Closure_142(game)));
+HXDLIN(1447)			linc::callbacks::add_callback_function(l102,HX_("luaSoundExists",33,cd,e0,42));
             		}
-HXLINE(1452)		{
-            			HX_BEGIN_LOCAL_FUNC_S1(::hx::LocalFunc,_hx_Closure_143, ::states::PlayState,game) HXARGC(1)
-            			bool _hx_run(::String tag){
-            				HX_GC_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1453_new)
-HXLINE(1453)				return game->modchartSounds->exists(tag);
+HXLINE(1451)		{
+            			HX_BEGIN_LOCAL_FUNC_S1(::hx::LocalFunc,_hx_Closure_143, ::states::PlayState,game) HXARGC(2)
+            			void _hx_run(::String left,::String right){
+            				HX_GC_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1452_new)
+HXLINE(1452)				 ::objects::HealthBar game1 = game->healthBar;
+HXDLIN(1452)				 ::EReg hideChars =  ::EReg_obj::__alloc( HX_CTX ,HX_("[\t\n\r]",ac,57,71,6b),HX_("",00,00,00,00));
+HXDLIN(1452)				::String color = ::StringTools_obj::trim(hideChars->split(left)->join(HX_("",00,00,00,00)));
+HXDLIN(1452)				if (::StringTools_obj::startsWith(color,HX_("0x",48,2a,00,00))) {
+HXLINE( 119)					color = color.substring((color.length - 6),null());
+            				}
+HXLINE(1452)				 ::Dynamic colorNum = ::flixel::util::_FlxColor::FlxColor_Impl__obj::fromString(color);
+HXDLIN(1452)				if (::hx::IsNull( colorNum )) {
+HXLINE( 122)					colorNum = ::flixel::util::_FlxColor::FlxColor_Impl__obj::fromString((HX_("#",23,00,00,00) + color));
+            				}
+HXLINE(1452)				int _hx_tmp;
+HXDLIN(1452)				if (::hx::IsNotNull( colorNum )) {
+HXLINE(1452)					_hx_tmp = ( (int)(colorNum) );
+            				}
+            				else {
+HXLINE(1452)					_hx_tmp = -1;
+            				}
+HXDLIN(1452)				 ::EReg hideChars1 =  ::EReg_obj::__alloc( HX_CTX ,HX_("[\t\n\r]",ac,57,71,6b),HX_("",00,00,00,00));
+HXDLIN(1452)				::String color1 = ::StringTools_obj::trim(hideChars1->split(right)->join(HX_("",00,00,00,00)));
+HXDLIN(1452)				if (::StringTools_obj::startsWith(color1,HX_("0x",48,2a,00,00))) {
+HXLINE( 119)					color1 = color1.substring((color1.length - 6),null());
+            				}
+HXLINE(1452)				 ::Dynamic colorNum1 = ::flixel::util::_FlxColor::FlxColor_Impl__obj::fromString(color1);
+HXDLIN(1452)				if (::hx::IsNull( colorNum1 )) {
+HXLINE( 122)					colorNum1 = ::flixel::util::_FlxColor::FlxColor_Impl__obj::fromString((HX_("#",23,00,00,00) + color1));
+            				}
+HXLINE(1452)				int _hx_tmp1;
+HXDLIN(1452)				if (::hx::IsNotNull( colorNum1 )) {
+HXLINE(1452)					_hx_tmp1 = ( (int)(colorNum1) );
+            				}
+            				else {
+HXLINE(1452)					_hx_tmp1 = -1;
+            				}
+HXDLIN(1452)				game1->setColors(_hx_tmp,_hx_tmp1);
             			}
-            			HX_END_LOCAL_FUNC1(return)
+            			HX_END_LOCAL_FUNC2((void))
 
-HXLINE(1452)			 cpp::Reference<lua_State> l102 = this->lua;
-HXDLIN(1452)			::llua::Lua_helper_obj::callbacks->set(HX_("luaSoundExists",33,cd,e0,42), ::Dynamic(new _hx_Closure_143(game)));
-HXDLIN(1452)			linc::callbacks::add_callback_function(l102,HX_("luaSoundExists",33,cd,e0,42));
+HXLINE(1451)			 cpp::Reference<lua_State> l103 = this->lua;
+HXDLIN(1451)			::llua::Lua_helper_obj::callbacks->set(HX_("setHealthBarColors",25,22,cf,1f), ::Dynamic(new _hx_Closure_143(game)));
+HXDLIN(1451)			linc::callbacks::add_callback_function(l103,HX_("setHealthBarColors",25,22,cf,1f));
             		}
-HXLINE(1456)		{
+HXLINE(1454)		{
             			HX_BEGIN_LOCAL_FUNC_S1(::hx::LocalFunc,_hx_Closure_144, ::states::PlayState,game) HXARGC(2)
             			void _hx_run(::String left,::String right){
-            				HX_GC_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1457_new)
-HXLINE(1457)				 ::objects::HealthBar game1 = game->healthBar;
-HXDLIN(1457)				 ::EReg hideChars =  ::EReg_obj::__alloc( HX_CTX ,HX_("[\t\n\r]",ac,57,71,6b),HX_("",00,00,00,00));
-HXDLIN(1457)				::String color = ::StringTools_obj::trim(hideChars->split(left)->join(HX_("",00,00,00,00)));
-HXDLIN(1457)				if (::StringTools_obj::startsWith(color,HX_("0x",48,2a,00,00))) {
-HXLINE( 150)					color = color.substring((color.length - 6),null());
+            				HX_GC_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1455_new)
+HXLINE(1455)				 ::objects::HealthBar game1 = game->timeBar;
+HXDLIN(1455)				 ::EReg hideChars =  ::EReg_obj::__alloc( HX_CTX ,HX_("[\t\n\r]",ac,57,71,6b),HX_("",00,00,00,00));
+HXDLIN(1455)				::String color = ::StringTools_obj::trim(hideChars->split(left)->join(HX_("",00,00,00,00)));
+HXDLIN(1455)				if (::StringTools_obj::startsWith(color,HX_("0x",48,2a,00,00))) {
+HXLINE( 119)					color = color.substring((color.length - 6),null());
             				}
-HXLINE(1457)				 ::Dynamic colorNum = ::flixel::util::_FlxColor::FlxColor_Impl__obj::fromString(color);
-HXDLIN(1457)				if (::hx::IsNull( colorNum )) {
-HXLINE( 153)					colorNum = ::flixel::util::_FlxColor::FlxColor_Impl__obj::fromString((HX_("#",23,00,00,00) + color));
+HXLINE(1455)				 ::Dynamic colorNum = ::flixel::util::_FlxColor::FlxColor_Impl__obj::fromString(color);
+HXDLIN(1455)				if (::hx::IsNull( colorNum )) {
+HXLINE( 122)					colorNum = ::flixel::util::_FlxColor::FlxColor_Impl__obj::fromString((HX_("#",23,00,00,00) + color));
             				}
-HXLINE(1457)				int _hx_tmp;
-HXDLIN(1457)				if (::hx::IsNotNull( colorNum )) {
-HXLINE(1457)					_hx_tmp = ( (int)(colorNum) );
-            				}
-            				else {
-HXLINE(1457)					_hx_tmp = -1;
-            				}
-HXDLIN(1457)				 ::EReg hideChars1 =  ::EReg_obj::__alloc( HX_CTX ,HX_("[\t\n\r]",ac,57,71,6b),HX_("",00,00,00,00));
-HXDLIN(1457)				::String color1 = ::StringTools_obj::trim(hideChars1->split(right)->join(HX_("",00,00,00,00)));
-HXDLIN(1457)				if (::StringTools_obj::startsWith(color1,HX_("0x",48,2a,00,00))) {
-HXLINE( 150)					color1 = color1.substring((color1.length - 6),null());
-            				}
-HXLINE(1457)				 ::Dynamic colorNum1 = ::flixel::util::_FlxColor::FlxColor_Impl__obj::fromString(color1);
-HXDLIN(1457)				if (::hx::IsNull( colorNum1 )) {
-HXLINE( 153)					colorNum1 = ::flixel::util::_FlxColor::FlxColor_Impl__obj::fromString((HX_("#",23,00,00,00) + color1));
-            				}
-HXLINE(1457)				int _hx_tmp1;
-HXDLIN(1457)				if (::hx::IsNotNull( colorNum1 )) {
-HXLINE(1457)					_hx_tmp1 = ( (int)(colorNum1) );
+HXLINE(1455)				int _hx_tmp;
+HXDLIN(1455)				if (::hx::IsNotNull( colorNum )) {
+HXLINE(1455)					_hx_tmp = ( (int)(colorNum) );
             				}
             				else {
-HXLINE(1457)					_hx_tmp1 = -1;
+HXLINE(1455)					_hx_tmp = -1;
             				}
-HXDLIN(1457)				game1->setColors(_hx_tmp,_hx_tmp1);
+HXDLIN(1455)				 ::EReg hideChars1 =  ::EReg_obj::__alloc( HX_CTX ,HX_("[\t\n\r]",ac,57,71,6b),HX_("",00,00,00,00));
+HXDLIN(1455)				::String color1 = ::StringTools_obj::trim(hideChars1->split(right)->join(HX_("",00,00,00,00)));
+HXDLIN(1455)				if (::StringTools_obj::startsWith(color1,HX_("0x",48,2a,00,00))) {
+HXLINE( 119)					color1 = color1.substring((color1.length - 6),null());
+            				}
+HXLINE(1455)				 ::Dynamic colorNum1 = ::flixel::util::_FlxColor::FlxColor_Impl__obj::fromString(color1);
+HXDLIN(1455)				if (::hx::IsNull( colorNum1 )) {
+HXLINE( 122)					colorNum1 = ::flixel::util::_FlxColor::FlxColor_Impl__obj::fromString((HX_("#",23,00,00,00) + color1));
+            				}
+HXLINE(1455)				int _hx_tmp1;
+HXDLIN(1455)				if (::hx::IsNotNull( colorNum1 )) {
+HXLINE(1455)					_hx_tmp1 = ( (int)(colorNum1) );
+            				}
+            				else {
+HXLINE(1455)					_hx_tmp1 = -1;
+            				}
+HXDLIN(1455)				game1->setColors(_hx_tmp,_hx_tmp1);
             			}
             			HX_END_LOCAL_FUNC2((void))
 
-HXLINE(1456)			 cpp::Reference<lua_State> l103 = this->lua;
-HXDLIN(1456)			::llua::Lua_helper_obj::callbacks->set(HX_("setHealthBarColors",25,22,cf,1f), ::Dynamic(new _hx_Closure_144(game)));
-HXDLIN(1456)			linc::callbacks::add_callback_function(l103,HX_("setHealthBarColors",25,22,cf,1f));
+HXLINE(1454)			 cpp::Reference<lua_State> l104 = this->lua;
+HXDLIN(1454)			::llua::Lua_helper_obj::callbacks->set(HX_("setTimeBarColors",14,cd,38,9d), ::Dynamic(new _hx_Closure_144(game)));
+HXDLIN(1454)			linc::callbacks::add_callback_function(l104,HX_("setTimeBarColors",14,cd,38,9d));
             		}
-HXLINE(1459)		{
+HXLINE(1458)		{
             			HX_BEGIN_LOCAL_FUNC_S1(::hx::LocalFunc,_hx_Closure_145, ::states::PlayState,game) HXARGC(2)
-            			void _hx_run(::String left,::String right){
-            				HX_GC_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1460_new)
-HXLINE(1460)				 ::objects::HealthBar game1 = game->timeBar;
-HXDLIN(1460)				 ::EReg hideChars =  ::EReg_obj::__alloc( HX_CTX ,HX_("[\t\n\r]",ac,57,71,6b),HX_("",00,00,00,00));
-HXDLIN(1460)				::String color = ::StringTools_obj::trim(hideChars->split(left)->join(HX_("",00,00,00,00)));
-HXDLIN(1460)				if (::StringTools_obj::startsWith(color,HX_("0x",48,2a,00,00))) {
-HXLINE( 150)					color = color.substring((color.length - 6),null());
-            				}
-HXLINE(1460)				 ::Dynamic colorNum = ::flixel::util::_FlxColor::FlxColor_Impl__obj::fromString(color);
-HXDLIN(1460)				if (::hx::IsNull( colorNum )) {
-HXLINE( 153)					colorNum = ::flixel::util::_FlxColor::FlxColor_Impl__obj::fromString((HX_("#",23,00,00,00) + color));
-            				}
-HXLINE(1460)				int _hx_tmp;
-HXDLIN(1460)				if (::hx::IsNotNull( colorNum )) {
-HXLINE(1460)					_hx_tmp = ( (int)(colorNum) );
-            				}
-            				else {
-HXLINE(1460)					_hx_tmp = -1;
-            				}
-HXDLIN(1460)				 ::EReg hideChars1 =  ::EReg_obj::__alloc( HX_CTX ,HX_("[\t\n\r]",ac,57,71,6b),HX_("",00,00,00,00));
-HXDLIN(1460)				::String color1 = ::StringTools_obj::trim(hideChars1->split(right)->join(HX_("",00,00,00,00)));
-HXDLIN(1460)				if (::StringTools_obj::startsWith(color1,HX_("0x",48,2a,00,00))) {
-HXLINE( 150)					color1 = color1.substring((color1.length - 6),null());
-            				}
-HXLINE(1460)				 ::Dynamic colorNum1 = ::flixel::util::_FlxColor::FlxColor_Impl__obj::fromString(color1);
-HXDLIN(1460)				if (::hx::IsNull( colorNum1 )) {
-HXLINE( 153)					colorNum1 = ::flixel::util::_FlxColor::FlxColor_Impl__obj::fromString((HX_("#",23,00,00,00) + color1));
-            				}
-HXLINE(1460)				int _hx_tmp1;
-HXDLIN(1460)				if (::hx::IsNotNull( colorNum1 )) {
-HXLINE(1460)					_hx_tmp1 = ( (int)(colorNum1) );
-            				}
-            				else {
-HXLINE(1460)					_hx_tmp1 = -1;
-            				}
-HXDLIN(1460)				game1->setColors(_hx_tmp,_hx_tmp1);
-            			}
-            			HX_END_LOCAL_FUNC2((void))
-
-HXLINE(1459)			 cpp::Reference<lua_State> l104 = this->lua;
-HXDLIN(1459)			::llua::Lua_helper_obj::callbacks->set(HX_("setTimeBarColors",14,cd,38,9d), ::Dynamic(new _hx_Closure_145(game)));
-HXDLIN(1459)			linc::callbacks::add_callback_function(l104,HX_("setTimeBarColors",14,cd,38,9d));
-            		}
-HXLINE(1463)		{
-            			HX_BEGIN_LOCAL_FUNC_S1(::hx::LocalFunc,_hx_Closure_146, ::states::PlayState,game) HXARGC(2)
             			bool _hx_run(::String obj,::String __o_camera){
             		::String camera = __o_camera;
             		if (::hx::IsNull(__o_camera)) camera = HX_("",00,00,00,00);
-            				HX_GC_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1463_new)
-HXLINE(1464)				 ::flixel::FlxSprite real = game->getLuaObject(obj,null());
-HXLINE(1465)				if (::hx::IsNotNull( real )) {
-HXLINE(1466)					real->set_cameras(::Array_obj< ::Dynamic>::__new(1)->init(0,::psychlua::LuaUtils_obj::cameraFromString(camera)));
-HXLINE(1467)					return true;
+            				HX_GC_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1458_new)
+HXLINE(1459)				 ::flixel::FlxSprite real = game->getLuaObject(obj,null());
+HXLINE(1460)				if (::hx::IsNotNull( real )) {
+HXLINE(1461)					real->set_cameras(::Array_obj< ::Dynamic>::__new(1)->init(0,::psychlua::LuaUtils_obj::cameraFromString(camera)));
+HXLINE(1462)					return true;
             				}
-HXLINE(1470)				::Array< ::String > split = obj.split(HX_(".",2e,00,00,00));
-HXLINE(1471)				 ::flixel::FlxSprite object = ( ( ::flixel::FlxSprite)(::psychlua::LuaUtils_obj::getObjectDirectly(split->__get(0),null(),null())) );
-HXLINE(1472)				if ((split->length > 1)) {
-HXLINE(1473)					 ::Dynamic this1 = ::psychlua::LuaUtils_obj::getPropertyLoop(split,null(),null(),null());
-HXDLIN(1473)					object = ( ( ::flixel::FlxSprite)(::psychlua::LuaUtils_obj::getVarInArray(this1,split->__get((split->length - 1)),null())) );
+HXLINE(1465)				::Array< ::String > split = obj.split(HX_(".",2e,00,00,00));
+HXLINE(1466)				 ::flixel::FlxSprite object = ( ( ::flixel::FlxSprite)(::psychlua::LuaUtils_obj::getObjectDirectly(split->__get(0),null(),null())) );
+HXLINE(1467)				if ((split->length > 1)) {
+HXLINE(1468)					 ::Dynamic this1 = ::psychlua::LuaUtils_obj::getPropertyLoop(split,null(),null(),null());
+HXDLIN(1468)					object = ( ( ::flixel::FlxSprite)(::psychlua::LuaUtils_obj::getVarInArray(this1,split->__get((split->length - 1)),null())) );
             				}
-HXLINE(1476)				if (::hx::IsNotNull( object )) {
-HXLINE(1477)					object->set_cameras(::Array_obj< ::Dynamic>::__new(1)->init(0,::psychlua::LuaUtils_obj::cameraFromString(camera)));
-HXLINE(1478)					return true;
+HXLINE(1471)				if (::hx::IsNotNull( object )) {
+HXLINE(1472)					object->set_cameras(::Array_obj< ::Dynamic>::__new(1)->init(0,::psychlua::LuaUtils_obj::cameraFromString(camera)));
+HXLINE(1473)					return true;
             				}
-HXLINE(1480)				::psychlua::FunkinLua_obj::luaTrace(((HX_("setObjectCamera: Object ",35,98,22,91) + obj) + HX_(" doesn't exist!",c8,8e,40,5e)),false,false,-65536);
-HXLINE(1481)				return false;
+HXLINE(1475)				::psychlua::FunkinLua_obj::luaTrace(((HX_("setObjectCamera: Object ",35,98,22,91) + obj) + HX_(" doesn't exist!",c8,8e,40,5e)),false,false,-65536);
+HXLINE(1476)				return false;
             			}
             			HX_END_LOCAL_FUNC2(return)
 
-HXLINE(1463)			 cpp::Reference<lua_State> l105 = this->lua;
-HXDLIN(1463)			::llua::Lua_helper_obj::callbacks->set(HX_("setObjectCamera",86,25,4c,b0), ::Dynamic(new _hx_Closure_146(game)));
-HXDLIN(1463)			linc::callbacks::add_callback_function(l105,HX_("setObjectCamera",86,25,4c,b0));
+HXLINE(1458)			 cpp::Reference<lua_State> l105 = this->lua;
+HXDLIN(1458)			::llua::Lua_helper_obj::callbacks->set(HX_("setObjectCamera",86,25,4c,b0), ::Dynamic(new _hx_Closure_145(game)));
+HXDLIN(1458)			linc::callbacks::add_callback_function(l105,HX_("setObjectCamera",86,25,4c,b0));
             		}
-HXLINE(1483)		{
-            			HX_BEGIN_LOCAL_FUNC_S1(::hx::LocalFunc,_hx_Closure_147, ::states::PlayState,game) HXARGC(2)
+HXLINE(1478)		{
+            			HX_BEGIN_LOCAL_FUNC_S1(::hx::LocalFunc,_hx_Closure_146, ::states::PlayState,game) HXARGC(2)
             			bool _hx_run(::String obj,::String __o_blend){
             		::String blend = __o_blend;
             		if (::hx::IsNull(__o_blend)) blend = HX_("",00,00,00,00);
-            				HX_GC_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1483_new)
-HXLINE(1484)				 ::flixel::FlxSprite real = game->getLuaObject(obj,null());
-HXLINE(1485)				if (::hx::IsNotNull( real )) {
-HXLINE(1486)					real->set_blend(::psychlua::LuaUtils_obj::blendModeFromString(blend));
-HXLINE(1487)					return true;
+            				HX_GC_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1478_new)
+HXLINE(1479)				 ::flixel::FlxSprite real = game->getLuaObject(obj,null());
+HXLINE(1480)				if (::hx::IsNotNull( real )) {
+HXLINE(1481)					real->set_blend(::psychlua::LuaUtils_obj::blendModeFromString(blend));
+HXLINE(1482)					return true;
             				}
-HXLINE(1490)				::Array< ::String > split = obj.split(HX_(".",2e,00,00,00));
-HXLINE(1491)				 ::flixel::FlxSprite spr = ( ( ::flixel::FlxSprite)(::psychlua::LuaUtils_obj::getObjectDirectly(split->__get(0),null(),null())) );
-HXLINE(1492)				if ((split->length > 1)) {
-HXLINE(1493)					 ::Dynamic this1 = ::psychlua::LuaUtils_obj::getPropertyLoop(split,null(),null(),null());
-HXDLIN(1493)					spr = ( ( ::flixel::FlxSprite)(::psychlua::LuaUtils_obj::getVarInArray(this1,split->__get((split->length - 1)),null())) );
+HXLINE(1485)				::Array< ::String > split = obj.split(HX_(".",2e,00,00,00));
+HXLINE(1486)				 ::flixel::FlxSprite spr = ( ( ::flixel::FlxSprite)(::psychlua::LuaUtils_obj::getObjectDirectly(split->__get(0),null(),null())) );
+HXLINE(1487)				if ((split->length > 1)) {
+HXLINE(1488)					 ::Dynamic this1 = ::psychlua::LuaUtils_obj::getPropertyLoop(split,null(),null(),null());
+HXDLIN(1488)					spr = ( ( ::flixel::FlxSprite)(::psychlua::LuaUtils_obj::getVarInArray(this1,split->__get((split->length - 1)),null())) );
             				}
-HXLINE(1496)				if (::hx::IsNotNull( spr )) {
-HXLINE(1497)					spr->set_blend(::psychlua::LuaUtils_obj::blendModeFromString(blend));
-HXLINE(1498)					return true;
+HXLINE(1491)				if (::hx::IsNotNull( spr )) {
+HXLINE(1492)					spr->set_blend(::psychlua::LuaUtils_obj::blendModeFromString(blend));
+HXLINE(1493)					return true;
             				}
-HXLINE(1500)				::psychlua::FunkinLua_obj::luaTrace(((HX_("setBlendMode: Object ",e9,df,de,93) + obj) + HX_(" doesn't exist!",c8,8e,40,5e)),false,false,-65536);
-HXLINE(1501)				return false;
+HXLINE(1495)				::psychlua::FunkinLua_obj::luaTrace(((HX_("setBlendMode: Object ",e9,df,de,93) + obj) + HX_(" doesn't exist!",c8,8e,40,5e)),false,false,-65536);
+HXLINE(1496)				return false;
             			}
             			HX_END_LOCAL_FUNC2(return)
 
-HXLINE(1483)			 cpp::Reference<lua_State> l106 = this->lua;
-HXDLIN(1483)			::llua::Lua_helper_obj::callbacks->set(HX_("setBlendMode",52,a4,87,30), ::Dynamic(new _hx_Closure_147(game)));
-HXDLIN(1483)			linc::callbacks::add_callback_function(l106,HX_("setBlendMode",52,a4,87,30));
+HXLINE(1478)			 cpp::Reference<lua_State> l106 = this->lua;
+HXDLIN(1478)			::llua::Lua_helper_obj::callbacks->set(HX_("setBlendMode",52,a4,87,30), ::Dynamic(new _hx_Closure_146(game)));
+HXDLIN(1478)			linc::callbacks::add_callback_function(l106,HX_("setBlendMode",52,a4,87,30));
             		}
-HXLINE(1503)		{
-            			HX_BEGIN_LOCAL_FUNC_S1(::hx::LocalFunc,_hx_Closure_148, ::states::PlayState,game) HXARGC(2)
+HXLINE(1498)		{
+            			HX_BEGIN_LOCAL_FUNC_S1(::hx::LocalFunc,_hx_Closure_147, ::states::PlayState,game) HXARGC(2)
             			void _hx_run(::String obj,::String __o_pos){
             		::String pos = __o_pos;
             		if (::hx::IsNull(__o_pos)) pos = HX_("xy",01,69,00,00);
-            				HX_GC_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1503_new)
-HXLINE(1504)				 ::flixel::FlxSprite spr = game->getLuaObject(obj,null());
-HXLINE(1506)				if (::hx::IsNull( spr )) {
-HXLINE(1507)					::Array< ::String > split = obj.split(HX_(".",2e,00,00,00));
-HXLINE(1508)					spr = ( ( ::flixel::FlxSprite)(::psychlua::LuaUtils_obj::getObjectDirectly(split->__get(0),null(),null())) );
-HXLINE(1509)					if ((split->length > 1)) {
-HXLINE(1510)						 ::Dynamic this1 = ::psychlua::LuaUtils_obj::getPropertyLoop(split,null(),null(),null());
-HXDLIN(1510)						spr = ( ( ::flixel::FlxSprite)(::psychlua::LuaUtils_obj::getVarInArray(this1,split->__get((split->length - 1)),null())) );
+            				HX_GC_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1498_new)
+HXLINE(1499)				 ::flixel::FlxSprite spr = game->getLuaObject(obj,null());
+HXLINE(1501)				if (::hx::IsNull( spr )) {
+HXLINE(1502)					::Array< ::String > split = obj.split(HX_(".",2e,00,00,00));
+HXLINE(1503)					spr = ( ( ::flixel::FlxSprite)(::psychlua::LuaUtils_obj::getObjectDirectly(split->__get(0),null(),null())) );
+HXLINE(1504)					if ((split->length > 1)) {
+HXLINE(1505)						 ::Dynamic this1 = ::psychlua::LuaUtils_obj::getPropertyLoop(split,null(),null(),null());
+HXDLIN(1505)						spr = ( ( ::flixel::FlxSprite)(::psychlua::LuaUtils_obj::getVarInArray(this1,split->__get((split->length - 1)),null())) );
             					}
             				}
-HXLINE(1514)				if (::hx::IsNotNull( spr )) {
-HXLINE(1516)					::String _hx_switch_12 = ::StringTools_obj::trim(pos).toLowerCase();
+HXLINE(1509)				if (::hx::IsNotNull( spr )) {
+HXLINE(1511)					::String _hx_switch_12 = ::StringTools_obj::trim(pos).toLowerCase();
             					if (  (_hx_switch_12==HX_("x",78,00,00,00)) ){
-HXLINE(1519)						{
-HXLINE(1519)							int axes = 1;
-HXDLIN(1519)							bool _hx_tmp;
-HXDLIN(1519)							if ((axes != 1)) {
-HXLINE(1519)								_hx_tmp = (axes == 17);
+HXLINE(1514)						{
+HXLINE(1514)							int axes = 1;
+HXDLIN(1514)							bool _hx_tmp;
+HXDLIN(1514)							if ((axes != 1)) {
+HXLINE(1514)								_hx_tmp = (axes == 17);
             							}
             							else {
-HXLINE(1519)								_hx_tmp = true;
+HXLINE(1514)								_hx_tmp = true;
             							}
-HXDLIN(1519)							if (_hx_tmp) {
-HXLINE(1519)								int _hx_tmp = ::flixel::FlxG_obj::width;
-HXDLIN(1519)								spr->set_x(((( (Float)(_hx_tmp) ) - spr->get_width()) / ( (Float)(2) )));
+HXDLIN(1514)							if (_hx_tmp) {
+HXLINE(1514)								int _hx_tmp = ::flixel::FlxG_obj::width;
+HXDLIN(1514)								spr->set_x(((( (Float)(_hx_tmp) ) - spr->get_width()) / ( (Float)(2) )));
             							}
-HXDLIN(1519)							bool _hx_tmp1;
-HXDLIN(1519)							if ((axes != 16)) {
-HXLINE(1519)								_hx_tmp1 = (axes == 17);
+HXDLIN(1514)							bool _hx_tmp1;
+HXDLIN(1514)							if ((axes != 16)) {
+HXLINE(1514)								_hx_tmp1 = (axes == 17);
             							}
             							else {
-HXLINE(1519)								_hx_tmp1 = true;
+HXLINE(1514)								_hx_tmp1 = true;
             							}
-HXDLIN(1519)							if (_hx_tmp1) {
-HXLINE(1519)								int _hx_tmp = ::flixel::FlxG_obj::height;
-HXDLIN(1519)								spr->set_y(((( (Float)(_hx_tmp) ) - spr->get_height()) / ( (Float)(2) )));
+HXDLIN(1514)							if (_hx_tmp1) {
+HXLINE(1514)								int _hx_tmp = ::flixel::FlxG_obj::height;
+HXDLIN(1514)								spr->set_y(((( (Float)(_hx_tmp) ) - spr->get_height()) / ( (Float)(2) )));
             							}
             						}
-HXLINE(1520)						return;
-HXLINE(1518)						goto _hx_goto_27;
+HXLINE(1515)						return;
+HXLINE(1513)						goto _hx_goto_27;
             					}
             					if (  (_hx_switch_12==HX_("y",79,00,00,00)) ){
-HXLINE(1522)						{
-HXLINE(1522)							int axes = 16;
-HXDLIN(1522)							bool _hx_tmp;
-HXDLIN(1522)							if ((axes != 1)) {
-HXLINE(1522)								_hx_tmp = (axes == 17);
+HXLINE(1517)						{
+HXLINE(1517)							int axes = 16;
+HXDLIN(1517)							bool _hx_tmp;
+HXDLIN(1517)							if ((axes != 1)) {
+HXLINE(1517)								_hx_tmp = (axes == 17);
             							}
             							else {
-HXLINE(1522)								_hx_tmp = true;
+HXLINE(1517)								_hx_tmp = true;
             							}
-HXDLIN(1522)							if (_hx_tmp) {
-HXLINE(1522)								int _hx_tmp = ::flixel::FlxG_obj::width;
-HXDLIN(1522)								spr->set_x(((( (Float)(_hx_tmp) ) - spr->get_width()) / ( (Float)(2) )));
+HXDLIN(1517)							if (_hx_tmp) {
+HXLINE(1517)								int _hx_tmp = ::flixel::FlxG_obj::width;
+HXDLIN(1517)								spr->set_x(((( (Float)(_hx_tmp) ) - spr->get_width()) / ( (Float)(2) )));
             							}
-HXDLIN(1522)							bool _hx_tmp1;
-HXDLIN(1522)							if ((axes != 16)) {
-HXLINE(1522)								_hx_tmp1 = (axes == 17);
+HXDLIN(1517)							bool _hx_tmp1;
+HXDLIN(1517)							if ((axes != 16)) {
+HXLINE(1517)								_hx_tmp1 = (axes == 17);
             							}
             							else {
-HXLINE(1522)								_hx_tmp1 = true;
+HXLINE(1517)								_hx_tmp1 = true;
             							}
-HXDLIN(1522)							if (_hx_tmp1) {
-HXLINE(1522)								int _hx_tmp = ::flixel::FlxG_obj::height;
-HXDLIN(1522)								spr->set_y(((( (Float)(_hx_tmp) ) - spr->get_height()) / ( (Float)(2) )));
+HXDLIN(1517)							if (_hx_tmp1) {
+HXLINE(1517)								int _hx_tmp = ::flixel::FlxG_obj::height;
+HXDLIN(1517)								spr->set_y(((( (Float)(_hx_tmp) ) - spr->get_height()) / ( (Float)(2) )));
             							}
             						}
-HXLINE(1523)						return;
-HXLINE(1521)						goto _hx_goto_27;
+HXLINE(1518)						return;
+HXLINE(1516)						goto _hx_goto_27;
             					}
             					/* default */{
-HXLINE(1525)						{
-HXLINE(1525)							int axes = 17;
-HXDLIN(1525)							bool _hx_tmp;
-HXDLIN(1525)							if ((axes != 1)) {
-HXLINE(1525)								_hx_tmp = (axes == 17);
+HXLINE(1520)						{
+HXLINE(1520)							int axes = 17;
+HXDLIN(1520)							bool _hx_tmp;
+HXDLIN(1520)							if ((axes != 1)) {
+HXLINE(1520)								_hx_tmp = (axes == 17);
             							}
             							else {
-HXLINE(1525)								_hx_tmp = true;
+HXLINE(1520)								_hx_tmp = true;
             							}
-HXDLIN(1525)							if (_hx_tmp) {
-HXLINE(1525)								int _hx_tmp = ::flixel::FlxG_obj::width;
-HXDLIN(1525)								spr->set_x(((( (Float)(_hx_tmp) ) - spr->get_width()) / ( (Float)(2) )));
+HXDLIN(1520)							if (_hx_tmp) {
+HXLINE(1520)								int _hx_tmp = ::flixel::FlxG_obj::width;
+HXDLIN(1520)								spr->set_x(((( (Float)(_hx_tmp) ) - spr->get_width()) / ( (Float)(2) )));
             							}
-HXDLIN(1525)							bool _hx_tmp1;
-HXDLIN(1525)							if ((axes != 16)) {
-HXLINE(1525)								_hx_tmp1 = (axes == 17);
+HXDLIN(1520)							bool _hx_tmp1;
+HXDLIN(1520)							if ((axes != 16)) {
+HXLINE(1520)								_hx_tmp1 = (axes == 17);
             							}
             							else {
-HXLINE(1525)								_hx_tmp1 = true;
+HXLINE(1520)								_hx_tmp1 = true;
             							}
-HXDLIN(1525)							if (_hx_tmp1) {
-HXLINE(1525)								int _hx_tmp = ::flixel::FlxG_obj::height;
-HXDLIN(1525)								spr->set_y(((( (Float)(_hx_tmp) ) - spr->get_height()) / ( (Float)(2) )));
+HXDLIN(1520)							if (_hx_tmp1) {
+HXLINE(1520)								int _hx_tmp = ::flixel::FlxG_obj::height;
+HXDLIN(1520)								spr->set_y(((( (Float)(_hx_tmp) ) - spr->get_height()) / ( (Float)(2) )));
             							}
             						}
-HXLINE(1526)						return;
+HXLINE(1521)						return;
             					}
             					_hx_goto_27:;
             				}
-HXLINE(1529)				::psychlua::FunkinLua_obj::luaTrace(((HX_("screenCenter: Object ",fa,1b,49,f4) + obj) + HX_(" doesn't exist!",c8,8e,40,5e)),false,false,-65536);
+HXLINE(1524)				::psychlua::FunkinLua_obj::luaTrace(((HX_("screenCenter: Object ",fa,1b,49,f4) + obj) + HX_(" doesn't exist!",c8,8e,40,5e)),false,false,-65536);
             			}
             			HX_END_LOCAL_FUNC2((void))
 
-HXLINE(1503)			 cpp::Reference<lua_State> l107 = this->lua;
-HXDLIN(1503)			::llua::Lua_helper_obj::callbacks->set(HX_("screenCenter",61,2e,f9,e2), ::Dynamic(new _hx_Closure_148(game)));
-HXDLIN(1503)			linc::callbacks::add_callback_function(l107,HX_("screenCenter",61,2e,f9,e2));
+HXLINE(1498)			 cpp::Reference<lua_State> l107 = this->lua;
+HXDLIN(1498)			::llua::Lua_helper_obj::callbacks->set(HX_("screenCenter",61,2e,f9,e2), ::Dynamic(new _hx_Closure_147(game)));
+HXDLIN(1498)			linc::callbacks::add_callback_function(l107,HX_("screenCenter",61,2e,f9,e2));
             		}
-HXLINE(1531)		{
-            			HX_BEGIN_LOCAL_FUNC_S1(::hx::LocalFunc,_hx_Closure_149, ::states::PlayState,game) HXARGC(2)
+HXLINE(1526)		{
+            			HX_BEGIN_LOCAL_FUNC_S1(::hx::LocalFunc,_hx_Closure_148, ::states::PlayState,game) HXARGC(2)
             			bool _hx_run(::String obj1,::String obj2){
-            				HX_GC_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1531_new)
-HXLINE(1532)				::Array< ::String > namesArray = ::Array_obj< ::String >::__new(2)->init(0,obj1)->init(1,obj2);
-HXLINE(1533)				::Array< ::Dynamic> objectsArray = ::Array_obj< ::Dynamic>::__new(0);
-HXLINE(1534)				{
-HXLINE(1534)					int _g = 0;
-HXDLIN(1534)					int _g1 = namesArray->length;
-HXDLIN(1534)					while((_g < _g1)){
-HXLINE(1534)						_g = (_g + 1);
-HXDLIN(1534)						int i = (_g - 1);
-HXLINE(1536)						 ::flixel::FlxSprite real = game->getLuaObject(namesArray->__get(i),null());
-HXLINE(1537)						if (::hx::IsNotNull( real )) {
-HXLINE(1538)							objectsArray->push(real);
+            				HX_GC_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1526_new)
+HXLINE(1527)				::Array< ::String > namesArray = ::Array_obj< ::String >::__new(2)->init(0,obj1)->init(1,obj2);
+HXLINE(1528)				::Array< ::Dynamic> objectsArray = ::Array_obj< ::Dynamic>::__new(0);
+HXLINE(1529)				{
+HXLINE(1529)					int _g = 0;
+HXDLIN(1529)					int _g1 = namesArray->length;
+HXDLIN(1529)					while((_g < _g1)){
+HXLINE(1529)						_g = (_g + 1);
+HXDLIN(1529)						int i = (_g - 1);
+HXLINE(1531)						 ::flixel::FlxSprite real = game->getLuaObject(namesArray->__get(i),null());
+HXLINE(1532)						if (::hx::IsNotNull( real )) {
+HXLINE(1533)							objectsArray->push(real);
             						}
             						else {
-HXLINE(1540)							 ::flixel::FlxState _hx_tmp;
-HXDLIN(1540)							if (::states::PlayState_obj::instance->isDead) {
-HXLINE(1540)								_hx_tmp = ::substates::GameOverSubstate_obj::instance;
+HXLINE(1535)							 ::flixel::FlxState _hx_tmp;
+HXDLIN(1535)							if (::states::PlayState_obj::instance->isDead) {
+HXLINE(1535)								_hx_tmp = ::substates::GameOverSubstate_obj::instance;
             							}
             							else {
-HXLINE(1540)								_hx_tmp = ::states::PlayState_obj::instance;
+HXLINE(1535)								_hx_tmp = ::states::PlayState_obj::instance;
             							}
-HXDLIN(1540)							objectsArray->push(::Reflect_obj::getProperty(_hx_tmp,namesArray->__get(i)));
+HXDLIN(1535)							objectsArray->push(::Reflect_obj::getProperty(_hx_tmp,namesArray->__get(i)));
             						}
             					}
             				}
-HXLINE(1544)				bool _hx_tmp;
-HXDLIN(1544)				if (!(objectsArray->contains(null()))) {
-HXLINE(1544)					_hx_tmp = ::flixel::FlxG_obj::overlap(objectsArray->__get(0).StaticCast<  ::flixel::FlxSprite >(),objectsArray->__get(1).StaticCast<  ::flixel::FlxSprite >(),null(),null());
+HXLINE(1539)				bool _hx_tmp;
+HXDLIN(1539)				if (!(objectsArray->contains(null()))) {
+HXLINE(1539)					_hx_tmp = ::flixel::FlxG_obj::overlap(objectsArray->__get(0).StaticCast<  ::flixel::FlxSprite >(),objectsArray->__get(1).StaticCast<  ::flixel::FlxSprite >(),null(),null());
             				}
             				else {
-HXLINE(1544)					_hx_tmp = false;
+HXLINE(1539)					_hx_tmp = false;
             				}
-HXDLIN(1544)				if (_hx_tmp) {
-HXLINE(1546)					return true;
+HXDLIN(1539)				if (_hx_tmp) {
+HXLINE(1541)					return true;
             				}
-HXLINE(1548)				return false;
+HXLINE(1543)				return false;
             			}
             			HX_END_LOCAL_FUNC2(return)
 
-HXLINE(1531)			 cpp::Reference<lua_State> l108 = this->lua;
-HXDLIN(1531)			::llua::Lua_helper_obj::callbacks->set(HX_("objectsOverlap",13,85,15,48), ::Dynamic(new _hx_Closure_149(game)));
-HXDLIN(1531)			linc::callbacks::add_callback_function(l108,HX_("objectsOverlap",13,85,15,48));
+HXLINE(1526)			 cpp::Reference<lua_State> l108 = this->lua;
+HXDLIN(1526)			::llua::Lua_helper_obj::callbacks->set(HX_("objectsOverlap",13,85,15,48), ::Dynamic(new _hx_Closure_148(game)));
+HXDLIN(1526)			linc::callbacks::add_callback_function(l108,HX_("objectsOverlap",13,85,15,48));
             		}
-HXLINE(1550)		{
-            			HX_BEGIN_LOCAL_FUNC_S0(::hx::LocalFunc,_hx_Closure_150) HXARGC(3)
+HXLINE(1545)		{
+            			HX_BEGIN_LOCAL_FUNC_S0(::hx::LocalFunc,_hx_Closure_149) HXARGC(3)
             			int _hx_run(::String obj,int x,int y){
-            				HX_GC_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1550_new)
-HXLINE(1551)				::Array< ::String > split = obj.split(HX_(".",2e,00,00,00));
-HXLINE(1552)				 ::flixel::FlxSprite spr = ( ( ::flixel::FlxSprite)(::psychlua::LuaUtils_obj::getObjectDirectly(split->__get(0),null(),null())) );
-HXLINE(1553)				if ((split->length > 1)) {
-HXLINE(1554)					 ::Dynamic this1 = ::psychlua::LuaUtils_obj::getPropertyLoop(split,null(),null(),null());
-HXDLIN(1554)					spr = ( ( ::flixel::FlxSprite)(::psychlua::LuaUtils_obj::getVarInArray(this1,split->__get((split->length - 1)),null())) );
+            				HX_GC_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1545_new)
+HXLINE(1546)				::Array< ::String > split = obj.split(HX_(".",2e,00,00,00));
+HXLINE(1547)				 ::flixel::FlxSprite spr = ( ( ::flixel::FlxSprite)(::psychlua::LuaUtils_obj::getObjectDirectly(split->__get(0),null(),null())) );
+HXLINE(1548)				if ((split->length > 1)) {
+HXLINE(1549)					 ::Dynamic this1 = ::psychlua::LuaUtils_obj::getPropertyLoop(split,null(),null(),null());
+HXDLIN(1549)					spr = ( ( ::flixel::FlxSprite)(::psychlua::LuaUtils_obj::getVarInArray(this1,split->__get((split->length - 1)),null())) );
             				}
-HXLINE(1557)				if (::hx::IsNotNull( spr )) {
-HXLINE(1557)					return spr->get_pixels()->getPixel32(x,y);
+HXLINE(1552)				if (::hx::IsNotNull( spr )) {
+HXLINE(1552)					return spr->get_pixels()->getPixel32(x,y);
             				}
-HXLINE(1558)				return -16777216;
+HXLINE(1553)				return -16777216;
             			}
             			HX_END_LOCAL_FUNC3(return)
 
-HXLINE(1550)			 cpp::Reference<lua_State> l109 = this->lua;
-HXDLIN(1550)			::llua::Lua_helper_obj::callbacks->set(HX_("getPixelColor",33,11,bd,45), ::Dynamic(new _hx_Closure_150()));
-HXDLIN(1550)			linc::callbacks::add_callback_function(l109,HX_("getPixelColor",33,11,bd,45));
+HXLINE(1545)			 cpp::Reference<lua_State> l109 = this->lua;
+HXDLIN(1545)			::llua::Lua_helper_obj::callbacks->set(HX_("getPixelColor",33,11,bd,45), ::Dynamic(new _hx_Closure_149()));
+HXDLIN(1545)			linc::callbacks::add_callback_function(l109,HX_("getPixelColor",33,11,bd,45));
             		}
-HXLINE(1560)		{
-            			HX_BEGIN_LOCAL_FUNC_S1(::hx::LocalFunc,_hx_Closure_151, ::states::PlayState,game) HXARGC(2)
+HXLINE(1555)		{
+            			HX_BEGIN_LOCAL_FUNC_S1(::hx::LocalFunc,_hx_Closure_150, ::states::PlayState,game) HXARGC(2)
             			bool _hx_run(::String dialogueFile,::String music){
-            				HX_GC_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1560_new)
-HXLINE(1563)				::String path = ( (::String)(::states::PlayState_obj::SONG->__Field(HX_("song",d5,23,58,4c),::hx::paccDynamic)) );
-HXDLIN(1563)				 ::EReg invalidChars =  ::EReg_obj::__alloc( HX_CTX ,HX_("[~&\\\\;:<>#]",7e,4d,88,67),HX_("",00,00,00,00));
-HXDLIN(1563)				 ::EReg hideChars =  ::EReg_obj::__alloc( HX_CTX ,HX_("[.,'\"%?!]",ca,d9,c0,ac),HX_("",00,00,00,00));
-HXDLIN(1563)				::String path1 = invalidChars->split(::StringTools_obj::replace(path,HX_(" ",20,00,00,00),HX_("-",2d,00,00,00)))->join(HX_("-",2d,00,00,00));
-HXLINE(1561)				::String path2 = ::backend::Paths_obj::modFolders(((HX_("data/",c5,0e,88,d4) + ((hideChars->split(path1)->join(HX_("",00,00,00,00)).toLowerCase() + HX_("/",2f,00,00,00)) + dialogueFile)) + HX_(".json",56,f1,d6,c2)));
-HXLINE(1564)				if (!(::sys::FileSystem_obj::exists(path2))) {
-HXLINE(1566)					::String path = ( (::String)(::states::PlayState_obj::SONG->__Field(HX_("song",d5,23,58,4c),::hx::paccDynamic)) );
-HXDLIN(1566)					 ::EReg invalidChars =  ::EReg_obj::__alloc( HX_CTX ,HX_("[~&\\\\;:<>#]",7e,4d,88,67),HX_("",00,00,00,00));
-HXDLIN(1566)					 ::EReg hideChars =  ::EReg_obj::__alloc( HX_CTX ,HX_("[.,'\"%?!]",ca,d9,c0,ac),HX_("",00,00,00,00));
-HXDLIN(1566)					::String path1 = invalidChars->split(::StringTools_obj::replace(path,HX_(" ",20,00,00,00),HX_("-",2d,00,00,00)))->join(HX_("-",2d,00,00,00));
-HXDLIN(1566)					::String library = null();
-HXDLIN(1566)					path2 = ::backend::Paths_obj::getPath(((HX_("data/",c5,0e,88,d4) + ((hideChars->split(path1)->join(HX_("",00,00,00,00)).toLowerCase() + HX_("/",2f,00,00,00)) + dialogueFile)) + HX_(".json",56,f1,d6,c2)),HX_("TEXT",ad,94,ba,37),library,null());
+            				HX_GC_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1555_new)
+HXLINE(1558)				::String path = ( (::String)(::states::PlayState_obj::SONG->__Field(HX_("song",d5,23,58,4c),::hx::paccDynamic)) );
+HXDLIN(1558)				 ::EReg invalidChars =  ::EReg_obj::__alloc( HX_CTX ,HX_("[~&\\\\;:<>#]",7e,4d,88,67),HX_("",00,00,00,00));
+HXDLIN(1558)				 ::EReg hideChars =  ::EReg_obj::__alloc( HX_CTX ,HX_("[.,'\"%?!]",ca,d9,c0,ac),HX_("",00,00,00,00));
+HXDLIN(1558)				::String path1 = invalidChars->split(::StringTools_obj::replace(path,HX_(" ",20,00,00,00),HX_("-",2d,00,00,00)))->join(HX_("-",2d,00,00,00));
+HXLINE(1556)				::String path2 = ::backend::Paths_obj::modFolders(((HX_("data/",c5,0e,88,d4) + ((hideChars->split(path1)->join(HX_("",00,00,00,00)).toLowerCase() + HX_("/",2f,00,00,00)) + dialogueFile)) + HX_(".json",56,f1,d6,c2)));
+HXLINE(1559)				if (!(::sys::FileSystem_obj::exists(path2))) {
+HXLINE(1561)					::String path = ( (::String)(::states::PlayState_obj::SONG->__Field(HX_("song",d5,23,58,4c),::hx::paccDynamic)) );
+HXDLIN(1561)					 ::EReg invalidChars =  ::EReg_obj::__alloc( HX_CTX ,HX_("[~&\\\\;:<>#]",7e,4d,88,67),HX_("",00,00,00,00));
+HXDLIN(1561)					 ::EReg hideChars =  ::EReg_obj::__alloc( HX_CTX ,HX_("[.,'\"%?!]",ca,d9,c0,ac),HX_("",00,00,00,00));
+HXDLIN(1561)					::String path1 = invalidChars->split(::StringTools_obj::replace(path,HX_(" ",20,00,00,00),HX_("-",2d,00,00,00)))->join(HX_("-",2d,00,00,00));
+HXDLIN(1561)					::String library = null();
+HXDLIN(1561)					path2 = ::backend::Paths_obj::getPath(((HX_("data/",c5,0e,88,d4) + ((hideChars->split(path1)->join(HX_("",00,00,00,00)).toLowerCase() + HX_("/",2f,00,00,00)) + dialogueFile)) + HX_(".json",56,f1,d6,c2)),HX_("TEXT",ad,94,ba,37),library,null());
             				}
-HXLINE(1568)				::psychlua::FunkinLua_obj::luaTrace((HX_("startDialogue: Trying to load dialogue: ",ec,81,25,2d) + path2),null(),null(),null());
-HXLINE(1571)				if (::sys::FileSystem_obj::exists(path2)) {
-HXLINE(1576)					 ::Dynamic shit = ::cutscenes::DialogueBoxPsych_obj::parseDialogue(path2);
-HXLINE(1577)					if ((( (::Array< ::Dynamic>)(shit->__Field(HX_("dialogue",18,2d,94,a7),::hx::paccDynamic)) )->length > 0)) {
-HXLINE(1578)						game->startDialogue(shit,music);
-HXLINE(1579)						::psychlua::FunkinLua_obj::luaTrace(HX_("startDialogue: Successfully loaded dialogue",ba,12,25,dc),false,false,-16744448);
-HXLINE(1580)						return true;
+HXLINE(1563)				::psychlua::FunkinLua_obj::luaTrace((HX_("startDialogue: Trying to load dialogue: ",ec,81,25,2d) + path2),null(),null(),null());
+HXLINE(1566)				if (::sys::FileSystem_obj::exists(path2)) {
+HXLINE(1571)					 ::Dynamic shit = ::cutscenes::DialogueBoxPsych_obj::parseDialogue(path2);
+HXLINE(1572)					if ((( (::Array< ::Dynamic>)(shit->__Field(HX_("dialogue",18,2d,94,a7),::hx::paccDynamic)) )->length > 0)) {
+HXLINE(1573)						game->startDialogue(shit,music);
+HXLINE(1574)						::psychlua::FunkinLua_obj::luaTrace(HX_("startDialogue: Successfully loaded dialogue",ba,12,25,dc),false,false,-16744448);
+HXLINE(1575)						return true;
             					}
             					else {
-HXLINE(1582)						::psychlua::FunkinLua_obj::luaTrace(HX_("startDialogue: Your dialogue file is badly formatted!",00,e6,fc,67),false,false,-65536);
+HXLINE(1577)						::psychlua::FunkinLua_obj::luaTrace(HX_("startDialogue: Your dialogue file is badly formatted!",00,e6,fc,67),false,false,-65536);
             					}
             				}
             				else {
-HXLINE(1585)					::psychlua::FunkinLua_obj::luaTrace(HX_("startDialogue: Dialogue file not found",f9,9d,dd,42),false,false,-65536);
-HXLINE(1586)					if (game->endingSong) {
-HXLINE(1587)						game->endSong();
+HXLINE(1580)					::psychlua::FunkinLua_obj::luaTrace(HX_("startDialogue: Dialogue file not found",f9,9d,dd,42),false,false,-65536);
+HXLINE(1581)					if (game->endingSong) {
+HXLINE(1582)						game->endSong();
             					}
             					else {
-HXLINE(1589)						game->startCountdown();
+HXLINE(1584)						game->startCountdown();
             					}
             				}
-HXLINE(1592)				return false;
+HXLINE(1587)				return false;
             			}
             			HX_END_LOCAL_FUNC2(return)
 
-HXLINE(1560)			 cpp::Reference<lua_State> l110 = this->lua;
-HXDLIN(1560)			::llua::Lua_helper_obj::callbacks->set(HX_("startDialogue",9a,8f,4f,ac), ::Dynamic(new _hx_Closure_151(game)));
-HXDLIN(1560)			linc::callbacks::add_callback_function(l110,HX_("startDialogue",9a,8f,4f,ac));
+HXLINE(1555)			 cpp::Reference<lua_State> l110 = this->lua;
+HXDLIN(1555)			::llua::Lua_helper_obj::callbacks->set(HX_("startDialogue",9a,8f,4f,ac), ::Dynamic(new _hx_Closure_150(game)));
+HXDLIN(1555)			linc::callbacks::add_callback_function(l110,HX_("startDialogue",9a,8f,4f,ac));
             		}
-HXLINE(1594)		{
-            			HX_BEGIN_LOCAL_FUNC_S1(::hx::LocalFunc,_hx_Closure_152, ::states::PlayState,game) HXARGC(1)
+HXLINE(1589)		{
+            			HX_BEGIN_LOCAL_FUNC_S1(::hx::LocalFunc,_hx_Closure_151, ::states::PlayState,game) HXARGC(1)
             			bool _hx_run(::String videoFile){
-            				HX_GC_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1594_new)
-HXLINE(1596)				if (::sys::FileSystem_obj::exists(::backend::Paths_obj::video(videoFile))) {
-HXLINE(1597)					game->startVideo(videoFile);
-HXLINE(1598)					return true;
+            				HX_GC_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1589_new)
+HXLINE(1591)				if (::sys::FileSystem_obj::exists(::backend::Paths_obj::video(videoFile))) {
+HXLINE(1592)					game->startVideo(videoFile);
+HXLINE(1593)					return true;
             				}
             				else {
-HXLINE(1600)					::psychlua::FunkinLua_obj::luaTrace((HX_("startVideo: Video file not found: ",fb,91,b5,c8) + videoFile),false,false,-65536);
+HXLINE(1595)					::psychlua::FunkinLua_obj::luaTrace((HX_("startVideo: Video file not found: ",fb,91,b5,c8) + videoFile),false,false,-65536);
             				}
-HXLINE(1602)				return false;
+HXLINE(1597)				return false;
             			}
             			HX_END_LOCAL_FUNC1(return)
 
-HXLINE(1594)			 cpp::Reference<lua_State> l111 = this->lua;
-HXDLIN(1594)			::llua::Lua_helper_obj::callbacks->set(HX_("startVideo",b9,ec,12,53), ::Dynamic(new _hx_Closure_152(game)));
-HXDLIN(1594)			linc::callbacks::add_callback_function(l111,HX_("startVideo",b9,ec,12,53));
+HXLINE(1589)			 cpp::Reference<lua_State> l111 = this->lua;
+HXDLIN(1589)			::llua::Lua_helper_obj::callbacks->set(HX_("startVideo",b9,ec,12,53), ::Dynamic(new _hx_Closure_151(game)));
+HXDLIN(1589)			linc::callbacks::add_callback_function(l111,HX_("startVideo",b9,ec,12,53));
             		}
-HXLINE(1614)		{
-            			HX_BEGIN_LOCAL_FUNC_S0(::hx::LocalFunc,_hx_Closure_153) HXARGC(3)
+HXLINE(1609)		{
+            			HX_BEGIN_LOCAL_FUNC_S0(::hx::LocalFunc,_hx_Closure_152) HXARGC(3)
             			void _hx_run(::String sound, ::Dynamic __o_volume, ::Dynamic __o_loop){
             		Float volume = __o_volume.Default(1);
             		bool loop = __o_loop.Default(false);
-            				HX_GC_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1615_new)
-HXLINE(1615)				 ::flixel::_hx_system::frontEnds::SoundFrontEnd _hx_tmp = ::flixel::FlxG_obj::sound;
-HXDLIN(1615)				::String library = null();
-HXDLIN(1615)				 ::openfl::media::Sound file = ::backend::Paths_obj::returnSound(HX_("music",a5,d0,5a,10),sound,library);
-HXDLIN(1615)				_hx_tmp->playMusic(file,volume,loop,null());
+            				HX_GC_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1610_new)
+HXLINE(1610)				 ::flixel::_hx_system::frontEnds::SoundFrontEnd _hx_tmp = ::flixel::FlxG_obj::sound;
+HXDLIN(1610)				::String library = null();
+HXDLIN(1610)				 ::openfl::media::Sound file = ::backend::Paths_obj::returnSound(HX_("music",a5,d0,5a,10),sound,library);
+HXDLIN(1610)				_hx_tmp->playMusic(file,volume,loop,null());
             			}
             			HX_END_LOCAL_FUNC3((void))
 
-HXLINE(1614)			 cpp::Reference<lua_State> l112 = this->lua;
-HXDLIN(1614)			::llua::Lua_helper_obj::callbacks->set(HX_("playMusic",11,fe,3e,31), ::Dynamic(new _hx_Closure_153()));
-HXDLIN(1614)			linc::callbacks::add_callback_function(l112,HX_("playMusic",11,fe,3e,31));
+HXLINE(1609)			 cpp::Reference<lua_State> l112 = this->lua;
+HXDLIN(1609)			::llua::Lua_helper_obj::callbacks->set(HX_("playMusic",11,fe,3e,31), ::Dynamic(new _hx_Closure_152()));
+HXDLIN(1609)			linc::callbacks::add_callback_function(l112,HX_("playMusic",11,fe,3e,31));
             		}
-HXLINE(1617)		{
-            			HX_BEGIN_LOCAL_FUNC_S1(::hx::LocalFunc,_hx_Closure_155, ::states::PlayState,game) HXARGC(3)
+HXLINE(1612)		{
+            			HX_BEGIN_LOCAL_FUNC_S1(::hx::LocalFunc,_hx_Closure_154, ::states::PlayState,game) HXARGC(3)
             			void _hx_run(::String sound, ::Dynamic __o_volume,::String tag){
             		Float volume = __o_volume.Default(1);
-            				HX_GC_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1617_new)
-HXLINE(1617)				::Array< ::String > tag1 = ::Array_obj< ::String >::__new(1)->init(0,tag);
-HXLINE(1618)				bool _hx_tmp;
-HXDLIN(1618)				if (::hx::IsNotNull( tag1->__get(0) )) {
-HXLINE(1618)					_hx_tmp = (tag1->__get(0).length > 0);
+            				HX_GC_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1612_new)
+HXLINE(1612)				::Array< ::String > tag1 = ::Array_obj< ::String >::__new(1)->init(0,tag);
+HXLINE(1613)				bool _hx_tmp;
+HXDLIN(1613)				if (::hx::IsNotNull( tag1->__get(0) )) {
+HXLINE(1613)					_hx_tmp = (tag1->__get(0).length > 0);
             				}
             				else {
-HXLINE(1618)					_hx_tmp = false;
+HXLINE(1613)					_hx_tmp = false;
             				}
-HXDLIN(1618)				if (_hx_tmp) {
-HXLINE(1619)					tag1[0] = ::StringTools_obj::replace(tag1->__get(0),HX_(".",2e,00,00,00),HX_("",00,00,00,00));
-HXLINE(1620)					if (game->modchartSounds->exists(tag1->__get(0))) {
-HXLINE(1621)						 ::flixel::sound::FlxSound _this = ( ( ::flixel::sound::FlxSound)(game->modchartSounds->get(tag1->__get(0))) );
-HXDLIN(1621)						_this->cleanup(_this->autoDestroy,true);
+HXDLIN(1613)				if (_hx_tmp) {
+HXLINE(1614)					tag1[0] = ::StringTools_obj::replace(tag1->__get(0),HX_(".",2e,00,00,00),HX_("",00,00,00,00));
+HXLINE(1615)					if (game->modchartSounds->exists(tag1->__get(0))) {
+HXLINE(1616)						 ::flixel::sound::FlxSound _this = ( ( ::flixel::sound::FlxSound)(game->modchartSounds->get(tag1->__get(0))) );
+HXDLIN(1616)						_this->cleanup(_this->autoDestroy,true);
             					}
-HXLINE(1623)					{
-            						HX_BEGIN_LOCAL_FUNC_S2(::hx::LocalFunc,_hx_Closure_154, ::states::PlayState,game,::Array< ::String >,tag1) HXARGC(0)
+HXLINE(1618)					{
+            						HX_BEGIN_LOCAL_FUNC_S2(::hx::LocalFunc,_hx_Closure_153, ::states::PlayState,game,::Array< ::String >,tag1) HXARGC(0)
             						void _hx_run(){
-            							HX_GC_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1623_new)
-HXLINE(1624)							game->modchartSounds->remove(tag1->__get(0));
-HXLINE(1625)							game->callOnLuas(HX_("onSoundFinished",c2,2a,b1,b9),::cpp::VirtualArray_obj::__new(1)->init(0,tag1->__get(0)),null(),null(),null());
+            							HX_GC_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1618_new)
+HXLINE(1619)							game->modchartSounds->remove(tag1->__get(0));
+HXLINE(1620)							game->callOnLuas(HX_("onSoundFinished",c2,2a,b1,b9),::cpp::VirtualArray_obj::__new(1)->init(0,tag1->__get(0)),null(),null(),null());
             						}
             						HX_END_LOCAL_FUNC0((void))
 
-HXLINE(1623)						::Dynamic this1 = game->modchartSounds;
-HXDLIN(1623)						 ::flixel::_hx_system::frontEnds::SoundFrontEnd value = ::flixel::FlxG_obj::sound;
-HXDLIN(1623)						 ::flixel::sound::FlxSound value1 = value->play(::backend::Paths_obj::sound(sound,null()),volume,false,null(),null(), ::Dynamic(new _hx_Closure_154(game,tag1)));
-HXDLIN(1623)						( ( ::haxe::ds::StringMap)(this1) )->set(tag1->__get(0),value1);
+HXLINE(1618)						::Dynamic this1 = game->modchartSounds;
+HXDLIN(1618)						 ::flixel::_hx_system::frontEnds::SoundFrontEnd value = ::flixel::FlxG_obj::sound;
+HXDLIN(1618)						 ::flixel::sound::FlxSound value1 = value->play(::backend::Paths_obj::sound(sound,null()),volume,false,null(),null(), ::Dynamic(new _hx_Closure_153(game,tag1)));
+HXDLIN(1618)						( ( ::haxe::ds::StringMap)(this1) )->set(tag1->__get(0),value1);
             					}
-HXLINE(1627)					return;
+HXLINE(1622)					return;
             				}
-HXLINE(1629)				 ::flixel::_hx_system::frontEnds::SoundFrontEnd _hx_tmp1 = ::flixel::FlxG_obj::sound;
-HXDLIN(1629)				_hx_tmp1->play(::backend::Paths_obj::sound(sound,null()),volume,null(),null(),null(),null());
+HXLINE(1624)				 ::flixel::_hx_system::frontEnds::SoundFrontEnd _hx_tmp1 = ::flixel::FlxG_obj::sound;
+HXDLIN(1624)				_hx_tmp1->play(::backend::Paths_obj::sound(sound,null()),volume,null(),null(),null(),null());
             			}
             			HX_END_LOCAL_FUNC3((void))
 
-HXLINE(1617)			 cpp::Reference<lua_State> l113 = this->lua;
-HXDLIN(1617)			::llua::Lua_helper_obj::callbacks->set(HX_("playSound",3b,ba,b0,a1), ::Dynamic(new _hx_Closure_155(game)));
-HXDLIN(1617)			linc::callbacks::add_callback_function(l113,HX_("playSound",3b,ba,b0,a1));
+HXLINE(1612)			 cpp::Reference<lua_State> l113 = this->lua;
+HXDLIN(1612)			::llua::Lua_helper_obj::callbacks->set(HX_("playSound",3b,ba,b0,a1), ::Dynamic(new _hx_Closure_154(game)));
+HXDLIN(1612)			linc::callbacks::add_callback_function(l113,HX_("playSound",3b,ba,b0,a1));
             		}
-HXLINE(1631)		{
-            			HX_BEGIN_LOCAL_FUNC_S1(::hx::LocalFunc,_hx_Closure_156, ::states::PlayState,game) HXARGC(1)
+HXLINE(1626)		{
+            			HX_BEGIN_LOCAL_FUNC_S1(::hx::LocalFunc,_hx_Closure_155, ::states::PlayState,game) HXARGC(1)
             			void _hx_run(::String tag){
-            				HX_GC_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1632_new)
-HXLINE(1632)				bool _hx_tmp;
-HXDLIN(1632)				bool _hx_tmp1;
-HXDLIN(1632)				if (::hx::IsNotNull( tag )) {
-HXLINE(1632)					_hx_tmp1 = (tag.length > 1);
+            				HX_GC_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1627_new)
+HXLINE(1627)				bool _hx_tmp;
+HXDLIN(1627)				bool _hx_tmp1;
+HXDLIN(1627)				if (::hx::IsNotNull( tag )) {
+HXLINE(1627)					_hx_tmp1 = (tag.length > 1);
             				}
             				else {
-HXLINE(1632)					_hx_tmp1 = false;
+HXLINE(1627)					_hx_tmp1 = false;
             				}
-HXDLIN(1632)				if (_hx_tmp1) {
-HXLINE(1632)					_hx_tmp = game->modchartSounds->exists(tag);
+HXDLIN(1627)				if (_hx_tmp1) {
+HXLINE(1627)					_hx_tmp = game->modchartSounds->exists(tag);
             				}
             				else {
-HXLINE(1632)					_hx_tmp = false;
+HXLINE(1627)					_hx_tmp = false;
             				}
-HXDLIN(1632)				if (_hx_tmp) {
-HXLINE(1633)					{
-HXLINE(1633)						 ::flixel::sound::FlxSound _this = ( ( ::flixel::sound::FlxSound)(game->modchartSounds->get(tag)) );
-HXDLIN(1633)						_this->cleanup(_this->autoDestroy,true);
+HXDLIN(1627)				if (_hx_tmp) {
+HXLINE(1628)					{
+HXLINE(1628)						 ::flixel::sound::FlxSound _this = ( ( ::flixel::sound::FlxSound)(game->modchartSounds->get(tag)) );
+HXDLIN(1628)						_this->cleanup(_this->autoDestroy,true);
             					}
-HXLINE(1634)					game->modchartSounds->remove(tag);
+HXLINE(1629)					game->modchartSounds->remove(tag);
             				}
             			}
             			HX_END_LOCAL_FUNC1((void))
 
-HXLINE(1631)			 cpp::Reference<lua_State> l114 = this->lua;
-HXDLIN(1631)			::llua::Lua_helper_obj::callbacks->set(HX_("stopSound",6d,c5,0e,91), ::Dynamic(new _hx_Closure_156(game)));
-HXDLIN(1631)			linc::callbacks::add_callback_function(l114,HX_("stopSound",6d,c5,0e,91));
+HXLINE(1626)			 cpp::Reference<lua_State> l114 = this->lua;
+HXDLIN(1626)			::llua::Lua_helper_obj::callbacks->set(HX_("stopSound",6d,c5,0e,91), ::Dynamic(new _hx_Closure_155(game)));
+HXDLIN(1626)			linc::callbacks::add_callback_function(l114,HX_("stopSound",6d,c5,0e,91));
+            		}
+HXLINE(1632)		{
+            			HX_BEGIN_LOCAL_FUNC_S1(::hx::LocalFunc,_hx_Closure_156, ::states::PlayState,game) HXARGC(1)
+            			void _hx_run(::String tag){
+            				HX_GC_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1633_new)
+HXLINE(1633)				bool _hx_tmp;
+HXDLIN(1633)				bool _hx_tmp1;
+HXDLIN(1633)				if (::hx::IsNotNull( tag )) {
+HXLINE(1633)					_hx_tmp1 = (tag.length > 1);
+            				}
+            				else {
+HXLINE(1633)					_hx_tmp1 = false;
+            				}
+HXDLIN(1633)				if (_hx_tmp1) {
+HXLINE(1633)					_hx_tmp = game->modchartSounds->exists(tag);
+            				}
+            				else {
+HXLINE(1633)					_hx_tmp = false;
+            				}
+HXDLIN(1633)				if (_hx_tmp) {
+HXLINE(1634)					( ( ::flixel::sound::FlxSound)(game->modchartSounds->get(tag)) )->pause();
+            				}
+            			}
+            			HX_END_LOCAL_FUNC1((void))
+
+HXLINE(1632)			 cpp::Reference<lua_State> l115 = this->lua;
+HXDLIN(1632)			::llua::Lua_helper_obj::callbacks->set(HX_("pauseSound",f9,29,45,56), ::Dynamic(new _hx_Closure_156(game)));
+HXDLIN(1632)			linc::callbacks::add_callback_function(l115,HX_("pauseSound",f9,29,45,56));
             		}
 HXLINE(1637)		{
             			HX_BEGIN_LOCAL_FUNC_S1(::hx::LocalFunc,_hx_Closure_157, ::states::PlayState,game) HXARGC(1)
@@ -4277,363 +4287,335 @@ HXLINE(1638)					_hx_tmp = game->modchartSounds->exists(tag);
 HXLINE(1638)					_hx_tmp = false;
             				}
 HXDLIN(1638)				if (_hx_tmp) {
-HXLINE(1639)					( ( ::flixel::sound::FlxSound)(game->modchartSounds->get(tag)) )->pause();
+HXLINE(1639)					( ( ::flixel::sound::FlxSound)(game->modchartSounds->get(tag)) )->play(null(),null(),null());
             				}
             			}
             			HX_END_LOCAL_FUNC1((void))
 
-HXLINE(1637)			 cpp::Reference<lua_State> l115 = this->lua;
-HXDLIN(1637)			::llua::Lua_helper_obj::callbacks->set(HX_("pauseSound",f9,29,45,56), ::Dynamic(new _hx_Closure_157(game)));
-HXDLIN(1637)			linc::callbacks::add_callback_function(l115,HX_("pauseSound",f9,29,45,56));
+HXLINE(1637)			 cpp::Reference<lua_State> l116 = this->lua;
+HXDLIN(1637)			::llua::Lua_helper_obj::callbacks->set(HX_("resumeSound",e2,5f,96,51), ::Dynamic(new _hx_Closure_157(game)));
+HXDLIN(1637)			linc::callbacks::add_callback_function(l116,HX_("resumeSound",e2,5f,96,51));
             		}
 HXLINE(1642)		{
-            			HX_BEGIN_LOCAL_FUNC_S1(::hx::LocalFunc,_hx_Closure_158, ::states::PlayState,game) HXARGC(1)
-            			void _hx_run(::String tag){
-            				HX_GC_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1643_new)
-HXLINE(1643)				bool _hx_tmp;
-HXDLIN(1643)				bool _hx_tmp1;
-HXDLIN(1643)				if (::hx::IsNotNull( tag )) {
-HXLINE(1643)					_hx_tmp1 = (tag.length > 1);
-            				}
-            				else {
-HXLINE(1643)					_hx_tmp1 = false;
-            				}
-HXDLIN(1643)				if (_hx_tmp1) {
-HXLINE(1643)					_hx_tmp = game->modchartSounds->exists(tag);
-            				}
-            				else {
-HXLINE(1643)					_hx_tmp = false;
-            				}
-HXDLIN(1643)				if (_hx_tmp) {
-HXLINE(1644)					( ( ::flixel::sound::FlxSound)(game->modchartSounds->get(tag)) )->play(null(),null(),null());
-            				}
-            			}
-            			HX_END_LOCAL_FUNC1((void))
-
-HXLINE(1642)			 cpp::Reference<lua_State> l116 = this->lua;
-HXDLIN(1642)			::llua::Lua_helper_obj::callbacks->set(HX_("resumeSound",e2,5f,96,51), ::Dynamic(new _hx_Closure_158(game)));
-HXDLIN(1642)			linc::callbacks::add_callback_function(l116,HX_("resumeSound",e2,5f,96,51));
-            		}
-HXLINE(1647)		{
-            			HX_BEGIN_LOCAL_FUNC_S1(::hx::LocalFunc,_hx_Closure_159, ::states::PlayState,game) HXARGC(4)
+            			HX_BEGIN_LOCAL_FUNC_S1(::hx::LocalFunc,_hx_Closure_158, ::states::PlayState,game) HXARGC(4)
             			void _hx_run(::String tag,Float duration, ::Dynamic __o_fromValue, ::Dynamic __o_toValue){
             		Float fromValue = __o_fromValue.Default(0);
             		Float toValue = __o_toValue.Default(1);
-            				HX_GC_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1648_new)
-HXLINE(1648)				bool _hx_tmp;
-HXDLIN(1648)				if (::hx::IsNotNull( tag )) {
-HXLINE(1648)					_hx_tmp = (tag.length < 1);
+            				HX_GC_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1643_new)
+HXLINE(1643)				bool _hx_tmp;
+HXDLIN(1643)				if (::hx::IsNotNull( tag )) {
+HXLINE(1643)					_hx_tmp = (tag.length < 1);
             				}
             				else {
-HXLINE(1648)					_hx_tmp = true;
+HXLINE(1643)					_hx_tmp = true;
             				}
-HXDLIN(1648)				if (_hx_tmp) {
-HXLINE(1649)					 ::flixel::sound::FlxSound _this = ::flixel::FlxG_obj::sound->music;
-HXDLIN(1649)					 ::Dynamic onComplete = null();
-HXDLIN(1649)					if (::hx::IsNull( _this->_channel )) {
-HXLINE(1649)						_this->play(null(),null(),null());
+HXDLIN(1643)				if (_hx_tmp) {
+HXLINE(1644)					 ::flixel::sound::FlxSound _this = ::flixel::FlxG_obj::sound->music;
+HXDLIN(1644)					 ::Dynamic onComplete = null();
+HXDLIN(1644)					if (::hx::IsNull( _this->_channel )) {
+HXLINE(1644)						_this->play(null(),null(),null());
             					}
-HXDLIN(1649)					if (::hx::IsNotNull( _this->fadeTween )) {
-HXLINE(1649)						_this->fadeTween->cancel();
+HXDLIN(1644)					if (::hx::IsNotNull( _this->fadeTween )) {
+HXLINE(1644)						_this->fadeTween->cancel();
             					}
-HXDLIN(1649)					_this->fadeTween = ::flixel::tweens::FlxTween_obj::num(fromValue,toValue,duration, ::Dynamic(::hx::Anon_obj::Create(1)
+HXDLIN(1644)					_this->fadeTween = ::flixel::tweens::FlxTween_obj::num(fromValue,toValue,duration, ::Dynamic(::hx::Anon_obj::Create(1)
             						->setFixed(0,HX_("onComplete",f8,d4,7e,5d),onComplete)),_this->volumeTween_dyn());
             				}
             				else {
-HXLINE(1650)					if (game->modchartSounds->exists(tag)) {
-HXLINE(1651)						 ::flixel::sound::FlxSound _this = ( ( ::flixel::sound::FlxSound)(game->modchartSounds->get(tag)) );
-HXDLIN(1651)						 ::Dynamic onComplete = null();
-HXDLIN(1651)						if (::hx::IsNull( _this->_channel )) {
-HXLINE(1651)							_this->play(null(),null(),null());
+HXLINE(1645)					if (game->modchartSounds->exists(tag)) {
+HXLINE(1646)						 ::flixel::sound::FlxSound _this = ( ( ::flixel::sound::FlxSound)(game->modchartSounds->get(tag)) );
+HXDLIN(1646)						 ::Dynamic onComplete = null();
+HXDLIN(1646)						if (::hx::IsNull( _this->_channel )) {
+HXLINE(1646)							_this->play(null(),null(),null());
             						}
-HXDLIN(1651)						if (::hx::IsNotNull( _this->fadeTween )) {
-HXLINE(1651)							_this->fadeTween->cancel();
+HXDLIN(1646)						if (::hx::IsNotNull( _this->fadeTween )) {
+HXLINE(1646)							_this->fadeTween->cancel();
             						}
-HXDLIN(1651)						_this->fadeTween = ::flixel::tweens::FlxTween_obj::num(fromValue,toValue,duration, ::Dynamic(::hx::Anon_obj::Create(1)
+HXDLIN(1646)						_this->fadeTween = ::flixel::tweens::FlxTween_obj::num(fromValue,toValue,duration, ::Dynamic(::hx::Anon_obj::Create(1)
             							->setFixed(0,HX_("onComplete",f8,d4,7e,5d),onComplete)),_this->volumeTween_dyn());
             					}
             				}
             			}
             			HX_END_LOCAL_FUNC4((void))
 
-HXLINE(1647)			 cpp::Reference<lua_State> l117 = this->lua;
-HXDLIN(1647)			::llua::Lua_helper_obj::callbacks->set(HX_("soundFadeIn",b0,52,d8,97), ::Dynamic(new _hx_Closure_159(game)));
-HXDLIN(1647)			linc::callbacks::add_callback_function(l117,HX_("soundFadeIn",b0,52,d8,97));
+HXLINE(1642)			 cpp::Reference<lua_State> l117 = this->lua;
+HXDLIN(1642)			::llua::Lua_helper_obj::callbacks->set(HX_("soundFadeIn",b0,52,d8,97), ::Dynamic(new _hx_Closure_158(game)));
+HXDLIN(1642)			linc::callbacks::add_callback_function(l117,HX_("soundFadeIn",b0,52,d8,97));
             		}
-HXLINE(1655)		{
-            			HX_BEGIN_LOCAL_FUNC_S1(::hx::LocalFunc,_hx_Closure_160, ::states::PlayState,game) HXARGC(3)
+HXLINE(1650)		{
+            			HX_BEGIN_LOCAL_FUNC_S1(::hx::LocalFunc,_hx_Closure_159, ::states::PlayState,game) HXARGC(3)
             			void _hx_run(::String tag,Float duration, ::Dynamic __o_toValue){
             		Float toValue = __o_toValue.Default(0);
-            				HX_GC_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1656_new)
-HXLINE(1656)				bool _hx_tmp;
-HXDLIN(1656)				if (::hx::IsNotNull( tag )) {
-HXLINE(1656)					_hx_tmp = (tag.length < 1);
+            				HX_GC_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1651_new)
+HXLINE(1651)				bool _hx_tmp;
+HXDLIN(1651)				if (::hx::IsNotNull( tag )) {
+HXLINE(1651)					_hx_tmp = (tag.length < 1);
             				}
             				else {
-HXLINE(1656)					_hx_tmp = true;
+HXLINE(1651)					_hx_tmp = true;
             				}
-HXDLIN(1656)				if (_hx_tmp) {
-HXLINE(1657)					 ::flixel::sound::FlxSound _this = ::flixel::FlxG_obj::sound->music;
-HXDLIN(1657)					 ::Dynamic To = toValue;
-HXDLIN(1657)					 ::Dynamic onComplete = null();
-HXDLIN(1657)					if (::hx::IsNull( To )) {
-HXLINE(1657)						To = 0;
+HXDLIN(1651)				if (_hx_tmp) {
+HXLINE(1652)					 ::flixel::sound::FlxSound _this = ::flixel::FlxG_obj::sound->music;
+HXDLIN(1652)					 ::Dynamic To = toValue;
+HXDLIN(1652)					 ::Dynamic onComplete = null();
+HXDLIN(1652)					if (::hx::IsNull( To )) {
+HXLINE(1652)						To = 0;
             					}
-HXDLIN(1657)					if (::hx::IsNotNull( _this->fadeTween )) {
-HXLINE(1657)						_this->fadeTween->cancel();
+HXDLIN(1652)					if (::hx::IsNotNull( _this->fadeTween )) {
+HXLINE(1652)						_this->fadeTween->cancel();
             					}
-HXDLIN(1657)					_this->fadeTween = ::flixel::tweens::FlxTween_obj::num(_this->_volume,( (Float)(To) ),duration, ::Dynamic(::hx::Anon_obj::Create(1)
+HXDLIN(1652)					_this->fadeTween = ::flixel::tweens::FlxTween_obj::num(_this->_volume,( (Float)(To) ),duration, ::Dynamic(::hx::Anon_obj::Create(1)
             						->setFixed(0,HX_("onComplete",f8,d4,7e,5d),onComplete)),_this->volumeTween_dyn());
             				}
             				else {
-HXLINE(1658)					if (game->modchartSounds->exists(tag)) {
-HXLINE(1659)						 ::flixel::sound::FlxSound _this = ( ( ::flixel::sound::FlxSound)(game->modchartSounds->get(tag)) );
-HXDLIN(1659)						 ::Dynamic To = toValue;
-HXDLIN(1659)						 ::Dynamic onComplete = null();
-HXDLIN(1659)						if (::hx::IsNull( To )) {
-HXLINE(1659)							To = 0;
+HXLINE(1653)					if (game->modchartSounds->exists(tag)) {
+HXLINE(1654)						 ::flixel::sound::FlxSound _this = ( ( ::flixel::sound::FlxSound)(game->modchartSounds->get(tag)) );
+HXDLIN(1654)						 ::Dynamic To = toValue;
+HXDLIN(1654)						 ::Dynamic onComplete = null();
+HXDLIN(1654)						if (::hx::IsNull( To )) {
+HXLINE(1654)							To = 0;
             						}
-HXDLIN(1659)						if (::hx::IsNotNull( _this->fadeTween )) {
-HXLINE(1659)							_this->fadeTween->cancel();
+HXDLIN(1654)						if (::hx::IsNotNull( _this->fadeTween )) {
+HXLINE(1654)							_this->fadeTween->cancel();
             						}
-HXDLIN(1659)						_this->fadeTween = ::flixel::tweens::FlxTween_obj::num(_this->_volume,( (Float)(To) ),duration, ::Dynamic(::hx::Anon_obj::Create(1)
+HXDLIN(1654)						_this->fadeTween = ::flixel::tweens::FlxTween_obj::num(_this->_volume,( (Float)(To) ),duration, ::Dynamic(::hx::Anon_obj::Create(1)
             							->setFixed(0,HX_("onComplete",f8,d4,7e,5d),onComplete)),_this->volumeTween_dyn());
             					}
             				}
             			}
             			HX_END_LOCAL_FUNC3((void))
 
-HXLINE(1655)			 cpp::Reference<lua_State> l118 = this->lua;
-HXDLIN(1655)			::llua::Lua_helper_obj::callbacks->set(HX_("soundFadeOut",63,9b,74,45), ::Dynamic(new _hx_Closure_160(game)));
-HXDLIN(1655)			linc::callbacks::add_callback_function(l118,HX_("soundFadeOut",63,9b,74,45));
+HXLINE(1650)			 cpp::Reference<lua_State> l118 = this->lua;
+HXDLIN(1650)			::llua::Lua_helper_obj::callbacks->set(HX_("soundFadeOut",63,9b,74,45), ::Dynamic(new _hx_Closure_159(game)));
+HXDLIN(1650)			linc::callbacks::add_callback_function(l118,HX_("soundFadeOut",63,9b,74,45));
             		}
-HXLINE(1662)		{
-            			HX_BEGIN_LOCAL_FUNC_S1(::hx::LocalFunc,_hx_Closure_161, ::states::PlayState,game) HXARGC(1)
+HXLINE(1657)		{
+            			HX_BEGIN_LOCAL_FUNC_S1(::hx::LocalFunc,_hx_Closure_160, ::states::PlayState,game) HXARGC(1)
             			void _hx_run(::String tag){
-            				HX_GC_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1663_new)
-HXLINE(1663)				bool _hx_tmp;
-HXDLIN(1663)				if (::hx::IsNotNull( tag )) {
-HXLINE(1663)					_hx_tmp = (tag.length < 1);
+            				HX_GC_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1658_new)
+HXLINE(1658)				bool _hx_tmp;
+HXDLIN(1658)				if (::hx::IsNotNull( tag )) {
+HXLINE(1658)					_hx_tmp = (tag.length < 1);
             				}
             				else {
-HXLINE(1663)					_hx_tmp = true;
+HXLINE(1658)					_hx_tmp = true;
             				}
-HXDLIN(1663)				if (_hx_tmp) {
-HXLINE(1664)					if (::hx::IsNotNull( ::flixel::FlxG_obj::sound->music->fadeTween )) {
-HXLINE(1665)						::flixel::FlxG_obj::sound->music->fadeTween->cancel();
+HXDLIN(1658)				if (_hx_tmp) {
+HXLINE(1659)					if (::hx::IsNotNull( ::flixel::FlxG_obj::sound->music->fadeTween )) {
+HXLINE(1660)						::flixel::FlxG_obj::sound->music->fadeTween->cancel();
             					}
             				}
             				else {
-HXLINE(1667)					if (game->modchartSounds->exists(tag)) {
-HXLINE(1668)						 ::flixel::sound::FlxSound theSound = ( ( ::flixel::sound::FlxSound)(game->modchartSounds->get(tag)) );
-HXLINE(1669)						if (::hx::IsNotNull( theSound->fadeTween )) {
-HXLINE(1670)							theSound->fadeTween->cancel();
-HXLINE(1671)							game->modchartSounds->remove(tag);
+HXLINE(1662)					if (game->modchartSounds->exists(tag)) {
+HXLINE(1663)						 ::flixel::sound::FlxSound theSound = ( ( ::flixel::sound::FlxSound)(game->modchartSounds->get(tag)) );
+HXLINE(1664)						if (::hx::IsNotNull( theSound->fadeTween )) {
+HXLINE(1665)							theSound->fadeTween->cancel();
+HXLINE(1666)							game->modchartSounds->remove(tag);
             						}
             					}
             				}
             			}
             			HX_END_LOCAL_FUNC1((void))
 
-HXLINE(1662)			 cpp::Reference<lua_State> l119 = this->lua;
-HXDLIN(1662)			::llua::Lua_helper_obj::callbacks->set(HX_("soundFadeCancel",c5,a5,96,fc), ::Dynamic(new _hx_Closure_161(game)));
-HXDLIN(1662)			linc::callbacks::add_callback_function(l119,HX_("soundFadeCancel",c5,a5,96,fc));
+HXLINE(1657)			 cpp::Reference<lua_State> l119 = this->lua;
+HXDLIN(1657)			::llua::Lua_helper_obj::callbacks->set(HX_("soundFadeCancel",c5,a5,96,fc), ::Dynamic(new _hx_Closure_160(game)));
+HXDLIN(1657)			linc::callbacks::add_callback_function(l119,HX_("soundFadeCancel",c5,a5,96,fc));
             		}
-HXLINE(1675)		{
-            			HX_BEGIN_LOCAL_FUNC_S1(::hx::LocalFunc,_hx_Closure_162, ::states::PlayState,game) HXARGC(1)
+HXLINE(1670)		{
+            			HX_BEGIN_LOCAL_FUNC_S1(::hx::LocalFunc,_hx_Closure_161, ::states::PlayState,game) HXARGC(1)
             			Float _hx_run(::String tag){
-            				HX_GC_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1675_new)
-HXLINE(1676)				bool _hx_tmp;
-HXDLIN(1676)				if (::hx::IsNotNull( tag )) {
-HXLINE(1676)					_hx_tmp = (tag.length < 1);
+            				HX_GC_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1670_new)
+HXLINE(1671)				bool _hx_tmp;
+HXDLIN(1671)				if (::hx::IsNotNull( tag )) {
+HXLINE(1671)					_hx_tmp = (tag.length < 1);
             				}
             				else {
-HXLINE(1676)					_hx_tmp = true;
+HXLINE(1671)					_hx_tmp = true;
             				}
-HXDLIN(1676)				if (_hx_tmp) {
-HXLINE(1677)					if (::hx::IsNotNull( ::flixel::FlxG_obj::sound->music )) {
-HXLINE(1678)						return ::flixel::FlxG_obj::sound->music->_volume;
+HXDLIN(1671)				if (_hx_tmp) {
+HXLINE(1672)					if (::hx::IsNotNull( ::flixel::FlxG_obj::sound->music )) {
+HXLINE(1673)						return ::flixel::FlxG_obj::sound->music->_volume;
             					}
             				}
             				else {
-HXLINE(1680)					if (game->modchartSounds->exists(tag)) {
-HXLINE(1681)						return ( ( ::flixel::sound::FlxSound)(game->modchartSounds->get(tag)) )->_volume;
+HXLINE(1675)					if (game->modchartSounds->exists(tag)) {
+HXLINE(1676)						return ( ( ::flixel::sound::FlxSound)(game->modchartSounds->get(tag)) )->_volume;
             					}
             				}
-HXLINE(1683)				return ( (Float)(0) );
+HXLINE(1678)				return ( (Float)(0) );
             			}
             			HX_END_LOCAL_FUNC1(return)
 
-HXLINE(1675)			 cpp::Reference<lua_State> l120 = this->lua;
-HXDLIN(1675)			::llua::Lua_helper_obj::callbacks->set(HX_("getSoundVolume",13,83,1e,9a), ::Dynamic(new _hx_Closure_162(game)));
-HXDLIN(1675)			linc::callbacks::add_callback_function(l120,HX_("getSoundVolume",13,83,1e,9a));
+HXLINE(1670)			 cpp::Reference<lua_State> l120 = this->lua;
+HXDLIN(1670)			::llua::Lua_helper_obj::callbacks->set(HX_("getSoundVolume",13,83,1e,9a), ::Dynamic(new _hx_Closure_161(game)));
+HXDLIN(1670)			linc::callbacks::add_callback_function(l120,HX_("getSoundVolume",13,83,1e,9a));
             		}
-HXLINE(1685)		{
-            			HX_BEGIN_LOCAL_FUNC_S1(::hx::LocalFunc,_hx_Closure_163, ::states::PlayState,game) HXARGC(2)
+HXLINE(1680)		{
+            			HX_BEGIN_LOCAL_FUNC_S1(::hx::LocalFunc,_hx_Closure_162, ::states::PlayState,game) HXARGC(2)
             			void _hx_run(::String tag,Float value){
-            				HX_GC_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1686_new)
-HXLINE(1686)				bool _hx_tmp;
-HXDLIN(1686)				if (::hx::IsNotNull( tag )) {
-HXLINE(1686)					_hx_tmp = (tag.length < 1);
+            				HX_GC_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1681_new)
+HXLINE(1681)				bool _hx_tmp;
+HXDLIN(1681)				if (::hx::IsNotNull( tag )) {
+HXLINE(1681)					_hx_tmp = (tag.length < 1);
             				}
             				else {
-HXLINE(1686)					_hx_tmp = true;
+HXLINE(1681)					_hx_tmp = true;
             				}
-HXDLIN(1686)				if (_hx_tmp) {
-HXLINE(1687)					if (::hx::IsNotNull( ::flixel::FlxG_obj::sound->music )) {
-HXLINE(1688)						::flixel::FlxG_obj::sound->music->set_volume(value);
+HXDLIN(1681)				if (_hx_tmp) {
+HXLINE(1682)					if (::hx::IsNotNull( ::flixel::FlxG_obj::sound->music )) {
+HXLINE(1683)						::flixel::FlxG_obj::sound->music->set_volume(value);
             					}
             				}
             				else {
-HXLINE(1690)					if (game->modchartSounds->exists(tag)) {
-HXLINE(1691)						( ( ::flixel::sound::FlxSound)(game->modchartSounds->get(tag)) )->set_volume(value);
+HXLINE(1685)					if (game->modchartSounds->exists(tag)) {
+HXLINE(1686)						( ( ::flixel::sound::FlxSound)(game->modchartSounds->get(tag)) )->set_volume(value);
             					}
             				}
             			}
             			HX_END_LOCAL_FUNC2((void))
 
-HXLINE(1685)			 cpp::Reference<lua_State> l121 = this->lua;
-HXDLIN(1685)			::llua::Lua_helper_obj::callbacks->set(HX_("setSoundVolume",87,6b,3e,ba), ::Dynamic(new _hx_Closure_163(game)));
-HXDLIN(1685)			linc::callbacks::add_callback_function(l121,HX_("setSoundVolume",87,6b,3e,ba));
+HXLINE(1680)			 cpp::Reference<lua_State> l121 = this->lua;
+HXDLIN(1680)			::llua::Lua_helper_obj::callbacks->set(HX_("setSoundVolume",87,6b,3e,ba), ::Dynamic(new _hx_Closure_162(game)));
+HXDLIN(1680)			linc::callbacks::add_callback_function(l121,HX_("setSoundVolume",87,6b,3e,ba));
             		}
-HXLINE(1694)		{
-            			HX_BEGIN_LOCAL_FUNC_S1(::hx::LocalFunc,_hx_Closure_164, ::states::PlayState,game) HXARGC(1)
+HXLINE(1689)		{
+            			HX_BEGIN_LOCAL_FUNC_S1(::hx::LocalFunc,_hx_Closure_163, ::states::PlayState,game) HXARGC(1)
             			Float _hx_run(::String tag){
-            				HX_GC_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1694_new)
-HXLINE(1695)				bool _hx_tmp;
-HXDLIN(1695)				bool _hx_tmp1;
-HXDLIN(1695)				if (::hx::IsNotNull( tag )) {
-HXLINE(1695)					_hx_tmp1 = (tag.length > 0);
+            				HX_GC_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1689_new)
+HXLINE(1690)				bool _hx_tmp;
+HXDLIN(1690)				bool _hx_tmp1;
+HXDLIN(1690)				if (::hx::IsNotNull( tag )) {
+HXLINE(1690)					_hx_tmp1 = (tag.length > 0);
             				}
             				else {
-HXLINE(1695)					_hx_tmp1 = false;
+HXLINE(1690)					_hx_tmp1 = false;
             				}
-HXDLIN(1695)				if (_hx_tmp1) {
-HXLINE(1695)					_hx_tmp = game->modchartSounds->exists(tag);
+HXDLIN(1690)				if (_hx_tmp1) {
+HXLINE(1690)					_hx_tmp = game->modchartSounds->exists(tag);
             				}
             				else {
-HXLINE(1695)					_hx_tmp = false;
+HXLINE(1690)					_hx_tmp = false;
             				}
-HXDLIN(1695)				if (_hx_tmp) {
-HXLINE(1696)					return ( ( ::flixel::sound::FlxSound)(game->modchartSounds->get(tag)) )->_time;
+HXDLIN(1690)				if (_hx_tmp) {
+HXLINE(1691)					return ( ( ::flixel::sound::FlxSound)(game->modchartSounds->get(tag)) )->_time;
             				}
-HXLINE(1698)				return ( (Float)(0) );
+HXLINE(1693)				return ( (Float)(0) );
             			}
             			HX_END_LOCAL_FUNC1(return)
 
-HXLINE(1694)			 cpp::Reference<lua_State> l122 = this->lua;
-HXDLIN(1694)			::llua::Lua_helper_obj::callbacks->set(HX_("getSoundTime",06,35,21,67), ::Dynamic(new _hx_Closure_164(game)));
-HXDLIN(1694)			linc::callbacks::add_callback_function(l122,HX_("getSoundTime",06,35,21,67));
+HXLINE(1689)			 cpp::Reference<lua_State> l122 = this->lua;
+HXDLIN(1689)			::llua::Lua_helper_obj::callbacks->set(HX_("getSoundTime",06,35,21,67), ::Dynamic(new _hx_Closure_163(game)));
+HXDLIN(1689)			linc::callbacks::add_callback_function(l122,HX_("getSoundTime",06,35,21,67));
             		}
-HXLINE(1700)		{
-            			HX_BEGIN_LOCAL_FUNC_S1(::hx::LocalFunc,_hx_Closure_165, ::states::PlayState,game) HXARGC(2)
+HXLINE(1695)		{
+            			HX_BEGIN_LOCAL_FUNC_S1(::hx::LocalFunc,_hx_Closure_164, ::states::PlayState,game) HXARGC(2)
             			void _hx_run(::String tag,Float value){
-            				HX_GC_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1701_new)
-HXLINE(1701)				bool _hx_tmp;
-HXDLIN(1701)				bool _hx_tmp1;
-HXDLIN(1701)				if (::hx::IsNotNull( tag )) {
-HXLINE(1701)					_hx_tmp1 = (tag.length > 0);
+            				HX_GC_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1696_new)
+HXLINE(1696)				bool _hx_tmp;
+HXDLIN(1696)				bool _hx_tmp1;
+HXDLIN(1696)				if (::hx::IsNotNull( tag )) {
+HXLINE(1696)					_hx_tmp1 = (tag.length > 0);
             				}
             				else {
-HXLINE(1701)					_hx_tmp1 = false;
+HXLINE(1696)					_hx_tmp1 = false;
             				}
-HXDLIN(1701)				if (_hx_tmp1) {
-HXLINE(1701)					_hx_tmp = game->modchartSounds->exists(tag);
+HXDLIN(1696)				if (_hx_tmp1) {
+HXLINE(1696)					_hx_tmp = game->modchartSounds->exists(tag);
             				}
             				else {
-HXLINE(1701)					_hx_tmp = false;
+HXLINE(1696)					_hx_tmp = false;
             				}
-HXDLIN(1701)				if (_hx_tmp) {
-HXLINE(1702)					 ::flixel::sound::FlxSound theSound = ( ( ::flixel::sound::FlxSound)(game->modchartSounds->get(tag)) );
-HXLINE(1703)					if (::hx::IsNotNull( theSound )) {
-HXLINE(1704)						bool wasResumed = ::hx::IsNotNull( theSound->_channel );
-HXLINE(1705)						theSound->pause();
-HXLINE(1706)						theSound->set_time(value);
-HXLINE(1707)						if (wasResumed) {
-HXLINE(1707)							theSound->play(null(),null(),null());
+HXDLIN(1696)				if (_hx_tmp) {
+HXLINE(1697)					 ::flixel::sound::FlxSound theSound = ( ( ::flixel::sound::FlxSound)(game->modchartSounds->get(tag)) );
+HXLINE(1698)					if (::hx::IsNotNull( theSound )) {
+HXLINE(1699)						bool wasResumed = ::hx::IsNotNull( theSound->_channel );
+HXLINE(1700)						theSound->pause();
+HXLINE(1701)						theSound->set_time(value);
+HXLINE(1702)						if (wasResumed) {
+HXLINE(1702)							theSound->play(null(),null(),null());
             						}
             					}
             				}
             			}
             			HX_END_LOCAL_FUNC2((void))
 
-HXLINE(1700)			 cpp::Reference<lua_State> l123 = this->lua;
-HXDLIN(1700)			::llua::Lua_helper_obj::callbacks->set(HX_("setSoundTime",7a,58,1a,7c), ::Dynamic(new _hx_Closure_165(game)));
-HXDLIN(1700)			linc::callbacks::add_callback_function(l123,HX_("setSoundTime",7a,58,1a,7c));
+HXLINE(1695)			 cpp::Reference<lua_State> l123 = this->lua;
+HXDLIN(1695)			::llua::Lua_helper_obj::callbacks->set(HX_("setSoundTime",7a,58,1a,7c), ::Dynamic(new _hx_Closure_164(game)));
+HXDLIN(1695)			linc::callbacks::add_callback_function(l123,HX_("setSoundTime",7a,58,1a,7c));
             		}
-HXLINE(1712)		{
-            			HX_BEGIN_LOCAL_FUNC_S0(::hx::LocalFunc,_hx_Closure_166) HXARGC(2)
+HXLINE(1707)		{
+            			HX_BEGIN_LOCAL_FUNC_S0(::hx::LocalFunc,_hx_Closure_165) HXARGC(2)
             			void _hx_run( ::Dynamic __o_text,::String __o_color){
             		 ::Dynamic text = __o_text;
             		if (::hx::IsNull(__o_text)) text = HX_("",00,00,00,00);
             		::String color = __o_color;
             		if (::hx::IsNull(__o_color)) color = HX_("WHITE",89,82,ab,47);
-            				HX_GC_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1712_new)
-HXLINE(1712)				 ::states::PlayState _hx_tmp = ::states::PlayState_obj::instance;
-HXDLIN(1712)				 ::EReg hideChars =  ::EReg_obj::__alloc( HX_CTX ,HX_("[\t\n\r]",ac,57,71,6b),HX_("",00,00,00,00));
-HXDLIN(1712)				::String color1 = ::StringTools_obj::trim(hideChars->split(color)->join(HX_("",00,00,00,00)));
-HXDLIN(1712)				if (::StringTools_obj::startsWith(color1,HX_("0x",48,2a,00,00))) {
-HXLINE( 150)					color1 = color1.substring((color1.length - 6),null());
+            				HX_GC_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1707_new)
+HXLINE(1707)				 ::states::PlayState _hx_tmp = ::states::PlayState_obj::instance;
+HXDLIN(1707)				 ::EReg hideChars =  ::EReg_obj::__alloc( HX_CTX ,HX_("[\t\n\r]",ac,57,71,6b),HX_("",00,00,00,00));
+HXDLIN(1707)				::String color1 = ::StringTools_obj::trim(hideChars->split(color)->join(HX_("",00,00,00,00)));
+HXDLIN(1707)				if (::StringTools_obj::startsWith(color1,HX_("0x",48,2a,00,00))) {
+HXLINE( 119)					color1 = color1.substring((color1.length - 6),null());
             				}
-HXLINE(1712)				 ::Dynamic colorNum = ::flixel::util::_FlxColor::FlxColor_Impl__obj::fromString(color1);
-HXDLIN(1712)				if (::hx::IsNull( colorNum )) {
-HXLINE( 153)					colorNum = ::flixel::util::_FlxColor::FlxColor_Impl__obj::fromString((HX_("#",23,00,00,00) + color1));
+HXLINE(1707)				 ::Dynamic colorNum = ::flixel::util::_FlxColor::FlxColor_Impl__obj::fromString(color1);
+HXDLIN(1707)				if (::hx::IsNull( colorNum )) {
+HXLINE( 122)					colorNum = ::flixel::util::_FlxColor::FlxColor_Impl__obj::fromString((HX_("#",23,00,00,00) + color1));
             				}
-HXLINE(1712)				int _hx_tmp1;
-HXDLIN(1712)				if (::hx::IsNotNull( colorNum )) {
-HXLINE(1712)					_hx_tmp1 = ( (int)(colorNum) );
+HXLINE(1707)				int _hx_tmp1;
+HXDLIN(1707)				if (::hx::IsNotNull( colorNum )) {
+HXLINE(1707)					_hx_tmp1 = ( (int)(colorNum) );
             				}
             				else {
-HXLINE(1712)					_hx_tmp1 = -1;
+HXLINE(1707)					_hx_tmp1 = -1;
             				}
-HXDLIN(1712)				_hx_tmp->addTextToDebug(( (::String)(text) ),_hx_tmp1);
+HXDLIN(1707)				_hx_tmp->addTextToDebug(( (::String)(text) ),_hx_tmp1);
             			}
             			HX_END_LOCAL_FUNC2((void))
 
-HXLINE(1712)			 cpp::Reference<lua_State> l124 = this->lua;
-HXDLIN(1712)			::llua::Lua_helper_obj::callbacks->set(HX_("debugPrint",da,28,6f,c7), ::Dynamic(new _hx_Closure_166()));
-HXDLIN(1712)			linc::callbacks::add_callback_function(l124,HX_("debugPrint",da,28,6f,c7));
+HXLINE(1707)			 cpp::Reference<lua_State> l124 = this->lua;
+HXDLIN(1707)			::llua::Lua_helper_obj::callbacks->set(HX_("debugPrint",da,28,6f,c7), ::Dynamic(new _hx_Closure_165()));
+HXDLIN(1707)			linc::callbacks::add_callback_function(l124,HX_("debugPrint",da,28,6f,c7));
             		}
-HXLINE(1714)		this->addLocalCallback(HX_("close",b8,17,63,48), ::Dynamic(new _hx_Closure_167(_gthis,scriptName)));
-HXLINE(1720)		::backend::DiscordClient_obj::addLuaCallbacks(this->lua);
-HXLINE(1721)		::psychlua::HScript_obj::implement(::hx::ObjectPtr<OBJ_>(this));
-HXLINE(1722)		::psychlua::ReflectionFunctions_obj::implement(::hx::ObjectPtr<OBJ_>(this));
-HXLINE(1723)		::psychlua::TextFunctions_obj::implement(::hx::ObjectPtr<OBJ_>(this));
-HXLINE(1724)		::psychlua::ExtraFunctions_obj::implement(::hx::ObjectPtr<OBJ_>(this));
-HXLINE(1725)		::psychlua::CustomSubstate_obj::implement(::hx::ObjectPtr<OBJ_>(this));
-HXLINE(1726)		::psychlua::ShaderFunctions_obj::implement(::hx::ObjectPtr<OBJ_>(this));
-HXLINE(1727)		::psychlua::DeprecatedFunctions_obj::implement(::hx::ObjectPtr<OBJ_>(this));
-HXLINE(1729)		try {
+HXLINE(1709)		this->addLocalCallback(HX_("close",b8,17,63,48), ::Dynamic(new _hx_Closure_166(_gthis,scriptName)));
+HXLINE(1715)		::backend::DiscordClient_obj::addLuaCallbacks(this->lua);
+HXLINE(1716)		::psychlua::HScript_obj::implement(::hx::ObjectPtr<OBJ_>(this));
+HXLINE(1717)		::psychlua::ReflectionFunctions_obj::implement(::hx::ObjectPtr<OBJ_>(this));
+HXLINE(1718)		::psychlua::TextFunctions_obj::implement(::hx::ObjectPtr<OBJ_>(this));
+HXLINE(1719)		::psychlua::ExtraFunctions_obj::implement(::hx::ObjectPtr<OBJ_>(this));
+HXLINE(1720)		::psychlua::CustomSubstate_obj::implement(::hx::ObjectPtr<OBJ_>(this));
+HXLINE(1721)		::psychlua::ShaderFunctions_obj::implement(::hx::ObjectPtr<OBJ_>(this));
+HXLINE(1722)		::psychlua::DeprecatedFunctions_obj::implement(::hx::ObjectPtr<OBJ_>(this));
+HXLINE(1724)		try {
             			HX_STACK_CATCHABLE( ::Dynamic, 0);
-HXLINE(1730)			 ::Dynamic result = luaL_dofile(this->lua,scriptName);
-HXLINE(1731)			::String resultStr = linc::lua::tostring(this->lua,( (int)(result) ));
-HXLINE(1732)			bool _hx_tmp;
-HXDLIN(1732)			if (::hx::IsNotNull( resultStr )) {
-HXLINE(1732)				_hx_tmp = ::hx::IsNotEq( result,0 );
+HXLINE(1725)			 ::Dynamic result = luaL_dofile(this->lua,scriptName);
+HXLINE(1726)			::String resultStr = linc::lua::tostring(this->lua,( (int)(result) ));
+HXLINE(1727)			bool _hx_tmp;
+HXDLIN(1727)			if (::hx::IsNotNull( resultStr )) {
+HXLINE(1727)				_hx_tmp = ::hx::IsNotEq( result,0 );
             			}
             			else {
-HXLINE(1732)				_hx_tmp = false;
+HXLINE(1727)				_hx_tmp = false;
             			}
-HXDLIN(1732)			if (_hx_tmp) {
-HXLINE(1733)				::haxe::Log_obj::trace(resultStr,::hx::SourceInfo(HX_("source/psychlua/FunkinLua.hx",f5,9a,41,5d),1733,HX_("psychlua.FunkinLua",96,1b,92,ca),HX_("new",60,d0,53,00)));
-HXLINE(1735)				::lime::app::Application_obj::current->_hx___window->alert(resultStr,HX_("Error on lua script!",45,f2,65,3e));
-HXLINE(1739)				this->lua = null();
-HXLINE(1740)				return;
+HXDLIN(1727)			if (_hx_tmp) {
+HXLINE(1728)				::haxe::Log_obj::trace(resultStr,::hx::SourceInfo(HX_("source/psychlua/FunkinLua.hx",f5,9a,41,5d),1728,HX_("psychlua.FunkinLua",96,1b,92,ca),HX_("new",60,d0,53,00)));
+HXLINE(1730)				::lime::app::Application_obj::current->_hx___window->alert(resultStr,HX_("Error on lua script!",45,f2,65,3e));
+HXLINE(1734)				this->lua = null();
+HXLINE(1735)				return;
             			}
             		} catch( ::Dynamic _hx_e) {
             			if (_hx_e.IsClass<  ::Dynamic >() ){
             				HX_STACK_BEGIN_CATCH
             				 ::Dynamic _g = _hx_e;
-HXLINE(1742)				 ::Dynamic e = ::haxe::Exception_obj::caught(_g)->unwrap();
-HXLINE(1743)				::haxe::Log_obj::trace(e,::hx::SourceInfo(HX_("source/psychlua/FunkinLua.hx",f5,9a,41,5d),1743,HX_("psychlua.FunkinLua",96,1b,92,ca),HX_("new",60,d0,53,00)));
-HXLINE(1744)				return;
+HXLINE(1737)				 ::Dynamic e = ::haxe::Exception_obj::caught(_g)->unwrap();
+HXLINE(1738)				::haxe::Log_obj::trace(e,::hx::SourceInfo(HX_("source/psychlua/FunkinLua.hx",f5,9a,41,5d),1738,HX_("psychlua.FunkinLua",96,1b,92,ca),HX_("new",60,d0,53,00)));
+HXLINE(1739)				return;
             			}
             			else {
             				HX_STACK_DO_THROW(_hx_e);
             			}
             		}
-HXLINE(1746)		::haxe::Log_obj::trace((HX_("lua file loaded succesfully:",5f,de,e6,ea) + scriptName),::hx::SourceInfo(HX_("source/psychlua/FunkinLua.hx",f5,9a,41,5d),1746,HX_("psychlua.FunkinLua",96,1b,92,ca),HX_("new",60,d0,53,00)));
-HXLINE(1748)		this->call(HX_("onCreate",7b,5d,bc,5b),::cpp::VirtualArray_obj::__new(0));
+HXLINE(1741)		::haxe::Log_obj::trace((HX_("lua file loaded succesfully:",5f,de,e6,ea) + scriptName),::hx::SourceInfo(HX_("source/psychlua/FunkinLua.hx",f5,9a,41,5d),1741,HX_("psychlua.FunkinLua",96,1b,92,ca),HX_("new",60,d0,53,00)));
+HXLINE(1743)		this->call(HX_("onCreate",7b,5d,bc,5b),::cpp::VirtualArray_obj::__new(0));
             	}
 
 Dynamic FunkinLua_obj::__CreateEmpty() { return new FunkinLua_obj; }
@@ -4652,94 +4634,94 @@ bool FunkinLua_obj::_hx_isInstanceOf(int inClassId) {
 }
 
  ::Dynamic FunkinLua_obj::call(::String func,::cpp::VirtualArray args){
-            	HX_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1755_call)
-HXLINE(1757)		if (this->closed) {
-HXLINE(1757)			return ::psychlua::FunkinLua_obj::Function_Continue;
+            	HX_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1750_call)
+HXLINE(1752)		if (this->closed) {
+HXLINE(1752)			return ::psychlua::FunkinLua_obj::Function_Continue;
             		}
-HXLINE(1759)		this->lastCalledFunction = func;
-HXLINE(1760)		::psychlua::FunkinLua_obj::lastCalledScript = ::hx::ObjectPtr<OBJ_>(this);
-HXLINE(1761)		try {
+HXLINE(1754)		this->lastCalledFunction = func;
+HXLINE(1755)		::psychlua::FunkinLua_obj::lastCalledScript = ::hx::ObjectPtr<OBJ_>(this);
+HXLINE(1756)		try {
             			HX_STACK_CATCHABLE( ::Dynamic, 0);
-HXLINE(1762)			if (::hx::IsNull( this->lua )) {
-HXLINE(1762)				return ::psychlua::FunkinLua_obj::Function_Continue;
+HXLINE(1757)			if (::hx::IsNull( this->lua )) {
+HXLINE(1757)				return ::psychlua::FunkinLua_obj::Function_Continue;
             			}
-HXLINE(1764)			lua_getglobal(this->lua,func);
-HXLINE(1765)			int type = lua_type(this->lua,-1);
-HXLINE(1767)			if ((type != 6)) {
-HXLINE(1768)				if ((type > 0)) {
-HXLINE(1769)					::psychlua::FunkinLua_obj::luaTrace(((((HX_("ERROR (",b0,59,de,69) + func) + HX_("): attempt to call a ",3e,66,c9,81)) + ::psychlua::LuaUtils_obj::typeToString(type)) + HX_(" value",51,0b,24,fd)),false,false,-65536);
+HXLINE(1759)			lua_getglobal(this->lua,func);
+HXLINE(1760)			int type = lua_type(this->lua,-1);
+HXLINE(1762)			if ((type != 6)) {
+HXLINE(1763)				if ((type > 0)) {
+HXLINE(1764)					::psychlua::FunkinLua_obj::luaTrace(((((HX_("ERROR (",b0,59,de,69) + func) + HX_("): attempt to call a ",3e,66,c9,81)) + ::psychlua::LuaUtils_obj::typeToString(type)) + HX_(" value",51,0b,24,fd)),false,false,-65536);
             				}
-HXLINE(1771)				lua_pop(this->lua,1);
-HXLINE(1772)				return ::psychlua::FunkinLua_obj::Function_Continue;
+HXLINE(1766)				lua_pop(this->lua,1);
+HXLINE(1767)				return ::psychlua::FunkinLua_obj::Function_Continue;
             			}
-HXLINE(1775)			{
-HXLINE(1775)				int _g = 0;
-HXDLIN(1775)				while((_g < args->get_length())){
-HXLINE(1775)					 ::Dynamic arg = args->__get(_g);
-HXDLIN(1775)					_g = (_g + 1);
-HXDLIN(1775)					::llua::Convert_obj::toLua(this->lua,arg);
+HXLINE(1770)			{
+HXLINE(1770)				int _g = 0;
+HXDLIN(1770)				while((_g < args->get_length())){
+HXLINE(1770)					 ::Dynamic arg = args->__get(_g);
+HXDLIN(1770)					_g = (_g + 1);
+HXDLIN(1770)					::llua::Convert_obj::toLua(this->lua,arg);
             				}
             			}
-HXLINE(1776)			int status = lua_pcall(this->lua,args->get_length(),1,0);
-HXLINE(1779)			if ((status != 0)) {
-HXLINE(1780)				::String error = this->getErrorMessage(status);
-HXLINE(1781)				::psychlua::FunkinLua_obj::luaTrace((((HX_("ERROR (",b0,59,de,69) + func) + HX_("): ",0f,4f,1f,00)) + error),false,false,-65536);
-HXLINE(1782)				return ::psychlua::FunkinLua_obj::Function_Continue;
+HXLINE(1771)			int status = lua_pcall(this->lua,args->get_length(),1,0);
+HXLINE(1774)			if ((status != 0)) {
+HXLINE(1775)				::String error = this->getErrorMessage(status);
+HXLINE(1776)				::psychlua::FunkinLua_obj::luaTrace((((HX_("ERROR (",b0,59,de,69) + func) + HX_("): ",0f,4f,1f,00)) + error),false,false,-65536);
+HXLINE(1777)				return ::psychlua::FunkinLua_obj::Function_Continue;
             			}
-HXLINE(1786)			 ::Dynamic result = ::llua::Convert_obj::fromLua(this->lua,-1);
-HXLINE(1787)			if (::hx::IsNull( result )) {
-HXLINE(1787)				result = ::psychlua::FunkinLua_obj::Function_Continue;
+HXLINE(1781)			 ::Dynamic result = ::llua::Convert_obj::fromLua(this->lua,-1);
+HXLINE(1782)			if (::hx::IsNull( result )) {
+HXLINE(1782)				result = ::psychlua::FunkinLua_obj::Function_Continue;
             			}
-HXLINE(1789)			lua_pop(this->lua,1);
-HXLINE(1790)			if (this->closed) {
-HXLINE(1790)				this->stop();
+HXLINE(1784)			lua_pop(this->lua,1);
+HXLINE(1785)			if (this->closed) {
+HXLINE(1785)				this->stop();
             			}
-HXLINE(1791)			return result;
+HXLINE(1786)			return result;
             		} catch( ::Dynamic _hx_e) {
             			if (_hx_e.IsClass<  ::Dynamic >() ){
             				HX_STACK_BEGIN_CATCH
             				 ::Dynamic _g = _hx_e;
-HXLINE(1793)				{
-HXLINE(1793)					null();
+HXLINE(1788)				{
+HXLINE(1788)					null();
             				}
-HXDLIN(1793)				 ::Dynamic e = ::haxe::Exception_obj::caught(_g)->unwrap();
-HXLINE(1794)				::haxe::Log_obj::trace(e,::hx::SourceInfo(HX_("source/psychlua/FunkinLua.hx",f5,9a,41,5d),1794,HX_("psychlua.FunkinLua",96,1b,92,ca),HX_("call",9e,18,ba,41)));
+HXDLIN(1788)				 ::Dynamic e = ::haxe::Exception_obj::caught(_g)->unwrap();
+HXLINE(1789)				::haxe::Log_obj::trace(e,::hx::SourceInfo(HX_("source/psychlua/FunkinLua.hx",f5,9a,41,5d),1789,HX_("psychlua.FunkinLua",96,1b,92,ca),HX_("call",9e,18,ba,41)));
             			}
             			else {
             				HX_STACK_DO_THROW(_hx_e);
             			}
             		}
-HXLINE(1797)		return ::psychlua::FunkinLua_obj::Function_Continue;
+HXLINE(1792)		return ::psychlua::FunkinLua_obj::Function_Continue;
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC2(FunkinLua_obj,call,return )
 
 void FunkinLua_obj::set(::String variable, ::Dynamic data){
-            	HX_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1800_set)
-HXLINE(1802)		if (::hx::IsNull( this->lua )) {
-HXLINE(1803)			return;
+            	HX_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1795_set)
+HXLINE(1797)		if (::hx::IsNull( this->lua )) {
+HXLINE(1798)			return;
             		}
-HXLINE(1806)		::llua::Convert_obj::toLua(this->lua,data);
-HXLINE(1807)		lua_setglobal(this->lua,variable);
+HXLINE(1801)		::llua::Convert_obj::toLua(this->lua,data);
+HXLINE(1802)		lua_setglobal(this->lua,variable);
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC2(FunkinLua_obj,set,(void))
 
 void FunkinLua_obj::stop(){
-            	HX_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1811_stop)
-HXLINE(1813)		::states::PlayState_obj::instance->luaArray->remove(::hx::ObjectPtr<OBJ_>(this));
-HXLINE(1814)		this->closed = true;
-HXLINE(1816)		if (::hx::IsNull( this->lua )) {
-HXLINE(1817)			return;
+            	HX_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1806_stop)
+HXLINE(1808)		::states::PlayState_obj::instance->luaArray->remove(::hx::ObjectPtr<OBJ_>(this));
+HXLINE(1809)		this->closed = true;
+HXLINE(1811)		if (::hx::IsNull( this->lua )) {
+HXLINE(1812)			return;
             		}
-HXLINE(1819)		lua_close(this->lua);
-HXLINE(1820)		this->lua = null();
-HXLINE(1822)		if (::hx::IsNotNull( this->hscript )) {
-HXLINE(1824)			this->hscript->active = false;
-HXLINE(1826)			this->hscript->destroy();
-HXLINE(1828)			this->hscript = null();
+HXLINE(1814)		lua_close(this->lua);
+HXLINE(1815)		this->lua = null();
+HXLINE(1817)		if (::hx::IsNotNull( this->hscript )) {
+HXLINE(1819)			this->hscript->active = false;
+HXLINE(1821)			this->hscript->destroy();
+HXLINE(1823)			this->hscript = null();
             		}
             	}
 
@@ -4747,25 +4729,25 @@ HXLINE(1828)			this->hscript = null();
 HX_DEFINE_DYNAMIC_FUNC0(FunkinLua_obj,stop,(void))
 
 void FunkinLua_obj::oldTweenFunction(::String tag,::String vars, ::Dynamic tweenValue,Float duration,::String ease,::String funcName){
-            	HX_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1855_oldTweenFunction)
-HXLINE(1857)		 ::Dynamic target = ::psychlua::LuaUtils_obj::tweenPrepare(tag,vars);
-HXLINE(1858)		if (::hx::IsNotNull( target )) {
+            	HX_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1850_oldTweenFunction)
+HXLINE(1852)		 ::Dynamic target = ::psychlua::LuaUtils_obj::tweenPrepare(tag,vars);
+HXLINE(1853)		if (::hx::IsNotNull( target )) {
             			HX_BEGIN_LOCAL_FUNC_S2(::hx::LocalFunc,_hx_Closure_0,::String,tag,::String,vars) HXARGC(1)
             			void _hx_run( ::flixel::tweens::FlxTween twn){
-            				HX_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1860_oldTweenFunction)
-HXLINE(1861)				::states::PlayState_obj::instance->modchartTweens->remove(tag);
-HXLINE(1862)				::states::PlayState_obj::instance->callOnLuas(HX_("onTweenCompleted",1f,bf,ab,08),::cpp::VirtualArray_obj::__new(2)->init(0,tag)->init(1,vars),null(),null(),null());
+            				HX_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1855_oldTweenFunction)
+HXLINE(1856)				::states::PlayState_obj::instance->modchartTweens->remove(tag);
+HXLINE(1857)				::states::PlayState_obj::instance->callOnLuas(HX_("onTweenCompleted",1f,bf,ab,08),::cpp::VirtualArray_obj::__new(2)->init(0,tag)->init(1,vars),null(),null(),null());
             			}
             			HX_END_LOCAL_FUNC1((void))
 
-HXLINE(1859)			::Dynamic this1 = ::states::PlayState_obj::instance->modchartTweens;
-HXDLIN(1859)			 ::flixel::tweens::FlxTween value = ::flixel::tweens::FlxTween_obj::tween(target,tweenValue,duration, ::Dynamic(::hx::Anon_obj::Create(2)
+HXLINE(1854)			::Dynamic this1 = ::states::PlayState_obj::instance->modchartTweens;
+HXDLIN(1854)			 ::flixel::tweens::FlxTween value = ::flixel::tweens::FlxTween_obj::tween(target,tweenValue,duration, ::Dynamic(::hx::Anon_obj::Create(2)
             				->setFixed(0,HX_("ease",ee,8b,0c,43),::psychlua::LuaUtils_obj::getTweenEaseByString(ease))
             				->setFixed(1,HX_("onComplete",f8,d4,7e,5d), ::Dynamic(new _hx_Closure_0(tag,vars)))));
-HXDLIN(1859)			( ( ::haxe::ds::StringMap)(this1) )->set(tag,value);
+HXDLIN(1854)			( ( ::haxe::ds::StringMap)(this1) )->set(tag,value);
             		}
             		else {
-HXLINE(1866)			::psychlua::FunkinLua_obj::luaTrace((((HX_("",00,00,00,00) + funcName) + HX_(": Couldnt find object: ",0d,a7,c3,c1)) + vars),false,false,-65536);
+HXLINE(1861)			::psychlua::FunkinLua_obj::luaTrace((((HX_("",00,00,00,00) + funcName) + HX_(": Couldnt find object: ",0d,a7,c3,c1)) + vars),false,false,-65536);
             		}
             	}
 
@@ -4775,77 +4757,77 @@ HX_DEFINE_DYNAMIC_FUNC6(FunkinLua_obj,oldTweenFunction,(void))
 ::String FunkinLua_obj::findScript(::String scriptFile,::String __o_ext){
             		::String ext = __o_ext;
             		if (::hx::IsNull(__o_ext)) ext = HX_(".lua",4a,2a,ba,1e);
-            	HX_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1903_findScript)
-HXLINE(1904)		if (!(::StringTools_obj::endsWith(scriptFile,ext))) {
-HXLINE(1904)			scriptFile = (scriptFile + ext);
+            	HX_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1898_findScript)
+HXLINE(1899)		if (!(::StringTools_obj::endsWith(scriptFile,ext))) {
+HXLINE(1899)			scriptFile = (scriptFile + ext);
             		}
-HXLINE(1905)		::String file = scriptFile;
-HXDLIN(1905)		if (::hx::IsNull( file )) {
-HXLINE(1905)			file = HX_("",00,00,00,00);
+HXLINE(1900)		::String file = scriptFile;
+HXDLIN(1900)		if (::hx::IsNull( file )) {
+HXLINE(1900)			file = HX_("",00,00,00,00);
             		}
-HXDLIN(1905)		::String preloadPath = (HX_("assets/",4c,2a,dc,36) + file);
-HXLINE(1907)		::String path = ::backend::Paths_obj::modFolders(scriptFile);
-HXLINE(1908)		if (::sys::FileSystem_obj::exists(scriptFile)) {
-HXLINE(1909)			return scriptFile;
+HXDLIN(1900)		::String preloadPath = (HX_("assets/",4c,2a,dc,36) + file);
+HXLINE(1902)		::String path = ::backend::Paths_obj::modFolders(scriptFile);
+HXLINE(1903)		if (::sys::FileSystem_obj::exists(scriptFile)) {
+HXLINE(1904)			return scriptFile;
             		}
             		else {
-HXLINE(1910)			if (::sys::FileSystem_obj::exists(path)) {
-HXLINE(1911)				return path;
+HXLINE(1905)			if (::sys::FileSystem_obj::exists(path)) {
+HXLINE(1906)				return path;
             			}
             		}
-HXLINE(1913)		if (::sys::FileSystem_obj::exists(preloadPath)) {
-HXLINE(1918)			return preloadPath;
+HXLINE(1908)		if (::sys::FileSystem_obj::exists(preloadPath)) {
+HXLINE(1913)			return preloadPath;
             		}
-HXLINE(1920)		return null();
+HXLINE(1915)		return null();
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC2(FunkinLua_obj,findScript,return )
 
 ::String FunkinLua_obj::getErrorMessage(int status){
-            	HX_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1923_getErrorMessage)
-HXLINE(1925)		::String v = linc::lua::tostring(this->lua,-1);
-HXLINE(1926)		lua_pop(this->lua,1);
-HXLINE(1928)		if (::hx::IsNotNull( v )) {
-HXLINE(1928)			v = ::StringTools_obj::trim(v);
+            	HX_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1918_getErrorMessage)
+HXLINE(1920)		::String v = linc::lua::tostring(this->lua,-1);
+HXLINE(1921)		lua_pop(this->lua,1);
+HXLINE(1923)		if (::hx::IsNotNull( v )) {
+HXLINE(1923)			v = ::StringTools_obj::trim(v);
             		}
-HXLINE(1929)		bool _hx_tmp;
-HXDLIN(1929)		if (::hx::IsNotNull( v )) {
-HXLINE(1929)			_hx_tmp = (v == HX_("",00,00,00,00));
+HXLINE(1924)		bool _hx_tmp;
+HXDLIN(1924)		if (::hx::IsNotNull( v )) {
+HXLINE(1924)			_hx_tmp = (v == HX_("",00,00,00,00));
             		}
             		else {
-HXLINE(1929)			_hx_tmp = true;
+HXLINE(1924)			_hx_tmp = true;
             		}
-HXDLIN(1929)		if (_hx_tmp) {
-HXLINE(1930)			switch((int)(status)){
+HXDLIN(1924)		if (_hx_tmp) {
+HXLINE(1925)			switch((int)(status)){
             				case (int)2: {
-HXLINE(1931)					return HX_("Runtime Error",40,fe,ae,fe);
+HXLINE(1926)					return HX_("Runtime Error",40,fe,ae,fe);
             				}
             				break;
             				case (int)4: {
-HXLINE(1932)					return HX_("Memory Allocation Error",a7,0d,34,8f);
+HXLINE(1927)					return HX_("Memory Allocation Error",a7,0d,34,8f);
             				}
             				break;
             				case (int)5: {
-HXLINE(1933)					return HX_("Critical Error",87,29,36,da);
+HXLINE(1928)					return HX_("Critical Error",87,29,36,da);
             				}
             				break;
             			}
-HXLINE(1935)			return HX_("Unknown Error",72,7e,3c,a3);
+HXLINE(1930)			return HX_("Unknown Error",72,7e,3c,a3);
             		}
-HXLINE(1938)		return v;
+HXLINE(1933)		return v;
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC1(FunkinLua_obj,getErrorMessage,return )
 
 void FunkinLua_obj::addLocalCallback(::String name, ::Dynamic myFunction){
-            	HX_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1944_addLocalCallback)
-HXLINE(1946)		this->callbacks->set(name,myFunction);
-HXLINE(1947)		{
-HXLINE(1947)			 cpp::Reference<lua_State> l = this->lua;
-HXDLIN(1947)			::llua::Lua_helper_obj::callbacks->set(name,null());
-HXDLIN(1947)			linc::callbacks::add_callback_function(l,name);
+            	HX_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1939_addLocalCallback)
+HXLINE(1941)		this->callbacks->set(name,myFunction);
+HXLINE(1942)		{
+HXLINE(1942)			 cpp::Reference<lua_State> l = this->lua;
+HXDLIN(1942)			::llua::Lua_helper_obj::callbacks->set(name,null());
+HXDLIN(1942)			linc::callbacks::add_callback_function(l,name);
             		}
             	}
 
@@ -4855,78 +4837,78 @@ HX_DEFINE_DYNAMIC_FUNC2(FunkinLua_obj,addLocalCallback,(void))
 bool FunkinLua_obj::initLuaShader(::String name, ::Dynamic __o_glslVersion){
             		 ::Dynamic glslVersion = __o_glslVersion;
             		if (::hx::IsNull(__o_glslVersion)) glslVersion = 120;
-            	HX_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1955_initLuaShader)
-HXLINE(1956)		if (!(::backend::ClientPrefs_obj::data->shaders)) {
-HXLINE(1956)			return false;
+            	HX_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1950_initLuaShader)
+HXLINE(1951)		if (!(::backend::ClientPrefs_obj::data->shaders)) {
+HXLINE(1951)			return false;
             		}
-HXLINE(1959)		if (this->runtimeShaders->exists(name)) {
-HXLINE(1961)			::psychlua::FunkinLua_obj::luaTrace(((HX_("Shader ",3b,a9,d7,2c) + name) + HX_(" was already initialized!",8c,8e,cf,cf)),null(),null(),null());
-HXLINE(1962)			return true;
+HXLINE(1954)		if (this->runtimeShaders->exists(name)) {
+HXLINE(1956)			::psychlua::FunkinLua_obj::luaTrace(((HX_("Shader ",3b,a9,d7,2c) + name) + HX_(" was already initialized!",8c,8e,cf,cf)),null(),null(),null());
+HXLINE(1957)			return true;
             		}
-HXLINE(1965)		::String key = HX_("shaders/",c1,f6,2a,36);
-HXDLIN(1965)		if (::hx::IsNull( key )) {
-HXLINE(1965)			key = HX_("",00,00,00,00);
+HXLINE(1960)		::String key = HX_("shaders/",c1,f6,2a,36);
+HXDLIN(1960)		if (::hx::IsNull( key )) {
+HXLINE(1960)			key = HX_("",00,00,00,00);
             		}
-HXDLIN(1965)		::Array< ::String > foldersToCheck = ::Array_obj< ::String >::__new(1)->init(0,(HX_("mods/",9e,2f,58,0c) + key));
-HXLINE(1966)		bool _hx_tmp;
-HXDLIN(1966)		if (::hx::IsNotNull( ::backend::Mods_obj::currentModDirectory )) {
-HXLINE(1966)			_hx_tmp = (::backend::Mods_obj::currentModDirectory.length > 0);
+HXDLIN(1960)		::Array< ::String > foldersToCheck = ::Array_obj< ::String >::__new(1)->init(0,(HX_("mods/",9e,2f,58,0c) + key));
+HXLINE(1961)		bool _hx_tmp;
+HXDLIN(1961)		if (::hx::IsNotNull( ::backend::Mods_obj::currentModDirectory )) {
+HXLINE(1961)			_hx_tmp = (::backend::Mods_obj::currentModDirectory.length > 0);
             		}
             		else {
-HXLINE(1966)			_hx_tmp = false;
+HXLINE(1961)			_hx_tmp = false;
             		}
-HXDLIN(1966)		if (_hx_tmp) {
-HXLINE(1967)			::String key = (::backend::Mods_obj::currentModDirectory + HX_("/shaders/",f0,3d,7d,f0));
-HXDLIN(1967)			if (::hx::IsNull( key )) {
-HXLINE(1967)				key = HX_("",00,00,00,00);
+HXDLIN(1961)		if (_hx_tmp) {
+HXLINE(1962)			::String key = (::backend::Mods_obj::currentModDirectory + HX_("/shaders/",f0,3d,7d,f0));
+HXDLIN(1962)			if (::hx::IsNull( key )) {
+HXLINE(1962)				key = HX_("",00,00,00,00);
             			}
-HXDLIN(1967)			foldersToCheck->insert(0,(HX_("mods/",9e,2f,58,0c) + key));
+HXDLIN(1962)			foldersToCheck->insert(0,(HX_("mods/",9e,2f,58,0c) + key));
             		}
-HXLINE(1969)		{
-HXLINE(1969)			int _g = 0;
-HXDLIN(1969)			::Array< ::String > _g1 = ::backend::Mods_obj::globalMods;
-HXDLIN(1969)			while((_g < _g1->length)){
-HXLINE(1969)				::String mod = _g1->__get(_g);
-HXDLIN(1969)				_g = (_g + 1);
-HXLINE(1970)				::String key = (mod + HX_("/shaders/",f0,3d,7d,f0));
-HXDLIN(1970)				if (::hx::IsNull( key )) {
-HXLINE(1970)					key = HX_("",00,00,00,00);
+HXLINE(1964)		{
+HXLINE(1964)			int _g = 0;
+HXDLIN(1964)			::Array< ::String > _g1 = ::backend::Mods_obj::globalMods;
+HXDLIN(1964)			while((_g < _g1->length)){
+HXLINE(1964)				::String mod = _g1->__get(_g);
+HXDLIN(1964)				_g = (_g + 1);
+HXLINE(1965)				::String key = (mod + HX_("/shaders/",f0,3d,7d,f0));
+HXDLIN(1965)				if (::hx::IsNull( key )) {
+HXLINE(1965)					key = HX_("",00,00,00,00);
             				}
-HXDLIN(1970)				foldersToCheck->insert(0,(HX_("mods/",9e,2f,58,0c) + key));
+HXDLIN(1965)				foldersToCheck->insert(0,(HX_("mods/",9e,2f,58,0c) + key));
             			}
             		}
-HXLINE(1972)		{
-HXLINE(1972)			int _g2 = 0;
-HXDLIN(1972)			while((_g2 < foldersToCheck->length)){
-HXLINE(1972)				::String folder = foldersToCheck->__get(_g2);
-HXDLIN(1972)				_g2 = (_g2 + 1);
-HXLINE(1974)				if (::sys::FileSystem_obj::exists(folder)) {
-HXLINE(1976)					::String frag = ((folder + name) + HX_(".frag",60,48,31,c0));
-HXLINE(1977)					::String vert = ((folder + name) + HX_(".vert",df,e3,ba,ca));
-HXLINE(1978)					bool found = false;
-HXLINE(1979)					if (::sys::FileSystem_obj::exists(frag)) {
-HXLINE(1981)						frag = ::sys::io::File_obj::getContent(frag);
-HXLINE(1982)						found = true;
+HXLINE(1967)		{
+HXLINE(1967)			int _g2 = 0;
+HXDLIN(1967)			while((_g2 < foldersToCheck->length)){
+HXLINE(1967)				::String folder = foldersToCheck->__get(_g2);
+HXDLIN(1967)				_g2 = (_g2 + 1);
+HXLINE(1969)				if (::sys::FileSystem_obj::exists(folder)) {
+HXLINE(1971)					::String frag = ((folder + name) + HX_(".frag",60,48,31,c0));
+HXLINE(1972)					::String vert = ((folder + name) + HX_(".vert",df,e3,ba,ca));
+HXLINE(1973)					bool found = false;
+HXLINE(1974)					if (::sys::FileSystem_obj::exists(frag)) {
+HXLINE(1976)						frag = ::sys::io::File_obj::getContent(frag);
+HXLINE(1977)						found = true;
             					}
             					else {
-HXLINE(1984)						frag = null();
+HXLINE(1979)						frag = null();
             					}
-HXLINE(1986)					if (::sys::FileSystem_obj::exists(vert)) {
-HXLINE(1988)						vert = ::sys::io::File_obj::getContent(vert);
-HXLINE(1989)						found = true;
+HXLINE(1981)					if (::sys::FileSystem_obj::exists(vert)) {
+HXLINE(1983)						vert = ::sys::io::File_obj::getContent(vert);
+HXLINE(1984)						found = true;
             					}
             					else {
-HXLINE(1991)						vert = null();
+HXLINE(1986)						vert = null();
             					}
-HXLINE(1993)					if (found) {
-HXLINE(1995)						this->runtimeShaders->set(name,::Array_obj< ::String >::__new(2)->init(0,frag)->init(1,vert));
-HXLINE(1997)						return true;
+HXLINE(1988)					if (found) {
+HXLINE(1990)						this->runtimeShaders->set(name,::Array_obj< ::String >::__new(2)->init(0,frag)->init(1,vert));
+HXLINE(1992)						return true;
             					}
             				}
             			}
             		}
-HXLINE(2001)		::psychlua::FunkinLua_obj::luaTrace(((HX_("Missing shader ",81,62,6c,67) + name) + HX_(" .frag AND .vert files!",d4,1e,ab,6a)),false,false,-65536);
-HXLINE(2005)		return false;
+HXLINE(1996)		::psychlua::FunkinLua_obj::luaTrace(((HX_("Missing shader ",81,62,6c,67) + name) + HX_(" .frag AND .vert files!",d4,1e,ab,6a)),false,false,-65536);
+HXLINE(2000)		return false;
             	}
 
 
@@ -4947,8 +4929,8 @@ HX_DEFINE_DYNAMIC_FUNC2(FunkinLua_obj,initLuaShader,return )
  ::psychlua::FunkinLua FunkinLua_obj::lastCalledScript;
 
 ::String FunkinLua_obj::getBuildTarget(){
-            	HX_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1838_getBuildTarget)
-HXDLIN(1838)		return HX_("windows",83,de,74,e8);
+            	HX_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1833_getBuildTarget)
+HXDLIN(1833)		return HX_("windows",83,de,74,e8);
             	}
 
 
@@ -4958,27 +4940,27 @@ void FunkinLua_obj::luaTrace(::String text,::hx::Null< bool >  __o_ignoreCheck,:
             		bool ignoreCheck = __o_ignoreCheck.Default(false);
             		bool deprecated = __o_deprecated.Default(false);
             		int color = __o_color.Default(-1);
-            	HX_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1873_luaTrace)
-HXDLIN(1873)		bool _hx_tmp;
-HXDLIN(1873)		if (!(ignoreCheck)) {
-HXDLIN(1873)			_hx_tmp = ::psychlua::FunkinLua_obj::getBool(HX_("luaDebugMode",7e,06,20,4c));
+            	HX_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1868_luaTrace)
+HXDLIN(1868)		bool _hx_tmp;
+HXDLIN(1868)		if (!(ignoreCheck)) {
+HXDLIN(1868)			_hx_tmp = ::psychlua::FunkinLua_obj::getBool(HX_("luaDebugMode",7e,06,20,4c));
             		}
             		else {
-HXDLIN(1873)			_hx_tmp = true;
+HXDLIN(1868)			_hx_tmp = true;
             		}
-HXDLIN(1873)		if (_hx_tmp) {
-HXLINE(1874)			bool _hx_tmp;
-HXDLIN(1874)			if (deprecated) {
-HXLINE(1874)				_hx_tmp = !(::psychlua::FunkinLua_obj::getBool(HX_("luaDeprecatedWarnings",02,69,36,70)));
+HXDLIN(1868)		if (_hx_tmp) {
+HXLINE(1869)			bool _hx_tmp;
+HXDLIN(1869)			if (deprecated) {
+HXLINE(1869)				_hx_tmp = !(::psychlua::FunkinLua_obj::getBool(HX_("luaDeprecatedWarnings",02,69,36,70)));
             			}
             			else {
-HXLINE(1874)				_hx_tmp = false;
+HXLINE(1869)				_hx_tmp = false;
             			}
-HXDLIN(1874)			if (_hx_tmp) {
-HXLINE(1875)				return;
+HXDLIN(1869)			if (_hx_tmp) {
+HXLINE(1870)				return;
             			}
-HXLINE(1877)			::states::PlayState_obj::instance->addTextToDebug(text,color);
-HXLINE(1878)			::haxe::Log_obj::trace(text,::hx::SourceInfo(HX_("source/psychlua/FunkinLua.hx",f5,9a,41,5d),1878,HX_("psychlua.FunkinLua",96,1b,92,ca),HX_("luaTrace",ad,69,82,94)));
+HXLINE(1872)			::states::PlayState_obj::instance->addTextToDebug(text,color);
+HXLINE(1873)			::haxe::Log_obj::trace(text,::hx::SourceInfo(HX_("source/psychlua/FunkinLua.hx",f5,9a,41,5d),1873,HX_("psychlua.FunkinLua",96,1b,92,ca),HX_("luaTrace",ad,69,82,94)));
             		}
             	}
 
@@ -4986,22 +4968,22 @@ HXLINE(1878)			::haxe::Log_obj::trace(text,::hx::SourceInfo(HX_("source/psychlua
 STATIC_HX_DEFINE_DYNAMIC_FUNC4(FunkinLua_obj,luaTrace,(void))
 
 bool FunkinLua_obj::getBool(::String variable){
-            	HX_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1884_getBool)
-HXLINE(1885)		if (::hx::IsNull( ::psychlua::FunkinLua_obj::lastCalledScript )) {
-HXLINE(1885)			return false;
+            	HX_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1879_getBool)
+HXLINE(1880)		if (::hx::IsNull( ::psychlua::FunkinLua_obj::lastCalledScript )) {
+HXLINE(1880)			return false;
             		}
-HXLINE(1887)		 cpp::Reference<lua_State> lua = ::psychlua::FunkinLua_obj::lastCalledScript->lua;
-HXLINE(1888)		if (::hx::IsNull( lua )) {
-HXLINE(1888)			return false;
+HXLINE(1882)		 cpp::Reference<lua_State> lua = ::psychlua::FunkinLua_obj::lastCalledScript->lua;
+HXLINE(1883)		if (::hx::IsNull( lua )) {
+HXLINE(1883)			return false;
             		}
-HXLINE(1890)		::String result = null();
-HXLINE(1891)		lua_getglobal(lua,variable);
-HXLINE(1892)		result = ( (::String)(::llua::Convert_obj::fromLua(lua,-1)) );
-HXLINE(1893)		lua_pop(lua,1);
-HXLINE(1895)		if (::hx::IsNull( result )) {
-HXLINE(1896)			return false;
+HXLINE(1885)		::String result = null();
+HXLINE(1886)		lua_getglobal(lua,variable);
+HXLINE(1887)		result = ( (::String)(::llua::Convert_obj::fromLua(lua,-1)) );
+HXLINE(1888)		lua_pop(lua,1);
+HXLINE(1890)		if (::hx::IsNull( result )) {
+HXLINE(1891)			return false;
             		}
-HXLINE(1898)		return (result == HX_("true",4e,a7,03,4d));
+HXLINE(1893)		return (result == HX_("true",4e,a7,03,4d));
             	}
 
 
@@ -5327,8 +5309,8 @@ HXDLIN(  54)		Function_StopAll = HX_("##PSYCHLUA_FUNCTIONSTOPALL",a5,24,80,6f);
 HXDLIN(  68)		customFunctions =  ::haxe::ds::StringMap_obj::__alloc( HX_CTX );
             	}
 {
-            	HX_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1754_boot)
-HXDLIN(1754)		lastCalledScript = null();
+            	HX_STACKFRAME(&_hx_pos_cee4ff64a0b4a703_1749_boot)
+HXDLIN(1749)		lastCalledScript = null();
             	}
 }
 

@@ -1455,9 +1455,6 @@
 #ifndef INCLUDED_backend_Difficulty
 #include <backend/Difficulty.h>
 #endif
-#ifndef INCLUDED_backend_CoolUtil
-#include <backend/CoolUtil.h>
-#endif
 #ifndef INCLUDED_backend_Conductor
 #include <backend/Conductor.h>
 #endif
@@ -1950,14 +1947,14 @@
 #ifndef INCLUDED_shaders_Tiltshift
 #include <shaders/Tiltshift.h>
 #endif
+#ifndef INCLUDED_shaders_TiltshiftEffect
+#include <shaders/TiltshiftEffect.h>
+#endif
 #ifndef INCLUDED_shaders_WiggleShader
 #include <shaders/WiggleShader.h>
 #endif
 #ifndef INCLUDED_shaders_WiggleEffect
 #include <shaders/WiggleEffect.h>
-#endif
-#ifndef INCLUDED_shaders_TiltshiftEffect
-#include <shaders/TiltshiftEffect.h>
 #endif
 #ifndef INCLUDED_shaders_ScanlineShader
 #include <shaders/ScanlineShader.h>
@@ -4119,6 +4116,9 @@
 #ifndef INCLUDED_flixel_group_FlxTypedGroup
 #include <flixel/group/FlxTypedGroup.h>
 #endif
+#ifndef INCLUDED_backend_CoolUtil
+#include <backend/CoolUtil.h>
+#endif
 #ifndef INCLUDED_backend_Controls
 #include <backend/Controls.h>
 #endif
@@ -4773,7 +4773,6 @@ __files__boot();
 ::backend::Highscore_obj::__register();
 ::backend::DiscordClient_obj::__register();
 ::backend::Difficulty_obj::__register();
-::backend::CoolUtil_obj::__register();
 ::backend::Conductor_obj::__register();
 ::backend::ClientPrefs_obj::__register();
 ::flixel::FlxBasic_obj::__register();
@@ -4938,9 +4937,9 @@ __files__boot();
 ::shaders::StaticShader_obj::__register();
 ::shaders::StaticEffect_obj::__register();
 ::shaders::Tiltshift_obj::__register();
+::shaders::TiltshiftEffect_obj::__register();
 ::shaders::WiggleShader_obj::__register();
 ::shaders::WiggleEffect_obj::__register();
-::shaders::TiltshiftEffect_obj::__register();
 ::shaders::ScanlineShader_obj::__register();
 ::shaders::ScanlineEffect_obj::__register();
 ::shaders::Chromaticbordes3Shader_obj::__register();
@@ -5661,6 +5660,7 @@ __files__boot();
 ::flixel::FlxSubState_obj::__register();
 ::flixel::FlxState_obj::__register();
 ::flixel::group::FlxTypedGroup_obj::__register();
+::backend::CoolUtil_obj::__register();
 ::backend::Controls_obj::__register();
 ::backend::SaveVariables_obj::__register();
 ::backend::BaseStage_obj::__register();
@@ -5854,7 +5854,6 @@ __files__boot();
 ::flixel::FlxBasic_obj::__boot();
 ::backend::ClientPrefs_obj::__boot();
 ::backend::Conductor_obj::__boot();
-::backend::CoolUtil_obj::__boot();
 ::backend::Difficulty_obj::__boot();
 ::backend::DiscordClient_obj::__boot();
 ::backend::Highscore_obj::__boot();

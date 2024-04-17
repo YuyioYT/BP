@@ -31,26 +31,26 @@
 #include <shaders/WiggleShader.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_8009c4ad34b70c87_466_new,"shaders.WiggleEffect","new",0x82f7ac6e,"shaders.WiggleEffect.new","shaders/Shaders.hx",466,0x7800d7f1)
+HX_DEFINE_STACK_FRAME(_hx_pos_8009c4ad34b70c87_416_new,"shaders.WiggleEffect","new",0x82f7ac6e,"shaders.WiggleEffect.new","shaders/Shaders.hx",416,0x7800d7f1)
 static const Float _hx_array_data_a4f99d7c_1[] = {
 	(Float)0,
 };
-HX_LOCAL_STACK_FRAME(_hx_pos_8009c4ad34b70c87_480_update,"shaders.WiggleEffect","update",0x807426bb,"shaders.WiggleEffect.update","shaders/Shaders.hx",480,0x7800d7f1)
-HX_LOCAL_STACK_FRAME(_hx_pos_8009c4ad34b70c87_486_setValue,"shaders.WiggleEffect","setValue",0x6aca99a1,"shaders.WiggleEffect.setValue","shaders/Shaders.hx",486,0x7800d7f1)
-HX_LOCAL_STACK_FRAME(_hx_pos_8009c4ad34b70c87_490_set_effectType,"shaders.WiggleEffect","set_effectType",0xee53a95a,"shaders.WiggleEffect.set_effectType","shaders/Shaders.hx",490,0x7800d7f1)
-HX_LOCAL_STACK_FRAME(_hx_pos_8009c4ad34b70c87_497_set_waveSpeed,"shaders.WiggleEffect","set_waveSpeed",0xdefeb27f,"shaders.WiggleEffect.set_waveSpeed","shaders/Shaders.hx",497,0x7800d7f1)
-HX_LOCAL_STACK_FRAME(_hx_pos_8009c4ad34b70c87_504_set_waveFrequency,"shaders.WiggleEffect","set_waveFrequency",0x3e747994,"shaders.WiggleEffect.set_waveFrequency","shaders/Shaders.hx",504,0x7800d7f1)
-HX_LOCAL_STACK_FRAME(_hx_pos_8009c4ad34b70c87_511_set_waveAmplitude,"shaders.WiggleEffect","set_waveAmplitude",0xec850c3b,"shaders.WiggleEffect.set_waveAmplitude","shaders/Shaders.hx",511,0x7800d7f1)
+HX_LOCAL_STACK_FRAME(_hx_pos_8009c4ad34b70c87_430_update,"shaders.WiggleEffect","update",0x807426bb,"shaders.WiggleEffect.update","shaders/Shaders.hx",430,0x7800d7f1)
+HX_LOCAL_STACK_FRAME(_hx_pos_8009c4ad34b70c87_436_setValue,"shaders.WiggleEffect","setValue",0x6aca99a1,"shaders.WiggleEffect.setValue","shaders/Shaders.hx",436,0x7800d7f1)
+HX_LOCAL_STACK_FRAME(_hx_pos_8009c4ad34b70c87_440_set_effectType,"shaders.WiggleEffect","set_effectType",0xee53a95a,"shaders.WiggleEffect.set_effectType","shaders/Shaders.hx",440,0x7800d7f1)
+HX_LOCAL_STACK_FRAME(_hx_pos_8009c4ad34b70c87_447_set_waveSpeed,"shaders.WiggleEffect","set_waveSpeed",0xdefeb27f,"shaders.WiggleEffect.set_waveSpeed","shaders/Shaders.hx",447,0x7800d7f1)
+HX_LOCAL_STACK_FRAME(_hx_pos_8009c4ad34b70c87_454_set_waveFrequency,"shaders.WiggleEffect","set_waveFrequency",0x3e747994,"shaders.WiggleEffect.set_waveFrequency","shaders/Shaders.hx",454,0x7800d7f1)
+HX_LOCAL_STACK_FRAME(_hx_pos_8009c4ad34b70c87_461_set_waveAmplitude,"shaders.WiggleEffect","set_waveAmplitude",0xec850c3b,"shaders.WiggleEffect.set_waveAmplitude","shaders/Shaders.hx",461,0x7800d7f1)
 namespace shaders{
 
 void WiggleEffect_obj::__construct(){
-            	HX_GC_STACKFRAME(&_hx_pos_8009c4ad34b70c87_466_new)
-HXLINE( 472)		this->waveAmplitude = ((Float)0);
-HXLINE( 471)		this->waveFrequency = ((Float)0);
-HXLINE( 470)		this->waveSpeed = ((Float)0);
-HXLINE( 469)		this->effectType = ::shaders::WiggleEffectType_obj::DREAMY_dyn();
-HXLINE( 468)		this->shader =  ::shaders::WiggleShader_obj::__alloc( HX_CTX );
-HXLINE( 476)		this->shader->uTime->value = ::Array_obj< Float >::fromData( _hx_array_data_a4f99d7c_1,1);
+            	HX_GC_STACKFRAME(&_hx_pos_8009c4ad34b70c87_416_new)
+HXLINE( 422)		this->waveAmplitude = ((Float)0);
+HXLINE( 421)		this->waveFrequency = ((Float)0);
+HXLINE( 420)		this->waveSpeed = ((Float)0);
+HXLINE( 419)		this->effectType = ::shaders::WiggleEffectType_obj::DREAMY_dyn();
+HXLINE( 418)		this->shader =  ::shaders::WiggleShader_obj::__alloc( HX_CTX );
+HXLINE( 426)		this->shader->uTime->value = ::Array_obj< Float >::fromData( _hx_array_data_a4f99d7c_1,1);
             	}
 
 Dynamic WiggleEffect_obj::__CreateEmpty() { return new WiggleEffect_obj; }
@@ -69,60 +69,60 @@ bool WiggleEffect_obj::_hx_isInstanceOf(int inClassId) {
 }
 
 void WiggleEffect_obj::update(Float elapsed){
-            	HX_STACKFRAME(&_hx_pos_8009c4ad34b70c87_480_update)
-HXLINE( 481)		::Array< Float > base = this->shader->uTime->value;
-HXDLIN( 481)		int _hx_tmp = 0;
-HXDLIN( 481)		base[_hx_tmp] = (base->__get(_hx_tmp) + elapsed);
+            	HX_STACKFRAME(&_hx_pos_8009c4ad34b70c87_430_update)
+HXLINE( 431)		::Array< Float > base = this->shader->uTime->value;
+HXDLIN( 431)		int _hx_tmp = 0;
+HXDLIN( 431)		base[_hx_tmp] = (base->__get(_hx_tmp) + elapsed);
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC1(WiggleEffect_obj,update,(void))
 
 void WiggleEffect_obj::setValue(Float value){
-            	HX_STACKFRAME(&_hx_pos_8009c4ad34b70c87_486_setValue)
-HXDLIN( 486)		this->shader->uTime->value[0] = value;
+            	HX_STACKFRAME(&_hx_pos_8009c4ad34b70c87_436_setValue)
+HXDLIN( 436)		this->shader->uTime->value[0] = value;
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC1(WiggleEffect_obj,setValue,(void))
 
  ::shaders::WiggleEffectType WiggleEffect_obj::set_effectType( ::shaders::WiggleEffectType v){
-            	HX_STACKFRAME(&_hx_pos_8009c4ad34b70c87_490_set_effectType)
-HXLINE( 491)		this->effectType = v;
-HXLINE( 492)		::Array< ::String > _hx_tmp = ::Type_obj::getEnumConstructs(::hx::ClassOf< ::shaders::WiggleEffectType >());
-HXDLIN( 492)		int _hx_tmp1 = _hx_tmp->indexOf(::Std_obj::string(v),null());
-HXDLIN( 492)		this->shader->effectType->value = ::Array_obj< int >::__new(1)->init(0,_hx_tmp1);
-HXLINE( 493)		return v;
+            	HX_STACKFRAME(&_hx_pos_8009c4ad34b70c87_440_set_effectType)
+HXLINE( 441)		this->effectType = v;
+HXLINE( 442)		::Array< ::String > _hx_tmp = ::Type_obj::getEnumConstructs(::hx::ClassOf< ::shaders::WiggleEffectType >());
+HXDLIN( 442)		int _hx_tmp1 = _hx_tmp->indexOf(::Std_obj::string(v),null());
+HXDLIN( 442)		this->shader->effectType->value = ::Array_obj< int >::__new(1)->init(0,_hx_tmp1);
+HXLINE( 443)		return v;
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC1(WiggleEffect_obj,set_effectType,return )
 
 Float WiggleEffect_obj::set_waveSpeed(Float v){
-            	HX_STACKFRAME(&_hx_pos_8009c4ad34b70c87_497_set_waveSpeed)
-HXLINE( 498)		this->waveSpeed = v;
-HXLINE( 499)		this->shader->uSpeed->value = ::Array_obj< Float >::__new(1)->init(0,this->waveSpeed);
-HXLINE( 500)		return v;
+            	HX_STACKFRAME(&_hx_pos_8009c4ad34b70c87_447_set_waveSpeed)
+HXLINE( 448)		this->waveSpeed = v;
+HXLINE( 449)		this->shader->uSpeed->value = ::Array_obj< Float >::__new(1)->init(0,this->waveSpeed);
+HXLINE( 450)		return v;
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC1(WiggleEffect_obj,set_waveSpeed,return )
 
 Float WiggleEffect_obj::set_waveFrequency(Float v){
-            	HX_STACKFRAME(&_hx_pos_8009c4ad34b70c87_504_set_waveFrequency)
-HXLINE( 505)		this->waveFrequency = v;
-HXLINE( 506)		this->shader->uFrequency->value = ::Array_obj< Float >::__new(1)->init(0,this->waveFrequency);
-HXLINE( 507)		return v;
+            	HX_STACKFRAME(&_hx_pos_8009c4ad34b70c87_454_set_waveFrequency)
+HXLINE( 455)		this->waveFrequency = v;
+HXLINE( 456)		this->shader->uFrequency->value = ::Array_obj< Float >::__new(1)->init(0,this->waveFrequency);
+HXLINE( 457)		return v;
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC1(WiggleEffect_obj,set_waveFrequency,return )
 
 Float WiggleEffect_obj::set_waveAmplitude(Float v){
-            	HX_STACKFRAME(&_hx_pos_8009c4ad34b70c87_511_set_waveAmplitude)
-HXLINE( 512)		this->waveAmplitude = v;
-HXLINE( 513)		this->shader->uWaveAmplitude->value = ::Array_obj< Float >::__new(1)->init(0,this->waveAmplitude);
-HXLINE( 514)		return v;
+            	HX_STACKFRAME(&_hx_pos_8009c4ad34b70c87_461_set_waveAmplitude)
+HXLINE( 462)		this->waveAmplitude = v;
+HXLINE( 463)		this->shader->uWaveAmplitude->value = ::Array_obj< Float >::__new(1)->init(0,this->waveAmplitude);
+HXLINE( 464)		return v;
             	}
 
 

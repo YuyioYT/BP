@@ -43,18 +43,19 @@
 #include <states/PlayState.h>
 #endif
 
-HX_LOCAL_STACK_FRAME(_hx_pos_3c198266d4e3ce55_14_getFilePath,"backend.Difficulty","getFilePath",0xb61f8b7e,"backend.Difficulty.getFilePath","backend/Difficulty.hx",14,0x077d20c8)
-HX_LOCAL_STACK_FRAME(_hx_pos_3c198266d4e3ce55_30_loadFromWeek,"backend.Difficulty","loadFromWeek",0x3ccf565d,"backend.Difficulty.loadFromWeek","backend/Difficulty.hx",30,0x077d20c8)
-HX_LOCAL_STACK_FRAME(_hx_pos_3c198266d4e3ce55_56_resetList,"backend.Difficulty","resetList",0x6a0ba094,"backend.Difficulty.resetList","backend/Difficulty.hx",56,0x077d20c8)
-HX_LOCAL_STACK_FRAME(_hx_pos_3c198266d4e3ce55_61_copyFrom,"backend.Difficulty","copyFrom",0x164846d8,"backend.Difficulty.copyFrom","backend/Difficulty.hx",61,0x077d20c8)
-HX_LOCAL_STACK_FRAME(_hx_pos_3c198266d4e3ce55_66_getString,"backend.Difficulty","getString",0x69f32cce,"backend.Difficulty.getString","backend/Difficulty.hx",66,0x077d20c8)
-HX_LOCAL_STACK_FRAME(_hx_pos_3c198266d4e3ce55_71_getDefault,"backend.Difficulty","getDefault",0xeda45224,"backend.Difficulty.getDefault","backend/Difficulty.hx",71,0x077d20c8)
+HX_LOCAL_STACK_FRAME(_hx_pos_3c198266d4e3ce55_15_getFilePath,"backend.Difficulty","getFilePath",0xb61f8b7e,"backend.Difficulty.getFilePath","backend/Difficulty.hx",15,0x077d20c8)
+HX_LOCAL_STACK_FRAME(_hx_pos_3c198266d4e3ce55_31_loadFromWeek,"backend.Difficulty","loadFromWeek",0x3ccf565d,"backend.Difficulty.loadFromWeek","backend/Difficulty.hx",31,0x077d20c8)
+HX_LOCAL_STACK_FRAME(_hx_pos_3c198266d4e3ce55_57_resetList,"backend.Difficulty","resetList",0x6a0ba094,"backend.Difficulty.resetList","backend/Difficulty.hx",57,0x077d20c8)
+HX_LOCAL_STACK_FRAME(_hx_pos_3c198266d4e3ce55_62_copyFrom,"backend.Difficulty","copyFrom",0x164846d8,"backend.Difficulty.copyFrom","backend/Difficulty.hx",62,0x077d20c8)
+HX_LOCAL_STACK_FRAME(_hx_pos_3c198266d4e3ce55_67_getString,"backend.Difficulty","getString",0x69f32cce,"backend.Difficulty.getString","backend/Difficulty.hx",67,0x077d20c8)
+HX_LOCAL_STACK_FRAME(_hx_pos_3c198266d4e3ce55_72_getDefault,"backend.Difficulty","getDefault",0xeda45224,"backend.Difficulty.getDefault","backend/Difficulty.hx",72,0x077d20c8)
 HX_LOCAL_STACK_FRAME(_hx_pos_3c198266d4e3ce55_5_boot,"backend.Difficulty","boot",0xee6efecb,"backend.Difficulty.boot","backend/Difficulty.hx",5,0x077d20c8)
 static const ::String _hx_array_data_d184ec75_8[] = {
-	HX_("Easy",22,b8,e5,2d),HX_("Normal",47,e6,fd,64),HX_("Hard",0b,5b,e1,2f),
+	HX_("Hard",0b,5b,e1,2f),HX_("Insane",ca,aa,6e,d2),
 };
 HX_LOCAL_STACK_FRAME(_hx_pos_3c198266d4e3ce55_10_boot,"backend.Difficulty","boot",0xee6efecb,"backend.Difficulty.boot","backend/Difficulty.hx",10,0x077d20c8)
 HX_LOCAL_STACK_FRAME(_hx_pos_3c198266d4e3ce55_11_boot,"backend.Difficulty","boot",0xee6efecb,"backend.Difficulty.boot","backend/Difficulty.hx",11,0x077d20c8)
+HX_LOCAL_STACK_FRAME(_hx_pos_3c198266d4e3ce55_12_boot,"backend.Difficulty","boot",0xee6efecb,"backend.Difficulty.boot","backend/Difficulty.hx",12,0x077d20c8)
 namespace backend{
 
 void Difficulty_obj::__construct() { }
@@ -76,69 +77,71 @@ bool Difficulty_obj::_hx_isInstanceOf(int inClassId) {
 
 ::Array< ::String > Difficulty_obj::defaultList;
 
+::Array< ::String > Difficulty_obj::difficulties;
+
 ::Array< ::String > Difficulty_obj::list;
 
 ::String Difficulty_obj::defaultDifficulty;
 
 ::String Difficulty_obj::getFilePath( ::Dynamic num){
-            	HX_GC_STACKFRAME(&_hx_pos_3c198266d4e3ce55_14_getFilePath)
-HXLINE(  15)		if (::hx::IsNull( num )) {
-HXLINE(  15)			num = ::states::PlayState_obj::storyDifficulty;
+            	HX_GC_STACKFRAME(&_hx_pos_3c198266d4e3ce55_15_getFilePath)
+HXLINE(  16)		if (::hx::IsNull( num )) {
+HXLINE(  16)			num = ::states::PlayState_obj::storyDifficulty;
             		}
-HXLINE(  17)		::String fileSuffix = ::backend::Difficulty_obj::list->__get(( (int)(num) ));
-HXLINE(  18)		if ((fileSuffix != ::backend::Difficulty_obj::defaultDifficulty)) {
-HXLINE(  20)			fileSuffix = (HX_("-",2d,00,00,00) + fileSuffix);
+HXLINE(  18)		::String fileSuffix = ::backend::Difficulty_obj::list->__get(( (int)(num) ));
+HXLINE(  19)		if ((fileSuffix != ::backend::Difficulty_obj::defaultDifficulty)) {
+HXLINE(  21)			fileSuffix = (HX_("-",2d,00,00,00) + fileSuffix);
             		}
             		else {
-HXLINE(  24)			fileSuffix = HX_("",00,00,00,00);
+HXLINE(  25)			fileSuffix = HX_("",00,00,00,00);
             		}
-HXLINE(  26)		 ::EReg invalidChars =  ::EReg_obj::__alloc( HX_CTX ,HX_("[~&\\\\;:<>#]",7e,4d,88,67),HX_("",00,00,00,00));
-HXDLIN(  26)		 ::EReg hideChars =  ::EReg_obj::__alloc( HX_CTX ,HX_("[.,'\"%?!]",ca,d9,c0,ac),HX_("",00,00,00,00));
-HXDLIN(  26)		::String path = invalidChars->split(::StringTools_obj::replace(fileSuffix,HX_(" ",20,00,00,00),HX_("-",2d,00,00,00)))->join(HX_("-",2d,00,00,00));
-HXDLIN(  26)		return hideChars->split(path)->join(HX_("",00,00,00,00)).toLowerCase();
+HXLINE(  27)		 ::EReg invalidChars =  ::EReg_obj::__alloc( HX_CTX ,HX_("[~&\\\\;:<>#]",7e,4d,88,67),HX_("",00,00,00,00));
+HXDLIN(  27)		 ::EReg hideChars =  ::EReg_obj::__alloc( HX_CTX ,HX_("[.,'\"%?!]",ca,d9,c0,ac),HX_("",00,00,00,00));
+HXDLIN(  27)		::String path = invalidChars->split(::StringTools_obj::replace(fileSuffix,HX_(" ",20,00,00,00),HX_("-",2d,00,00,00)))->join(HX_("-",2d,00,00,00));
+HXDLIN(  27)		return hideChars->split(path)->join(HX_("",00,00,00,00)).toLowerCase();
             	}
 
 
 STATIC_HX_DEFINE_DYNAMIC_FUNC1(Difficulty_obj,getFilePath,return )
 
 void Difficulty_obj::loadFromWeek( ::backend::WeekData week){
-            	HX_STACKFRAME(&_hx_pos_3c198266d4e3ce55_30_loadFromWeek)
-HXLINE(  31)		if (::hx::IsNull( week )) {
-HXLINE(  31)			week = ::backend::WeekData_obj::getCurrentWeek();
+            	HX_STACKFRAME(&_hx_pos_3c198266d4e3ce55_31_loadFromWeek)
+HXLINE(  32)		if (::hx::IsNull( week )) {
+HXLINE(  32)			week = ::backend::WeekData_obj::getCurrentWeek();
             		}
-HXLINE(  33)		::String diffStr = week->difficulties;
-HXLINE(  34)		bool _hx_tmp;
-HXDLIN(  34)		if (::hx::IsNotNull( diffStr )) {
-HXLINE(  34)			_hx_tmp = (diffStr.length > 0);
+HXLINE(  34)		::String diffStr = week->difficulties;
+HXLINE(  35)		bool _hx_tmp;
+HXDLIN(  35)		if (::hx::IsNotNull( diffStr )) {
+HXLINE(  35)			_hx_tmp = (diffStr.length > 0);
             		}
             		else {
-HXLINE(  34)			_hx_tmp = false;
+HXLINE(  35)			_hx_tmp = false;
             		}
-HXDLIN(  34)		if (_hx_tmp) {
-HXLINE(  36)			::Array< ::String > diffs = ::StringTools_obj::trim(diffStr).split(HX_(",",2c,00,00,00));
-HXLINE(  37)			int i = (diffs->length - 1);
-HXLINE(  38)			while((i > 0)){
-HXLINE(  40)				if (::hx::IsNotNull( diffs->__get(i) )) {
-HXLINE(  42)					diffs[i] = ::StringTools_obj::trim(diffs->__get(i));
-HXLINE(  43)					if ((diffs->__get(i).length < 1)) {
-HXLINE(  43)						diffs->remove(diffs->__get(i));
+HXDLIN(  35)		if (_hx_tmp) {
+HXLINE(  37)			::Array< ::String > diffs = ::StringTools_obj::trim(diffStr).split(HX_(",",2c,00,00,00));
+HXLINE(  38)			int i = (diffs->length - 1);
+HXLINE(  39)			while((i > 0)){
+HXLINE(  41)				if (::hx::IsNotNull( diffs->__get(i) )) {
+HXLINE(  43)					diffs[i] = ::StringTools_obj::trim(diffs->__get(i));
+HXLINE(  44)					if ((diffs->__get(i).length < 1)) {
+HXLINE(  44)						diffs->remove(diffs->__get(i));
             					}
             				}
-HXLINE(  45)				i = (i - 1);
+HXLINE(  46)				i = (i - 1);
             			}
-HXLINE(  48)			bool _hx_tmp;
-HXDLIN(  48)			if ((diffs->length > 0)) {
-HXLINE(  48)				_hx_tmp = (diffs->__get(0).length > 0);
+HXLINE(  49)			bool _hx_tmp;
+HXDLIN(  49)			if ((diffs->length > 0)) {
+HXLINE(  49)				_hx_tmp = (diffs->__get(0).length > 0);
             			}
             			else {
-HXLINE(  48)				_hx_tmp = false;
+HXLINE(  49)				_hx_tmp = false;
             			}
-HXDLIN(  48)			if (_hx_tmp) {
-HXLINE(  49)				::backend::Difficulty_obj::list = diffs;
+HXDLIN(  49)			if (_hx_tmp) {
+HXLINE(  50)				::backend::Difficulty_obj::list = diffs;
             			}
             		}
             		else {
-HXLINE(  51)			::backend::Difficulty_obj::list = ::backend::Difficulty_obj::defaultList->copy();
+HXLINE(  52)			::backend::Difficulty_obj::list = ::backend::Difficulty_obj::defaultList->copy();
             		}
             	}
 
@@ -146,39 +149,39 @@ HXLINE(  51)			::backend::Difficulty_obj::list = ::backend::Difficulty_obj::defa
 STATIC_HX_DEFINE_DYNAMIC_FUNC1(Difficulty_obj,loadFromWeek,(void))
 
 void Difficulty_obj::resetList(){
-            	HX_STACKFRAME(&_hx_pos_3c198266d4e3ce55_56_resetList)
-HXDLIN(  56)		::backend::Difficulty_obj::list = ::backend::Difficulty_obj::defaultList->copy();
+            	HX_STACKFRAME(&_hx_pos_3c198266d4e3ce55_57_resetList)
+HXDLIN(  57)		::backend::Difficulty_obj::list = ::backend::Difficulty_obj::defaultList->copy();
             	}
 
 
 STATIC_HX_DEFINE_DYNAMIC_FUNC0(Difficulty_obj,resetList,(void))
 
 void Difficulty_obj::copyFrom(::Array< ::String > diffs){
-            	HX_STACKFRAME(&_hx_pos_3c198266d4e3ce55_61_copyFrom)
-HXDLIN(  61)		::backend::Difficulty_obj::list = diffs->copy();
+            	HX_STACKFRAME(&_hx_pos_3c198266d4e3ce55_62_copyFrom)
+HXDLIN(  62)		::backend::Difficulty_obj::list = diffs->copy();
             	}
 
 
 STATIC_HX_DEFINE_DYNAMIC_FUNC1(Difficulty_obj,copyFrom,(void))
 
 ::String Difficulty_obj::getString( ::Dynamic num){
-            	HX_STACKFRAME(&_hx_pos_3c198266d4e3ce55_66_getString)
-HXDLIN(  66)		 ::Dynamic _hx_tmp;
-HXDLIN(  66)		if (::hx::IsNull( num )) {
-HXDLIN(  66)			_hx_tmp = ::states::PlayState_obj::storyDifficulty;
+            	HX_STACKFRAME(&_hx_pos_3c198266d4e3ce55_67_getString)
+HXDLIN(  67)		 ::Dynamic _hx_tmp;
+HXDLIN(  67)		if (::hx::IsNull( num )) {
+HXDLIN(  67)			_hx_tmp = ::states::PlayState_obj::storyDifficulty;
             		}
             		else {
-HXDLIN(  66)			_hx_tmp = num;
+HXDLIN(  67)			_hx_tmp = num;
             		}
-HXDLIN(  66)		return ::backend::Difficulty_obj::list->__get(( (int)(_hx_tmp) ));
+HXDLIN(  67)		return ::backend::Difficulty_obj::list->__get(( (int)(_hx_tmp) ));
             	}
 
 
 STATIC_HX_DEFINE_DYNAMIC_FUNC1(Difficulty_obj,getString,return )
 
 ::String Difficulty_obj::getDefault(){
-            	HX_STACKFRAME(&_hx_pos_3c198266d4e3ce55_71_getDefault)
-HXDLIN(  71)		return ::backend::Difficulty_obj::defaultDifficulty;
+            	HX_STACKFRAME(&_hx_pos_3c198266d4e3ce55_72_getDefault)
+HXDLIN(  72)		return ::backend::Difficulty_obj::defaultDifficulty;
             	}
 
 
@@ -210,6 +213,7 @@ bool Difficulty_obj::__GetStatic(const ::String &inName, Dynamic &outValue, ::hx
 		if (HX_FIELD_EQ(inName,"getFilePath") ) { outValue = getFilePath_dyn(); return true; }
 		break;
 	case 12:
+		if (HX_FIELD_EQ(inName,"difficulties") ) { outValue = ( difficulties ); return true; }
 		if (HX_FIELD_EQ(inName,"loadFromWeek") ) { outValue = loadFromWeek_dyn(); return true; }
 		break;
 	case 17:
@@ -227,6 +231,9 @@ bool Difficulty_obj::__SetStatic(const ::String &inName,Dynamic &ioValue,::hx::P
 	case 11:
 		if (HX_FIELD_EQ(inName,"defaultList") ) { defaultList=ioValue.Cast< ::Array< ::String > >(); return true; }
 		break;
+	case 12:
+		if (HX_FIELD_EQ(inName,"difficulties") ) { difficulties=ioValue.Cast< ::Array< ::String > >(); return true; }
+		break;
 	case 17:
 		if (HX_FIELD_EQ(inName,"defaultDifficulty") ) { defaultDifficulty=ioValue.Cast< ::String >(); return true; }
 	}
@@ -237,6 +244,7 @@ bool Difficulty_obj::__SetStatic(const ::String &inName,Dynamic &ioValue,::hx::P
 static ::hx::StorageInfo *Difficulty_obj_sMemberStorageInfo = 0;
 static ::hx::StaticInfo Difficulty_obj_sStaticStorageInfo[] = {
 	{::hx::fsObject /* ::Array< ::String > */ ,(void *) &Difficulty_obj::defaultList,HX_("defaultList",bf,15,72,19)},
+	{::hx::fsObject /* ::Array< ::String > */ ,(void *) &Difficulty_obj::difficulties,HX_("difficulties",59,c7,5e,02)},
 	{::hx::fsObject /* ::Array< ::String > */ ,(void *) &Difficulty_obj::list,HX_("list",5e,1c,b3,47)},
 	{::hx::fsString,(void *) &Difficulty_obj::defaultDifficulty,HX_("defaultDifficulty",5c,06,f0,1d)},
 	{ ::hx::fsUnknown, 0, null()}
@@ -245,6 +253,7 @@ static ::hx::StaticInfo Difficulty_obj_sStaticStorageInfo[] = {
 
 static void Difficulty_obj_sMarkStatics(HX_MARK_PARAMS) {
 	HX_MARK_MEMBER_NAME(Difficulty_obj::defaultList,"defaultList");
+	HX_MARK_MEMBER_NAME(Difficulty_obj::difficulties,"difficulties");
 	HX_MARK_MEMBER_NAME(Difficulty_obj::list,"list");
 	HX_MARK_MEMBER_NAME(Difficulty_obj::defaultDifficulty,"defaultDifficulty");
 };
@@ -252,6 +261,7 @@ static void Difficulty_obj_sMarkStatics(HX_MARK_PARAMS) {
 #ifdef HXCPP_VISIT_ALLOCS
 static void Difficulty_obj_sVisitStatics(HX_VISIT_PARAMS) {
 	HX_VISIT_MEMBER_NAME(Difficulty_obj::defaultList,"defaultList");
+	HX_VISIT_MEMBER_NAME(Difficulty_obj::difficulties,"difficulties");
 	HX_VISIT_MEMBER_NAME(Difficulty_obj::list,"list");
 	HX_VISIT_MEMBER_NAME(Difficulty_obj::defaultDifficulty,"defaultDifficulty");
 };
@@ -262,6 +272,7 @@ static void Difficulty_obj_sVisitStatics(HX_VISIT_PARAMS) {
 
 static ::String Difficulty_obj_sStaticFields[] = {
 	HX_("defaultList",bf,15,72,19),
+	HX_("difficulties",59,c7,5e,02),
 	HX_("list",5e,1c,b3,47),
 	HX_("defaultDifficulty",5c,06,f0,1d),
 	HX_("getFilePath",f7,90,89,89),
@@ -304,15 +315,19 @@ void Difficulty_obj::__boot()
 {
 {
             	HX_STACKFRAME(&_hx_pos_3c198266d4e3ce55_5_boot)
-HXDLIN(   5)		defaultList = ::Array_obj< ::String >::fromData( _hx_array_data_d184ec75_8,3);
+HXDLIN(   5)		defaultList = ::Array_obj< ::String >::fromData( _hx_array_data_d184ec75_8,2);
             	}
 {
             	HX_STACKFRAME(&_hx_pos_3c198266d4e3ce55_10_boot)
-HXDLIN(  10)		list = ::Array_obj< ::String >::__new(0);
+HXDLIN(  10)		difficulties = ::Array_obj< ::String >::__new(0);
             	}
 {
             	HX_STACKFRAME(&_hx_pos_3c198266d4e3ce55_11_boot)
-HXDLIN(  11)		defaultDifficulty = HX_("Normal",47,e6,fd,64);
+HXDLIN(  11)		list = ::Array_obj< ::String >::__new(0);
+            	}
+{
+            	HX_STACKFRAME(&_hx_pos_3c198266d4e3ce55_12_boot)
+HXDLIN(  12)		defaultDifficulty = HX_("Normal",47,e6,fd,64);
             	}
 }
 

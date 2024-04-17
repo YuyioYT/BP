@@ -52,16 +52,16 @@
 #include <states/PlayState.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_e0d88bd3a29c87ad_2428_new,"shaders.HeatEffect","new",0x98c67c33,"shaders.HeatEffect.new","shaders/Shaders.hx",2428,0x7800d7f1)
-HX_LOCAL_STACK_FRAME(_hx_pos_e0d88bd3a29c87ad_2442_update,"shaders.HeatEffect","update",0xd4c7c016,"shaders.HeatEffect.update","shaders/Shaders.hx",2442,0x7800d7f1)
+HX_DEFINE_STACK_FRAME(_hx_pos_e0d88bd3a29c87ad_2370_new,"shaders.HeatEffect","new",0x98c67c33,"shaders.HeatEffect.new","shaders/Shaders.hx",2370,0x7800d7f1)
+HX_LOCAL_STACK_FRAME(_hx_pos_e0d88bd3a29c87ad_2384_update,"shaders.HeatEffect","update",0xd4c7c016,"shaders.HeatEffect.update","shaders/Shaders.hx",2384,0x7800d7f1)
 namespace shaders{
 
 void HeatEffect_obj::__construct(Float strength){
-            	HX_GC_STACKFRAME(&_hx_pos_e0d88bd3a29c87ad_2428_new)
-HXLINE(2431)		this->iTime = ((Float)0.0);
-HXLINE(2435)		this->shader =  ::shaders::HeatShader_obj::__alloc( HX_CTX );
-HXLINE(2437)		this->shader->strength->value = ::Array_obj< Float >::__new(1)->init(0,strength);
-HXLINE(2438)		::states::PlayState_obj::instance->shaderUpdates->push(this->update_dyn());
+            	HX_GC_STACKFRAME(&_hx_pos_e0d88bd3a29c87ad_2370_new)
+HXLINE(2373)		this->iTime = ((Float)0.0);
+HXLINE(2377)		this->shader =  ::shaders::HeatShader_obj::__alloc( HX_CTX );
+HXLINE(2379)		this->shader->strength->value = ::Array_obj< Float >::__new(1)->init(0,strength);
+HXLINE(2380)		::states::PlayState_obj::instance->shaderUpdates->push(this->update_dyn());
             	}
 
 Dynamic HeatEffect_obj::__CreateEmpty() { return new HeatEffect_obj; }
@@ -84,10 +84,10 @@ bool HeatEffect_obj::_hx_isInstanceOf(int inClassId) {
 }
 
 void HeatEffect_obj::update(Float elapsed){
-            	HX_STACKFRAME(&_hx_pos_e0d88bd3a29c87ad_2442_update)
-HXLINE(2443)		 ::shaders::HeatEffect _hx_tmp = ::hx::ObjectPtr<OBJ_>(this);
-HXDLIN(2443)		_hx_tmp->iTime = (_hx_tmp->iTime + elapsed);
-HXLINE(2444)		this->shader->iTime->value = ::Array_obj< Float >::__new(1)->init(0,this->iTime);
+            	HX_STACKFRAME(&_hx_pos_e0d88bd3a29c87ad_2384_update)
+HXLINE(2385)		 ::shaders::HeatEffect _hx_tmp = ::hx::ObjectPtr<OBJ_>(this);
+HXDLIN(2385)		_hx_tmp->iTime = (_hx_tmp->iTime + elapsed);
+HXLINE(2386)		this->shader->iTime->value = ::Array_obj< Float >::__new(1)->init(0,this->iTime);
             	}
 
 

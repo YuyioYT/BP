@@ -16,20 +16,20 @@
 #include <shaders/BetterBlurShader.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_cb0365bb3230d335_2579_new,"shaders.BetterBlurShader","new",0x20bcb04e,"shaders.BetterBlurShader.new","shaders/Shaders.hx",2579,0x7800d7f1)
+HX_DEFINE_STACK_FRAME(_hx_pos_cb0365bb3230d335_2521_new,"shaders.BetterBlurShader","new",0x20bcb04e,"shaders.BetterBlurShader.new","shaders/Shaders.hx",2521,0x7800d7f1)
 namespace shaders{
 
 void BetterBlurShader_obj::__construct(){
-            	HX_STACKFRAME(&_hx_pos_cb0365bb3230d335_2579_new)
+            	HX_STACKFRAME(&_hx_pos_cb0365bb3230d335_2521_new)
 HXLINE( 182)		if (::hx::IsNull( this->_hx___glFragmentSource )) {
 HXLINE( 184)			this->_hx___glFragmentSource = HX_("\n\t\tvarying float openfl_Alphav;\n\t\tvarying vec4 openfl_ColorMultiplierv;\n\t\tvarying vec4 openfl_ColorOffsetv;\n\t\tvarying vec2 openfl_TextureCoordv;\n\n\t\tuniform bool openfl_HasColorTransform;\n\t\tuniform vec2 openfl_TextureSize;\n\t\tuniform sampler2D bitmap;\n\n\t\tuniform bool hasTransform;\n\t\tuniform bool hasColorTransform;\n\n\t\tvec4 flixel_texture2D(sampler2D bitmap, vec2 coord)\n\t\t{\n\t\t\tvec4 color = texture2D(bitmap, coord);\n\t\t\tif (!hasTransform)\n\t\t\t{\n\t\t\t\treturn color;\n\t\t\t}\n\n\t\t\tif (color.a == 0.0)\n\t\t\t{\n\t\t\t\treturn vec4(0.0, 0.0, 0.0, 0.0);\n\t\t\t}\n\n\t\t\tif (!hasColorTransform)\n\t\t\t{\n\t\t\t\treturn color * openfl_Alphav;\n\t\t\t}\n\n\t\t\tcolor = vec4(color.rgb / color.a, color.a);\n\n\t\t\tmat4 colorMultiplier = mat4(0);\n\t\t\tcolorMultiplier[0][0] = openfl_ColorMultiplierv.x;\n\t\t\tcolorMultiplier[1][1] = openfl_ColorMultiplierv.y;\n\t\t\tcolorMultiplier[2][2] = openfl_ColorMultiplierv.z;\n\t\t\tcolorMultiplier[3][3] = openfl_ColorMultiplierv.w;\n\n\t\t\tcolor = clamp(openfl_ColorOffsetv + (color * colorMultiplier), 0.0, 1.0);\n\n\t\t\tif (color.a > 0.0)\n\t\t\t{\n\t\t\t\treturn vec4(color.rgb * color.a * openfl_Alphav, color.a * openfl_Alphav);\n\t\t\t}\n\t\t\treturn vec4(0.0, 0.0, 0.0, 0.0);\n\t\t}\n\t\n\n\t\t//https://www.shadertoy.com/view/Xltfzj\n        //https://xorshaders.weebly.com/tutorials/blur-shaders-5-part-2\n\n\t\tuniform float strength;\n        uniform float loops;\n        uniform float quality;\n        float Pi = 6.28318530718; // Pi*2\n\n\t\tvoid main()\n\t\t{\n            vec2 uv = openfl_TextureCoordv;\n            vec4 color = flixel_texture2D(bitmap, uv);\n            vec2 resolution = vec2(1280.0,720.0);\n            \n            vec2 rad = strength/openfl_TextureSize;\n\n            for( float d=0.0; d<Pi; d+=Pi/loops)\n            {\n                for(float i=1.0/quality; i<=1.0; i+=1.0/quality)\n                {\n                    color += flixel_texture2D( bitmap, uv+vec2(cos(d),sin(d))*rad*i);\t\t\n                }\n            }\n            \n            color /= quality * loops - 15.0;\n\t\t\tgl_FragColor = color;\n\t\t}",f2,26,a7,c6);
             		}
 HXLINE( 174)		if (::hx::IsNull( this->_hx___glVertexSource )) {
 HXLINE( 176)			this->_hx___glVertexSource = HX_("\n\t\tattribute float openfl_Alpha;\n\t\tattribute vec4 openfl_ColorMultiplier;\n\t\tattribute vec4 openfl_ColorOffset;\n\t\tattribute vec4 openfl_Position;\n\t\tattribute vec2 openfl_TextureCoord;\n\n\t\tvarying float openfl_Alphav;\n\t\tvarying vec4 openfl_ColorMultiplierv;\n\t\tvarying vec4 openfl_ColorOffsetv;\n\t\tvarying vec2 openfl_TextureCoordv;\n\n\t\tuniform mat4 openfl_Matrix;\n\t\tuniform bool openfl_HasColorTransform;\n\t\tuniform vec2 openfl_TextureSize;\n\n\t\t\n\t\tattribute float alpha;\n\t\tattribute vec4 colorMultiplier;\n\t\tattribute vec4 colorOffset;\n\t\tuniform bool hasColorTransform;\n\t\t\n\t\tvoid main(void)\n\t\t{\n\t\t\topenfl_Alphav = openfl_Alpha;\n\t\topenfl_TextureCoordv = openfl_TextureCoord;\n\n\t\tif (openfl_HasColorTransform) {\n\n\t\t\topenfl_ColorMultiplierv = openfl_ColorMultiplier;\n\t\t\topenfl_ColorOffsetv = openfl_ColorOffset / 255.0;\n\n\t\t}\n\n\t\tgl_Position = openfl_Matrix * openfl_Position;\n\n\t\t\t\n\t\t\topenfl_Alphav = openfl_Alpha * alpha;\n\t\t\t\n\t\t\tif (hasColorTransform)\n\t\t\t{\n\t\t\t\topenfl_ColorOffsetv = colorOffset / 255.0;\n\t\t\t\topenfl_ColorMultiplierv = colorMultiplier;\n\t\t\t}\n\t\t}",f3,1e,fa,79);
             		}
-HXLINE(2580)		super::__construct();
-HXLINE(2547)		this->_hx___isGenerated = true;
-HXDLIN(2547)		this->_hx___initGL();
+HXLINE(2522)		super::__construct();
+HXLINE(2489)		this->_hx___isGenerated = true;
+HXDLIN(2489)		this->_hx___initGL();
             	}
 
 Dynamic BetterBlurShader_obj::__CreateEmpty() { return new BetterBlurShader_obj; }

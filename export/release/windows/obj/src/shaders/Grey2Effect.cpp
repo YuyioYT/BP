@@ -22,15 +22,15 @@
 #include <shaders/Grey2Shader.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_087644254e7674ef_790_new,"shaders.Grey2Effect","new",0x4c6d72f6,"shaders.Grey2Effect.new","shaders/Shaders.hx",790,0x7800d7f1)
-HX_LOCAL_STACK_FRAME(_hx_pos_087644254e7674ef_802_set_iStrength,"shaders.Grey2Effect","set_iStrength",0xfb395003,"shaders.Grey2Effect.set_iStrength","shaders/Shaders.hx",802,0x7800d7f1)
+HX_DEFINE_STACK_FRAME(_hx_pos_087644254e7674ef_732_new,"shaders.Grey2Effect","new",0x4c6d72f6,"shaders.Grey2Effect.new","shaders/Shaders.hx",732,0x7800d7f1)
+HX_LOCAL_STACK_FRAME(_hx_pos_087644254e7674ef_744_set_iStrength,"shaders.Grey2Effect","set_iStrength",0xfb395003,"shaders.Grey2Effect.set_iStrength","shaders/Shaders.hx",744,0x7800d7f1)
 namespace shaders{
 
 void Grey2Effect_obj::__construct(){
-            	HX_GC_STACKFRAME(&_hx_pos_087644254e7674ef_790_new)
-HXLINE( 794)		this->iStrength = ((Float)0);
-HXLINE( 792)		this->shader =  ::shaders::Grey2Shader_obj::__alloc( HX_CTX );
-HXLINE( 798)		this->set_iStrength(( (Float)(0) ));
+            	HX_GC_STACKFRAME(&_hx_pos_087644254e7674ef_732_new)
+HXLINE( 736)		this->iStrength = ((Float)0);
+HXLINE( 734)		this->shader =  ::shaders::Grey2Shader_obj::__alloc( HX_CTX );
+HXLINE( 740)		this->set_iStrength(( (Float)(0) ));
             	}
 
 Dynamic Grey2Effect_obj::__CreateEmpty() { return new Grey2Effect_obj; }
@@ -53,10 +53,10 @@ bool Grey2Effect_obj::_hx_isInstanceOf(int inClassId) {
 }
 
 Float Grey2Effect_obj::set_iStrength(Float value){
-            	HX_STACKFRAME(&_hx_pos_087644254e7674ef_802_set_iStrength)
-HXLINE( 803)		this->iStrength = value;
-HXLINE( 804)		this->shader->iStrength->value = ::Array_obj< Float >::__new(1)->init(0,value);
-HXLINE( 805)		return value;
+            	HX_STACKFRAME(&_hx_pos_087644254e7674ef_744_set_iStrength)
+HXLINE( 745)		this->iStrength = value;
+HXLINE( 746)		this->shader->iStrength->value = ::Array_obj< Float >::__new(1)->init(0,value);
+HXLINE( 747)		return value;
             	}
 
 

@@ -7,23 +7,24 @@
 #include <states/FixedSongMetadata.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_43820593a43f9dbc_595_new,"states.FixedSongMetadata","new",0x5a07ac9e,"states.FixedSongMetadata.new","states/FreeplayState.hx",595,0x1b2e20da)
+HX_DEFINE_STACK_FRAME(_hx_pos_43820593a43f9dbc_657_new,"states.FixedSongMetadata","new",0x5a07ac9e,"states.FixedSongMetadata.new","states/FreeplayState.hx",657,0x1b2e20da)
 namespace states{
 
 void FixedSongMetadata_obj::__construct(::String song,int week,::String songCharacter,int color){
-            	HX_STACKFRAME(&_hx_pos_43820593a43f9dbc_595_new)
-HXLINE( 601)		this->folder = HX_("",00,00,00,00);
-HXLINE( 600)		this->color = -7179779;
-HXLINE( 599)		this->songCharacter = HX_("",00,00,00,00);
-HXLINE( 598)		this->week = 0;
-HXLINE( 597)		this->songName = HX_("",00,00,00,00);
-HXLINE( 605)		this->songName = song;
-HXLINE( 606)		this->week = week;
-HXLINE( 607)		this->songCharacter = songCharacter;
-HXLINE( 608)		this->color = color;
-HXLINE( 609)		this->folder = ::backend::Paths_obj::currentModDirectory;
-HXLINE( 610)		if (::hx::IsNull( this->folder )) {
-HXLINE( 610)			this->folder = HX_("",00,00,00,00);
+            	HX_STACKFRAME(&_hx_pos_43820593a43f9dbc_657_new)
+HXLINE( 664)		this->lastDifficulty = null();
+HXLINE( 663)		this->folder = HX_("",00,00,00,00);
+HXLINE( 662)		this->color = -7179779;
+HXLINE( 661)		this->songCharacter = HX_("",00,00,00,00);
+HXLINE( 660)		this->week = 0;
+HXLINE( 659)		this->songName = HX_("",00,00,00,00);
+HXLINE( 668)		this->songName = song;
+HXLINE( 669)		this->week = week;
+HXLINE( 670)		this->songCharacter = songCharacter;
+HXLINE( 671)		this->color = color;
+HXLINE( 672)		this->folder = ::backend::Paths_obj::currentModDirectory;
+HXLINE( 673)		if (::hx::IsNull( this->folder )) {
+HXLINE( 673)			this->folder = HX_("",00,00,00,00);
             		}
             	}
 
@@ -68,6 +69,7 @@ void FixedSongMetadata_obj::__Mark(HX_MARK_PARAMS)
 	HX_MARK_MEMBER_NAME(songCharacter,"songCharacter");
 	HX_MARK_MEMBER_NAME(color,"color");
 	HX_MARK_MEMBER_NAME(folder,"folder");
+	HX_MARK_MEMBER_NAME(lastDifficulty,"lastDifficulty");
 	HX_MARK_END_CLASS();
 }
 
@@ -78,6 +80,7 @@ void FixedSongMetadata_obj::__Visit(HX_VISIT_PARAMS)
 	HX_VISIT_MEMBER_NAME(songCharacter,"songCharacter");
 	HX_VISIT_MEMBER_NAME(color,"color");
 	HX_VISIT_MEMBER_NAME(folder,"folder");
+	HX_VISIT_MEMBER_NAME(lastDifficulty,"lastDifficulty");
 }
 
 ::hx::Val FixedSongMetadata_obj::__Field(const ::String &inName,::hx::PropertyAccess inCallProp)
@@ -97,6 +100,9 @@ void FixedSongMetadata_obj::__Visit(HX_VISIT_PARAMS)
 		break;
 	case 13:
 		if (HX_FIELD_EQ(inName,"songCharacter") ) { return ::hx::Val( songCharacter ); }
+		break;
+	case 14:
+		if (HX_FIELD_EQ(inName,"lastDifficulty") ) { return ::hx::Val( lastDifficulty ); }
 	}
 	return super::__Field(inName,inCallProp);
 }
@@ -118,6 +124,9 @@ void FixedSongMetadata_obj::__Visit(HX_VISIT_PARAMS)
 		break;
 	case 13:
 		if (HX_FIELD_EQ(inName,"songCharacter") ) { songCharacter=inValue.Cast< ::String >(); return inValue; }
+		break;
+	case 14:
+		if (HX_FIELD_EQ(inName,"lastDifficulty") ) { lastDifficulty=inValue.Cast< ::String >(); return inValue; }
 	}
 	return super::__SetField(inName,inValue,inCallProp);
 }
@@ -129,6 +138,7 @@ void FixedSongMetadata_obj::__GetFields(Array< ::String> &outFields)
 	outFields->push(HX_("songCharacter",14,f5,a5,78));
 	outFields->push(HX_("color",63,71,5c,4a));
 	outFields->push(HX_("folder",ae,76,90,f9));
+	outFields->push(HX_("lastDifficulty",31,e4,14,bb));
 	super::__GetFields(outFields);
 };
 
@@ -139,6 +149,7 @@ static ::hx::StorageInfo FixedSongMetadata_obj_sMemberStorageInfo[] = {
 	{::hx::fsString,(int)offsetof(FixedSongMetadata_obj,songCharacter),HX_("songCharacter",14,f5,a5,78)},
 	{::hx::fsInt,(int)offsetof(FixedSongMetadata_obj,color),HX_("color",63,71,5c,4a)},
 	{::hx::fsString,(int)offsetof(FixedSongMetadata_obj,folder),HX_("folder",ae,76,90,f9)},
+	{::hx::fsString,(int)offsetof(FixedSongMetadata_obj,lastDifficulty),HX_("lastDifficulty",31,e4,14,bb)},
 	{ ::hx::fsUnknown, 0, null()}
 };
 static ::hx::StaticInfo *FixedSongMetadata_obj_sStaticStorageInfo = 0;
@@ -150,6 +161,7 @@ static ::String FixedSongMetadata_obj_sMemberFields[] = {
 	HX_("songCharacter",14,f5,a5,78),
 	HX_("color",63,71,5c,4a),
 	HX_("folder",ae,76,90,f9),
+	HX_("lastDifficulty",31,e4,14,bb),
 	::String(null()) };
 
 ::hx::Class FixedSongMetadata_obj::__mClass;

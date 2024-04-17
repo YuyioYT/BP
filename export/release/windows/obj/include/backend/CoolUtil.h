@@ -49,20 +49,9 @@ class HXCPP_CLASS_ATTRIBUTES CoolUtil_obj : public ::hx::Object
 
 		HX_DO_RTTI_ALL;
 		static bool __GetStatic(const ::String &inString, Dynamic &outValue, ::hx::PropertyAccess inCallProp);
-		static bool __SetStatic(const ::String &inString, Dynamic &ioValue, ::hx::PropertyAccess inCallProp);
 		static void __register();
 		bool _hx_isInstanceOf(int inClassId);
 		::String __ToString() const { return HX_("CoolUtil",8b,93,6d,c9); }
-
-		static void __boot();
-		static ::Array< ::String > defaultDifficulties;
-		static ::Array< ::String > difficulties;
-		static ::String defaultDifficulty;
-		static ::String getDifficultyFilePath( ::Dynamic num);
-		static ::Dynamic getDifficultyFilePath_dyn();
-
-		static ::String difficultyString();
-		static ::Dynamic difficultyString_dyn();
 
 		static ::String getSizeLabel(int num);
 		static ::Dynamic getSizeLabel_dyn();

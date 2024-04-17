@@ -22,13 +22,14 @@
 #include <shaders/MosaicShader.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_a0dd7da34db916b6_3010_new,"shaders.MosaicEffect","new",0xef9da7cd,"shaders.MosaicEffect.new","shaders/Shaders.hx",3010,0x7800d7f1)
+HX_DEFINE_STACK_FRAME(_hx_pos_a0dd7da34db916b6_2947_new,"shaders.MosaicEffect","new",0xef9da7cd,"shaders.MosaicEffect.new","shaders/Shaders.hx",2947,0x7800d7f1)
+HX_LOCAL_STACK_FRAME(_hx_pos_a0dd7da34db916b6_2958_set_strength,"shaders.MosaicEffect","set_strength",0x2299fcf1,"shaders.MosaicEffect.set_strength","shaders/Shaders.hx",2958,0x7800d7f1)
 namespace shaders{
 
-void MosaicEffect_obj::__construct(Float strength){
-            	HX_GC_STACKFRAME(&_hx_pos_a0dd7da34db916b6_3010_new)
-HXLINE(3011)		this->shader =  ::shaders::MosaicShader_obj::__alloc( HX_CTX );
-HXLINE(3012)		this->shader->strength->value = ::Array_obj< Float >::__new(1)->init(0,strength);
+void MosaicEffect_obj::__construct(){
+            	HX_STACKFRAME(&_hx_pos_a0dd7da34db916b6_2947_new)
+HXLINE(2951)		this->strength = ((Float)0);
+HXLINE(2955)		this->set_strength(( (Float)(0) ));
             	}
 
 Dynamic MosaicEffect_obj::__CreateEmpty() { return new MosaicEffect_obj; }
@@ -38,7 +39,7 @@ void *MosaicEffect_obj::_hx_vtable = 0;
 Dynamic MosaicEffect_obj::__Create(::hx::DynamicArray inArgs)
 {
 	::hx::ObjectPtr< MosaicEffect_obj > _hx_result = new MosaicEffect_obj();
-	_hx_result->__construct(inArgs[0]);
+	_hx_result->__construct();
 	return _hx_result;
 }
 
@@ -50,17 +51,27 @@ bool MosaicEffect_obj::_hx_isInstanceOf(int inClassId) {
 	}
 }
 
+Float MosaicEffect_obj::set_strength(Float value){
+            	HX_STACKFRAME(&_hx_pos_a0dd7da34db916b6_2958_set_strength)
+HXLINE(2959)		this->strength = value;
+HXLINE(2960)		this->shader->strength->value = ::Array_obj< Float >::__new(1)->init(0,value);
+HXLINE(2961)		return this->strength;
+            	}
 
-::hx::ObjectPtr< MosaicEffect_obj > MosaicEffect_obj::__new(Float strength) {
+
+HX_DEFINE_DYNAMIC_FUNC1(MosaicEffect_obj,set_strength,return )
+
+
+::hx::ObjectPtr< MosaicEffect_obj > MosaicEffect_obj::__new() {
 	::hx::ObjectPtr< MosaicEffect_obj > __this = new MosaicEffect_obj();
-	__this->__construct(strength);
+	__this->__construct();
 	return __this;
 }
 
-::hx::ObjectPtr< MosaicEffect_obj > MosaicEffect_obj::__alloc(::hx::Ctx *_hx_ctx,Float strength) {
+::hx::ObjectPtr< MosaicEffect_obj > MosaicEffect_obj::__alloc(::hx::Ctx *_hx_ctx) {
 	MosaicEffect_obj *__this = (MosaicEffect_obj*)(::hx::Ctx::alloc(_hx_ctx, sizeof(MosaicEffect_obj), true, "shaders.MosaicEffect"));
 	*(void **)__this = MosaicEffect_obj::_hx_vtable;
-	__this->__construct(strength);
+	__this->__construct();
 	return __this;
 }
 
@@ -72,12 +83,14 @@ void MosaicEffect_obj::__Mark(HX_MARK_PARAMS)
 {
 	HX_MARK_BEGIN_CLASS(MosaicEffect);
 	HX_MARK_MEMBER_NAME(shader,"shader");
+	HX_MARK_MEMBER_NAME(strength,"strength");
 	HX_MARK_END_CLASS();
 }
 
 void MosaicEffect_obj::__Visit(HX_VISIT_PARAMS)
 {
 	HX_VISIT_MEMBER_NAME(shader,"shader");
+	HX_VISIT_MEMBER_NAME(strength,"strength");
 }
 
 ::hx::Val MosaicEffect_obj::__Field(const ::String &inName,::hx::PropertyAccess inCallProp)
@@ -85,6 +98,12 @@ void MosaicEffect_obj::__Visit(HX_VISIT_PARAMS)
 	switch(inName.length) {
 	case 6:
 		if (HX_FIELD_EQ(inName,"shader") ) { return ::hx::Val( shader ); }
+		break;
+	case 8:
+		if (HX_FIELD_EQ(inName,"strength") ) { return ::hx::Val( strength ); }
+		break;
+	case 12:
+		if (HX_FIELD_EQ(inName,"set_strength") ) { return ::hx::Val( set_strength_dyn() ); }
 	}
 	return super::__Field(inName,inCallProp);
 }
@@ -94,6 +113,9 @@ void MosaicEffect_obj::__Visit(HX_VISIT_PARAMS)
 	switch(inName.length) {
 	case 6:
 		if (HX_FIELD_EQ(inName,"shader") ) { shader=inValue.Cast<  ::shaders::MosaicShader >(); return inValue; }
+		break;
+	case 8:
+		if (HX_FIELD_EQ(inName,"strength") ) { if (inCallProp == ::hx::paccAlways) return ::hx::Val( set_strength(inValue.Cast< Float >()) );strength=inValue.Cast< Float >(); return inValue; }
 	}
 	return super::__SetField(inName,inValue,inCallProp);
 }
@@ -101,12 +123,14 @@ void MosaicEffect_obj::__Visit(HX_VISIT_PARAMS)
 void MosaicEffect_obj::__GetFields(Array< ::String> &outFields)
 {
 	outFields->push(HX_("shader",25,bf,20,1d));
+	outFields->push(HX_("strength",81,d2,8e,8e));
 	super::__GetFields(outFields);
 };
 
 #ifdef HXCPP_SCRIPTABLE
 static ::hx::StorageInfo MosaicEffect_obj_sMemberStorageInfo[] = {
 	{::hx::fsObject /*  ::shaders::MosaicShader */ ,(int)offsetof(MosaicEffect_obj,shader),HX_("shader",25,bf,20,1d)},
+	{::hx::fsFloat,(int)offsetof(MosaicEffect_obj,strength),HX_("strength",81,d2,8e,8e)},
 	{ ::hx::fsUnknown, 0, null()}
 };
 static ::hx::StaticInfo *MosaicEffect_obj_sStaticStorageInfo = 0;
@@ -114,6 +138,8 @@ static ::hx::StaticInfo *MosaicEffect_obj_sStaticStorageInfo = 0;
 
 static ::String MosaicEffect_obj_sMemberFields[] = {
 	HX_("shader",25,bf,20,1d),
+	HX_("strength",81,d2,8e,8e),
+	HX_("set_strength",fe,a9,a1,58),
 	::String(null()) };
 
 ::hx::Class MosaicEffect_obj::__mClass;

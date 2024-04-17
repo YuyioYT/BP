@@ -22,14 +22,14 @@
 #include <shaders/FuckingTriangleEffect.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_68295b01e97973bd_1515_new,"shaders.FuckingTriangleEffect","new",0x36833076,"shaders.FuckingTriangleEffect.new","shaders/Shaders.hx",1515,0x7800d7f1)
+HX_DEFINE_STACK_FRAME(_hx_pos_68295b01e97973bd_1457_new,"shaders.FuckingTriangleEffect","new",0x36833076,"shaders.FuckingTriangleEffect.new","shaders/Shaders.hx",1457,0x7800d7f1)
 namespace shaders{
 
 void FuckingTriangleEffect_obj::__construct(Float rotx,Float roty){
-            	HX_GC_STACKFRAME(&_hx_pos_68295b01e97973bd_1515_new)
-HXLINE(1517)		this->shader =  ::shaders::FuckingTriangle_obj::__alloc( HX_CTX );
-HXLINE(1520)		this->shader->rotX->value = ::Array_obj< Float >::__new(1)->init(0,rotx);
-HXLINE(1521)		this->shader->rotY->value = ::Array_obj< Float >::__new(1)->init(0,roty);
+            	HX_GC_STACKFRAME(&_hx_pos_68295b01e97973bd_1457_new)
+HXLINE(1459)		this->shader =  ::shaders::FuckingTriangle_obj::__alloc( HX_CTX );
+HXLINE(1462)		this->shader->rotX->value = ::Array_obj< Float >::__new(1)->init(0,rotx);
+HXLINE(1463)		this->shader->rotY->value = ::Array_obj< Float >::__new(1)->init(0,roty);
             	}
 
 Dynamic FuckingTriangleEffect_obj::__CreateEmpty() { return new FuckingTriangleEffect_obj; }

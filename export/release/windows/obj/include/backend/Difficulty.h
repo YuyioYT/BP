@@ -53,6 +53,7 @@ class HXCPP_CLASS_ATTRIBUTES Difficulty_obj : public ::hx::Object
 
 		static void __boot();
 		static ::Array< ::String > defaultList;
+		static ::Array< ::String > difficulties;
 		static ::Array< ::String > list;
 		static ::String defaultDifficulty;
 		static ::String getFilePath( ::Dynamic num);

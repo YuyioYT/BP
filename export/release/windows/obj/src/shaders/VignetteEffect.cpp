@@ -22,17 +22,17 @@
 #include <shaders/VignetteShader.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_11987f1eb63ad690_2687_new,"shaders.VignetteEffect","new",0x0cfa143d,"shaders.VignetteEffect.new","shaders/Shaders.hx",2687,0x7800d7f1)
+HX_DEFINE_STACK_FRAME(_hx_pos_11987f1eb63ad690_2629_new,"shaders.VignetteEffect","new",0x0cfa143d,"shaders.VignetteEffect.new","shaders/Shaders.hx",2629,0x7800d7f1)
 namespace shaders{
 
 void VignetteEffect_obj::__construct(Float strength,Float size,Float red,Float green,Float blue){
-            	HX_GC_STACKFRAME(&_hx_pos_11987f1eb63ad690_2687_new)
-HXLINE(2689)		this->shader =  ::shaders::VignetteShader_obj::__alloc( HX_CTX );
-HXLINE(2698)		this->shader->strength->value = ::Array_obj< Float >::__new(1)->init(0,strength);
-HXLINE(2699)		this->shader->size->value = ::Array_obj< Float >::__new(1)->init(0,size);
-HXLINE(2700)		this->shader->red->value = ::Array_obj< Float >::__new(1)->init(0,red);
-HXLINE(2701)		this->shader->green->value = ::Array_obj< Float >::__new(1)->init(0,green);
-HXLINE(2702)		this->shader->blue->value = ::Array_obj< Float >::__new(1)->init(0,blue);
+            	HX_GC_STACKFRAME(&_hx_pos_11987f1eb63ad690_2629_new)
+HXLINE(2631)		this->shader =  ::shaders::VignetteShader_obj::__alloc( HX_CTX );
+HXLINE(2640)		this->shader->strength->value = ::Array_obj< Float >::__new(1)->init(0,strength);
+HXLINE(2641)		this->shader->size->value = ::Array_obj< Float >::__new(1)->init(0,size);
+HXLINE(2642)		this->shader->red->value = ::Array_obj< Float >::__new(1)->init(0,red);
+HXLINE(2643)		this->shader->green->value = ::Array_obj< Float >::__new(1)->init(0,green);
+HXLINE(2644)		this->shader->blue->value = ::Array_obj< Float >::__new(1)->init(0,blue);
             	}
 
 Dynamic VignetteEffect_obj::__CreateEmpty() { return new VignetteEffect_obj; }

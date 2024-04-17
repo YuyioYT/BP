@@ -22,14 +22,18 @@
 #include <shaders/TiltshiftEffect.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_625c4b7884703cdc_448_new,"shaders.TiltshiftEffect","new",0x890c99a8,"shaders.TiltshiftEffect.new","shaders/Shaders.hx",448,0x7800d7f1)
+HX_DEFINE_STACK_FRAME(_hx_pos_625c4b7884703cdc_541_new,"shaders.TiltshiftEffect","new",0x890c99a8,"shaders.TiltshiftEffect.new","shaders/Shaders.hx",541,0x7800d7f1)
+HX_LOCAL_STACK_FRAME(_hx_pos_625c4b7884703cdc_555_set_bluramount,"shaders.TiltshiftEffect","set_bluramount",0xbb406834,"shaders.TiltshiftEffect.set_bluramount","shaders/Shaders.hx",555,0x7800d7f1)
+HX_LOCAL_STACK_FRAME(_hx_pos_625c4b7884703cdc_562_set_center,"shaders.TiltshiftEffect","set_center",0x29f2a3ca,"shaders.TiltshiftEffect.set_center","shaders/Shaders.hx",562,0x7800d7f1)
 namespace shaders{
 
-void TiltshiftEffect_obj::__construct(Float blurAmount,Float center){
-            	HX_GC_STACKFRAME(&_hx_pos_625c4b7884703cdc_448_new)
-HXLINE( 449)		this->shader =  ::shaders::Tiltshift_obj::__alloc( HX_CTX );
-HXLINE( 450)		this->shader->bluramount->value = ::Array_obj< Float >::__new(1)->init(0,blurAmount);
-HXLINE( 451)		this->shader->center->value = ::Array_obj< Float >::__new(1)->init(0,center);
+void TiltshiftEffect_obj::__construct(){
+            	HX_GC_STACKFRAME(&_hx_pos_625c4b7884703cdc_541_new)
+HXLINE( 546)		this->center = ((Float)0);
+HXLINE( 545)		this->bluramount = ((Float)0);
+HXLINE( 543)		this->shader =  ::shaders::Tiltshift_obj::__alloc( HX_CTX );
+HXLINE( 550)		this->set_bluramount(( (Float)(0) ));
+HXLINE( 551)		this->set_center(( (Float)(0) ));
             	}
 
 Dynamic TiltshiftEffect_obj::__CreateEmpty() { return new TiltshiftEffect_obj; }
@@ -39,7 +43,7 @@ void *TiltshiftEffect_obj::_hx_vtable = 0;
 Dynamic TiltshiftEffect_obj::__Create(::hx::DynamicArray inArgs)
 {
 	::hx::ObjectPtr< TiltshiftEffect_obj > _hx_result = new TiltshiftEffect_obj();
-	_hx_result->__construct(inArgs[0],inArgs[1]);
+	_hx_result->__construct();
 	return _hx_result;
 }
 
@@ -51,17 +55,37 @@ bool TiltshiftEffect_obj::_hx_isInstanceOf(int inClassId) {
 	}
 }
 
+Float TiltshiftEffect_obj::set_bluramount(Float value){
+            	HX_STACKFRAME(&_hx_pos_625c4b7884703cdc_555_set_bluramount)
+HXLINE( 556)		this->bluramount = value;
+HXLINE( 557)		this->shader->bluramount->value = ::Array_obj< Float >::__new(1)->init(0,value);
+HXLINE( 558)		return this->bluramount;
+            	}
 
-::hx::ObjectPtr< TiltshiftEffect_obj > TiltshiftEffect_obj::__new(Float blurAmount,Float center) {
+
+HX_DEFINE_DYNAMIC_FUNC1(TiltshiftEffect_obj,set_bluramount,return )
+
+Float TiltshiftEffect_obj::set_center(Float value){
+            	HX_STACKFRAME(&_hx_pos_625c4b7884703cdc_562_set_center)
+HXLINE( 563)		this->center = value;
+HXLINE( 564)		this->shader->center->value = ::Array_obj< Float >::__new(1)->init(0,value);
+HXLINE( 565)		return this->center;
+            	}
+
+
+HX_DEFINE_DYNAMIC_FUNC1(TiltshiftEffect_obj,set_center,return )
+
+
+::hx::ObjectPtr< TiltshiftEffect_obj > TiltshiftEffect_obj::__new() {
 	::hx::ObjectPtr< TiltshiftEffect_obj > __this = new TiltshiftEffect_obj();
-	__this->__construct(blurAmount,center);
+	__this->__construct();
 	return __this;
 }
 
-::hx::ObjectPtr< TiltshiftEffect_obj > TiltshiftEffect_obj::__alloc(::hx::Ctx *_hx_ctx,Float blurAmount,Float center) {
+::hx::ObjectPtr< TiltshiftEffect_obj > TiltshiftEffect_obj::__alloc(::hx::Ctx *_hx_ctx) {
 	TiltshiftEffect_obj *__this = (TiltshiftEffect_obj*)(::hx::Ctx::alloc(_hx_ctx, sizeof(TiltshiftEffect_obj), true, "shaders.TiltshiftEffect"));
 	*(void **)__this = TiltshiftEffect_obj::_hx_vtable;
-	__this->__construct(blurAmount,center);
+	__this->__construct();
 	return __this;
 }
 
@@ -73,12 +97,16 @@ void TiltshiftEffect_obj::__Mark(HX_MARK_PARAMS)
 {
 	HX_MARK_BEGIN_CLASS(TiltshiftEffect);
 	HX_MARK_MEMBER_NAME(shader,"shader");
+	HX_MARK_MEMBER_NAME(bluramount,"bluramount");
+	HX_MARK_MEMBER_NAME(center,"center");
 	HX_MARK_END_CLASS();
 }
 
 void TiltshiftEffect_obj::__Visit(HX_VISIT_PARAMS)
 {
 	HX_VISIT_MEMBER_NAME(shader,"shader");
+	HX_VISIT_MEMBER_NAME(bluramount,"bluramount");
+	HX_VISIT_MEMBER_NAME(center,"center");
 }
 
 ::hx::Val TiltshiftEffect_obj::__Field(const ::String &inName,::hx::PropertyAccess inCallProp)
@@ -86,6 +114,14 @@ void TiltshiftEffect_obj::__Visit(HX_VISIT_PARAMS)
 	switch(inName.length) {
 	case 6:
 		if (HX_FIELD_EQ(inName,"shader") ) { return ::hx::Val( shader ); }
+		if (HX_FIELD_EQ(inName,"center") ) { return ::hx::Val( center ); }
+		break;
+	case 10:
+		if (HX_FIELD_EQ(inName,"bluramount") ) { return ::hx::Val( bluramount ); }
+		if (HX_FIELD_EQ(inName,"set_center") ) { return ::hx::Val( set_center_dyn() ); }
+		break;
+	case 14:
+		if (HX_FIELD_EQ(inName,"set_bluramount") ) { return ::hx::Val( set_bluramount_dyn() ); }
 	}
 	return super::__Field(inName,inCallProp);
 }
@@ -95,6 +131,10 @@ void TiltshiftEffect_obj::__Visit(HX_VISIT_PARAMS)
 	switch(inName.length) {
 	case 6:
 		if (HX_FIELD_EQ(inName,"shader") ) { shader=inValue.Cast<  ::shaders::Tiltshift >(); return inValue; }
+		if (HX_FIELD_EQ(inName,"center") ) { if (inCallProp == ::hx::paccAlways) return ::hx::Val( set_center(inValue.Cast< Float >()) );center=inValue.Cast< Float >(); return inValue; }
+		break;
+	case 10:
+		if (HX_FIELD_EQ(inName,"bluramount") ) { if (inCallProp == ::hx::paccAlways) return ::hx::Val( set_bluramount(inValue.Cast< Float >()) );bluramount=inValue.Cast< Float >(); return inValue; }
 	}
 	return super::__SetField(inName,inValue,inCallProp);
 }
@@ -102,12 +142,16 @@ void TiltshiftEffect_obj::__Visit(HX_VISIT_PARAMS)
 void TiltshiftEffect_obj::__GetFields(Array< ::String> &outFields)
 {
 	outFields->push(HX_("shader",25,bf,20,1d));
+	outFields->push(HX_("bluramount",bf,4b,fa,17));
+	outFields->push(HX_("center",d5,25,db,05));
 	super::__GetFields(outFields);
 };
 
 #ifdef HXCPP_SCRIPTABLE
 static ::hx::StorageInfo TiltshiftEffect_obj_sMemberStorageInfo[] = {
 	{::hx::fsObject /*  ::shaders::Tiltshift */ ,(int)offsetof(TiltshiftEffect_obj,shader),HX_("shader",25,bf,20,1d)},
+	{::hx::fsFloat,(int)offsetof(TiltshiftEffect_obj,bluramount),HX_("bluramount",bf,4b,fa,17)},
+	{::hx::fsFloat,(int)offsetof(TiltshiftEffect_obj,center),HX_("center",d5,25,db,05)},
 	{ ::hx::fsUnknown, 0, null()}
 };
 static ::hx::StaticInfo *TiltshiftEffect_obj_sStaticStorageInfo = 0;
@@ -115,6 +159,10 @@ static ::hx::StaticInfo *TiltshiftEffect_obj_sStaticStorageInfo = 0;
 
 static ::String TiltshiftEffect_obj_sMemberFields[] = {
 	HX_("shader",25,bf,20,1d),
+	HX_("bluramount",bf,4b,fa,17),
+	HX_("center",d5,25,db,05),
+	HX_("set_bluramount",7c,bc,0f,ae),
+	HX_("set_center",12,34,e0,f9),
 	::String(null()) };
 
 ::hx::Class TiltshiftEffect_obj::__mClass;

@@ -10,13 +10,13 @@
 #include <lime/text/Font.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_cb9c2552abe771d2_1454_new,"__ASSET__assets_fonts_comic_ttf","new",0x1303b98d,"__ASSET__assets_fonts_comic_ttf.new","ManifestResources.hx",1454,0xf77aa668)
+HX_DEFINE_STACK_FRAME(_hx_pos_cb9c2552abe771d2_1422_new,"__ASSET__assets_fonts_comic_ttf","new",0x1303b98d,"__ASSET__assets_fonts_comic_ttf.new","ManifestResources.hx",1422,0xf77aa668)
 
 void __ASSET__assets_fonts_comic_ttf_obj::__construct(){
-            	HX_STACKFRAME(&_hx_pos_cb9c2552abe771d2_1454_new)
-HXDLIN(1454)		this->_hx___fontPath = (::ManifestResources_obj::rootPath + HX_("assets/fonts/comic.ttf",3c,15,e5,d3));
-HXDLIN(1454)		this->name = HX_("Comic Sans MS Bold",f7,90,1e,7c);
-HXDLIN(1454)		super::__construct(null());
+            	HX_STACKFRAME(&_hx_pos_cb9c2552abe771d2_1422_new)
+HXDLIN(1422)		this->_hx___fontPath = (::ManifestResources_obj::rootPath + HX_("assets/fonts/comic.ttf",3c,15,e5,d3));
+HXDLIN(1422)		this->name = HX_("Comic Sans MS Bold",f7,90,1e,7c);
+HXDLIN(1422)		super::__construct(null());
             	}
 
 Dynamic __ASSET__assets_fonts_comic_ttf_obj::__CreateEmpty() { return new __ASSET__assets_fonts_comic_ttf_obj; }
